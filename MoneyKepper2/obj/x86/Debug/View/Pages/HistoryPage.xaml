@@ -1,0 +1,138 @@
+﻿<local:PageBase
+    x:Class="MoneyKepper2.View.Pages.HistoryPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MoneyKepper2.View.Pages"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core"  
+    xmlns:behavior ="using:MoneyKepper2.Behaviors"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignWidth="370"
+    FlowDirection="RightToLeft"
+    DataContext="{Binding HistoryViewModel ,Source={StaticResource Locator}}">
+    <local:PageBase.Resources>
+
+        <Style x:Key="ListViewItemStyle1" TargetType="ListViewItem">
+            <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}"/>
+            <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="{ThemeResource SystemControlForegroundBaseHighBrush}"/>
+            <Setter Property="TabNavigation" Value="Local"/>
+            <Setter Property="IsHoldingEnabled" Value="True"/>
+            <Setter Property="Padding" Value="12,0,12,0"/>
+            <Setter Property="Margin" Value="0,0,0,5"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="MinWidth" Value="{ThemeResource ListViewItemMinWidth}"/>
+            <Setter Property="MinHeight" Value="{ThemeResource ListViewItemMinHeight}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ListViewItem">
+                        <ListViewItemPresenter CheckBrush="Black" ContentMargin="{TemplateBinding Padding}" CheckMode="Inline" ContentTransitions="{TemplateBinding ContentTransitions}" CheckBoxBrush="Black" DragForeground="{ThemeResource ListViewItemDragForegroundThemeBrush}" DragOpacity="{ThemeResource ListViewItemDragThemeOpacity}" DragBackground="{ThemeResource ListViewItemDragBackgroundThemeBrush}" DisabledOpacity="{ThemeResource ListViewItemDisabledThemeOpacity}" FocusBorderBrush="{ThemeResource SystemControlForegroundAltHighBrush}" FocusSecondaryBorderBrush="{ThemeResource SystemControlForegroundBaseHighBrush}" HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}" PointerOverForeground="{ThemeResource SystemControlHighlightAltBaseHighBrush}" PressedBackground="{ThemeResource SystemControlHighlightListMediumBrush}" PlaceholderBackground="{ThemeResource ListViewItemPlaceholderBackgroundThemeBrush}" PointerOverBackground="{ThemeResource SystemControlHighlightListLowBrush}" ReorderHintOffset="{ThemeResource ListViewItemReorderHintThemeOffset}" SelectedPressedBackground="{ThemeResource SystemControlHighlightListAccentHighBrush}" SelectionCheckMarkVisualEnabled="True" SelectedForeground="{ThemeResource SystemControlHighlightAltBaseHighBrush}" SelectedPointerOverBackground="LightGray" SelectedBackground="{x:Null}" VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </local:PageBase.Resources>
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="80"/>
+            </Grid.RowDefinitions>
+            <TextBlock
+                Margin="10,12,0,12"
+                FontSize="18"
+                FontWeight="Bold"
+                Text="היסטוריית חודשים"/>
+            <StackPanel 
+                Grid.Row="1"
+                Padding="8,5">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock
+                    Style="{StaticResource InfoTextBlockStyle}"
+                    Text="חודש התחלה"/>
+                    <CalendarDatePicker
+                    Margin="0,0,0,8"
+                    Width="140" >
+                        <interactivity:Interaction.Behaviors>
+                            <behavior:SetDateToDatePickerBehavior
+                         Date="{Binding StartDate ,Mode=TwoWay}"/>
+                        </interactivity:Interaction.Behaviors>
+                    </CalendarDatePicker>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock
+                     Style="{StaticResource InfoTextBlockStyle}"
+                    Text="חודש סיום"/>
+                    <CalendarDatePicker
+                     Width="140" 
+                     Margin="0,0,0,8">
+                        <interactivity:Interaction.Behaviors>
+                            <behavior:SetDateToDatePickerBehavior
+                                Date="{Binding EndDate ,Mode=TwoWay}"/>
+                            <behavior:SetMinAndMaxDateBehavior
+                                StartTime="{Binding StartDate.DateTime}"/>
+                        </interactivity:Interaction.Behaviors>
+                    </CalendarDatePicker>
+                </StackPanel>
+                <StackPanel 
+                Orientation="Horizontal">
+                    <TextBlock
+                    Style="{StaticResource InfoTextBlockStyle}"
+                    Text="סוג גרף"/>
+                    <ComboBox
+                    Width="140"
+                    Margin="0,0,0,8"
+                    SelectedItem="{Binding SelectedGraph,Converter={StaticResource GraphsTypeToGraphStringConverter}, Mode=TwoWay}"
+                    ItemsSource="{Binding GraphTypes}">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock
+                                    Text="{Binding Converter={StaticResource GraphsTypeToGraphStringConverter}}"/>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </StackPanel>
+
+                <ListView x:ConnectionId='1'
+                    Visibility="{Binding IsCategoryGraphSelected,Converter={StaticResource BooleanToVisibilityConverter}}"
+                    x:Name="CategoryListView"
+                    SelectionMode="Multiple"
+                    IsMultiSelectCheckBoxEnabled="True"
+                    ItemsSource="{Binding Categotries}" ItemContainerStyle="{StaticResource ListViewItemStyle1}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Name}">
+                            </TextBlock>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                    <interactivity:Interaction.Behaviors>
+                        <core:EventTriggerBehavior EventName="SelectionChanged">
+                            <core:InvokeCommandAction Command="{Binding SelectionChangedCommand}" 
+                                            CommandParameter="{Binding ElementName=CategoryListView,Converter={StaticResource SelectionChangedConverter}}"  />
+                        </core:EventTriggerBehavior>
+                    </interactivity:Interaction.Behaviors>
+                </ListView>
+                <TextBlock
+                    Visibility="{Binding IsMaxCategoryShow,Converter={StaticResource BooleanToVisibilityConverter}}"
+                    Text="יש לבחור עד 6 קטגוריות להשוואה"/>
+            </StackPanel>
+            <Button
+                Grid.Row="2"
+                Width="120"
+                Foreground="White"
+                FontSize="18"
+                Background="{StaticResource AccentColorBrush}"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Command="{Binding ShowGraphCommmand}"
+                Content="הצג"/>
+        </Grid>
+    </Grid>
+</local:PageBase>
+

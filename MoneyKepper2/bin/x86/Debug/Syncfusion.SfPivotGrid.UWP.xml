@@ -1,0 +1,2165 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfPivotGrid.UWP</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.ConditionalFormatEditor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.ConditionalFormatEditor" /> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.ConditionalFormatEditor.OnApplyTemplate">
+            <summary>
+            Builds the visual tree for this control when a new template is applied.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCellRenderer">
+            <summary>
+            Defines the renderer for rendering the grid cell containing expander.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCellRenderer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCellRenderer">PivotGridExpandHyperlinkCellRenderer</see> class. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCellRenderer.GetFormattedText(Syncfusion.UI.Xaml.CellGrid.Styles.GridStyleInfo)">
+            <summary>
+            Returns the formatted text for the particular cell.
+            </summary>
+            <param name="style">The style of particular cell.</param>
+            <returns>The formatted text which is displayed.</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCellRenderer.OnUpdateEditCellStyle(Syncfusion.UI.Xaml.Grid.ScrollAxis.RowColumnIndex,Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell,Syncfusion.UI.Xaml.CellGrid.Styles.GridStyleInfo,System.String)">
+            <summary>
+            Updates the style for the edited cell.
+            </summary>
+            <param name="cellRowColumnIndex">The coordinates of the edited cell.</param>
+            <param name="uiElement">The element that holds the edited cell.</param>
+            <param name="style">The style of edited cell.</param>
+            <param name="text">The text of edited cell.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCellRenderer.OnUpdateCellStyle(Syncfusion.UI.Xaml.Grid.ScrollAxis.RowColumnIndex,Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell,Syncfusion.UI.Xaml.CellGrid.Styles.GridStyleInfo,System.String)">
+            <summary>
+            Updates the style for the particular cell.
+            </summary>
+            <param name="cellRowColumnIndex">The coordinates of the particular cell.</param>
+            <param name="uiElement">The element that holds the particular cell.</param>
+            <param name="style">The style of particular cell.</param>
+            <param name="text">The text of particular cell.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCellRenderer.OnInitializeDisplayElement(Syncfusion.UI.Xaml.Grid.ScrollAxis.RowColumnIndex,Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell,Syncfusion.UI.Xaml.CellGrid.Styles.GridStyleInfo,System.String)">
+            <summary>
+            Initializes the element that holds the particular cell.
+            </summary>
+            <param name="rowColumnIndex">The coordinates of the particular cell.</param>
+            <param name="uiElement">The element that holds the particular cell.</param>
+            <param name="style">The style of particular cell.</param>
+            <param name="text">The text of particular cell.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCellRenderer.OnInitializeEditElement(Syncfusion.UI.Xaml.Grid.ScrollAxis.RowColumnIndex,Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell,Syncfusion.UI.Xaml.CellGrid.Styles.GridStyleInfo,System.String)">
+            <summary>
+            Initializes the element that holds the edited cell.
+            </summary>
+            <param name="rowColumnIndex">The coordinates of the edited cell.</param>
+            <param name="uiElement">The element that holds the edited cell.</param>
+            <param name="style">The style of edited cell.</param>
+            <param name="text">The text of edited cell.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCellRenderer.OnArrange(Syncfusion.UI.Xaml.Grid.ScrollAxis.RowColumnIndex,Windows.UI.Xaml.UIElement,Windows.Foundation.Rect)">
+            <summary>
+            Invoked when the visual children of cell is arranged in view. 
+            </summary>
+            <param name="cellRowColumnIndex">The coordinates of the particular cell.</param>
+            <param name="uiElement">The corresponding element that is to be arranged.</param>
+            <param name="rect">The size and origin for arranging the element.</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridHyperlinkCellRenderer">
+            <summary>
+            Defines the renderer for rendering the grid cell that does not contain expander.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridHyperlinkCellRenderer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridHyperlinkCellRenderer">PivotGridHyperlinkCellRenderer</see> class. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridHyperlinkCellRenderer.GetFormattedText(Syncfusion.UI.Xaml.CellGrid.Styles.GridStyleInfo)">
+            <summary>
+            Returns the formatted text for the particular cell.
+            </summary>
+            <param name="style">The style of particular cell.</param>
+            <returns>The formatted text which is displayed.</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridHyperlinkCellRenderer.OnUpdateEditCellStyle(Syncfusion.UI.Xaml.Grid.ScrollAxis.RowColumnIndex,Syncfusion.UI.Xaml.PivotGrid.PivotGridHyperlinkCell,Syncfusion.UI.Xaml.CellGrid.Styles.GridStyleInfo,System.String)">
+            <summary>
+            Updates the style for the edited cell.
+            </summary>
+            <param name="cellRowColumnIndex">The coordinates of the edited cell.</param>
+            <param name="uiElement">The element that holds the edited cell.</param>
+            <param name="style">The style of edited cell.</param>
+            <param name="text">The text of edited cell.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridHyperlinkCellRenderer.OnUpdateCellStyle(Syncfusion.UI.Xaml.Grid.ScrollAxis.RowColumnIndex,Syncfusion.UI.Xaml.PivotGrid.PivotGridHyperlinkCell,Syncfusion.UI.Xaml.CellGrid.Styles.GridStyleInfo,System.String)">
+            <summary>
+            Updates the style for the particular cell.
+            </summary>
+            <param name="cellRowColumnIndex">The coordinates of the particular cell.</param>
+            <param name="uiElement">The element that holds the particular cell.</param>
+            <param name="style">The style of particular cell.</param>
+            <param name="text">The text of particular cell.</param>                          
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridHyperlinkCellRenderer.OnInitializeDisplayElement(Syncfusion.UI.Xaml.Grid.ScrollAxis.RowColumnIndex,Syncfusion.UI.Xaml.PivotGrid.PivotGridHyperlinkCell,Syncfusion.UI.Xaml.CellGrid.Styles.GridStyleInfo,System.String)">
+            <summary>
+            Initializes the element that holds the particular cell.
+            </summary>
+            <param name="rowColumnIndex">The coordinates of the particular cell.</param>
+            <param name="uiElement">The element that holds the particular cell.</param>
+            <param name="style">The style of particular cell.</param>
+            <param name="text">The text of particular cell.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridHyperlinkCellRenderer.OnInitializeEditElement(Syncfusion.UI.Xaml.Grid.ScrollAxis.RowColumnIndex,Syncfusion.UI.Xaml.PivotGrid.PivotGridHyperlinkCell,Syncfusion.UI.Xaml.CellGrid.Styles.GridStyleInfo,System.String)">
+            <summary>
+            Initializes the element that holds the edited cell.
+            </summary>
+            <param name="rowColumnIndex">The coordinates of the edited cell.</param>
+            <param name="uiElement">The element that holds the edited cell.</param>
+            <param name="style">The style of edited cell.</param>
+            <param name="text">The text of edited cell.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridHyperlinkCellRenderer.OnArrange(Syncfusion.UI.Xaml.Grid.ScrollAxis.RowColumnIndex,Windows.UI.Xaml.UIElement,Windows.Foundation.Rect)">
+            <summary>
+            Invoked when the visual children of cell is arranged in view. 
+            </summary>
+            <param name="cellRowColumnIndex">The coordinates of the particular cell.</param>
+            <param name="uiElement">The corresponding element that is to be arranged.</param>
+            <param name="rect">The size and origin for arranging the element.</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridKpiCellRenderer">
+            <summary>
+            Defines the renderer for rendering the grid cell containing KPI.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridKpiCellRenderer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridKpiCellRenderer">PivotGridKpiCellRenderer</see> class. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridKpiCellRenderer.OnUpdateEditCellStyle(Syncfusion.UI.Xaml.Grid.ScrollAxis.RowColumnIndex,Syncfusion.UI.Xaml.PivotGrid.PivotGridKpiCell,Syncfusion.UI.Xaml.CellGrid.Styles.GridStyleInfo,System.String)">
+            <summary>
+            Updates the style for the edited cell.
+            </summary>
+            <param name="cellRowColumnIndex">The coordinates of the edited cell.</param>
+            <param name="uiElement">The element that holds the edited cell.</param>
+            <param name="style">The style of edited cell.</param>
+            <param name="text">The text of edited cell.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridKpiCellRenderer.OnUpdateCellStyle(Syncfusion.UI.Xaml.Grid.ScrollAxis.RowColumnIndex,Syncfusion.UI.Xaml.PivotGrid.PivotGridKpiCell,Syncfusion.UI.Xaml.CellGrid.Styles.GridStyleInfo,System.String)">
+            <summary>
+            Updates the style for the particular cell.
+            </summary>
+            <param name="cellRowColumnIndex">The coordinates of the particular cell.</param>
+            <param name="uiElement">The element that holds the particular cell.</param>
+            <param name="style">The style of particular cell.</param>
+            <param name="text">The text of particular cell.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridKpiCellRenderer.OnInitializeDisplayElement(Syncfusion.UI.Xaml.Grid.ScrollAxis.RowColumnIndex,Syncfusion.UI.Xaml.PivotGrid.PivotGridKpiCell,Syncfusion.UI.Xaml.CellGrid.Styles.GridStyleInfo,System.String)">
+            <summary>
+            Initializes the element that holds the particular cell.
+            </summary>
+            <param name="rowColumnIndex">The coordinates of the particular cell.</param>
+            <param name="uiElement">The element that holds the particular cell.</param>
+            <param name="style">The style of particular cell.</param>
+            <param name="text">The text of particular cell.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridKpiCellRenderer.OnInitializeEditElement(Syncfusion.UI.Xaml.Grid.ScrollAxis.RowColumnIndex,Syncfusion.UI.Xaml.PivotGrid.PivotGridKpiCell,Syncfusion.UI.Xaml.CellGrid.Styles.GridStyleInfo,System.String)">
+            <summary>
+            Initializes the element that holds the edited cell.
+            </summary>
+            <param name="rowColumnIndex">The coordinates of the edited cell.</param>
+            <param name="uiElement">The element that holds the edited cell.</param>
+            <param name="style">The style of edited cell.</param>
+            <param name="text">The text of edited cell.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridKpiCellRenderer.OnArrange(Syncfusion.UI.Xaml.Grid.ScrollAxis.RowColumnIndex,Windows.UI.Xaml.UIElement,Windows.Foundation.Rect)">
+            <summary>
+            Invoked when the visual children of cell is arranged in view. 
+            </summary>
+            <param name="cellRowColumnIndex">The coordinates of the particular cell.</param>
+            <param name="uiElement">The corresponding element that is to be arranged.</param>
+            <param name="rect">The size and origin for arranging the element.</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCellRenderer">
+            <summary>
+            Defines the renderer for rendering the grid cell that is templated.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCellRenderer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCellRenderer">PivotGridTemplateCellRenderer</see> class. 
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCellRenderer.GetFormattedText(Syncfusion.UI.Xaml.CellGrid.Styles.GridStyleInfo)">
+            <summary>
+            Returns the formatted text for the particular cell.
+            </summary>
+            <param name="style">The style of particular cell.</param>
+            <returns>The formatted text which is displayed.</returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCellRenderer.OnUpdateEditCellStyle(Syncfusion.UI.Xaml.Grid.ScrollAxis.RowColumnIndex,Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCell,Syncfusion.UI.Xaml.CellGrid.Styles.GridStyleInfo,System.String)">
+            <summary>
+            Updates the style for the edited cell.
+            </summary>
+            <param name="cellRowColumnIndex">The coordinates of the edited cell.</param>
+            <param name="uiElement">The element that holds the edited cell.</param>
+            <param name="style">The style of edited cell.</param>
+            <param name="text">The text of edited cell.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCellRenderer.OnUpdateCellStyle(Syncfusion.UI.Xaml.Grid.ScrollAxis.RowColumnIndex,Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCell,Syncfusion.UI.Xaml.CellGrid.Styles.GridStyleInfo,System.String)">
+            <summary>
+            Updates the style for the particular cell.
+            </summary>
+            <param name="cellRowColumnIndex">The coordinates of the particular cell.</param>
+            <param name="uiElement">The element that holds the particular cell.</param>
+            <param name="style">The style of particular cell.</param>
+            <param name="text">The text of particular cell.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCellRenderer.OnInitializeDisplayElement(Syncfusion.UI.Xaml.Grid.ScrollAxis.RowColumnIndex,Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCell,Syncfusion.UI.Xaml.CellGrid.Styles.GridStyleInfo,System.String)">
+            <summary>
+            Initializes the element that holds the particular cell.
+            </summary>
+            <param name="rowColumnIndex">The coordinates of the particular cell.</param>
+            <param name="uiElement">The element that holds the particular cell.</param>
+            <param name="style">The style of particular cell.</param>
+            <param name="text">The text of particular cell.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCellRenderer.OnInitializeEditElement(Syncfusion.UI.Xaml.Grid.ScrollAxis.RowColumnIndex,Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCell,Syncfusion.UI.Xaml.CellGrid.Styles.GridStyleInfo,System.String)">
+            <summary>
+            Initializes the element that holds the edited cell.
+            </summary>
+            <param name="rowColumnIndex">The coordinates of the edited cell.</param>
+            <param name="uiElement">The element that holds the edited cell.</param>
+            <param name="style">The style of edited cell.</param>
+            <param name="text">The text of edited cell.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCellRenderer.OnArrange(Syncfusion.UI.Xaml.Grid.ScrollAxis.RowColumnIndex,Windows.UI.Xaml.UIElement,Windows.Foundation.Rect)">
+            <summary>
+            Invoked when the visual children of cell is arranged in view. 
+            </summary>
+            <param name="cellRowColumnIndex">The coordinates of the particular cell.</param>
+            <param name="uiElement">The corresponding element that is to be arranged.</param>
+            <param name="rect">The size and origin for arranging the element.</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell">
+            <summary>
+            Represents the grid cell containing expander.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell.#ctor">
+            <summary>
+            Initializes the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell.PivotCellDescriptor">
+            <summary>
+            Gets or sets the pivot cell information.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell.PivotCellDescriptorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell.PivotCellDescriptor" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell.CellDescriptor">
+            <summary>
+            Gets or sets the descriptor for expander cells.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell.CellDescriptorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell.CellDescriptor" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell.IsHyperlinkCell">
+            <summary>
+            Gets or sets a value indicating whether the current cell is hyper-linked or not.
+            </summary>
+            <remarks>
+            If this property it marked as true, then the current cell will have an hyperlink control.
+            </remarks>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell.IsHyperlinkCellProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell.IsHyperlinkCell" /> dependency property.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell.ExpanderStyleProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell.ExpanderStyle" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell.GridControl">
+            <summary>
+            Gets or sets the parent Pivot Grid control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell.IsExpanded">
+            <summary>
+            Gets the value indicating whether the current cell is expanded or not.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell.HasChildren">
+            <summary>
+            Gets or sets the visibility based on child members of the current cell.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell.CellValueTextBlock">
+            <summary>
+            Gets or sets the text block that contains cell value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell.InternalExpander">
+            <summary>
+            Gets or sets the toggle button that contains expander.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell.OnApplyTemplate">
+            <summary>
+            Builds the visual tree for this control when a new template is applied.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell.OnPointerPressed(Windows.UI.Xaml.Input.PointerRoutedEventArgs)">
+            <summary>
+            Called before the <see cref="P:Windows.UI.Xaml.UIElement.RightTappedEvent">RightTapped</see> event occurs.
+            </summary>
+            <param name="e">Event data for the event.</param>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell.ExpanderClicked">
+            <summary>
+            Occurs when the expander is clicked in the cell.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell.CellClicked">
+            <summary>
+            Occurs when the cell is clicked.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.PivotGrid.PivotGridExpandHyperlinkCell.LinkClicked">
+            <summary>
+            Occurs when the link is clicked in the cell.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridHyperlinkCell">
+            <summary>
+            Represents the grid cell that does not contain expander.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridHyperlinkCell.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridHyperlinkCell">PivotGridHyperlinkCell</see> class. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridHyperlinkCell.GridBase">
+            <summary>
+            Gets or sets the internal grid used to render Pivot Grid.
+            </summary>        
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridHyperlinkCell.HAlignment">
+            <summary>
+            Gets the horizontal alignment of text block that contains cell value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridHyperlinkCell.ValueTextBlock">
+            <summary>
+            Gets or sets the text block that contains cell value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridHyperlinkCell.PivotCellDescriptor">
+            <summary>
+            Gets or sets the pivot cell information.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridHyperlinkCell.PivotCellInfosProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotCellInfo.PivotCellDescriptor" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridHyperlinkCell.CellDescriptor">
+            <summary>
+            Gets or sets the associated descriptor for each Cell
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridHyperlinkCell.CellDescriptorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotCellInfo.CellDescriptor" /> dependency property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridHyperlinkCell.OnApplyTemplate">
+            <summary>
+            Builds the visual tree for this control when a new template is applied.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.PivotGrid.PivotGridHyperlinkCell.LinkClicked">
+            <summary>
+            Occurs when the link is clicked in the cell.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridKpiCell">
+            <summary>
+            Represents the grid cell containing KPI.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridKpiCell.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridKpiCell">PivotGridKpiCell</see> class. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridKpiCell.CellDescriptor">
+            <summary>
+            Gets or sets the associated descriptor of grid cell.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridKpiCell.CellDescriptorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridKpiCell.CellDescriptor" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridKpiCell.ImageSource">
+            <summary>
+            Gets or sets the source for image to represent KPI.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridKpiCell.ImageSourceProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridKpiCell.ImageSource" /> dependency property.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCell">
+            <summary>
+            Represents the grid cell that is templated.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCell.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCell">PivotGridTemplateCell</see> class. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCell.CellDescriptor">
+            <summary>
+            Gets or sets the associated descriptor for grid cell.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCell.CellDescriptorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCell.CellDescriptor" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCell.PivotCellDescriptor">
+            <summary>
+            Gets or sets the pivot cell information.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCell.PivotCellDescriptorProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCell.PivotCellDescriptor" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCell.CustomExpander">
+            <summary>
+            Gets or sets the custom expander.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCell.GridControlBase">
+            <summary>
+            Gets or sets the internal grid used to render the Pivot Grid control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCell.IsExpanded">
+            <summary>
+            Gets the value indicating whether the current cell is expanded or not.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCell.OnApplyTemplate">
+            <summary>
+            Builds the visual tree for this control when a new template is applied.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.PivotGrid.PivotGridTemplateCell.ExpanderClicked">
+            <summary>
+            Occurs when the expander is clicked in the cell.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.ValueCellToolTipConvertor">
+            <summary>
+            Represents the converter to convert the grid style information to tool tip information.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.ValueCellToolTipConvertor.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Modifies the source data before passing it to the target for display in the UI.
+            </summary>
+            <param name="value">The source data being passed to the target.</param>
+            <param name="targetType">The <see cref="T:System.Type"/> of data expected by the target dependency property.</param>
+            <param name="parameter">An optional parameter to be used in the converter logic.</param>
+            <param name="language">The culture of the conversion.</param>
+            <returns>
+            The value to be passed to the target dependency property.
+            </returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.ValueCellToolTipConvertor.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Modifies the target data before passing it to the source object.  This method is called only in <see cref="F:System.Windows.Data.BindingMode.TwoWay"/> bindings.
+            </summary>
+            <param name="value">The target data being passed to the source.</param>
+            <param name="targetType">The <see cref="T:System.Type"/> of data expected by the source object.</param>
+            <param name="parameter">An optional parameter to be used in the converter logic.</param>
+            <param name="language">The culture of the conversion.</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo">
+            <summary>
+            Represents the style information for grid cells.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo">ExportingGridStyleInfo</see> class. 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.fontFamily">
+            <summary>
+            Gets or sets the list of font family names.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.fontStyle">
+            <summary>
+            Gets or sets the list of font styles.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.HeaderBackgroundColor">
+            <summary>
+            Gets or sets the background color of the header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.HeaderForegroundColor">
+            <summary>
+            Gets or sets the foreground color of the header.
+            </summary> 
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.HeaderRowBackgroundColor">
+            <summary>
+            Gets or sets the background color of the row header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.HeaderRowForegroundColor">
+            <summary>
+            Gets or sets the foreground color of the row header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.HeaderFontName">
+            <summary>
+            Gets or sets the font name of the header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.HeaderFontSize">
+            <summary>
+            Gets or sets the font size of the header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.HeaderFontStyle">
+            <summary>
+            Gets or sets the font style of the header.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.SummaryColumnBackgroundColor">
+            <summary>
+            Gets or sets the background color of the summary column.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.SummaryColumnForegroundColor">
+            <summary>
+            Gets or sets the foreground color of the summary column.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.SummaryRowBackgroundColor">
+            <summary>
+            Gets or sets the background color of the summary row.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.SummaryRowForegroundColor">
+            <summary>
+            Gets or sets the foreground color of the summary row.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.ValueTextColor">
+            <summary>
+            Gets or sets the font color of the value text.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.GridBackColor">
+            <summary>
+            Gets or sets the background color of the grid.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.GridlineColor">
+            <summary>
+            Gets or sets the color of the grid line.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.GridlineThickness">
+            <summary>
+            Gets or sets the thickness of the grid line.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.SummaryFontName">
+            <summary>
+            Gets or sets the font name of the summary text.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.SummaryFontSize">
+            <summary>
+            Gets or sets the font size of the summary text.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.SummaryFontStyle">
+            <summary>
+            Gets or sets the font style of the summary text.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.CellFontColor">
+            <summary>
+            Gets or sets the font color of the grid cell.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.CellFontName">
+            <summary>
+            Gets or sets the font name of the grid cell.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.CellFontStyle">
+            <summary>
+            Gets or sets the font style of the grid cell.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.CellBackgroundColor">
+            <summary>
+            Gets or sets the Background color of the value cell.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.CellFontSize">
+            <summary>
+            Gets or sets the font size of the grid cell.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.LoadStyles">
+            <summary>
+            Loads the default styles of grid cells.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.ExportingGridStyleInfo.Convert(System.String)">
+            <summary>
+            Converts the specified hex string of color to brush value.
+            </summary>
+            <param name="value">The color's hex string value.</param>
+            <returns>The brush value in type of SolidColorBrush.</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle">
+            <summary>
+            Represents the style for cells in Pivot Grid.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.Background">
+            <summary>
+            Gets or sets the background color of grid cell.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.BackgroundProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.Background" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.FontFamily">
+            <summary>
+            Gets or sets the font family of grid cell.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.FontFamilyProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.FontFamily" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.FontSize">
+            <summary>
+            Gets or sets the font size of grid cell.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.FontSizeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.FontSize" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.FontWeight">
+            <summary>
+            Gets or sets the font weight of grid cell.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.FontWeightProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.FontWeight" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.Foreground">
+            <summary>
+            Gets or sets the foreground color of grid cell.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.ForegroundProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.Foreground" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.IsHyperlinkCell">
+            <summary>
+            Gets or sets a value indicating whether the grid cell is a hyperlink cell.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.IsHyperlinkCellProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.IsHyperlinkCell" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.Style">
+            <summary>
+            Gets or sets the style for the grid cell.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.StyleProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.Style" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.TextWrapping">
+            <summary>
+            Gets or sets the value which specifies whether text wraps when it reaches the end.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.TextWrappingProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.TextWrapping" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.InternalSourceStyle">
+            <summary>
+            Gets or sets the internal source style of grid cell.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle.PropertyChanged">
+            <summary>
+            Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyleInfoIdentity">
+            <summary>
+            Class that holds the customized Grid cells rather than the default one.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyleInfoIdentity.#ctor(Syncfusion.UI.Xaml.CellGrid.Styles.GridVolatileCellStyles,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyleInfoIdentity">PivotGridCellStyleInfoIdentity</see> class. 
+            </summary>
+            <param name="data">The data reference to <see cref="T:Syncfusion.UI.Xaml.CellGrid.Styles.GridVolatileCellStyles"/>.</param>
+            <param name="rowIndex">The index of the row.</param>
+            <param name="colIndex">The index of the column.</param>
+            <param name="offline">To identify whether it is off-line.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyleInfoIdentity.#ctor(Syncfusion.UI.Xaml.CellGrid.Styles.GridVolatileCellStyles,Syncfusion.UI.Xaml.Grid.ScrollAxis.RowColumnIndex,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyleInfoIdentity">PivotGridCellStyleInfoIdentity</see> class. 
+            </summary>
+            <param name="data">The data reference to <see cref="T:Syncfusion.UI.Xaml.CellGrid.Styles.GridVolatileCellStyles"/>.</param>
+            <param name="pos">The coordinates of row column position.</param>
+            <param name="offline">To identify whether it is off-line.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyleInfoIdentity.#ctor(Syncfusion.UI.Xaml.CellGrid.Styles.GridVolatileCellStyles,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyleInfoIdentity">PivotGridCellStyleInfoIdentity</see> class. 
+            </summary>
+            <param name="data">The data reference to <see cref="T:Syncfusion.UI.Xaml.CellGrid.Styles.GridVolatileCellStyles"/>.</param>
+            <param name="rowIndex">The index of the row.</param>
+            <param name="colIndex">The index of the column.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyleInfoIdentity.#ctor(Syncfusion.UI.Xaml.CellGrid.Styles.GridVolatileCellStyles,Syncfusion.UI.Xaml.Grid.ScrollAxis.RowColumnIndex)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyleInfoIdentity">PivotGridCellStyleInfoIdentity</see> class. 
+            </summary>
+            <param name="data">The data reference to <see cref="T:Syncfusion.UI.Xaml.CellGrid.Styles.GridVolatileCellStyles"/>.</param>
+            <param name="pos">The coordinates of row column position.</param>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyleInfoIdentity.CellDescriptor">
+            <summary>
+            Gets the descriptor of grid cell.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyleInfoIdentity.PivotCellDescriptor">
+            <summary>
+            Gets the pivot cell information.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyleInfoIdentity.Data">
+            <summary>
+            Gets the data reference to <see cref="T:Syncfusion.UI.Xaml.CellGrid.Styles.GridVolatileCellStyles"/>.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyleInfoIdentity.IsHyperlinkCell">
+            <summary>
+            Gets or sets a value indicating whether the grid cell is a hyperlink cell.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyleInfoIdentity.Style">
+            <summary>
+            Gets or sets the style of grid cell.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridModel">
+            <summary>
+            Represents the grid model for Pivot Grid control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridModel.#ctor(Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridModel">PivotGridModel</see> class. 
+            </summary>
+            <param name="grid">The internal grid control.</param>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridModel.Item(System.Int32,System.Int32)">
+            <summary>
+            Gets the <see cref="T:Syncfusion.UI.Xaml.CellGrid.Styles.GridStyleInfo"/> object associated with a particular cell.
+            </summary>
+            <param name="rowIndex">The row index of the cell</param>
+            <param name="colIndex">The column index of the cell</param>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridModel.Engine">
+            <summary>
+            Gets or sets the engine data for the grid model.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridModel.Grid">
+            <summary>
+            Gets the internal grid.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridModel.OnQueryCellInfo(Syncfusion.UI.Xaml.CellGrid.Styles.GridQueryCellInfoEventArgs)">
+            <summary>
+            Called before the <see cref="E:Syncfusion.UI.Xaml.CellGrid.GridModel.QueryCellInfo">QueryCellInfo</see> event occurs.
+            </summary>
+            <param name="e">Event data for the event.</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.PivotEditingManager">
+            <summary>
+            PivotEditingManager provides editing support for value cells in the PivotGrid control. You can enable this support
+            by setting SfPivotGrid.EnableValueEditing to true.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotEditingManager.#ctor(Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid)">
+            <summary>
+            Handles the event while editing the Pivot values.
+            </summary>
+            <param name="pivotGrid">The SfPivotGrid control.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotEditingManager.Dispose">
+            <summary>
+            Clears Undo/Redo lists and un-subscribes the events.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotEditingManager.HideExpanders">
+            <summary>
+            Gets or sets whether the expanders are visible.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotEditingManager.AllowEditingOfTotalCells">
+            <summary>
+            Gets or sets whether the user can edit total cells.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Syncfusion.UI.Xaml.PivotGrid.PivotEditingManager.ChangeValue(System.Object,System.Object,System.Int32,System.Int32,Syncfusion.PivotAnalysis.UWP.PivotCellInfo)" -->
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotEditingManager.PivotValueEditedArgs.Handled">
+            <summary>
+            Gets or sets whether the EditManager should adjust display values based on the 
+            edited change. If you set Handled to true, the EditManager will not make any
+            display changes. If you set Handled to false, the EditManager will adjust the
+            changed cell and any cell that depends upon it.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotEditingManager.PivotValueEditedArgs.PivotRowIndex">
+            <summary>
+            Gets the row index of the cell that was edited in the Grid.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotEditingManager.PivotValueEditedArgs.PivotColumnIndex">
+            <summary>
+            Gets the column index of the cell that was edited in the Grid.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotEditingManager.PivotValueEditedArgs.PivotCellInfo">
+            <summary>
+            Gets the PivotCellInfo of the cell that was edited.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotEditingManager.PivotValueEditedArgs.OldValue">
+            <summary>
+            Gets the value from the cell before editing.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotEditingManager.PivotValueEditedArgs.NewValue">
+            <summary>
+            Gets the new value entered into the cell.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.PivotUpdatingManager">
+            <summary>
+            This class allows a PivotGridControl to automatically respond to changes in the underlying data.
+            You can enable this support by setting <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.EnableUpdating"/> to true. 
+            </summary>
+            <remarks>
+            In-order for the PivotGridControl to automatically respond to the changes in the underlying data, the underlying data must be either:
+                A)an IList&lt;T&gt; where T implements both INotifyPropertyChanging and INotifyPropertyChanged. Additionally, the IList must also
+                implement INotifyCollectionChanged or IBindingList.
+            </remarks>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotUpdatingManager.#ctor(Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.PivotUpdatingManager"/> class.
+            </summary>
+            <param name="grid">The PivotGidControl that should be responding to updates.</param>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotUpdatingManager.ThrottleUpdateRate">
+            <summary>
+            Gets or sets a millisecond value for time between UI refreshes. Zero indicates immediate refreshes of the UI 
+            without delays. Throttling the refresh rate can minimize CPU usage. The default value is zero, but depending
+            upon your updating rate, values of 300 to 500 msecs may give lower CPU usage.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotUpdatingManager.Dispose(System.Boolean)">
+            <summary>
+            Unsubscribe to certain events that were subscribed to when this object was created.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotUpdatingManager.UpdateRefreshHelper_CollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Override this method to control the response to a collection changed event for a list that implements the ICollectionChanged.
+            </summary>
+            <param name="sender">The ICollectionChanged collection.</param>
+            <param name="e">The <see cref="T:System.Collections.Specialized.NotifyCollectionChangedEventArgs"/>contains the event data.</param>        
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridVisualStyle">
+            <summary>
+            Represents the constants that specify different kinds of visual style for Pivot Grid control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridVisualStyle.Blend">
+            <summary>
+            Pivot Grid control is applied with Blend style.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridVisualStyle.Lime">
+            <summary>
+            Pivot Grid control is applied with Lime style.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridVisualStyle.Metro">
+            <summary>
+            Pivot Grid control is applied with Metro style.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridVisualStyle.Office2010Black">
+            <summary>
+            Pivot Grid control is applied with Office2010Black style.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridVisualStyle.Office2010Blue">
+            <summary>
+            Pivot Grid control is applied with Office2010Blue style.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridVisualStyle.Office2010Silver">
+            <summary>
+            Pivot Grid control is applied with Office2010Silver style.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridVisualStyle.Office2013DarkGray">
+            <summary>
+            Pivot Grid control is applied with Office2013DarkGray style.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridVisualStyle.Office2013LightGray">
+            <summary>
+            Pivot Grid control is applied with Office2013LightGray style.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridVisualStyle.Office2013White">
+            <summary>
+            Pivot Grid control is applied with Office2013White style.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridVisualStyle.Office2016Colorful">
+            <summary>
+            Pivot Grid control is applied with Office2016Colorful style.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridVisualStyle.Office2016DarkGray">
+            <summary>
+            Pivot Grid control is applied with Office2016DarkGray style.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridVisualStyle.Office2016White">
+            <summary>
+            Pivot Grid control is applied with Office2016White style.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridVisualStyle.Office365">
+            <summary>
+            Pivot Grid control is applied with Office365 style.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridVisualStyle.Saffron">
+            <summary>
+            Pivot Grid control is applied with Saffron style.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridVisualStyle.VisualStudio2013">
+            <summary>
+            Pivot Grid control is applied with VisualStudio2013 style.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridVisualStyle.VisualStudio2015">
+            <summary>
+            Pivot Grid control is applied with VisualStudio2015 style.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataConditionType">
+            <summary>
+            Specifies the type of condition to be used in Conditional Formatting.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataConditionType.Equals">
+            <summary>
+            Performs an Equals opertion on the operands.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataConditionType.NotEquals">
+            <summary>
+            Performs a NotEquals operation on the operands.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataConditionType.LessThan">
+            <summary>
+            Performs a LessThan operation on the operands.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataConditionType.LessThanOrEqual">
+            <summary>
+            Performs a LessThanOrEqual operation on the operands.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataConditionType.GreaterThan">
+            <summary>
+            Performs a GreatherThan operation on the operands.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataConditionType.GreaterThanOrEqual">
+            <summary>
+            Performs a GreaterThanOrEqual operation on the operands.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataConditionType.Between">
+            <summary>
+            Performs a Between operation on the operands.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridDrillDownEventArgs">
+            <summary>
+            Represents the event data related to drill down occur in Pivot Grid control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridDrillDownEventArgs.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridDrillDownEventArgs"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridDrillDownEventArgs.#ctor(Windows.UI.Xaml.UIElement)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridDrillDownEventArgs"/> class.
+            </summary>
+            <param name="gridArea">The grid area.</param>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridDrillDownEventArgs.GridArea">
+            <summary>
+            Gets or sets the grid area.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridDrillDownEventArgs.ShowDefaultIndicator">
+            <summary>
+            Gets or sets a value indicating whether to show the default indicator.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridDrillDownEventArgs.CellDescriptor">
+            <summary>
+            Gets or sets the descriptor for the associated grid cell.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridDrillDownEventArgs.PivotCellDescriptor">
+            <summary>
+            Gets or sets the pivot cell information.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.LinkLabelEventArgs">
+            <summary>
+            Represents the event data related to hyperlink in Pivot Grid control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.LinkLabelEventArgs.#ctor(Syncfusion.Olap.UWP.Engine.PivotCellDescriptor)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.LinkLabelEventArgs"/> class.
+            </summary>
+            <param name="cellDescriptor">The descriptor of associated cell.</param>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.LinkLabelEventArgs.CellDescriptor">
+            <summary>
+            Gets or sets the descriptor for the associated cell.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridSelectionChangedEventArgs">
+            <summary>
+            A class containing event data related to after selection change in PivotGridControl.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridSelectionChangedEventArgs.#ctor(Syncfusion.UI.Xaml.CellGrid.GridRangeInfo,Syncfusion.UI.Xaml.PivotGrid.SelectedItems)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridSelectionChangedEventArgs"/> class.
+            </summary>
+            <param name="RangeInfo">The range information of grid cell.</param>
+            <param name="SelectedItems">The items that are selected.</param>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridSelectionChangedEventArgs.CellRangeInfo">
+            <summary>
+            Gets the range information of grid cell.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridSelectionChangedEventArgs.SelectedItems">
+            <summary>
+            Gets the selected items in the IEnumerable form of rows, columns and values.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.LinkLabelClickEventHandler">
+            <summary>
+            Represents the method that handles the event raised when the hyperlink is clicked.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridDrillDownEventHandler">
+            <summary>
+            Represents the method that handles the event raised when the drill down operation is performed.
+            </summary>
+            <param name="sender">The object where the event handler is attached.</param>
+            <param name="e">The event data.</param>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.SelectionChangedEventHandler">
+            <summary>
+            Represents the method that handles the event raised when the cell is selected.
+            </summary>
+            <param name="sender">The object where the event handler is attached.</param>
+            <param name="e">The event data.</param>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.DependencyObjectExtensions.FindParentElementOfType``1(Windows.UI.Xaml.FrameworkElement)">
+            <summary>
+            Gets the parent element of the specified framework element in the visual tree.
+            </summary>
+            <typeparam name="T">The type of parent element.</typeparam>
+            <param name="element">The child element.</param>
+            <returns>The parent element.</returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid">
+            <summary>
+            Summarizes a large amount of information and represents it in a cross-tabulated form.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid">SfPivotGrid</see> class. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.InternalGrid">
+            <summary>
+            Gets or sets the internal grid.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.GridArea">
+            <summary>
+            Gets or sets the grid area.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.EditManager">
+             <summary>
+             Gets or sets a reference to a class that facilitates editing of value cells. To enable this support,
+             set <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.EnableValueEditing"/> to true.
+             </summary>
+             <remarks>
+             The EditManager handles direct editing of value cell contents. The <see cref="F:Syncfusion.UI.Xaml.PivotGrid.PivotEditingManager.PivotValueEdited"/>
+             event to allow for controlling what happens as the cell as the user leaves the cell. You should handle this event if
+             you want to do any actions when a cell is completed. The default behavior will adjust the edit cell value so the newly typed entry
+             is displayed. Also, any display value that depends upon this edited cell will also be updated. If you set e.Handled = true
+             when you handle the event, then EditManager will make no changes to the displayed information, and it would be up to you
+             to make any adjustments you want to see.
+             
+             The EditManager also has public properties <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotEditingManager.AllowEditingOfTotalCells"/> 
+             that control whether you can edit Total cells 
+            
+             </remarks>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.UpdateManager">
+            <summary>
+            Gets or sets a reference to a class that facilitates the PivotGrid getting automatically updating itself due to changes in the underlying data. To enable this support,
+            set <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.EnableUpdating"/> to true.
+            </summary>
+            <remarks>
+            In order for the PivotGrid control to automatically respond to the changes in the underlying data, the underlying data must be either:
+                A)  an IList&lt;T&gt; where T implements both INotifyPropertyChanging and INotifyPropertyChanged. Additionally, the IList must also
+                implement INotifyCollectionChanged or IBindingList.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.AllowedFields">
+            <summary>
+            Gets a collection of Syncfusion.PivotAnalysis.UWP.FieldInfo objects that
+            hold field names that you want to get visible in the engine. The names can
+            be either public property names of the underlying data objects, or they can
+            be expression field.
+            </summary>
+            <remarks>
+            If your data contains fields that you do not want exposed to the pivoting
+            process, then add the names of the properties you want to include to this
+            list. All other fields will be excluded. If you leave this collection empty,
+            the default behavior will be to make all public properties available for
+            use in the PivotTable.  To add an expression field, set the FieldInfo.FieldType
+            to FieldsType.Expression and set FieldInfo.Expression to be a string holding
+            a well formed expression defining the value that should appear in this field.
+            </remarks>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.OlapDataManager">
+            <summary>
+            Gets or sets the OLAP data manager.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.OlapDataManagerProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.OlapDataManager" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.Layout">
+            <summary>
+            Gets or sets the grid layout to represent the data.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.LayoutProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.Layout" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.GridStyleInfo">
+            <summary>
+            Gets or sets the style information for grid cells.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.GridStyleInfoProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.GridStyleInfo" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ColumnHeaderStyle">
+            <summary>
+            Gets or sets the style for column header cells.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ColumnHeaderStyleProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ColumnHeaderStyle" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.SummaryRowStyle">
+            <summary>
+            Gets or sets the style for summary row cells.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.SummaryRowStyleProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.SummaryRowStyle" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.SummaryColumnStyle">
+            <summary>
+            Gets or sets the style for summary column cells.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.SummaryColumnStyleProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.SummaryColumnStyle" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.RowHeaderStyle">
+            <summary>
+            Gets or sets the style for row header cells.
+            </summary>
+            <value>The row header style.</value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.RowHeaderStyleProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.RowHeaderStyle" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ValueCellStyle">
+            <summary>
+            Gets or sets the style for value cells.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ValueCellStyleProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ValueCellStyle" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.GridVisualStyle">
+            <summary>
+            Gets or sets the visual style for pivot grid.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.GridVisualStyleProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.GridVisualStyle" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.FreezeHeaders">
+            <summary>
+            Gets or sets a value indicating whether to freeze the row and column headers or not.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.FreezeHeadersProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.FreezeHeaders" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ShowValueCellToolTip">
+            <summary>
+            Gets or sets a value indicating whether to show or hide the tool tip for value cells.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ShowValueCellToolTipProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ShowValueCellToolTip" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ShowHeaderCellsToolTip">
+            <summary>
+            Gets or sets a value indicating whether to show or hide the tool tip for header cells.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ShowHeaderCellsToolTipProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ShowHeaderCellsToolTip" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.EnableUpdating">
+            <summary>
+            Gets or sets a value to enable updating of PivotValues.
+            </summary>
+            <remarks>
+            This is applicable only for relational data source.
+            </remarks>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.EnableUpdatingProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.EnableUpdating"/> dependency property.
+            </summary>
+            <returns>
+            The identifier for the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.EnableUpdating"/> dependency property.
+            </returns>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.EnableValueEditing">
+            <summary>
+            Gets or sets a value indication whether to edit the value cells or not.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.EnableValueEditingProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.EnableValueEditing"/> dependency property.
+            </summary>
+            <returns>
+            The identifier for the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.EnableValueEditing"/> dependency property.
+            </returns>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.AllowSelection">
+            <summary>
+            Gets or sets a value indicating whether to allow cell selection or not.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.AllowSelectionProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.AllowSelection" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ShowSubTotals">
+            <summary>
+            Gets or sets value indicating whether sub-total calculations should be shown or hidden.
+            </summary>
+            <remarks>
+            This is applicable only for relational data source.
+            The default value is true.
+            </remarks>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ShowSubTotalsProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ShowSubTotals"/> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ShowRowSubTotals">
+            <summary>
+            Gets or sets value indicating whether row sub-total calculations should be shown or hidden.
+            </summary>
+            <remarks>
+            This is applicable only for relational data source.
+            The default value is false.
+            </remarks>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ShowRowSubTotalsProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ShowRowSubTotals"/> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ShowColumnSubTotals">
+            <summary>
+            Gets or sets value indicating whether column sub-total calculations should be shown or hidden.
+            </summary>
+            <remarks>
+            This is applicable only for relational data source.
+            The default value is false.
+            </remarks>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ShowColumnSubTotalsProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ShowColumnSubTotals"/> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ValueCellTextAlignment">
+            <summary>
+            Gets or sets the text alignment for value cells.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ValueCellTextAlignmentProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ValueCellTextAlignment" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ShowProcessingBar">
+            <summary>
+            Gets or sets a value indicating whether the progressing bar should be shown or not.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ShowProcessingBarProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ShowProcessingBar" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.GridLineStroke">
+            <summary>
+            Gets or sets the stroke for grid lines.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.GridLineStrokeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.GridLineStroke" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.GridLineThickness">
+            <summary>
+            Gets or sets the thickness of grid lines.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.GridLineThicknessProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.GridLineThickness" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ExpanderStyle">
+            <summary>
+            Gets or sets the style for expanders available in grid.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ExpanderStyleProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ExpanderStyle" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.PivotRows">
+            <summary>
+            Gets the collection of PivotItems of PivotRows when using relational data source
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.PivotColumns">
+            <summary>
+            Gets the collection of PivotItems of PivotColumns when using the relational data source.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.PivotCalculations">
+            <summary>
+            Gets the collection of PivotCalculations when using relational data source.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.Filters">
+            <summary>
+            Gets the collection of filter expressions when using relational data source.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.LoadWithDefaultPropertyFields" -->
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.LoadWithDefaultPropertyFieldsProperty">
+            <summary>
+            Loads with default properties available in ItemsSource.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.LoadInBackground">
+            <summary>
+            Gets or sets whether the PivotGrid needs to be updated on the background using unique UI thread.
+            </summary>
+            <remarks>
+            This is applicable only for relational data source.
+            </remarks>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.LoadInBackgroundProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.Controls.PivotGrid.LoadInBackground"/> dependency property.
+            </summary>
+            
+            <returns>
+            The identifier for the <see cref="P:Syncfusion.UI.Xaml.Controls.PivotGrid.LoadInBackground"/> dependency property.
+            </returns>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.SelectedCell">
+            <summary>
+            Gets or sets the cell that is selected in Pivot Grid.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.SelectedCellProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.SelectedCell" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.SelectedItems">
+            <summary>
+            Gets the selected items which is an IEnumerable collection of columns, rows and values.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.SelectedItemsProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.SelectedItems" /> dependency property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.RaiseLoadInBackgroundCompleted">
+            <summary>
+            Event raised when the Pivot completes its construction, when <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.LoadInBackground"/> is set to true.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.AllowResizeColumns">
+            <summary>
+            Gets or sets a value indicating whether to allow columns to resize or not.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.AllowResizeColumnsProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.AllowResizeColumns" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.AllowResizeRows">
+            <summary>
+            Gets or sets a value indicating whether to allow rows to resize or not.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.AllowResizeRowsProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.AllowResizeRows" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ResizeColumnsToFit">
+            <summary>
+            Gets or sets a value indicating whether to resize the columns to fit the grid based on values or not.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ResizeColumnsToFitProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ResizeColumnsToFit" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ResizeRowsToFit">
+            <summary>
+            Gets or sets a value indicating whether to resize the rows to fit the grid based on values or not.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ResizeRowsToFitProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ResizeRowsToFit" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.EnableConditionalFormat">
+            <summary>
+            Gets or sets a value indiating whether to enable or disable conditional format.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.EnableConditionalFormatProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.EnableConditionalFormat" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ConditionalFormats">
+            <summary>
+            Gets or sets the collection of conditional format to be applied for Pivot Grid.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ConditionalFormatsProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ConditionalFormats" /> dependency property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.OnApplyTemplate">
+            <summary>
+            Builds the visual tree for this control when a new template is applied.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.PopulateDefaultPropertyFields">
+            <summary>
+            Populates default property fields.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.DataBind">
+            <summary>
+            Binds a data source to the Pivot Grid control and all its child controls.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.Refresh">
+            <summary>
+            Refreshes the grid to update values in grid cells.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.LoadInBackgroundCompleted">
+            <summary>
+            Occurs when LoadInBackGround operations completed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.AfterRefresh">
+            <summary>
+            Occurs after the data gets refreshed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.BeforeRefresh">
+            <summary>
+            Occurs before the data gets refreshed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.LinkClick">
+            <summary>
+            Occurs when the hyperlink is clicked.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.SelectionChanged">
+            <summary>
+            Occurs when the cell gets selected in the Pivot Grid.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.NamespaceDoc">
+            <summary>
+            The Syncfusion.UI.Xaml.PivotGrid namespace contains classes for summarizing OLAP data in a tabulated form.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase">
+            <summary>
+            Defines the internal Grid control which is used to form the Pivot Grid control.
+            It derives from <see cref="T:Syncfusion.UI.Xaml.CellGrid.SfCellGrid"/> and hence share the basic characteristics of the Cell Grid control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase">PivotGridControlBase</see> class. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.Layout">
+            <summary>
+            Gets or sets the layout for the Pivot Grid control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.FreezeHeaders">
+            <summary>
+            Gets or sets a value indicating whether the header cells are frozen.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.ValueCellTextAlignment">
+            <summary>
+            Gets or sets the horizontal alignment of text in value cells.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.GridLineStroke">
+            <summary>
+            Gets or sets the stroke of grid lines.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.GridLineThickness">
+            <summary>
+            Gets or sets the thickness of grid lines.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.DataManager">
+            <summary>
+            Gets or sets the OLAP data manager.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.Model">
+            <summary>
+            Gets the model of Pivot Grid control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.ColumnHeaderStyle">
+            <summary>
+            Gets or sets the style for column header cells.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.RowHeaderStyle">
+            <summary>
+            Gets or sets the style for row header cells.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.SummaryColumnStyle">
+            <summary>
+            Gets or sets the style for summary column cells.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.SummaryRowStyle">
+            <summary>
+            Gets or sets the style for summary row cells.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.ValueCellStyle">
+            <summary>
+            Gets or sets the style for value cells.
+            </summary>
+            <value>The value cells style.</value>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.ShowHeaderCellsToolTip">
+            <summary>
+            Gets or sets a value indicating whether to show or hide the tool tip for header cells.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.ShowHeaderCellsToolTipProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.ShowHeaderCellsToolTip" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.ShowValueCellToolTip">
+            <summary>
+            Gets or sets a value indicating whether to show or hide the tool tip for value cells.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.ShowValueCellToolTipProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.ShowValueCellToolTip" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.ResizeColumnsToFit">
+            <summary>
+            Gets or sets a value indicating whether to resize the columns to fit the grid based on values or not.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.ResizeColumnsToFitProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ResizeColumnsToFit" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.ResizeRowsToFit">
+            <summary>
+            Gets or sets a value indicating whether to resize the rows to fit the grid based on values or not.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.ResizeRowsToFitProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid.ResizeRowsToFit" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.Engine">
+            <summary>
+            Gets or sets the engine data for Pivot Grid control.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.EngineProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.Engine" /> dependency property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.InitializeCellRendererCollection">
+            <summary>
+            Initializes the collection of renderer used to render the grid.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.OnCreateModel">
+            <summary>
+            Creates a new instance for <see cref="T:Syncfusion.UI.Xaml.CellGrid.GridModel"/>.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.DataBind">
+            <summary>
+            Binds the data to render the Pivot Grid control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.DataBind(Syncfusion.Olap.UWP.Engine.PivotEngine)">
+            <summary>
+            Binds the specified engine data for rendering the Pivot Grid control.
+            </summary>
+            <param name="engine">The pivot engine data.</param>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.AfterRefresh">
+            <summary>
+            Occurs after the data gets refreshed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.BeforeRefresh">
+            <summary>
+            Occurs before the data gets refreshed.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.UI.Xaml.PivotGrid.PivotGridControlBase.LinkClick">
+            <summary>
+            Occurs when the hyperlink cell is clicked.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataConditionalFormat">
+            <summary>
+            Represents the information needed for fomatting Pivot Grid based on conditions.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataConditionalFormat.Conditions">
+            <summary>
+            Gets or sets the conditions.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataConditionalFormat.ConditionsProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataConditionalFormat.Conditions" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataConditionalFormat.CellStyle">
+            <summary>
+            Gets or sets the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridCellStyle"/> for the specified condition.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataConditionalFormat.CellStyleProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataConditionalFormat.CellStyle" /> dependency property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataConditionalFormat.ApplyFormat(System.Object,System.String)">
+            <summary>
+            Checks whether the current cell qualifies for conditional formatting
+            </summary>
+            <param name="cellInfo">The cell info.</param>
+            <param name="associatedMeasure">The associated measure.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataConditionalFormat.GetCompliedDelegate(System.Object,System.String)">
+            <summary>
+            Gets the complied delegate.
+            </summary>
+            <param name="cellInfo">The cell info.</param>
+            <param name="associatedMeasure">The associated measure.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataConditionalFormat.Predicate(System.Linq.Expressions.ParameterExpression,Syncfusion.UI.Xaml.PivotGrid.PivotGridDataConditionType,System.Object)">
+            <summary>
+            Returns the Predicate based on ConditionType and Parameter Expression
+            </summary>
+            <param name="paramExp">The param exp.</param>
+            <param name="pivotGridDataConditionType">Type of the pivot grid data condition.</param>
+            <param name="value">The value.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataCondition">
+            <summary>
+            Represents the data condition used for formatting Pivot Grid.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataCondition.ConditionType">
+            <summary>
+            Gets or sets the type of the condition.
+            </summary>
+            <value>The type of the condition.</value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataCondition.ConditionTypeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataCondition.ConditionType" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataCondition.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+            <value>The value.</value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataCondition.ValueProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataCondition.Value" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataCondition.PredicateType">
+            <summary>
+            Gets or sets the type of the predicate.
+            </summary>
+            <value>The type of the predicate.</value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataCondition.PredicateTypeProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataCondition.PredicateType" /> dependency property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataCondition.MeasureElement">
+            <summary>
+            Gets or sets the name of measure element for which formatting need to be applied.
+            </summary>
+            <value>The name of the measure element.</value>
+        </member>
+        <member name="F:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataCondition.MeasureElementProperty">
+            <summary>
+            Identifies the <see cref="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridDataCondition.MeasureElement" /> dependency property.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridSerializer">
+            <summary>
+            This class is used to serialize some important properties in SfPivotGrid control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridSerializer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridSerializer"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.PivotGridSerializer.#ctor(Syncfusion.UI.Xaml.PivotGrid.SfPivotGrid)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.PivotGridSerializer"/> class.
+            </summary>
+            <param name="ctrl">The SfPivotGrid control.</param>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridSerializer.PivotRows">
+            <summary>
+            Gets or sets the row based PivotItems..
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridSerializer.PivotColumns">
+            <summary>
+            Gets or sets the column based PivotItems.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridSerializer.PivotCalculations">
+            <summary>
+            Gets or sets the PivotCalculations.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridSerializer.Filters">
+            <summary>
+            Gets or sets the filter expressions.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridSerializer.GridFilterCollection">
+            <summary>
+            Gets or sets the filter collection of SfPivotGrid.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridSerializer.HiddenRowGroups">
+            <summary>
+            Gets or sets the list of hidden rows.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridSerializer.HiddenColumnGroups">
+            <summary>
+            Gets or sets the list of hidden columns.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.PivotGridSerializer.IgnoreExpandCollapseOnSerialization">
+            <summary>
+            Gets or sets a value indicating whether to ignore expand/collapse state of cells on serialization.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.ClassReferenceAttribute">
+            <summary>
+            Represents the class that defines the attribute for class reference.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ClassReferenceAttribute.IsReviewed">
+            <summary>
+            Gets or sets a value indicating whether the attribute is reviewed.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ClassReferenceAttribute.ShouldInclude">
+            <summary>
+            Gets or sets a value indicating whether the attribute should be included.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.ResourceWrapper">
+            <summary>
+            Represents a wrapper that is used to apply static resources to Pivot Grid's components.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.ResourceWrapper.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.ResourceWrapper">ResourceWrapper</see> class. 
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ResourceWrapper.Measure">
+            <summary>
+            Gets or sets the localized string for 'Measure'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ResourceWrapper.Value">
+            <summary>
+            Gets or sets the localized string for 'Value'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ResourceWrapper.Column">
+            <summary>
+            Gets or sets the localized string for 'Column'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ResourceWrapper.Row">
+            <summary>
+            Gets or sets the localized string for 'Row'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ResourceWrapper.Ok">
+            <summary>
+            Gets or sets the localized string for 'Ok'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ResourceWrapper.Cancel">
+            <summary>
+            Gets or sets the localized string for 'Cancel'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ResourceWrapper.ConditionType">
+            <summary>
+            Gets or sets the localized string for 'ConditionType'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ResourceWrapper.Value1">
+            <summary>
+            Gets or sets the localized string for 'Value1'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ResourceWrapper.Value2">
+            <summary>
+            Gets or sets the localized string for 'Value2'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ResourceWrapper.CellColor">
+            <summary>
+            Gets or sets the localized string for 'CellColor'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ResourceWrapper.FontStyle">
+            <summary>
+            Gets or sets the localized string for 'FontStyle'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ResourceWrapper.FontSize">
+            <summary>
+            Gets or sets the localized string for 'FontSize'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ResourceWrapper.ConditionalFormatEditor">
+            <summary>
+            Gets or sets the localized string for 'ConditionalFormatEditor'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ResourceWrapper.PivotGridBusyIndicatorLoadingDescription">
+            <summary>
+            Gets or sets the localized string for 'Loading Description for BusyIndicator when the grid was loded in unique thread'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ResourceWrapper.PredicateType">
+            <summary>
+            Gets or sets the localized string for 'PredicateType'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ResourceWrapper.Foreground">
+            <summary>
+            Gets or sets the localized string for 'PredicateType'.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.ResourceWrapper.FontWeight">
+            <summary>
+            Gets or sets the localized string for 'FontWeight'.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.SelectedItems">
+            <summary>
+            Defines the IEnumerable collection of selected items in the grid.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.UI.Xaml.PivotGrid.SelectedItem">
+            <summary>
+            Represents the selected item which contains information of row, column and value.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.SelectedItem.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.UI.Xaml.PivotGrid.SelectedItem"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SelectedItem.Column">
+            <summary>
+            Gets the column of selected item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SelectedItem.Row">
+            <summary>
+            Gets the row of selected item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SelectedItem.ColumnList">
+            <summary>
+            Gets or sets the list of columns that are selected.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SelectedItem.RowList">
+            <summary>
+            Gets or sets the list of rows that are selected.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SelectedItem.Value">
+            <summary>
+            Gets or sets the value of selected item.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.UI.Xaml.PivotGrid.SelectedItem.FormattedValue">
+            <summary>
+            Gets or sets the formatted value of selected item.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.SelectedItem.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this instance.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.Syncfusion_SfPivotGrid_UWP_2015_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.Type)">
+            <summary>
+            GetXamlType(Type)
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.Syncfusion_SfPivotGrid_UWP_2015_XamlTypeInfo.XamlMetaDataProvider.GetXamlType(System.String)">
+            <summary>
+            GetXamlType(String)
+            </summary>
+        </member>
+        <member name="M:Syncfusion.UI.Xaml.PivotGrid.Syncfusion_SfPivotGrid_UWP_2015_XamlTypeInfo.XamlMetaDataProvider.GetXmlnsDefinitions">
+            <summary>
+            GetXmlnsDefinitions()
+            </summary>
+        </member>
+    </members>
+</doc>

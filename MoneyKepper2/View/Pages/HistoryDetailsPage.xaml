@@ -1,0 +1,83 @@
+﻿<local:PageBase
+    x:Class="MoneyKepper2.View.Pages.HistoryDetailsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:pivots="using:Syncfusion.PivotAnalysis.UWP"
+    xmlns:syncfusion="using:Syncfusion.UI.Xaml.PivotChart"
+    xmlns:syncCharts="using:Syncfusion.UI.Xaml.Charts"
+    xmlns:local="using:MoneyKepper2.View.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    DataContext="{Binding HistoryDetailsViewModel,Source={StaticResource Locator}}">
+
+    <Grid>
+        <syncfusion:SfPivotChart 
+            MaxWidth="800"
+            Height="600"
+            Padding="15,15"
+            Visibility="{Binding ShowCategoriesGraph,Converter={StaticResource BooleanToVisibilityConverter} }" 
+            ItemSource="{Binding CategoryItems}">
+            <syncfusion:SfPivotChart.PivotAxis>
+                <pivots:PivotItem FieldCaption="Month" FieldMappingName="Month" TotalHeader="Total"/>
+            </syncfusion:SfPivotChart.PivotAxis>
+            <syncfusion:SfPivotChart.PivotLegend>
+                <pivots:PivotItem FieldCaption="CategoryName" FieldMappingName="CategoryName" TotalHeader="Total"/>
+            </syncfusion:SfPivotChart.PivotLegend>
+            <syncfusion:SfPivotChart.PivotCalculations>
+                <pivots:PivotComputationInfo FieldCaption="Amount" FieldName="Amount" Format="#.##" SummaryType="DoubleTotalSum"/>
+            </syncfusion:SfPivotChart.PivotCalculations>
+        </syncfusion:SfPivotChart>
+
+        <ScrollViewer HorizontalScrollBarVisibility="Auto">
+        <syncCharts:SfChart
+           Width="800"
+            Height="600"
+            Padding="15,15"
+            Visibility="{Binding ShowCategoriesGraph,Converter={StaticResource BooleanToVisibilityConverter},ConverterParameter=Invert}"
+            Palette="Custom"
+            Header="השוואת הוצאות הכנסות" >
+
+            <!--Initialize the horizontal axis for SfChart-->
+            <syncCharts:SfChart.PrimaryAxis>
+                <syncCharts:CategoryAxis Header="חודשים" FontSize="14"/>
+            </syncCharts:SfChart.PrimaryAxis>
+
+
+            <!--Initialize the vertical axis for SfChart-->
+            <syncCharts:SfChart.SecondaryAxis>
+                <syncCharts:NumericalAxis Header="ערכים" FontSize="14"/>
+            </syncCharts:SfChart.SecondaryAxis>
+
+
+            <!--Adding Legend to the SfChart-->
+            <syncCharts:SfChart.Legend>
+                <syncCharts:ChartLegend Visibility="Visible"/>
+            </syncCharts:SfChart.Legend>
+
+
+            <!--Initialize the series for SfChart-->
+            <syncCharts:ColumnSeries 
+                Label="הוצאות" 
+                ItemsSource="{Binding MonthItems}" 
+                XBindingPath="Month" 
+                YBindingPath="Expenses" />
+
+            <syncCharts:ColumnSeries 
+                Label="הכנסות" 
+                ItemsSource="{Binding MonthItems}" 
+                XBindingPath="Month" 
+                YBindingPath="Income" />
+            <!--castomize color of chart-->
+            <syncCharts:SfChart.ColorModel>
+                <syncCharts:ChartColorModel>
+                    <syncCharts:ChartColorModel.CustomBrushes>
+                        <SolidColorBrush Color="Red"/>
+                        <SolidColorBrush Color="Green"/>
+                    </syncCharts:ChartColorModel.CustomBrushes>
+                </syncCharts:ChartColorModel>
+            </syncCharts:SfChart.ColorModel>
+        </syncCharts:SfChart>
+        </ScrollViewer>
+    </Grid>
+</local:PageBase>

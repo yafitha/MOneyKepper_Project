@@ -1,0 +1,7 @@
+D:\MoneyKeeper-master\Models\bin\Debug\Models.dll
+D:\MoneyKeeper-master\Models\bin\Debug\Models.pdb
+D:\MoneyKeeper-master\Models\obj\Debug\Models.dll
+D:\MoneyKeeper-master\Models\obj\Debug\Models.pdb
+D:\MoneyKeeper-master\Models\bin\Debug\System.ComponentModel.DataAnnotations.dll
+D:\MoneyKeeper-master\Models\bin\Debug\System.ComponentModel.DataAnnotations.xml
+D:\MoneyKeeper-master\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache

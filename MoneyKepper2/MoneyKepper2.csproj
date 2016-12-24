@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{6200C997-1EA5-41C5-8E96-06D0B42A5CB4}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MoneyKepper2</RootNamespace>
+    <AssemblyName>MoneyKepper2</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10240.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>MoneyKepper2_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="project.json" />
+    <PRIResource Include="Strings\Resources-He.resw" />
+    <PRIResource Include="Strings\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Behaviors\SetMinAndMaxDateBehavior.cs" />
+    <Compile Include="Behaviors\SetDateToDatePickerBehavior.cs" />
+    <Compile Include="Classes\ViewModelCore.cs" />
+    <Compile Include="Controls\ExpanderControl.cs" />
+    <Compile Include="Controls\HeaderedItemsControl.cs" />
+    <Compile Include="Controls\HierarchicalDataTemplate.cs" />
+    <Compile Include="Controls\ItemsControlHelper.cs" />
+    <Compile Include="Controls\VisualTreeExtensions.cs" />
+    <Compile Include="Converters\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Converters\DateConverter.cs" />
+    <Compile Include="Converters\GraphsTypeToGraphStringConverter.cs" />
+    <Compile Include="Converters\PictureNameToPictureSourceConverter.cs" />
+    <Compile Include="Converters\SelectionChangedConverter.cs" />
+    <Compile Include="Converters\TransactionTypeToStringConverter.cs" />
+    <Compile Include="Converters\TransactionTypeToColorConverter.cs" />
+    <Compile Include="DialogService.cs" />
+    <Compile Include="Factories\DialogServiceFactory.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Dialogs\AddNewCategoryDialog.xaml.cs">
+      <DependentUpon>AddNewCategoryDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dialogs\AddTransactionDialog.xaml.cs">
+      <DependentUpon>AddTransactionDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Dialogs\ContentDialogBase.cs" />
+    <Compile Include="View\Pages\CategoryDetailPage.xaml.cs">
+      <DependentUpon>CategoryDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\CategoryPage.xaml.cs">
+      <DependentUpon>CategoryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\EmptyPage.xaml.cs">
+      <DependentUpon>EmptyPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\GraphsDetailsPage.xaml.cs">
+      <DependentUpon>GraphsDetailsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\GraphsPage.xaml.cs">
+      <DependentUpon>GraphsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\HistoryDetailsPage.xaml.cs">
+      <DependentUpon>HistoryDetailsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\PageBase.cs" />
+    <Compile Include="View\Pages\TransactionsPage.xaml.cs">
+      <DependentUpon>TransactionsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\TransactionsDetailsPage.xaml.cs">
+      <DependentUpon>TransactionsDetailsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Views\ControlPanelView.xaml.cs">
+      <DependentUpon>ControlPanelView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Views\ControlSplitView.xaml.cs">
+      <DependentUpon>ControlSplitView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\HistoryPage.xaml.cs">
+      <DependentUpon>HistoryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Views\DetailsView.xaml.cs">
+      <DependentUpon>DetailsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Views\PrimaryPanelView.xaml.cs">
+      <DependentUpon>PrimaryPanelView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Categories\1.png" />
+    <Content Include="Assets\Categories\10.png" />
+    <Content Include="Assets\Categories\11.png" />
+    <Content Include="Assets\Categories\12.png" />
+    <Content Include="Assets\Categories\13.png" />
+    <Content Include="Assets\Categories\14.png" />
+    <Content Include="Assets\Categories\15.png" />
+    <Content Include="Assets\Categories\16.png" />
+    <Content Include="Assets\Categories\17.png" />
+    <Content Include="Assets\Categories\18.png" />
+    <Content Include="Assets\Categories\19.png" />
+    <Content Include="Assets\Categories\2.png" />
+    <Content Include="Assets\Categories\20.png" />
+    <Content Include="Assets\Categories\21.png" />
+    <Content Include="Assets\Categories\22.png" />
+    <Content Include="Assets\Categories\23.png" />
+    <Content Include="Assets\Categories\24.png" />
+    <Content Include="Assets\Categories\25.png" />
+    <Content Include="Assets\Categories\26.png" />
+    <Content Include="Assets\Categories\27.png" />
+    <Content Include="Assets\Categories\28.png" />
+    <Content Include="Assets\Categories\29.png" />
+    <Content Include="Assets\Categories\3.png" />
+    <Content Include="Assets\Categories\30.png" />
+    <Content Include="Assets\Categories\31.png" />
+    <Content Include="Assets\Categories\32.png" />
+    <Content Include="Assets\Categories\33.png" />
+    <Content Include="Assets\Categories\34.png" />
+    <Content Include="Assets\Categories\35.png" />
+    <Content Include="Assets\Categories\36.png" />
+    <Content Include="Assets\Categories\37.png" />
+    <Content Include="Assets\Categories\38.png" />
+    <Content Include="Assets\Categories\39.png" />
+    <Content Include="Assets\Categories\4.png" />
+    <Content Include="Assets\Categories\40.png" />
+    <Content Include="Assets\Categories\41.png" />
+    <Content Include="Assets\Categories\42.png" />
+    <Content Include="Assets\Categories\43.png" />
+    <Content Include="Assets\Categories\44.png" />
+    <Content Include="Assets\Categories\45.png" />
+    <Content Include="Assets\Categories\46.png" />
+    <Content Include="Assets\Categories\47.png" />
+    <Content Include="Assets\Categories\48.png" />
+    <Content Include="Assets\Categories\49.png" />
+    <Content Include="Assets\Categories\5.png" />
+    <Content Include="Assets\Categories\50.png" />
+    <Content Include="Assets\Categories\51.png" />
+    <Content Include="Assets\Categories\52.png" />
+    <Content Include="Assets\Categories\53.png" />
+    <Content Include="Assets\Categories\54.png" />
+    <Content Include="Assets\Categories\55.png" />
+    <Content Include="Assets\Categories\56.png" />
+    <Content Include="Assets\Categories\57.png" />
+    <Content Include="Assets\Categories\58.png" />
+    <Content Include="Assets\Categories\59.png" />
+    <Content Include="Assets\Categories\6.png" />
+    <Content Include="Assets\Categories\60.png" />
+    <Content Include="Assets\Categories\61.png" />
+    <Content Include="Assets\Categories\62.png" />
+    <Content Include="Assets\Categories\63.png" />
+    <Content Include="Assets\Categories\64.png" />
+    <Content Include="Assets\Categories\65.png" />
+    <Content Include="Assets\Categories\66.png" />
+    <Content Include="Assets\Categories\67.png" />
+    <Content Include="Assets\Categories\68.png" />
+    <Content Include="Assets\Categories\69.png" />
+    <Content Include="Assets\Categories\7.png" />
+    <Content Include="Assets\Categories\70.png" />
+    <Content Include="Assets\Categories\71.png" />
+    <Content Include="Assets\Categories\72.png" />
+    <Content Include="Assets\Categories\73.png" />
+    <Content Include="Assets\Categories\74.png" />
+    <Content Include="Assets\Categories\75.png" />
+    <Content Include="Assets\Categories\8.png" />
+    <Content Include="Assets\Categories\9.png" />
+    <Content Include="Assets\icon150.PNG" />
+    <Content Include="Assets\icon_300.png" />
+    <Content Include="Assets\icon_44.PNG" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Themes\Generic.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
+    <Page Include="View\Dialogs\AddNewCategoryDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Dialogs\AddTransactionDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\CategoryDetailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\CategoryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\EmptyPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\GraphsDetailsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\GraphsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\HistoryDetailsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\TransactionsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\TransactionsDetailsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Views\ControlPanelView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Views\ControlSplitView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\HistoryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Views\DetailsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Views\PrimaryPanelView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="BehaviorsXamlSDKManaged, Version=12.0">
+      <Name>Behaviors SDK %28XAML%29</Name>
+    </SDKReference>
+    <SDKReference Include="Syncfusion Controls for UWP XAML, Version=14.3.0.49">
+      <Name>Syncfusion Controls for UWP XAML</Name>
+    </SDKReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MoneyKepper_Core\MoneyKepper_Core.csproj">
+      <Project>{7d2fcab5-724d-4bb8-9e9b-2c2e202c3b8f}</Project>
+      <Name>MoneyKepper_Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Syncfusion.SfPivotChart.UWP">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Syncfusion\Essential Studio\14.3.0.49\Assemblies for Universal Windows\10.0\Syncfusion.SfPivotChart.UWP.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

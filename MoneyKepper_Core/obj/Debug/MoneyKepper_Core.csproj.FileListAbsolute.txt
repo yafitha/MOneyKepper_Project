@@ -1,0 +1,16 @@
+C:\Users\hamilton\Desktop\Project\MoneyKepper2\MoneyKepper_Core\bin\Debug\MoneyKepper_Core.dll
+C:\Users\hamilton\Desktop\Project\MoneyKepper2\MoneyKepper_Core\bin\Debug\MoneyKepper_Core.pdb
+C:\Users\hamilton\Desktop\Project\MoneyKepper2\MoneyKepper_Core\bin\Debug\MoneyKepper_Core.pri
+C:\Users\hamilton\Desktop\Project\MoneyKepper2\MoneyKepper_Core\obj\Debug\MoneyKepper_Core.dll
+C:\Users\hamilton\Desktop\Project\MoneyKepper2\MoneyKepper_Core\obj\Debug\MoneyKepper_Core.pdb
+C:\Users\hamilton\Desktop\Project\MoneyKepper2\MoneyKepper_Core\obj\Debug\priconfig.xml
+C:\Users\hamilton\Desktop\Project\MoneyKepper2\MoneyKepper_Core\obj\Debug\priconfig.xml.intermediate
+C:\Users\hamilton\Desktop\Project\MoneyKepper2\MoneyKepper_Core\obj\Debug\layout.resfiles
+C:\Users\hamilton\Desktop\Project\MoneyKepper2\MoneyKepper_Core\obj\Debug\layout.resfiles.intermediate
+C:\Users\hamilton\Desktop\Project\MoneyKepper2\MoneyKepper_Core\obj\Debug\resources.resfiles
+C:\Users\hamilton\Desktop\Project\MoneyKepper2\MoneyKepper_Core\obj\Debug\resources.resfiles.intermediate
+C:\Users\hamilton\Desktop\Project\MoneyKepper2\MoneyKepper_Core\obj\Debug\pri.resfiles
+C:\Users\hamilton\Desktop\Project\MoneyKepper2\MoneyKepper_Core\obj\Debug\pri.resfiles.intermediate
+C:\Users\hamilton\Desktop\Project\MoneyKepper2\MoneyKepper_Core\obj\Debug\qualifiers.txt
+C:\Users\hamilton\Desktop\Project\MoneyKepper2\MoneyKepper_Core\obj\Debug\qualifiers.txt.intermediate
+C:\Users\hamilton\Desktop\Project\MoneyKepper2\MoneyKepper_Core\obj\Debug\MultipleQualifiersPerDimensionFound.txt

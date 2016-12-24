@@ -1,0 +1,4 @@
+D:\MoneyKeeper-master\BL\Logic.csproj;neutral
+D:\MoneyKeeper-master\Models\Models.csproj;neutral
+D:\MoneyKeeper-master\MoneyKepper_Core\MoneyKepper_Core.csproj;x86
+D:\MoneyKeeper-master\MoneyKepper2\MoneyKepper2.csproj;x86

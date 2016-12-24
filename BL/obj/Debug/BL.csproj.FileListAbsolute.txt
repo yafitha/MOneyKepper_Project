@@ -1,0 +1,9 @@
+D:\MoneyKeeper-master\BL\bin\Debug\BL.dll
+D:\MoneyKeeper-master\BL\bin\Debug\BL.pdb
+D:\MoneyKeeper-master\BL\bin\Debug\Models.dll
+D:\MoneyKeeper-master\BL\bin\Debug\Newtonsoft.Json.dll
+D:\MoneyKeeper-master\BL\bin\Debug\Models.pdb
+D:\MoneyKeeper-master\BL\bin\Debug\Newtonsoft.Json.xml
+D:\MoneyKeeper-master\BL\obj\Debug\BL.csprojResolveAssemblyReference.cache
+D:\MoneyKeeper-master\BL\obj\Debug\BL.dll
+D:\MoneyKeeper-master\BL\obj\Debug\BL.pdb
