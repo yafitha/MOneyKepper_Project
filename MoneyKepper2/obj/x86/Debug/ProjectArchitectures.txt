@@ -1,4 +1,4 @@
-D:\MoneyKeeper-master\BL\Logic.csproj;neutral
-D:\MoneyKeeper-master\Models\Models.csproj;neutral
-D:\MoneyKeeper-master\MoneyKepper_Core\MoneyKepper_Core.csproj;x86
-D:\MoneyKeeper-master\MoneyKepper2\MoneyKepper2.csproj;x86
+C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\BL\Logic.csproj;neutral
+C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\Models\Models.csproj;neutral
+C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper_Core\MoneyKepper_Core.csproj;x86
+C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\MoneyKepper2.csproj;x86

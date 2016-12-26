@@ -22,7 +22,7 @@
     <Property Name="CategoryID" Type="Int32" Nullable="false" />
     <Property Name="IsActive" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
     <Property Name="Note" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <Property Name="Amount" Type="Double" />
+    <Property Name="Amount" Type="Double" Nullable="false" />
     <NavigationProperty Name="Category" Relationship="Self.FK__Transacti__Categ__34C8D9D1" FromRole="Transactions" ToRole="Category" />
   </EntityType>
   <EntityType Name="TransactionType">

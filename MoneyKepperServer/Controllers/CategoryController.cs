@@ -14,10 +14,10 @@ namespace MoneyKepperServer.Controllers
     {
         //GET: api/cateogry
         [System.Web.Http.HttpGet]
-        public List<Models.Category> Get1()
+        public List<Models.Category> GetAllCategories()
         {
             moneyEntities3 context = new moneyEntities3();
-            return context.Categories.Where(cat => cat.ID == 1).ToList();
+            return context.Categories.ToList();
             //SqlConnection con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB; Initial Catalog =money; Integrated Security = True");
 
             //Category matchingPerson = new Category();
@@ -40,15 +40,24 @@ namespace MoneyKepperServer.Controllers
             //}
         }
 
+        //GET: api/cateogry
         [System.Web.Http.HttpGet]
-        public HttpResponseMessage Get()
+        public IList<Models.Category> GetCategoriesByTypes(List<int> types)
         {
-            return Request.CreateResponse(HttpStatusCode.OK, new MyClass() { StatusCode = 200, Message = "This Is Get" });
+            moneyEntities3 context = new moneyEntities3();
+            var test = context.Categories.Where(cat => types.Contains(cat.TypeID)).ToList();
+            return test; 
         }
-        public class MyClass
-        {
-            public int StatusCode { get; set; }
-            public string Message { get; set; }
-        }
+
+        //[System.Web.Http.HttpGet]
+        //public HttpResponseMessage Get()
+        //{
+        //    return Request.CreateResponse(HttpStatusCode.OK, new MyClass() { StatusCode = 200, Message = "This Is Get" });
+        //}
+        //public class MyClass
+        //{
+        //    public int StatusCode { get; set; }
+        //    public string Message { get; set; }
+        //}
     }
 }
