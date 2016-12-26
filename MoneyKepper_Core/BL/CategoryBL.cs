@@ -15,7 +15,6 @@ namespace MoneyKepper_Core.BL
         public static List<Category> GetAllCategories()
         {
            return new Logic.CategoryBL().GetAllCategories2();
-
             //var response = "";
             //Task task = Task.Run(async () =>
             //{
