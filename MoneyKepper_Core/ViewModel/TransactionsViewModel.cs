@@ -131,7 +131,9 @@ namespace MoneyKepper_Core.ViewModel
                 this.SetIncomeItemsAndExpensesItems();
                 this.CurrentMonth = DateTime.Now.ToString("MMMM");
                 this.Balance = Income - Expenses;
-                var categories = CategoryBL.GetAllCategories();
+                var list = new List<int>();
+                list.Add((int)Types.Income);
+                var categories = CategoryBL.GetCategoriesByTypes(list);
             }
         }
         public override void OnNavigatedFrom(NavigationEventArgs e)

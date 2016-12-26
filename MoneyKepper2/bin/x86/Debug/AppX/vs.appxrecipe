@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>0a0d3385-fd4c-4190-a486-98b59d56e6dd</PackageIdentityName>
     <PackageIdentityPublisher>CN=hamilton</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\MoneyKeeper-master\MoneyKepper2\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -25,16 +25,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\MoneyKeeper-master\MoneyKepper2\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-12-21T11:14:35.623</Modified>
+      <Modified>2016-12-26T21:13:00.946</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\bin\x86\Debug\MoneyKepper2.exe">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\bin\x86\Debug\MoneyKepper2.exe">
       <PackagePath>entrypoint\MoneyKepper2.exe</PackagePath>
-      <Modified>2016-12-21T11:13:55.111</Modified>
+      <Modified>2016-12-26T21:12:59.349</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactions.dll">
       <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
@@ -712,17 +712,17 @@
       <PackagePath>WinRTXamlToolkit.dll</PackagePath>
       <Modified>2016-03-03T23:52:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper_Core\bin\x86\Debug\MoneyKepper_Core.dll">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper_Core\bin\x86\Debug\MoneyKepper_Core.dll">
       <PackagePath>MoneyKepper_Core.dll</PackagePath>
-      <Modified>2016-12-21T11:13:52.912</Modified>
+      <Modified>2016-12-26T21:12:57.270</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper_Core\bin\x86\Debug\Models.dll">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper_Core\bin\x86\Debug\Models.dll">
       <PackagePath>Models.dll</PackagePath>
-      <Modified>2016-12-21T11:13:19.656</Modified>
+      <Modified>2016-12-26T21:07:06.623</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper_Core\bin\x86\Debug\BL.dll">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper_Core\bin\x86\Debug\BL.dll">
       <PackagePath>BL.dll</PackagePath>
-      <Modified>2016-12-21T11:13:19.947</Modified>
+      <Modified>2016-12-26T21:12:56.696</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Syncfusion\Essential Studio\14.3.0.49\Universal Windows\10.0\SDK\Redist\CommonConfiguration\neutral\Syncfusion.SfSpreadsheet.UWP\Ribbon\Icons\CellStyles\20Accent1_2010.png">
       <PackagePath>Syncfusion.SfSpreadsheet.UWP\Ribbon\Icons\CellStyles\20Accent1_2010.png</PackagePath>
@@ -4924,359 +4924,359 @@
       <PackagePath>Syncfusion.SfSpellChecker.UWP\SpellCheckerDialog\SpellCheckerDialog.xaml.cs</PackagePath>
       <Modified>2016-09-24T16:41:02.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\1.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\1.png">
       <PackagePath>Assets\Categories\1.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.215</Modified>
+      <Modified>2016-12-26T20:28:54.879</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\10.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\10.png">
       <PackagePath>Assets\Categories\10.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.235</Modified>
+      <Modified>2016-12-26T20:28:54.880</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\11.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\11.png">
       <PackagePath>Assets\Categories\11.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.255</Modified>
+      <Modified>2016-12-26T20:28:54.881</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\12.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\12.png">
       <PackagePath>Assets\Categories\12.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.275</Modified>
+      <Modified>2016-12-26T20:28:54.882</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\13.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\13.png">
       <PackagePath>Assets\Categories\13.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.294</Modified>
+      <Modified>2016-12-26T20:28:54.884</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\14.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\14.png">
       <PackagePath>Assets\Categories\14.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.315</Modified>
+      <Modified>2016-12-26T20:28:54.885</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\15.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\15.png">
       <PackagePath>Assets\Categories\15.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.335</Modified>
+      <Modified>2016-12-26T20:28:54.887</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\16.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\16.png">
       <PackagePath>Assets\Categories\16.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.355</Modified>
+      <Modified>2016-12-26T20:28:54.888</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\17.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\17.png">
       <PackagePath>Assets\Categories\17.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.376</Modified>
+      <Modified>2016-12-26T20:28:54.889</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\18.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\18.png">
       <PackagePath>Assets\Categories\18.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.396</Modified>
+      <Modified>2016-12-26T20:28:54.890</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\19.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\19.png">
       <PackagePath>Assets\Categories\19.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.422</Modified>
+      <Modified>2016-12-26T20:28:54.892</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\2.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\2.png">
       <PackagePath>Assets\Categories\2.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.446</Modified>
+      <Modified>2016-12-26T20:28:54.894</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\20.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\20.png">
       <PackagePath>Assets\Categories\20.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.466</Modified>
+      <Modified>2016-12-26T20:28:54.895</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\21.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\21.png">
       <PackagePath>Assets\Categories\21.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.488</Modified>
+      <Modified>2016-12-26T20:28:54.896</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\22.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\22.png">
       <PackagePath>Assets\Categories\22.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.508</Modified>
+      <Modified>2016-12-26T20:28:54.897</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\23.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\23.png">
       <PackagePath>Assets\Categories\23.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.530</Modified>
+      <Modified>2016-12-26T20:28:54.899</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\24.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\24.png">
       <PackagePath>Assets\Categories\24.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.549</Modified>
+      <Modified>2016-12-26T20:28:54.900</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\25.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\25.png">
       <PackagePath>Assets\Categories\25.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.570</Modified>
+      <Modified>2016-12-26T20:28:54.901</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\26.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\26.png">
       <PackagePath>Assets\Categories\26.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.591</Modified>
+      <Modified>2016-12-26T20:28:54.902</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\27.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\27.png">
       <PackagePath>Assets\Categories\27.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.612</Modified>
+      <Modified>2016-12-26T20:28:54.903</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\28.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\28.png">
       <PackagePath>Assets\Categories\28.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.634</Modified>
+      <Modified>2016-12-26T20:28:54.905</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\29.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\29.png">
       <PackagePath>Assets\Categories\29.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.656</Modified>
+      <Modified>2016-12-26T20:28:54.906</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\3.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\3.png">
       <PackagePath>Assets\Categories\3.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.676</Modified>
+      <Modified>2016-12-26T20:28:54.907</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\30.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\30.png">
       <PackagePath>Assets\Categories\30.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.698</Modified>
+      <Modified>2016-12-26T20:28:54.908</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\31.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\31.png">
       <PackagePath>Assets\Categories\31.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.720</Modified>
+      <Modified>2016-12-26T20:28:54.909</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\32.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\32.png">
       <PackagePath>Assets\Categories\32.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.740</Modified>
+      <Modified>2016-12-26T20:28:54.910</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\33.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\33.png">
       <PackagePath>Assets\Categories\33.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.762</Modified>
+      <Modified>2016-12-26T20:28:54.911</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\34.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\34.png">
       <PackagePath>Assets\Categories\34.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.783</Modified>
+      <Modified>2016-12-26T20:28:54.912</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\35.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\35.png">
       <PackagePath>Assets\Categories\35.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.803</Modified>
+      <Modified>2016-12-26T20:28:54.914</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\36.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\36.png">
       <PackagePath>Assets\Categories\36.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.824</Modified>
+      <Modified>2016-12-26T20:28:54.914</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\37.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\37.png">
       <PackagePath>Assets\Categories\37.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.845</Modified>
+      <Modified>2016-12-26T20:28:54.916</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\38.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\38.png">
       <PackagePath>Assets\Categories\38.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.866</Modified>
+      <Modified>2016-12-26T20:28:54.917</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\39.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\39.png">
       <PackagePath>Assets\Categories\39.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.885</Modified>
+      <Modified>2016-12-26T20:28:54.918</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\4.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\4.png">
       <PackagePath>Assets\Categories\4.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.907</Modified>
+      <Modified>2016-12-26T20:28:54.919</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\40.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\40.png">
       <PackagePath>Assets\Categories\40.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.929</Modified>
+      <Modified>2016-12-26T20:28:54.920</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\41.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\41.png">
       <PackagePath>Assets\Categories\41.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.948</Modified>
+      <Modified>2016-12-26T20:28:54.922</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\42.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\42.png">
       <PackagePath>Assets\Categories\42.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.969</Modified>
+      <Modified>2016-12-26T20:28:54.923</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\43.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\43.png">
       <PackagePath>Assets\Categories\43.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.989</Modified>
+      <Modified>2016-12-26T20:28:54.924</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\44.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\44.png">
       <PackagePath>Assets\Categories\44.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.011</Modified>
+      <Modified>2016-12-26T20:28:54.925</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\45.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\45.png">
       <PackagePath>Assets\Categories\45.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.032</Modified>
+      <Modified>2016-12-26T20:28:54.927</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\46.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\46.png">
       <PackagePath>Assets\Categories\46.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.052</Modified>
+      <Modified>2016-12-26T20:28:54.928</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\47.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\47.png">
       <PackagePath>Assets\Categories\47.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.075</Modified>
+      <Modified>2016-12-26T20:28:54.930</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\48.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\48.png">
       <PackagePath>Assets\Categories\48.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.099</Modified>
+      <Modified>2016-12-26T20:28:54.931</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\49.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\49.png">
       <PackagePath>Assets\Categories\49.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.122</Modified>
+      <Modified>2016-12-26T20:28:54.932</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\5.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\5.png">
       <PackagePath>Assets\Categories\5.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.145</Modified>
+      <Modified>2016-12-26T20:28:54.934</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\50.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\50.png">
       <PackagePath>Assets\Categories\50.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.168</Modified>
+      <Modified>2016-12-26T20:28:54.935</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\51.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\51.png">
       <PackagePath>Assets\Categories\51.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.193</Modified>
+      <Modified>2016-12-26T20:28:54.936</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\52.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\52.png">
       <PackagePath>Assets\Categories\52.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.695</Modified>
+      <Modified>2016-12-26T20:28:54.937</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\53.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\53.png">
       <PackagePath>Assets\Categories\53.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.707</Modified>
+      <Modified>2016-12-26T20:28:54.938</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\54.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\54.png">
       <PackagePath>Assets\Categories\54.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.718</Modified>
+      <Modified>2016-12-26T20:28:54.940</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\55.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\55.png">
       <PackagePath>Assets\Categories\55.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.729</Modified>
+      <Modified>2016-12-26T20:28:54.941</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\56.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\56.png">
       <PackagePath>Assets\Categories\56.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.739</Modified>
+      <Modified>2016-12-26T20:28:54.942</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\57.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\57.png">
       <PackagePath>Assets\Categories\57.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.755</Modified>
+      <Modified>2016-12-26T20:28:54.944</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\58.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\58.png">
       <PackagePath>Assets\Categories\58.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.771</Modified>
+      <Modified>2016-12-26T20:28:54.945</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\59.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\59.png">
       <PackagePath>Assets\Categories\59.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.797</Modified>
+      <Modified>2016-12-26T20:28:54.946</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\6.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\6.png">
       <PackagePath>Assets\Categories\6.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.820</Modified>
+      <Modified>2016-12-26T20:28:54.948</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\60.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\60.png">
       <PackagePath>Assets\Categories\60.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.842</Modified>
+      <Modified>2016-12-26T20:28:54.949</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\61.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\61.png">
       <PackagePath>Assets\Categories\61.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.860</Modified>
+      <Modified>2016-12-26T20:28:54.950</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\62.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\62.png">
       <PackagePath>Assets\Categories\62.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.876</Modified>
+      <Modified>2016-12-26T20:28:54.952</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\63.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\63.png">
       <PackagePath>Assets\Categories\63.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.891</Modified>
+      <Modified>2016-12-26T20:28:54.953</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\64.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\64.png">
       <PackagePath>Assets\Categories\64.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.906</Modified>
+      <Modified>2016-12-26T20:28:54.954</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\65.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\65.png">
       <PackagePath>Assets\Categories\65.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.923</Modified>
+      <Modified>2016-12-26T20:28:54.955</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\66.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\66.png">
       <PackagePath>Assets\Categories\66.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.941</Modified>
+      <Modified>2016-12-26T20:28:54.957</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\67.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\67.png">
       <PackagePath>Assets\Categories\67.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.956</Modified>
+      <Modified>2016-12-26T20:28:54.958</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\68.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\68.png">
       <PackagePath>Assets\Categories\68.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.971</Modified>
+      <Modified>2016-12-26T20:28:54.959</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\69.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\69.png">
       <PackagePath>Assets\Categories\69.png</PackagePath>
-      <Modified>2016-11-26T19:04:47.986</Modified>
+      <Modified>2016-12-26T20:28:54.961</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\7.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\7.png">
       <PackagePath>Assets\Categories\7.png</PackagePath>
-      <Modified>2016-11-26T19:04:48.003</Modified>
+      <Modified>2016-12-26T20:28:54.962</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\70.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\70.png">
       <PackagePath>Assets\Categories\70.png</PackagePath>
-      <Modified>2016-11-26T19:04:48.019</Modified>
+      <Modified>2016-12-26T20:28:54.964</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\71.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\71.png">
       <PackagePath>Assets\Categories\71.png</PackagePath>
-      <Modified>2016-11-26T19:04:48.033</Modified>
+      <Modified>2016-12-26T20:28:54.965</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\72.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\72.png">
       <PackagePath>Assets\Categories\72.png</PackagePath>
-      <Modified>2016-11-26T19:04:48.048</Modified>
+      <Modified>2016-12-26T20:28:54.966</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\73.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\73.png">
       <PackagePath>Assets\Categories\73.png</PackagePath>
-      <Modified>2016-11-26T19:04:48.061</Modified>
+      <Modified>2016-12-26T20:28:54.967</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\74.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\74.png">
       <PackagePath>Assets\Categories\74.png</PackagePath>
-      <Modified>2016-11-26T19:04:48.074</Modified>
+      <Modified>2016-12-26T20:28:54.968</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\75.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\75.png">
       <PackagePath>Assets\Categories\75.png</PackagePath>
-      <Modified>2016-11-26T19:04:48.088</Modified>
+      <Modified>2016-12-26T20:28:54.969</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\8.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\8.png">
       <PackagePath>Assets\Categories\8.png</PackagePath>
-      <Modified>2016-11-26T19:04:48.099</Modified>
+      <Modified>2016-12-26T20:28:54.971</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\9.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\9.png">
       <PackagePath>Assets\Categories\9.png</PackagePath>
-      <Modified>2016-11-26T19:04:48.110</Modified>
+      <Modified>2016-12-26T20:28:54.971</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\icon150.PNG">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\icon150.PNG">
       <PackagePath>Assets\icon150.PNG</PackagePath>
-      <Modified>2016-11-26T19:04:46.145</Modified>
+      <Modified>2016-12-26T20:28:54.982</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\icon_300.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\icon_300.png">
       <PackagePath>Assets\icon_300.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.168</Modified>
+      <Modified>2016-12-26T20:28:54.984</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\icon_44.PNG">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\icon_44.PNG">
       <PackagePath>Assets\icon_44.PNG</PackagePath>
-      <Modified>2016-11-26T19:04:46.188</Modified>
+      <Modified>2016-12-26T20:28:54.985</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2016-11-26T19:04:46.011</Modified>
+      <Modified>2016-12-26T20:28:54.972</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-26T19:04:46.022</Modified>
+      <Modified>2016-12-26T20:28:54.974</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-26T19:04:46.042</Modified>
+      <Modified>2016-12-26T20:28:54.976</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-26T19:04:46.063</Modified>
+      <Modified>2016-12-26T20:28:54.977</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-26T19:04:46.084</Modified>
+      <Modified>2016-12-26T20:28:54.978</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-26T19:04:46.105</Modified>
+      <Modified>2016-12-26T20:28:54.980</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-11-26T19:04:46.125</Modified>
+      <Modified>2016-12-26T20:28:54.981</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2016-11-26T19:04:48.740</Modified>
+      <Modified>2016-12-26T20:28:55.185</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\bin\x86\Debug\MoneyKepper2.xr.xml">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\bin\x86\Debug\MoneyKepper2.xr.xml">
       <PackagePath>MoneyKepper2.xr.xml</PackagePath>
-      <Modified>2016-11-26T19:12:12.851</Modified>
+      <Modified>2016-12-26T20:29:22.986</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -5298,13 +5298,13 @@
       <PackagePath>WinRTXamlToolkit\Properties\WinRTXamlToolkit.UWP.rd.xml</PackagePath>
       <Modified>2016-03-03T23:52:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-12-21T11:04:33.925</Modified>
+      <Modified>2016-12-26T21:08:33.088</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\bin\x86\Debug\Core\MoneyKepper2.exe">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\bin\x86\Debug\Core\MoneyKepper2.exe">
       <PackagePath>MoneyKepper2.exe</PackagePath>
-      <Modified>2016-12-21T11:14:35.620</Modified>
+      <Modified>2016-12-26T21:13:00.942</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

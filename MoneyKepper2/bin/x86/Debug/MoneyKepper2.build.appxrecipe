@@ -10,19 +10,19 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>0a0d3385-fd4c-4190-a486-98b59d56e6dd</PackageIdentityName>
     <PackageIdentityPublisher>CN=hamilton</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\MoneyKeeper-master\MoneyKepper2\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\MoneyKeeper-master\MoneyKepper2\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\bin\x86\Debug\MoneyKepper2.exe">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\bin\x86\Debug\MoneyKepper2.exe">
       <PackagePath>entrypoint\MoneyKepper2.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactions.dll">
@@ -532,13 +532,13 @@
     <AppxPackagedFile Include="C:\Users\hamilton\.nuget\packages\WinRTXamlToolkit.UWP\2.0.0\lib\uap10.0\WinRTXamlToolkit.dll">
       <PackagePath>WinRTXamlToolkit.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper_Core\bin\x86\Debug\MoneyKepper_Core.dll">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper_Core\bin\x86\Debug\MoneyKepper_Core.dll">
       <PackagePath>MoneyKepper_Core.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper_Core\bin\x86\Debug\Models.dll">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper_Core\bin\x86\Debug\Models.dll">
       <PackagePath>Models.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper_Core\bin\x86\Debug\BL.dll">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper_Core\bin\x86\Debug\BL.dll">
       <PackagePath>BL.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Syncfusion\Essential Studio\14.3.0.49\Universal Windows\10.0\SDK\Redist\CommonConfiguration\neutral\Syncfusion.SfSpreadsheet.UWP\Ribbon\Icons\CellStyles\20Accent1_2010.png">
@@ -3691,271 +3691,271 @@
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Syncfusion\Essential Studio\14.3.0.49\Universal Windows\10.0\SDK\Redist\CommonConfiguration\neutral\Syncfusion.SfSpellChecker.UWP\SpellCheckerDialog\SpellCheckerDialog.xaml.cs">
       <PackagePath>Syncfusion.SfSpellChecker.UWP\SpellCheckerDialog\SpellCheckerDialog.xaml.cs</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\1.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\1.png">
       <PackagePath>Assets\Categories\1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\10.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\10.png">
       <PackagePath>Assets\Categories\10.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\11.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\11.png">
       <PackagePath>Assets\Categories\11.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\12.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\12.png">
       <PackagePath>Assets\Categories\12.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\13.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\13.png">
       <PackagePath>Assets\Categories\13.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\14.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\14.png">
       <PackagePath>Assets\Categories\14.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\15.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\15.png">
       <PackagePath>Assets\Categories\15.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\16.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\16.png">
       <PackagePath>Assets\Categories\16.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\17.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\17.png">
       <PackagePath>Assets\Categories\17.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\18.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\18.png">
       <PackagePath>Assets\Categories\18.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\19.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\19.png">
       <PackagePath>Assets\Categories\19.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\2.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\2.png">
       <PackagePath>Assets\Categories\2.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\20.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\20.png">
       <PackagePath>Assets\Categories\20.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\21.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\21.png">
       <PackagePath>Assets\Categories\21.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\22.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\22.png">
       <PackagePath>Assets\Categories\22.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\23.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\23.png">
       <PackagePath>Assets\Categories\23.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\24.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\24.png">
       <PackagePath>Assets\Categories\24.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\25.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\25.png">
       <PackagePath>Assets\Categories\25.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\26.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\26.png">
       <PackagePath>Assets\Categories\26.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\27.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\27.png">
       <PackagePath>Assets\Categories\27.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\28.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\28.png">
       <PackagePath>Assets\Categories\28.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\29.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\29.png">
       <PackagePath>Assets\Categories\29.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\3.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\3.png">
       <PackagePath>Assets\Categories\3.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\30.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\30.png">
       <PackagePath>Assets\Categories\30.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\31.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\31.png">
       <PackagePath>Assets\Categories\31.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\32.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\32.png">
       <PackagePath>Assets\Categories\32.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\33.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\33.png">
       <PackagePath>Assets\Categories\33.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\34.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\34.png">
       <PackagePath>Assets\Categories\34.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\35.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\35.png">
       <PackagePath>Assets\Categories\35.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\36.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\36.png">
       <PackagePath>Assets\Categories\36.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\37.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\37.png">
       <PackagePath>Assets\Categories\37.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\38.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\38.png">
       <PackagePath>Assets\Categories\38.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\39.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\39.png">
       <PackagePath>Assets\Categories\39.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\4.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\4.png">
       <PackagePath>Assets\Categories\4.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\40.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\40.png">
       <PackagePath>Assets\Categories\40.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\41.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\41.png">
       <PackagePath>Assets\Categories\41.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\42.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\42.png">
       <PackagePath>Assets\Categories\42.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\43.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\43.png">
       <PackagePath>Assets\Categories\43.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\44.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\44.png">
       <PackagePath>Assets\Categories\44.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\45.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\45.png">
       <PackagePath>Assets\Categories\45.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\46.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\46.png">
       <PackagePath>Assets\Categories\46.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\47.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\47.png">
       <PackagePath>Assets\Categories\47.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\48.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\48.png">
       <PackagePath>Assets\Categories\48.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\49.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\49.png">
       <PackagePath>Assets\Categories\49.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\5.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\5.png">
       <PackagePath>Assets\Categories\5.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\50.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\50.png">
       <PackagePath>Assets\Categories\50.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\51.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\51.png">
       <PackagePath>Assets\Categories\51.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\52.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\52.png">
       <PackagePath>Assets\Categories\52.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\53.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\53.png">
       <PackagePath>Assets\Categories\53.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\54.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\54.png">
       <PackagePath>Assets\Categories\54.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\55.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\55.png">
       <PackagePath>Assets\Categories\55.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\56.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\56.png">
       <PackagePath>Assets\Categories\56.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\57.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\57.png">
       <PackagePath>Assets\Categories\57.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\58.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\58.png">
       <PackagePath>Assets\Categories\58.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\59.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\59.png">
       <PackagePath>Assets\Categories\59.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\6.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\6.png">
       <PackagePath>Assets\Categories\6.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\60.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\60.png">
       <PackagePath>Assets\Categories\60.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\61.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\61.png">
       <PackagePath>Assets\Categories\61.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\62.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\62.png">
       <PackagePath>Assets\Categories\62.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\63.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\63.png">
       <PackagePath>Assets\Categories\63.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\64.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\64.png">
       <PackagePath>Assets\Categories\64.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\65.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\65.png">
       <PackagePath>Assets\Categories\65.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\66.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\66.png">
       <PackagePath>Assets\Categories\66.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\67.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\67.png">
       <PackagePath>Assets\Categories\67.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\68.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\68.png">
       <PackagePath>Assets\Categories\68.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\69.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\69.png">
       <PackagePath>Assets\Categories\69.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\7.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\7.png">
       <PackagePath>Assets\Categories\7.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\70.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\70.png">
       <PackagePath>Assets\Categories\70.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\71.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\71.png">
       <PackagePath>Assets\Categories\71.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\72.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\72.png">
       <PackagePath>Assets\Categories\72.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\73.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\73.png">
       <PackagePath>Assets\Categories\73.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\74.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\74.png">
       <PackagePath>Assets\Categories\74.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\75.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\75.png">
       <PackagePath>Assets\Categories\75.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\8.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\8.png">
       <PackagePath>Assets\Categories\8.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Categories\9.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Categories\9.png">
       <PackagePath>Assets\Categories\9.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\icon150.PNG">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\icon150.PNG">
       <PackagePath>Assets\icon150.PNG</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\icon_300.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\icon_300.png">
       <PackagePath>Assets\icon_300.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\icon_44.PNG">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\icon_44.PNG">
       <PackagePath>Assets\icon_44.PNG</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\bin\x86\Debug\MoneyKepper2.xr.xml">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\bin\x86\Debug\MoneyKepper2.xr.xml">
       <PackagePath>MoneyKepper2.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
@@ -3973,10 +3973,10 @@
     <AppxPackagedFile Include="C:\Users\hamilton\.nuget\packages\WinRTXamlToolkit.UWP\2.0.0\lib\uap10.0\WinRTXamlToolkit\Properties\WinRTXamlToolkit.UWP.rd.xml">
       <PackagePath>WinRTXamlToolkit\Properties\WinRTXamlToolkit.UWP.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\MoneyKeeper-master\MoneyKepper2\bin\x86\Debug\Core\MoneyKepper2.exe">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\bin\x86\Debug\Core\MoneyKepper2.exe">
       <PackagePath>MoneyKepper2.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

@@ -5,3 +5,9 @@ D:\MoneyKeeper-master\Models\obj\Debug\Models.pdb
 D:\MoneyKeeper-master\Models\bin\Debug\System.ComponentModel.DataAnnotations.dll
 D:\MoneyKeeper-master\Models\bin\Debug\System.ComponentModel.DataAnnotations.xml
 D:\MoneyKeeper-master\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\Models\bin\Debug\Models.dll
+C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\Models\bin\Debug\Models.pdb
+C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\Models\bin\Debug\System.ComponentModel.DataAnnotations.dll
+C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\Models\bin\Debug\System.ComponentModel.DataAnnotations.xml
+C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\Models\obj\Debug\Models.dll
+C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\Models\obj\Debug\Models.pdb

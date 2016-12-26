@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace Logic
 {
-    public  class CategoryBL
+    public class CategoryBL
     {
-        public List<Category> GetAllCategories2()
+        public List<Category> GetAllCategories()
         {
 
             var response = "";
@@ -19,7 +19,22 @@ namespace Logic
             {
                 using (var client = new HttpClient())
                 {
-                    response = await client.GetStringAsync(new Uri("http://localhost:63840/api/Category/Get1")); // sends GET request
+                    response = await client.GetStringAsync(new Uri("http://localhost:63840/api/Category/GetAllCategories")); // sends GET request
+
+                }
+            });
+            task.Wait(); // Wait
+            return JsonConvert.DeserializeObject<List<Category>>(response);
+        }
+
+        public IList<Models.Category> GetCategoriesByTypes(List<int> types)
+        {
+            var response = "";
+            Task task = Task.Run(async () =>
+            {
+                using (var client = new HttpClient())
+                {
+                    response = await client.GetStringAsync(new Uri("http://localhost:63840/api/Category/GetCategoriesByTypes/types")); // sends GET request
 
                 }
             });

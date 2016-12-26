@@ -1,0 +1,31 @@
+﻿<Page
+    x:Class="MoneyKepper2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MoneyKepper2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:v="using:MoneyKepper2.View.Views"
+    FlowDirection="RightToLeft"
+    DataContext="{Binding MainViewModel,Source={StaticResource Locator}}">
+
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="350"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+        <RowDefinition Height="48"/>
+        <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <v:ControlSplitView Grid.RowSpan="2"/>
+        <Grid Grid.Row="0" Grid.Column="1" Background="Black">
+            <Image
+                HorizontalAlignment="Right"
+                Source="ms-appx:///Assets/icon150.png"/>
+        </Grid>
+        <v:DetailsView Grid.Row="1" Grid.Column="1"/>
+    </Grid>
+</Page>
+

@@ -1,0 +1,32 @@
+﻿<UserControl
+    x:Class="MoneyKepper2.View.Views.PrimaryPanelView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+    d:DesignHeight="300"
+    d:DesignWidth="400"
+    DataContext="{Binding PrimaryPanelViewModel ,Source={StaticResource Locator}}">
+
+    <Grid
+        Background="#FFF2F2F2"
+        BorderThickness="0,0,1,0"
+        BorderBrush="Black">
+        <Frame x:ConnectionId='1'                         
+            VerticalAlignment="Stretch" 
+            ScrollViewer.VerticalScrollBarVisibility="Auto"
+            x:Name="frame">
+            <interactivity:Interaction.Behaviors>
+                <core:EventTriggerBehavior EventName="Loaded">
+                    <core:InvokeCommandAction 
+                        Command="{Binding ViewLoadedCommand, Mode=OneWay}" 
+                        CommandParameter="{Binding ElementName=frame}"/>
+                </core:EventTriggerBehavior>
+            </interactivity:Interaction.Behaviors>
+        </Frame>
+    </Grid>
+</UserControl>
+
