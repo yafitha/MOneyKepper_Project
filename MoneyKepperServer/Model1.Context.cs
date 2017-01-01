@@ -12,21 +12,21 @@ namespace MoneyKepperServer
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    
+
     public partial class moneyEntities3 : DbContext
     {
         public moneyEntities3()
             : base("name=moneyEntities3")
         {
         }
-    
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
         }
-    
-        public virtual DbSet<Models.Category> Categories { get; set; }
-        public virtual DbSet<Models.Transaction> Transactions { get; set; }
-        public virtual DbSet<Models.TransactionType> TransactionTypes { get; set; }
+
+        public virtual DbSet<Category> Categories { get; set; }
+        public virtual DbSet<Transaction> Transactions { get; set; }
+        public virtual DbSet<TransactionType> TransactionTypes { get; set; }
     }
 }

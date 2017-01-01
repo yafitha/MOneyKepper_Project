@@ -7,6 +7,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using AutoMapper;
 
 namespace MoneyKepperServer.Controllers
 {
@@ -17,7 +18,10 @@ namespace MoneyKepperServer.Controllers
         public List<Models.Category> GetAllCategories()
         {
             moneyEntities3 context = new moneyEntities3();
-            return context.Categories.ToList();
+            // {
+            var result = context.Categories.ToList();
+            return Mapper.Map<List<Models.Category>>(result);
+            //    }
             //SqlConnection con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB; Initial Catalog =money; Integrated Security = True");
 
             //Category matchingPerson = new Category();
@@ -46,7 +50,7 @@ namespace MoneyKepperServer.Controllers
         {
             moneyEntities3 context = new moneyEntities3();
             var test = context.Categories.Where(cat => types.Contains(cat.TypeID)).ToList();
-            return test; 
+            return Mapper.Map<List<Models.Category>>(test);
         }
 
         //[System.Web.Http.HttpGet]
