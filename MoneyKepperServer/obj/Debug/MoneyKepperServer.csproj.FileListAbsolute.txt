@@ -182,3 +182,5 @@ C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepperServer\bin
 C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepperServer\obj\Debug\MoneyKepperServer.csprojResolveAssemblyReference.cache
 C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepperServer\obj\Debug\MoneyKepperServer.dll
 C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepperServer\obj\Debug\MoneyKepperServer.pdb
+C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepperServer\bin\AutoMapper.dll
+C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepperServer\bin\AutoMapper.xml
