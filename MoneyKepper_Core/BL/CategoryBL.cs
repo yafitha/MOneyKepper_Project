@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Windows.Web.Http;
+using System.Net.Http;
 
 namespace MoneyKepper_Core.BL
 {
@@ -30,7 +30,45 @@ namespace MoneyKepper_Core.BL
 
         public static IList<Category> GetCategoriesByTypes(List<int> types)
         {
-            return new Logic.CategoryBL().GetCategoriesByTypes(types);
+            //return new Logic.CategoryBL().GetCategoriesByTypes(types);
+            List<Category> categories = new List<Category>();
+            Task task = Task.Run(async () =>
+            {
+                using (var client = new HttpClient())
+                {
+                    HttpResponseMessage response = await client.PostAsJsonAsync("http://localhost:63840/api/Category/GetCategoriesByTypes",types);
+                    string httpResponseBody = "";
+                    if (response.IsSuccessStatusCode)
+                    {
+                        httpResponseBody = await response.Content.ReadAsStringAsync();
+                        categories = JsonConvert.DeserializeObject<List<Category>>(httpResponseBody);
+                    }
+                    return categories;
+                }
+            });
+            task.Wait(); // Wait
+            return categories;
+        }
+
+        public static bool CreateNewCategory(Category category)
+        {
+            // return new Logic.CategoryBL().CreateNewCategory(category);
+            bool result = false;
+            Task task = Task.Run(async () =>
+            {
+                using (var client = new HttpClient())
+                {
+                    HttpResponseMessage response = await client.PostAsJsonAsync("http://localhost:63840/api/Category/CreateNewCategory", category);
+                    string httpResponseBody = "";
+                    if (response.IsSuccessStatusCode)
+                    {
+                        httpResponseBody = await response.Content.ReadAsStringAsync();
+                        result = true;
+                    }
+                }
+            });
+            task.Wait(); // Wait
+            return result;
         }
     }
 }
