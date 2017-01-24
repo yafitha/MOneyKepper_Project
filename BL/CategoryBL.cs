@@ -13,33 +13,70 @@ namespace Logic
     {
         public List<Category> GetAllCategories()
         {
-
-            var response = "";
+            List<Category> categories = new List<Category>();
             Task task = Task.Run(async () =>
             {
                 using (var client = new HttpClient())
                 {
-                    response = await client.GetStringAsync(new Uri("http://localhost:63840/api/Category/GetAllCategories")); // sends GET request
-
+                    HttpResponseMessage response = await client.GetAsync(new Uri("http://localhost:63840/api/Category/GetAllCategories")); // sends GET request
+                    string httpResponseBody = "";
+                    if (response.IsSuccessStatusCode)
+                    {
+                        httpResponseBody = await response.Content.ReadAsStringAsync();
+                        categories = JsonConvert.DeserializeObject<List<Category>>(httpResponseBody);
+                    }
+                    return categories;
                 }
             });
-            task.Wait(); // Wait
-            return JsonConvert.DeserializeObject<List<Category>>(response);
+            task.Wait(); // Waitm
+            return categories;
         }
 
+        //(new Uri("http://localhost:63840/api/Category/GetCategoriesByTypes?$types=types")); // sends GET request
         public IList<Models.Category> GetCategoriesByTypes(List<int> types)
         {
-            var response = "";
+            List<Category> categories = new List<Category>();
             Task task = Task.Run(async () =>
             {
                 using (var client = new HttpClient())
                 {
-                    response = await client.GetStringAsync(new Uri("http://localhost:63840/api/Category/GetCategoriesByTypes/types")); // sends GET request
-
+                    // string postBody = JsonConvert.SerializeObject(types);
+                    // StringContent queryString = new StringContent(postBody);
+                    HttpResponseMessage response = await client.GetAsync("http://localhost:63840/api/Category/GetCategoriesByTypes?types=types");
+                    string httpResponseBody = "";
+                    if (response.IsSuccessStatusCode)
+                    {
+                        httpResponseBody = await response.Content.ReadAsStringAsync();
+                        categories = JsonConvert.DeserializeObject<List<Category>>(httpResponseBody);
+                    }
+                    return categories;
                 }
             });
             task.Wait(); // Wait
-            return JsonConvert.DeserializeObject<List<Category>>(response);
+            return categories;
+
+        }
+
+        public bool CreateNewCategory(Category category)
+        {
+            bool result = false;
+            Task task = Task.Run(async () =>
+            {
+                using (var client = new HttpClient())
+                {
+                    string postBody = JsonConvert.SerializeObject(category);
+                    StringContent queryString = new StringContent(postBody);
+                    HttpResponseMessage response = await client.PostAsync("http://localhost:63840/api/Category/CreateNewCategory", queryString);
+                    string httpResponseBody = "";
+                    if (response.IsSuccessStatusCode)
+                    {
+                        httpResponseBody = await response.Content.ReadAsStringAsync();
+                        result = true;
+                    }
+                }
+            });
+            task.Wait(); // Wait
+            return result;
         }
     }
 }
