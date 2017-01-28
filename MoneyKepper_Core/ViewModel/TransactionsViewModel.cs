@@ -135,7 +135,11 @@ namespace MoneyKepper_Core.ViewModel
                 list.Add((int)Types.Expenses);
                 var categories = CategoryBL.GetCategoriesByTypes(list);
                 //var categories = CategoryBL.GetAllCategories();
-                var result = CategoryBL.CreateNewCategory(new Category(5, "חופשה", 2, "5", false));
+                //var result = CategoryBL.CreateNewCategory(new Category(6, "חופשה", 2, "5", false));
+                var cat = categories.First();
+                cat.PictureName = "24";
+                var result = CategoryBL.UpdateCategory(cat);
+               // var categories = CategoryBL.GetCategoriesByTypes(list);
             }
         }
         public override void OnNavigatedFrom(NavigationEventArgs e)

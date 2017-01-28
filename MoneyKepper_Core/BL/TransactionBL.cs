@@ -11,61 +11,61 @@ using System.Net.Http.Headers;
 
 namespace MoneyKepper_Core.BL
 {
-    public static class CategoryBL
+    class TransactionBL
     {
         public static void Run(HttpClient client)
         {
-            client.BaseAddress = new Uri("http://localhost:63840/api/Category/");
+            client.BaseAddress = new Uri("http://localhost:63840/api/Transaction/");
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
-        public  static  List<Category> GetAllCategories()
+        public static List<Transaction> GetAllTransactions()
         {
-            List<Category> categories = new List<Category>();
+            List<Transaction> transactions = new List<Transaction>();
             Task task = Task.Run(async () =>
             {
                 using (var client = new HttpClient())
                 {
                     Run(client);
-                    HttpResponseMessage response = await client.GetAsync("GetAllCategories"); // sends GET request
+                    HttpResponseMessage response = await client.GetAsync("GetAllTransactions"); // sends GET request
                     string httpResponseBody = "";
                     if (response.IsSuccessStatusCode)
                     {
                         httpResponseBody = await response.Content.ReadAsStringAsync();
-                        categories = JsonConvert.DeserializeObject<List<Category>>(httpResponseBody);
+                        transactions = JsonConvert.DeserializeObject<List<Transaction>>(httpResponseBody);
                     }
-                    return categories;
+                    return transactions;
                 }
             });
             task.Wait(); // Wait
-            return categories;
+            return transactions;
         }
 
 
-        public static IList<Category> GetCategoriesByTypes(List<int> types)
+        public static IList<Transaction> GetTransactionByTypes(List<int> types)
         {
-            List<Category> categories = new List<Category>();
+            List<Transaction> transactions = new List<Transaction>();
             Task task = Task.Run(async () =>
             {
                 using (var client = new HttpClient())
                 {
                     Run(client);
-                    HttpResponseMessage response = await client.PostAsJsonAsync("GetCategoriesByTypes", types);
+                    HttpResponseMessage response = await client.PostAsJsonAsync("GetTransactionByTypes", types);
                     string httpResponseBody = "";
                     if (response.IsSuccessStatusCode)
                     {
                         httpResponseBody = await response.Content.ReadAsStringAsync();
-                        categories = JsonConvert.DeserializeObject<List<Category>>(httpResponseBody);
+                        transactions = JsonConvert.DeserializeObject<List<Transaction>>(httpResponseBody);
                     }
-                    return categories;
+                    return transactions;
                 }
             });
             task.Wait(); // Wait
-            return categories;
+            return transactions;
         }
 
-        public static bool CreateNewCategory(Category category)
+        public static bool CreateNewTransaction(Transaction transaction)
         {
             bool result = false;
             Task task = Task.Run(async () =>
@@ -73,7 +73,7 @@ namespace MoneyKepper_Core.BL
                 using (var client = new HttpClient())
                 {
                     Run(client);
-                    HttpResponseMessage response = await client.PostAsJsonAsync("CreateNewCategory", category);
+                    HttpResponseMessage response = await client.PostAsJsonAsync("CreateNewTransaction", transaction);
                     string httpResponseBody = "";
                     if (response.IsSuccessStatusCode)
                     {
@@ -86,7 +86,7 @@ namespace MoneyKepper_Core.BL
             return result;
         }
 
-        public static bool UpdateCategory(Category category)
+        public static bool UpdateCategory(Transaction transaction)
         {
             bool result = false;
             Task task = Task.Run(async () =>
@@ -94,7 +94,7 @@ namespace MoneyKepper_Core.BL
                 using (var client = new HttpClient())
                 {
                     Run(client);
-                    HttpResponseMessage response = await client.PutAsJsonAsync($"UpdateCategory", category);
+                    HttpResponseMessage response = await client.PutAsJsonAsync("UpdateTransaction", transaction);
                     string httpResponseBody = "";
                     if (response.IsSuccessStatusCode)
                     {
@@ -107,7 +107,7 @@ namespace MoneyKepper_Core.BL
             return result;
         }
 
-        public static bool DeleteCategory(int categoryID)
+        public static bool DeleteTransaction(int transactionID)
         {
             // return new Logic.CategoryBL().CreateNewCategory(category);
             bool result = false;
@@ -116,7 +116,7 @@ namespace MoneyKepper_Core.BL
                 using (var client = new HttpClient())
                 {
                     Run(client);
-                    HttpResponseMessage response = await client.DeleteAsync($"DeleteCategory/{categoryID}");
+                    HttpResponseMessage response = await client.DeleteAsync($"DeleteTransaction/{transactionID}");
                     string httpResponseBody = "";
                     if (response.IsSuccessStatusCode)
                     {

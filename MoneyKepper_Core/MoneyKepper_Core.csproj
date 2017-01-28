@@ -107,7 +107,9 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BL\BaseBL.cs" />
     <Compile Include="BL\CategoryBL.cs" />
+    <Compile Include="BL\TransactionBL.cs" />
     <Compile Include="DesignTime\ViewModel\GraphsViewModelDesgin.cs" />
     <Compile Include="DesignTime\ViewModel\HistoryViewModelDesign.cs" />
     <Compile Include="DesignTime\ViewModel\TransactionsDetailsViewModelDesign.cs" />
