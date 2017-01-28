@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-01-24T21:54:08.807</Modified>
+      <Modified>2017-01-28T22:18:13.368</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\bin\x86\Debug\MoneyKepper2.exe">
       <PackagePath>entrypoint\MoneyKepper2.exe</PackagePath>
-      <Modified>2017-01-24T21:48:47.624</Modified>
+      <Modified>2017-01-28T22:18:11.448</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\BehaviorsXamlSDKManaged\12.0\References\CommonConfiguration\Neutral\Microsoft.Xaml.Interactions.dll">
       <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
@@ -726,15 +726,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper_Core\bin\x86\Debug\MoneyKepper_Core.dll">
       <PackagePath>MoneyKepper_Core.dll</PackagePath>
-      <Modified>2017-01-24T21:48:44.310</Modified>
+      <Modified>2017-01-28T22:18:06.603</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper_Core\bin\x86\Debug\Models.dll">
       <PackagePath>Models.dll</PackagePath>
-      <Modified>2017-01-10T09:58:37.198</Modified>
+      <Modified>2017-01-28T21:02:02.275</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper_Core\bin\x86\Debug\BL.dll">
+    <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\BL\bin\Debug\BL.dll">
       <PackagePath>BL.dll</PackagePath>
-      <Modified>2017-01-24T21:48:43.617</Modified>
+      <Modified>2017-01-28T21:43:47.563</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Syncfusion\Essential Studio\14.3.0.49\Universal Windows\10.0\SDK\Redist\CommonConfiguration\neutral\Syncfusion.SfSpreadsheet.UWP\Ribbon\Icons\CellStyles\20Accent1_2010.png">
       <PackagePath>Syncfusion.SfSpreadsheet.UWP\Ribbon\Icons\CellStyles\20Accent1_2010.png</PackagePath>
@@ -5312,11 +5312,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2017-01-19T20:52:26.198</Modified>
+      <Modified>2017-01-28T21:43:58.256</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\bin\x86\Debug\Core\MoneyKepper2.exe">
       <PackagePath>MoneyKepper2.exe</PackagePath>
-      <Modified>2017-01-24T21:54:08.803</Modified>
+      <Modified>2017-01-28T22:18:13.364</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

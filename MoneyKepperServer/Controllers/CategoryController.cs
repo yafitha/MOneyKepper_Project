@@ -44,7 +44,6 @@ namespace MoneyKepperServer.Controllers
             //}
         }
 
-        //GET: api/cateogry
         [HttpPost]
         [Route("api/Category/GetCategoriesByTypes")]
         public HttpResponseMessage GetCategoriesByTypes([FromBody] List<int> types)
@@ -59,23 +58,31 @@ namespace MoneyKepperServer.Controllers
 
         [HttpPost]
         [Route("api/Category/CreateNewCategory")]
-        public HttpResponseMessage CreateNewCategory([FromBody] Category category)
+        public HttpResponseMessage CreateNewCategory([FromBody] Models.Category category)
         {
-            //moneyEntities3 context = new moneyEntities3();
-            //var cat = Mapper.Map<Category>(category);
-            //var result = context.Categories.Add(cat);
-            //context.Dispose();
+            moneyEntities3 context = new moneyEntities3();
+            var cat = Mapper.Map<Category>(category);
+            var result = context.Categories.Add(cat);
+            context.SaveChanges();
+            context.Dispose();
             return Request.CreateResponse(HttpStatusCode.OK);
         }
 
 
         [System.Web.Http.HttpDelete]
-        [Route("api/Category/DeleteCategory")]
-        public HttpResponseMessage DeleteCategory(Models.Category category)
+        [Route("api/Category/DeleteCategory/{categoryID}")]
+        public HttpResponseMessage DeleteCategory([FromUri] int categoryID)
         {
             moneyEntities3 context = new moneyEntities3();
-            var cat = Mapper.Map<Category>(category);
-            var result = context.Categories.Remove(cat);
+
+            var category = context.Categories.FirstOrDefault(c => c.ID == categoryID);
+            if (category == null)
+            {
+                context.Dispose();
+                return Request.CreateResponse(HttpStatusCode.NotFound);
+            }
+            context.Categories.Remove(category);
+            context.SaveChanges();
             context.Dispose();
             return Request.CreateResponse(HttpStatusCode.OK);
         }
@@ -83,23 +90,21 @@ namespace MoneyKepperServer.Controllers
 
         [System.Web.Http.HttpPut]
         [Route("api/Category/UpdateCategory")]
-        public HttpResponseMessage UpdateCategory(Models.Category category)
+        public HttpResponseMessage UpdateCategory([FromBody]Models.Category category)
         {
             moneyEntities3 context = new moneyEntities3();
             var cat = Mapper.Map<Category>(category);
-            var selectCategory = context.Categories.FirstOrDefault(c => c.ID == category.ID);
-            if (selectCategory != null)
+            var selectCategory = context.Categories.FirstOrDefault(c => c.ID == cat.ID);
+            if (selectCategory == null)
             {
-                selectCategory.Name = category.Name;
-                selectCategory.PictureName = category.PictureName;
-                selectCategory.IsActive = category.IsActive;
+                context.Dispose();
+                return Request.CreateResponse(HttpStatusCode.NotFound);
             }
+            selectCategory = cat;
+            context.SaveChanges();
             context.Dispose();
             return Request.CreateResponse(HttpStatusCode.OK);
         }
-
-
-
 
         //[System.Web.Http.HttpGet]
         //public HttpResponseMessage Get()

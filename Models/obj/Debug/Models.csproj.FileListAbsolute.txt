@@ -11,3 +11,4 @@ C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\Models\bin\Debug\Syst
 C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\Models\bin\Debug\System.ComponentModel.DataAnnotations.xml
 C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\Models\obj\Debug\Models.dll
 C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\Models\obj\Debug\Models.pdb
+C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache

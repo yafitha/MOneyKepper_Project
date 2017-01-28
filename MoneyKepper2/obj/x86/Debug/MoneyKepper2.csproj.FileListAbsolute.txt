@@ -1918,11 +1918,9 @@ C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\bin\x86\
 C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\bin\x86\Debug\WinRTXamlToolkit.dll
 C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\bin\x86\Debug\MoneyKepper_Core.dll
 C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\bin\x86\Debug\Models.dll
-C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\bin\x86\Debug\BL.dll
 C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\bin\x86\Debug\MoneyKepper_Core.pdb
 C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\bin\x86\Debug\MoneyKepper_Core.pri
 C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\bin\x86\Debug\Models.pdb
-C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\bin\x86\Debug\BL.pdb
 C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\obj\x86\Debug\MoneyKepper2.csprojResolveAssemblyReference.cache
 C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\obj\x86\Debug\App.g.i.cs
 C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\obj\x86\Debug\App.g.cs
