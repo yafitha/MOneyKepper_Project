@@ -14,7 +14,7 @@ namespace MoneyKepperServer.Controllers
     {
         //GET: api/cateogry
         [System.Web.Http.HttpGet]
-        [Route("api/Category/GetAllTransactions")]
+        [Route("api/Transaction/GetAllTransactions")]
         public List<Models.Transaction> GetAllTransactions()
         {
             moneyEntities3 context = new moneyEntities3();
@@ -24,8 +24,8 @@ namespace MoneyKepperServer.Controllers
         }
 
         [HttpPost]
-        [Route("api/Category/GetTransactionByTypes")]
-        public HttpResponseMessage GetTransactionByTypes([FromBody] List<int> types)
+        [Route("api/Transaction/GetTransactionsByTypes")]
+        public HttpResponseMessage GetTransactionsByTypes([FromBody] List<int> types)
         {
             moneyEntities3 context = new moneyEntities3();
             var test = context.Transactions.Where(tan => types.Contains(tan.Category.TypeID)).ToList();
@@ -36,7 +36,7 @@ namespace MoneyKepperServer.Controllers
 
 
         [HttpPost]
-        [Route("api/Category/CreateNewTransaction")]
+        [Route("api/Transaction/CreateNewTransaction")]
         public HttpResponseMessage CreateNewTransaction([FromBody] Models.Transaction transaction)
         {
             moneyEntities3 context = new moneyEntities3();
@@ -49,7 +49,7 @@ namespace MoneyKepperServer.Controllers
 
 
         [HttpDelete]
-        [Route("api/Category/DeleteTransaction/{transactionID}")]
+        [Route("api/Transaction/DeleteTransaction/{transactionID}")]
         public HttpResponseMessage DeleteTransaction([FromUri] int transactionID)
         {
             moneyEntities3 context = new moneyEntities3();
@@ -61,13 +61,14 @@ namespace MoneyKepperServer.Controllers
                 return Request.CreateResponse(HttpStatusCode.NoContent);
             }
             context.Transactions.Remove(transaction);
+            context.SaveChanges();
             context.Dispose();
             return Request.CreateResponse(HttpStatusCode.OK);
         }
 
 
         [HttpPut]
-        [Route("api/Category/UpdateTransaction")]
+        [Route("api/Transaction/UpdateTransaction")]
         public HttpResponseMessage UpdateTransaction([FromBody]Models.Transaction transaction)
         {
             moneyEntities3 context = new moneyEntities3();

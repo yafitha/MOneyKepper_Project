@@ -43,7 +43,7 @@ namespace MoneyKepper_Core.BL
         }
 
 
-        public static IList<Transaction> GetTransactionByTypes(List<int> types)
+        public static IList<Transaction> GetTransactionsByTypes(List<int> types)
         {
             List<Transaction> transactions = new List<Transaction>();
             Task task = Task.Run(async () =>
@@ -51,7 +51,7 @@ namespace MoneyKepper_Core.BL
                 using (var client = new HttpClient())
                 {
                     Run(client);
-                    HttpResponseMessage response = await client.PostAsJsonAsync("GetTransactionByTypes", types);
+                    HttpResponseMessage response = await client.PostAsJsonAsync("GetTransactionsByTypes", types);
                     string httpResponseBody = "";
                     if (response.IsSuccessStatusCode)
                     {
@@ -109,7 +109,6 @@ namespace MoneyKepper_Core.BL
 
         public static bool DeleteTransaction(int transactionID)
         {
-            // return new Logic.CategoryBL().CreateNewCategory(category);
             bool result = false;
             Task task = Task.Run(async () =>
             {

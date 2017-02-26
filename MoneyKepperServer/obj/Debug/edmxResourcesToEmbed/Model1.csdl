@@ -11,7 +11,7 @@
     <Property Name="IsActive" Type="Boolean" Nullable="false" />
     <Property Name="IsParent" Type="Boolean" Nullable="false" />
     <Property Name="ParentID" Type="Int32" />
-    <NavigationProperty Name="Transactions" Relationship="Self.FK__Transacti__Categ__34C8D9D1" FromRole="Category" ToRole="Transactions" />
+    <NavigationProperty Name="Transactions" Relationship="moneyModel.FK__Transacti__Categ__34C8D9D1" FromRole="Category" ToRole="Transaction" />
   </EntityType>
   <EntityType Name="Transaction">
     <Key>
@@ -20,10 +20,10 @@
     <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="CategoryID" Type="Int32" Nullable="false" />
-    <Property Name="IsActive" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-    <Property Name="Note" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Binary" Nullable="false" MaxLength="50" FixedLength="true" />
+    <Property Name="Note" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Amount" Type="Double" Nullable="false" />
-    <NavigationProperty Name="Category" Relationship="Self.FK__Transacti__Categ__34C8D9D1" FromRole="Transactions" ToRole="Category" />
+    <NavigationProperty Name="Category" Relationship="moneyModel.FK__Transacti__Categ__34C8D9D1" FromRole="Transaction" ToRole="Category" />
   </EntityType>
   <EntityType Name="TransactionType">
     <Key>
@@ -33,25 +33,25 @@
     <Property Name="ID" Type="Int32" Nullable="false" />
     <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
   </EntityType>
-  <Association Name="FK__Transacti__Categ__34C8D9D1">
-    <End Role="Category" Type="Self.Category" Multiplicity="1" />
-    <End Role="Transactions" Type="Self.Transaction" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Category">
-        <PropertyRef Name="ID" />
-      </Principal>
-      <Dependent Role="Transactions">
-        <PropertyRef Name="CategoryID" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <EntityContainer Name="moneyEntities3" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Categories" EntityType="Self.Category" />
     <EntitySet Name="Transactions" EntityType="Self.Transaction" />
     <EntitySet Name="TransactionTypes" EntityType="Self.TransactionType" />
-    <AssociationSet Name="FK__Transacti__Categ__34C8D9D1" Association="Self.FK__Transacti__Categ__34C8D9D1">
+    <AssociationSet Name="FK__Transacti__Categ__34C8D9D1" Association="moneyModel.FK__Transacti__Categ__34C8D9D1">
       <End Role="Category" EntitySet="Categories" />
-      <End Role="Transactions" EntitySet="Transactions" />
+      <End Role="Transaction" EntitySet="Transactions" />
     </AssociationSet>
   </EntityContainer>
+  <Association Name="FK__Transacti__Categ__34C8D9D1">
+    <End Type="moneyModel.Category" Role="Category" Multiplicity="1" />
+    <End Type="moneyModel.Transaction" Role="Transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Transaction">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

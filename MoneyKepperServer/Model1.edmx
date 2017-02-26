@@ -5,9 +5,16 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="moneyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'money.dbo.Category' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="Category">
           <Key>
             <PropertyRef Name="ID" />
+            
+            
+            
+            
+            
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
@@ -24,9 +31,9 @@
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Date" Type="datetime" Nullable="false" />
           <Property Name="CategoryID" Type="int" Nullable="false" />
-          <Property Name="IsActive" Type="binary" MaxLength="1" Nullable="false" />
-          <Property Name="Note" Type="varchar" MaxLength="255" />
           <Property Name="Amount" Type="float" Nullable="false" />
+          <Property Name="Note" Type="nvarchar" MaxLength="50" />
+          <Property Name="IsActive" Type="binary" MaxLength="50" Nullable="false" />
         </EntityType>
         <!--Errors Found During Generation:
 warning 6002: The table/view 'money.dbo.TransactionType' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
@@ -38,31 +45,25 @@ warning 6002: The table/view 'money.dbo.TransactionType' does not have a primary
           <Property Name="ID" Type="int" Nullable="false" />
           <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
-        <Association Name="FK__Transacti__Categ__34C8D9D1">
-          <End Role="Category" Type="Self.Category" Multiplicity="1" />
-          <End Role="Transactions" Type="Self.Transactions" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Category">
-              <PropertyRef Name="ID" />
-            </Principal>
-            <Dependent Role="Transactions">
-              <PropertyRef Name="CategoryID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="moneyModelStoreContainer">
-          <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Transactions" EntityType="Self.Transactions" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Category" EntityType="Self.Category" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Category].[ID] AS [ID], 
+    [Category].[Name] AS [Name], 
+    [Category].[PictureName] AS [PictureName], 
+    [Category].[TypeID] AS [TypeID], 
+    [Category].[IsActive] AS [IsActive], 
+    [Category].[IsParent] AS [IsParent], 
+    [Category].[ParentID] AS [ParentID]
+    FROM [dbo].[Category] AS [Category]</DefiningQuery>
+          </EntitySet>
           <EntitySet Name="TransactionType" EntityType="Self.TransactionType" store:Type="Tables" store:Schema="dbo">
             <DefiningQuery>SELECT 
     [TransactionType].[ID] AS [ID], 
     [TransactionType].[Name] AS [Name]
     FROM [dbo].[TransactionType] AS [TransactionType]</DefiningQuery>
           </EntitySet>
-          <AssociationSet Name="FK__Transacti__Categ__34C8D9D1" Association="Self.FK__Transacti__Categ__34C8D9D1">
-            <End Role="Category" EntitySet="Category" />
-            <End Role="Transactions" EntitySet="Transactions" />
-          </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -79,7 +80,7 @@ warning 6002: The table/view 'money.dbo.TransactionType' does not have a primary
           <Property Name="IsActive" Type="Boolean" Nullable="false" />
           <Property Name="IsParent" Type="Boolean" Nullable="false" />
           <Property Name="ParentID" Type="Int32" />
-          <NavigationProperty Name="Transactions" Relationship="Self.FK__Transacti__Categ__34C8D9D1" FromRole="Category" ToRole="Transactions" />
+          <NavigationProperty Name="Transactions" Relationship="moneyModel.FK__Transacti__Categ__34C8D9D1" FromRole="Category" ToRole="Transaction" />
         </EntityType>
         <EntityType Name="Transaction">
           <Key>
@@ -88,10 +89,10 @@ warning 6002: The table/view 'money.dbo.TransactionType' does not have a primary
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
           <Property Name="CategoryID" Type="Int32" Nullable="false" />
-          <Property Name="IsActive" Type="Binary" MaxLength="1" FixedLength="true" Nullable="false" />
-          <Property Name="Note" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="IsActive" Type="Binary" Nullable="false" MaxLength="50" FixedLength="true" />
+          <Property Name="Note" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Amount" Type="Double" Nullable="false" />
-          <NavigationProperty Name="Category" Relationship="Self.FK__Transacti__Categ__34C8D9D1" FromRole="Transactions" ToRole="Category" />
+          <NavigationProperty Name="Category" Relationship="moneyModel.FK__Transacti__Categ__34C8D9D1" FromRole="Transaction" ToRole="Category" />
         </EntityType>
         <EntityType Name="TransactionType">
           <Key>
@@ -101,27 +102,27 @@ warning 6002: The table/view 'money.dbo.TransactionType' does not have a primary
           <Property Name="ID" Type="Int32" Nullable="false" />
           <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
         </EntityType>
-        <Association Name="FK__Transacti__Categ__34C8D9D1">
-          <End Role="Category" Type="Self.Category" Multiplicity="1" />
-          <End Role="Transactions" Type="Self.Transaction" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Category">
-              <PropertyRef Name="ID" />
-            </Principal>
-            <Dependent Role="Transactions">
-              <PropertyRef Name="CategoryID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="moneyEntities3" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Categories" EntityType="Self.Category" />
           <EntitySet Name="Transactions" EntityType="Self.Transaction" />
           <EntitySet Name="TransactionTypes" EntityType="Self.TransactionType" />
-          <AssociationSet Name="FK__Transacti__Categ__34C8D9D1" Association="Self.FK__Transacti__Categ__34C8D9D1">
+          <AssociationSet Name="FK__Transacti__Categ__34C8D9D1" Association="moneyModel.FK__Transacti__Categ__34C8D9D1">
             <End Role="Category" EntitySet="Categories" />
-            <End Role="Transactions" EntitySet="Transactions" />
+            <End Role="Transaction" EntitySet="Transactions" />
           </AssociationSet>
         </EntityContainer>
+        <Association Name="FK__Transacti__Categ__34C8D9D1">
+          <End Type="moneyModel.Category" Role="Category" Multiplicity="1" />
+          <End Type="moneyModel.Transaction" Role="Transaction" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Transaction">
+              <PropertyRef Name="CategoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -175,8 +176,8 @@ warning 6002: The table/view 'money.dbo.TransactionType' does not have a primary
     <Options>
       <DesignerInfoPropertySet>
         <DesignerProperty Name="ValidateOnBuild" Value="true" />
-        <DesignerProperty Name="EnablePluralization" Value="true" />
-        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="False" />
         <DesignerProperty Name="UseLegacyProvider" Value="false" />
         <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
       </DesignerInfoPropertySet>
