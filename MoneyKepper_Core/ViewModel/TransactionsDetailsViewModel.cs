@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Navigation;
 using static MoneyKepper_Core.ViewModel.TransactionsViewModel;
+using MoneyKepper_Core.BL;
 
 namespace MoneyKepper_Core.ViewModel
 {
@@ -67,11 +68,19 @@ namespace MoneyKepper_Core.ViewModel
             {
                 if (type == Types.Expenses)
                 {
-                    this.ExpensesItems.Add(transactionItem);
+                    var result = TransactionBL.CreateNewTransaction(transactionItem.Transaction);
+                    if (result)
+                    {
+                        this.ExpensesItems.Add(transactionItem);
+                    }
                 }
                 else
                 {
-                    this.IncomeItems.Add(transactionItem);
+                    var result = TransactionBL.CreateNewTransaction(transactionItem.Transaction);
+                    if (result)
+                    {
+                        this.IncomeItems.Add(transactionItem);
+                    }
                 }
                 this.AddCallBack(Tuple.Create(type, transactionItem.Transaction.Amount));
             };
@@ -89,13 +98,21 @@ namespace MoneyKepper_Core.ViewModel
         {
             if (transactionItem.Category.TypeID == (int)Types.Expenses)
             {
-                this.ExpensesItems.Remove(transactionItem);
-                this.RemoveCallBack(Tuple.Create(Types.Expenses, transactionItem.Transaction.Amount));
+                var result = TransactionBL.DeleteTransaction(transactionItem.Transaction.ID);
+                if (result)
+                {
+                    this.ExpensesItems.Remove(transactionItem);
+                    this.RemoveCallBack(Tuple.Create(Types.Expenses, transactionItem.Transaction.Amount));
+                }
             }
             else
             {
-                this.IncomeItems.Remove(transactionItem);
-                this.RemoveCallBack(Tuple.Create(Types.Income, transactionItem.Transaction.Amount));
+                var result = TransactionBL.DeleteTransaction(transactionItem.Transaction.ID);
+                if (result)
+                {
+                    this.IncomeItems.Remove(transactionItem);
+                    this.RemoveCallBack(Tuple.Create(Types.Income, transactionItem.Transaction.Amount));
+                }
             }
         }
 

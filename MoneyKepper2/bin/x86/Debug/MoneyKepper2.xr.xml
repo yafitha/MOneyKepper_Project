@@ -46,7 +46,6 @@
     <RootPropertyPathName Name="ShowCategoriesGraph" />
     <RootPropertyPathName Name="MonthItems" />
     <RootPropertyPathName Name="TransactionsViewModel" />
-    <RootPropertyPathName Name="ShowExtraInfoCommand" />
     <RootPropertyPathName Name="Balance" />
     <RootPropertyPathName Name="Expenses" />
     <RootPropertyPathName Name="Income" />

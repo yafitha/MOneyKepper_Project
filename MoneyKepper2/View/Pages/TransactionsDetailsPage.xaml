@@ -174,7 +174,7 @@
                         Command="{Binding TransactionsDetailsViewModel.RemoveCommand ,Source={StaticResource Locator}}"
                         CommandParameter="{Binding}"
                         HorizontalAlignment="Right">
-                        <TextBlock
+                      <TextBlock
                         Foreground="Black"
                         Style="{StaticResource MDL2AssetsTextBlockStyle}"
                         Text=" &#xE711;"/>

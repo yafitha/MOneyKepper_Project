@@ -58,8 +58,6 @@ namespace MoneyKepper_Core.ViewModel
 
         #region Commands
 
-        public RelayCommand ShowExtraInfoCommand { get; private set; }
-
         #endregion
 
         #region Cotr's
@@ -76,10 +74,9 @@ namespace MoneyKepper_Core.ViewModel
         #region Private Methods
         private void SetCommands()
         {
-            this.ShowExtraInfoCommand = new RelayCommand(OnShowExtraInfoCommand);
         }
 
-        private void OnShowExtraInfoCommand()
+        private void ShowExtraInfo()
         {
             Action<Tuple<Types, double>> AddCallBack = transaction =>
             {
@@ -131,15 +128,7 @@ namespace MoneyKepper_Core.ViewModel
                 this.SetIncomeItemsAndExpensesItems();
                 this.CurrentMonth = DateTime.Now.ToString("MMMM");
                 this.Balance = Income - Expenses;
-                var list = new List<int>();
-                list.Add((int)Types.Expenses);
-                var categories = CategoryBL.GetCategoriesByTypes(list);
-                //var categories = CategoryBL.GetAllCategories();
-                //var result = CategoryBL.CreateNewCategory(new Category(6, "חופשה", 2, "5", false));
-                var cat = categories.First();
-                cat.PictureName = "24";
-                var result = CategoryBL.UpdateCategory(cat);
-               // var categories = CategoryBL.GetCategoriesByTypes(list);
+                this.ShowExtraInfo();
             }
         }
         public override void OnNavigatedFrom(NavigationEventArgs e)

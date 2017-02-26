@@ -10,7 +10,7 @@ namespace Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Category()
         {
-            this.Transactions = new HashSet<Transaction>();
+          
         }
 
         public int ID { get; set; }
@@ -20,10 +20,6 @@ namespace Models
         public bool IsActive { get; set; }
         public bool IsParent { get; set; }
         public Nullable<int> ParentID { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Transaction> Transactions { get; set; }
-    
     public Category(int id, string name, int typeID, string pictureName, bool isParent, int? parentID = null, bool isActive = true)
         {
             this.ID = id;
