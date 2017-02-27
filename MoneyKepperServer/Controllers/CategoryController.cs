@@ -60,8 +60,9 @@ namespace MoneyKepperServer.Controllers
         [Route("api/Category/CreateNewCategory")]
         public HttpResponseMessage CreateNewCategory([FromBody] Models.Category category)
         {
+            var c = new Models.Category("מתנות",1,"30",true);
             moneyEntities3 context = new moneyEntities3();
-            var cat = Mapper.Map<Category>(category);
+            var cat = Mapper.Map<Category>(c);
             var result = context.Categories.Add(cat);
             context.SaveChanges();
             context.Dispose();

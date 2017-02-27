@@ -45,20 +45,12 @@ namespace MoneyKepper2.Service
 
         public IList<Category> GetCategoriesByTypes(List<Types> types)
         {
-            List<Category> categories = new List<Category>();
-            var allCategories = CacheManager.Instance.Categories.Values.ToList();
-            foreach (var type in types)
-            {
-                var categoryType = allCategories.Where(cat => cat.TypeID == (int)type);
-                categories.AddRange(categoryType);
-            }
-
-            return categories;
+            return CategoryBL.GetCategoriesByTypes(types.Select(t=>(int)t).ToList());
         }
 
         public IList<string> GetAvailableImages()
         {
-            var imagesName = CacheManager.Instance.Categories.Values.Select(cat => cat.PictureName).ToList();
+            var imagesName = this.GetAllCategories().Select(cat => cat.PictureName).ToList();
             var allImages = CacheManager.Instance.ImagesName;
             return allImages.Except(imagesName).ToList();
         }
