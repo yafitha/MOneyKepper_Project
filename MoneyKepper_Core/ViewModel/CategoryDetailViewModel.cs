@@ -14,6 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Navigation;
 using static MoneyKepper_Core.ViewModel.TransactionsViewModel;
+using MoneyKepper_Core.BL;
 
 namespace MoneyKepper_Core.ViewModel
 {
@@ -72,15 +73,19 @@ namespace MoneyKepper_Core.ViewModel
             {
                 group = this.IncomesGroups.FirstOrDefault(g => g.Category.ID == category.ParentID);
                 group.Categories.Remove(category);
-                return;
             }
-            group = this.ExpensesGroups.FirstOrDefault(g => g.Category.ID == category.ParentID);
-            group.Categories.Remove(category);
+            else
+            {
+                group = this.ExpensesGroups.FirstOrDefault(g => g.Category.ID == category.ParentID);
+                group.Categories.Remove(category);
+            }
+
+            CategoryBL.DeleteCategory(category.ID);
         }
 
         private void OnAddCategoryCommand()
         {
-            Action<Category> AddNewTransactionCallback = category =>
+            Action<Category> callback = category =>
             {
                 if (category.TypeID == (int)Types.Income)
                 {
@@ -94,7 +99,7 @@ namespace MoneyKepper_Core.ViewModel
             };
             var dialogArgs = new Dictionary<string, object>()
                 {
-                    { "Callback", AddNewTransactionCallback },
+                    { "Callback", callback },
 
                 };
             this.DialogService.ShowDialog(DialogKeys.ADD_CATEGORY, dialogArgs);
@@ -106,7 +111,8 @@ namespace MoneyKepper_Core.ViewModel
             if (category.IsParent)
             {
                 categoryGroup.Category = category;
-                this.IncomesGroups.Add(categoryGroup);
+                groups.Add(categoryGroup);
+                CategoryBL.CreateNewCategory(category);
                 return;
             }
             var group = groups.FirstOrDefault(g => g.Category.ID == category.ParentID);
@@ -118,6 +124,7 @@ namespace MoneyKepper_Core.ViewModel
                 group.Categories = new ObservableCollection<Category>();
             }
             group.Categories.Add(category);
+            CategoryBL.CreateNewCategory(category);
         }
 
         #endregion

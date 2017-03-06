@@ -20,9 +20,8 @@ namespace Models
         public bool IsActive { get; set; }
         public bool IsParent { get; set; }
         public Nullable<int> ParentID { get; set; }
-    public Category(int id, string name, int typeID, string pictureName, bool isParent, int? parentID = null, bool isActive = true)
+    public Category(string name, int typeID, string pictureName, bool isParent, int? parentID = null, bool isActive = true)
         {
-            this.ID = id;
             this.TypeID = typeID;
             this.Name = name;
             this.PictureName = pictureName;

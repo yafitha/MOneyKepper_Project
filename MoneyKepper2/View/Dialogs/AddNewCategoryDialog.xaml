@@ -32,33 +32,50 @@
                     <TextBlock
                     Width="130"
                     Text="שם קטגוריה"/>
-                    <TextBox
-                    Width="130"
-                    Text="{Binding Name}"
+                   <TextBox
+                    Width="200"
+                    Text="{Binding Name ,Mode=TwoWay}"
                     Margin="5,0,0,8">
                     </TextBox>
                 </StackPanel>
                 <StackPanel 
-                Orientation="Horizontal">
-                    <TextBlock
+                    Margin="0,10,0,10"
+                    Orientation="Horizontal">
+                    <RadioButton 
+                        Command="{Binding CategoryTypeSelectionCommand}"
+                        CommandParameter="1"
+                        GroupName="Type"
+                        Width="135" 
+                        Content="Income"/>
+                    <RadioButton 
+                        Command="{Binding CategoryTypeSelectionCommand}"
+                        CommandParameter="2"
+                        GroupName="Type"
+                        Content="Expenses"/>
+                </StackPanel>
+                <StackPanel 
+                     Margin="0,10,0,10"
+                     Orientation="Horizontal">
+                 <TextBlock
                     Width="130"
                     Text="בחר כתת קטגוריה"/>
-                    <CheckBox
+                  <CheckBox
                     x:Name="IsParentCheckBox"
-                    IsChecked="{Binding IsChecked}"
+                    IsChecked="{Binding IsSubCategoryChecked}"
                     Width="130"
                     Margin="5,0,0,8">
                     </CheckBox>
                 </StackPanel>
                 <StackPanel
-            Visibility="{Binding ElementName=IsParentCheckBox ,Path=IsChecked ,Converter={StaticResource BooleanToVisibilityConverter}}"
-              Orientation="Horizontal">
-                    <TextBlock
+                    VerticalAlignment="Center"
+                    Visibility="{Binding ElementName=IsParentCheckBox ,Path=IsChecked ,Converter={StaticResource BooleanToVisibilityConverter}}"
+                   Orientation="Horizontal">
+                  <TextBlock
                     Width="130"
                     Text="קטגורית אבא"/>
-                    <ComboBox
-                    Width="130"
-                    Margin="0,0,0,8"
+                  <ComboBox
+                    Width="200"
+                    Margin="6,0,0,8"
                     SelectedItem="{Binding SelectedCategory, Mode=TwoWay}"
                     ItemsSource="{Binding Categories}">
                         <ComboBox.ItemTemplate>
@@ -78,8 +95,8 @@
                BorderBrush="Gray"
                BorderThickness="1">
                 <Image
-                 Width="70"
-                 Height="70"
+                 Width="60"
+                 Height="60"
                  Source="{Binding ElementName=ImagesListView ,Path=SelectedItem,Converter={StaticResource PictureNameToPictureSourceConverter}}"/>
             </Border>
         </Grid>
@@ -89,16 +106,10 @@
             Width="600"
             Height="300"
             Margin="25,25"
+            SelectedItem="{Binding SelectedImage,Mode=TwoWay}"
             IsItemClickEnabled="True"
             ScrollViewer.VerticalScrollBarVisibility="Auto"          
             ItemsSource="{Binding Images}">
-            <interactivity:Interaction.Behaviors>
-                <core:EventTriggerBehavior EventName="ItemClick">
-                    <core:InvokeCommandAction 
-                        CommandParameter="{Binding}"
-                        Command="{Binding SelectionCommand ,Mode=OneTime}"/>
-                </core:EventTriggerBehavior>
-            </interactivity:Interaction.Behaviors>
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Image                             
