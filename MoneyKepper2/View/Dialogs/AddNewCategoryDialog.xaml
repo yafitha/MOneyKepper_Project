@@ -23,10 +23,10 @@
         <Grid>
             <StackPanel Padding="10,0" Width="400" HorizontalAlignment="Left">
                 <TextBlock
-            FontSize="18"
-            FontWeight="Bold"
-            Margin="0,6,0,10"
-            Text="הוסף קטגוריה"/>
+                    FontSize="22"
+                    FontWeight="Bold"
+                    Margin="0,6,0,10"
+                    Text="הוסף קטגוריה"/>
                 <StackPanel 
                 Orientation="Horizontal">
                     <TextBlock
@@ -46,12 +46,12 @@
                         CommandParameter="1"
                         GroupName="Type"
                         Width="135" 
-                        Content="Income"/>
+                        Content="הכנסות"/>
                     <RadioButton 
                         Command="{Binding CategoryTypeSelectionCommand}"
                         CommandParameter="2"
                         GroupName="Type"
-                        Content="Expenses"/>
+                        Content="הוצאות"/>
                 </StackPanel>
                 <StackPanel 
                      Margin="0,10,0,10"
@@ -93,7 +93,7 @@
                Margin="30,0"
                HorizontalAlignment="Right"
                BorderBrush="Gray"
-               BorderThickness="1">
+               BorderThickness="2">
                 <Image
                  Width="60"
                  Height="60"

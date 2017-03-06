@@ -18,10 +18,11 @@ namespace MoneyKepperServer.Controllers
         [Route("api/Category/GetAllCategories")]
         public List<Models.Category> GetAllCategories()
         {
-            moneyEntities3 context = new moneyEntities3();
-            var result = context.Categories.ToList();
-            context.Dispose();
-            return Mapper.Map<List<Models.Category>>(result);
+            using (moneyEntities3 context = new moneyEntities3())
+            {
+                var result = context.Categories.ToList();
+                return Mapper.Map<List<Models.Category>>(result);
+            }
             //SqlConnection con = new SqlConnection("Data Source=(localdb)\\MSSQLLocalDB; Initial Catalog =money; Integrated Security = True");
 
             //Category matchingPerson = new Category();
@@ -48,11 +49,12 @@ namespace MoneyKepperServer.Controllers
         [Route("api/Category/GetCategoriesByTypes")]
         public HttpResponseMessage GetCategoriesByTypes([FromBody] List<int> types)
         {
-            moneyEntities3 context = new moneyEntities3();
-            var test = context.Categories.Where(cat => types.Contains(cat.TypeID)).ToList();
-            var result = Mapper.Map<List<Models.Category>>(test);
-            context.Dispose();
-            return Request.CreateResponse<List<Models.Category>>(HttpStatusCode.OK, result);
+            using (moneyEntities3 context = new moneyEntities3())
+            {
+                var test = context.Categories.Where(cat => types.Contains(cat.TypeID)).ToList();
+                var result = Mapper.Map<List<Models.Category>>(test);
+                return Request.CreateResponse<List<Models.Category>>(HttpStatusCode.OK, result);
+            }
         }
 
 
@@ -60,13 +62,13 @@ namespace MoneyKepperServer.Controllers
         [Route("api/Category/CreateNewCategory")]
         public HttpResponseMessage CreateNewCategory([FromBody] Models.Category category)
         {
-            var c = new Models.Category("מתנות",1,"30",true);
-            moneyEntities3 context = new moneyEntities3();
-            var cat = Mapper.Map<Category>(c);
-            var result = context.Categories.Add(cat);
-            context.SaveChanges();
-            context.Dispose();
-            return Request.CreateResponse(HttpStatusCode.OK);
+            using (moneyEntities3 context = new moneyEntities3())
+            {
+                var cat = Mapper.Map<Category>(category);
+                var result = context.Categories.Add(cat);
+                context.SaveChanges();
+                return Request.CreateResponse(HttpStatusCode.OK);
+            }
         }
 
 
@@ -74,18 +76,18 @@ namespace MoneyKepperServer.Controllers
         [Route("api/Category/DeleteCategory/{categoryID}")]
         public HttpResponseMessage DeleteCategory([FromUri] int categoryID)
         {
-            moneyEntities3 context = new moneyEntities3();
-
-            var category = context.Categories.FirstOrDefault(c => c.ID == categoryID);
-            if (category == null)
+            using (moneyEntities3 context = new moneyEntities3())
             {
-                context.Dispose();
-                return Request.CreateResponse(HttpStatusCode.NotFound);
+                var category = context.Categories.FirstOrDefault(c => c.ID == categoryID);
+                if (category == null)
+                {
+                    context.Dispose();
+                    return Request.CreateResponse(HttpStatusCode.NotFound);
+                }
+                context.Categories.Remove(category);
+                context.SaveChanges();
+                return Request.CreateResponse(HttpStatusCode.OK);
             }
-            context.Categories.Remove(category);
-            context.SaveChanges();
-            context.Dispose();
-            return Request.CreateResponse(HttpStatusCode.OK);
         }
 
 
@@ -93,18 +95,19 @@ namespace MoneyKepperServer.Controllers
         [Route("api/Category/UpdateCategory")]
         public HttpResponseMessage UpdateCategory([FromBody]Models.Category category)
         {
-            moneyEntities3 context = new moneyEntities3();
-            var cat = Mapper.Map<Category>(category);
-            var selectCategory = context.Categories.FirstOrDefault(c => c.ID == cat.ID);
-            if (selectCategory == null)
+            using (moneyEntities3 context = new moneyEntities3())
             {
-                context.Dispose();
-                return Request.CreateResponse(HttpStatusCode.NotFound);
+                var cat = Mapper.Map<Category>(category);
+                var selectCategory = context.Categories.FirstOrDefault(c => c.ID == cat.ID);
+                if (selectCategory == null)
+                {
+                    context.Dispose();
+                    return Request.CreateResponse(HttpStatusCode.NotFound);
+                }
+                selectCategory = cat;
+                context.SaveChanges();
+                return Request.CreateResponse(HttpStatusCode.OK);
             }
-            selectCategory = cat;
-            context.SaveChanges();
-            context.Dispose();
-            return Request.CreateResponse(HttpStatusCode.OK);
         }
 
         //[System.Web.Http.HttpGet]

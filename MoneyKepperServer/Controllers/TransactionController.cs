@@ -17,21 +17,35 @@ namespace MoneyKepperServer.Controllers
         [Route("api/Transaction/GetAllTransactions")]
         public List<Models.Transaction> GetAllTransactions()
         {
-            moneyEntities3 context = new moneyEntities3();
-            var allTransactions = context.Transactions.ToList();
-            context.Dispose();
-            return Mapper.Map<List<Models.Transaction>>(allTransactions);
+            using (moneyEntities3 context = new moneyEntities3())
+            {
+                var allTransactions = context.Transactions.ToList();
+                return Mapper.Map<List<Models.Transaction>>(allTransactions);
+            }
+        }
+
+     
+        [System.Web.Http.HttpPost]
+        [Route("api/Transaction/GetTransactionsByDate")]
+        public List<Models.Transaction> GetTransactionsByDate([FromBody] DateTime dateTime)
+        {
+            using (moneyEntities3 context = new moneyEntities3())
+            {
+                var allTransactions = context.Transactions.Where(t=>t.Date.Month == dateTime.Month && t.Date.Year == dateTime.Year).ToList();
+                return Mapper.Map<List<Models.Transaction>>(allTransactions);
+            }
         }
 
         [HttpPost]
         [Route("api/Transaction/GetTransactionsByTypes")]
         public HttpResponseMessage GetTransactionsByTypes([FromBody] List<int> types)
         {
-            moneyEntities3 context = new moneyEntities3();
-            var test = context.Transactions.Where(tan => types.Contains(tan.Category.TypeID)).ToList();
-            var result = Mapper.Map<List<Models.Transaction>>(test);
-            context.Dispose();
-            return Request.CreateResponse<List<Models.Transaction>>(HttpStatusCode.OK, result);
+            using (moneyEntities3 context = new moneyEntities3())
+            {
+                var test = context.Transactions.Where(tan => types.Contains(tan.Category.TypeID)).ToList();
+                var result = Mapper.Map<List<Models.Transaction>>(test);
+                return Request.CreateResponse<List<Models.Transaction>>(HttpStatusCode.OK, result);
+            }
         }
 
 
@@ -39,12 +53,13 @@ namespace MoneyKepperServer.Controllers
         [Route("api/Transaction/CreateNewTransaction")]
         public HttpResponseMessage CreateNewTransaction([FromBody] Models.Transaction transaction)
         {
-            moneyEntities3 context = new moneyEntities3();
-            var tan = Mapper.Map<Transaction>(transaction);
-            var result = context.Transactions.Add(tan);
-            context.SaveChanges();
-            context.Dispose();
-            return Request.CreateResponse(HttpStatusCode.OK);
+            using (moneyEntities3 context = new moneyEntities3())
+            {
+                var tan = Mapper.Map<Transaction>(transaction);
+                var result = context.Transactions.Add(tan);
+                context.SaveChanges();
+                return Request.CreateResponse(HttpStatusCode.OK);
+            }
         }
 
 

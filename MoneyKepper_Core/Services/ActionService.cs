@@ -17,11 +17,12 @@ namespace MoneyKepperCore.Service
             this.NavigationService = navigationService;
         }
 
-        public void ShowTransactionsDetails(Action<Tuple<TransactionsViewModel.Types, double>> addCallBack, Action<Tuple<TransactionsViewModel.Types, double>> removeCallBack)
+        public void ShowTransactionsDetails(Action<Tuple<TransactionsViewModel.Types, double>> addCallBack, Action<Tuple<TransactionsViewModel.Types, double>> removeCallBack, DateTime currentMonth)
         {
             Dictionary<string, object> args = new Dictionary<string, object>();
             args.Add("AddCallBack", addCallBack);
             args.Add("RemoveCallBack", removeCallBack);
+            args.Add("CureentMonth", currentMonth);
             this.NavigationService.DetailsFrame.NavigateTo(NavigationPageKeys.TRANSACTION_DETAILS, args);
         }
 

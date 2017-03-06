@@ -27,11 +27,18 @@ namespace MoneyKepper_Core.ViewModel
 
         #region Bindable Properties
 
-        private string _currentMonth;
-        public string CurrentMonth
+        private DateTime _currentMonth;
+        public DateTime CurrentMonth
         {
             get { return _currentMonth; }
             set { this.Set(ref _currentMonth, value); }
+        }
+
+        private ObservableCollection<DateTime> _allMonths;
+        public ObservableCollection<DateTime> AllMonths
+        {
+            get { return _allMonths; }
+            set { this.Set(ref _allMonths, value); }
         }
 
         private double _income;
@@ -54,6 +61,8 @@ namespace MoneyKepper_Core.ViewModel
             set { this.Set(ref _balance, value); }
         }
 
+        public RelayCommand ShowTransactionsCommand { get; private set; }
+
         #endregion
 
         #region Commands
@@ -74,6 +83,13 @@ namespace MoneyKepper_Core.ViewModel
         #region Private Methods
         private void SetCommands()
         {
+            this.ShowTransactionsCommand = new RelayCommand(OnShowTransactionsCommand);
+        }
+
+        private void OnShowTransactionsCommand()
+        {
+            this.SetIncomeItemsAndExpensesItems();
+            this.ShowExtraInfo();
         }
 
         private void ShowExtraInfo()
@@ -104,7 +120,7 @@ namespace MoneyKepper_Core.ViewModel
                 this.Balance = this.Income - this.Expenses;
             };
 
-            this.ActionsService.ShowTransactionsDetails(AddCallBack, removeCallBack);
+            this.ActionsService.ShowTransactionsDetails(AddCallBack, removeCallBack, this.CurrentMonth);
         }
 
         private void SetIncomeItemsAndExpensesItems()
@@ -126,11 +142,24 @@ namespace MoneyKepper_Core.ViewModel
             {
                 var args = e.Parameter as Dictionary<string, object>;
                 this.SetIncomeItemsAndExpensesItems();
-                this.CurrentMonth = DateTime.Now.ToString("MMMM");
+                // this.CurrentMonth = DateTime.Now.ToString("MMMM");
+                this.CurrentMonth = DateTime.Now;
+                this.InitAllMonths();
                 this.Balance = Income - Expenses;
                 this.ShowExtraInfo();
             }
         }
+
+        private void InitAllMonths()
+        {
+            this.AllMonths = new ObservableCollection<DateTime>();
+            for (int i = 0; i < 11; i++)
+            {
+                var month = DateTime.Now.AddMonths(-i);
+                this.AllMonths.Add(month);
+            }
+        }
+
         public override void OnNavigatedFrom(NavigationEventArgs e)
         {
             this.ActionsService.ShowEmptyPage();

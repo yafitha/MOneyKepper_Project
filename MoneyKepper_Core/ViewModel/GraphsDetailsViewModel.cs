@@ -1,6 +1,7 @@
 ﻿using GalaSoft.MvvmLight.Command;
 using MoneyKepper_Core.Managers;
 using MoneyKepper_Core.Models;
+using MoneyKepper2.Service;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -41,11 +42,13 @@ namespace MoneyKepper_Core.ViewModel
         #region Commands
 
         public RelayCommand ShowGraphCommmand { get; private set; }
+        public IDataService DataService { get; private set; }
         #endregion
 
         #region Ctor's
-        public GraphsDetailsViewModel()
+        public GraphsDetailsViewModel(IDataService dataService)
         {
+            this.DataService = dataService;
             this.SetCommands();
         }
 
@@ -58,7 +61,7 @@ namespace MoneyKepper_Core.ViewModel
 
         private void ShowGraph()
         {
-            var categories = CacheManager.Instance.Categories.Values.ToList();
+            var categories = this.DataService.GetAllCategories();
             this.CategoryItems = new ObservableCollection<CategoryItem>();
             Random r = new Random(123345);
             string month;

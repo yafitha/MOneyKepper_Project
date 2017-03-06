@@ -6,6 +6,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+   xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:Interactivity ="using:Microsoft.Xaml.Interactivity"
     d:DesignWidth="300"
     FlowDirection="RightToLeft"
     DataContext="{Binding TransactionsViewModel,Source={StaticResource Locator} }">
@@ -137,7 +139,7 @@
             </Setter>
         </Style>
         <Style x:Key="TransactionTextBlockStyle" TargetType="TextBlock">
-            <Setter Property="FontSize" Value="17"/>
+            <Setter Property="FontSize" Value="22"/>
             <Setter Property="Margin" Value="5,12"/>
         </Style>
     </Page.Resources>
@@ -156,26 +158,44 @@
         <StackPanel 
             Padding="8,0"
             Grid.Row="1">
-            <StackPanel>
+            <StackPanel Orientation="Horizontal">
                 <TextBlock
-                FontSize="20"
-                Style="{StaticResource TransactionTextBlockStyle}">
-                <Run Text="חודש:"/>
-                <Run Text="{Binding CurrentMonth}"/>
-                </TextBlock>
+                FontSize="26"
+                Style="{StaticResource TransactionTextBlockStyle}"
+                    Text="חודש:"/>
+                <ComboBox 
+                   VerticalAlignment="Center"
+                   ItemsSource="{Binding AllMonths}"
+                   SelectedItem="{Binding CurrentMonth,Mode=TwoWay}"
+                   Height="30" 
+                   Width="200">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Converter={StaticResource DateConverter},ConverterParameter= MMMM yyyy}"/>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                    <Interactivity:Interaction.Behaviors>
+                        <core:EventTriggerBehavior EventName="SelectionChanged">
+                            <core:InvokeCommandAction Command="{Binding ShowTransactionsCommand}"/>
+                        </core:EventTriggerBehavior>
+                    </Interactivity:Interaction.Behaviors>
+                </ComboBox>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <Grid>
-                    <Ellipse Fill="Green" Width="36" Height="36"></Ellipse>
+                    <Ellipse Fill="Green" 
+                             Width="42" 
+                             Height="42"></Ellipse>
                     <TextBlock
                     Text="&#xE81E;"
-                    FontSize="20"
+                    FontSize="24"
                     Foreground="White"
                     VerticalAlignment="Center"
-                    Margin="7,0,7,0"
+                    Margin="9,0,5,0"
                     Style="{StaticResource MDL2AssetsTextBlockStyle}"/>
                 </Grid>
-                <TextBlock
+              <TextBlock
+                FontSize="22"
                 VerticalAlignment="Center"
                 Style="{StaticResource TransactionTextBlockStyle}">
                 <Run Text="הכנסות:"/>
@@ -184,13 +204,15 @@
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <Grid>
-                    <Ellipse Fill="Red" Width="36" Height="36"></Ellipse>
+                    <Ellipse Fill="Red"
+                             Width="42" 
+                             Height="42"></Ellipse>
                     <TextBlock
                     Text="&#xE14D;"
-                    FontSize="20"
+                     FontSize="24"
                     Foreground="White"
                     VerticalAlignment="Center"
-                    Margin="7,0,7,0"
+                    Margin="8,0,5,0"
                     Style="{StaticResource MDL2AssetsTextBlockStyle}"/>
                 </Grid>
 
@@ -203,13 +225,15 @@
             </StackPanel>
             <StackPanel Orientation="Horizontal">
                 <Grid>
-                    <Ellipse Fill="Gray" Width="36" Height="36"></Ellipse>
+                    <Ellipse Fill="Gray" 
+                             Width="42" 
+                             Height="42"></Ellipse>
                     <TextBlock
                     Text="&#xEC59;"
-                    FontSize="20"
+                    FontSize="24"
                     Foreground="White"
                     VerticalAlignment="Center"
-                    Margin="8,0,7,1"
+                    Margin="9,0,5,1"
                     Style="{StaticResource MDL2AssetsTextBlockStyle}"/>
                 </Grid>
                 <TextBlock

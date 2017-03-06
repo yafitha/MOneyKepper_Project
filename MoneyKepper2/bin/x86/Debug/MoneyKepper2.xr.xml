@@ -20,6 +20,7 @@
     <RootPropertyPathName Name="IsSubCategoryChecked" />
     <RootPropertyPathName Name="CategoryTypeSelectionCommand" />
     <RootPropertyPathName Name="AddTransactionViewModel" />
+    <RootPropertyPathName Name="ValidationMessage" />
     <RootPropertyPathName Name="Note" />
     <RootPropertyPathName Name="Amount" />
     <RootPropertyPathName Name="EndDate" />
@@ -51,7 +52,9 @@
     <RootPropertyPathName Name="Balance" />
     <RootPropertyPathName Name="Expenses" />
     <RootPropertyPathName Name="Income" />
+    <RootPropertyPathName Name="AllMonths" />
     <RootPropertyPathName Name="CurrentMonth" />
+    <RootPropertyPathName Name="ShowTransactionsCommand" />
     <RootPropertyPathName Name="TransactionsDetailsViewModel" />
     <RootPropertyPathName Name="Transaction" />
     <RootPropertyPathName Name="ExpensesItems" />
@@ -140,8 +143,8 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="Text" />
       <RootProperty Name="Width" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Style" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Padding" />
@@ -226,8 +229,8 @@
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Resources" />
-      <RootProperty Name="BorderBrush" />
       <RootProperty Name="Height" />
+      <RootProperty Name="BorderBrush" />
       <RootProperty Name="Margin" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Padding" />
@@ -418,6 +421,8 @@
       <RootProperty Name="SelectedItem" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
       <RootProperty Name="IsChecked" />
@@ -606,6 +611,14 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
     </RootType>
+    <RootType FullName="Microsoft.Xaml.Interactions.Core.EventTriggerBehavior">
+      <RootProperty Name="EventName" />
+      <RootProperty Name="Actions" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.Interactions.Core.InvokeCommandAction">
+      <RootProperty Name="Command" />
+      <RootProperty Name="CommandParameter" />
+    </RootType>
     <RootType FullName="MoneyKepper2.View.Pages.TransactionsPage" />
     <RootType FullName="MoneyKepper2.View.Pages.TransactionsDetailsPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
@@ -623,14 +636,6 @@
       <RootProperty Name="IsPaneOpen" />
       <RootProperty Name="Pane" />
       <RootProperty Name="Content" />
-    </RootType>
-    <RootType FullName="Microsoft.Xaml.Interactions.Core.EventTriggerBehavior">
-      <RootProperty Name="EventName" />
-      <RootProperty Name="Actions" />
-    </RootType>
-    <RootType FullName="Microsoft.Xaml.Interactions.Core.InvokeCommandAction">
-      <RootProperty Name="Command" />
-      <RootProperty Name="CommandParameter" />
     </RootType>
     <RootType FullName="MoneyKepper2.View.Views.PrimaryPanelView" />
     <RootType FullName="MoneyKepper2.View.Pages.HistoryPage" />
