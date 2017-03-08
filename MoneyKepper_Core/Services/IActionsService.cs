@@ -10,7 +10,7 @@ namespace MoneyKepperCore.Service
 {
     public interface IActionsService
     {
-        void ShowTransactionsDetails(Action<Tuple<TransactionsViewModel.Types, double>> addCallBack , Action<Tuple<TransactionsViewModel.Types, double>> removeCallback);
+        void ShowTransactionsDetails(Action<Tuple<TransactionsViewModel.Types, double>> addCallBack, Action<Tuple<TransactionsViewModel.Types, double>> removeCallBack, DateTime currentMonth);
         void ShowHistoryGraphs(DateTime startDateTime, DateTime endDateTime, List<Category> Categories, Graph graphType);
         void ShowMonthGraphs(DateTime startDateTime, DateTime endDateTime, Graph graphType);
         void ShowEmptyPage();

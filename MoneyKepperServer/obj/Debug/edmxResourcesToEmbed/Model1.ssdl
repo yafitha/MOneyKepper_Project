@@ -33,6 +33,18 @@ warning 6002: The table/view 'money.dbo.TransactionType' does not have a primary
     <Property Name="ID" Type="int" Nullable="false" />
     <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
+  <Association Name="FK_Transactions_category">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="Transactions" Type="Self.Transactions" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Transactions">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="moneyModelStoreContainer">
     <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Transactions" EntityType="Self.Transactions" Schema="dbo" store:Type="Tables" />
@@ -42,5 +54,9 @@ warning 6002: The table/view 'money.dbo.TransactionType' does not have a primary
     [TransactionType].[Name] AS [Name]
     FROM [dbo].[TransactionType] AS [TransactionType]</DefiningQuery>
     </EntitySet>
+    <AssociationSet Name="FK_Transactions_category" Association="Self.FK_Transactions_category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Transactions" EntitySet="Transactions" />
+    </AssociationSet>
   </EntityContainer>
 </Schema>

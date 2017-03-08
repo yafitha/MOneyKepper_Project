@@ -45,6 +45,14 @@ namespace MoneyKepper_Core.ViewModel
             get { return _amount; }
             set { this.Set(ref _amount, value); }
         }
+
+        private string _validationMessage;
+        public string ValidationMessage
+        {
+            get { return _validationMessage; }
+            set { this.Set(ref _validationMessage, value); }
+        }
+
         private string _note;
         public string Note
         {
@@ -106,6 +114,18 @@ namespace MoneyKepper_Core.ViewModel
 
         private void OnSaveCommand()
         {
+            if (this.SelectedCategory == null)
+            {
+                this.ValidationMessage = "יש לבחור קטגוריה";
+                return;
+            }
+            if (string.IsNullOrEmpty(this.Amount))
+            {
+                this.ValidationMessage = "יש להכניס סכום";
+                return;
+            }
+
+            this.ValidationMessage = "";
             Transaction transaction = new Transaction() { Amount = double.Parse(this.Amount), CategoryID = SelectedCategory.ID, Note = this.Note, Date = this.Date.Value.DateTime };
             this.CallBack(new TransactionItem(transaction, SelectedCategory));
             this.Hide();
@@ -127,6 +147,7 @@ namespace MoneyKepper_Core.ViewModel
             this.StartDate = startTime;
             this.EndDate = startTime.AddMonths(1).AddDays(-1);
             this.Date = now;
+            this.ValidationMessage = "";
         }
 
         #endregion

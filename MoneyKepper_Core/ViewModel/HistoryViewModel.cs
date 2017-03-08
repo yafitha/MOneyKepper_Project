@@ -147,7 +147,7 @@ namespace MoneyKepper_Core.ViewModel
             if (e.NavigationMode == NavigationMode.New)
             {
                 this.SetGraphsTypes();
-                this.Categotries = new ObservableCollection<Category>(CacheManager.Instance.Categories.Values.ToList());
+                this.Categotries = new ObservableCollection<Category>(this.DataServcie.GetAllCategories());
                 this.StartDate = DateTime.Today;
                 this.EndDate = null;
             }

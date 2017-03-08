@@ -17,5 +17,6 @@ namespace MoneyKepper2.Service
         //IList<CategoryGroupModel> GetAllCategoriesGroup();
         IList<Category> GetCategoriesByTypes(List<Types> type);
         IList<string> GetAvailableImages();
+        IList<Transaction> GetTransactionsByDate(DateTime dateTime);
     }
 }

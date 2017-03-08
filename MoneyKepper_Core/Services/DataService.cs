@@ -54,5 +54,10 @@ namespace MoneyKepper2.Service
             var allImages = CacheManager.Instance.ImagesName;
             return allImages.Except(imagesName).ToList();
         }
+
+        public IList<Transaction> GetTransactionsByDate(DateTime dateTime)
+        {
+            return TransactionBL.GetTransactionsByDate(dateTime);
+        }
     }
 }

@@ -27,6 +27,14 @@ namespace MoneyKepper_Core.ViewModel
 
         #region Bindable Properties
 
+        private DateTime _currentMonth;
+        public DateTime CurrentMonth
+        {
+            get { return _currentMonth; }
+            set { this.Set(ref _currentMonth, value); }
+        }
+
+
         public ObservableCollection<TransactionItem> IncomeItems { get; set; }
         public ObservableCollection<TransactionItem> ExpensesItems { get; set; }
 
@@ -119,8 +127,9 @@ namespace MoneyKepper_Core.ViewModel
         private void SetIncomeItemsAndExpensesItems()
         {
             this.Categories = this.DataService.GetAllCategories();
-            var expensesTransactions = this.DataService.GetTransactionsByType(Types.Expenses);
-            var incomeTransactions = this.DataService.GetTransactionsByType(Types.Income);
+            var allTransactions = this.DataService.GetTransactionsByDate(CurrentMonth);
+            var expensesTransactions = allTransactions.Where(t => t.Category.TypeID == (int)Types.Expenses);
+            var incomeTransactions = allTransactions.Where(t => t.Category.TypeID == (int)Types.Income);
             this.IncomeItems = new ObservableCollection<TransactionItem>(incomeTransactions.Select(tran => new TransactionItem(tran, Categories.FirstOrDefault(c => c.ID == tran.CategoryID))).ToList());
             this.ExpensesItems = new ObservableCollection<TransactionItem>(expensesTransactions.Select(tran => new TransactionItem(tran, Categories.FirstOrDefault(c => c.ID == tran.CategoryID))).ToList());
         }
@@ -135,6 +144,7 @@ namespace MoneyKepper_Core.ViewModel
             if (e.NavigationMode == NavigationMode.New)
             {
                 var args = e.Parameter as Dictionary<string, object>;
+                this.CurrentMonth = (DateTime)args["CureentMonth"];
                 this.AddCallBack = args["AddCallBack"] as Action<Tuple<TransactionsViewModel.Types, double>>;
                 this.RemoveCallBack = args["RemoveCallBack"] as Action<Tuple<TransactionsViewModel.Types, double>>;
                 this.SetIncomeItemsAndExpensesItems();

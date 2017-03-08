@@ -396,14 +396,14 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
             _typeNameTable[236] = "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo";
             _typeNameTable[237] = "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase";
             _typeNameTable[238] = "MoneyKepper2.View.Pages.HistoryDetailsPage";
-            _typeNameTable[239] = "MoneyKepper2.View.Pages.TransactionsPage";
-            _typeNameTable[240] = "MoneyKepper2.View.Pages.TransactionsDetailsPage";
-            _typeNameTable[241] = "MoneyKepper2.View.Views.ControlPanelView";
-            _typeNameTable[242] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
-            _typeNameTable[243] = "Microsoft.Xaml.Interactivity.ActionCollection";
-            _typeNameTable[244] = "Microsoft.Xaml.Interactions.Core.InvokeCommandAction";
-            _typeNameTable[245] = "System.Windows.Input.ICommand";
-            _typeNameTable[246] = "Windows.UI.Xaml.Data.IValueConverter";
+            _typeNameTable[239] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
+            _typeNameTable[240] = "Microsoft.Xaml.Interactivity.ActionCollection";
+            _typeNameTable[241] = "Microsoft.Xaml.Interactions.Core.InvokeCommandAction";
+            _typeNameTable[242] = "System.Windows.Input.ICommand";
+            _typeNameTable[243] = "Windows.UI.Xaml.Data.IValueConverter";
+            _typeNameTable[244] = "MoneyKepper2.View.Pages.TransactionsPage";
+            _typeNameTable[245] = "MoneyKepper2.View.Pages.TransactionsDetailsPage";
+            _typeNameTable[246] = "MoneyKepper2.View.Views.ControlPanelView";
             _typeNameTable[247] = "MoneyKepper2.View.Views.PrimaryPanelView";
             _typeNameTable[248] = "MoneyKepper2.View.Pages.HistoryPage";
 
@@ -647,14 +647,14 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
             _typeTable[236] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo);
             _typeTable[237] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase);
             _typeTable[238] = typeof(global::MoneyKepper2.View.Pages.HistoryDetailsPage);
-            _typeTable[239] = typeof(global::MoneyKepper2.View.Pages.TransactionsPage);
-            _typeTable[240] = typeof(global::MoneyKepper2.View.Pages.TransactionsDetailsPage);
-            _typeTable[241] = typeof(global::MoneyKepper2.View.Views.ControlPanelView);
-            _typeTable[242] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
-            _typeTable[243] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
-            _typeTable[244] = typeof(global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction);
-            _typeTable[245] = typeof(global::System.Windows.Input.ICommand);
-            _typeTable[246] = typeof(global::Windows.UI.Xaml.Data.IValueConverter);
+            _typeTable[239] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
+            _typeTable[240] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
+            _typeTable[241] = typeof(global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction);
+            _typeTable[242] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[243] = typeof(global::Windows.UI.Xaml.Data.IValueConverter);
+            _typeTable[244] = typeof(global::MoneyKepper2.View.Pages.TransactionsPage);
+            _typeTable[245] = typeof(global::MoneyKepper2.View.Pages.TransactionsDetailsPage);
+            _typeTable[246] = typeof(global::MoneyKepper2.View.Views.ControlPanelView);
             _typeTable[247] = typeof(global::MoneyKepper2.View.Views.PrimaryPanelView);
             _typeTable[248] = typeof(global::MoneyKepper2.View.Pages.HistoryPage);
         }
@@ -797,12 +797,12 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
         private object Activate_231_Trendline() { return new global::Syncfusion.UI.Xaml.Charts.Trendline(); }
         private object Activate_236_ChartAdornmentInfo() { return new global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo(); }
         private object Activate_238_HistoryDetailsPage() { return new global::MoneyKepper2.View.Pages.HistoryDetailsPage(); }
-        private object Activate_239_TransactionsPage() { return new global::MoneyKepper2.View.Pages.TransactionsPage(); }
-        private object Activate_240_TransactionsDetailsPage() { return new global::MoneyKepper2.View.Pages.TransactionsDetailsPage(); }
-        private object Activate_241_ControlPanelView() { return new global::MoneyKepper2.View.Views.ControlPanelView(); }
-        private object Activate_242_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
-        private object Activate_243_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
-        private object Activate_244_InvokeCommandAction() { return new global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction(); }
+        private object Activate_239_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
+        private object Activate_240_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
+        private object Activate_241_InvokeCommandAction() { return new global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction(); }
+        private object Activate_244_TransactionsPage() { return new global::MoneyKepper2.View.Pages.TransactionsPage(); }
+        private object Activate_245_TransactionsDetailsPage() { return new global::MoneyKepper2.View.Pages.TransactionsDetailsPage(); }
+        private object Activate_246_ControlPanelView() { return new global::MoneyKepper2.View.Views.ControlPanelView(); }
         private object Activate_247_PrimaryPanelView() { return new global::MoneyKepper2.View.Views.PrimaryPanelView(); }
         private object Activate_248_HistoryPage() { return new global::MoneyKepper2.View.Pages.HistoryPage(); }
         private void VectorAdd_65_BehaviorCollection(object instance, object item)
@@ -1087,7 +1087,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
             var newItem = (global::Syncfusion.UI.Xaml.Charts.Trendline)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_243_ActionCollection(object instance, object item)
+        private void VectorAdd_240_ActionCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
@@ -3118,30 +3118,9 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 239:   //  MoneyKepper2.View.Pages.TransactionsPage
-                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MoneyKepper2.View.Pages.PageBase"));
-                userType.Activator = Activate_239_TransactionsPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 240:   //  MoneyKepper2.View.Pages.TransactionsDetailsPage
-                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MoneyKepper2.View.Pages.PageBase"));
-                userType.Activator = Activate_240_TransactionsDetailsPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 241:   //  MoneyKepper2.View.Views.ControlPanelView
-                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_241_ControlPanelView;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 242:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
+            case 239:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_242_EventTriggerBehavior;
+                userType.Activator = Activate_239_EventTriggerBehavior;
                 userType.SetContentPropertyName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions");
                 userType.AddMemberName("Actions");
                 userType.AddMemberName("EventName");
@@ -3150,16 +3129,16 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 243:   //  Microsoft.Xaml.Interactivity.ActionCollection
+            case 240:   //  Microsoft.Xaml.Interactivity.ActionCollection
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_243_ActionCollection;
+                userType.CollectionAdd = VectorAdd_240_ActionCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 244:   //  Microsoft.Xaml.Interactions.Core.InvokeCommandAction
+            case 241:   //  Microsoft.Xaml.Interactions.Core.InvokeCommandAction
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_244_InvokeCommandAction;
+                userType.Activator = Activate_241_InvokeCommandAction;
                 userType.AddMemberName("Command");
                 userType.AddMemberName("CommandParameter");
                 userType.AddMemberName("InputConverter");
@@ -3168,14 +3147,35 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 245:   //  System.Windows.Input.ICommand
+            case 242:   //  System.Windows.Input.ICommand
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 246:   //  Windows.UI.Xaml.Data.IValueConverter
+            case 243:   //  Windows.UI.Xaml.Data.IValueConverter
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 244:   //  MoneyKepper2.View.Pages.TransactionsPage
+                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MoneyKepper2.View.Pages.PageBase"));
+                userType.Activator = Activate_244_TransactionsPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 245:   //  MoneyKepper2.View.Pages.TransactionsDetailsPage
+                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MoneyKepper2.View.Pages.PageBase"));
+                userType.Activator = Activate_245_TransactionsDetailsPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 246:   //  MoneyKepper2.View.Views.ControlPanelView
+                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_246_ControlPanelView;
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
 
             case 247:   //  MoneyKepper2.View.Views.PrimaryPanelView

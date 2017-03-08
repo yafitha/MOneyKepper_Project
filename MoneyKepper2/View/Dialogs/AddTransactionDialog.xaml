@@ -14,11 +14,11 @@
     FlowDirection="RightToLeft"
     DataContext="{Binding AddTransactionViewModel, Source={StaticResource Locator}}">
 
-    <Grid>
+    <Grid Width="500" Height="400">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="80"/>
         </Grid.RowDefinitions>
         <Grid
             BorderBrush="Black"
@@ -43,7 +43,7 @@
                 
         </Grid>
         <StackPanel
-            Padding="5,0"
+            Padding="15,0"
               Margin="0,8"
             Grid.Row="1">
             <StackPanel 
@@ -52,8 +52,8 @@
                     Width="80"
                     Text="קטגוריה"/>
                 <ComboBox
-                    Width="120"
-                    Margin="0,0,0,8"
+                    Width="200"
+                    Margin="0,0,0,12"
                     SelectedItem="{Binding SelectedCategory, Mode=TwoWay}"
                     ItemsSource="{Binding Categories}">
                     <ComboBox.ItemTemplate>
@@ -70,7 +70,7 @@
                     Text="תאריך:"/>
                 <CalendarDatePicker
                     Margin="0,0,0,8"
-                    Width="120" >
+                    Width="200">
                     <interactivity:Interaction.Behaviors>
                         <behavior:SetDateToDatePickerBehavior
                          Date="{Binding Date ,Mode=TwoWay}"/>
@@ -82,30 +82,33 @@
 
             </StackPanel>
             <StackPanel 
-                Margin="0,0,0,8"
+                Margin="0,0,0,12"
                 Orientation="Horizontal">
                 <TextBlock
                    Width="80"
                    Text="סכום"/>
                 <Input:SfNumericTextBox
-                    Width="120"
+                   Width="200"
                     Text="{Binding Amount, Mode=TwoWay}"
                     InputScope="Number"/>
             </StackPanel>
             <StackPanel 
-                Margin="0,0,0,8"
+                Margin="0,0,0,12"
                 Orientation="Horizontal">
                <TextBlock
                     Width="80"
                    VerticalAlignment="Center"
                    Text="הערה"/>
                 <TextBox
-                    Width="120"
+                   Width="200"
                     Height="50"
                     TextWrapping="Wrap"
                     Text="{Binding Note, Mode=TwoWay}"
                     InputScope="Text"/>
             </StackPanel>
+            <TextBlock
+                Foreground="Red"
+                Text="{Binding ValidationMessage}"/>
         </StackPanel>
         <StackPanel
             Grid.Row="2"
