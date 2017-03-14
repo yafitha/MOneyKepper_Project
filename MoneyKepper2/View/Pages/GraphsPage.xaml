@@ -54,7 +54,8 @@
                         <behavior:SetDateToDatePickerBehavior
                          Date="{Binding EndDate ,Mode=TwoWay}"/>
                         <behavior:SetMinAndMaxDateBehavior
-                            StartTime="{Binding StartDate.DateTime}"/>
+                            StartTime="{Binding StartDate.DateTime}"
+                            EndTime="{Binding MaxDate.DateTime}"/>
                     </interactivity:Interaction.Behaviors>
                 </CalendarDatePicker>
             </StackPanel>

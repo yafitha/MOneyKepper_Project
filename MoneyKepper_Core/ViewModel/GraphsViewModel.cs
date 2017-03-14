@@ -28,6 +28,7 @@ namespace MoneyKepper_Core.ViewModel
             set
             {
                 this.Set(ref _startDate, value);
+                this.MaxDate = (new DateTime(_startDate.Value.DateTime.Year, _startDate.Value.DateTime.Month, 1)).AddDays(-1);
                 if (value > this.EndDate)
                 {
                     this.EndDate = value;
@@ -35,12 +36,21 @@ namespace MoneyKepper_Core.ViewModel
             }
         }
 
+
         private DateTimeOffset? _endDate;
         public DateTimeOffset? EndDate
         {
             get { return _endDate; }
             set { this.Set(ref _endDate, value); }
         }
+
+        private DateTimeOffset? _maxDate;
+        public DateTimeOffset? MaxDate
+        {
+            get { return _maxDate; }
+            set { this.Set(ref _maxDate, value); }
+        }
+
 
         private List<Graph> _graphTypes;
         public List<Graph> GraphTypes
@@ -90,6 +100,7 @@ namespace MoneyKepper_Core.ViewModel
             {
                 this.GraphTypes = new List<Graph>();
             }
+            this.GraphTypes.Clear();
             this.GraphTypes.Add(Graph.pie);
             this.GraphTypes.Add(Graph.CategoriesColumns);
             this.SelectedGraph = Graph.pie;
@@ -102,7 +113,8 @@ namespace MoneyKepper_Core.ViewModel
             if (e.NavigationMode == NavigationMode.New)
             {
                 this.SetGraphsTypes();
-                this.StartDate = DateTime.Today;
+                this.StartDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
+                this.MaxDate = StartDate.Value.DateTime.AddMonths(1).AddDays(-1);
                 this.EndDate = null;
             }
         }

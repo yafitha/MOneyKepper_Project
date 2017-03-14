@@ -125,10 +125,13 @@ namespace MoneyKepper_Core.ViewModel
 
         private void SetIncomeItemsAndExpensesItems()
         {
-            var expensesTransactions = this.DataService.GetTransactionsByType(Types.Expenses);
-            var incomeTransactions = this.DataService.GetTransactionsByType(Types.Income);
+            var firstDayOfMonth = new DateTime(this.CurrentMonth.Year, CurrentMonth.Month, 1);
+            var lastDayOfMonth = firstDayOfMonth.AddMonths(1).AddDays(-1);
+            var expensesTransactions = this.DataService.GetTransactionsByDateAndType(firstDayOfMonth,lastDayOfMonth, (int)Types.Expenses);
+            var incomeTransactions = this.DataService.GetTransactionsByDateAndType(firstDayOfMonth, lastDayOfMonth, (int)Types.Income);
             this.Income = incomeTransactions.Sum(t => t.Amount);
             this.Expenses = expensesTransactions.Sum(t => t.Amount);
+            this.Balance = this.Income - this.Expenses;
         }
 
         #endregion
@@ -141,10 +144,10 @@ namespace MoneyKepper_Core.ViewModel
             if (e.NavigationMode == NavigationMode.New)
             {
                 var args = e.Parameter as Dictionary<string, object>;
+                this.InitAllMonths();
+                this.CurrentMonth = this.AllMonths[0];
                 this.SetIncomeItemsAndExpensesItems();
                 // this.CurrentMonth = DateTime.Now.ToString("MMMM");
-                this.CurrentMonth = DateTime.Now;
-                this.InitAllMonths();
                 this.Balance = Income - Expenses;
                 this.ShowExtraInfo();
             }

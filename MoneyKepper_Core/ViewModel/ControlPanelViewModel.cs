@@ -100,6 +100,10 @@ namespace MoneyKepperCore.ViewModel
                         this.NavigationService.PrimaryFrame.NavigateTo(NavigationPageKeys.CATEGORY, args);
                         this.NavigationService.DetailsFrame.NavigateTo(NavigationPageKeys.CATEGORYDETAILS, args);
                         break;
+
+                    case PrimaryPanel.Report:
+                        this.NavigationService.PrimaryFrame.NavigateTo(NavigationPageKeys.REPORT, args);
+                        break;
                 }
             }
 
@@ -114,6 +118,7 @@ namespace MoneyKepperCore.ViewModel
             GRAPHS,
             Category,
             Notifications,
+            Report
         }
     }
 }

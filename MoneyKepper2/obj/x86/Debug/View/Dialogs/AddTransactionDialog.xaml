@@ -73,7 +73,7 @@
                     Width="200">
                     <interactivity:Interaction.Behaviors>
                         <behavior:SetDateToDatePickerBehavior
-                         Date="{Binding Date ,Mode=TwoWay}"/>
+                         Date="{Binding CurrentMonth ,Mode=TwoWay}"/>
                         <behavior:SetMinAndMaxDateBehavior
                             EndTime="{Binding EndDate.DateTime}"
                             StartTime="{Binding StartDate.DateTime}"/>

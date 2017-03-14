@@ -87,6 +87,27 @@ namespace MoneyKepper_Core.BL
             return transactions;
         }
 
+        public static IList<Transaction> GetTransactionsByDatesAndType(DateTime startDateTime, DateTime endDateTime, int? typeID)
+        {
+            List<Transaction> transactions = new List<Transaction>();
+            Task task = Task.Run(async () =>
+            {
+                using (var client = new HttpClient())
+                {
+                    Run(client);
+                    HttpResponseMessage response = await client.PostAsJsonAsync("GetTransactionsByDatesAndType", new { startDateTime,endDateTime,typeID});
+                    string httpResponseBody = "";
+                    if (response.IsSuccessStatusCode)
+                    {
+                        httpResponseBody = await response.Content.ReadAsStringAsync();
+                        transactions = JsonConvert.DeserializeObject<List<Transaction>>(httpResponseBody);
+                    }
+                    return transactions;
+                }
+            });
+            task.Wait(); // Wait
+            return transactions;
+        }
 
         public static bool CreateNewTransaction(Transaction transaction)
         {

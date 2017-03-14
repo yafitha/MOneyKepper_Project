@@ -74,11 +74,11 @@ namespace MoneyKepper_Core.ViewModel
             set { this.Set(ref _endDate, value); }
         }
 
-        private DateTimeOffset? _date;
-        public DateTimeOffset? Date
+        private DateTimeOffset? _currentMonth;
+        public DateTimeOffset? CurrentMonth
         {
-            get { return _date; }
-            set { this.Set(ref _date, value); }
+            get { return _currentMonth; }
+            set { this.Set(ref _currentMonth, value); }
         }
 
         #endregion
@@ -126,7 +126,7 @@ namespace MoneyKepper_Core.ViewModel
             }
 
             this.ValidationMessage = "";
-            Transaction transaction = new Transaction() { Amount = double.Parse(this.Amount), CategoryID = SelectedCategory.ID, Note = this.Note, Date = this.Date.Value.DateTime };
+            Transaction transaction = new Transaction() { Amount = double.Parse(this.Amount), CategoryID = SelectedCategory.ID, Note = this.Note, Date = this.CurrentMonth.Value.DateTime };
             this.CallBack(new TransactionItem(transaction, SelectedCategory));
             this.Hide();
         }
@@ -140,13 +140,12 @@ namespace MoneyKepper_Core.ViewModel
             this.TransactionType = (parameter as Dictionary<string, object>)["TransactionType"] as string;
             this.Categories = (parameter as Dictionary<string, object>)["Categories"] as List<Category>;
             this.CallBack = (parameter as Dictionary<string, object>)["Callback"] as Action<TransactionItem>;
+            this.CurrentMonth = (DateTime)(parameter as Dictionary<string, object>)["CurrentMonth"];
             this.Note = string.Empty;
             this.Amount = string.Empty;
-            DateTime now = DateTime.Now;
-            var startTime = new DateTime(now.Year, now.Month, 1);
+            var startTime = new DateTime(CurrentMonth.Value.DateTime.Year, CurrentMonth.Value.DateTime.Month, 1);
             this.StartDate = startTime;
             this.EndDate = startTime.AddMonths(1).AddDays(-1);
-            this.Date = now;
             this.ValidationMessage = "";
         }
 

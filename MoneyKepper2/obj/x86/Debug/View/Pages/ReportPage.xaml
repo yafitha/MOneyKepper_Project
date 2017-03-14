@@ -1,0 +1,74 @@
+﻿<local:PageBase
+    x:Class="MoneyKepper2.View.Pages.ReportPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MoneyKepper2.View.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignWidth="300"
+    FlowDirection="RightToLeft"
+    xmlns:behavior="using:MoneyKepper2.Behaviors"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:Interactivity="using:Microsoft.Xaml.Interactivity"
+    DataContext="{Binding ReportViewModel,Source={StaticResource Locator}}">
+
+    <Grid Padding="10,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="70"/>
+        </Grid.RowDefinitions>
+        <TextBlock
+            FontSize="26"
+            Height="40"
+            Text="דוחות חודשים"/>
+        <StackPanel 
+            Orientation="Horizontal"
+            Grid.Row="1">
+            <TextBlock 
+                Width="100"
+                VerticalAlignment="Center"
+                Text="מתאריך:" />
+            <CalendarDatePicker 
+                Width="150" 
+                DateFormat="{}{day.integer} {month.full} {year.full}">
+                <Interactivity:Interaction.Behaviors>
+                    <behavior:SetDateToDatePickerBehavior 
+                        Date="{Binding StartDate ,Mode=TwoWay}"/>
+                </Interactivity:Interaction.Behaviors>
+            </CalendarDatePicker>
+        </StackPanel>
+        <StackPanel 
+            VerticalAlignment="Top"
+            Orientation="Horizontal"
+            Grid.Row="2">
+            <TextBlock
+                Width="100"
+                Text="עד תאריך :" />
+            <CalendarDatePicker
+                Width="150"
+                BorderBrush="Black"
+                BorderThickness="1"
+                DateFormat="{}{day.integer} {month.full} {year.full}">
+                <Interactivity:Interaction.Behaviors>
+                    <behavior:SetDateToDatePickerBehavior
+                         Date="{Binding EndDate ,Mode=TwoWay}"/>
+                    <behavior:SetMinAndMaxDateBehavior
+                        StartTime="{Binding StartDate.DateTime}"/>
+                </Interactivity:Interaction.Behaviors>
+            </CalendarDatePicker>
+        </StackPanel>
+
+        <Button 
+            HorizontalAlignment="Center"
+            Command="{Binding ShowReportCommand}"
+            Content="הצג"
+            Foreground="White"
+            Width="150"
+            Height="40"
+            Grid.Row="3"/>
+    </Grid>
+</local:PageBase>
+

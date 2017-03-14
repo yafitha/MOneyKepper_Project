@@ -171,7 +171,7 @@
                    Width="200">
                     <ComboBox.ItemTemplate>
                         <DataTemplate>
-                            <TextBlock Text="{Binding Converter={StaticResource DateConverter},ConverterParameter= MMMM yyyy}"/>
+                            <TextBlock Text="{Binding Converter={StaticResource DateConverter},ConverterParameter= MMMM -yyyy}"/>
                         </DataTemplate>
                     </ComboBox.ItemTemplate>
                     <Interactivity:Interaction.Behaviors>
@@ -240,11 +240,11 @@
                 VerticalAlignment="Center"
                 Style="{StaticResource TransactionTextBlockStyle}">
                 <Run Text="יתרה:"/>
-                <Run Text="{Binding Balance}"/>
+                <Run Text="{Binding Balance}" FlowDirection="LeftToRight"/>
                 </TextBlock>
             </StackPanel>
         </StackPanel>
-        <!--<Button
+        <Button
             Grid.Row="2"
             Width="120"
             Foreground="White"
@@ -253,6 +253,6 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Command="{Binding ShowExtraInfoCommand}"
-            Content="פירוט נתונים"/>-->
+            Content="פירוט נתונים"/>
     </Grid>
 </local:PageBase>

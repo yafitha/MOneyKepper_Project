@@ -13,6 +13,8 @@ namespace MoneyKepper2.Service
     public interface IDataService
     {
         IList<Transaction> GetTransactionsByType(Types transactionType);
+
+        IList<Transaction> GetTransactionsByDateAndType(DateTime startDateTime, DateTime endDateTime, int? typeID);
         IList<Category> GetAllCategories();
         //IList<CategoryGroupModel> GetAllCategoriesGroup();
         IList<Category> GetCategoriesByTypes(List<Types> type);

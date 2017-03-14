@@ -11,7 +11,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Navigation;
-using static MoneyKepper_Core.ViewModel.TransactionsViewModel;
 
 namespace MoneyKepper_Core.ViewModel
 {
