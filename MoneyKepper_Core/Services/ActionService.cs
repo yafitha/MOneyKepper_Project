@@ -48,5 +48,13 @@ namespace MoneyKepperCore.Service
             args.Add("GraphType", graphType);
             this.NavigationService.DetailsFrame.NavigateTo(NavigationPageKeys.GRAPHS_DETAILS, args);
         }
+
+        public void ShowReportDetails(DateTime startDateTime, DateTime endDateTime)
+        {
+            Dictionary<string, object> args = new Dictionary<string, object>();
+            args.Add("StartDateTime", startDateTime);
+            args.Add("EndDateTime", endDateTime);
+            this.NavigationService.DetailsFrame.NavigateTo(NavigationPageKeys.REPORT_DETAILS, args);
+        }
     }
 }

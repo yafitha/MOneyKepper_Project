@@ -59,5 +59,10 @@ namespace MoneyKepper2.Service
         {
             return TransactionBL.GetTransactionsByDate(dateTime);
         }
+
+        public IList<Transaction> GetTransactionsByDateAndType(DateTime startDateTime, DateTime endDateTime, int? typeID)
+        {
+            return TransactionBL.GetTransactionsByDatesAndType(startDateTime, endDateTime, typeID);
+        }
     }
 }

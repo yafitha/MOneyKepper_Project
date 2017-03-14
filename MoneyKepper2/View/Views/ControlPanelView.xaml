@@ -103,6 +103,23 @@
                 </StackPanel>
             </RadioButton>
 
+            <RadioButton                  
+                Style="{StaticResource NavRadioButtonStyle}"  
+                GroupName="NavigationItems"
+                Command="{Binding MenuItemCommand}"
+                CommandParameter="Report">
+                <StackPanel 
+                    Orientation="Horizontal" >
+                    <TextBlock
+                       Text="&#xE160;"
+                        FontSize="25"
+                        Padding="11,10,0,0"
+                        Style="{StaticResource ControlItemStyle}" />
+                    <TextBlock
+                        Text="דוחות"
+                        Style="{StaticResource MenuTitleTextBlockStyle}" />
+                </StackPanel>
+            </RadioButton>
         </StackPanel>
     </Grid>
 </UserControl>

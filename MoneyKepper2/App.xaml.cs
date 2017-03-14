@@ -111,12 +111,14 @@ namespace MoneyKepper2
             primaryNS.Configure(NavigationPageKeys.HISTORY, typeof(View.Pages.HistoryPage));
             primaryNS.Configure(NavigationPageKeys.GRAPHS, typeof(GraphsPage));
             primaryNS.Configure(NavigationPageKeys.CATEGORY, typeof(CategoryPage));
+            primaryNS.Configure(NavigationPageKeys.REPORT, typeof(ReportPage));
 
             detailsNS.Configure(NavigationPageKeys.TRANSACTION_DETAILS, typeof(View.Pages.TransactionsDetailsPage));
             detailsNS.Configure(NavigationPageKeys.HISTORY_Details, typeof(View.Pages.HistoryDetailsPage));
             detailsNS.Configure(NavigationPageKeys.EMPTY_PAGE, typeof(View.Pages.EmptyPage));
             detailsNS.Configure(NavigationPageKeys.GRAPHS_DETAILS, typeof(View.Pages.GraphsDetailsPage));
             detailsNS.Configure(NavigationPageKeys.CATEGORYDETAILS, typeof(View.Pages.CategoryDetailPage));
+            detailsNS.Configure(NavigationPageKeys.REPORT_DETAILS, typeof(View.Pages.ReportDetailsPage));
         }
 
         private void SetLocalization(string v)

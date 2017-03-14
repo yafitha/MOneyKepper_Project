@@ -14,7 +14,6 @@ namespace MoneyKepper_Core.ViewModel
 {
     public class AddNewCategoryViewModel : DialogViewModel, IAddNewCategoryViewModel
     {
-
         #region Members
         public IDataService DataService { get; set; }
         public Action<Category> CallBack { get; private set; }
@@ -76,7 +75,6 @@ namespace MoneyKepper_Core.ViewModel
         public RelayCommand<string> CategoryTypeSelectionCommand { get; set; }
 
         #endregion
-
 
         public AddNewCategoryViewModel(IDataService dataService)
         {

@@ -162,11 +162,15 @@
     <Compile Include="ViewModel\IHistoryViewModel.cs" />
     <Compile Include="ViewModel\INavigable.cs" />
     <Compile Include="ViewModel\IPrimaryPanelViewModel.cs" />
+    <Compile Include="ViewModel\IReportDetailsVewModel.cs" />
+    <Compile Include="ViewModel\IReportViewModel.cs" />
     <Compile Include="ViewModel\ITransactionsDetailsViewModel.cs" />
     <Compile Include="ViewModel\ITransactionsViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\NavigableViewModel.cs" />
     <Compile Include="ViewModel\PrimaryPanelViewModel.cs" />
+    <Compile Include="ViewModel\ReportDetailsViewModel.cs" />
+    <Compile Include="ViewModel\ReportViewModel.cs" />
     <Compile Include="ViewModel\TransactionsDetailsViewModel.cs" />
     <Compile Include="ViewModel\TransactionsViewModel.cs" />
     <Compile Include="ViewModel\ViewModelBaseCore.cs" />

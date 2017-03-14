@@ -17,5 +17,7 @@ namespace MoneyKepper_Core.Models
         public const string GRAPHS_DETAILS = "GraphsDetails";
         public const string CATEGORY = "Category";
         public const string CATEGORYDETAILS = "CategoryDetails";
+        public const string REPORT = "Report";
+        public const string REPORT_DETAILS = "ReportDetails";
     }
 }

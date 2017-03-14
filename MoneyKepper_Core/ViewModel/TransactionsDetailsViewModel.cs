@@ -38,6 +38,8 @@ namespace MoneyKepper_Core.ViewModel
         public ObservableCollection<TransactionItem> IncomeItems { get; set; }
         public ObservableCollection<TransactionItem> ExpensesItems { get; set; }
 
+        public ObservableCollection<TransactionItem> AllTransactionsItems { get; set; }
+
         #endregion
 
         #region Commands
@@ -96,6 +98,7 @@ namespace MoneyKepper_Core.ViewModel
             var dialogArgs = new Dictionary<string, object>()
                 {
                     { "Callback", AddNewTransactionCallback },
+                {"CurrentMonth", this.CurrentMonth },
                     {"Categories", this.Categories.Where(cat=>cat.TypeID == (int)type).ToList()},
                     {"TransactionType",transactionType }
                 };
@@ -130,8 +133,8 @@ namespace MoneyKepper_Core.ViewModel
             var allTransactions = this.DataService.GetTransactionsByDate(CurrentMonth);
             var expensesTransactions = allTransactions.Where(t => t.Category.TypeID == (int)Types.Expenses);
             var incomeTransactions = allTransactions.Where(t => t.Category.TypeID == (int)Types.Income);
-            this.IncomeItems = new ObservableCollection<TransactionItem>(incomeTransactions.Select(tran => new TransactionItem(tran, Categories.FirstOrDefault(c => c.ID == tran.CategoryID))).ToList());
-            this.ExpensesItems = new ObservableCollection<TransactionItem>(expensesTransactions.Select(tran => new TransactionItem(tran, Categories.FirstOrDefault(c => c.ID == tran.CategoryID))).ToList());
+            this.IncomeItems = new ObservableCollection<TransactionItem>(incomeTransactions.Select(tran => new TransactionItem(tran, tran.Category)).OrderBy(t => t.Transaction.Date).ToList());
+            this.ExpensesItems = new ObservableCollection<TransactionItem>(expensesTransactions.Select(tran => new TransactionItem(tran, tran.Category)).OrderBy(t => t.Transaction.Date).ToList());
         }
 
         #endregion

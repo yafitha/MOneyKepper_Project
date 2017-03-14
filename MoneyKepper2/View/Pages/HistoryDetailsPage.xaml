@@ -11,7 +11,7 @@
     mc:Ignorable="d"
     DataContext="{Binding HistoryDetailsViewModel,Source={StaticResource Locator}}">
 
-    <Grid>
+    <Grid Background="White">
         <syncfusion:SfPivotChart 
             MaxWidth="800"
             Height="600"

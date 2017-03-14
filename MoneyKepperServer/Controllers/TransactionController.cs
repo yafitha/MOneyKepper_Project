@@ -24,17 +24,36 @@ namespace MoneyKepperServer.Controllers
             }
         }
 
-     
+
         [System.Web.Http.HttpPost]
         [Route("api/Transaction/GetTransactionsByDate")]
         public List<Models.Transaction> GetTransactionsByDate([FromBody] DateTime dateTime)
         {
             using (moneyEntities3 context = new moneyEntities3())
             {
-                var allTransactions = context.Transactions.Where(t=>t.Date.Month == dateTime.Month && t.Date.Year == dateTime.Year).ToList();
+                var allTransactions = context.Transactions.Where(t => t.Date.Month == dateTime.Month && t.Date.Year == dateTime.Year).ToList();
                 return Mapper.Map<List<Models.Transaction>>(allTransactions);
             }
         }
+
+        [System.Web.Http.HttpPost]
+        [Route("api/Transaction/GetTransactionsByDatesAndType")]
+        public List<Models.Transaction> GetTransactionsByDatesAndType([FromBody] dynamic model)
+        {
+            DateTime startDateTime = (DateTime)model.startDateTime;
+            DateTime endDateTime = (DateTime)model.endDateTime;
+            int? typeID = (int?)model.typeID;
+            using (moneyEntities3 context = new moneyEntities3())
+            {
+                var allTransactions = context.Transactions.Where(t => t.Date >= startDateTime && t.Date <= endDateTime).ToList();
+                if (typeID.HasValue)
+                {
+                    allTransactions = allTransactions.Where(t => t.Category.TypeID == typeID).ToList();
+                }
+                return Mapper.Map<List<Models.Transaction>>(allTransactions);
+            }
+        }
+
 
         [HttpPost]
         [Route("api/Transaction/GetTransactionsByTypes")]

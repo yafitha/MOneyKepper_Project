@@ -26,7 +26,7 @@
     <RootPropertyPathName Name="EndDate" />
     <RootPropertyPathName Name="DateTime" />
     <RootPropertyPathName Name="StartDate" />
-    <RootPropertyPathName Name="Date" />
+    <RootPropertyPathName Name="CurrentMonth" />
     <RootPropertyPathName Name="TransactionType" />
     <RootPropertyPathName Name="CategoryDetailViewModel" />
     <RootPropertyPathName Name="ExpensesGroups" />
@@ -45,18 +45,26 @@
     <RootPropertyPathName Name="ShowGraphCommmand" />
     <RootPropertyPathName Name="SelectedGraph" />
     <RootPropertyPathName Name="GraphTypes" />
+    <RootPropertyPathName Name="MaxDate" />
     <RootPropertyPathName Name="HistoryDetailsViewModel" />
     <RootPropertyPathName Name="ShowCategoriesGraph" />
     <RootPropertyPathName Name="MonthItems" />
+    <RootPropertyPathName Name="ReportViewModel" />
+    <RootPropertyPathName Name="ShowReportCommand" />
+    <RootPropertyPathName Name="ReportDetailsVewModel" />
+    <RootPropertyPathName Name="Transaction" />
+    <RootPropertyPathName Name="TypeID" />
+    <RootPropertyPathName Name="Date" />
+    <RootPropertyPathName Name="AllTransactionsItems" />
+    <RootPropertyPathName Name="ReportInfo" />
     <RootPropertyPathName Name="TransactionsViewModel" />
+    <RootPropertyPathName Name="ShowExtraInfoCommand" />
     <RootPropertyPathName Name="Balance" />
     <RootPropertyPathName Name="Expenses" />
     <RootPropertyPathName Name="Income" />
     <RootPropertyPathName Name="AllMonths" />
-    <RootPropertyPathName Name="CurrentMonth" />
     <RootPropertyPathName Name="ShowTransactionsCommand" />
     <RootPropertyPathName Name="TransactionsDetailsViewModel" />
-    <RootPropertyPathName Name="Transaction" />
     <RootPropertyPathName Name="ExpensesItems" />
     <RootPropertyPathName Name="AddTransactionCommand" />
     <RootPropertyPathName Name="IncomeItems" />
@@ -89,6 +97,7 @@
     <RootType FullName="MoneyKepper2.Converters.GraphsTypeToGraphStringConverter" />
     <RootType FullName="MoneyKepper2.Converters.SelectionChangedConverter" />
     <RootType FullName="MoneyKepper2.Converters.PictureNameToPictureSourceConverter" />
+    <RootType FullName="MoneyKepper2.Converters.TypeIDToTypeNameConverter" />
     <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
       <RootProperty Name="Color" />
       <RootProperty Name="Opacity" />
@@ -103,6 +112,7 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
       <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="IsEnabled" />
       <RootProperty Name="Style" />
@@ -147,6 +157,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Style" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
       <RootProperty Name="Padding" />
       <RootProperty Name="TextAlignment" />
       <RootProperty Name="FlowDirection" />
@@ -191,6 +202,7 @@
       <RootProperty Name="Height" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Width" />
+      <RootProperty Name="Style" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.VisualStateManager">
       <RootMethod Name="GetVisualStateGroups" />
@@ -404,6 +416,9 @@
       <RootProperty Name="ItemsPanel" />
       <RootProperty Name="GroupStyle" />
       <RootProperty Name="SelectionMode" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="HeaderTemplate" />
       <RootProperty Name="ItemContainerStyle" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="IsMultiSelectCheckBoxEnabled" />
@@ -446,6 +461,9 @@
     <RootType FullName="Windows.UI.Xaml.Controls.CalendarDatePicker">
       <RootProperty Name="Margin" />
       <RootProperty Name="Width" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="DateFormat" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Interactivity.Interaction">
       <RootMethod Name="GetBehaviors" />
@@ -481,6 +499,7 @@
       <RootProperty Name="CommandParameter" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Content" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter">
       <RootProperty Name="HorizontalContentAlignment" />
@@ -595,6 +614,14 @@
       <RootProperty Name="SummaryType" />
     </RootType>
     <RootType FullName="MoneyKepper2.View.Pages.HistoryDetailsPage" />
+    <RootType FullName="MoneyKepper2.View.Pages.ReportPage" />
+    <RootType FullName="MoneyKepper2.Behaviors.PrintPageBehavior">
+      <RootProperty Name="ReportHeader" />
+      <RootProperty Name="ReportInfo" />
+      <RootProperty Name="AmountItemInPage" />
+      <RootProperty Name="RootListView" />
+    </RootType>
+    <RootType FullName="MoneyKepper2.View.Pages.ReportDetailsPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
       <RootProperty Name="Orientation" />
     </RootType>
@@ -605,6 +632,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.Run">
       <RootProperty Name="Text" />
+      <RootProperty Name="FlowDirection" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
       <RootProperty Name="Fill" />

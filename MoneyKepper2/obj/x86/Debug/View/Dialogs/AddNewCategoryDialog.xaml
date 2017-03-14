@@ -61,7 +61,7 @@
                     Text="בחר כתת קטגוריה"/>
                   <CheckBox x:ConnectionId='2'
                     x:Name="IsParentCheckBox"
-                    IsChecked="{Binding IsSubCategoryChecked}"
+                    IsChecked="{Binding IsSubCategoryChecked,Mode=TwoWay}"
                     Width="130"
                     Margin="5,0,0,8">
                     </CheckBox>

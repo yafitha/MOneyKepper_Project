@@ -97,6 +97,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Behaviors\PrintPageBehavior.cs" />
     <Compile Include="Behaviors\SetMinAndMaxDateBehavior.cs" />
     <Compile Include="Behaviors\SetDateToDatePickerBehavior.cs" />
     <Compile Include="Classes\ViewModelCore.cs" />
@@ -112,8 +113,10 @@
     <Compile Include="Converters\SelectionChangedConverter.cs" />
     <Compile Include="Converters\TransactionTypeToStringConverter.cs" />
     <Compile Include="Converters\TransactionTypeToColorConverter.cs" />
+    <Compile Include="Converters\TypeIDToTypeNameConverter.cs" />
     <Compile Include="DialogService.cs" />
     <Compile Include="Factories\DialogServiceFactory.cs" />
+    <Compile Include="Helpers\PrintHelper.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -144,6 +147,12 @@
       <DependentUpon>HistoryDetailsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Pages\PageBase.cs" />
+    <Compile Include="View\Pages\ReportPage.xaml.cs">
+      <DependentUpon>ReportPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\ReportDetailsPage.xaml.cs">
+      <DependentUpon>ReportDetailsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Pages\TransactionsPage.xaml.cs">
       <DependentUpon>TransactionsPage.xaml</DependentUpon>
     </Compile>
@@ -305,6 +314,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\Pages\ReportPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\ReportDetailsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Pages\TransactionsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -353,6 +370,7 @@
       <HintPath>..\..\..\..\..\..\Program Files (x86)\Syncfusion\Essential Studio\14.3.0.49\Assemblies for Universal Windows\10.0\Syncfusion.SfPivotChart.UWP.dll</HintPath>
     </Reference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

@@ -21,6 +21,7 @@
             <Cvt:GraphsTypeToGraphStringConverter x:Key="GraphsTypeToGraphStringConverter"/>
             <Cvt:SelectionChangedConverter x:Key="SelectionChangedConverter"/>
             <Cvt:PictureNameToPictureSourceConverter x:Key="PictureNameToPictureSourceConverter"/>
+            <Cvt:TypeIDToTypeNameConverter x:Key="TypeIDToTypeNameConverter"/>
 
             <SolidColorBrush x:Key="AccentColorBrush" Color="#FF0078D7" />
 
