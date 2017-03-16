@@ -140,6 +140,7 @@
     <Compile Include="ViewModel\AddTransactionViewModel.cs" />
     <Compile Include="ViewModel\CategoryDetailViewModel.cs" />
     <Compile Include="ViewModel\CategoryViewModel.cs" />
+    <Compile Include="ViewModel\ConfirmViewModel.cs" />
     <Compile Include="ViewModel\ControlPanelViewModel.cs" />
     <Compile Include="DesignTime\ControlSplitViewModel.cs" />
     <Compile Include="ViewModel\DetailsViewModel.cs" />
@@ -152,6 +153,7 @@
     <Compile Include="ViewModel\IAddTransactionViewModel.cs" />
     <Compile Include="ViewModel\ICategoryDetailViewModel.cs" />
     <Compile Include="ViewModel\ICategoryViewModel.cs" />
+    <Compile Include="ViewModel\IConfirmViewModel.cs" />
     <Compile Include="ViewModel\IControlPanelViewModel.cs" />
     <Compile Include="ViewModel\IControlSplitView.cs" />
     <Compile Include="ViewModel\IDetailsViewModel.cs" />

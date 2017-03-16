@@ -93,7 +93,7 @@
             </Setter>
         </Style>
         <DataTemplate x:Key="CategoryItemTemplate">
-            <Grid Margin="12,0" Width="300">
+            <Grid Margin="12,0" Width="300" HorizontalAlignment="Stretch">
                     <StackPanel Orientation="Horizontal">
                         <Image
                           Width="30"

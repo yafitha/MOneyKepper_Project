@@ -2088,3 +2088,8 @@ C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\obj\x86\
 C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\obj\x86\Debug\View\Pages\ReportDetailsPage.xaml
 C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\obj\x86\Debug\View\Pages\ReportPage.xbf
 C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\obj\x86\Debug\View\Pages\ReportDetailsPage.xbf
+C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\obj\x86\Debug\View\Dialogs\ConfirmDialog.g.i.cs
+C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\obj\x86\Debug\View\Dialogs\ConfirmDialog.g.cs
+C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\obj\x86\Debug\View\Dialogs\ConfirmDialog.xaml
+C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\obj\x86\Debug\View\Dialogs\ConfirmDialog.xbf
+C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper2\bin\x86\Debug\View\Dialogs\ConfirmDialog.xbf

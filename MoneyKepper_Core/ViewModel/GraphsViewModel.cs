@@ -21,36 +21,20 @@ namespace MoneyKepper_Core.ViewModel
 
         #region Bindable Proerty
 
-        private DateTimeOffset? _startDate;
-        public DateTimeOffset? StartDate
+
+        private DateTime _currentMonth;
+        public DateTime CurrentMonth
         {
-            get { return _startDate; }
-            set
-            {
-                this.Set(ref _startDate, value);
-                this.MaxDate = (new DateTime(_startDate.Value.DateTime.Year, _startDate.Value.DateTime.Month, 1)).AddDays(-1);
-                if (value > this.EndDate)
-                {
-                    this.EndDate = value;
-                }
-            }
+            get { return _currentMonth; }
+            set { this.Set(ref _currentMonth, value); }
         }
 
-
-        private DateTimeOffset? _endDate;
-        public DateTimeOffset? EndDate
+        private ObservableCollection<DateTime> _allMonths;
+        public ObservableCollection<DateTime> AllMonths
         {
-            get { return _endDate; }
-            set { this.Set(ref _endDate, value); }
+            get { return _allMonths; }
+            set { this.Set(ref _allMonths, value); }
         }
-
-        private DateTimeOffset? _maxDate;
-        public DateTimeOffset? MaxDate
-        {
-            get { return _maxDate; }
-            set { this.Set(ref _maxDate, value); }
-        }
-
 
         private List<Graph> _graphTypes;
         public List<Graph> GraphTypes
@@ -90,8 +74,8 @@ namespace MoneyKepper_Core.ViewModel
 
         private void OnShowGraphCommmand()
         {
-            var endDate = this.EndDate == null ? this.StartDate.Value.Date : this.EndDate.Value.Date;
-            this.ActionsService.ShowMonthGraphs(this.StartDate.Value.Date, endDate, this.SelectedGraph);
+          
+            this.ActionsService.ShowMonthGraphs(this.CurrentMonth, this.SelectedGraph);
         }
 
         private void SetGraphsTypes()
@@ -105,6 +89,16 @@ namespace MoneyKepper_Core.ViewModel
             this.GraphTypes.Add(Graph.CategoriesColumns);
             this.SelectedGraph = Graph.pie;
         }
+        private void InitAllMonths()
+        {
+            this.AllMonths = new ObservableCollection<DateTime>();
+            for (int i = 0; i < 11; i++)
+            {
+                var month = DateTime.Now.AddMonths(-i);
+                this.AllMonths.Add(month);
+            }
+        }
+
         #endregion
 
         public override void OnNavigatedTo(NavigationEventArgs e)
@@ -113,11 +107,11 @@ namespace MoneyKepper_Core.ViewModel
             if (e.NavigationMode == NavigationMode.New)
             {
                 this.SetGraphsTypes();
-                this.StartDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month, 1);
-                this.MaxDate = StartDate.Value.DateTime.AddMonths(1).AddDays(-1);
-                this.EndDate = null;
+                this.InitAllMonths();
+                this.CurrentMonth = this.AllMonths[0];
             }
         }
+
         public override void OnNavigatedFrom(NavigationEventArgs e)
         {
             this.ActionsService.ShowEmptyPage();

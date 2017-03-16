@@ -35,6 +35,12 @@ namespace MoneyKepperCore.ViewModel
             get { return ServiceLocator.Current.GetInstance<IControlSplitViewModel>(); }
         }
 
+        public IConfirmViewModel ConfirmViewModel
+        {
+            get { return ServiceLocator.Current.GetInstance<IConfirmViewModel>(); }
+        }
+
+
         public IGraphsViewModel GraphsViewModel
         {
             get { return ServiceLocator.Current.GetInstance<IGraphsViewModel>(); }
@@ -139,6 +145,7 @@ namespace MoneyKepperCore.ViewModel
                 SimpleIoc.Default.Register<IAddTransactionViewModel, AddTransactionViewModel>();
                 SimpleIoc.Default.Register<IGraphsViewModel, GraphsViewModel>();
                 SimpleIoc.Default.Register<IHistoryViewModel, HistoryViewModel>();
+                SimpleIoc.Default.Register<IConfirmViewModel, ConfirmViewModel>();
                 SimpleIoc.Default.Register<IReportViewModel, ReportViewModel>();
                 SimpleIoc.Default.Register<IReportDetailsVewModel, ReportDetailsViewModel>();
                 SimpleIoc.Default.Register<IHistoryDetailsViewModel, HistoryDetailsViewModel>();

@@ -43,6 +43,7 @@ namespace MoneyKepper_Core.ViewModel
 
         public RelayCommand ShowGraphCommmand { get; private set; }
         public IDataService DataService { get; private set; }
+        public DateTime Month { get; private set; }
         #endregion
 
         #region Ctor's
@@ -61,14 +62,20 @@ namespace MoneyKepper_Core.ViewModel
 
         private void ShowGraph()
         {
-            var categories = this.DataService.GetAllCategories();
             this.CategoryItems = new ObservableCollection<CategoryItem>();
-            Random r = new Random(123345);
-            string month;
-            month = DateTime.Now.ToString("MMMM");
-            for (int j = 0; j < categories.Count; j++)
+            var transactions = this.DataService.GetTransactionsByDate(this.Month);
+            if (transactions == null)
+                return;
+
+            var groupedList = transactions
+           .GroupBy(c => c.Category)
+           .Select(grp => grp.ToList())
+           .ToList();
+
+            foreach (var groupTransactions in groupedList)
             {
-                var categoryItem = new CategoryItem(categories[j], month, (3000 * r.Next(1, 12)));
+                var categoryItem = new CategoryItem(groupTransactions.FirstOrDefault().Category, this.Month.ToString("MMMM-yyyy"));
+                categoryItem.Amount = groupTransactions.Sum(t => t.Amount);
                 CategoryItems.Add(categoryItem);
             }
         }
@@ -81,11 +88,10 @@ namespace MoneyKepper_Core.ViewModel
             if (e.NavigationMode == NavigationMode.New)
             {
                 var args = e.Parameter as Dictionary<string, object>;
-                this.StartDateTime = (DateTime)args["StartDateTime"];
-                this.EndDateTime = (DateTime)args["EndDateTime"];
+                this.Month = (DateTime)args["Month"];
                 this.GraphType = (Graph)args["GraphType"];
                 this.ShowPieGraph = this.GraphType == Graph.pie ? true : false;
-                ShowGraph();
+                this.ShowGraph();
             }
         }
 

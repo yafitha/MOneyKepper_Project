@@ -127,6 +127,9 @@
     <Compile Include="View\Dialogs\AddTransactionDialog.xaml.cs">
       <DependentUpon>AddTransactionDialog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Dialogs\ConfirmDialog.xaml.cs">
+      <DependentUpon>ConfirmDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Dialogs\ContentDialogBase.cs" />
     <Compile Include="View\Pages\CategoryDetailPage.xaml.cs">
       <DependentUpon>CategoryDetailPage.xaml</DependentUpon>
@@ -287,6 +290,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Dialogs\AddTransactionDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Dialogs\ConfirmDialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

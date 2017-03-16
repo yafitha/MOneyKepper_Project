@@ -28,6 +28,9 @@
     <RootPropertyPathName Name="StartDate" />
     <RootPropertyPathName Name="CurrentMonth" />
     <RootPropertyPathName Name="TransactionType" />
+    <RootPropertyPathName Name="ConfirmViewModel" />
+    <RootPropertyPathName Name="Content" />
+    <RootPropertyPathName Name="Title" />
     <RootPropertyPathName Name="CategoryDetailViewModel" />
     <RootPropertyPathName Name="ExpensesGroups" />
     <RootPropertyPathName Name="IncomesGroups" />
@@ -45,7 +48,8 @@
     <RootPropertyPathName Name="ShowGraphCommmand" />
     <RootPropertyPathName Name="SelectedGraph" />
     <RootPropertyPathName Name="GraphTypes" />
-    <RootPropertyPathName Name="MaxDate" />
+    <RootPropertyPathName Name="AllMonths" />
+    <RootPropertyPathName Name="ShowTransactionsCommand" />
     <RootPropertyPathName Name="HistoryDetailsViewModel" />
     <RootPropertyPathName Name="ShowCategoriesGraph" />
     <RootPropertyPathName Name="MonthItems" />
@@ -62,8 +66,6 @@
     <RootPropertyPathName Name="Balance" />
     <RootPropertyPathName Name="Expenses" />
     <RootPropertyPathName Name="Income" />
-    <RootPropertyPathName Name="AllMonths" />
-    <RootPropertyPathName Name="ShowTransactionsCommand" />
     <RootPropertyPathName Name="TransactionsDetailsViewModel" />
     <RootPropertyPathName Name="ExpensesItems" />
     <RootPropertyPathName Name="AddTransactionCommand" />
@@ -404,6 +406,8 @@
       <RootProperty Name="FlowDirection" />
       <RootProperty Name="DataContext" />
       <RootProperty Name="Content" />
+      <RootProperty Name="PrimaryButtonText" />
+      <RootProperty Name="SecondaryButtonText" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
       <RootProperty Name="Width" />
@@ -436,8 +440,8 @@
       <RootProperty Name="SelectedItem" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="ItemTemplate" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
       <RootProperty Name="IsChecked" />
@@ -478,6 +482,7 @@
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.NullExtension" />
     <RootType FullName="MoneyKepper2.View.Dialogs.AddTransactionDialog" />
+    <RootType FullName="MoneyKepper2.View.Dialogs.ConfirmDialog" />
     <RootType FullName="MoneyKepper2.View.Pages.PageBase">
       <RootProperty Name="FlowDirection" />
       <RootProperty Name="DataContext" />
@@ -558,6 +563,14 @@
       <RootProperty Name="IsSelectionEnabled" />
     </RootType>
     <RootType FullName="MoneyKepper2.View.Pages.GraphsDetailsPage" />
+    <RootType FullName="Microsoft.Xaml.Interactions.Core.EventTriggerBehavior">
+      <RootProperty Name="EventName" />
+      <RootProperty Name="Actions" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.Interactions.Core.InvokeCommandAction">
+      <RootProperty Name="Command" />
+      <RootProperty Name="CommandParameter" />
+    </RootType>
     <RootType FullName="MoneyKepper2.View.Pages.GraphsPage" />
     <RootType FullName="Syncfusion.UI.Xaml.PivotChart.SfPivotChart">
       <RootProperty Name="MaxWidth" />
@@ -638,14 +651,6 @@
       <RootProperty Name="Fill" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
-    </RootType>
-    <RootType FullName="Microsoft.Xaml.Interactions.Core.EventTriggerBehavior">
-      <RootProperty Name="EventName" />
-      <RootProperty Name="Actions" />
-    </RootType>
-    <RootType FullName="Microsoft.Xaml.Interactions.Core.InvokeCommandAction">
-      <RootProperty Name="Command" />
-      <RootProperty Name="CommandParameter" />
     </RootType>
     <RootType FullName="MoneyKepper2.View.Pages.TransactionsPage" />
     <RootType FullName="MoneyKepper2.View.Pages.TransactionsDetailsPage" />
