@@ -39,7 +39,7 @@ namespace MoneyKepper_Core.DesignTime.ViewModel
             for (int j = 0; j < categories.Count; j++)
             {
 
-                var categoryItem = new CategoryItem(categories[j], month, (3000 * r.Next(1, 12)));
+                var categoryItem = new CategoryItem(categories[j], month);
                 CategoryItems.Add(categoryItem);
             }
         }

@@ -26,6 +26,8 @@ namespace MoneyKepper_Core.ViewModel
         public IList<Category> Categories { get; set; }
         private IActionsService ActionsService { get; set; }
 
+        private List<Transaction> AllTransactions { get; set; }
+
         #endregion
 
         #region Bindable Properties
@@ -66,8 +68,27 @@ namespace MoneyKepper_Core.ViewModel
         #region Commands Handlers
 
 
-        private void OnRemoveCommand(Category category)
+        private async void OnRemoveCommand(Category category)
         {
+            this.AllTransactions = this.DataService.GetAllTransactions().ToList();
+            var existedtransactions = AllTransactions.Where(t => t.Category.ID == category.ID).ToList();
+            if (existedtransactions != null)
+            {
+                var dialogArgs = new Dictionary<string, object>()
+                {
+                    { "Title", "קונפליקט עם תנועות" },
+                    { "Content", "קיימים תנועות עם קטגוריה זו. האם למחוק את התנועות?" }
+                };
+
+                var result = await this.DialogService.ShowDialog(DialogKeys.CONFIRM, dialogArgs);
+                if (result == Windows.UI.Xaml.Controls.ContentDialogResult.Primary)
+                {
+                    existedtransactions.ForEach(t => TransactionBL.DeleteTransaction(t.ID));
+                }
+                else
+                    return;
+            }
+
             CategoryGroup group;
             if (category.TypeID == (int)(Types.Income))
             {

@@ -23,6 +23,7 @@ namespace MoneyKepper2
         {
             this.Configure(DialogKeys.ADD_TRANSACTION, typeof(AddTransactionDialog));
             this.Configure(DialogKeys.ADD_CATEGORY, typeof(AddNewCategoryDialog));
+            this.Configure(DialogKeys.CONFIRM, typeof(ConfirmDialog));
         }
 
         public async Task<ContentDialogResult> ShowDialog(string dialogKey, object parameter)

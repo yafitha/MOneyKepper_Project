@@ -63,6 +63,7 @@
 
         <Button 
             HorizontalAlignment="Center"
+            Background="{StaticResource AccentColorBrush}"
             Command="{Binding ShowReportCommand}"
             Content="הצג"
             Foreground="White"

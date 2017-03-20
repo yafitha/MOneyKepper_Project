@@ -83,18 +83,14 @@ namespace MoneyKepper_Core.ViewModel
 
         private void SetMonthItems()
         {
-            var expensesTransactions = this.DataServcie.GetTransactionsByType(Types.Expenses);
-            var expenses = expensesTransactions.Sum(e => e.Amount);
-            var incomeTransactions = this.DataServcie.GetTransactionsByType(Types.Income);
-            var incomes = incomeTransactions.Sum(e => e.Amount);
-            int count = (EndDateTime.Month - StartDateTime.Month) + 12 * (EndDateTime.Year - StartDateTime.Year);
-            string month;
-            for (int i = 0; i < count+1; i++)
+            var transactions = this.DataServcie.GetTransactionsByDateAndType(this.StartDateTime, this.EndDateTime, null);
+            var transactionsgrouped = transactions.GroupBy(t => t.Date.ToString("MMMM"));
+            foreach (var group in transactionsgrouped)
             {
-                month = month = this.StartDateTime.AddMonths(i).ToString("MMMM");
+                var month = group.Key;
                 var monthItem = new MonthItem();
-                monthItem.Expenses = expenses;
-                monthItem.Income = incomes;
+                monthItem.Expenses = group.Where(t => t.Category.TypeID == (int)Types.Expenses).Sum(t => t.Amount);
+                monthItem.Income = group.Where(t => t.Category.TypeID == (int)Types.Income).Sum(t => t.Amount);
                 monthItem.Month = month;
                 this.MonthItems.Add(monthItem);
             }
@@ -102,15 +98,16 @@ namespace MoneyKepper_Core.ViewModel
 
         private void SetCategoryItems()
         {
-            int count = (EndDateTime.Month - StartDateTime.Month) + 12 * (EndDateTime.Year - StartDateTime.Year);
-            string month;
-            Random r = new Random(123345);
-            for (int i = 0; i < count+1; i++)
+            var transactions = this.DataServcie.GetTransactionsByDateAndType(this.StartDateTime, this.EndDateTime, null);
+            var transactionsgrouped = transactions.GroupBy(t => t.Date.ToString("MMMM"));
+            foreach (var group in transactionsgrouped)
             {
-                for (int j = 0; j < Categories.Count; j++)
+                foreach (var cat in this.Categories)
                 {
-                    month = month = this.StartDateTime.AddMonths(i).ToString("MMMM");
-                    var categoryItem = new CategoryItem(Categories[j], month, (3000 * r.Next(1, 12)));
+                    var month = group.Key;
+                    var amount = group.Where(t => t.Category.ID == cat.ID).Sum(t => t.Amount);
+                    var categoryItem = new CategoryItem(cat, month);
+                    categoryItem.Amount = amount;
                     this.CategoryItems.Add(categoryItem);
                 }
             }

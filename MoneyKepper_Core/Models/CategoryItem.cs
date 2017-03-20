@@ -36,11 +36,10 @@ namespace MoneyKepper_Core.Models
             get { return _amount; }
             set { this.Set(ref _amount, value); }
         }
-        public CategoryItem(Category category, string month, double amount)
+        public CategoryItem(Category category, string month)
         {
             this.Category = category;
             this.Month = month;
-            this.Amount = amount;
         }
     }
 }

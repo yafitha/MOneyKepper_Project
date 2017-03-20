@@ -45,7 +45,7 @@ namespace MoneyKepper2.Service
 
         public IList<Category> GetCategoriesByTypes(List<Types> types)
         {
-            return CategoryBL.GetCategoriesByTypes(types.Select(t=>(int)t).ToList());
+            return CategoryBL.GetCategoriesByTypes(types.Select(t => (int)t).ToList());
         }
 
         public IList<string> GetAvailableImages()
@@ -63,6 +63,11 @@ namespace MoneyKepper2.Service
         public IList<Transaction> GetTransactionsByDateAndType(DateTime startDateTime, DateTime endDateTime, int? typeID)
         {
             return TransactionBL.GetTransactionsByDatesAndType(startDateTime, endDateTime, typeID);
+        }
+
+        public IList<Transaction> GetAllTransactions()
+        {
+            return TransactionBL.GetAllTransactions();
         }
     }
 }
