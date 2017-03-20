@@ -93,12 +93,12 @@
             </Setter>
         </Style>
         <DataTemplate x:Key="CategoryItemTemplate">
-            <Grid Margin="12,0" Width="300" HorizontalAlignment="Stretch">
+            <Grid Margin="12,0,0,0" Width="300" HorizontalAlignment="Stretch">
                     <StackPanel Orientation="Horizontal">
                         <Image
                           Width="30"
                           Height="30"
-                          Margin="0,0,12,0"
+                          Margin="12,0,12,0"
                          Source="{Binding PictureName, Converter={StaticResource PictureNameToPictureSourceConverter}}"/>
                         <TextBlock
                             FontSize="18"
@@ -170,15 +170,17 @@
                 FontSize="20"
                 Text=""/>
         <StackPanel
-                Padding="15,0"
+                Padding="0"
                 Grid.Row="1">
             <TextBlock
+                FontSize="18"
                    Foreground="Green"
                    FontWeight="Bold"
                    Text="קטגוריות מסוג הכנסה"/>
             <HyperlinkButton
                     Command="{Binding AddCategoryCommand}">
                 <TextBlock
+                      FontSize="18"
                       Text="הוסף קטגוריה"/>
              
             </HyperlinkButton>
@@ -214,17 +216,19 @@
             </ListView>
         </StackPanel>
         <StackPanel
-                Padding="15,0"
+                Padding="0"
                 Grid.Column="1"
                 Grid.Row="1">
             <TextBlock
+                FontSize="18"
                     Foreground="Red"
                     FontWeight="Bold"
                     Text="קטגוריות מסוג הוצאה"/>
             <HyperlinkButton
                       Command="{Binding AddCategoryCommand}">
                 <TextBlock
-                        Text="הוסף קטגוריה"/>
+                    FontSize="18"
+                    Text="הוסף קטגוריה"/>
             </HyperlinkButton>
             
             <ListView

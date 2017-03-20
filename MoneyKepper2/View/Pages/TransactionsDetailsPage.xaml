@@ -19,7 +19,7 @@
             <Setter Property="BorderBrush" Value="LightGray" />
             <Setter Property="BorderThickness" Value="1" />
             <Setter Property="HorizontalAlignment" Value="Stretch" />
-            <Setter Property="Height" Value="60" />
+            <Setter Property="Height" Value="70" />
             <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
             <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}" />
             <Setter Property="Foreground" Value="{ThemeResource SystemControlForegroundBaseHighBrush}" />
@@ -162,15 +162,19 @@
                           Margin="0,0,12,0"
                          Source="{Binding Category.PictureName, Converter={StaticResource PictureNameToPictureSourceConverter}}"/>
                         <TextBlock
-                            FontSize="18"
+                            FontWeight="SemiBold"
+                            FontSize="22"
                             Margin="6,0"
                             VerticalAlignment="Center"
                             Text="{Binding Category.Name}"/>
-                        <TextBlock
-                            VerticalAlignment="Center"
-                            FontSize="14"
-                            Text="{Binding Transaction.Note}"/>
 
+                        <TextBlock
+                            FontWeight="SemiBold"
+                            VerticalAlignment="Center"
+                            FontSize="16">
+                        <Run  Text="{Binding Transaction.Amount}"/>
+                        <Run Text=" שקלים"/>
+                        </TextBlock>
                     </StackPanel>
                     <HyperlinkButton
                         Visibility="Visible"
@@ -183,20 +187,20 @@
                         Text=" &#xE711;"/>
                     </HyperlinkButton>
                 </Grid>
-                <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal" Margin="40,0,0,0">
                     <TextBlock
                         FontSize="16"
                         Margin="0,0,8,0"
                         Text="{Binding Transaction.Date,Converter={StaticResource DateConverter},ConverterParameter=d}"/>
+                  
                     <TextBlock
-                      FontSize="16">
-                        <Run  Text="{Binding Transaction.Amount}"/>
-                        <Run Text=" שקלים"/>
-                    </TextBlock>
-                     
+                            VerticalAlignment="Center"
+                            FontSize="16"
+                            Text="{Binding Transaction.Note}"/>
                 </StackPanel>
             </StackPanel>
         </DataTemplate>
+        
         <Style x:Name="ReportTextBlockStyle" TargetType="TextBlock">
             <Setter Property="Padding" Value="6,0,4,0" />
             <Setter Property="FontSize" Value="20"/>

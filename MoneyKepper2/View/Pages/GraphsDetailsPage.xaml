@@ -7,38 +7,278 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:Charting="using:WinRTXamlToolkit.Controls.DataVisualization.Charting"
     mc:Ignorable="d"
+ xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:Interactivity ="using:Microsoft.Xaml.Interactivity"
+    xmlns:datavis="using:WinRTXamlToolkit.Controls.DataVisualization"
+    xmlns:chart="using:Syncfusion.UI.Xaml.Charts"
     d:DesignWidth="800"
+    FlowDirection="RightToLeft"
     DataContext="{Binding GraphsDetailsViewModel, Source={StaticResource Locator}}">
+    <local:PageBase.Resources>
+        <Style x:Key="ListViewItemStyle1" TargetType="ListViewItem">
+            <Setter Property="Padding" Value="12,0" />
+            <Setter Property="Margin" Value="0,2" />
+            <Setter Property="Background" Value="#FFF3F3F3" />
+            <Setter Property="BorderBrush" Value="LightGray" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="Height" Value="70" />
+            <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
+            <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}" />
+            <Setter Property="Foreground" Value="{ThemeResource SystemControlForegroundBaseHighBrush}" />
+            <Setter Property="TabNavigation" Value="Local" />
+            <Setter Property="IsHoldingEnabled" Value="True" />
+            <Setter Property="Padding" Value="0" />
+            <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="MinWidth" Value="{ThemeResource ListViewItemMinWidth}" />
+            <Setter Property="MinHeight" Value="{ThemeResource ListViewItemMinHeight}" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ListViewItem">
+                        <ListViewItemPresenter x:Name="listViewItemPresenter"
+                                               HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                               VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                                               BorderBrush="{ThemeResource AppBarToggleButtonCheckedPressedBorderThemeBrush}"
+                                               CheckBoxBrush="{ThemeResource SystemControlForegroundBaseMediumHighBrush}"
+                                               CheckBrush="{ThemeResource SystemControlForegroundBaseMediumHighBrush}"
+                                               CheckMode="Inline"
+                                               ContentMargin="{TemplateBinding Padding}"
+                                               ContentTransitions="{TemplateBinding ContentTransitions}"
+                                               DisabledOpacity="{ThemeResource ListViewItemDisabledThemeOpacity}"
+                                               DragBackground="{ThemeResource ListViewItemDragBackgroundThemeBrush}"
+                                               DragForeground="{ThemeResource ListViewItemDragForegroundThemeBrush}"
+                                               DragOpacity="{ThemeResource ListViewItemDragThemeOpacity}"
+                                               FocusBorderBrush="{ThemeResource SystemControlForegroundAltHighBrush}"
+                                               FocusSecondaryBorderBrush="{ThemeResource SystemControlForegroundBaseHighBrush}"
+                                               PlaceholderBackground="{ThemeResource ListViewItemPlaceholderBackgroundThemeBrush}"
+                                               PointerOverBackground="{ThemeResource SystemControlHighlightListLowBrush}"
+                                               PointerOverForeground="{ThemeResource SystemControlHighlightAltBaseHighBrush}"
+                                               PressedBackground="{ThemeResource SystemControlHighlightListMediumBrush}"
+                                               ReorderHintOffset="{ThemeResource ListViewItemReorderHintThemeOffset}"
+                                               SelectedBackground="LightGray"
+                                               SelectedForeground="{ThemeResource AppBarItemPressedForegroundThemeBrush}"
+                                               SelectedPointerOverBackground="LightGray"
+                                               SelectedPressedBackground="LightGray"
+                                               SelectionCheckMarkVisualEnabled="True">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal" />
+                                    <VisualState x:Name="PointerOver" />
+                                    <VisualState x:Name="Pressed">
+                                        <VisualState.Setters>
+                                            <Setter Target="listViewItemPresenter.(ContentPresenter.FontWeight)">
+                                                <Setter.Value>
+                                                    <FontWeight>Bold</FontWeight>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                    <VisualState x:Name="PointerOverPressed" />
+                                    <VisualState x:Name="Disabled" />
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="SelectionStates">
+                                    <VisualState x:Name="UnselectedSwiping" />
+                                    <VisualState x:Name="UnselectedPointerOver" />
+                                    <VisualState x:Name="Selecting" />
+                                    <VisualState x:Name="Selected">
+                                        <VisualState.Setters>
+                                            <Setter Target="listViewItemPresenter.(ContentPresenter.FontWeight)">
+                                                <Setter.Value>
+                                                    <FontWeight>Bold</FontWeight>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                    <VisualState x:Name="SelectedSwiping" />
+                                    <VisualState x:Name="Unselecting" />
+                                    <VisualState x:Name="Unselected" />
+                                    <VisualState x:Name="SelectedUnfocused" />
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                        </ListViewItemPresenter>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <DataTemplate x:Key="TranscationItemTemplate">
+            <StackPanel Padding="12,0">
+                <Grid>
+                    <StackPanel Orientation="Horizontal">
+                        <Image
+                          Width="30"
+                          Height="30"
+                          Margin="0,0,12,0"
+                         Source="{Binding Category.PictureName, Converter={StaticResource PictureNameToPictureSourceConverter}}"/>
+                        <TextBlock
+                            FontWeight="SemiBold"
+                            FontSize="18"
+                            Margin="6,0"
+                            VerticalAlignment="Center"
+                            Text="{Binding Category.Name}"/>
 
+                        <TextBlock
+                            FontWeight="SemiBold"
+                            VerticalAlignment="Center"
+                            FontSize="16">
+                        <Run  Text="{Binding Transaction.Amount}"/>
+                        <Run Text=" שקלים"/>
+                        </TextBlock>
+                    </StackPanel>
+                </Grid>
+                <StackPanel Orientation="Horizontal" Margin="40,0,0,0">
+                    <TextBlock
+                        FontSize="16"
+                        Margin="0,0,8,0"
+                        Text="{Binding Transaction.Date,Converter={StaticResource DateConverter},ConverterParameter=d}"/>
+
+                    <TextBlock
+                            VerticalAlignment="Center"
+                            FontSize="16"
+                            Text="{Binding Transaction.Note}"/>
+                </StackPanel>
+            </StackPanel>
+        </DataTemplate>
+    </local:PageBase.Resources>
     <Grid Background="White">
-        <Charting:Chart
+        <Grid.RowDefinitions>
+            <RowDefinition Height="600"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="100"/>
+           
+        </Grid.ColumnDefinitions>
+        <!--<Charting:Chart
            Width="800"
+            HorizontalAlignment="Left"
             Height="600"
-            Visibility="{Binding ShowPieGraph ,Converter={StaticResource BooleanToVisibilityConverter},ConverterParameter=Invert}"
             Padding="10,10">
             <Charting:ColumnSeries
                 ItemsSource="{Binding CategoryItems}"
                 Margin="0" 
+                
                 Title="התפלגות לפי קטגוריות"
                 IndependentValuePath="CategoryName" 
                 DependentValuePath="Amount" 
                 IsSelectionEnabled="False">
+               
             </Charting:ColumnSeries>
-        </Charting:Chart>
-        <ScrollViewer>
-        <Charting:Chart
-           Width="800"
-            Height="600"
-            Padding="10,10"
-            Visibility="{Binding ShowPieGraph ,Converter={StaticResource BooleanToVisibilityConverter}}">
-            <Charting:PieSeries  
-                ItemsSource="{Binding CategoryItems}"
-                Margin="0" 
-                IndependentValuePath="CategoryName" 
-                DependentValuePath="Amount" 
-                IsSelectionEnabled="False"/>
-        </Charting:Chart>
-        </ScrollViewer>
+            <Charting:Chart.Palette>
+                <Charting:ResourceDictionaryCollection>
+                    --><!-- Red --><!--
+                    <ResourceDictionary>
+                        <SolidColorBrush
+            x:Key="Background"
+            Color="#FFDC443F" />
+                        <Style
+            x:Key="DataPointStyle"
+            TargetType="Control">
+                            <Setter
+                Property="Background"
+                Value="{StaticResource Background}" />
+                        </Style>
+                        <Style
+            x:Key="DataShapeStyle"
+            TargetType="Shape">
+                            <Setter
+                Property="Stroke"
+                Value="{StaticResource Background}" />
+                            <Setter
+                Property="StrokeThickness"
+                Value="2" />
+                            <Setter
+                Property="StrokeMiterLimit"
+                Value="1" />
+                            <Setter
+                Property="Fill"
+                Value="{StaticResource Background}" />
+                        </Style>
+                    </ResourceDictionary>
+                </Charting:ResourceDictionaryCollection>
+            </Charting:Chart.Palette>
+        </Charting:Chart>-->
 
+     
+            <chart:SfChart
+                Margin="0,20,0,0"
+              Header="השוואה חודשית"
+                x:Name="Accumulation_charts"
+                AreaBorderThickness="0" 
+               FontSize="20" >
+
+                <chart:SfChart.Legend>
+                    <chart:ChartLegend x:Name="ChartLegend1" CornerRadius="0" FontSize="15" DockPosition="Top" BorderThickness="1" />
+                </chart:SfChart.Legend>
+
+                <chart:PieSeries 
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Left"
+                    EmptyPointValue="Zero"
+                    x:Name="pieSeries" 
+                    ExplodeOnMouseClick="True"
+                    ExplodeRadius="20"
+                    EnableSmartLabels="True"
+                    LabelPosition="Inside" 
+                    ItemsSource="{Binding CategoryItems}" 
+                    XBindingPath="CategoryName"
+                    Label="CategoryName" 
+                     YBindingPath="Amount" 
+                     ShowTooltip="True"  >
+                <Interactivity:Interaction.Behaviors>
+                    <core:EventTriggerBehavior EventName="Tapped">
+                        <core:InvokeCommandAction Command="{Binding ShowTransactionCommand}"/>
+                    </core:EventTriggerBehavior>
+                </Interactivity:Interaction.Behaviors>
+                    
+                    <chart:PieSeries.AdornmentsInfo>
+                        <chart:ChartAdornmentInfo
+                            ShowLabel="True"  
+                            SegmentLabelFormat="#.#"
+                            SegmentLabelContent="Percentage"
+                            ShowConnectorLine="True" 
+                            LabelPosition="Auto"
+                            Foreground="Black"  >
+
+                            <chart:ChartAdornmentInfo.LabelTemplate>
+                                <DataTemplate >
+                                    <Border CornerRadius="2" 
+                                            BorderBrush="Black" 
+                                            Height="22"
+                                            Width="50"
+                                            BorderThickness="1" 
+                                            Background="LightGray"
+                                            Margin="5,5">
+
+                                        <TextBlock HorizontalAlignment="Center" 
+                                                   FontSize="11" 
+                                                   Foreground="Black" 
+                                                   Text="{Binding}"/>
+
+                                    </Border>
+                                </DataTemplate>
+                            </chart:ChartAdornmentInfo.LabelTemplate>
+                        </chart:ChartAdornmentInfo>
+                    </chart:PieSeries.AdornmentsInfo>
+                </chart:PieSeries>
+            </chart:SfChart>
+       
+        <StackPanel Margin="12,0" Grid.Row="1" Grid.ColumnSpan="2">
+            <TextBlock FontSize="22">
+                <Run Text="סך ההכנסות:" Foreground="Green"/>
+                <Run Text="{Binding Income}"/>
+            </TextBlock>
+            <TextBlock FontSize="22">
+                <Run Text="סך ההוצאות:" Foreground="Red"/>
+                <Run Text="{Binding Expenses}"/>
+            </TextBlock>
+            <ListView
+                Margin="8,10,0,0"
+                 Height="200"
+                ItemTemplate="{StaticResource TranscationItemTemplate}"
+                ItemContainerStyle="{StaticResource ListViewItemStyle1}"
+                ItemsSource="{Binding Transactions}"/>
+        </StackPanel>
     </Grid>
 </local:PageBase>
