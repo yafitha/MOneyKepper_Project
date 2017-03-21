@@ -150,9 +150,9 @@
             <RowDefinition Height="80"/>
         </Grid.RowDefinitions>
             <TextBlock
-                FontSize="18"
+                FontSize="25"
                 FontWeight="Bold"
-                Margin="8,12"
+                Margin="8,12,0,0"
                 FlowDirection="RightToLeft"
                 Text="סקירה כללית"/>
         <StackPanel 

@@ -46,18 +46,19 @@
     <RootPropertyPathName Name="Date" />
     <RootPropertyPathName Name="Transactions" />
     <RootPropertyPathName Name="Expenses" />
-    <RootPropertyPathName Name="Income" />
-    <RootPropertyPathName Name="CategoryItems" />
+    <RootPropertyPathName Name="ExpensesCategoryItems" />
     <RootPropertyPathName Name="ShowTransactionCommand" />
+    <RootPropertyPathName Name="DataContext" />
+    <RootPropertyPathName Name="Income" />
+    <RootPropertyPathName Name="IncomeCategoryItems" />
     <RootPropertyPathName Name="GraphsViewModel" />
     <RootPropertyPathName Name="ShowGraphCommmand" />
-    <RootPropertyPathName Name="SelectedGraph" />
-    <RootPropertyPathName Name="GraphTypes" />
     <RootPropertyPathName Name="AllMonths" />
     <RootPropertyPathName Name="ShowTransactionsCommand" />
     <RootPropertyPathName Name="HistoryDetailsViewModel" />
     <RootPropertyPathName Name="ShowCategoriesGraph" />
     <RootPropertyPathName Name="MonthItems" />
+    <RootPropertyPathName Name="CategoryItems" />
     <RootPropertyPathName Name="ReportViewModel" />
     <RootPropertyPathName Name="ShowReportCommand" />
     <RootPropertyPathName Name="ReportDetailsVewModel" />
@@ -82,6 +83,8 @@
     <RootPropertyPathName Name="IsCategoryGraphSelected" />
     <RootPropertyPathName Name="Categotries" />
     <RootPropertyPathName Name="SelectionChangedCommand" />
+    <RootPropertyPathName Name="SelectedGraph" />
+    <RootPropertyPathName Name="GraphTypes" />
     <RootPropertyPathName Name="DetailsViewModel" />
     <RootPropertyPathName Name="ViewLoadedCommand" />
     <RootPropertyPathName Name="PrimaryPanelViewModel" />
@@ -161,6 +164,7 @@
       <RootProperty Name="Style" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Inlines" />
+      <RootProperty Name="Tag" />
       <RootProperty Name="Height" />
       <RootProperty Name="Padding" />
       <RootProperty Name="TextAlignment" />
@@ -250,6 +254,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Padding" />
+      <RootProperty Name="FlowDirection" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
       <RootMethod Name="GetRow" />
@@ -422,6 +427,9 @@
       <RootProperty Name="ItemsPanel" />
       <RootProperty Name="GroupStyle" />
       <RootProperty Name="SelectionMode" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="Header" />
       <RootProperty Name="ItemContainerStyle" />
       <RootProperty Name="Background" />
       <RootProperty Name="Padding" />
@@ -442,6 +450,7 @@
       <RootProperty Name="SelectedItem" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="VerticalAlignment" />
     </RootType>
@@ -544,20 +553,20 @@
     <RootType FullName="MoneyKepper2.View.Pages.EmptyPage" />
     <RootType FullName="Windows.UI.Xaml.Documents.Run">
       <RootProperty Name="Text" />
-      <RootProperty Name="Foreground" />
       <RootProperty Name="FlowDirection" />
     </RootType>
     <RootType FullName="Syncfusion.UI.Xaml.Charts.SfChart">
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="FontSize" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Header" />
       <RootProperty Name="AreaBorderThickness" />
-      <RootProperty Name="FontSize" />
       <RootProperty Name="Legend" />
       <RootProperty Name="Series" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="Height" />
       <RootProperty Name="Padding" />
-      <RootProperty Name="Visibility" />
       <RootProperty Name="Palette" />
       <RootProperty Name="PrimaryAxis" />
       <RootProperty Name="SecondaryAxis" />
@@ -570,6 +579,7 @@
       <RootProperty Name="BorderThickness" />
     </RootType>
     <RootType FullName="Syncfusion.UI.Xaml.Charts.PieSeries">
+      <RootProperty Name="Palette" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="EmptyPointValue" />
@@ -582,7 +592,11 @@
       <RootProperty Name="Label" />
       <RootProperty Name="YBindingPath" />
       <RootProperty Name="ShowTooltip" />
+      <RootProperty Name="ColorModel" />
       <RootProperty Name="AdornmentsInfo" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.Charts.ChartColorModel">
+      <RootProperty Name="CustomBrushes" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Interactions.Core.EventTriggerBehavior">
       <RootProperty Name="EventName" />
@@ -604,23 +618,11 @@
     </RootType>
     <RootType FullName="MoneyKepper2.View.Pages.GraphsDetailsPage" />
     <RootType FullName="MoneyKepper2.View.Pages.GraphsPage" />
-    <RootType FullName="Syncfusion.UI.Xaml.PivotChart.SfPivotChart">
-      <RootProperty Name="MaxWidth" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="ShowToolTip" />
-      <RootProperty Name="Padding" />
-      <RootProperty Name="Visibility" />
-      <RootProperty Name="ItemSource" />
-      <RootProperty Name="PivotAxis" />
-      <RootProperty Name="PivotLegend" />
-      <RootProperty Name="PivotCalculations" />
-    </RootType>
     <RootType FullName="Syncfusion.UI.Xaml.Charts.CategoryAxis">
-      <RootProperty Name="Header" />
       <RootProperty Name="FontSize" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Syncfusion.UI.Xaml.Charts.NumericalAxis">
-      <RootProperty Name="Header" />
       <RootProperty Name="FontSize" />
     </RootType>
     <RootType FullName="Syncfusion.UI.Xaml.Charts.ColumnSeries">
@@ -631,14 +633,29 @@
       <RootProperty Name="YBindingPath" />
       <RootProperty Name="AdornmentsInfo" />
     </RootType>
-    <RootType FullName="Syncfusion.UI.Xaml.Charts.ChartColorModel">
-      <RootProperty Name="CustomBrushes" />
+    <RootType FullName="Syncfusion.UI.Xaml.PivotChart.SfPivotChart">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="MaxWidth" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="ShowToolTip" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="ItemSource" />
+      <RootProperty Name="PivotAxis" />
+      <RootProperty Name="Legend" />
+      <RootProperty Name="PivotLegend" />
+      <RootProperty Name="PivotCalculations" />
     </RootType>
     <RootType FullName="Syncfusion.PivotAnalysis.UWP.PivotItem">
       <RootProperty Name="FieldCaption" />
       <RootProperty Name="FieldMappingName" />
       <RootProperty Name="TotalHeader" />
       <RootProperty Name="Format" />
+    </RootType>
+    <RootType FullName="Syncfusion.UI.Xaml.PivotChart.PivotChartLegend">
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="DockPosition" />
+      <RootProperty Name="BorderThickness" />
     </RootType>
     <RootType FullName="Syncfusion.PivotAnalysis.UWP.PivotComputationInfo">
       <RootProperty Name="FieldHeader" />

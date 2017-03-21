@@ -21,7 +21,8 @@
             <RowDefinition Height="70"/>
         </Grid.RowDefinitions>
         <TextBlock
-            FontSize="26"
+            FontWeight="Black"
+            FontSize="25"
             Height="40"
             Text="דוחות חודשים"/>
         <StackPanel 

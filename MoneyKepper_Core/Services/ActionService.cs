@@ -40,11 +40,10 @@ namespace MoneyKepperCore.Service
             this.NavigationService.DetailsFrame.NavigateTo(NavigationPageKeys.EMPTY_PAGE);
         }
 
-        public void ShowMonthGraphs(DateTime month, Graph graphType)
+        public void ShowMonthGraphs(DateTime month)
         {
             Dictionary<string, object> args = new Dictionary<string, object>();
             args.Add("Month", month);
-            args.Add("GraphType", graphType);
             this.NavigationService.DetailsFrame.NavigateTo(NavigationPageKeys.GRAPHS_DETAILS, args);
         }
 

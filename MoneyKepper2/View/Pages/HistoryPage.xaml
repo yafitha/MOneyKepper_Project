@@ -46,7 +46,7 @@
             </Grid.RowDefinitions>
             <TextBlock
                 Margin="10,12,0,12"
-                FontSize="18"
+                FontSize="25"
                 FontWeight="Bold"
                 Text="היסטוריית חודשים"/>
             <StackPanel 

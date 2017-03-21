@@ -9,6 +9,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Navigation;
 using Windows.UI.Xaml.Shapes;
@@ -21,18 +22,25 @@ namespace MoneyKepper_Core.ViewModel
         #region Members
         private DateTime StartDateTime { get; set; }
         private DateTime EndDateTime { get; set; }
-        private Graph GraphType { get; set; }
         public ObservableCollection<TransactionItem> AllTransactions { get; set; }
 
         #endregion
 
         #region Bindable Proerty
 
-        private ObservableCollection<CategoryItem> _categoryItems;
-        public ObservableCollection<CategoryItem> CategoryItems
+        private ObservableCollection<CategoryItem> _expensescategoryItems;
+        public ObservableCollection<CategoryItem> ExpensesCategoryItems
         {
-            get { return _categoryItems; }
-            set { _categoryItems = value; }
+            get { return _expensescategoryItems; }
+            set { _expensescategoryItems = value; }
+        }
+
+
+        private ObservableCollection<CategoryItem> _incomeCategoryItems;
+        public ObservableCollection<CategoryItem> IncomeCategoryItems
+        {
+            get { return _incomeCategoryItems; }
+            set { _incomeCategoryItems = value; }
         }
 
         private bool _showPieGraph;
@@ -91,9 +99,14 @@ namespace MoneyKepper_Core.ViewModel
         {
             try
             {
+                if (!(obj.OriginalSource is Path))
+                {
+                    return;
+                }
+
                 var path = obj.OriginalSource as Path;
                 var pieSegment = path.Tag as PieSegment;
-                if (pieSegment == null)
+                if (pieSegment == null || !pieSegment.IsExploded)
                     return;
 
                 var categoryItem = pieSegment.Item as CategoryItem;
@@ -104,7 +117,8 @@ namespace MoneyKepper_Core.ViewModel
 
         private void ShowGraph()
         {
-            this.CategoryItems = new ObservableCollection<CategoryItem>();
+            this.IncomeCategoryItems = new ObservableCollection<CategoryItem>();
+            this.ExpensesCategoryItems = new ObservableCollection<CategoryItem>();
             this.Transactions = null;
             var transactions = this.DataService.GetTransactionsByDate(this.Month);
             if (transactions == null || transactions.Count == 0)
@@ -122,9 +136,16 @@ namespace MoneyKepper_Core.ViewModel
 
             foreach (var groupTransactions in groupedList)
             {
-                var categoryItem = new CategoryItem(groupTransactions.FirstOrDefault().Category, this.Month.ToString("MMMM-yyyy"));
+                var categoryItem = new CategoryItem(groupTransactions.FirstOrDefault().Category, this.Month);
                 categoryItem.Amount = groupTransactions.Sum(t => t.Amount);
-                CategoryItems.Add(categoryItem);
+                if (categoryItem.Category.TypeID == (int)Types.Income)
+                {
+                    IncomeCategoryItems.Add(categoryItem);
+                }
+                else
+                {
+                    ExpensesCategoryItems.Add(categoryItem);
+                }
             }
 
             this.Expenses = transactions.Where(t => t.Category.TypeID == (int)Types.Expenses).Sum(t => t.Amount);
@@ -140,15 +161,14 @@ namespace MoneyKepper_Core.ViewModel
             {
                 var args = e.Parameter as Dictionary<string, object>;
                 this.Month = (DateTime)args["Month"];
-                this.GraphType = (Graph)args["GraphType"];
-                // this.ShowPieGraph = this.GraphType == Graph.pie ? true : false;
                 this.ShowGraph();
             }
         }
 
         public override void OnNavigatedFrom(NavigationEventArgs e)
         {
-            this.CategoryItems.Clear();
+            this.IncomeCategoryItems.Clear();
+            this.ExpensesCategoryItems.Clear();
         }
     }
 }
