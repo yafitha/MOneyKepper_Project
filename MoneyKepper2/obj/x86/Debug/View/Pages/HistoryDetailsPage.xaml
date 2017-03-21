@@ -9,66 +9,103 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+    FlowDirection="RightToLeft"
     DataContext="{Binding HistoryDetailsViewModel,Source={StaticResource Locator}}">
 
     <Grid Background="White">
-        <syncfusion:SfPivotChart 
+        <StackPanel  Visibility="{Binding ShowCategoriesGraph,Converter={StaticResource BooleanToVisibilityConverter} }" >
+            <TextBlock
+                FontWeight="Bold"
+                FontSize="25"
+                Margin="12,12"
+                Text="השוואת קטגוריות לפי חודשים"/>
+            <syncfusion:SfPivotChart
+            VerticalAlignment="Top"
             MaxWidth="800"
             Height="600"
+            ShowToolTip="True"
             Padding="15,15"
-            Visibility="{Binding ShowCategoriesGraph,Converter={StaticResource BooleanToVisibilityConverter} }" 
-            ItemSource="{Binding CategoryItems}">
-            <syncfusion:SfPivotChart.PivotAxis>
-                <pivots:PivotItem FieldCaption="Month" FieldMappingName="Month" TotalHeader="Total"/>
-            </syncfusion:SfPivotChart.PivotAxis>
-            <syncfusion:SfPivotChart.PivotLegend>
-                <pivots:PivotItem FieldCaption="CategoryName" FieldMappingName="CategoryName" TotalHeader="Total"/>
-            </syncfusion:SfPivotChart.PivotLegend>
-            <syncfusion:SfPivotChart.PivotCalculations>
-                <pivots:PivotComputationInfo FieldCaption="Amount" FieldName="Amount" Format="#.##" SummaryType="DoubleTotalSum"/>
-            </syncfusion:SfPivotChart.PivotCalculations>
-        </syncfusion:SfPivotChart>
-
+            ItemSource="{Binding CategoryItems}" >
+                <syncfusion:SfPivotChart.PivotAxis>
+                    <pivots:PivotItem  FieldCaption="Month" FieldMappingName="Month" TotalHeader="Amount">
+                    </pivots:PivotItem>
+                </syncfusion:SfPivotChart.PivotAxis>
+                <syncfusion:SfPivotChart.Legend>
+                    <syncfusion:PivotChartLegend CornerRadius="0" FontSize="15" DockPosition="Top" BorderThickness="1">
+                    </syncfusion:PivotChartLegend>
+                </syncfusion:SfPivotChart.Legend>
+                <syncfusion:SfPivotChart.PivotLegend>
+                    <pivots:PivotItem 
+                    Format=""
+                    FieldCaption="CategoryName" 
+                    FieldMappingName="CategoryName"
+                    TotalHeader="Total"/>
+                </syncfusion:SfPivotChart.PivotLegend>
+                <syncfusion:SfPivotChart.PivotCalculations>
+                    <pivots:PivotComputationInfo FieldHeader="Amount" FieldCaption="Amount" FieldName="Amount" Format="#.##" SummaryType="DoubleTotalSum" />
+                </syncfusion:SfPivotChart.PivotCalculations>
+            </syncfusion:SfPivotChart>
+        </StackPanel>
+        
         <ScrollViewer HorizontalScrollBarVisibility="Auto">
+            <StackPanel  Visibility="{Binding ShowCategoriesGraph,Converter={StaticResource BooleanToVisibilityConverter},ConverterParameter=Invert}">
+                <TextBlock
+                    FontWeight="Bold"
+                    FontSize="25"
+                    Margin="12,12"
+                    Text="השוואת הוצאות הכנסות"/>
         <syncCharts:SfChart
-           Width="800"
-            Height="600"
+           VerticalAlignment="Top"
+            Width="800"
+            FontSize="25"
+            Height="650"
             Padding="15,15"
-            Visibility="{Binding ShowCategoriesGraph,Converter={StaticResource BooleanToVisibilityConverter},ConverterParameter=Invert}"
+           
             Palette="Custom"
-            Header="השוואת הוצאות הכנסות" >
-
+            Header="" >
             <!--Initialize the horizontal axis for SfChart-->
             <syncCharts:SfChart.PrimaryAxis>
-                <syncCharts:CategoryAxis Header="חודשים" FontSize="14"/>
+                <syncCharts:CategoryAxis  FontSize="18" Margin="0,6,0,0"/>
             </syncCharts:SfChart.PrimaryAxis>
 
 
             <!--Initialize the vertical axis for SfChart-->
             <syncCharts:SfChart.SecondaryAxis>
-                <syncCharts:NumericalAxis Header="ערכים" FontSize="14"/>
+                <syncCharts:NumericalAxis  FontSize="18"/>
             </syncCharts:SfChart.SecondaryAxis>
 
 
             <!--Adding Legend to the SfChart-->
             <syncCharts:SfChart.Legend>
-                <syncCharts:ChartLegend Visibility="Visible"/>
-            </syncCharts:SfChart.Legend>
+                    <syncCharts:ChartLegend x:ConnectionId='1' x:Name="ChartLegend1" CornerRadius="0" FontSize="15" DockPosition="Top" BorderThickness="1"/>
+                </syncCharts:SfChart.Legend>
 
 
             <!--Initialize the series for SfChart-->
-            <syncCharts:ColumnSeries 
+                <syncCharts:ColumnSeries 
+                ShowEmptyPoints="True"
                 Label="הוצאות" 
                 ItemsSource="{Binding MonthItems}" 
                 XBindingPath="Month" 
-                YBindingPath="Expenses" />
+                YBindingPath="Expenses" >
+                    <syncCharts:ColumnSeries.AdornmentsInfo>
+                        <syncCharts:ChartAdornmentInfo  ShowConnectorLine="True" ShowLabel="True" LabelPosition="Auto" FontSize="20" SegmentLabelFormat="#,###">
+                        </syncCharts:ChartAdornmentInfo>
+                    </syncCharts:ColumnSeries.AdornmentsInfo>
+                </syncCharts:ColumnSeries>
 
-            <syncCharts:ColumnSeries 
+
+                <syncCharts:ColumnSeries 
                 Label="הכנסות" 
                 ItemsSource="{Binding MonthItems}" 
                 XBindingPath="Month" 
-                YBindingPath="Income" />
-            <!--castomize color of chart-->
+                YBindingPath="Income" >
+                    <syncCharts:ColumnSeries.AdornmentsInfo>
+                        <syncCharts:ChartAdornmentInfo ShowLabel="True"   ShowConnectorLine="True" LabelPosition="Auto" FontSize="20" SegmentLabelFormat="#,###">
+                        </syncCharts:ChartAdornmentInfo>
+                    </syncCharts:ColumnSeries.AdornmentsInfo>
+                </syncCharts:ColumnSeries>
+                <!--castomize color of chart-->
             <syncCharts:SfChart.ColorModel>
                 <syncCharts:ChartColorModel>
                     <syncCharts:ChartColorModel.CustomBrushes>
@@ -78,6 +115,7 @@
                 </syncCharts:ChartColorModel>
             </syncCharts:SfChart.ColorModel>
         </syncCharts:SfChart>
+            </StackPanel>
         </ScrollViewer>
     </Grid>
 </local:PageBase>

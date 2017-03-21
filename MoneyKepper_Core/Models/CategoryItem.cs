@@ -30,16 +30,24 @@ namespace MoneyKepper_Core.Models
             set { this.Set(ref _month, value); }
         }
 
+        private DateTime _monthDate;
+        public DateTime MonthDate
+        {
+            get { return _monthDate; }
+            set { this.Set(ref _monthDate, value); }
+        }
+
         private double _amount;
         public double Amount
         {
             get { return _amount; }
             set { this.Set(ref _amount, value); }
         }
-        public CategoryItem(Category category, string month)
+        public CategoryItem(Category category,DateTime monthDate)
         {
             this.Category = category;
-            this.Month = month;
+            this.Month = monthDate.ToString("MMMM");
+            this.MonthDate = monthDate;
         }
     }
 }

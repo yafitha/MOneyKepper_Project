@@ -84,33 +84,74 @@ namespace MoneyKepper_Core.ViewModel
         private void SetMonthItems()
         {
             var transactions = this.DataServcie.GetTransactionsByDateAndType(this.StartDateTime, this.EndDateTime, null);
-            var transactionsgrouped = transactions.GroupBy(t => t.Date.ToString("MMMM"));
+            var allMonths = this.GetAllMonths();
+            var transactionsgrouped = transactions.GroupBy(t => t.Date.Month);
+
             foreach (var group in transactionsgrouped)
             {
-                var month = group.Key;
-                var monthItem = new MonthItem();
-                monthItem.Expenses = group.Where(t => t.Category.TypeID == (int)Types.Expenses).Sum(t => t.Amount);
-                monthItem.Income = group.Where(t => t.Category.TypeID == (int)Types.Income).Sum(t => t.Amount);
-                monthItem.Month = month;
+                var month = allMonths.FirstOrDefault(m => m.Month == group.Key);
+                allMonths.Remove(month);
+                var monthItem = new MonthItem(group.Where(t => t.Category.TypeID == (int)Types.Expenses).Sum(t => t.Amount),
+                    group.Where(t => t.Category.TypeID == (int)Types.Income).Sum(t => t.Amount),
+                    month);
                 this.MonthItems.Add(monthItem);
             }
+
+            if (allMonths.Count > 0)
+            {
+                foreach (var m in allMonths)
+                {
+                    var monthItem = new MonthItem(Double.NaN, Double.NaN, m);
+                    this.MonthItems.Add(monthItem);
+                }
+            }
+
+            this.MonthItems = new ObservableCollection<MonthItem>(this.MonthItems.OrderBy(m => m.MonthDate));
+        }
+
+        private List<DateTime> GetAllMonths()
+        {
+            var start = new DateTime(this.StartDateTime.Year, StartDateTime.Month, DateTime.DaysInMonth(StartDateTime.Year, StartDateTime.Month));
+            var end = new DateTime(this.EndDateTime.Year, EndDateTime.Month, DateTime.DaysInMonth(EndDateTime.Year, EndDateTime.Month));
+            return Enumerable.Range(0, Int32.MaxValue)
+                      .Select(e => start.AddMonths(e))
+                      .TakeWhile(e => e <= end)
+                      .Select(e => e).ToList();
         }
 
         private void SetCategoryItems()
         {
+            var categoryItems = new ObservableCollection<CategoryItem>();
             var transactions = this.DataServcie.GetTransactionsByDateAndType(this.StartDateTime, this.EndDateTime, null);
-            var transactionsgrouped = transactions.GroupBy(t => t.Date.ToString("MMMM"));
+            var allMonths = this.GetAllMonths();
+            var transactionsgrouped = transactions.GroupBy(t => t.Date.Month);
             foreach (var group in transactionsgrouped)
             {
+                var month = allMonths.FirstOrDefault(m => m.Month == group.Key);
+                allMonths.Remove(month);
+
                 foreach (var cat in this.Categories)
                 {
-                    var month = group.Key;
                     var amount = group.Where(t => t.Category.ID == cat.ID).Sum(t => t.Amount);
                     var categoryItem = new CategoryItem(cat, month);
                     categoryItem.Amount = amount;
-                    this.CategoryItems.Add(categoryItem);
+                    categoryItems.Add(categoryItem);
                 }
             }
+            if (allMonths.Count > 0)
+            {
+                foreach (var m in allMonths)
+                {
+                    foreach (var cat in this.Categories)
+                    {
+                        var amount = Double.NaN;
+                        var categoryItem = new CategoryItem(cat, m);
+                        categoryItem.Amount = amount;
+                        categoryItems.Add(categoryItem);
+                    }
+                }
+            }
+            this.CategoryItems = new ObservableCollection<CategoryItem>(categoryItems.OrderBy(m => m.MonthDate).ToList());
         }
 
         #endregion

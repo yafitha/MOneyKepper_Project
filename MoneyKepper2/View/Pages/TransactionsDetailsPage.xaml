@@ -19,7 +19,7 @@
             <Setter Property="BorderBrush" Value="LightGray" />
             <Setter Property="BorderThickness" Value="1" />
             <Setter Property="HorizontalAlignment" Value="Stretch" />
-            <Setter Property="Height" Value="60" />
+            <Setter Property="Height" Value="70" />
             <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
             <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}" />
             <Setter Property="Foreground" Value="{ThemeResource SystemControlForegroundBaseHighBrush}" />
@@ -153,24 +153,32 @@
             </Setter>
         </Style>
         <DataTemplate x:Key="TranscationItemTemplate">
-            <StackPanel Padding="12,0">
+            <Grid FlowDirection="RightToLeft">
+                <Image
+                    Margin="8,0,0,0"
+                   HorizontalAlignment="Left"
+                    Width="35"
+                    Height="35"
+                    VerticalAlignment="Center"
+                    Source="{Binding Category.PictureName, Converter={StaticResource PictureNameToPictureSourceConverter}}"/>
+                <StackPanel Padding="12,0" Margin="45,0,0,0">
                 <Grid>
                     <StackPanel Orientation="Horizontal">
-                        <Image
-                          Width="30"
-                          Height="30"
-                          Margin="0,0,12,0"
-                         Source="{Binding Category.PictureName, Converter={StaticResource PictureNameToPictureSourceConverter}}"/>
+                      
                         <TextBlock
-                            FontSize="18"
+                            FontWeight="SemiBold"
+                            FontSize="22"
                             Margin="6,0"
                             VerticalAlignment="Center"
                             Text="{Binding Category.Name}"/>
-                        <TextBlock
-                            VerticalAlignment="Center"
-                            FontSize="14"
-                            Text="{Binding Transaction.Note}"/>
 
+                        <TextBlock
+                            FontWeight="SemiBold"
+                            VerticalAlignment="Center"
+                            FontSize="18">
+                        <Run  Text="{Binding Transaction.Amount}"/>
+                        <Run Text=" שקלים"/>
+                        </TextBlock>
                     </StackPanel>
                     <HyperlinkButton
                         Visibility="Visible"
@@ -183,20 +191,21 @@
                         Text=" &#xE711;"/>
                     </HyperlinkButton>
                 </Grid>
-                <StackPanel Orientation="Horizontal">
+                <StackPanel Orientation="Horizontal" >
                     <TextBlock
-                        FontSize="16"
-                        Margin="0,0,8,0"
+                        Margin="6,0,5,0"
+                        FontSize="18"
                         Text="{Binding Transaction.Date,Converter={StaticResource DateConverter},ConverterParameter=d}"/>
+                  
                     <TextBlock
-                      FontSize="16">
-                        <Run  Text="{Binding Transaction.Amount}"/>
-                        <Run Text=" שקלים"/>
-                    </TextBlock>
-                     
+                            VerticalAlignment="Center"
+                            FontSize="16"
+                            Text="{Binding Transaction.Note}"/>
                 </StackPanel>
             </StackPanel>
+            </Grid>
         </DataTemplate>
+        
         <Style x:Name="ReportTextBlockStyle" TargetType="TextBlock">
             <Setter Property="Padding" Value="6,0,4,0" />
             <Setter Property="FontSize" Value="20"/>

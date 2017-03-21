@@ -74,3 +74,5 @@ C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper_Core\obj\
 C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper_Core\obj\x86\Debug\qualifiers.txt
 C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper_Core\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper_Core\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper_Core\bin\x86\Debug\Syncfusion.SfChart.UWP.dll
+C:\Users\hamilton\Documents\GitHub\MoneyKepper\MoneyKeeper\MoneyKepper_Core\bin\x86\Debug\Syncfusion.SfChart.UWP.xml

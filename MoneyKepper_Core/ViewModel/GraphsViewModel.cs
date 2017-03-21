@@ -36,19 +36,6 @@ namespace MoneyKepper_Core.ViewModel
             set { this.Set(ref _allMonths, value); }
         }
 
-        private List<Graph> _graphTypes;
-        public List<Graph> GraphTypes
-        {
-            get { return _graphTypes; }
-            set { this.Set(ref _graphTypes, value); }
-        }
-
-        private Graph _selectedGraph;
-        public Graph SelectedGraph
-        {
-            get { return _selectedGraph; }
-            set { this.Set(ref _selectedGraph, value); }
-        }
 
         #endregion
 
@@ -75,20 +62,9 @@ namespace MoneyKepper_Core.ViewModel
         private void OnShowGraphCommmand()
         {
           
-            this.ActionsService.ShowMonthGraphs(this.CurrentMonth, this.SelectedGraph);
+            this.ActionsService.ShowMonthGraphs(this.CurrentMonth);
         }
 
-        private void SetGraphsTypes()
-        {
-            if (this.GraphTypes == null)
-            {
-                this.GraphTypes = new List<Graph>();
-            }
-            this.GraphTypes.Clear();
-            this.GraphTypes.Add(Graph.pie);
-            this.GraphTypes.Add(Graph.CategoriesColumns);
-            this.SelectedGraph = Graph.pie;
-        }
         private void InitAllMonths()
         {
             this.AllMonths = new ObservableCollection<DateTime>();
@@ -106,7 +82,6 @@ namespace MoneyKepper_Core.ViewModel
             base.OnNavigatedTo(e);
             if (e.NavigationMode == NavigationMode.New)
             {
-                this.SetGraphsTypes();
                 this.InitAllMonths();
                 this.CurrentMonth = this.AllMonths[0];
             }

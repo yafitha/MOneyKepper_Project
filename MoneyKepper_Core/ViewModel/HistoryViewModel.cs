@@ -135,6 +135,9 @@ namespace MoneyKepper_Core.ViewModel
         private void OnShowGraphCommmand()
         {
             var endDate = this.EndDate == null ? this.StartDate.Value.Date : this.EndDate.Value.Date;
+            if (this.SelectedCategories == null && this.SelectedGraph == Graph.CategoriesMonthColumns)
+                return;
+
             this.ActionsService.ShowHistoryGraphs(this.StartDate.Value.Date, endDate, this.SelectedCategories,this.SelectedGraph);
         }
 

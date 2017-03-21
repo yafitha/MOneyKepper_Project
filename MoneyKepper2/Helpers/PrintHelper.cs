@@ -132,7 +132,7 @@ namespace MoneyKepper2.Helpers
         protected virtual void PrintTaskRequested(PrintManager sender, PrintTaskRequestedEventArgs e)
         {
             PrintTask printTask = null;
-            printTask = e.Request.CreatePrintTask("המארחת", sourceRequested =>
+            printTask = e.Request.CreatePrintTask("MoneyKepper", sourceRequested =>
             {
                 // Print Task event handler is invoked when the print job is completed.
                 printTask.Completed += async (s, args) =>
