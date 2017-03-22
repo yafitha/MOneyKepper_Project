@@ -91,7 +91,7 @@ namespace MoneyKepperServer.Controllers
         }
 
 
-        [System.Web.Http.HttpPut]
+        [System.Web.Http.HttpPost]
         [Route("api/Category/UpdateCategory")]
         public HttpResponseMessage UpdateCategory([FromBody]Models.Category category)
         {
@@ -102,7 +102,7 @@ namespace MoneyKepperServer.Controllers
                 if (selectCategory == null)
                 {
                     context.Dispose();
-                    return Request.CreateResponse(HttpStatusCode.NotFound);
+                    return Request.CreateResponse(HttpStatusCode.BadRequest);
                 }
                 selectCategory = cat;
                 context.SaveChanges();

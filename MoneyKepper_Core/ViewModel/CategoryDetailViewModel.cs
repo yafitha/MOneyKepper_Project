@@ -15,6 +15,7 @@ using System.Threading.Tasks;
 using Windows.UI.Xaml.Navigation;
 using static MoneyKepper_Core.ViewModel.TransactionsViewModel;
 using MoneyKepper_Core.BL;
+using Windows.UI.Xaml.Controls;
 
 namespace MoneyKepper_Core.ViewModel
 {
@@ -52,6 +53,9 @@ namespace MoneyKepper_Core.ViewModel
 
         public RelayCommand AddCategoryCommand { get; private set; }
         public RelayCommand<Category> RemoveCommand { get; private set; }
+
+        public RelayCommand<Category> UpdateCategoryCommand { get; private set; }
+
         #endregion
 
         #region Cotr's
@@ -72,7 +76,7 @@ namespace MoneyKepper_Core.ViewModel
         {
             this.AllTransactions = this.DataService.GetAllTransactions().ToList();
             var existedtransactions = AllTransactions.Where(t => t.Category.ID == category.ID).ToList();
-            if (existedtransactions != null)
+            if (existedtransactions != null && existedtransactions.Count > 0)
             {
                 var dialogArgs = new Dictionary<string, object>()
                 {
@@ -84,11 +88,28 @@ namespace MoneyKepper_Core.ViewModel
                 if (result == Windows.UI.Xaml.Controls.ContentDialogResult.Primary)
                 {
                     existedtransactions.ForEach(t => TransactionBL.DeleteTransaction(t.ID));
+                    this.DeleteCategory(category);
+                    return;
                 }
                 else
                     return;
             }
 
+            var dialogArgs2 = new Dictionary<string, object>()
+                {
+                    { "Title",  string.Format("מחיקת קטגוריה {0}",category.Name) },
+                    { "Content", "האם אתה בטוח שברצונך למחוק את הקטגוריה ?" }
+                };
+
+            var result2 = await this.DialogService.ShowDialog(DialogKeys.CONFIRM, dialogArgs2);
+            if (result2 == Windows.UI.Xaml.Controls.ContentDialogResult.Primary)
+            {
+                this.DeleteCategory(category);
+            }
+        }
+
+        private void DeleteCategory(Category category)
+        {
             CategoryGroup group;
             if (category.TypeID == (int)(Types.Income))
             {
@@ -155,6 +176,7 @@ namespace MoneyKepper_Core.ViewModel
         {
             this.AddCategoryCommand = new RelayCommand(OnAddCategoryCommand);
             this.RemoveCommand = new RelayCommand<Category>(OnRemoveCommand);
+            this.UpdateCategoryCommand = new RelayCommand<Category>(OnUpdateCategoryCommand);
         }
 
         private void SetGroups()
@@ -182,6 +204,27 @@ namespace MoneyKepper_Core.ViewModel
                 }
             }
         }
+
+        private void OnUpdateCategoryCommand(Category category)
+        {
+            this.UpdateCategory(category);
+        }
+
+        private void UpdateCategory(Category category)
+        {
+            Action<Category> callback = c =>
+            {
+                CategoryBL.UpdateCategory(c);
+            };
+            var dialogArgs = new Dictionary<string, object>()
+                {
+                    { "Callback", callback },
+                    {"Category",category }
+
+                };
+            this.DialogService.ShowDialog(DialogKeys.ADD_CATEGORY, dialogArgs);
+        }
+
 
         #endregion
 

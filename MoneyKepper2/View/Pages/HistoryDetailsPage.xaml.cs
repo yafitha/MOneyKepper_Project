@@ -26,5 +26,10 @@ namespace MoneyKepper2.View.Pages
         {
             this.InitializeComponent();
         }
+
+        private void SfPivotChart_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+
+        }
     }
 }

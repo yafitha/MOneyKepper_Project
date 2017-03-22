@@ -88,10 +88,10 @@
                Text=" בחר חודש:"/>
             <ComboBox 
                 HorizontalAlignment="Center"
-                   ItemsSource="{Binding AllMonths}"
-                   SelectedItem="{Binding CurrentMonth,Mode=TwoWay}"
-                   Height="30" 
-                   Width="200">
+                 ItemsSource="{Binding AllMonths}"
+                SelectedItem="{Binding CurrentMonth,Mode=TwoWay}"
+                 Height="30" 
+                 Width="200">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
                         <TextBlock Text="{Binding Converter={StaticResource DateConverter},ConverterParameter= MMMM -yyyy}"/>
@@ -99,12 +99,12 @@
                 </ComboBox.ItemTemplate>
                 <Interactivity:Interaction.Behaviors>
                     <core:EventTriggerBehavior EventName="SelectionChanged">
-                        <core:InvokeCommandAction Command="{Binding ShowTransactionsCommand}"/>
+                        <core:InvokeCommandAction Command="{Binding ShowGraphCommmand}"/>
                     </core:EventTriggerBehavior>
                 </Interactivity:Interaction.Behaviors>
             </ComboBox>
         </StackPanel>
-        <Button
+        <!--<Button
             Grid.Row="2"
             Width="120"
             Foreground="White"
@@ -113,6 +113,6 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             Command="{Binding ShowGraphCommmand}"
-            Content="הצג"/>
+            Content="הצג"/>-->
     </Grid>
 </local:PageBase>

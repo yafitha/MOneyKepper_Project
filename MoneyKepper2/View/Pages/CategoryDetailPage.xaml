@@ -6,16 +6,17 @@
     xmlns:controls="using:MoneyKepper2.Controls" 
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:Interactivity ="using:Microsoft.Xaml.Interactivity"
     mc:Ignorable="d"
+    d:DesignWidth="900"
     FlowDirection="RightToLeft"
     DataContext="{Binding  CategoryDetailViewModel,Source={StaticResource Locator}}">
     <local:PageBase.Resources>
         <Style x:Key="ListViewItemStyle1" TargetType="ListViewItem">
-            <Setter Property="Padding" Value="8,0" />
-            <Setter Property="Margin" Value="0,1" />
+            <Setter Property="Padding" Value="12,0" />
+            <Setter Property="Margin" Value="0,1.5" />
             <Setter Property="Background" Value="White" />
-            <Setter Property="BorderBrush" Value="LightGray" />
-            <Setter Property="BorderThickness" Value="1" />
             <Setter Property="HorizontalAlignment" Value="Stretch" />
             <Setter Property="Height" Value="70" />
             <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
@@ -26,7 +27,7 @@
             <Setter Property="Padding" Value="0" />
             <Setter Property="HorizontalContentAlignment" Value="Stretch" />
             <Setter Property="VerticalContentAlignment" Value="Center" />
-            <Setter Property="Width" Value="300" />
+            <Setter Property="MinWidth" Value="{ThemeResource ListViewItemMinWidth}" />
             <Setter Property="MinHeight" Value="{ThemeResource ListViewItemMinHeight}" />
             <Setter Property="Template">
                 <Setter.Value>
@@ -47,10 +48,14 @@
                                                FocusBorderBrush="{ThemeResource SystemControlForegroundAltHighBrush}"
                                                FocusSecondaryBorderBrush="{ThemeResource SystemControlForegroundBaseHighBrush}"
                                                PlaceholderBackground="{ThemeResource ListViewItemPlaceholderBackgroundThemeBrush}"
+                                               PointerOverBackground="{ThemeResource SystemControlHighlightListLowBrush}"
                                                PointerOverForeground="{ThemeResource SystemControlHighlightAltBaseHighBrush}"
                                                PressedBackground="{ThemeResource SystemControlHighlightListMediumBrush}"
                                                ReorderHintOffset="{ThemeResource ListViewItemReorderHintThemeOffset}"
+                                               SelectedBackground="LightGray"
                                                SelectedForeground="{ThemeResource AppBarItemPressedForegroundThemeBrush}"
+                                               SelectedPointerOverBackground="LightGray"
+                                               SelectedPressedBackground="LightGray"
                                                SelectionCheckMarkVisualEnabled="True">
                             <VisualStateManager.VisualStateGroups>
                                 <VisualStateGroup x:Name="CommonStates">
@@ -93,8 +98,8 @@
             </Setter>
         </Style>
         <DataTemplate x:Key="CategoryItemTemplate">
-            <Grid Margin="12,0,0,0" Width="300" HorizontalAlignment="Stretch">
-                    <StackPanel Orientation="Horizontal" Width="250">
+            <Grid Margin="12,0,0,0" >
+                    <StackPanel Orientation="Horizontal">
                         <Image
                           Width="30"
                           Height="30"
@@ -105,16 +110,25 @@
                             Margin="0,0,6,0"
                              Text="{Binding Name}"/>
                     </StackPanel>
-                <HyperlinkButton
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <HyperlinkButton
+                        Visibility="Visible"
+                        Command="{Binding CategoryDetailViewModel.UpdateCategoryCommand ,Source={StaticResource Locator}}"
+                        CommandParameter="{Binding}">
+                      <TextBlock
+                        Style="{StaticResource MDL2AssetsTextBlockStyle}"
+                        Text=" &#xE1c2;"/>
+                    </HyperlinkButton>
+                    <HyperlinkButton
                         Visibility="Visible"
                         Command="{Binding CategoryDetailViewModel.RemoveCommand ,Source={StaticResource Locator}}"
                         CommandParameter="{Binding}"
                         HorizontalAlignment="Right">
-                    <TextBlock
-                        Foreground="Black"
+                        <TextBlock
                         Style="{StaticResource MDL2AssetsTextBlockStyle}"
                         Text=" &#xE711;"/>
-                </HyperlinkButton>
+                    </HyperlinkButton>
+                </StackPanel>
             </Grid>
         </DataTemplate>
             
@@ -159,7 +173,7 @@
         Padding="20,0"
         Grid.Column="1">
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
+            <RowDefinition Height="70"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -167,42 +181,53 @@
             <ColumnDefinition Width="50*"/>
         </Grid.ColumnDefinitions>
         <TextBlock
+            VerticalAlignment="Center"
              FontWeight="Bold"
-            Margin="0,5,0,0"
+               Margin="0,5,0,10"
                 FontSize="25"
                 Text="פירוט קטגוריות"/>
         <StackPanel
                 Padding="0"
                 Grid.Row="1">
+          <StackPanel>
             <TextBlock
-                FontSize="18"
-                   Foreground="Green"
-                   FontWeight="Bold"
-                   Text="קטגוריות מסוג הכנסה"/>
+                VerticalAlignment="Center"
+                FontSize="22"
+                Foreground="Green"
+                FontWeight="Bold"
+                Text="קטגוריות מסוג הכנסה"/>
             <HyperlinkButton
                     Command="{Binding AddCategoryCommand}">
-                <TextBlock
-                      FontSize="18"
-                      Text="הוסף קטגוריה"/>
-             
-            </HyperlinkButton>
-
+                    <TextBlock
+                    Margin="6,5,0,0"
+                    VerticalAlignment="Center"
+                     FontSize="22" >
+                        <Run FontWeight="Bold" Text="+"/>
+                        <Run Text="הוסף "/>
+                    </TextBlock>
+                </HyperlinkButton>
+            </StackPanel>
+            
             <ListView
-                Height="600"
-                SelectionMode="None"
+                Margin="8,14,8,0"
+                SelectionMode="Single"
+                ItemContainerStyle="{StaticResource ListViewItemStyle1}"
                 ScrollViewer.VerticalScrollBarVisibility="Auto"
                 ItemTemplate="{StaticResource CategoryItemTemplate}"
                 ItemsSource="{Binding Source={StaticResource IncomesGroup}}">
+              
                 <ListView.GroupStyle>
                     <GroupStyle HeaderContainerStyle="{StaticResource ListViewGroupHeaderItemStyle}">
                         <GroupStyle.HeaderTemplate>
                             <DataTemplate>
-                                <StackPanel 
+                              <Grid
                                     Height="70"
                                     Padding="8,0"
                                     Background="#FFF2F2F2"
                                     BorderThickness="0,0,0,1"
-                                    Orientation="Horizontal" VerticalAlignment="Center">
+                                    VerticalAlignment="Center">
+                                  
+                                    <StackPanel Orientation="Horizontal">
                                     <Image
                                         Width="30"
                                         Height="30"
@@ -210,7 +235,28 @@
                                         Source="{Binding Category.PictureName, Converter={StaticResource PictureNameToPictureSourceConverter}}"/>
                                     <TextBlock VerticalAlignment="Center"
                                          Text="{Binding Category.Name}" />
-                                </StackPanel>
+                                    </StackPanel>
+
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+
+                                        <HyperlinkButton
+                                        Command="{Binding CategoryDetailViewModel.UpdateCategoryCommand ,Source={StaticResource Locator}}"
+                                        CommandParameter="{Binding Category}"
+                                        HorizontalAlignment="Right">
+                                      <TextBlock
+                                        Style="{StaticResource MDL2AssetsTextBlockStyle}"
+                                        Text=" &#xE1c2;"/>
+                                        </HyperlinkButton>
+                                      <HyperlinkButton
+                                        Command="{Binding CategoryDetailViewModel.RemoveCommand ,Source={StaticResource Locator}}"
+                                        CommandParameter="{Binding Category}"
+                                        HorizontalAlignment="Right">
+                                    <TextBlock
+                                        Style="{StaticResource MDL2AssetsTextBlockStyle}"
+                                        Text=" &#xE711;"/>
+                                    </HyperlinkButton>
+                                    </StackPanel>
+                                </Grid>
                             </DataTemplate>
                         </GroupStyle.HeaderTemplate>
                     </GroupStyle>
@@ -221,41 +267,73 @@
                 Padding="0"
                 Grid.Column="1"
                 Grid.Row="1">
-            <TextBlock
-                FontSize="18"
-                    Foreground="Red"
-                    FontWeight="Bold"
-                    Text="קטגוריות מסוג הוצאה"/>
-            <HyperlinkButton
-                      Command="{Binding AddCategoryCommand}">
+            <StackPanel>
                 <TextBlock
-                    FontSize="18"
-                    Text="הוסף קטגוריה"/>
-            </HyperlinkButton>
-            
+                VerticalAlignment="Center"
+                FontSize="22"
+                Foreground="Red"
+                FontWeight="Bold"
+                Text="קטגוריות מסוג הוצאה"/>
+                <HyperlinkButton
+                    Command="{Binding AddCategoryCommand}">
+                    <TextBlock
+                    Margin="6,5,0,0"
+                    VerticalAlignment="Center"
+                     FontSize="22" >
+                        <Run FontWeight="Bold" Text="+"/>
+                        <Run Text="הוסף"/>
+                    </TextBlock>
+                </HyperlinkButton>
+            </StackPanel>
+
             <ListView
+                Margin="8,14,8,0"
                 Height="600"
+                ItemContainerStyle="{StaticResource ListViewItemStyle1}"
                 ItemTemplate="{StaticResource CategoryItemTemplate}"
                 ScrollViewer.VerticalScrollBarVisibility="Auto"
                 ItemsSource="{Binding Source={StaticResource ExpensesGroup}}">
+               
                 <ListView.GroupStyle>
                     <GroupStyle HeaderContainerStyle="{StaticResource ListViewGroupHeaderItemStyle}">
                         <GroupStyle.HeaderTemplate>
                             <DataTemplate>
-                                <StackPanel 
+                                <Grid
                                     Height="70"
                                     Padding="8,0"
                                     Background="#FFF2F2F2"
                                     BorderThickness="0,0,0,1"
-                                    Orientation="Horizontal" VerticalAlignment="Center">
-                                    <Image
+                                    VerticalAlignment="Center">
+                                    
+                                    <StackPanel Orientation="Horizontal">
+                                        <Image
                                         Width="30"
                                         Height="30"
                                         Margin="0,0,12,0"
                                         Source="{Binding Category.PictureName, Converter={StaticResource PictureNameToPictureSourceConverter}}"/>
-                                    <TextBlock VerticalAlignment="Center"
+                                        <TextBlock VerticalAlignment="Center"
                                          Text="{Binding Category.Name}" />
-                                </StackPanel>
+                                    </StackPanel>
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                        <HyperlinkButton
+                                        Command="{Binding CategoryDetailViewModel.UpdateCategoryCommand ,Source={StaticResource Locator}}"
+                                        CommandParameter="{Binding Category}"
+                                        HorizontalAlignment="Right">
+                                      <TextBlock
+                                        Style="{StaticResource MDL2AssetsTextBlockStyle}"
+                                        Text=" &#xE1c2;"/>
+                                        </HyperlinkButton>
+
+                                        <HyperlinkButton
+                                        Command="{Binding CategoryDetailViewModel.RemoveCommand ,Source={StaticResource Locator}}"
+                                        CommandParameter="{Binding Category}"
+                                        HorizontalAlignment="Right">
+                                     <TextBlock
+                                        Style="{StaticResource MDL2AssetsTextBlockStyle}"
+                                        Text=" &#xE711;"/>
+                                        </HyperlinkButton>
+                                    </StackPanel>
+                                </Grid>
                             </DataTemplate>
                         </GroupStyle.HeaderTemplate>
                     </GroupStyle>

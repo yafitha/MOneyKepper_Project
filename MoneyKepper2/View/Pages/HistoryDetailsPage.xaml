@@ -9,6 +9,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+    d:DesignHeight="900"
+    d:DesignWidth="900"
     FlowDirection="RightToLeft"
     DataContext="{Binding HistoryDetailsViewModel,Source={StaticResource Locator}}">
 
@@ -21,8 +23,8 @@
                 Text="השוואת קטגוריות לפי חודשים"/>
             <syncfusion:SfPivotChart
             VerticalAlignment="Top"
+                Tapped="SfPivotChart_Tapped"
             MaxWidth="800"
-            Height="600"
             ShowToolTip="True"
             Padding="15,15"
             ItemSource="{Binding CategoryItems}" >
@@ -54,11 +56,10 @@
                     FontSize="25"
                     Margin="12,12"
                     Text="השוואת הוצאות הכנסות"/>
+                
         <syncCharts:SfChart
            VerticalAlignment="Top"
-            Width="800"
             FontSize="25"
-            Height="650"
             Padding="15,15"
            
             Palette="Custom"

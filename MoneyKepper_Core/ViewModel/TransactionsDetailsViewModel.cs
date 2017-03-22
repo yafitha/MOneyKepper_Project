@@ -98,15 +98,25 @@ namespace MoneyKepper_Core.ViewModel
             var dialogArgs = new Dictionary<string, object>()
                 {
                     { "Callback", AddNewTransactionCallback },
-                {"CurrentMonth", this.CurrentMonth },
+                   {"CurrentMonth", this.CurrentMonth },
                     {"Categories", this.Categories.Where(cat=>cat.TypeID == (int)type).ToList()},
                     {"TransactionType",transactionType }
                 };
 
             this.DialogService.ShowDialog(DialogKeys.ADD_TRANSACTION, dialogArgs);
         }
-        private void OnRemoveCommand(TransactionItem transactionItem)
+        private async void OnRemoveCommand(TransactionItem transactionItem)
         {
+            var dialogArgs = new Dictionary<string, object>()
+                {
+                    { "Title", "מחיקת תנועה" },
+                    { "Content", "האם אתה בטוח שברצונך למחוק את התנועה?" }
+                };
+
+            var dialogResult =  await this.DialogService.ShowDialog(DialogKeys.CONFIRM, dialogArgs);
+            if (dialogResult == Windows.UI.Xaml.Controls.ContentDialogResult.Secondary)
+                return;
+
             if (transactionItem.Category.TypeID == (int)Types.Expenses)
             {
                 var result = TransactionBL.DeleteTransaction(transactionItem.Transaction.ID);

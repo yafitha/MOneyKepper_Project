@@ -12,13 +12,16 @@
     <RootPropertyPathName Name="SaveCommand" />
     <RootPropertyPathName Name="SelectedImage" />
     <RootPropertyPathName Name="Images" />
-    <RootPropertyPathName Name="SelectedItem" />
+    <RootPropertyPathName Name="Path" />
+    <RootPropertyPathName Name="IsAddCategory" />
     <RootPropertyPathName Name="IsChecked" />
     <RootPropertyPathName Name="SelectedCategory" />
     <RootPropertyPathName Name="Categories" />
     <RootPropertyPathName Name="Name" />
     <RootPropertyPathName Name="IsSubCategoryChecked" />
+    <RootPropertyPathName Name="IsIncome" />
     <RootPropertyPathName Name="CategoryTypeSelectionCommand" />
+    <RootPropertyPathName Name="Title" />
     <RootPropertyPathName Name="AddTransactionViewModel" />
     <RootPropertyPathName Name="ValidationMessage" />
     <RootPropertyPathName Name="Note" />
@@ -30,13 +33,14 @@
     <RootPropertyPathName Name="TransactionType" />
     <RootPropertyPathName Name="ConfirmViewModel" />
     <RootPropertyPathName Name="Content" />
-    <RootPropertyPathName Name="Title" />
     <RootPropertyPathName Name="CategoryDetailViewModel" />
     <RootPropertyPathName Name="ExpensesGroups" />
     <RootPropertyPathName Name="IncomesGroups" />
     <RootPropertyPathName Name="RemoveCommand" />
+    <RootPropertyPathName Name="UpdateCategoryCommand" />
     <RootPropertyPathName Name="PictureName" />
     <RootPropertyPathName Name="Category" />
+    <RootPropertyPathName Name="UpdateGroupCategoryCommand" />
     <RootPropertyPathName Name="AddCategoryCommand" />
     <RootPropertyPathName Name="CategoryViewModel" />
     <RootPropertyPathName Name="ExpensesCategoriesCount" />
@@ -52,9 +56,8 @@
     <RootPropertyPathName Name="Income" />
     <RootPropertyPathName Name="IncomeCategoryItems" />
     <RootPropertyPathName Name="GraphsViewModel" />
-    <RootPropertyPathName Name="ShowGraphCommmand" />
     <RootPropertyPathName Name="AllMonths" />
-    <RootPropertyPathName Name="ShowTransactionsCommand" />
+    <RootPropertyPathName Name="ShowGraphCommmand" />
     <RootPropertyPathName Name="HistoryDetailsViewModel" />
     <RootPropertyPathName Name="ShowCategoriesGraph" />
     <RootPropertyPathName Name="MonthItems" />
@@ -68,6 +71,7 @@
     <RootPropertyPathName Name="TransactionsViewModel" />
     <RootPropertyPathName Name="ShowExtraInfoCommand" />
     <RootPropertyPathName Name="Balance" />
+    <RootPropertyPathName Name="ShowTransactionsCommand" />
     <RootPropertyPathName Name="TransactionsDetailsViewModel" />
     <RootPropertyPathName Name="ExpensesItems" />
     <RootPropertyPathName Name="AddTransactionCommand" />
@@ -104,24 +108,25 @@
     <RootType FullName="MoneyKepper2.Converters.SelectionChangedConverter" />
     <RootType FullName="MoneyKepper2.Converters.PictureNameToPictureSourceConverter" />
     <RootType FullName="MoneyKepper2.Converters.TypeIDToTypeNameConverter" />
+    <RootType FullName="MoneyKepper2.Converters.InvertBooleanConverter" />
     <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
       <RootProperty Name="Color" />
       <RootProperty Name="Opacity" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Background" />
       <RootProperty Name="Content" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Width" />
       <RootProperty Name="Command" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="IsEnabled" />
       <RootProperty Name="Style" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Template" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Control">
@@ -134,11 +139,11 @@
       <RootProperty Name="Padding" />
       <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="VerticalContentAlignment" />
-      <RootProperty Name="BorderBrush" />
-      <RootProperty Name="BorderThickness" />
       <RootProperty Name="TabNavigation" />
       <RootProperty Name="FontWeight" />
       <RootProperty Name="UseSystemFocusVisuals" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
       <RootProperty Name="Width" />
@@ -158,23 +163,25 @@
       <RootProperty Name="FontWeight" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Text" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="Foreground" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Style" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Inlines" />
-      <RootProperty Name="Tag" />
       <RootProperty Name="Height" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Inlines" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Tag" />
       <RootProperty Name="Padding" />
       <RootProperty Name="TextAlignment" />
       <RootProperty Name="FlowDirection" />
-      <RootProperty Name="TextWrapping" />
       <RootProperty Name="TextTrimming" />
       <RootProperty Name="Visibility" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ContentDialog" />
     <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
+      <RootProperty Name="IsEnabled" />
+      <RootProperty Name="IsChecked" />
       <RootProperty Name="Command" />
       <RootProperty Name="CommandParameter" />
       <RootProperty Name="GroupName" />
@@ -397,13 +404,13 @@
       <RootProperty Name="Orientation" />
       <RootProperty Name="Children" />
       <RootProperty Name="Padding" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Visibility" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Background" />
-      <RootProperty Name="Height" />
       <RootProperty Name="Resources" />
     </RootType>
     <RootType FullName="MoneyKepper2.View.Dialogs.ContentDialogBase">
@@ -413,6 +420,11 @@
       <RootProperty Name="FlowDirection" />
       <RootProperty Name="DataContext" />
       <RootProperty Name="Content" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="MinHeight" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Resources" />
       <RootProperty Name="PrimaryButtonText" />
       <RootProperty Name="SecondaryButtonText" />
     </RootType>
@@ -425,12 +437,12 @@
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="ItemTemplate" />
       <RootProperty Name="ItemsPanel" />
+      <RootProperty Name="ItemContainerStyle" />
       <RootProperty Name="GroupStyle" />
       <RootProperty Name="SelectionMode" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="FontWeight" />
       <RootProperty Name="Header" />
-      <RootProperty Name="ItemContainerStyle" />
       <RootProperty Name="Background" />
       <RootProperty Name="Padding" />
       <RootProperty Name="HeaderTemplate" />
@@ -444,41 +456,43 @@
       <RootProperty Name="Orientation" />
       <RootProperty Name="ItemHeight" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+    <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="IsChecked" />
       <RootProperty Name="Width" />
-      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
       <RootProperty Name="SelectedItem" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="ItemTemplate" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Height" />
-      <RootProperty Name="VerticalAlignment" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
-      <RootProperty Name="IsChecked" />
-      <RootProperty Name="Width" />
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Height" />
       <RootProperty Name="Width" />
       <RootProperty Name="Text" />
       <RootProperty Name="Margin" />
-      <RootProperty Name="Height" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="InputScope" />
     </RootType>
     <RootType FullName="MoneyKepper2.View.Dialogs.AddNewCategoryDialog" />
     <RootType FullName="Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox">
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="Text" />
       <RootProperty Name="InputScope" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.CalendarDatePicker">
-      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="DateFormat" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Interactivity.Interaction">
       <RootMethod Name="GetBehaviors" />
@@ -513,8 +527,8 @@
       <RootProperty Name="Visibility" />
       <RootProperty Name="Command" />
       <RootProperty Name="CommandParameter" />
-      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Primitives.ListViewItemPresenter">
@@ -533,28 +547,30 @@
       <RootProperty Name="FocusBorderBrush" />
       <RootProperty Name="FocusSecondaryBorderBrush" />
       <RootProperty Name="PlaceholderBackground" />
+      <RootProperty Name="PointerOverBackground" />
       <RootProperty Name="PointerOverForeground" />
       <RootProperty Name="PressedBackground" />
       <RootProperty Name="ReorderHintOffset" />
-      <RootProperty Name="SelectedForeground" />
-      <RootProperty Name="SelectionCheckMarkVisualEnabled" />
-      <RootProperty Name="PointerOverBackground" />
       <RootProperty Name="SelectedBackground" />
+      <RootProperty Name="SelectedForeground" />
       <RootProperty Name="SelectedPointerOverBackground" />
       <RootProperty Name="SelectedPressedBackground" />
+      <RootProperty Name="SelectionCheckMarkVisualEnabled" />
     </RootType>
     <RootType FullName="Windows.UI.Text.FontWeight" />
     <RootType FullName="Windows.UI.Xaml.Controls.GroupStyle">
       <RootProperty Name="HeaderContainerStyle" />
       <RootProperty Name="HeaderTemplate" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Documents.Run">
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FlowDirection" />
+    </RootType>
     <RootType FullName="MoneyKepper2.View.Pages.CategoryDetailPage" />
     <RootType FullName="MoneyKepper2.View.Pages.CategoryPage" />
     <RootType FullName="MoneyKepper2.View.Pages.EmptyPage" />
-    <RootType FullName="Windows.UI.Xaml.Documents.Run">
-      <RootProperty Name="Text" />
-      <RootProperty Name="FlowDirection" />
-    </RootType>
     <RootType FullName="Syncfusion.UI.Xaml.Charts.SfChart">
       <RootProperty Name="FontWeight" />
       <RootProperty Name="FontSize" />
@@ -564,8 +580,6 @@
       <RootProperty Name="Legend" />
       <RootProperty Name="Series" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
       <RootProperty Name="Padding" />
       <RootProperty Name="Palette" />
       <RootProperty Name="PrimaryAxis" />
@@ -636,7 +650,6 @@
     <RootType FullName="Syncfusion.UI.Xaml.PivotChart.SfPivotChart">
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="MaxWidth" />
-      <RootProperty Name="Height" />
       <RootProperty Name="ShowToolTip" />
       <RootProperty Name="Padding" />
       <RootProperty Name="ItemSource" />
@@ -644,6 +657,7 @@
       <RootProperty Name="Legend" />
       <RootProperty Name="PivotLegend" />
       <RootProperty Name="PivotCalculations" />
+      <RootEvent Name="Tapped" />
     </RootType>
     <RootType FullName="Syncfusion.PivotAnalysis.UWP.PivotItem">
       <RootProperty Name="FieldCaption" />
