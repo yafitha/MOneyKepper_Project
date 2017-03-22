@@ -267,16 +267,20 @@
             <TextBlock
                 VerticalAlignment="Center"
                 Margin="0,5,8,8"
-                FontSize="24"
-                Text="הפק דוח">
-              <Interactivity:Interaction.Behaviors>
+                FontSize="24" >
+                <Run  
+                   FontFamily="Segoe MDL2 Assets"
+                      Text=" &#xEe71;"/>
+                <Run  Text="הפק דוח"/>
+            </TextBlock>
+            <Interactivity:Interaction.Behaviors>
                   <b:PrintPageBehavior
                      ReportHeader="דוח הוצאות הכנסות"
                      ReportInfo="{Binding ReportInfo}"
                      AmountItemInPage="20"
                      RootListView="{Binding ElementName=AllTransactions}" ></b:PrintPageBehavior>
               </Interactivity:Interaction.Behaviors>
-            </TextBlock>
+           
         </HyperlinkButton>
         <ListView
             Background="#FFF3F3F3"

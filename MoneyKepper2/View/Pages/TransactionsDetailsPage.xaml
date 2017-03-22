@@ -290,10 +290,13 @@
                     Command="{Binding AddTransactionCommand}"
                     CommandParameter="Income">
                 <TextBlock
-                     FontSize="20"
-                     Text="הוסף הכנסות"/>
+                    Margin="6,0,0,0"
+                    VerticalAlignment="Center"
+                     FontSize="22" >
+                    <Run FontWeight="Bold" Text="+"/>
+                    <Run Text="הוסף "/>
+                </TextBlock>
             </HyperlinkButton>
-
             <ListView
                 Height="600"
                  ItemContainerStyle="{StaticResource ListViewItemStyle1}"
@@ -314,8 +317,12 @@
                       Command="{Binding AddTransactionCommand}"
                     CommandParameter="Expenses">
                 <TextBlock
-                    FontSize="20"
-                    Text="הוסף הוצאות"/>
+                    Margin="6,0,0,0"
+                    VerticalAlignment="Center"
+                     FontSize="22" >
+                    <Run FontWeight="Bold" Text="+"/>
+                    <Run Text="הוסף "/>
+                </TextBlock>
             </HyperlinkButton>
 
             <ListView

@@ -22,6 +22,7 @@
             <Cvt:SelectionChangedConverter x:Key="SelectionChangedConverter"/>
             <Cvt:PictureNameToPictureSourceConverter x:Key="PictureNameToPictureSourceConverter"/>
             <Cvt:TypeIDToTypeNameConverter x:Key="TypeIDToTypeNameConverter"/>
+            <Cvt:InvertBooleanConverter x:Key="InvertBooleanConverter"/>
 
             <SolidColorBrush x:Key="AccentColorBrush" Color="#FF0078D7" />
 

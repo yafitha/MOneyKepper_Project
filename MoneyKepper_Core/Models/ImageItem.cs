@@ -11,5 +11,10 @@ namespace MoneyKepper_Core.Models
     {
         public string Path { get; set; }
         public Types Type {get; set;}
+
+        public ImageItem(string image)
+        {
+            this.Path = image;
+        }
     }
 }

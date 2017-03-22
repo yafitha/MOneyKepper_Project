@@ -15,6 +15,7 @@ namespace MoneyKepper_Core.ViewModel
     public class AddNewCategoryViewModel : DialogViewModel, IAddNewCategoryViewModel
     {
         #region Members
+
         public IDataService DataService { get; set; }
         public Action<Category> CallBack { get; private set; }
         public Types CategoryType { get; private set; }
@@ -23,19 +24,25 @@ namespace MoneyKepper_Core.ViewModel
 
         #region Bindable properties
 
-        private List<string> _images;
-        public List<string> Images
+        private ObservableCollection<ImageItem> _images;
+        public ObservableCollection<ImageItem> Images
         {
             get { return _images; }
             set { this.Set(ref _images, value); }
         }
-        private string _SelectedImage;
-        public string SelectedImage
+        private ImageItem _SelectedImage;
+        public ImageItem SelectedImage
         {
             get { return _SelectedImage; }
             set { this.Set(ref _SelectedImage, value); }
         }
 
+        private string _title;
+        public string Title
+        {
+            get { return _title; }
+            set { this.Set(ref _title, value); }
+        }
 
         private ObservableCollection<Category> _categories;
         public ObservableCollection<Category> Categories
@@ -58,11 +65,26 @@ namespace MoneyKepper_Core.ViewModel
             set { this.Set(ref _name, value); }
         }
 
+        private bool _isIncome;
+        public bool IsIncome
+        {
+
+            get { return _isIncome; }
+            set { this.Set(ref _isIncome, value); }
+        }
+
         private bool _isSubCategoryChecked;
         public bool IsSubCategoryChecked
         {
             get { return _isSubCategoryChecked; }
             set { this.Set(ref _isSubCategoryChecked, value); }
+        }
+
+        private bool _isAddCategory;
+        public bool IsAddCategory
+        {
+            get { return _isAddCategory; }
+            set { this.Set(ref _isAddCategory, value); }
         }
 
         #endregion
@@ -73,6 +95,7 @@ namespace MoneyKepper_Core.ViewModel
         public RelayCommand SaveCommand { get; set; }
         public RelayCommand CloseCommand { get; set; }
         public RelayCommand<string> CategoryTypeSelectionCommand { get; set; }
+        public Category Category { get; private set; }
 
         #endregion
 
@@ -83,11 +106,39 @@ namespace MoneyKepper_Core.ViewModel
         public override void OnShow(object parameter)
         {
             this.CallBack = (parameter as Dictionary<string, object>)["Callback"] as Action<Category>;
-            SetImages();
+            this.Category = (parameter as Dictionary<string, object>).ContainsKey("Category") ?
+                (parameter as Dictionary<string, object>)["Category"] as Category : null;
+
+            this.SetImages();
+            this.InitProperties();
             this.SetCommands();
             var types = new List<Types>();
             types.Add(this.CategoryType);
             this.SetCategories(types);
+        }
+
+        private void InitProperties()
+        {
+            if (this.Category == null)
+            {
+                this.Name = string.Empty;
+                IsSubCategoryChecked = false;
+                this.IsIncome = false;
+                this.Title = "הוסף קטגוריה";
+                IsAddCategory = true;
+            }
+            else
+            {
+                IsAddCategory = false;
+                this.Title = "עדכן קטגוריה";
+                this.Name = Category.Name;
+                this.IsIncome = Category.TypeID == 1 ? true : false;
+                this.SelectedImage = this.Images.FirstOrDefault(im=>im.Path == Category.PictureName);
+                if (Category.ParentID != null)
+                {
+                    this.SelectedCategory = this.Categories.FirstOrDefault(c => c.ID == Category.ParentID);
+                }
+            }
         }
 
         private void SetCommands()
@@ -99,7 +150,7 @@ namespace MoneyKepper_Core.ViewModel
 
         private void OnSaveCommand()
         {
-            this.CallBack(new Category(this.Name, (int)this.CategoryType, this.SelectedImage, !this.IsSubCategoryChecked, this.SelectedCategory?.ID));
+            this.CallBack(new Category(this.Name, (int)this.CategoryType, this.SelectedImage.Path, !this.IsSubCategoryChecked, this.SelectedCategory?.ID));
             this.Hide();
         }
 
@@ -113,12 +164,17 @@ namespace MoneyKepper_Core.ViewModel
 
         private void SetCategories(List<Types> types)
         {
-            this.Categories = new ObservableCollection<Category>(this.DataService.GetCategoriesByTypes(types));
+            this.Categories = new ObservableCollection<Category>(this.DataService.GetCategoriesByTypes(types).Where(s=>s.IsParent));
         }
 
         private void SetImages()
         {
-            this.Images = new List<string>(this.DataService.GetAvailableImages());
+            this.Images= new ObservableCollection<ImageItem>(this.DataService.GetAvailableImages().Select(s => new ImageItem(s)));
+            if(Category != null)
+            {
+                var imageItem = new ImageItem(Category.PictureName);
+                this.Images.Add(imageItem);
+            }
         }
     }
 }

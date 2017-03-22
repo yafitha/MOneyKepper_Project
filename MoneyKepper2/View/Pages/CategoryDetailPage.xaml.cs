@@ -26,5 +26,6 @@ namespace MoneyKepper2.View.Pages
         {
             this.InitializeComponent();
         }
+
     }
 }
