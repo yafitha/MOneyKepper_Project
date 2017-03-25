@@ -156,7 +156,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[241];
+            _typeNameTable = new string[250];
             _typeNameTable[0] = "MoneyKepperCore.ViewModel.ViewModelLocator";
             _typeNameTable[1] = "Object";
             _typeNameTable[2] = "MoneyKepperCore.ViewModel.MainViewModel";
@@ -164,242 +164,251 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
             _typeNameTable[4] = "GalaSoft.MvvmLight.ViewModelBase";
             _typeNameTable[5] = "GalaSoft.MvvmLight.ObservableObject";
             _typeNameTable[6] = "MoneyKepper_Core.ViewModel.IAddTransactionViewModel";
-            _typeNameTable[7] = "MoneyKepper_Core.ViewModel.IControlSplitViewModel";
-            _typeNameTable[8] = "MoneyKepper_Core.ViewModel.IConfirmViewModel";
-            _typeNameTable[9] = "MoneyKepper_Core.ViewModel.IGraphsViewModel";
-            _typeNameTable[10] = "MoneyKepper_Core.ViewModel.IHistoryViewModel";
-            _typeNameTable[11] = "MoneyKepper_Core.ViewModel.IReportViewModel";
-            _typeNameTable[12] = "MoneyKepper_Core.ViewModel.IReportDetailsVewModel";
-            _typeNameTable[13] = "MoneyKepper_Core.ViewModel.ITransactionsDetailsViewModel";
-            _typeNameTable[14] = "MoneyKepper_Core.ViewModel.IControlPanelViewModel";
-            _typeNameTable[15] = "MoneyKepper_Core.ViewModel.IPrimaryPanelViewModel";
-            _typeNameTable[16] = "MoneyKepper_Core.ViewModel.ITransactionsViewModel";
-            _typeNameTable[17] = "MoneyKepper_Core.ViewModel.IDetailsViewModel";
-            _typeNameTable[18] = "MoneyKepper_Core.ViewModel.IHistoryDetailsViewModel";
-            _typeNameTable[19] = "MoneyKepper_Core.ViewModel.IGraphsDetailsViewModel";
-            _typeNameTable[20] = "MoneyKepper_Core.ViewModel.ICategoryDetailViewModel";
-            _typeNameTable[21] = "MoneyKepper_Core.ViewModel.ICategoryViewModel";
-            _typeNameTable[22] = "MoneyKepper_Core.ViewModel.IAddNewCategoryViewModel";
-            _typeNameTable[23] = "MoneyKepperCore.Service.INavigationService";
-            _typeNameTable[24] = "MoneyKepper_Core.Services.IDialogService";
-            _typeNameTable[25] = "MoneyKepper2.Converters.BooleanToVisibilityConverter";
-            _typeNameTable[26] = "MoneyKepper2.Converters.DateConverter";
-            _typeNameTable[27] = "MoneyKepper2.Converters.TransactionTypeToStringConverter";
-            _typeNameTable[28] = "MoneyKepper2.Converters.TransactionTypeToColorConverter";
-            _typeNameTable[29] = "MoneyKepper2.Converters.GraphsTypeToGraphStringConverter";
-            _typeNameTable[30] = "MoneyKepper2.Converters.SelectionChangedConverter";
-            _typeNameTable[31] = "MoneyKepper2.Converters.PictureNameToPictureSourceConverter";
-            _typeNameTable[32] = "MoneyKepper2.Converters.TypeIDToTypeNameConverter";
-            _typeNameTable[33] = "MoneyKepper2.Converters.InvertBooleanConverter";
-            _typeNameTable[34] = "MoneyKepper2.View.Views.ControlSplitView";
-            _typeNameTable[35] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[36] = "MoneyKepper2.View.Views.DetailsView";
-            _typeNameTable[37] = "MoneyKepper2.MainPage";
-            _typeNameTable[38] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[39] = "MoneyKepper2.Controls.ExpanderControl";
-            _typeNameTable[40] = "MoneyKepper2.Controls.HeaderedItemsControl";
-            _typeNameTable[41] = "Windows.UI.Xaml.Controls.ItemsControl";
-            _typeNameTable[42] = "Windows.UI.Xaml.DataTemplate";
-            _typeNameTable[43] = "Boolean";
-            _typeNameTable[44] = "Windows.UI.Xaml.Style";
-            _typeNameTable[45] = "MoneyKepper2.View.Dialogs.ContentDialogBase";
-            _typeNameTable[46] = "Windows.UI.Xaml.Controls.ContentDialog";
-            _typeNameTable[47] = "Windows.UI.Xaml.Controls.ContentControl";
-            _typeNameTable[48] = "MoneyKepper2.View.Dialogs.AddNewCategoryDialog";
-            _typeNameTable[49] = "Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox";
-            _typeNameTable[50] = "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt";
-            _typeNameTable[51] = "Windows.UI.Xaml.Controls.TextBox";
-            _typeNameTable[52] = "Syncfusion.UI.Xaml.Controls.Input.ValueChange";
-            _typeNameTable[53] = "System.Enum";
-            _typeNameTable[54] = "System.ValueType";
-            _typeNameTable[55] = "String";
-            _typeNameTable[56] = "System.Globalization.CultureInfo";
-            _typeNameTable[57] = "Syncfusion.UI.Xaml.Controls.Input.PercentDisplayMode";
-            _typeNameTable[58] = "Int32";
-            _typeNameTable[59] = "Syncfusion.UI.Xaml.Controls.Input.Parsers";
-            _typeNameTable[60] = "System.Collections.IEnumerable";
-            _typeNameTable[61] = "Windows.UI.Xaml.Controls.DataTemplateSelector";
-            _typeNameTable[62] = "Windows.UI.Xaml.Controls.ItemsPanelTemplate";
-            _typeNameTable[63] = "Windows.Foundation.Point";
-            _typeNameTable[64] = "Syncfusion.UI.Xaml.Controls.Input.AutoCompleteMode";
-            _typeNameTable[65] = "Syncfusion.UI.Xaml.Controls.Input.SuggestionBoxPlacement";
-            _typeNameTable[66] = "Syncfusion.UI.Xaml.Controls.Input.SuggestionMode";
-            _typeNameTable[67] = "TimeSpan";
-            _typeNameTable[68] = "Double";
-            _typeNameTable[69] = "Microsoft.Xaml.Interactivity.Interaction";
-            _typeNameTable[70] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
-            _typeNameTable[71] = "Windows.UI.Xaml.DependencyObjectCollection";
-            _typeNameTable[72] = "Windows.UI.Xaml.DependencyObject";
-            _typeNameTable[73] = "MoneyKepper2.Behaviors.SetDateToDatePickerBehavior";
-            _typeNameTable[74] = "System.Nullable`1<System.DateTimeOffset>";
-            _typeNameTable[75] = "MoneyKepper2.Behaviors.SetMinAndMaxDateBehavior";
-            _typeNameTable[76] = "System.DateTime";
-            _typeNameTable[77] = "MoneyKepper2.View.Dialogs.AddTransactionDialog";
-            _typeNameTable[78] = "MoneyKepper2.View.Dialogs.ConfirmDialog";
-            _typeNameTable[79] = "MoneyKepper2.View.Pages.PageBase";
-            _typeNameTable[80] = "Windows.UI.Text.FontWeight";
-            _typeNameTable[81] = "MoneyKepper2.View.Pages.CategoryDetailPage";
-            _typeNameTable[82] = "MoneyKepper2.View.Pages.CategoryPage";
-            _typeNameTable[83] = "MoneyKepper2.View.Pages.EmptyPage";
-            _typeNameTable[84] = "Syncfusion.UI.Xaml.Charts.SfChart";
-            _typeNameTable[85] = "Syncfusion.UI.Xaml.Charts.ChartBase";
-            _typeNameTable[86] = "Windows.UI.Xaml.Controls.Control";
-            _typeNameTable[87] = "Syncfusion.UI.Xaml.Charts.ChartSeriesCollection";
-            _typeNameTable[88] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartSeries>";
-            _typeNameTable[89] = "System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartSeries>";
-            _typeNameTable[90] = "Syncfusion.UI.Xaml.Charts.ChartSeries";
-            _typeNameTable[91] = "Syncfusion.UI.Xaml.Charts.ChartSeriesBase";
-            _typeNameTable[92] = "Windows.UI.Xaml.Media.Brush";
-            _typeNameTable[93] = "Syncfusion.UI.Xaml.Charts.Direction";
-            _typeNameTable[94] = "Syncfusion.UI.Xaml.Charts.SortingAxis";
-            _typeNameTable[95] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartAdornment>";
-            _typeNameTable[96] = "System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartAdornment>";
-            _typeNameTable[97] = "Syncfusion.UI.Xaml.Charts.ChartAdornment";
-            _typeNameTable[98] = "Syncfusion.UI.Xaml.Charts.ChartSegment";
-            _typeNameTable[99] = "Windows.UI.Xaml.Thickness";
-            _typeNameTable[100] = "Windows.UI.Xaml.Media.FontFamily";
-            _typeNameTable[101] = "Windows.UI.Text.FontStyle";
-            _typeNameTable[102] = "Syncfusion.UI.Xaml.Charts.DoubleRange";
-            _typeNameTable[103] = "Windows.UI.Xaml.Media.DoubleCollection";
-            _typeNameTable[104] = "Syncfusion.UI.Xaml.Charts.ChartColorPalette";
-            _typeNameTable[105] = "Syncfusion.UI.Xaml.Charts.ChartLegendIcon";
-            _typeNameTable[106] = "Windows.UI.Xaml.Visibility";
-            _typeNameTable[107] = "Syncfusion.UI.Xaml.Charts.ChartColorModel";
-            _typeNameTable[108] = "Syncfusion.UI.Xaml.Charts.EmptyPointValue";
-            _typeNameTable[109] = "Syncfusion.UI.Xaml.Charts.EmptyPointStyle";
-            _typeNameTable[110] = "Syncfusion.UI.Xaml.Charts.ChartAxisBase2D";
-            _typeNameTable[111] = "Syncfusion.UI.Xaml.Charts.ChartAxis";
-            _typeNameTable[112] = "Syncfusion.UI.Xaml.Charts.RangeAxisBase";
-            _typeNameTable[113] = "Syncfusion.UI.Xaml.Charts.Watermark";
-            _typeNameTable[114] = "Syncfusion.UI.Xaml.Charts.ChartBehaviorsCollection";
-            _typeNameTable[115] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartBehavior>";
-            _typeNameTable[116] = "System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartBehavior>";
-            _typeNameTable[117] = "Syncfusion.UI.Xaml.Charts.ChartBehavior";
-            _typeNameTable[118] = "Windows.UI.Xaml.Controls.Canvas";
-            _typeNameTable[119] = "Syncfusion.UI.Xaml.Charts.AnnotationCollection";
-            _typeNameTable[120] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.Annotation>";
-            _typeNameTable[121] = "System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.Annotation>";
-            _typeNameTable[122] = "Syncfusion.UI.Xaml.Charts.Annotation";
-            _typeNameTable[123] = "Windows.UI.Xaml.FrameworkElement";
-            _typeNameTable[124] = "Syncfusion.UI.Xaml.Charts.ToolTipLabelPlacement";
-            _typeNameTable[125] = "Syncfusion.UI.Xaml.Charts.CoordinateUnit";
-            _typeNameTable[126] = "Windows.UI.Text.FontStretch";
-            _typeNameTable[127] = "Windows.Foundation.Rect";
-            _typeNameTable[128] = "Syncfusion.UI.Xaml.Charts.ChartVisibleSeriesCollection";
-            _typeNameTable[129] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartSeriesBase>";
-            _typeNameTable[130] = "System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartSeriesBase>";
-            _typeNameTable[131] = "Syncfusion.UI.Xaml.Charts.ChartColumnDefinitions";
-            _typeNameTable[132] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartColumnDefinition>";
-            _typeNameTable[133] = "System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartColumnDefinition>";
-            _typeNameTable[134] = "Syncfusion.UI.Xaml.Charts.ChartColumnDefinition";
-            _typeNameTable[135] = "Syncfusion.UI.Xaml.Charts.ChartUnitType";
-            _typeNameTable[136] = "Syncfusion.UI.Xaml.Charts.ChartRowDefinitions";
-            _typeNameTable[137] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartRowDefinition>";
-            _typeNameTable[138] = "System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartRowDefinition>";
-            _typeNameTable[139] = "Syncfusion.UI.Xaml.Charts.ChartRowDefinition";
-            _typeNameTable[140] = "Syncfusion.UI.Xaml.Charts.ChartAxisCollection";
-            _typeNameTable[141] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartAxis>";
-            _typeNameTable[142] = "System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartAxis>";
-            _typeNameTable[143] = "Syncfusion.UI.Xaml.Charts.AxisHeaderPosition";
-            _typeNameTable[144] = "Syncfusion.UI.Xaml.Charts.AxisElementPosition";
-            _typeNameTable[145] = "Syncfusion.UI.Xaml.Charts.AxisLabelsIntersectAction";
-            _typeNameTable[146] = "Syncfusion.UI.Xaml.Charts.LabelStyle";
-            _typeNameTable[147] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartAxisLabel>";
-            _typeNameTable[148] = "System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartAxisLabel>";
-            _typeNameTable[149] = "Syncfusion.UI.Xaml.Charts.ChartAxisLabel";
-            _typeNameTable[150] = "Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode";
-            _typeNameTable[151] = "Syncfusion.UI.Xaml.Charts.EdgeLabelsVisibilityMode";
-            _typeNameTable[152] = "Syncfusion.UI.Xaml.Charts.ChartAxisLabelCollection";
-            _typeNameTable[153] = "Windows.UI.Xaml.HorizontalAlignment";
-            _typeNameTable[154] = "Windows.UI.Xaml.VerticalAlignment";
-            _typeNameTable[155] = "Windows.UI.Xaml.UIElement";
-            _typeNameTable[156] = "Syncfusion.UI.Xaml.Charts.ChartLegend";
-            _typeNameTable[157] = "Windows.UI.Xaml.CornerRadius";
-            _typeNameTable[158] = "Syncfusion.UI.Xaml.Charts.ChartDock";
-            _typeNameTable[159] = "Syncfusion.UI.Xaml.Charts.ChartOrientation";
-            _typeNameTable[160] = "Syncfusion.UI.Xaml.Charts.LegendPosition";
-            _typeNameTable[161] = "Syncfusion.UI.Xaml.Charts.PieSeries";
-            _typeNameTable[162] = "Syncfusion.UI.Xaml.Charts.CircularSeriesBase";
-            _typeNameTable[163] = "Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase";
-            _typeNameTable[164] = "Syncfusion.UI.Xaml.Charts.AdornmentSeries";
-            _typeNameTable[165] = "Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition";
-            _typeNameTable[166] = "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo";
-            _typeNameTable[167] = "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase";
-            _typeNameTable[168] = "Syncfusion.UI.Xaml.Charts.PieSegment";
-            _typeNameTable[169] = "Syncfusion.UI.Xaml.Charts.ConnectorMode";
-            _typeNameTable[170] = "System.Collections.Generic.List`1<Windows.UI.Xaml.Media.Brush>";
-            _typeNameTable[171] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
-            _typeNameTable[172] = "Microsoft.Xaml.Interactivity.ActionCollection";
-            _typeNameTable[173] = "Microsoft.Xaml.Interactions.Core.InvokeCommandAction";
-            _typeNameTable[174] = "System.Windows.Input.ICommand";
-            _typeNameTable[175] = "Windows.UI.Xaml.Data.IValueConverter";
-            _typeNameTable[176] = "Syncfusion.UI.Xaml.Charts.LabelContent";
-            _typeNameTable[177] = "Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition";
-            _typeNameTable[178] = "Syncfusion.UI.Xaml.Charts.ChartSymbol";
-            _typeNameTable[179] = "Syncfusion.UI.Xaml.Charts.AdornmentsPosition";
-            _typeNameTable[180] = "MoneyKepper2.View.Pages.GraphsDetailsPage";
-            _typeNameTable[181] = "MoneyKepper2.View.Pages.GraphsPage";
-            _typeNameTable[182] = "Syncfusion.UI.Xaml.Charts.CategoryAxis";
-            _typeNameTable[183] = "Syncfusion.UI.Xaml.Charts.LabelPlacement";
-            _typeNameTable[184] = "Syncfusion.UI.Xaml.Charts.AggregateFunctions";
-            _typeNameTable[185] = "Syncfusion.UI.Xaml.Charts.ChartStripLines";
-            _typeNameTable[186] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartStripLine>";
-            _typeNameTable[187] = "System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartStripLine>";
-            _typeNameTable[188] = "Syncfusion.UI.Xaml.Charts.ChartStripLine";
-            _typeNameTable[189] = "Syncfusion.UI.Xaml.Charts.NumericalAxis";
-            _typeNameTable[190] = "Syncfusion.UI.Xaml.Charts.NumericalPadding";
-            _typeNameTable[191] = "Syncfusion.UI.Xaml.Charts.ColumnSeries";
-            _typeNameTable[192] = "Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase";
-            _typeNameTable[193] = "Syncfusion.UI.Xaml.Charts.XyDataSeries";
-            _typeNameTable[194] = "Syncfusion.UI.Xaml.Charts.CartesianSeries";
-            _typeNameTable[195] = "Syncfusion.UI.Xaml.Charts.SnapToPoint";
-            _typeNameTable[196] = "Windows.System.VirtualKeyModifiers";
-            _typeNameTable[197] = "Syncfusion.UI.Xaml.Charts.ChartTrendLineCollection";
-            _typeNameTable[198] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.Trendline>";
-            _typeNameTable[199] = "System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.Trendline>";
-            _typeNameTable[200] = "Syncfusion.UI.Xaml.Charts.Trendline";
-            _typeNameTable[201] = "Syncfusion.UI.Xaml.Charts.TrendlineBase";
-            _typeNameTable[202] = "Double[]";
-            _typeNameTable[203] = "System.Array";
-            _typeNameTable[204] = "Syncfusion.UI.Xaml.Charts.TrendlineType";
-            _typeNameTable[205] = "Syncfusion.UI.Xaml.PivotChart.SfPivotChart";
-            _typeNameTable[206] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.PivotAnalysis.UWP.PivotItem>";
-            _typeNameTable[207] = "System.Collections.ObjectModel.Collection`1<Syncfusion.PivotAnalysis.UWP.PivotItem>";
-            _typeNameTable[208] = "Syncfusion.PivotAnalysis.UWP.PivotItem";
-            _typeNameTable[209] = "Syncfusion.PivotAnalysis.UWP.SummaryType";
-            _typeNameTable[210] = "Syncfusion.PivotAnalysis.UWP.SummaryBase";
-            _typeNameTable[211] = "Syncfusion.Data.ListSortDirection";
-            _typeNameTable[212] = "System.Collections.IComparer";
-            _typeNameTable[213] = "Syncfusion.UI.Xaml.PivotChart.PivotChartLegend";
-            _typeNameTable[214] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.PivotAnalysis.UWP.PivotComputationInfo>";
-            _typeNameTable[215] = "System.Collections.ObjectModel.Collection`1<Syncfusion.PivotAnalysis.UWP.PivotComputationInfo>";
-            _typeNameTable[216] = "Syncfusion.PivotAnalysis.UWP.PivotComputationInfo";
-            _typeNameTable[217] = "Syncfusion.PivotAnalysis.UWP.SummaryDisplayLevel";
-            _typeNameTable[218] = "Syncfusion.PivotAnalysis.UWP.DisplayOption";
-            _typeNameTable[219] = "Syncfusion.PivotAnalysis.UWP.CalculationType";
-            _typeNameTable[220] = "Syncfusion.PivotAnalysis.UWP.FilterExpression";
-            _typeNameTable[221] = "Syncfusion.Olap.UWP.Manager.OlapDataManager";
-            _typeNameTable[222] = "Syncfusion.UI.Xaml.PivotChart.PivotChartType";
-            _typeNameTable[223] = "Syncfusion.UI.Xaml.PivotChart.PivotChartColorPalette";
-            _typeNameTable[224] = "Syncfusion.UI.Xaml.PivotChart.PivotChartAxisStyle";
-            _typeNameTable[225] = "Syncfusion.UI.Xaml.PivotChart.PivotChartVisualStyle";
-            _typeNameTable[226] = "Syncfusion.UI.Xaml.PivotChart.PivotChartWatermark";
-            _typeNameTable[227] = "Syncfusion.UI.Xaml.PivotChart.PivotChartZoomPanBehavior";
-            _typeNameTable[228] = "Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior";
-            _typeNameTable[229] = "Syncfusion.UI.Xaml.PivotChart.PivotChartAxis";
-            _typeNameTable[230] = "Syncfusion.Olap.UWP.Reports.OlapReport";
-            _typeNameTable[231] = "MoneyKepper2.View.Pages.HistoryDetailsPage";
-            _typeNameTable[232] = "MoneyKepper2.View.Pages.ReportPage";
-            _typeNameTable[233] = "MoneyKepper2.Behaviors.PrintPageBehavior";
-            _typeNameTable[234] = "Windows.UI.Xaml.Controls.ListView";
-            _typeNameTable[235] = "MoneyKepper2.View.Pages.ReportDetailsPage";
-            _typeNameTable[236] = "MoneyKepper2.View.Pages.TransactionsPage";
-            _typeNameTable[237] = "MoneyKepper2.View.Pages.TransactionsDetailsPage";
-            _typeNameTable[238] = "MoneyKepper2.View.Views.ControlPanelView";
-            _typeNameTable[239] = "MoneyKepper2.View.Views.PrimaryPanelView";
-            _typeNameTable[240] = "MoneyKepper2.View.Pages.HistoryPage";
+            _typeNameTable[7] = "MoneyKepper_Core.ViewModel.IAddBugetViewModel";
+            _typeNameTable[8] = "MoneyKepper_Core.ViewModel.IControlSplitViewModel";
+            _typeNameTable[9] = "MoneyKepper_Core.ViewModel.IConfirmViewModel";
+            _typeNameTable[10] = "MoneyKepper_Core.ViewModel.IGraphsViewModel";
+            _typeNameTable[11] = "MoneyKepper_Core.ViewModel.IHistoryViewModel";
+            _typeNameTable[12] = "MoneyKepper_Core.ViewModel.IReportViewModel";
+            _typeNameTable[13] = "MoneyKepper_Core.ViewModel.IReportDetailsVewModel";
+            _typeNameTable[14] = "MoneyKepper_Core.ViewModel.ITransactionsDetailsViewModel";
+            _typeNameTable[15] = "MoneyKepper_Core.ViewModel.IControlPanelViewModel";
+            _typeNameTable[16] = "MoneyKepper_Core.ViewModel.IPrimaryPanelViewModel";
+            _typeNameTable[17] = "MoneyKepper_Core.ViewModel.ITransactionsViewModel";
+            _typeNameTable[18] = "MoneyKepper_Core.ViewModel.IDetailsViewModel";
+            _typeNameTable[19] = "MoneyKepper_Core.ViewModel.IHistoryDetailsViewModel";
+            _typeNameTable[20] = "MoneyKepper_Core.ViewModel.IGraphsDetailsViewModel";
+            _typeNameTable[21] = "MoneyKepper_Core.ViewModel.ICategoryDetailViewModel";
+            _typeNameTable[22] = "MoneyKepper_Core.ViewModel.ICategoryViewModel";
+            _typeNameTable[23] = "MoneyKepper_Core.ViewModel.IBugetViewModel";
+            _typeNameTable[24] = "MoneyKepper_Core.ViewModel.IBugetDetailsViewModel";
+            _typeNameTable[25] = "MoneyKepper_Core.ViewModel.IAddNewCategoryViewModel";
+            _typeNameTable[26] = "MoneyKepperCore.Service.INavigationService";
+            _typeNameTable[27] = "MoneyKepper_Core.Services.IDialogService";
+            _typeNameTable[28] = "MoneyKepper2.Converters.BooleanToVisibilityConverter";
+            _typeNameTable[29] = "MoneyKepper2.Converters.DateConverter";
+            _typeNameTable[30] = "MoneyKepper2.Converters.TransactionTypeToStringConverter";
+            _typeNameTable[31] = "MoneyKepper2.Converters.TransactionTypeToColorConverter";
+            _typeNameTable[32] = "MoneyKepper2.Converters.GraphsTypeToGraphStringConverter";
+            _typeNameTable[33] = "MoneyKepper2.Converters.SelectionChangedConverter";
+            _typeNameTable[34] = "MoneyKepper2.Converters.PictureNameToPictureSourceConverter";
+            _typeNameTable[35] = "MoneyKepper2.Converters.TypeIDToTypeNameConverter";
+            _typeNameTable[36] = "MoneyKepper2.Converters.InvertBooleanConverter";
+            _typeNameTable[37] = "Windows.UI.Text.FontWeight";
+            _typeNameTable[38] = "System.ValueType";
+            _typeNameTable[39] = "MoneyKepper2.View.Views.ControlSplitView";
+            _typeNameTable[40] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[41] = "MoneyKepper2.View.Views.DetailsView";
+            _typeNameTable[42] = "MoneyKepper2.MainPage";
+            _typeNameTable[43] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[44] = "MoneyKepper2.Controls.ExpanderControl";
+            _typeNameTable[45] = "MoneyKepper2.Controls.HeaderedItemsControl";
+            _typeNameTable[46] = "Windows.UI.Xaml.Controls.ItemsControl";
+            _typeNameTable[47] = "Windows.UI.Xaml.DataTemplate";
+            _typeNameTable[48] = "Boolean";
+            _typeNameTable[49] = "Windows.UI.Xaml.Style";
+            _typeNameTable[50] = "MoneyKepper2.View.Dialogs.ContentDialogBase";
+            _typeNameTable[51] = "Windows.UI.Xaml.Controls.ContentDialog";
+            _typeNameTable[52] = "Windows.UI.Xaml.Controls.ContentControl";
+            _typeNameTable[53] = "MoneyKepper2.View.Dialogs.AddNewCategoryDialog";
+            _typeNameTable[54] = "Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox";
+            _typeNameTable[55] = "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt";
+            _typeNameTable[56] = "Windows.UI.Xaml.Controls.TextBox";
+            _typeNameTable[57] = "Syncfusion.UI.Xaml.Controls.Input.ValueChange";
+            _typeNameTable[58] = "System.Enum";
+            _typeNameTable[59] = "String";
+            _typeNameTable[60] = "System.Globalization.CultureInfo";
+            _typeNameTable[61] = "Syncfusion.UI.Xaml.Controls.Input.PercentDisplayMode";
+            _typeNameTable[62] = "Int32";
+            _typeNameTable[63] = "Syncfusion.UI.Xaml.Controls.Input.Parsers";
+            _typeNameTable[64] = "System.Collections.IEnumerable";
+            _typeNameTable[65] = "Windows.UI.Xaml.Controls.DataTemplateSelector";
+            _typeNameTable[66] = "Windows.UI.Xaml.Controls.ItemsPanelTemplate";
+            _typeNameTable[67] = "Windows.Foundation.Point";
+            _typeNameTable[68] = "Syncfusion.UI.Xaml.Controls.Input.AutoCompleteMode";
+            _typeNameTable[69] = "Syncfusion.UI.Xaml.Controls.Input.SuggestionBoxPlacement";
+            _typeNameTable[70] = "Syncfusion.UI.Xaml.Controls.Input.SuggestionMode";
+            _typeNameTable[71] = "TimeSpan";
+            _typeNameTable[72] = "Double";
+            _typeNameTable[73] = "Microsoft.Xaml.Interactivity.Interaction";
+            _typeNameTable[74] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
+            _typeNameTable[75] = "Windows.UI.Xaml.DependencyObjectCollection";
+            _typeNameTable[76] = "Windows.UI.Xaml.DependencyObject";
+            _typeNameTable[77] = "MoneyKepper2.Behaviors.SetDateToDatePickerBehavior";
+            _typeNameTable[78] = "System.Nullable`1<System.DateTimeOffset>";
+            _typeNameTable[79] = "MoneyKepper2.Behaviors.SetMinAndMaxDateBehavior";
+            _typeNameTable[80] = "System.DateTime";
+            _typeNameTable[81] = "MoneyKepper2.View.Dialogs.AddTransactionDialog";
+            _typeNameTable[82] = "MoneyKepper2.View.Dialogs.AddBugetDialog";
+            _typeNameTable[83] = "MoneyKepper2.View.Dialogs.ConfirmDialog";
+            _typeNameTable[84] = "MoneyKepper2.View.Pages.PageBase";
+            _typeNameTable[85] = "Microsoft.Xaml.Interactions.Core.DataTriggerBehavior";
+            _typeNameTable[86] = "Microsoft.Xaml.Interactivity.ActionCollection";
+            _typeNameTable[87] = "Microsoft.Xaml.Interactions.Core.ComparisonConditionType";
+            _typeNameTable[88] = "Microsoft.Xaml.Interactions.Core.ChangePropertyAction";
+            _typeNameTable[89] = "MoneyKepper2.View.Pages.BugetDetailsPage";
+            _typeNameTable[90] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
+            _typeNameTable[91] = "Microsoft.Xaml.Interactions.Core.InvokeCommandAction";
+            _typeNameTable[92] = "System.Windows.Input.ICommand";
+            _typeNameTable[93] = "Windows.UI.Xaml.Data.IValueConverter";
+            _typeNameTable[94] = "MoneyKepper2.View.Pages.BugetPage";
+            _typeNameTable[95] = "MoneyKepper2.View.Pages.CategoryDetailPage";
+            _typeNameTable[96] = "MoneyKepper2.View.Pages.CategoryPage";
+            _typeNameTable[97] = "MoneyKepper2.View.Pages.EmptyPage";
+            _typeNameTable[98] = "Syncfusion.UI.Xaml.Charts.SfChart";
+            _typeNameTable[99] = "Syncfusion.UI.Xaml.Charts.ChartBase";
+            _typeNameTable[100] = "Windows.UI.Xaml.Controls.Control";
+            _typeNameTable[101] = "Syncfusion.UI.Xaml.Charts.ChartSeriesCollection";
+            _typeNameTable[102] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartSeries>";
+            _typeNameTable[103] = "System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartSeries>";
+            _typeNameTable[104] = "Syncfusion.UI.Xaml.Charts.ChartSeries";
+            _typeNameTable[105] = "Syncfusion.UI.Xaml.Charts.ChartSeriesBase";
+            _typeNameTable[106] = "Windows.UI.Xaml.Media.Brush";
+            _typeNameTable[107] = "Syncfusion.UI.Xaml.Charts.Direction";
+            _typeNameTable[108] = "Syncfusion.UI.Xaml.Charts.SortingAxis";
+            _typeNameTable[109] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartAdornment>";
+            _typeNameTable[110] = "System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartAdornment>";
+            _typeNameTable[111] = "Syncfusion.UI.Xaml.Charts.ChartAdornment";
+            _typeNameTable[112] = "Syncfusion.UI.Xaml.Charts.ChartSegment";
+            _typeNameTable[113] = "Windows.UI.Xaml.Thickness";
+            _typeNameTable[114] = "Windows.UI.Xaml.Media.FontFamily";
+            _typeNameTable[115] = "Windows.UI.Text.FontStyle";
+            _typeNameTable[116] = "Syncfusion.UI.Xaml.Charts.DoubleRange";
+            _typeNameTable[117] = "Windows.UI.Xaml.Media.DoubleCollection";
+            _typeNameTable[118] = "Syncfusion.UI.Xaml.Charts.ChartColorPalette";
+            _typeNameTable[119] = "Syncfusion.UI.Xaml.Charts.ChartLegendIcon";
+            _typeNameTable[120] = "Windows.UI.Xaml.Visibility";
+            _typeNameTable[121] = "Syncfusion.UI.Xaml.Charts.ChartColorModel";
+            _typeNameTable[122] = "Syncfusion.UI.Xaml.Charts.EmptyPointValue";
+            _typeNameTable[123] = "Syncfusion.UI.Xaml.Charts.EmptyPointStyle";
+            _typeNameTable[124] = "Syncfusion.UI.Xaml.Charts.ChartAxisBase2D";
+            _typeNameTable[125] = "Syncfusion.UI.Xaml.Charts.ChartAxis";
+            _typeNameTable[126] = "Syncfusion.UI.Xaml.Charts.RangeAxisBase";
+            _typeNameTable[127] = "Syncfusion.UI.Xaml.Charts.Watermark";
+            _typeNameTable[128] = "Syncfusion.UI.Xaml.Charts.ChartBehaviorsCollection";
+            _typeNameTable[129] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartBehavior>";
+            _typeNameTable[130] = "System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartBehavior>";
+            _typeNameTable[131] = "Syncfusion.UI.Xaml.Charts.ChartBehavior";
+            _typeNameTable[132] = "Windows.UI.Xaml.Controls.Canvas";
+            _typeNameTable[133] = "Syncfusion.UI.Xaml.Charts.AnnotationCollection";
+            _typeNameTable[134] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.Annotation>";
+            _typeNameTable[135] = "System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.Annotation>";
+            _typeNameTable[136] = "Syncfusion.UI.Xaml.Charts.Annotation";
+            _typeNameTable[137] = "Windows.UI.Xaml.FrameworkElement";
+            _typeNameTable[138] = "Syncfusion.UI.Xaml.Charts.ToolTipLabelPlacement";
+            _typeNameTable[139] = "Syncfusion.UI.Xaml.Charts.CoordinateUnit";
+            _typeNameTable[140] = "Windows.UI.Text.FontStretch";
+            _typeNameTable[141] = "Windows.Foundation.Rect";
+            _typeNameTable[142] = "Syncfusion.UI.Xaml.Charts.ChartVisibleSeriesCollection";
+            _typeNameTable[143] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartSeriesBase>";
+            _typeNameTable[144] = "System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartSeriesBase>";
+            _typeNameTable[145] = "Syncfusion.UI.Xaml.Charts.ChartColumnDefinitions";
+            _typeNameTable[146] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartColumnDefinition>";
+            _typeNameTable[147] = "System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartColumnDefinition>";
+            _typeNameTable[148] = "Syncfusion.UI.Xaml.Charts.ChartColumnDefinition";
+            _typeNameTable[149] = "Syncfusion.UI.Xaml.Charts.ChartUnitType";
+            _typeNameTable[150] = "Syncfusion.UI.Xaml.Charts.ChartRowDefinitions";
+            _typeNameTable[151] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartRowDefinition>";
+            _typeNameTable[152] = "System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartRowDefinition>";
+            _typeNameTable[153] = "Syncfusion.UI.Xaml.Charts.ChartRowDefinition";
+            _typeNameTable[154] = "Syncfusion.UI.Xaml.Charts.ChartAxisCollection";
+            _typeNameTable[155] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartAxis>";
+            _typeNameTable[156] = "System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartAxis>";
+            _typeNameTable[157] = "Syncfusion.UI.Xaml.Charts.AxisHeaderPosition";
+            _typeNameTable[158] = "Syncfusion.UI.Xaml.Charts.AxisElementPosition";
+            _typeNameTable[159] = "Syncfusion.UI.Xaml.Charts.AxisLabelsIntersectAction";
+            _typeNameTable[160] = "Syncfusion.UI.Xaml.Charts.LabelStyle";
+            _typeNameTable[161] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartAxisLabel>";
+            _typeNameTable[162] = "System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartAxisLabel>";
+            _typeNameTable[163] = "Syncfusion.UI.Xaml.Charts.ChartAxisLabel";
+            _typeNameTable[164] = "Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode";
+            _typeNameTable[165] = "Syncfusion.UI.Xaml.Charts.EdgeLabelsVisibilityMode";
+            _typeNameTable[166] = "Syncfusion.UI.Xaml.Charts.ChartAxisLabelCollection";
+            _typeNameTable[167] = "Windows.UI.Xaml.HorizontalAlignment";
+            _typeNameTable[168] = "Windows.UI.Xaml.VerticalAlignment";
+            _typeNameTable[169] = "Windows.UI.Xaml.UIElement";
+            _typeNameTable[170] = "Syncfusion.UI.Xaml.Charts.ChartLegend";
+            _typeNameTable[171] = "Windows.UI.Xaml.CornerRadius";
+            _typeNameTable[172] = "Syncfusion.UI.Xaml.Charts.ChartDock";
+            _typeNameTable[173] = "Syncfusion.UI.Xaml.Charts.ChartOrientation";
+            _typeNameTable[174] = "Syncfusion.UI.Xaml.Charts.LegendPosition";
+            _typeNameTable[175] = "Syncfusion.UI.Xaml.Charts.PieSeries";
+            _typeNameTable[176] = "Syncfusion.UI.Xaml.Charts.CircularSeriesBase";
+            _typeNameTable[177] = "Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase";
+            _typeNameTable[178] = "Syncfusion.UI.Xaml.Charts.AdornmentSeries";
+            _typeNameTable[179] = "Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition";
+            _typeNameTable[180] = "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo";
+            _typeNameTable[181] = "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase";
+            _typeNameTable[182] = "Syncfusion.UI.Xaml.Charts.PieSegment";
+            _typeNameTable[183] = "Syncfusion.UI.Xaml.Charts.ConnectorMode";
+            _typeNameTable[184] = "System.Collections.Generic.List`1<Windows.UI.Xaml.Media.Brush>";
+            _typeNameTable[185] = "Syncfusion.UI.Xaml.Charts.LabelContent";
+            _typeNameTable[186] = "Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition";
+            _typeNameTable[187] = "Syncfusion.UI.Xaml.Charts.ChartSymbol";
+            _typeNameTable[188] = "Syncfusion.UI.Xaml.Charts.AdornmentsPosition";
+            _typeNameTable[189] = "MoneyKepper2.View.Pages.GraphsDetailsPage";
+            _typeNameTable[190] = "MoneyKepper2.View.Pages.GraphsPage";
+            _typeNameTable[191] = "Syncfusion.UI.Xaml.Charts.CategoryAxis";
+            _typeNameTable[192] = "Syncfusion.UI.Xaml.Charts.LabelPlacement";
+            _typeNameTable[193] = "Syncfusion.UI.Xaml.Charts.AggregateFunctions";
+            _typeNameTable[194] = "Syncfusion.UI.Xaml.Charts.ChartStripLines";
+            _typeNameTable[195] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartStripLine>";
+            _typeNameTable[196] = "System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartStripLine>";
+            _typeNameTable[197] = "Syncfusion.UI.Xaml.Charts.ChartStripLine";
+            _typeNameTable[198] = "Syncfusion.UI.Xaml.Charts.NumericalAxis";
+            _typeNameTable[199] = "Syncfusion.UI.Xaml.Charts.NumericalPadding";
+            _typeNameTable[200] = "Syncfusion.UI.Xaml.Charts.ColumnSeries";
+            _typeNameTable[201] = "Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase";
+            _typeNameTable[202] = "Syncfusion.UI.Xaml.Charts.XyDataSeries";
+            _typeNameTable[203] = "Syncfusion.UI.Xaml.Charts.CartesianSeries";
+            _typeNameTable[204] = "Syncfusion.UI.Xaml.Charts.SnapToPoint";
+            _typeNameTable[205] = "Windows.System.VirtualKeyModifiers";
+            _typeNameTable[206] = "Syncfusion.UI.Xaml.Charts.ChartTrendLineCollection";
+            _typeNameTable[207] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.Trendline>";
+            _typeNameTable[208] = "System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.Trendline>";
+            _typeNameTable[209] = "Syncfusion.UI.Xaml.Charts.Trendline";
+            _typeNameTable[210] = "Syncfusion.UI.Xaml.Charts.TrendlineBase";
+            _typeNameTable[211] = "Double[]";
+            _typeNameTable[212] = "System.Array";
+            _typeNameTable[213] = "Syncfusion.UI.Xaml.Charts.TrendlineType";
+            _typeNameTable[214] = "Syncfusion.UI.Xaml.PivotChart.SfPivotChart";
+            _typeNameTable[215] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.PivotAnalysis.UWP.PivotItem>";
+            _typeNameTable[216] = "System.Collections.ObjectModel.Collection`1<Syncfusion.PivotAnalysis.UWP.PivotItem>";
+            _typeNameTable[217] = "Syncfusion.PivotAnalysis.UWP.PivotItem";
+            _typeNameTable[218] = "Syncfusion.PivotAnalysis.UWP.SummaryType";
+            _typeNameTable[219] = "Syncfusion.PivotAnalysis.UWP.SummaryBase";
+            _typeNameTable[220] = "Syncfusion.Data.ListSortDirection";
+            _typeNameTable[221] = "System.Collections.IComparer";
+            _typeNameTable[222] = "Syncfusion.UI.Xaml.PivotChart.PivotChartLegend";
+            _typeNameTable[223] = "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.PivotAnalysis.UWP.PivotComputationInfo>";
+            _typeNameTable[224] = "System.Collections.ObjectModel.Collection`1<Syncfusion.PivotAnalysis.UWP.PivotComputationInfo>";
+            _typeNameTable[225] = "Syncfusion.PivotAnalysis.UWP.PivotComputationInfo";
+            _typeNameTable[226] = "Syncfusion.PivotAnalysis.UWP.SummaryDisplayLevel";
+            _typeNameTable[227] = "Syncfusion.PivotAnalysis.UWP.DisplayOption";
+            _typeNameTable[228] = "Syncfusion.PivotAnalysis.UWP.CalculationType";
+            _typeNameTable[229] = "Syncfusion.PivotAnalysis.UWP.FilterExpression";
+            _typeNameTable[230] = "Syncfusion.Olap.UWP.Manager.OlapDataManager";
+            _typeNameTable[231] = "Syncfusion.UI.Xaml.PivotChart.PivotChartType";
+            _typeNameTable[232] = "Syncfusion.UI.Xaml.PivotChart.PivotChartColorPalette";
+            _typeNameTable[233] = "Syncfusion.UI.Xaml.PivotChart.PivotChartAxisStyle";
+            _typeNameTable[234] = "Syncfusion.UI.Xaml.PivotChart.PivotChartVisualStyle";
+            _typeNameTable[235] = "Syncfusion.UI.Xaml.PivotChart.PivotChartWatermark";
+            _typeNameTable[236] = "Syncfusion.UI.Xaml.PivotChart.PivotChartZoomPanBehavior";
+            _typeNameTable[237] = "Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior";
+            _typeNameTable[238] = "Syncfusion.UI.Xaml.PivotChart.PivotChartAxis";
+            _typeNameTable[239] = "Syncfusion.Olap.UWP.Reports.OlapReport";
+            _typeNameTable[240] = "MoneyKepper2.View.Pages.HistoryDetailsPage";
+            _typeNameTable[241] = "MoneyKepper2.View.Pages.ReportPage";
+            _typeNameTable[242] = "MoneyKepper2.Behaviors.PrintPageBehavior";
+            _typeNameTable[243] = "Windows.UI.Xaml.Controls.ListView";
+            _typeNameTable[244] = "MoneyKepper2.View.Pages.ReportDetailsPage";
+            _typeNameTable[245] = "MoneyKepper2.View.Pages.TransactionsPage";
+            _typeNameTable[246] = "MoneyKepper2.View.Pages.TransactionsDetailsPage";
+            _typeNameTable[247] = "MoneyKepper2.View.Views.ControlPanelView";
+            _typeNameTable[248] = "MoneyKepper2.View.Views.PrimaryPanelView";
+            _typeNameTable[249] = "MoneyKepper2.View.Pages.HistoryPage";
 
-            _typeTable = new global::System.Type[241];
+            _typeTable = new global::System.Type[250];
             _typeTable[0] = typeof(global::MoneyKepperCore.ViewModel.ViewModelLocator);
             _typeTable[1] = typeof(global::System.Object);
             _typeTable[2] = typeof(global::MoneyKepperCore.ViewModel.MainViewModel);
@@ -407,240 +416,249 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
             _typeTable[4] = typeof(global::GalaSoft.MvvmLight.ViewModelBase);
             _typeTable[5] = typeof(global::GalaSoft.MvvmLight.ObservableObject);
             _typeTable[6] = typeof(global::MoneyKepper_Core.ViewModel.IAddTransactionViewModel);
-            _typeTable[7] = typeof(global::MoneyKepper_Core.ViewModel.IControlSplitViewModel);
-            _typeTable[8] = typeof(global::MoneyKepper_Core.ViewModel.IConfirmViewModel);
-            _typeTable[9] = typeof(global::MoneyKepper_Core.ViewModel.IGraphsViewModel);
-            _typeTable[10] = typeof(global::MoneyKepper_Core.ViewModel.IHistoryViewModel);
-            _typeTable[11] = typeof(global::MoneyKepper_Core.ViewModel.IReportViewModel);
-            _typeTable[12] = typeof(global::MoneyKepper_Core.ViewModel.IReportDetailsVewModel);
-            _typeTable[13] = typeof(global::MoneyKepper_Core.ViewModel.ITransactionsDetailsViewModel);
-            _typeTable[14] = typeof(global::MoneyKepper_Core.ViewModel.IControlPanelViewModel);
-            _typeTable[15] = typeof(global::MoneyKepper_Core.ViewModel.IPrimaryPanelViewModel);
-            _typeTable[16] = typeof(global::MoneyKepper_Core.ViewModel.ITransactionsViewModel);
-            _typeTable[17] = typeof(global::MoneyKepper_Core.ViewModel.IDetailsViewModel);
-            _typeTable[18] = typeof(global::MoneyKepper_Core.ViewModel.IHistoryDetailsViewModel);
-            _typeTable[19] = typeof(global::MoneyKepper_Core.ViewModel.IGraphsDetailsViewModel);
-            _typeTable[20] = typeof(global::MoneyKepper_Core.ViewModel.ICategoryDetailViewModel);
-            _typeTable[21] = typeof(global::MoneyKepper_Core.ViewModel.ICategoryViewModel);
-            _typeTable[22] = typeof(global::MoneyKepper_Core.ViewModel.IAddNewCategoryViewModel);
-            _typeTable[23] = typeof(global::MoneyKepperCore.Service.INavigationService);
-            _typeTable[24] = typeof(global::MoneyKepper_Core.Services.IDialogService);
-            _typeTable[25] = typeof(global::MoneyKepper2.Converters.BooleanToVisibilityConverter);
-            _typeTable[26] = typeof(global::MoneyKepper2.Converters.DateConverter);
-            _typeTable[27] = typeof(global::MoneyKepper2.Converters.TransactionTypeToStringConverter);
-            _typeTable[28] = typeof(global::MoneyKepper2.Converters.TransactionTypeToColorConverter);
-            _typeTable[29] = typeof(global::MoneyKepper2.Converters.GraphsTypeToGraphStringConverter);
-            _typeTable[30] = typeof(global::MoneyKepper2.Converters.SelectionChangedConverter);
-            _typeTable[31] = typeof(global::MoneyKepper2.Converters.PictureNameToPictureSourceConverter);
-            _typeTable[32] = typeof(global::MoneyKepper2.Converters.TypeIDToTypeNameConverter);
-            _typeTable[33] = typeof(global::MoneyKepper2.Converters.InvertBooleanConverter);
-            _typeTable[34] = typeof(global::MoneyKepper2.View.Views.ControlSplitView);
-            _typeTable[35] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[36] = typeof(global::MoneyKepper2.View.Views.DetailsView);
-            _typeTable[37] = typeof(global::MoneyKepper2.MainPage);
-            _typeTable[38] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[39] = typeof(global::MoneyKepper2.Controls.ExpanderControl);
-            _typeTable[40] = typeof(global::MoneyKepper2.Controls.HeaderedItemsControl);
-            _typeTable[41] = typeof(global::Windows.UI.Xaml.Controls.ItemsControl);
-            _typeTable[42] = typeof(global::Windows.UI.Xaml.DataTemplate);
-            _typeTable[43] = typeof(global::System.Boolean);
-            _typeTable[44] = typeof(global::Windows.UI.Xaml.Style);
-            _typeTable[45] = typeof(global::MoneyKepper2.View.Dialogs.ContentDialogBase);
-            _typeTable[46] = typeof(global::Windows.UI.Xaml.Controls.ContentDialog);
-            _typeTable[47] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
-            _typeTable[48] = typeof(global::MoneyKepper2.View.Dialogs.AddNewCategoryDialog);
-            _typeTable[49] = typeof(global::Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox);
-            _typeTable[50] = typeof(global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt);
-            _typeTable[51] = typeof(global::Windows.UI.Xaml.Controls.TextBox);
-            _typeTable[52] = typeof(global::Syncfusion.UI.Xaml.Controls.Input.ValueChange);
-            _typeTable[53] = typeof(global::System.Enum);
-            _typeTable[54] = typeof(global::System.ValueType);
-            _typeTable[55] = typeof(global::System.String);
-            _typeTable[56] = typeof(global::System.Globalization.CultureInfo);
-            _typeTable[57] = typeof(global::Syncfusion.UI.Xaml.Controls.Input.PercentDisplayMode);
-            _typeTable[58] = typeof(global::System.Int32);
-            _typeTable[59] = typeof(global::Syncfusion.UI.Xaml.Controls.Input.Parsers);
-            _typeTable[60] = typeof(global::System.Collections.IEnumerable);
-            _typeTable[61] = typeof(global::Windows.UI.Xaml.Controls.DataTemplateSelector);
-            _typeTable[62] = typeof(global::Windows.UI.Xaml.Controls.ItemsPanelTemplate);
-            _typeTable[63] = typeof(global::Windows.Foundation.Point);
-            _typeTable[64] = typeof(global::Syncfusion.UI.Xaml.Controls.Input.AutoCompleteMode);
-            _typeTable[65] = typeof(global::Syncfusion.UI.Xaml.Controls.Input.SuggestionBoxPlacement);
-            _typeTable[66] = typeof(global::Syncfusion.UI.Xaml.Controls.Input.SuggestionMode);
-            _typeTable[67] = typeof(global::System.TimeSpan);
-            _typeTable[68] = typeof(global::System.Double);
-            _typeTable[69] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
-            _typeTable[70] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
-            _typeTable[71] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
-            _typeTable[72] = typeof(global::Windows.UI.Xaml.DependencyObject);
-            _typeTable[73] = typeof(global::MoneyKepper2.Behaviors.SetDateToDatePickerBehavior);
-            _typeTable[74] = typeof(global::System.Nullable<global::System.DateTimeOffset>);
-            _typeTable[75] = typeof(global::MoneyKepper2.Behaviors.SetMinAndMaxDateBehavior);
-            _typeTable[76] = typeof(global::System.DateTime);
-            _typeTable[77] = typeof(global::MoneyKepper2.View.Dialogs.AddTransactionDialog);
-            _typeTable[78] = typeof(global::MoneyKepper2.View.Dialogs.ConfirmDialog);
-            _typeTable[79] = typeof(global::MoneyKepper2.View.Pages.PageBase);
-            _typeTable[80] = typeof(global::Windows.UI.Text.FontWeight);
-            _typeTable[81] = typeof(global::MoneyKepper2.View.Pages.CategoryDetailPage);
-            _typeTable[82] = typeof(global::MoneyKepper2.View.Pages.CategoryPage);
-            _typeTable[83] = typeof(global::MoneyKepper2.View.Pages.EmptyPage);
-            _typeTable[84] = typeof(global::Syncfusion.UI.Xaml.Charts.SfChart);
-            _typeTable[85] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartBase);
-            _typeTable[86] = typeof(global::Windows.UI.Xaml.Controls.Control);
-            _typeTable[87] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartSeriesCollection);
-            _typeTable[88] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartSeries>);
-            _typeTable[89] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartSeries>);
-            _typeTable[90] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartSeries);
-            _typeTable[91] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase);
-            _typeTable[92] = typeof(global::Windows.UI.Xaml.Media.Brush);
-            _typeTable[93] = typeof(global::Syncfusion.UI.Xaml.Charts.Direction);
-            _typeTable[94] = typeof(global::Syncfusion.UI.Xaml.Charts.SortingAxis);
-            _typeTable[95] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartAdornment>);
-            _typeTable[96] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartAdornment>);
-            _typeTable[97] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartAdornment);
-            _typeTable[98] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartSegment);
-            _typeTable[99] = typeof(global::Windows.UI.Xaml.Thickness);
-            _typeTable[100] = typeof(global::Windows.UI.Xaml.Media.FontFamily);
-            _typeTable[101] = typeof(global::Windows.UI.Text.FontStyle);
-            _typeTable[102] = typeof(global::Syncfusion.UI.Xaml.Charts.DoubleRange);
-            _typeTable[103] = typeof(global::Windows.UI.Xaml.Media.DoubleCollection);
-            _typeTable[104] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartColorPalette);
-            _typeTable[105] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartLegendIcon);
-            _typeTable[106] = typeof(global::Windows.UI.Xaml.Visibility);
-            _typeTable[107] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartColorModel);
-            _typeTable[108] = typeof(global::Syncfusion.UI.Xaml.Charts.EmptyPointValue);
-            _typeTable[109] = typeof(global::Syncfusion.UI.Xaml.Charts.EmptyPointStyle);
-            _typeTable[110] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartAxisBase2D);
-            _typeTable[111] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartAxis);
-            _typeTable[112] = typeof(global::Syncfusion.UI.Xaml.Charts.RangeAxisBase);
-            _typeTable[113] = typeof(global::Syncfusion.UI.Xaml.Charts.Watermark);
-            _typeTable[114] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartBehaviorsCollection);
-            _typeTable[115] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartBehavior>);
-            _typeTable[116] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartBehavior>);
-            _typeTable[117] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartBehavior);
-            _typeTable[118] = typeof(global::Windows.UI.Xaml.Controls.Canvas);
-            _typeTable[119] = typeof(global::Syncfusion.UI.Xaml.Charts.AnnotationCollection);
-            _typeTable[120] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.Annotation>);
-            _typeTable[121] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.Annotation>);
-            _typeTable[122] = typeof(global::Syncfusion.UI.Xaml.Charts.Annotation);
-            _typeTable[123] = typeof(global::Windows.UI.Xaml.FrameworkElement);
-            _typeTable[124] = typeof(global::Syncfusion.UI.Xaml.Charts.ToolTipLabelPlacement);
-            _typeTable[125] = typeof(global::Syncfusion.UI.Xaml.Charts.CoordinateUnit);
-            _typeTable[126] = typeof(global::Windows.UI.Text.FontStretch);
-            _typeTable[127] = typeof(global::Windows.Foundation.Rect);
-            _typeTable[128] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartVisibleSeriesCollection);
-            _typeTable[129] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase>);
-            _typeTable[130] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase>);
-            _typeTable[131] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinitions);
-            _typeTable[132] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition>);
-            _typeTable[133] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition>);
-            _typeTable[134] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition);
-            _typeTable[135] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartUnitType);
-            _typeTable[136] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartRowDefinitions);
-            _typeTable[137] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition>);
-            _typeTable[138] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition>);
-            _typeTable[139] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition);
-            _typeTable[140] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartAxisCollection);
-            _typeTable[141] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartAxis>);
-            _typeTable[142] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartAxis>);
-            _typeTable[143] = typeof(global::Syncfusion.UI.Xaml.Charts.AxisHeaderPosition);
-            _typeTable[144] = typeof(global::Syncfusion.UI.Xaml.Charts.AxisElementPosition);
-            _typeTable[145] = typeof(global::Syncfusion.UI.Xaml.Charts.AxisLabelsIntersectAction);
-            _typeTable[146] = typeof(global::Syncfusion.UI.Xaml.Charts.LabelStyle);
-            _typeTable[147] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel>);
-            _typeTable[148] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel>);
-            _typeTable[149] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel);
-            _typeTable[150] = typeof(global::Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode);
-            _typeTable[151] = typeof(global::Syncfusion.UI.Xaml.Charts.EdgeLabelsVisibilityMode);
-            _typeTable[152] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartAxisLabelCollection);
-            _typeTable[153] = typeof(global::Windows.UI.Xaml.HorizontalAlignment);
-            _typeTable[154] = typeof(global::Windows.UI.Xaml.VerticalAlignment);
-            _typeTable[155] = typeof(global::Windows.UI.Xaml.UIElement);
-            _typeTable[156] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartLegend);
-            _typeTable[157] = typeof(global::Windows.UI.Xaml.CornerRadius);
-            _typeTable[158] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartDock);
-            _typeTable[159] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartOrientation);
-            _typeTable[160] = typeof(global::Syncfusion.UI.Xaml.Charts.LegendPosition);
-            _typeTable[161] = typeof(global::Syncfusion.UI.Xaml.Charts.PieSeries);
-            _typeTable[162] = typeof(global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase);
-            _typeTable[163] = typeof(global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase);
-            _typeTable[164] = typeof(global::Syncfusion.UI.Xaml.Charts.AdornmentSeries);
-            _typeTable[165] = typeof(global::Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition);
-            _typeTable[166] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo);
-            _typeTable[167] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase);
-            _typeTable[168] = typeof(global::Syncfusion.UI.Xaml.Charts.PieSegment);
-            _typeTable[169] = typeof(global::Syncfusion.UI.Xaml.Charts.ConnectorMode);
-            _typeTable[170] = typeof(global::System.Collections.Generic.List<global::Windows.UI.Xaml.Media.Brush>);
-            _typeTable[171] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
-            _typeTable[172] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
-            _typeTable[173] = typeof(global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction);
-            _typeTable[174] = typeof(global::System.Windows.Input.ICommand);
-            _typeTable[175] = typeof(global::Windows.UI.Xaml.Data.IValueConverter);
-            _typeTable[176] = typeof(global::Syncfusion.UI.Xaml.Charts.LabelContent);
-            _typeTable[177] = typeof(global::Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition);
-            _typeTable[178] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartSymbol);
-            _typeTable[179] = typeof(global::Syncfusion.UI.Xaml.Charts.AdornmentsPosition);
-            _typeTable[180] = typeof(global::MoneyKepper2.View.Pages.GraphsDetailsPage);
-            _typeTable[181] = typeof(global::MoneyKepper2.View.Pages.GraphsPage);
-            _typeTable[182] = typeof(global::Syncfusion.UI.Xaml.Charts.CategoryAxis);
-            _typeTable[183] = typeof(global::Syncfusion.UI.Xaml.Charts.LabelPlacement);
-            _typeTable[184] = typeof(global::Syncfusion.UI.Xaml.Charts.AggregateFunctions);
-            _typeTable[185] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartStripLines);
-            _typeTable[186] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartStripLine>);
-            _typeTable[187] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartStripLine>);
-            _typeTable[188] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartStripLine);
-            _typeTable[189] = typeof(global::Syncfusion.UI.Xaml.Charts.NumericalAxis);
-            _typeTable[190] = typeof(global::Syncfusion.UI.Xaml.Charts.NumericalPadding);
-            _typeTable[191] = typeof(global::Syncfusion.UI.Xaml.Charts.ColumnSeries);
-            _typeTable[192] = typeof(global::Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase);
-            _typeTable[193] = typeof(global::Syncfusion.UI.Xaml.Charts.XyDataSeries);
-            _typeTable[194] = typeof(global::Syncfusion.UI.Xaml.Charts.CartesianSeries);
-            _typeTable[195] = typeof(global::Syncfusion.UI.Xaml.Charts.SnapToPoint);
-            _typeTable[196] = typeof(global::Windows.System.VirtualKeyModifiers);
-            _typeTable[197] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartTrendLineCollection);
-            _typeTable[198] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.Trendline>);
-            _typeTable[199] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.Trendline>);
-            _typeTable[200] = typeof(global::Syncfusion.UI.Xaml.Charts.Trendline);
-            _typeTable[201] = typeof(global::Syncfusion.UI.Xaml.Charts.TrendlineBase);
-            _typeTable[202] = typeof(global::System.Double[]);
-            _typeTable[203] = typeof(global::System.Array);
-            _typeTable[204] = typeof(global::Syncfusion.UI.Xaml.Charts.TrendlineType);
-            _typeTable[205] = typeof(global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart);
-            _typeTable[206] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.PivotAnalysis.UWP.PivotItem>);
-            _typeTable[207] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.PivotAnalysis.UWP.PivotItem>);
-            _typeTable[208] = typeof(global::Syncfusion.PivotAnalysis.UWP.PivotItem);
-            _typeTable[209] = typeof(global::Syncfusion.PivotAnalysis.UWP.SummaryType);
-            _typeTable[210] = typeof(global::Syncfusion.PivotAnalysis.UWP.SummaryBase);
-            _typeTable[211] = typeof(global::Syncfusion.Data.ListSortDirection);
-            _typeTable[212] = typeof(global::System.Collections.IComparer);
-            _typeTable[213] = typeof(global::Syncfusion.UI.Xaml.PivotChart.PivotChartLegend);
-            _typeTable[214] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo>);
-            _typeTable[215] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo>);
-            _typeTable[216] = typeof(global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo);
-            _typeTable[217] = typeof(global::Syncfusion.PivotAnalysis.UWP.SummaryDisplayLevel);
-            _typeTable[218] = typeof(global::Syncfusion.PivotAnalysis.UWP.DisplayOption);
-            _typeTable[219] = typeof(global::Syncfusion.PivotAnalysis.UWP.CalculationType);
-            _typeTable[220] = typeof(global::Syncfusion.PivotAnalysis.UWP.FilterExpression);
-            _typeTable[221] = typeof(global::Syncfusion.Olap.UWP.Manager.OlapDataManager);
-            _typeTable[222] = typeof(global::Syncfusion.UI.Xaml.PivotChart.PivotChartType);
-            _typeTable[223] = typeof(global::Syncfusion.UI.Xaml.PivotChart.PivotChartColorPalette);
-            _typeTable[224] = typeof(global::Syncfusion.UI.Xaml.PivotChart.PivotChartAxisStyle);
-            _typeTable[225] = typeof(global::Syncfusion.UI.Xaml.PivotChart.PivotChartVisualStyle);
-            _typeTable[226] = typeof(global::Syncfusion.UI.Xaml.PivotChart.PivotChartWatermark);
-            _typeTable[227] = typeof(global::Syncfusion.UI.Xaml.PivotChart.PivotChartZoomPanBehavior);
-            _typeTable[228] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior);
-            _typeTable[229] = typeof(global::Syncfusion.UI.Xaml.PivotChart.PivotChartAxis);
-            _typeTable[230] = typeof(global::Syncfusion.Olap.UWP.Reports.OlapReport);
-            _typeTable[231] = typeof(global::MoneyKepper2.View.Pages.HistoryDetailsPage);
-            _typeTable[232] = typeof(global::MoneyKepper2.View.Pages.ReportPage);
-            _typeTable[233] = typeof(global::MoneyKepper2.Behaviors.PrintPageBehavior);
-            _typeTable[234] = typeof(global::Windows.UI.Xaml.Controls.ListView);
-            _typeTable[235] = typeof(global::MoneyKepper2.View.Pages.ReportDetailsPage);
-            _typeTable[236] = typeof(global::MoneyKepper2.View.Pages.TransactionsPage);
-            _typeTable[237] = typeof(global::MoneyKepper2.View.Pages.TransactionsDetailsPage);
-            _typeTable[238] = typeof(global::MoneyKepper2.View.Views.ControlPanelView);
-            _typeTable[239] = typeof(global::MoneyKepper2.View.Views.PrimaryPanelView);
-            _typeTable[240] = typeof(global::MoneyKepper2.View.Pages.HistoryPage);
+            _typeTable[7] = typeof(global::MoneyKepper_Core.ViewModel.IAddBugetViewModel);
+            _typeTable[8] = typeof(global::MoneyKepper_Core.ViewModel.IControlSplitViewModel);
+            _typeTable[9] = typeof(global::MoneyKepper_Core.ViewModel.IConfirmViewModel);
+            _typeTable[10] = typeof(global::MoneyKepper_Core.ViewModel.IGraphsViewModel);
+            _typeTable[11] = typeof(global::MoneyKepper_Core.ViewModel.IHistoryViewModel);
+            _typeTable[12] = typeof(global::MoneyKepper_Core.ViewModel.IReportViewModel);
+            _typeTable[13] = typeof(global::MoneyKepper_Core.ViewModel.IReportDetailsVewModel);
+            _typeTable[14] = typeof(global::MoneyKepper_Core.ViewModel.ITransactionsDetailsViewModel);
+            _typeTable[15] = typeof(global::MoneyKepper_Core.ViewModel.IControlPanelViewModel);
+            _typeTable[16] = typeof(global::MoneyKepper_Core.ViewModel.IPrimaryPanelViewModel);
+            _typeTable[17] = typeof(global::MoneyKepper_Core.ViewModel.ITransactionsViewModel);
+            _typeTable[18] = typeof(global::MoneyKepper_Core.ViewModel.IDetailsViewModel);
+            _typeTable[19] = typeof(global::MoneyKepper_Core.ViewModel.IHistoryDetailsViewModel);
+            _typeTable[20] = typeof(global::MoneyKepper_Core.ViewModel.IGraphsDetailsViewModel);
+            _typeTable[21] = typeof(global::MoneyKepper_Core.ViewModel.ICategoryDetailViewModel);
+            _typeTable[22] = typeof(global::MoneyKepper_Core.ViewModel.ICategoryViewModel);
+            _typeTable[23] = typeof(global::MoneyKepper_Core.ViewModel.IBugetViewModel);
+            _typeTable[24] = typeof(global::MoneyKepper_Core.ViewModel.IBugetDetailsViewModel);
+            _typeTable[25] = typeof(global::MoneyKepper_Core.ViewModel.IAddNewCategoryViewModel);
+            _typeTable[26] = typeof(global::MoneyKepperCore.Service.INavigationService);
+            _typeTable[27] = typeof(global::MoneyKepper_Core.Services.IDialogService);
+            _typeTable[28] = typeof(global::MoneyKepper2.Converters.BooleanToVisibilityConverter);
+            _typeTable[29] = typeof(global::MoneyKepper2.Converters.DateConverter);
+            _typeTable[30] = typeof(global::MoneyKepper2.Converters.TransactionTypeToStringConverter);
+            _typeTable[31] = typeof(global::MoneyKepper2.Converters.TransactionTypeToColorConverter);
+            _typeTable[32] = typeof(global::MoneyKepper2.Converters.GraphsTypeToGraphStringConverter);
+            _typeTable[33] = typeof(global::MoneyKepper2.Converters.SelectionChangedConverter);
+            _typeTable[34] = typeof(global::MoneyKepper2.Converters.PictureNameToPictureSourceConverter);
+            _typeTable[35] = typeof(global::MoneyKepper2.Converters.TypeIDToTypeNameConverter);
+            _typeTable[36] = typeof(global::MoneyKepper2.Converters.InvertBooleanConverter);
+            _typeTable[37] = typeof(global::Windows.UI.Text.FontWeight);
+            _typeTable[38] = typeof(global::System.ValueType);
+            _typeTable[39] = typeof(global::MoneyKepper2.View.Views.ControlSplitView);
+            _typeTable[40] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[41] = typeof(global::MoneyKepper2.View.Views.DetailsView);
+            _typeTable[42] = typeof(global::MoneyKepper2.MainPage);
+            _typeTable[43] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[44] = typeof(global::MoneyKepper2.Controls.ExpanderControl);
+            _typeTable[45] = typeof(global::MoneyKepper2.Controls.HeaderedItemsControl);
+            _typeTable[46] = typeof(global::Windows.UI.Xaml.Controls.ItemsControl);
+            _typeTable[47] = typeof(global::Windows.UI.Xaml.DataTemplate);
+            _typeTable[48] = typeof(global::System.Boolean);
+            _typeTable[49] = typeof(global::Windows.UI.Xaml.Style);
+            _typeTable[50] = typeof(global::MoneyKepper2.View.Dialogs.ContentDialogBase);
+            _typeTable[51] = typeof(global::Windows.UI.Xaml.Controls.ContentDialog);
+            _typeTable[52] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
+            _typeTable[53] = typeof(global::MoneyKepper2.View.Dialogs.AddNewCategoryDialog);
+            _typeTable[54] = typeof(global::Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox);
+            _typeTable[55] = typeof(global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt);
+            _typeTable[56] = typeof(global::Windows.UI.Xaml.Controls.TextBox);
+            _typeTable[57] = typeof(global::Syncfusion.UI.Xaml.Controls.Input.ValueChange);
+            _typeTable[58] = typeof(global::System.Enum);
+            _typeTable[59] = typeof(global::System.String);
+            _typeTable[60] = typeof(global::System.Globalization.CultureInfo);
+            _typeTable[61] = typeof(global::Syncfusion.UI.Xaml.Controls.Input.PercentDisplayMode);
+            _typeTable[62] = typeof(global::System.Int32);
+            _typeTable[63] = typeof(global::Syncfusion.UI.Xaml.Controls.Input.Parsers);
+            _typeTable[64] = typeof(global::System.Collections.IEnumerable);
+            _typeTable[65] = typeof(global::Windows.UI.Xaml.Controls.DataTemplateSelector);
+            _typeTable[66] = typeof(global::Windows.UI.Xaml.Controls.ItemsPanelTemplate);
+            _typeTable[67] = typeof(global::Windows.Foundation.Point);
+            _typeTable[68] = typeof(global::Syncfusion.UI.Xaml.Controls.Input.AutoCompleteMode);
+            _typeTable[69] = typeof(global::Syncfusion.UI.Xaml.Controls.Input.SuggestionBoxPlacement);
+            _typeTable[70] = typeof(global::Syncfusion.UI.Xaml.Controls.Input.SuggestionMode);
+            _typeTable[71] = typeof(global::System.TimeSpan);
+            _typeTable[72] = typeof(global::System.Double);
+            _typeTable[73] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
+            _typeTable[74] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
+            _typeTable[75] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
+            _typeTable[76] = typeof(global::Windows.UI.Xaml.DependencyObject);
+            _typeTable[77] = typeof(global::MoneyKepper2.Behaviors.SetDateToDatePickerBehavior);
+            _typeTable[78] = typeof(global::System.Nullable<global::System.DateTimeOffset>);
+            _typeTable[79] = typeof(global::MoneyKepper2.Behaviors.SetMinAndMaxDateBehavior);
+            _typeTable[80] = typeof(global::System.DateTime);
+            _typeTable[81] = typeof(global::MoneyKepper2.View.Dialogs.AddTransactionDialog);
+            _typeTable[82] = typeof(global::MoneyKepper2.View.Dialogs.AddBugetDialog);
+            _typeTable[83] = typeof(global::MoneyKepper2.View.Dialogs.ConfirmDialog);
+            _typeTable[84] = typeof(global::MoneyKepper2.View.Pages.PageBase);
+            _typeTable[85] = typeof(global::Microsoft.Xaml.Interactions.Core.DataTriggerBehavior);
+            _typeTable[86] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
+            _typeTable[87] = typeof(global::Microsoft.Xaml.Interactions.Core.ComparisonConditionType);
+            _typeTable[88] = typeof(global::Microsoft.Xaml.Interactions.Core.ChangePropertyAction);
+            _typeTable[89] = typeof(global::MoneyKepper2.View.Pages.BugetDetailsPage);
+            _typeTable[90] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
+            _typeTable[91] = typeof(global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction);
+            _typeTable[92] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[93] = typeof(global::Windows.UI.Xaml.Data.IValueConverter);
+            _typeTable[94] = typeof(global::MoneyKepper2.View.Pages.BugetPage);
+            _typeTable[95] = typeof(global::MoneyKepper2.View.Pages.CategoryDetailPage);
+            _typeTable[96] = typeof(global::MoneyKepper2.View.Pages.CategoryPage);
+            _typeTable[97] = typeof(global::MoneyKepper2.View.Pages.EmptyPage);
+            _typeTable[98] = typeof(global::Syncfusion.UI.Xaml.Charts.SfChart);
+            _typeTable[99] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartBase);
+            _typeTable[100] = typeof(global::Windows.UI.Xaml.Controls.Control);
+            _typeTable[101] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartSeriesCollection);
+            _typeTable[102] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartSeries>);
+            _typeTable[103] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartSeries>);
+            _typeTable[104] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartSeries);
+            _typeTable[105] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase);
+            _typeTable[106] = typeof(global::Windows.UI.Xaml.Media.Brush);
+            _typeTable[107] = typeof(global::Syncfusion.UI.Xaml.Charts.Direction);
+            _typeTable[108] = typeof(global::Syncfusion.UI.Xaml.Charts.SortingAxis);
+            _typeTable[109] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartAdornment>);
+            _typeTable[110] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartAdornment>);
+            _typeTable[111] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartAdornment);
+            _typeTable[112] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartSegment);
+            _typeTable[113] = typeof(global::Windows.UI.Xaml.Thickness);
+            _typeTable[114] = typeof(global::Windows.UI.Xaml.Media.FontFamily);
+            _typeTable[115] = typeof(global::Windows.UI.Text.FontStyle);
+            _typeTable[116] = typeof(global::Syncfusion.UI.Xaml.Charts.DoubleRange);
+            _typeTable[117] = typeof(global::Windows.UI.Xaml.Media.DoubleCollection);
+            _typeTable[118] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartColorPalette);
+            _typeTable[119] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartLegendIcon);
+            _typeTable[120] = typeof(global::Windows.UI.Xaml.Visibility);
+            _typeTable[121] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartColorModel);
+            _typeTable[122] = typeof(global::Syncfusion.UI.Xaml.Charts.EmptyPointValue);
+            _typeTable[123] = typeof(global::Syncfusion.UI.Xaml.Charts.EmptyPointStyle);
+            _typeTable[124] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartAxisBase2D);
+            _typeTable[125] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartAxis);
+            _typeTable[126] = typeof(global::Syncfusion.UI.Xaml.Charts.RangeAxisBase);
+            _typeTable[127] = typeof(global::Syncfusion.UI.Xaml.Charts.Watermark);
+            _typeTable[128] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartBehaviorsCollection);
+            _typeTable[129] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartBehavior>);
+            _typeTable[130] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartBehavior>);
+            _typeTable[131] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartBehavior);
+            _typeTable[132] = typeof(global::Windows.UI.Xaml.Controls.Canvas);
+            _typeTable[133] = typeof(global::Syncfusion.UI.Xaml.Charts.AnnotationCollection);
+            _typeTable[134] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.Annotation>);
+            _typeTable[135] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.Annotation>);
+            _typeTable[136] = typeof(global::Syncfusion.UI.Xaml.Charts.Annotation);
+            _typeTable[137] = typeof(global::Windows.UI.Xaml.FrameworkElement);
+            _typeTable[138] = typeof(global::Syncfusion.UI.Xaml.Charts.ToolTipLabelPlacement);
+            _typeTable[139] = typeof(global::Syncfusion.UI.Xaml.Charts.CoordinateUnit);
+            _typeTable[140] = typeof(global::Windows.UI.Text.FontStretch);
+            _typeTable[141] = typeof(global::Windows.Foundation.Rect);
+            _typeTable[142] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartVisibleSeriesCollection);
+            _typeTable[143] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase>);
+            _typeTable[144] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase>);
+            _typeTable[145] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinitions);
+            _typeTable[146] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition>);
+            _typeTable[147] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition>);
+            _typeTable[148] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition);
+            _typeTable[149] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartUnitType);
+            _typeTable[150] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartRowDefinitions);
+            _typeTable[151] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition>);
+            _typeTable[152] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition>);
+            _typeTable[153] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition);
+            _typeTable[154] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartAxisCollection);
+            _typeTable[155] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartAxis>);
+            _typeTable[156] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartAxis>);
+            _typeTable[157] = typeof(global::Syncfusion.UI.Xaml.Charts.AxisHeaderPosition);
+            _typeTable[158] = typeof(global::Syncfusion.UI.Xaml.Charts.AxisElementPosition);
+            _typeTable[159] = typeof(global::Syncfusion.UI.Xaml.Charts.AxisLabelsIntersectAction);
+            _typeTable[160] = typeof(global::Syncfusion.UI.Xaml.Charts.LabelStyle);
+            _typeTable[161] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel>);
+            _typeTable[162] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel>);
+            _typeTable[163] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel);
+            _typeTable[164] = typeof(global::Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode);
+            _typeTable[165] = typeof(global::Syncfusion.UI.Xaml.Charts.EdgeLabelsVisibilityMode);
+            _typeTable[166] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartAxisLabelCollection);
+            _typeTable[167] = typeof(global::Windows.UI.Xaml.HorizontalAlignment);
+            _typeTable[168] = typeof(global::Windows.UI.Xaml.VerticalAlignment);
+            _typeTable[169] = typeof(global::Windows.UI.Xaml.UIElement);
+            _typeTable[170] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartLegend);
+            _typeTable[171] = typeof(global::Windows.UI.Xaml.CornerRadius);
+            _typeTable[172] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartDock);
+            _typeTable[173] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartOrientation);
+            _typeTable[174] = typeof(global::Syncfusion.UI.Xaml.Charts.LegendPosition);
+            _typeTable[175] = typeof(global::Syncfusion.UI.Xaml.Charts.PieSeries);
+            _typeTable[176] = typeof(global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase);
+            _typeTable[177] = typeof(global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase);
+            _typeTable[178] = typeof(global::Syncfusion.UI.Xaml.Charts.AdornmentSeries);
+            _typeTable[179] = typeof(global::Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition);
+            _typeTable[180] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo);
+            _typeTable[181] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase);
+            _typeTable[182] = typeof(global::Syncfusion.UI.Xaml.Charts.PieSegment);
+            _typeTable[183] = typeof(global::Syncfusion.UI.Xaml.Charts.ConnectorMode);
+            _typeTable[184] = typeof(global::System.Collections.Generic.List<global::Windows.UI.Xaml.Media.Brush>);
+            _typeTable[185] = typeof(global::Syncfusion.UI.Xaml.Charts.LabelContent);
+            _typeTable[186] = typeof(global::Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition);
+            _typeTable[187] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartSymbol);
+            _typeTable[188] = typeof(global::Syncfusion.UI.Xaml.Charts.AdornmentsPosition);
+            _typeTable[189] = typeof(global::MoneyKepper2.View.Pages.GraphsDetailsPage);
+            _typeTable[190] = typeof(global::MoneyKepper2.View.Pages.GraphsPage);
+            _typeTable[191] = typeof(global::Syncfusion.UI.Xaml.Charts.CategoryAxis);
+            _typeTable[192] = typeof(global::Syncfusion.UI.Xaml.Charts.LabelPlacement);
+            _typeTable[193] = typeof(global::Syncfusion.UI.Xaml.Charts.AggregateFunctions);
+            _typeTable[194] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartStripLines);
+            _typeTable[195] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartStripLine>);
+            _typeTable[196] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartStripLine>);
+            _typeTable[197] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartStripLine);
+            _typeTable[198] = typeof(global::Syncfusion.UI.Xaml.Charts.NumericalAxis);
+            _typeTable[199] = typeof(global::Syncfusion.UI.Xaml.Charts.NumericalPadding);
+            _typeTable[200] = typeof(global::Syncfusion.UI.Xaml.Charts.ColumnSeries);
+            _typeTable[201] = typeof(global::Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase);
+            _typeTable[202] = typeof(global::Syncfusion.UI.Xaml.Charts.XyDataSeries);
+            _typeTable[203] = typeof(global::Syncfusion.UI.Xaml.Charts.CartesianSeries);
+            _typeTable[204] = typeof(global::Syncfusion.UI.Xaml.Charts.SnapToPoint);
+            _typeTable[205] = typeof(global::Windows.System.VirtualKeyModifiers);
+            _typeTable[206] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartTrendLineCollection);
+            _typeTable[207] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.Trendline>);
+            _typeTable[208] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.Trendline>);
+            _typeTable[209] = typeof(global::Syncfusion.UI.Xaml.Charts.Trendline);
+            _typeTable[210] = typeof(global::Syncfusion.UI.Xaml.Charts.TrendlineBase);
+            _typeTable[211] = typeof(global::System.Double[]);
+            _typeTable[212] = typeof(global::System.Array);
+            _typeTable[213] = typeof(global::Syncfusion.UI.Xaml.Charts.TrendlineType);
+            _typeTable[214] = typeof(global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart);
+            _typeTable[215] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.PivotAnalysis.UWP.PivotItem>);
+            _typeTable[216] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.PivotAnalysis.UWP.PivotItem>);
+            _typeTable[217] = typeof(global::Syncfusion.PivotAnalysis.UWP.PivotItem);
+            _typeTable[218] = typeof(global::Syncfusion.PivotAnalysis.UWP.SummaryType);
+            _typeTable[219] = typeof(global::Syncfusion.PivotAnalysis.UWP.SummaryBase);
+            _typeTable[220] = typeof(global::Syncfusion.Data.ListSortDirection);
+            _typeTable[221] = typeof(global::System.Collections.IComparer);
+            _typeTable[222] = typeof(global::Syncfusion.UI.Xaml.PivotChart.PivotChartLegend);
+            _typeTable[223] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo>);
+            _typeTable[224] = typeof(global::System.Collections.ObjectModel.Collection<global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo>);
+            _typeTable[225] = typeof(global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo);
+            _typeTable[226] = typeof(global::Syncfusion.PivotAnalysis.UWP.SummaryDisplayLevel);
+            _typeTable[227] = typeof(global::Syncfusion.PivotAnalysis.UWP.DisplayOption);
+            _typeTable[228] = typeof(global::Syncfusion.PivotAnalysis.UWP.CalculationType);
+            _typeTable[229] = typeof(global::Syncfusion.PivotAnalysis.UWP.FilterExpression);
+            _typeTable[230] = typeof(global::Syncfusion.Olap.UWP.Manager.OlapDataManager);
+            _typeTable[231] = typeof(global::Syncfusion.UI.Xaml.PivotChart.PivotChartType);
+            _typeTable[232] = typeof(global::Syncfusion.UI.Xaml.PivotChart.PivotChartColorPalette);
+            _typeTable[233] = typeof(global::Syncfusion.UI.Xaml.PivotChart.PivotChartAxisStyle);
+            _typeTable[234] = typeof(global::Syncfusion.UI.Xaml.PivotChart.PivotChartVisualStyle);
+            _typeTable[235] = typeof(global::Syncfusion.UI.Xaml.PivotChart.PivotChartWatermark);
+            _typeTable[236] = typeof(global::Syncfusion.UI.Xaml.PivotChart.PivotChartZoomPanBehavior);
+            _typeTable[237] = typeof(global::Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior);
+            _typeTable[238] = typeof(global::Syncfusion.UI.Xaml.PivotChart.PivotChartAxis);
+            _typeTable[239] = typeof(global::Syncfusion.Olap.UWP.Reports.OlapReport);
+            _typeTable[240] = typeof(global::MoneyKepper2.View.Pages.HistoryDetailsPage);
+            _typeTable[241] = typeof(global::MoneyKepper2.View.Pages.ReportPage);
+            _typeTable[242] = typeof(global::MoneyKepper2.Behaviors.PrintPageBehavior);
+            _typeTable[243] = typeof(global::Windows.UI.Xaml.Controls.ListView);
+            _typeTable[244] = typeof(global::MoneyKepper2.View.Pages.ReportDetailsPage);
+            _typeTable[245] = typeof(global::MoneyKepper2.View.Pages.TransactionsPage);
+            _typeTable[246] = typeof(global::MoneyKepper2.View.Pages.TransactionsDetailsPage);
+            _typeTable[247] = typeof(global::MoneyKepper2.View.Views.ControlPanelView);
+            _typeTable[248] = typeof(global::MoneyKepper2.View.Views.PrimaryPanelView);
+            _typeTable[249] = typeof(global::MoneyKepper2.View.Pages.HistoryPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -679,341 +697,346 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
         private object Activate_2_MainViewModel() { return new global::MoneyKepperCore.ViewModel.MainViewModel(); }
         private object Activate_3_ViewModelCore() { return new global::MoneyKepperCore.ViewModel.ViewModelCore(); }
         private object Activate_5_ObservableObject() { return new global::GalaSoft.MvvmLight.ObservableObject(); }
-        private object Activate_25_BooleanToVisibilityConverter() { return new global::MoneyKepper2.Converters.BooleanToVisibilityConverter(); }
-        private object Activate_26_DateConverter() { return new global::MoneyKepper2.Converters.DateConverter(); }
-        private object Activate_27_TransactionTypeToStringConverter() { return new global::MoneyKepper2.Converters.TransactionTypeToStringConverter(); }
-        private object Activate_28_TransactionTypeToColorConverter() { return new global::MoneyKepper2.Converters.TransactionTypeToColorConverter(); }
-        private object Activate_29_GraphsTypeToGraphStringConverter() { return new global::MoneyKepper2.Converters.GraphsTypeToGraphStringConverter(); }
-        private object Activate_30_SelectionChangedConverter() { return new global::MoneyKepper2.Converters.SelectionChangedConverter(); }
-        private object Activate_31_PictureNameToPictureSourceConverter() { return new global::MoneyKepper2.Converters.PictureNameToPictureSourceConverter(); }
-        private object Activate_32_TypeIDToTypeNameConverter() { return new global::MoneyKepper2.Converters.TypeIDToTypeNameConverter(); }
-        private object Activate_33_InvertBooleanConverter() { return new global::MoneyKepper2.Converters.InvertBooleanConverter(); }
-        private object Activate_34_ControlSplitView() { return new global::MoneyKepper2.View.Views.ControlSplitView(); }
-        private object Activate_36_DetailsView() { return new global::MoneyKepper2.View.Views.DetailsView(); }
-        private object Activate_37_MainPage() { return new global::MoneyKepper2.MainPage(); }
-        private object Activate_39_ExpanderControl() { return new global::MoneyKepper2.Controls.ExpanderControl(); }
-        private object Activate_40_HeaderedItemsControl() { return new global::MoneyKepper2.Controls.HeaderedItemsControl(); }
-        private object Activate_45_ContentDialogBase() { return new global::MoneyKepper2.View.Dialogs.ContentDialogBase(); }
-        private object Activate_48_AddNewCategoryDialog() { return new global::MoneyKepper2.View.Dialogs.AddNewCategoryDialog(); }
-        private object Activate_49_SfNumericTextBox() { return new global::Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox(); }
-        private object Activate_50_SfTextBoxExt() { return new global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt(); }
-        private object Activate_70_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
-        private object Activate_73_SetDateToDatePickerBehavior() { return new global::MoneyKepper2.Behaviors.SetDateToDatePickerBehavior(); }
-        private object Activate_75_SetMinAndMaxDateBehavior() { return new global::MoneyKepper2.Behaviors.SetMinAndMaxDateBehavior(); }
-        private object Activate_77_AddTransactionDialog() { return new global::MoneyKepper2.View.Dialogs.AddTransactionDialog(); }
-        private object Activate_78_ConfirmDialog() { return new global::MoneyKepper2.View.Dialogs.ConfirmDialog(); }
-        private object Activate_79_PageBase() { return new global::MoneyKepper2.View.Pages.PageBase(); }
-        private object Activate_81_CategoryDetailPage() { return new global::MoneyKepper2.View.Pages.CategoryDetailPage(); }
-        private object Activate_82_CategoryPage() { return new global::MoneyKepper2.View.Pages.CategoryPage(); }
-        private object Activate_83_EmptyPage() { return new global::MoneyKepper2.View.Pages.EmptyPage(); }
-        private object Activate_84_SfChart() { return new global::Syncfusion.UI.Xaml.Charts.SfChart(); }
-        private object Activate_87_ChartSeriesCollection() { return new global::Syncfusion.UI.Xaml.Charts.ChartSeriesCollection(); }
-        private object Activate_88_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartSeries>(); }
-        private object Activate_89_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartSeries>(); }
-        private object Activate_95_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartAdornment>(); }
-        private object Activate_96_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartAdornment>(); }
-        private object Activate_97_ChartAdornment() { return new global::Syncfusion.UI.Xaml.Charts.ChartAdornment(); }
-        private object Activate_107_ChartColorModel() { return new global::Syncfusion.UI.Xaml.Charts.ChartColorModel(); }
-        private object Activate_113_Watermark() { return new global::Syncfusion.UI.Xaml.Charts.Watermark(); }
-        private object Activate_114_ChartBehaviorsCollection() { return new global::Syncfusion.UI.Xaml.Charts.ChartBehaviorsCollection(); }
-        private object Activate_115_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartBehavior>(); }
-        private object Activate_116_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartBehavior>(); }
-        private object Activate_119_AnnotationCollection() { return new global::Syncfusion.UI.Xaml.Charts.AnnotationCollection(); }
-        private object Activate_120_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.Annotation>(); }
-        private object Activate_121_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.Annotation>(); }
-        private object Activate_128_ChartVisibleSeriesCollection() { return new global::Syncfusion.UI.Xaml.Charts.ChartVisibleSeriesCollection(); }
-        private object Activate_129_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase>(); }
-        private object Activate_130_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase>(); }
-        private object Activate_131_ChartColumnDefinitions() { return new global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinitions(); }
-        private object Activate_132_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition>(); }
-        private object Activate_133_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition>(); }
-        private object Activate_134_ChartColumnDefinition() { return new global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition(); }
-        private object Activate_136_ChartRowDefinitions() { return new global::Syncfusion.UI.Xaml.Charts.ChartRowDefinitions(); }
-        private object Activate_137_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition>(); }
-        private object Activate_138_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition>(); }
-        private object Activate_139_ChartRowDefinition() { return new global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition(); }
-        private object Activate_140_ChartAxisCollection() { return new global::Syncfusion.UI.Xaml.Charts.ChartAxisCollection(); }
-        private object Activate_141_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartAxis>(); }
-        private object Activate_142_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartAxis>(); }
-        private object Activate_146_LabelStyle() { return new global::Syncfusion.UI.Xaml.Charts.LabelStyle(); }
-        private object Activate_147_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel>(); }
-        private object Activate_148_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel>(); }
-        private object Activate_149_ChartAxisLabel() { return new global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel(); }
-        private object Activate_152_ChartAxisLabelCollection() { return new global::Syncfusion.UI.Xaml.Charts.ChartAxisLabelCollection(); }
-        private object Activate_156_ChartLegend() { return new global::Syncfusion.UI.Xaml.Charts.ChartLegend(); }
-        private object Activate_161_PieSeries() { return new global::Syncfusion.UI.Xaml.Charts.PieSeries(); }
-        private object Activate_166_ChartAdornmentInfo() { return new global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo(); }
-        private object Activate_170_List() { return new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Media.Brush>(); }
-        private object Activate_171_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
-        private object Activate_172_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
-        private object Activate_173_InvokeCommandAction() { return new global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction(); }
-        private object Activate_180_GraphsDetailsPage() { return new global::MoneyKepper2.View.Pages.GraphsDetailsPage(); }
-        private object Activate_181_GraphsPage() { return new global::MoneyKepper2.View.Pages.GraphsPage(); }
-        private object Activate_182_CategoryAxis() { return new global::Syncfusion.UI.Xaml.Charts.CategoryAxis(); }
-        private object Activate_185_ChartStripLines() { return new global::Syncfusion.UI.Xaml.Charts.ChartStripLines(); }
-        private object Activate_186_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartStripLine>(); }
-        private object Activate_187_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartStripLine>(); }
-        private object Activate_188_ChartStripLine() { return new global::Syncfusion.UI.Xaml.Charts.ChartStripLine(); }
-        private object Activate_189_NumericalAxis() { return new global::Syncfusion.UI.Xaml.Charts.NumericalAxis(); }
-        private object Activate_191_ColumnSeries() { return new global::Syncfusion.UI.Xaml.Charts.ColumnSeries(); }
-        private object Activate_197_ChartTrendLineCollection() { return new global::Syncfusion.UI.Xaml.Charts.ChartTrendLineCollection(); }
-        private object Activate_198_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.Trendline>(); }
-        private object Activate_199_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.Trendline>(); }
-        private object Activate_200_Trendline() { return new global::Syncfusion.UI.Xaml.Charts.Trendline(); }
-        private object Activate_205_SfPivotChart() { return new global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart(); }
-        private object Activate_206_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.PivotAnalysis.UWP.PivotItem>(); }
-        private object Activate_207_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.PivotAnalysis.UWP.PivotItem>(); }
-        private object Activate_208_PivotItem() { return new global::Syncfusion.PivotAnalysis.UWP.PivotItem(); }
-        private object Activate_213_PivotChartLegend() { return new global::Syncfusion.UI.Xaml.PivotChart.PivotChartLegend(); }
-        private object Activate_214_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo>(); }
-        private object Activate_215_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo>(); }
-        private object Activate_216_PivotComputationInfo() { return new global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo(); }
-        private object Activate_220_FilterExpression() { return new global::Syncfusion.PivotAnalysis.UWP.FilterExpression(); }
-        private object Activate_221_OlapDataManager() { return new global::Syncfusion.Olap.UWP.Manager.OlapDataManager(); }
-        private object Activate_224_PivotChartAxisStyle() { return new global::Syncfusion.UI.Xaml.PivotChart.PivotChartAxisStyle(); }
-        private object Activate_226_PivotChartWatermark() { return new global::Syncfusion.UI.Xaml.PivotChart.PivotChartWatermark(); }
-        private object Activate_227_PivotChartZoomPanBehavior() { return new global::Syncfusion.UI.Xaml.PivotChart.PivotChartZoomPanBehavior(); }
-        private object Activate_228_ChartZoomPanBehavior() { return new global::Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior(); }
-        private object Activate_229_PivotChartAxis() { return new global::Syncfusion.UI.Xaml.PivotChart.PivotChartAxis(); }
-        private object Activate_230_OlapReport() { return new global::Syncfusion.Olap.UWP.Reports.OlapReport(); }
-        private object Activate_231_HistoryDetailsPage() { return new global::MoneyKepper2.View.Pages.HistoryDetailsPage(); }
-        private object Activate_232_ReportPage() { return new global::MoneyKepper2.View.Pages.ReportPage(); }
-        private object Activate_233_PrintPageBehavior() { return new global::MoneyKepper2.Behaviors.PrintPageBehavior(); }
-        private object Activate_235_ReportDetailsPage() { return new global::MoneyKepper2.View.Pages.ReportDetailsPage(); }
-        private object Activate_236_TransactionsPage() { return new global::MoneyKepper2.View.Pages.TransactionsPage(); }
-        private object Activate_237_TransactionsDetailsPage() { return new global::MoneyKepper2.View.Pages.TransactionsDetailsPage(); }
-        private object Activate_238_ControlPanelView() { return new global::MoneyKepper2.View.Views.ControlPanelView(); }
-        private object Activate_239_PrimaryPanelView() { return new global::MoneyKepper2.View.Views.PrimaryPanelView(); }
-        private object Activate_240_HistoryPage() { return new global::MoneyKepper2.View.Pages.HistoryPage(); }
-        private void VectorAdd_70_BehaviorCollection(object instance, object item)
+        private object Activate_28_BooleanToVisibilityConverter() { return new global::MoneyKepper2.Converters.BooleanToVisibilityConverter(); }
+        private object Activate_29_DateConverter() { return new global::MoneyKepper2.Converters.DateConverter(); }
+        private object Activate_30_TransactionTypeToStringConverter() { return new global::MoneyKepper2.Converters.TransactionTypeToStringConverter(); }
+        private object Activate_31_TransactionTypeToColorConverter() { return new global::MoneyKepper2.Converters.TransactionTypeToColorConverter(); }
+        private object Activate_32_GraphsTypeToGraphStringConverter() { return new global::MoneyKepper2.Converters.GraphsTypeToGraphStringConverter(); }
+        private object Activate_33_SelectionChangedConverter() { return new global::MoneyKepper2.Converters.SelectionChangedConverter(); }
+        private object Activate_34_PictureNameToPictureSourceConverter() { return new global::MoneyKepper2.Converters.PictureNameToPictureSourceConverter(); }
+        private object Activate_35_TypeIDToTypeNameConverter() { return new global::MoneyKepper2.Converters.TypeIDToTypeNameConverter(); }
+        private object Activate_36_InvertBooleanConverter() { return new global::MoneyKepper2.Converters.InvertBooleanConverter(); }
+        private object Activate_39_ControlSplitView() { return new global::MoneyKepper2.View.Views.ControlSplitView(); }
+        private object Activate_41_DetailsView() { return new global::MoneyKepper2.View.Views.DetailsView(); }
+        private object Activate_42_MainPage() { return new global::MoneyKepper2.MainPage(); }
+        private object Activate_44_ExpanderControl() { return new global::MoneyKepper2.Controls.ExpanderControl(); }
+        private object Activate_45_HeaderedItemsControl() { return new global::MoneyKepper2.Controls.HeaderedItemsControl(); }
+        private object Activate_50_ContentDialogBase() { return new global::MoneyKepper2.View.Dialogs.ContentDialogBase(); }
+        private object Activate_53_AddNewCategoryDialog() { return new global::MoneyKepper2.View.Dialogs.AddNewCategoryDialog(); }
+        private object Activate_54_SfNumericTextBox() { return new global::Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox(); }
+        private object Activate_55_SfTextBoxExt() { return new global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt(); }
+        private object Activate_74_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
+        private object Activate_77_SetDateToDatePickerBehavior() { return new global::MoneyKepper2.Behaviors.SetDateToDatePickerBehavior(); }
+        private object Activate_79_SetMinAndMaxDateBehavior() { return new global::MoneyKepper2.Behaviors.SetMinAndMaxDateBehavior(); }
+        private object Activate_81_AddTransactionDialog() { return new global::MoneyKepper2.View.Dialogs.AddTransactionDialog(); }
+        private object Activate_82_AddBugetDialog() { return new global::MoneyKepper2.View.Dialogs.AddBugetDialog(); }
+        private object Activate_83_ConfirmDialog() { return new global::MoneyKepper2.View.Dialogs.ConfirmDialog(); }
+        private object Activate_84_PageBase() { return new global::MoneyKepper2.View.Pages.PageBase(); }
+        private object Activate_85_DataTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.DataTriggerBehavior(); }
+        private object Activate_86_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
+        private object Activate_88_ChangePropertyAction() { return new global::Microsoft.Xaml.Interactions.Core.ChangePropertyAction(); }
+        private object Activate_89_BugetDetailsPage() { return new global::MoneyKepper2.View.Pages.BugetDetailsPage(); }
+        private object Activate_90_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
+        private object Activate_91_InvokeCommandAction() { return new global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction(); }
+        private object Activate_94_BugetPage() { return new global::MoneyKepper2.View.Pages.BugetPage(); }
+        private object Activate_95_CategoryDetailPage() { return new global::MoneyKepper2.View.Pages.CategoryDetailPage(); }
+        private object Activate_96_CategoryPage() { return new global::MoneyKepper2.View.Pages.CategoryPage(); }
+        private object Activate_97_EmptyPage() { return new global::MoneyKepper2.View.Pages.EmptyPage(); }
+        private object Activate_98_SfChart() { return new global::Syncfusion.UI.Xaml.Charts.SfChart(); }
+        private object Activate_101_ChartSeriesCollection() { return new global::Syncfusion.UI.Xaml.Charts.ChartSeriesCollection(); }
+        private object Activate_102_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartSeries>(); }
+        private object Activate_103_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartSeries>(); }
+        private object Activate_109_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartAdornment>(); }
+        private object Activate_110_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartAdornment>(); }
+        private object Activate_111_ChartAdornment() { return new global::Syncfusion.UI.Xaml.Charts.ChartAdornment(); }
+        private object Activate_121_ChartColorModel() { return new global::Syncfusion.UI.Xaml.Charts.ChartColorModel(); }
+        private object Activate_127_Watermark() { return new global::Syncfusion.UI.Xaml.Charts.Watermark(); }
+        private object Activate_128_ChartBehaviorsCollection() { return new global::Syncfusion.UI.Xaml.Charts.ChartBehaviorsCollection(); }
+        private object Activate_129_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartBehavior>(); }
+        private object Activate_130_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartBehavior>(); }
+        private object Activate_133_AnnotationCollection() { return new global::Syncfusion.UI.Xaml.Charts.AnnotationCollection(); }
+        private object Activate_134_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.Annotation>(); }
+        private object Activate_135_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.Annotation>(); }
+        private object Activate_142_ChartVisibleSeriesCollection() { return new global::Syncfusion.UI.Xaml.Charts.ChartVisibleSeriesCollection(); }
+        private object Activate_143_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase>(); }
+        private object Activate_144_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase>(); }
+        private object Activate_145_ChartColumnDefinitions() { return new global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinitions(); }
+        private object Activate_146_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition>(); }
+        private object Activate_147_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition>(); }
+        private object Activate_148_ChartColumnDefinition() { return new global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition(); }
+        private object Activate_150_ChartRowDefinitions() { return new global::Syncfusion.UI.Xaml.Charts.ChartRowDefinitions(); }
+        private object Activate_151_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition>(); }
+        private object Activate_152_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition>(); }
+        private object Activate_153_ChartRowDefinition() { return new global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition(); }
+        private object Activate_154_ChartAxisCollection() { return new global::Syncfusion.UI.Xaml.Charts.ChartAxisCollection(); }
+        private object Activate_155_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartAxis>(); }
+        private object Activate_156_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartAxis>(); }
+        private object Activate_160_LabelStyle() { return new global::Syncfusion.UI.Xaml.Charts.LabelStyle(); }
+        private object Activate_161_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel>(); }
+        private object Activate_162_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel>(); }
+        private object Activate_163_ChartAxisLabel() { return new global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel(); }
+        private object Activate_166_ChartAxisLabelCollection() { return new global::Syncfusion.UI.Xaml.Charts.ChartAxisLabelCollection(); }
+        private object Activate_170_ChartLegend() { return new global::Syncfusion.UI.Xaml.Charts.ChartLegend(); }
+        private object Activate_175_PieSeries() { return new global::Syncfusion.UI.Xaml.Charts.PieSeries(); }
+        private object Activate_180_ChartAdornmentInfo() { return new global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo(); }
+        private object Activate_184_List() { return new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Media.Brush>(); }
+        private object Activate_189_GraphsDetailsPage() { return new global::MoneyKepper2.View.Pages.GraphsDetailsPage(); }
+        private object Activate_190_GraphsPage() { return new global::MoneyKepper2.View.Pages.GraphsPage(); }
+        private object Activate_191_CategoryAxis() { return new global::Syncfusion.UI.Xaml.Charts.CategoryAxis(); }
+        private object Activate_194_ChartStripLines() { return new global::Syncfusion.UI.Xaml.Charts.ChartStripLines(); }
+        private object Activate_195_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartStripLine>(); }
+        private object Activate_196_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.ChartStripLine>(); }
+        private object Activate_197_ChartStripLine() { return new global::Syncfusion.UI.Xaml.Charts.ChartStripLine(); }
+        private object Activate_198_NumericalAxis() { return new global::Syncfusion.UI.Xaml.Charts.NumericalAxis(); }
+        private object Activate_200_ColumnSeries() { return new global::Syncfusion.UI.Xaml.Charts.ColumnSeries(); }
+        private object Activate_206_ChartTrendLineCollection() { return new global::Syncfusion.UI.Xaml.Charts.ChartTrendLineCollection(); }
+        private object Activate_207_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.Trendline>(); }
+        private object Activate_208_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.UI.Xaml.Charts.Trendline>(); }
+        private object Activate_209_Trendline() { return new global::Syncfusion.UI.Xaml.Charts.Trendline(); }
+        private object Activate_214_SfPivotChart() { return new global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart(); }
+        private object Activate_215_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.PivotAnalysis.UWP.PivotItem>(); }
+        private object Activate_216_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.PivotAnalysis.UWP.PivotItem>(); }
+        private object Activate_217_PivotItem() { return new global::Syncfusion.PivotAnalysis.UWP.PivotItem(); }
+        private object Activate_222_PivotChartLegend() { return new global::Syncfusion.UI.Xaml.PivotChart.PivotChartLegend(); }
+        private object Activate_223_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo>(); }
+        private object Activate_224_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo>(); }
+        private object Activate_225_PivotComputationInfo() { return new global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo(); }
+        private object Activate_229_FilterExpression() { return new global::Syncfusion.PivotAnalysis.UWP.FilterExpression(); }
+        private object Activate_230_OlapDataManager() { return new global::Syncfusion.Olap.UWP.Manager.OlapDataManager(); }
+        private object Activate_233_PivotChartAxisStyle() { return new global::Syncfusion.UI.Xaml.PivotChart.PivotChartAxisStyle(); }
+        private object Activate_235_PivotChartWatermark() { return new global::Syncfusion.UI.Xaml.PivotChart.PivotChartWatermark(); }
+        private object Activate_236_PivotChartZoomPanBehavior() { return new global::Syncfusion.UI.Xaml.PivotChart.PivotChartZoomPanBehavior(); }
+        private object Activate_237_ChartZoomPanBehavior() { return new global::Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior(); }
+        private object Activate_238_PivotChartAxis() { return new global::Syncfusion.UI.Xaml.PivotChart.PivotChartAxis(); }
+        private object Activate_239_OlapReport() { return new global::Syncfusion.Olap.UWP.Reports.OlapReport(); }
+        private object Activate_240_HistoryDetailsPage() { return new global::MoneyKepper2.View.Pages.HistoryDetailsPage(); }
+        private object Activate_241_ReportPage() { return new global::MoneyKepper2.View.Pages.ReportPage(); }
+        private object Activate_242_PrintPageBehavior() { return new global::MoneyKepper2.Behaviors.PrintPageBehavior(); }
+        private object Activate_244_ReportDetailsPage() { return new global::MoneyKepper2.View.Pages.ReportDetailsPage(); }
+        private object Activate_245_TransactionsPage() { return new global::MoneyKepper2.View.Pages.TransactionsPage(); }
+        private object Activate_246_TransactionsDetailsPage() { return new global::MoneyKepper2.View.Pages.TransactionsDetailsPage(); }
+        private object Activate_247_ControlPanelView() { return new global::MoneyKepper2.View.Views.ControlPanelView(); }
+        private object Activate_248_PrimaryPanelView() { return new global::MoneyKepper2.View.Views.PrimaryPanelView(); }
+        private object Activate_249_HistoryPage() { return new global::MoneyKepper2.View.Pages.HistoryPage(); }
+        private void VectorAdd_74_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_87_ChartSeriesCollection(object instance, object item)
+        private void VectorAdd_86_ActionCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
+            var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_101_ChartSeriesCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartSeries>)instance;
             var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartSeries)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_88_ObservableCollection(object instance, object item)
+        private void VectorAdd_102_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartSeries>)instance;
             var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartSeries)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_89_Collection(object instance, object item)
+        private void VectorAdd_103_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartSeries>)instance;
             var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartSeries)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_95_ObservableCollection(object instance, object item)
+        private void VectorAdd_109_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartAdornment>)instance;
             var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_96_Collection(object instance, object item)
+        private void VectorAdd_110_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartAdornment>)instance;
             var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_114_ChartBehaviorsCollection(object instance, object item)
+        private void VectorAdd_128_ChartBehaviorsCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartBehavior>)instance;
             var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartBehavior)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_115_ObservableCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartBehavior>)instance;
-            var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartBehavior)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_116_Collection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartBehavior>)instance;
-            var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartBehavior)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_119_AnnotationCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.Annotation>)instance;
-            var newItem = (global::Syncfusion.UI.Xaml.Charts.Annotation)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_120_ObservableCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.Annotation>)instance;
-            var newItem = (global::Syncfusion.UI.Xaml.Charts.Annotation)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_121_Collection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.Annotation>)instance;
-            var newItem = (global::Syncfusion.UI.Xaml.Charts.Annotation)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_128_ChartVisibleSeriesCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase>)instance;
-            var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)item;
             collection.Add(newItem);
         }
         private void VectorAdd_129_ObservableCollection(object instance, object item)
         {
-            var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase>)instance;
-            var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)item;
+            var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartBehavior>)instance;
+            var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartBehavior)item;
             collection.Add(newItem);
         }
         private void VectorAdd_130_Collection(object instance, object item)
         {
+            var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartBehavior>)instance;
+            var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartBehavior)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_133_AnnotationCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.Annotation>)instance;
+            var newItem = (global::Syncfusion.UI.Xaml.Charts.Annotation)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_134_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.Annotation>)instance;
+            var newItem = (global::Syncfusion.UI.Xaml.Charts.Annotation)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_135_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.Annotation>)instance;
+            var newItem = (global::Syncfusion.UI.Xaml.Charts.Annotation)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_142_ChartVisibleSeriesCollection(object instance, object item)
+        {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase>)instance;
             var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_131_ChartColumnDefinitions(object instance, object item)
+        private void VectorAdd_143_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase>)instance;
+            var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_144_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase>)instance;
+            var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_145_ChartColumnDefinitions(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition>)instance;
             var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_132_ObservableCollection(object instance, object item)
+        private void VectorAdd_146_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition>)instance;
             var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_133_Collection(object instance, object item)
+        private void VectorAdd_147_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition>)instance;
             var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_136_ChartRowDefinitions(object instance, object item)
+        private void VectorAdd_150_ChartRowDefinitions(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition>)instance;
             var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_137_ObservableCollection(object instance, object item)
+        private void VectorAdd_151_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition>)instance;
             var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_138_Collection(object instance, object item)
+        private void VectorAdd_152_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition>)instance;
             var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_140_ChartAxisCollection(object instance, object item)
+        private void VectorAdd_154_ChartAxisCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartAxis>)instance;
             var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_141_ObservableCollection(object instance, object item)
+        private void VectorAdd_155_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartAxis>)instance;
             var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_142_Collection(object instance, object item)
+        private void VectorAdd_156_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartAxis>)instance;
             var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_147_ObservableCollection(object instance, object item)
+        private void VectorAdd_161_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel>)instance;
             var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_148_Collection(object instance, object item)
+        private void VectorAdd_162_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel>)instance;
             var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_152_ChartAxisLabelCollection(object instance, object item)
+        private void VectorAdd_166_ChartAxisLabelCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel>)instance;
             var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_170_List(object instance, object item)
+        private void VectorAdd_184_List(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.Media.Brush>)instance;
             var newItem = (global::Windows.UI.Xaml.Media.Brush)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_172_ActionCollection(object instance, object item)
-        {
-            var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
-            var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
-            collection.Add(newItem);
-        }
-        private void VectorAdd_185_ChartStripLines(object instance, object item)
+        private void VectorAdd_194_ChartStripLines(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartStripLine>)instance;
             var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_186_ObservableCollection(object instance, object item)
+        private void VectorAdd_195_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartStripLine>)instance;
             var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_187_Collection(object instance, object item)
+        private void VectorAdd_196_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.ChartStripLine>)instance;
             var newItem = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_197_ChartTrendLineCollection(object instance, object item)
+        private void VectorAdd_206_ChartTrendLineCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.Trendline>)instance;
             var newItem = (global::Syncfusion.UI.Xaml.Charts.Trendline)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_198_ObservableCollection(object instance, object item)
+        private void VectorAdd_207_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.Trendline>)instance;
             var newItem = (global::Syncfusion.UI.Xaml.Charts.Trendline)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_199_Collection(object instance, object item)
+        private void VectorAdd_208_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.UI.Xaml.Charts.Trendline>)instance;
             var newItem = (global::Syncfusion.UI.Xaml.Charts.Trendline)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_206_ObservableCollection(object instance, object item)
+        private void VectorAdd_215_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.PivotAnalysis.UWP.PivotItem>)instance;
             var newItem = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_207_Collection(object instance, object item)
+        private void VectorAdd_216_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.PivotAnalysis.UWP.PivotItem>)instance;
             var newItem = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_214_ObservableCollection(object instance, object item)
+        private void VectorAdd_223_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo>)instance;
             var newItem = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_215_Collection(object instance, object item)
+        private void VectorAdd_224_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo>)instance;
             var newItem = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)item;
@@ -1035,6 +1058,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 userType.Activator = Activate_0_ViewModelLocator;
                 userType.AddMemberName("MainViewModel");
                 userType.AddMemberName("AddTransactionViewModel");
+                userType.AddMemberName("AddBugetViewModel");
                 userType.AddMemberName("ControlSplitViewModel");
                 userType.AddMemberName("ConfirmViewModel");
                 userType.AddMemberName("GraphsViewModel");
@@ -1050,6 +1074,8 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 userType.AddMemberName("GraphsDetailsViewModel");
                 userType.AddMemberName("CategoryDetailViewModel");
                 userType.AddMemberName("CategoryViewModel");
+                userType.AddMemberName("BugetViewModel");
+                userType.AddMemberName("BugetDetailsViewModel");
                 userType.AddMemberName("AddNewCategoryViewModel");
                 userType.AddMemberName("NavigationService");
                 userType.AddMemberName("DialogService");
@@ -1089,209 +1115,237 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 7:   //  MoneyKepper_Core.ViewModel.IControlSplitViewModel
+            case 7:   //  MoneyKepper_Core.ViewModel.IAddBugetViewModel
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 8:   //  MoneyKepper_Core.ViewModel.IConfirmViewModel
+            case 8:   //  MoneyKepper_Core.ViewModel.IControlSplitViewModel
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 9:   //  MoneyKepper_Core.ViewModel.IGraphsViewModel
+            case 9:   //  MoneyKepper_Core.ViewModel.IConfirmViewModel
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 10:   //  MoneyKepper_Core.ViewModel.IHistoryViewModel
+            case 10:   //  MoneyKepper_Core.ViewModel.IGraphsViewModel
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 11:   //  MoneyKepper_Core.ViewModel.IReportViewModel
+            case 11:   //  MoneyKepper_Core.ViewModel.IHistoryViewModel
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 12:   //  MoneyKepper_Core.ViewModel.IReportDetailsVewModel
+            case 12:   //  MoneyKepper_Core.ViewModel.IReportViewModel
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 13:   //  MoneyKepper_Core.ViewModel.ITransactionsDetailsViewModel
+            case 13:   //  MoneyKepper_Core.ViewModel.IReportDetailsVewModel
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 14:   //  MoneyKepper_Core.ViewModel.IControlPanelViewModel
+            case 14:   //  MoneyKepper_Core.ViewModel.ITransactionsDetailsViewModel
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 15:   //  MoneyKepper_Core.ViewModel.IPrimaryPanelViewModel
+            case 15:   //  MoneyKepper_Core.ViewModel.IControlPanelViewModel
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 16:   //  MoneyKepper_Core.ViewModel.ITransactionsViewModel
+            case 16:   //  MoneyKepper_Core.ViewModel.IPrimaryPanelViewModel
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 17:   //  MoneyKepper_Core.ViewModel.IDetailsViewModel
+            case 17:   //  MoneyKepper_Core.ViewModel.ITransactionsViewModel
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 18:   //  MoneyKepper_Core.ViewModel.IHistoryDetailsViewModel
+            case 18:   //  MoneyKepper_Core.ViewModel.IDetailsViewModel
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 19:   //  MoneyKepper_Core.ViewModel.IGraphsDetailsViewModel
+            case 19:   //  MoneyKepper_Core.ViewModel.IHistoryDetailsViewModel
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 20:   //  MoneyKepper_Core.ViewModel.ICategoryDetailViewModel
+            case 20:   //  MoneyKepper_Core.ViewModel.IGraphsDetailsViewModel
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 21:   //  MoneyKepper_Core.ViewModel.ICategoryViewModel
+            case 21:   //  MoneyKepper_Core.ViewModel.ICategoryDetailViewModel
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 22:   //  MoneyKepper_Core.ViewModel.IAddNewCategoryViewModel
+            case 22:   //  MoneyKepper_Core.ViewModel.ICategoryViewModel
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 23:   //  MoneyKepperCore.Service.INavigationService
+            case 23:   //  MoneyKepper_Core.ViewModel.IBugetViewModel
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 24:   //  MoneyKepper_Core.Services.IDialogService
+            case 24:   //  MoneyKepper_Core.ViewModel.IBugetDetailsViewModel
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 25:   //  MoneyKepper2.Converters.BooleanToVisibilityConverter
+            case 25:   //  MoneyKepper_Core.ViewModel.IAddNewCategoryViewModel
+                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 26:   //  MoneyKepperCore.Service.INavigationService
+                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 27:   //  MoneyKepper_Core.Services.IDialogService
+                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 28:   //  MoneyKepper2.Converters.BooleanToVisibilityConverter
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_25_BooleanToVisibilityConverter;
+                userType.Activator = Activate_28_BooleanToVisibilityConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 26:   //  MoneyKepper2.Converters.DateConverter
+            case 29:   //  MoneyKepper2.Converters.DateConverter
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_26_DateConverter;
+                userType.Activator = Activate_29_DateConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 27:   //  MoneyKepper2.Converters.TransactionTypeToStringConverter
+            case 30:   //  MoneyKepper2.Converters.TransactionTypeToStringConverter
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_27_TransactionTypeToStringConverter;
+                userType.Activator = Activate_30_TransactionTypeToStringConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 28:   //  MoneyKepper2.Converters.TransactionTypeToColorConverter
+            case 31:   //  MoneyKepper2.Converters.TransactionTypeToColorConverter
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_28_TransactionTypeToColorConverter;
+                userType.Activator = Activate_31_TransactionTypeToColorConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 29:   //  MoneyKepper2.Converters.GraphsTypeToGraphStringConverter
+            case 32:   //  MoneyKepper2.Converters.GraphsTypeToGraphStringConverter
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_29_GraphsTypeToGraphStringConverter;
+                userType.Activator = Activate_32_GraphsTypeToGraphStringConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 30:   //  MoneyKepper2.Converters.SelectionChangedConverter
+            case 33:   //  MoneyKepper2.Converters.SelectionChangedConverter
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_30_SelectionChangedConverter;
+                userType.Activator = Activate_33_SelectionChangedConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 31:   //  MoneyKepper2.Converters.PictureNameToPictureSourceConverter
+            case 34:   //  MoneyKepper2.Converters.PictureNameToPictureSourceConverter
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_31_PictureNameToPictureSourceConverter;
+                userType.Activator = Activate_34_PictureNameToPictureSourceConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 32:   //  MoneyKepper2.Converters.TypeIDToTypeNameConverter
+            case 35:   //  MoneyKepper2.Converters.TypeIDToTypeNameConverter
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_32_TypeIDToTypeNameConverter;
+                userType.Activator = Activate_35_TypeIDToTypeNameConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 33:   //  MoneyKepper2.Converters.InvertBooleanConverter
+            case 36:   //  MoneyKepper2.Converters.InvertBooleanConverter
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_33_InvertBooleanConverter;
+                userType.Activator = Activate_36_InvertBooleanConverter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 34:   //  MoneyKepper2.View.Views.ControlSplitView
+            case 37:   //  Windows.UI.Text.FontWeight
+                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                xamlType = userType;
+                break;
+
+            case 38:   //  System.ValueType
+                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case 39:   //  MoneyKepper2.View.Views.ControlSplitView
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_34_ControlSplitView;
+                userType.Activator = Activate_39_ControlSplitView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 35:   //  Windows.UI.Xaml.Controls.UserControl
+            case 40:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 36:   //  MoneyKepper2.View.Views.DetailsView
+            case 41:   //  MoneyKepper2.View.Views.DetailsView
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_36_DetailsView;
+                userType.Activator = Activate_41_DetailsView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 37:   //  MoneyKepper2.MainPage
+            case 42:   //  MoneyKepper2.MainPage
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_37_MainPage;
+                userType.Activator = Activate_42_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 38:   //  Windows.UI.Xaml.Controls.Page
+            case 43:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 39:   //  MoneyKepper2.Controls.ExpanderControl
+            case 44:   //  MoneyKepper2.Controls.ExpanderControl
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MoneyKepper2.Controls.HeaderedItemsControl"));
-                userType.Activator = Activate_39_ExpanderControl;
+                userType.Activator = Activate_44_ExpanderControl;
                 userType.AddMemberName("Expander");
                 userType.AddMemberName("ExpanderTemplate");
                 userType.AddMemberName("NonExpandableHeader");
@@ -1303,9 +1357,9 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 40:   //  MoneyKepper2.Controls.HeaderedItemsControl
+            case 45:   //  MoneyKepper2.Controls.HeaderedItemsControl
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ItemsControl"));
-                userType.Activator = Activate_40_HeaderedItemsControl;
+                userType.Activator = Activate_45_HeaderedItemsControl;
                 userType.AddMemberName("Header");
                 userType.AddMemberName("HeaderTemplate");
                 userType.AddMemberName("ItemContainerStyle");
@@ -1313,47 +1367,47 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 41:   //  Windows.UI.Xaml.Controls.ItemsControl
+            case 46:   //  Windows.UI.Xaml.Controls.ItemsControl
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 42:   //  Windows.UI.Xaml.DataTemplate
+            case 47:   //  Windows.UI.Xaml.DataTemplate
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 43:   //  Boolean
+            case 48:   //  Boolean
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 44:   //  Windows.UI.Xaml.Style
+            case 49:   //  Windows.UI.Xaml.Style
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 45:   //  MoneyKepper2.View.Dialogs.ContentDialogBase
+            case 50:   //  MoneyKepper2.View.Dialogs.ContentDialogBase
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentDialog"));
-                userType.Activator = Activate_45_ContentDialogBase;
+                userType.Activator = Activate_50_ContentDialogBase;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 46:   //  Windows.UI.Xaml.Controls.ContentDialog
+            case 51:   //  Windows.UI.Xaml.Controls.ContentDialog
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 47:   //  Windows.UI.Xaml.Controls.ContentControl
+            case 52:   //  Windows.UI.Xaml.Controls.ContentControl
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 48:   //  MoneyKepper2.View.Dialogs.AddNewCategoryDialog
+            case 53:   //  MoneyKepper2.View.Dialogs.AddNewCategoryDialog
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MoneyKepper2.View.Dialogs.ContentDialogBase"));
-                userType.Activator = Activate_48_AddNewCategoryDialog;
+                userType.Activator = Activate_53_AddNewCategoryDialog;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 49:   //  Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox
+            case 54:   //  Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt"));
-                userType.Activator = Activate_49_SfNumericTextBox;
+                userType.Activator = Activate_54_SfNumericTextBox;
                 userType.AddMemberName("Value");
                 userType.AddMemberName("ValueChangedMode");
                 userType.AddMemberName("FormatString");
@@ -1366,9 +1420,9 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 50:   //  Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt
+            case 55:   //  Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.TextBox"));
-                userType.Activator = Activate_50_SfTextBoxExt;
+                userType.Activator = Activate_55_SfTextBoxExt;
                 userType.AddMemberName("AllowPointerEvents");
                 userType.AddMemberName("AutoCompleteSource");
                 userType.AddMemberName("AutoCompleteItemTemplate");
@@ -1398,74 +1452,69 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 51:   //  Windows.UI.Xaml.Controls.TextBox
+            case 56:   //  Windows.UI.Xaml.Controls.TextBox
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 52:   //  Syncfusion.UI.Xaml.Controls.Input.ValueChange
+            case 57:   //  Syncfusion.UI.Xaml.Controls.Input.ValueChange
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("OnLostFocus", global::Syncfusion.UI.Xaml.Controls.Input.ValueChange.OnLostFocus);
                 userType.AddEnumValue("OnKeyFocus", global::Syncfusion.UI.Xaml.Controls.Input.ValueChange.OnKeyFocus);
                 xamlType = userType;
                 break;
 
-            case 53:   //  System.Enum
+            case 58:   //  System.Enum
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 xamlType = userType;
                 break;
 
-            case 54:   //  System.ValueType
-                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                xamlType = userType;
-                break;
-
-            case 55:   //  String
+            case 59:   //  String
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 56:   //  System.Globalization.CultureInfo
+            case 60:   //  System.Globalization.CultureInfo
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 57:   //  Syncfusion.UI.Xaml.Controls.Input.PercentDisplayMode
+            case 61:   //  Syncfusion.UI.Xaml.Controls.Input.PercentDisplayMode
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Value", global::Syncfusion.UI.Xaml.Controls.Input.PercentDisplayMode.Value);
                 userType.AddEnumValue("Compute", global::Syncfusion.UI.Xaml.Controls.Input.PercentDisplayMode.Compute);
                 xamlType = userType;
                 break;
 
-            case 58:   //  Int32
+            case 62:   //  Int32
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 59:   //  Syncfusion.UI.Xaml.Controls.Input.Parsers
+            case 63:   //  Syncfusion.UI.Xaml.Controls.Input.Parsers
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Double", global::Syncfusion.UI.Xaml.Controls.Input.Parsers.Double);
                 userType.AddEnumValue("Decimal", global::Syncfusion.UI.Xaml.Controls.Input.Parsers.Decimal);
                 xamlType = userType;
                 break;
 
-            case 60:   //  System.Collections.IEnumerable
+            case 64:   //  System.Collections.IEnumerable
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 61:   //  Windows.UI.Xaml.Controls.DataTemplateSelector
+            case 65:   //  Windows.UI.Xaml.Controls.DataTemplateSelector
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 62:   //  Windows.UI.Xaml.Controls.ItemsPanelTemplate
+            case 66:   //  Windows.UI.Xaml.Controls.ItemsPanelTemplate
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 63:   //  Windows.Foundation.Point
+            case 67:   //  Windows.Foundation.Point
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 64:   //  Syncfusion.UI.Xaml.Controls.Input.AutoCompleteMode
+            case 68:   //  Syncfusion.UI.Xaml.Controls.Input.AutoCompleteMode
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Syncfusion.UI.Xaml.Controls.Input.AutoCompleteMode.None);
                 userType.AddEnumValue("Append", global::Syncfusion.UI.Xaml.Controls.Input.AutoCompleteMode.Append);
@@ -1474,7 +1523,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 65:   //  Syncfusion.UI.Xaml.Controls.Input.SuggestionBoxPlacement
+            case 69:   //  Syncfusion.UI.Xaml.Controls.Input.SuggestionBoxPlacement
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Top", global::Syncfusion.UI.Xaml.Controls.Input.SuggestionBoxPlacement.Top);
                 userType.AddEnumValue("Bottom", global::Syncfusion.UI.Xaml.Controls.Input.SuggestionBoxPlacement.Bottom);
@@ -1482,7 +1531,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 66:   //  Syncfusion.UI.Xaml.Controls.Input.SuggestionMode
+            case 70:   //  Syncfusion.UI.Xaml.Controls.Input.SuggestionMode
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.None);
                 userType.AddEnumValue("StartsWith", global::Syncfusion.UI.Xaml.Controls.Input.SuggestionMode.StartsWith);
@@ -1501,55 +1550,55 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 67:   //  TimeSpan
+            case 71:   //  TimeSpan
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 68:   //  Double
+            case 72:   //  Double
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 69:   //  Microsoft.Xaml.Interactivity.Interaction
+            case 73:   //  Microsoft.Xaml.Interactivity.Interaction
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Behaviors");
                 xamlType = userType;
                 break;
 
-            case 70:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
+            case 74:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_70_BehaviorCollection;
+                userType.CollectionAdd = VectorAdd_74_BehaviorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 71:   //  Windows.UI.Xaml.DependencyObjectCollection
+            case 75:   //  Windows.UI.Xaml.DependencyObjectCollection
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 72:   //  Windows.UI.Xaml.DependencyObject
+            case 76:   //  Windows.UI.Xaml.DependencyObject
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 73:   //  MoneyKepper2.Behaviors.SetDateToDatePickerBehavior
+            case 77:   //  MoneyKepper2.Behaviors.SetDateToDatePickerBehavior
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_73_SetDateToDatePickerBehavior;
+                userType.Activator = Activate_77_SetDateToDatePickerBehavior;
                 userType.AddMemberName("Date");
                 userType.AddMemberName("AssociatedObject");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 74:   //  System.Nullable`1<System.DateTimeOffset>
+            case 78:   //  System.Nullable`1<System.DateTimeOffset>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 75:   //  MoneyKepper2.Behaviors.SetMinAndMaxDateBehavior
+            case 79:   //  MoneyKepper2.Behaviors.SetMinAndMaxDateBehavior
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_75_SetMinAndMaxDateBehavior;
+                userType.Activator = Activate_79_SetMinAndMaxDateBehavior;
                 userType.AddMemberName("EndTime");
                 userType.AddMemberName("StartTime");
                 userType.AddMemberName("AssociatedObject");
@@ -1557,62 +1606,149 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 76:   //  System.DateTime
+            case 80:   //  System.DateTime
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 77:   //  MoneyKepper2.View.Dialogs.AddTransactionDialog
+            case 81:   //  MoneyKepper2.View.Dialogs.AddTransactionDialog
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MoneyKepper2.View.Dialogs.ContentDialogBase"));
-                userType.Activator = Activate_77_AddTransactionDialog;
+                userType.Activator = Activate_81_AddTransactionDialog;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 78:   //  MoneyKepper2.View.Dialogs.ConfirmDialog
+            case 82:   //  MoneyKepper2.View.Dialogs.AddBugetDialog
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MoneyKepper2.View.Dialogs.ContentDialogBase"));
-                userType.Activator = Activate_78_ConfirmDialog;
+                userType.Activator = Activate_82_AddBugetDialog;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 79:   //  MoneyKepper2.View.Pages.PageBase
+            case 83:   //  MoneyKepper2.View.Dialogs.ConfirmDialog
+                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MoneyKepper2.View.Dialogs.ContentDialogBase"));
+                userType.Activator = Activate_83_ConfirmDialog;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 84:   //  MoneyKepper2.View.Pages.PageBase
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_79_PageBase;
+                userType.Activator = Activate_84_PageBase;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 80:   //  Windows.UI.Text.FontWeight
-                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+            case 85:   //  Microsoft.Xaml.Interactions.Core.DataTriggerBehavior
+                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_85_DataTriggerBehavior;
+                userType.SetContentPropertyName("Microsoft.Xaml.Interactions.Core.DataTriggerBehavior.Actions");
+                userType.AddMemberName("Actions");
+                userType.AddMemberName("Binding");
+                userType.AddMemberName("Value");
+                userType.AddMemberName("ComparisonCondition");
+                userType.AddMemberName("AssociatedObject");
                 xamlType = userType;
                 break;
 
-            case 81:   //  MoneyKepper2.View.Pages.CategoryDetailPage
+            case 86:   //  Microsoft.Xaml.Interactivity.ActionCollection
+                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
+                userType.CollectionAdd = VectorAdd_86_ActionCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 87:   //  Microsoft.Xaml.Interactions.Core.ComparisonConditionType
+                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Equal", global::Microsoft.Xaml.Interactions.Core.ComparisonConditionType.Equal);
+                userType.AddEnumValue("NotEqual", global::Microsoft.Xaml.Interactions.Core.ComparisonConditionType.NotEqual);
+                userType.AddEnumValue("LessThan", global::Microsoft.Xaml.Interactions.Core.ComparisonConditionType.LessThan);
+                userType.AddEnumValue("LessThanOrEqual", global::Microsoft.Xaml.Interactions.Core.ComparisonConditionType.LessThanOrEqual);
+                userType.AddEnumValue("GreaterThan", global::Microsoft.Xaml.Interactions.Core.ComparisonConditionType.GreaterThan);
+                userType.AddEnumValue("GreaterThanOrEqual", global::Microsoft.Xaml.Interactions.Core.ComparisonConditionType.GreaterThanOrEqual);
+                xamlType = userType;
+                break;
+
+            case 88:   //  Microsoft.Xaml.Interactions.Core.ChangePropertyAction
+                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_88_ChangePropertyAction;
+                userType.AddMemberName("PropertyName");
+                userType.AddMemberName("Value");
+                userType.AddMemberName("TargetObject");
+                xamlType = userType;
+                break;
+
+            case 89:   //  MoneyKepper2.View.Pages.BugetDetailsPage
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MoneyKepper2.View.Pages.PageBase"));
-                userType.Activator = Activate_81_CategoryDetailPage;
+                userType.Activator = Activate_89_BugetDetailsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 82:   //  MoneyKepper2.View.Pages.CategoryPage
+            case 90:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
+                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_90_EventTriggerBehavior;
+                userType.SetContentPropertyName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions");
+                userType.AddMemberName("Actions");
+                userType.AddMemberName("EventName");
+                userType.AddMemberName("SourceObject");
+                userType.AddMemberName("AssociatedObject");
+                xamlType = userType;
+                break;
+
+            case 91:   //  Microsoft.Xaml.Interactions.Core.InvokeCommandAction
+                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_91_InvokeCommandAction;
+                userType.AddMemberName("Command");
+                userType.AddMemberName("CommandParameter");
+                userType.AddMemberName("InputConverter");
+                userType.AddMemberName("InputConverterParameter");
+                userType.AddMemberName("InputConverterLanguage");
+                xamlType = userType;
+                break;
+
+            case 92:   //  System.Windows.Input.ICommand
+                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 93:   //  Windows.UI.Xaml.Data.IValueConverter
+                xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 94:   //  MoneyKepper2.View.Pages.BugetPage
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MoneyKepper2.View.Pages.PageBase"));
-                userType.Activator = Activate_82_CategoryPage;
+                userType.Activator = Activate_94_BugetPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 83:   //  MoneyKepper2.View.Pages.EmptyPage
+            case 95:   //  MoneyKepper2.View.Pages.CategoryDetailPage
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MoneyKepper2.View.Pages.PageBase"));
-                userType.Activator = Activate_83_EmptyPage;
+                userType.Activator = Activate_95_CategoryDetailPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 84:   //  Syncfusion.UI.Xaml.Charts.SfChart
+            case 96:   //  MoneyKepper2.View.Pages.CategoryPage
+                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MoneyKepper2.View.Pages.PageBase"));
+                userType.Activator = Activate_96_CategoryPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 97:   //  MoneyKepper2.View.Pages.EmptyPage
+                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MoneyKepper2.View.Pages.PageBase"));
+                userType.Activator = Activate_97_EmptyPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 98:   //  Syncfusion.UI.Xaml.Charts.SfChart
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartBase"));
-                userType.Activator = Activate_84_SfChart;
+                userType.Activator = Activate_98_SfChart;
                 userType.SetContentPropertyName("Syncfusion.UI.Xaml.Charts.SfChart.Series");
                 userType.AddMemberName("Series");
                 userType.AddMemberName("AreaBorderThickness");
@@ -1627,7 +1763,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 85:   //  Syncfusion.UI.Xaml.Charts.ChartBase
+            case 99:   //  Syncfusion.UI.Xaml.Charts.ChartBase
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
                 userType.AddMemberName("Header");
                 userType.AddMemberName("Legend");
@@ -1650,32 +1786,32 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 86:   //  Windows.UI.Xaml.Controls.Control
+            case 100:   //  Windows.UI.Xaml.Controls.Control
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 87:   //  Syncfusion.UI.Xaml.Charts.ChartSeriesCollection
+            case 101:   //  Syncfusion.UI.Xaml.Charts.ChartSeriesCollection
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartSeries>"));
-                userType.CollectionAdd = VectorAdd_87_ChartSeriesCollection;
+                userType.CollectionAdd = VectorAdd_101_ChartSeriesCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 88:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartSeries>
+            case 102:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartSeries>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartSeries>"));
-                userType.Activator = Activate_88_ObservableCollection;
-                userType.CollectionAdd = VectorAdd_88_ObservableCollection;
+                userType.Activator = Activate_102_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_102_ObservableCollection;
                 xamlType = userType;
                 break;
 
-            case 89:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartSeries>
+            case 103:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartSeries>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_89_Collection;
-                userType.CollectionAdd = VectorAdd_89_Collection;
+                userType.Activator = Activate_103_Collection;
+                userType.CollectionAdd = VectorAdd_103_Collection;
                 xamlType = userType;
                 break;
 
-            case 90:   //  Syncfusion.UI.Xaml.Charts.ChartSeries
+            case 104:   //  Syncfusion.UI.Xaml.Charts.ChartSeries
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase"));
                 userType.AddMemberName("Area");
                 userType.AddMemberName("Stroke");
@@ -1683,7 +1819,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 91:   //  Syncfusion.UI.Xaml.Charts.ChartSeriesBase
+            case 105:   //  Syncfusion.UI.Xaml.Charts.ChartSeriesBase
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
                 userType.AddMemberName("DataCount");
                 userType.AddMemberName("IsSortData");
@@ -1716,41 +1852,41 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 92:   //  Windows.UI.Xaml.Media.Brush
+            case 106:   //  Windows.UI.Xaml.Media.Brush
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 93:   //  Syncfusion.UI.Xaml.Charts.Direction
+            case 107:   //  Syncfusion.UI.Xaml.Charts.Direction
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Ascending", global::Syncfusion.UI.Xaml.Charts.Direction.Ascending);
                 userType.AddEnumValue("Descending", global::Syncfusion.UI.Xaml.Charts.Direction.Descending);
                 xamlType = userType;
                 break;
 
-            case 94:   //  Syncfusion.UI.Xaml.Charts.SortingAxis
+            case 108:   //  Syncfusion.UI.Xaml.Charts.SortingAxis
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("X", global::Syncfusion.UI.Xaml.Charts.SortingAxis.X);
                 userType.AddEnumValue("Y", global::Syncfusion.UI.Xaml.Charts.SortingAxis.Y);
                 xamlType = userType;
                 break;
 
-            case 95:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartAdornment>
+            case 109:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartAdornment>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartAdornment>"));
-                userType.CollectionAdd = VectorAdd_95_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_109_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 96:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartAdornment>
+            case 110:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartAdornment>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_96_Collection;
-                userType.CollectionAdd = VectorAdd_96_Collection;
+                userType.Activator = Activate_110_Collection;
+                userType.CollectionAdd = VectorAdd_110_Collection;
                 xamlType = userType;
                 break;
 
-            case 97:   //  Syncfusion.UI.Xaml.Charts.ChartAdornment
+            case 111:   //  Syncfusion.UI.Xaml.Charts.ChartAdornment
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSegment"));
-                userType.Activator = Activate_97_ChartAdornment;
+                userType.Activator = Activate_111_ChartAdornment;
                 userType.AddMemberName("Series");
                 userType.AddMemberName("Background");
                 userType.AddMemberName("BorderThickness");
@@ -1770,7 +1906,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 98:   //  Syncfusion.UI.Xaml.Charts.ChartSegment
+            case 112:   //  Syncfusion.UI.Xaml.Charts.ChartSegment
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.AddMemberName("XRange");
                 userType.AddMemberName("YRange");
@@ -1782,15 +1918,15 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 99:   //  Windows.UI.Xaml.Thickness
+            case 113:   //  Windows.UI.Xaml.Thickness
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 100:   //  Windows.UI.Xaml.Media.FontFamily
+            case 114:   //  Windows.UI.Xaml.Media.FontFamily
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 101:   //  Windows.UI.Text.FontStyle
+            case 115:   //  Windows.UI.Text.FontStyle
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Normal", global::Windows.UI.Text.FontStyle.Normal);
                 userType.AddEnumValue("Oblique", global::Windows.UI.Text.FontStyle.Oblique);
@@ -1798,17 +1934,17 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 102:   //  Syncfusion.UI.Xaml.Charts.DoubleRange
+            case 116:   //  Syncfusion.UI.Xaml.Charts.DoubleRange
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 103:   //  Windows.UI.Xaml.Media.DoubleCollection
+            case 117:   //  Windows.UI.Xaml.Media.DoubleCollection
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 104:   //  Syncfusion.UI.Xaml.Charts.ChartColorPalette
+            case 118:   //  Syncfusion.UI.Xaml.Charts.ChartColorPalette
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Syncfusion.UI.Xaml.Charts.ChartColorPalette.None);
                 userType.AddEnumValue("Metro", global::Syncfusion.UI.Xaml.Charts.ChartColorPalette.Metro);
@@ -1827,7 +1963,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 105:   //  Syncfusion.UI.Xaml.Charts.ChartLegendIcon
+            case 119:   //  Syncfusion.UI.Xaml.Charts.ChartLegendIcon
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Syncfusion.UI.Xaml.Charts.ChartLegendIcon.None);
                 userType.AddEnumValue("SeriesType", global::Syncfusion.UI.Xaml.Charts.ChartLegendIcon.SeriesType);
@@ -1842,25 +1978,25 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 106:   //  Windows.UI.Xaml.Visibility
+            case 120:   //  Windows.UI.Xaml.Visibility
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 107:   //  Syncfusion.UI.Xaml.Charts.ChartColorModel
+            case 121:   //  Syncfusion.UI.Xaml.Charts.ChartColorModel
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_107_ChartColorModel;
+                userType.Activator = Activate_121_ChartColorModel;
                 userType.AddMemberName("CustomBrushes");
                 xamlType = userType;
                 break;
 
-            case 108:   //  Syncfusion.UI.Xaml.Charts.EmptyPointValue
+            case 122:   //  Syncfusion.UI.Xaml.Charts.EmptyPointValue
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Zero", global::Syncfusion.UI.Xaml.Charts.EmptyPointValue.Zero);
                 userType.AddEnumValue("Average", global::Syncfusion.UI.Xaml.Charts.EmptyPointValue.Average);
                 xamlType = userType;
                 break;
 
-            case 109:   //  Syncfusion.UI.Xaml.Charts.EmptyPointStyle
+            case 123:   //  Syncfusion.UI.Xaml.Charts.EmptyPointStyle
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Interior", global::Syncfusion.UI.Xaml.Charts.EmptyPointStyle.Interior);
                 userType.AddEnumValue("Symbol", global::Syncfusion.UI.Xaml.Charts.EmptyPointStyle.Symbol);
@@ -1868,7 +2004,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 110:   //  Syncfusion.UI.Xaml.Charts.ChartAxisBase2D
+            case 124:   //  Syncfusion.UI.Xaml.Charts.ChartAxisBase2D
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis"));
                 userType.AddMemberName("ZoomPosition");
                 userType.AddMemberName("ZoomFactor");
@@ -1881,7 +2017,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 111:   //  Syncfusion.UI.Xaml.Charts.ChartAxis
+            case 125:   //  Syncfusion.UI.Xaml.Charts.ChartAxis
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
                 userType.AddMemberName("ActualPlotOffset");
                 userType.AddMemberName("MaximumLabels");
@@ -1934,7 +2070,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 112:   //  Syncfusion.UI.Xaml.Charts.RangeAxisBase
+            case 126:   //  Syncfusion.UI.Xaml.Charts.RangeAxisBase
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxisBase2D"));
                 userType.AddMemberName("IncludeAnnotationRange");
                 userType.AddMemberName("SmallTicksPerInterval");
@@ -1943,34 +2079,34 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 113:   //  Syncfusion.UI.Xaml.Charts.Watermark
+            case 127:   //  Syncfusion.UI.Xaml.Charts.Watermark
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ContentControl"));
-                userType.Activator = Activate_113_Watermark;
+                userType.Activator = Activate_127_Watermark;
                 xamlType = userType;
                 break;
 
-            case 114:   //  Syncfusion.UI.Xaml.Charts.ChartBehaviorsCollection
+            case 128:   //  Syncfusion.UI.Xaml.Charts.ChartBehaviorsCollection
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartBehavior>"));
-                userType.CollectionAdd = VectorAdd_114_ChartBehaviorsCollection;
+                userType.CollectionAdd = VectorAdd_128_ChartBehaviorsCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 115:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartBehavior>
+            case 129:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartBehavior>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartBehavior>"));
-                userType.Activator = Activate_115_ObservableCollection;
-                userType.CollectionAdd = VectorAdd_115_ObservableCollection;
+                userType.Activator = Activate_129_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_129_ObservableCollection;
                 xamlType = userType;
                 break;
 
-            case 116:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartBehavior>
+            case 130:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartBehavior>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_116_Collection;
-                userType.CollectionAdd = VectorAdd_116_Collection;
+                userType.Activator = Activate_130_Collection;
+                userType.CollectionAdd = VectorAdd_130_Collection;
                 xamlType = userType;
                 break;
 
-            case 117:   //  Syncfusion.UI.Xaml.Charts.ChartBehavior
+            case 131:   //  Syncfusion.UI.Xaml.Charts.ChartBehavior
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.AddMemberName("AdorningCanvas");
                 userType.AddMemberName("BottomAdorningCanvas");
@@ -1978,32 +2114,32 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 118:   //  Windows.UI.Xaml.Controls.Canvas
+            case 132:   //  Windows.UI.Xaml.Controls.Canvas
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 119:   //  Syncfusion.UI.Xaml.Charts.AnnotationCollection
+            case 133:   //  Syncfusion.UI.Xaml.Charts.AnnotationCollection
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.Annotation>"));
-                userType.CollectionAdd = VectorAdd_119_AnnotationCollection;
+                userType.CollectionAdd = VectorAdd_133_AnnotationCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 120:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.Annotation>
+            case 134:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.Annotation>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.Annotation>"));
-                userType.Activator = Activate_120_ObservableCollection;
-                userType.CollectionAdd = VectorAdd_120_ObservableCollection;
+                userType.Activator = Activate_134_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_134_ObservableCollection;
                 xamlType = userType;
                 break;
 
-            case 121:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.Annotation>
+            case 135:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.Annotation>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_121_Collection;
-                userType.CollectionAdd = VectorAdd_121_Collection;
+                userType.Activator = Activate_135_Collection;
+                userType.CollectionAdd = VectorAdd_135_Collection;
                 xamlType = userType;
                 break;
 
-            case 122:   //  Syncfusion.UI.Xaml.Charts.Annotation
+            case 136:   //  Syncfusion.UI.Xaml.Charts.Annotation
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.FrameworkElement"));
                 userType.AddMemberName("Text");
                 userType.AddMemberName("EnableEditing");
@@ -2028,11 +2164,11 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 123:   //  Windows.UI.Xaml.FrameworkElement
+            case 137:   //  Windows.UI.Xaml.FrameworkElement
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 124:   //  Syncfusion.UI.Xaml.Charts.ToolTipLabelPlacement
+            case 138:   //  Syncfusion.UI.Xaml.Charts.ToolTipLabelPlacement
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Left", global::Syncfusion.UI.Xaml.Charts.ToolTipLabelPlacement.Left);
                 userType.AddEnumValue("Right", global::Syncfusion.UI.Xaml.Charts.ToolTipLabelPlacement.Right);
@@ -2041,14 +2177,14 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 125:   //  Syncfusion.UI.Xaml.Charts.CoordinateUnit
+            case 139:   //  Syncfusion.UI.Xaml.Charts.CoordinateUnit
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Pixel", global::Syncfusion.UI.Xaml.Charts.CoordinateUnit.Pixel);
                 userType.AddEnumValue("Axis", global::Syncfusion.UI.Xaml.Charts.CoordinateUnit.Axis);
                 xamlType = userType;
                 break;
 
-            case 126:   //  Windows.UI.Text.FontStretch
+            case 140:   //  Windows.UI.Text.FontStretch
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Undefined", global::Windows.UI.Text.FontStretch.Undefined);
                 userType.AddEnumValue("UltraCondensed", global::Windows.UI.Text.FontStretch.UltraCondensed);
@@ -2063,55 +2199,55 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 127:   //  Windows.Foundation.Rect
+            case 141:   //  Windows.Foundation.Rect
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 128:   //  Syncfusion.UI.Xaml.Charts.ChartVisibleSeriesCollection
+            case 142:   //  Syncfusion.UI.Xaml.Charts.ChartVisibleSeriesCollection
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartSeriesBase>"));
-                userType.CollectionAdd = VectorAdd_128_ChartVisibleSeriesCollection;
+                userType.CollectionAdd = VectorAdd_142_ChartVisibleSeriesCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 129:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartSeriesBase>
+            case 143:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartSeriesBase>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartSeriesBase>"));
-                userType.Activator = Activate_129_ObservableCollection;
-                userType.CollectionAdd = VectorAdd_129_ObservableCollection;
+                userType.Activator = Activate_143_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_143_ObservableCollection;
                 xamlType = userType;
                 break;
 
-            case 130:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartSeriesBase>
+            case 144:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartSeriesBase>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_130_Collection;
-                userType.CollectionAdd = VectorAdd_130_Collection;
+                userType.Activator = Activate_144_Collection;
+                userType.CollectionAdd = VectorAdd_144_Collection;
                 xamlType = userType;
                 break;
 
-            case 131:   //  Syncfusion.UI.Xaml.Charts.ChartColumnDefinitions
+            case 145:   //  Syncfusion.UI.Xaml.Charts.ChartColumnDefinitions
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartColumnDefinition>"));
-                userType.CollectionAdd = VectorAdd_131_ChartColumnDefinitions;
+                userType.CollectionAdd = VectorAdd_145_ChartColumnDefinitions;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 132:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartColumnDefinition>
+            case 146:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartColumnDefinition>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartColumnDefinition>"));
-                userType.Activator = Activate_132_ObservableCollection;
-                userType.CollectionAdd = VectorAdd_132_ObservableCollection;
+                userType.Activator = Activate_146_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_146_ObservableCollection;
                 xamlType = userType;
                 break;
 
-            case 133:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartColumnDefinition>
+            case 147:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartColumnDefinition>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_133_Collection;
-                userType.CollectionAdd = VectorAdd_133_Collection;
+                userType.Activator = Activate_147_Collection;
+                userType.CollectionAdd = VectorAdd_147_Collection;
                 xamlType = userType;
                 break;
 
-            case 134:   //  Syncfusion.UI.Xaml.Charts.ChartColumnDefinition
+            case 148:   //  Syncfusion.UI.Xaml.Charts.ChartColumnDefinition
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_134_ChartColumnDefinition;
+                userType.Activator = Activate_148_ChartColumnDefinition;
                 userType.AddMemberName("Width");
                 userType.AddMemberName("Unit");
                 userType.AddMemberName("BorderThickness");
@@ -2119,37 +2255,37 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 135:   //  Syncfusion.UI.Xaml.Charts.ChartUnitType
+            case 149:   //  Syncfusion.UI.Xaml.Charts.ChartUnitType
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Star", global::Syncfusion.UI.Xaml.Charts.ChartUnitType.Star);
                 userType.AddEnumValue("Pixels", global::Syncfusion.UI.Xaml.Charts.ChartUnitType.Pixels);
                 xamlType = userType;
                 break;
 
-            case 136:   //  Syncfusion.UI.Xaml.Charts.ChartRowDefinitions
+            case 150:   //  Syncfusion.UI.Xaml.Charts.ChartRowDefinitions
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartRowDefinition>"));
-                userType.CollectionAdd = VectorAdd_136_ChartRowDefinitions;
+                userType.CollectionAdd = VectorAdd_150_ChartRowDefinitions;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 137:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartRowDefinition>
+            case 151:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartRowDefinition>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartRowDefinition>"));
-                userType.Activator = Activate_137_ObservableCollection;
-                userType.CollectionAdd = VectorAdd_137_ObservableCollection;
+                userType.Activator = Activate_151_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_151_ObservableCollection;
                 xamlType = userType;
                 break;
 
-            case 138:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartRowDefinition>
+            case 152:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartRowDefinition>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_138_Collection;
-                userType.CollectionAdd = VectorAdd_138_Collection;
+                userType.Activator = Activate_152_Collection;
+                userType.CollectionAdd = VectorAdd_152_Collection;
                 xamlType = userType;
                 break;
 
-            case 139:   //  Syncfusion.UI.Xaml.Charts.ChartRowDefinition
+            case 153:   //  Syncfusion.UI.Xaml.Charts.ChartRowDefinition
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_139_ChartRowDefinition;
+                userType.Activator = Activate_153_ChartRowDefinition;
                 userType.AddMemberName("RowTop");
                 userType.AddMemberName("Height");
                 userType.AddMemberName("Unit");
@@ -2158,42 +2294,42 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 140:   //  Syncfusion.UI.Xaml.Charts.ChartAxisCollection
+            case 154:   //  Syncfusion.UI.Xaml.Charts.ChartAxisCollection
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartAxis>"));
-                userType.CollectionAdd = VectorAdd_140_ChartAxisCollection;
+                userType.CollectionAdd = VectorAdd_154_ChartAxisCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 141:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartAxis>
+            case 155:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartAxis>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartAxis>"));
-                userType.Activator = Activate_141_ObservableCollection;
-                userType.CollectionAdd = VectorAdd_141_ObservableCollection;
+                userType.Activator = Activate_155_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_155_ObservableCollection;
                 xamlType = userType;
                 break;
 
-            case 142:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartAxis>
+            case 156:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartAxis>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_142_Collection;
-                userType.CollectionAdd = VectorAdd_142_Collection;
+                userType.Activator = Activate_156_Collection;
+                userType.CollectionAdd = VectorAdd_156_Collection;
                 xamlType = userType;
                 break;
 
-            case 143:   //  Syncfusion.UI.Xaml.Charts.AxisHeaderPosition
+            case 157:   //  Syncfusion.UI.Xaml.Charts.AxisHeaderPosition
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Near", global::Syncfusion.UI.Xaml.Charts.AxisHeaderPosition.Near);
                 userType.AddEnumValue("Far", global::Syncfusion.UI.Xaml.Charts.AxisHeaderPosition.Far);
                 xamlType = userType;
                 break;
 
-            case 144:   //  Syncfusion.UI.Xaml.Charts.AxisElementPosition
+            case 158:   //  Syncfusion.UI.Xaml.Charts.AxisElementPosition
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Inside", global::Syncfusion.UI.Xaml.Charts.AxisElementPosition.Inside);
                 userType.AddEnumValue("Outside", global::Syncfusion.UI.Xaml.Charts.AxisElementPosition.Outside);
                 xamlType = userType;
                 break;
 
-            case 145:   //  Syncfusion.UI.Xaml.Charts.AxisLabelsIntersectAction
+            case 159:   //  Syncfusion.UI.Xaml.Charts.AxisLabelsIntersectAction
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Syncfusion.UI.Xaml.Charts.AxisLabelsIntersectAction.None);
                 userType.AddEnumValue("MultipleRows", global::Syncfusion.UI.Xaml.Charts.AxisLabelsIntersectAction.MultipleRows);
@@ -2202,29 +2338,29 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 146:   //  Syncfusion.UI.Xaml.Charts.LabelStyle
+            case 160:   //  Syncfusion.UI.Xaml.Charts.LabelStyle
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 147:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartAxisLabel>
+            case 161:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartAxisLabel>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartAxisLabel>"));
-                userType.Activator = Activate_147_ObservableCollection;
-                userType.CollectionAdd = VectorAdd_147_ObservableCollection;
+                userType.Activator = Activate_161_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_161_ObservableCollection;
                 xamlType = userType;
                 break;
 
-            case 148:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartAxisLabel>
+            case 162:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartAxisLabel>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_148_Collection;
-                userType.CollectionAdd = VectorAdd_148_Collection;
+                userType.Activator = Activate_162_Collection;
+                userType.CollectionAdd = VectorAdd_162_Collection;
                 xamlType = userType;
                 break;
 
-            case 149:   //  Syncfusion.UI.Xaml.Charts.ChartAxisLabel
+            case 163:   //  Syncfusion.UI.Xaml.Charts.ChartAxisLabel
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_149_ChartAxisLabel;
+                userType.Activator = Activate_163_ChartAxisLabel;
                 userType.AddMemberName("LabelContent");
                 userType.AddMemberName("Position");
                 userType.AddMemberName("PrefixLabelTemplate");
@@ -2232,7 +2368,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 150:   //  Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode
+            case 164:   //  Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Center", global::Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode.Center);
                 userType.AddEnumValue("Shift", global::Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode.Shift);
@@ -2241,7 +2377,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 151:   //  Syncfusion.UI.Xaml.Charts.EdgeLabelsVisibilityMode
+            case 165:   //  Syncfusion.UI.Xaml.Charts.EdgeLabelsVisibilityMode
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Default", global::Syncfusion.UI.Xaml.Charts.EdgeLabelsVisibilityMode.Default);
                 userType.AddEnumValue("AlwaysVisible", global::Syncfusion.UI.Xaml.Charts.EdgeLabelsVisibilityMode.AlwaysVisible);
@@ -2249,28 +2385,28 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 152:   //  Syncfusion.UI.Xaml.Charts.ChartAxisLabelCollection
+            case 166:   //  Syncfusion.UI.Xaml.Charts.ChartAxisLabelCollection
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartAxisLabel>"));
-                userType.CollectionAdd = VectorAdd_152_ChartAxisLabelCollection;
+                userType.CollectionAdd = VectorAdd_166_ChartAxisLabelCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 153:   //  Windows.UI.Xaml.HorizontalAlignment
+            case 167:   //  Windows.UI.Xaml.HorizontalAlignment
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 154:   //  Windows.UI.Xaml.VerticalAlignment
+            case 168:   //  Windows.UI.Xaml.VerticalAlignment
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 155:   //  Windows.UI.Xaml.UIElement
+            case 169:   //  Windows.UI.Xaml.UIElement
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 156:   //  Syncfusion.UI.Xaml.Charts.ChartLegend
+            case 170:   //  Syncfusion.UI.Xaml.Charts.ChartLegend
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.ItemsControl"));
-                userType.Activator = Activate_156_ChartLegend;
+                userType.Activator = Activate_170_ChartLegend;
                 userType.AddMemberName("CornerRadius");
                 userType.AddMemberName("DockPosition");
                 userType.AddMemberName("Orientation");
@@ -2287,11 +2423,11 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 157:   //  Windows.UI.Xaml.CornerRadius
+            case 171:   //  Windows.UI.Xaml.CornerRadius
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 158:   //  Syncfusion.UI.Xaml.Charts.ChartDock
+            case 172:   //  Syncfusion.UI.Xaml.Charts.ChartDock
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Left", global::Syncfusion.UI.Xaml.Charts.ChartDock.Left);
                 userType.AddEnumValue("Top", global::Syncfusion.UI.Xaml.Charts.ChartDock.Top);
@@ -2301,7 +2437,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 159:   //  Syncfusion.UI.Xaml.Charts.ChartOrientation
+            case 173:   //  Syncfusion.UI.Xaml.Charts.ChartOrientation
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Default", global::Syncfusion.UI.Xaml.Charts.ChartOrientation.Default);
                 userType.AddEnumValue("Horizontal", global::Syncfusion.UI.Xaml.Charts.ChartOrientation.Horizontal);
@@ -2309,22 +2445,22 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 160:   //  Syncfusion.UI.Xaml.Charts.LegendPosition
+            case 174:   //  Syncfusion.UI.Xaml.Charts.LegendPosition
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Inside", global::Syncfusion.UI.Xaml.Charts.LegendPosition.Inside);
                 userType.AddEnumValue("Outside", global::Syncfusion.UI.Xaml.Charts.LegendPosition.Outside);
                 xamlType = userType;
                 break;
 
-            case 161:   //  Syncfusion.UI.Xaml.Charts.PieSeries
+            case 175:   //  Syncfusion.UI.Xaml.Charts.PieSeries
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.CircularSeriesBase"));
-                userType.Activator = Activate_161_PieSeries;
+                userType.Activator = Activate_175_PieSeries;
                 userType.AddMemberName("Segment");
                 userType.AddMemberName("PieCoefficient");
                 xamlType = userType;
                 break;
 
-            case 162:   //  Syncfusion.UI.Xaml.Charts.CircularSeriesBase
+            case 176:   //  Syncfusion.UI.Xaml.Charts.CircularSeriesBase
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase"));
                 userType.AddMemberName("ExplodeRadius");
                 userType.AddMemberName("EnableSmartLabels");
@@ -2335,7 +2471,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 163:   //  Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase
+            case 177:   //  Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.AdornmentSeries"));
                 userType.AddMemberName("ExplodeOnMouseClick");
                 userType.AddMemberName("YBindingPath");
@@ -2346,13 +2482,13 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 164:   //  Syncfusion.UI.Xaml.Charts.AdornmentSeries
+            case 178:   //  Syncfusion.UI.Xaml.Charts.AdornmentSeries
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeries"));
                 userType.AddMemberName("AdornmentsInfo");
                 xamlType = userType;
                 break;
 
-            case 165:   //  Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition
+            case 179:   //  Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Inside", global::Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.Inside);
                 userType.AddEnumValue("Outside", global::Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition.Outside);
@@ -2360,13 +2496,13 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 166:   //  Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo
+            case 180:   //  Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase"));
-                userType.Activator = Activate_166_ChartAdornmentInfo;
+                userType.Activator = Activate_180_ChartAdornmentInfo;
                 xamlType = userType;
                 break;
 
-            case 167:   //  Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase
+            case 181:   //  Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.AddMemberName("ShowLabel");
                 userType.AddMemberName("SegmentLabelFormat");
@@ -2402,66 +2538,27 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 168:   //  Syncfusion.UI.Xaml.Charts.PieSegment
+            case 182:   //  Syncfusion.UI.Xaml.Charts.PieSegment
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSegment"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 169:   //  Syncfusion.UI.Xaml.Charts.ConnectorMode
+            case 183:   //  Syncfusion.UI.Xaml.Charts.ConnectorMode
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Bezier", global::Syncfusion.UI.Xaml.Charts.ConnectorMode.Bezier);
                 userType.AddEnumValue("Line", global::Syncfusion.UI.Xaml.Charts.ConnectorMode.Line);
                 xamlType = userType;
                 break;
 
-            case 170:   //  System.Collections.Generic.List`1<Windows.UI.Xaml.Media.Brush>
+            case 184:   //  System.Collections.Generic.List`1<Windows.UI.Xaml.Media.Brush>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.CollectionAdd = VectorAdd_170_List;
+                userType.CollectionAdd = VectorAdd_184_List;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 171:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
-                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_171_EventTriggerBehavior;
-                userType.SetContentPropertyName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions");
-                userType.AddMemberName("Actions");
-                userType.AddMemberName("EventName");
-                userType.AddMemberName("SourceObject");
-                userType.AddMemberName("AssociatedObject");
-                xamlType = userType;
-                break;
-
-            case 172:   //  Microsoft.Xaml.Interactivity.ActionCollection
-                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_172_ActionCollection;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 173:   //  Microsoft.Xaml.Interactions.Core.InvokeCommandAction
-                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_173_InvokeCommandAction;
-                userType.AddMemberName("Command");
-                userType.AddMemberName("CommandParameter");
-                userType.AddMemberName("InputConverter");
-                userType.AddMemberName("InputConverterParameter");
-                userType.AddMemberName("InputConverterLanguage");
-                xamlType = userType;
-                break;
-
-            case 174:   //  System.Windows.Input.ICommand
-                userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 175:   //  Windows.UI.Xaml.Data.IValueConverter
-                xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 176:   //  Syncfusion.UI.Xaml.Charts.LabelContent
+            case 185:   //  Syncfusion.UI.Xaml.Charts.LabelContent
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("XValue", global::Syncfusion.UI.Xaml.Charts.LabelContent.XValue);
                 userType.AddEnumValue("YValue", global::Syncfusion.UI.Xaml.Charts.LabelContent.YValue);
@@ -2472,7 +2569,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 177:   //  Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition
+            case 186:   //  Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Default", global::Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.Default);
                 userType.AddEnumValue("Auto", global::Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition.Auto);
@@ -2482,7 +2579,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 178:   //  Syncfusion.UI.Xaml.Charts.ChartSymbol
+            case 187:   //  Syncfusion.UI.Xaml.Charts.ChartSymbol
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Custom", global::Syncfusion.UI.Xaml.Charts.ChartSymbol.Custom);
                 userType.AddEnumValue("Ellipse", global::Syncfusion.UI.Xaml.Charts.ChartSymbol.Ellipse);
@@ -2499,7 +2596,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 179:   //  Syncfusion.UI.Xaml.Charts.AdornmentsPosition
+            case 188:   //  Syncfusion.UI.Xaml.Charts.AdornmentsPosition
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Top", global::Syncfusion.UI.Xaml.Charts.AdornmentsPosition.Top);
                 userType.AddEnumValue("Bottom", global::Syncfusion.UI.Xaml.Charts.AdornmentsPosition.Bottom);
@@ -2507,23 +2604,23 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 180:   //  MoneyKepper2.View.Pages.GraphsDetailsPage
+            case 189:   //  MoneyKepper2.View.Pages.GraphsDetailsPage
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MoneyKepper2.View.Pages.PageBase"));
-                userType.Activator = Activate_180_GraphsDetailsPage;
+                userType.Activator = Activate_189_GraphsDetailsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 181:   //  MoneyKepper2.View.Pages.GraphsPage
+            case 190:   //  MoneyKepper2.View.Pages.GraphsPage
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MoneyKepper2.View.Pages.PageBase"));
-                userType.Activator = Activate_181_GraphsPage;
+                userType.Activator = Activate_190_GraphsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 182:   //  Syncfusion.UI.Xaml.Charts.CategoryAxis
+            case 191:   //  Syncfusion.UI.Xaml.Charts.CategoryAxis
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxisBase2D"));
-                userType.Activator = Activate_182_CategoryAxis;
+                userType.Activator = Activate_191_CategoryAxis;
                 userType.AddMemberName("Interval");
                 userType.AddMemberName("LabelPlacement");
                 userType.AddMemberName("IsIndexed");
@@ -2531,14 +2628,14 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 183:   //  Syncfusion.UI.Xaml.Charts.LabelPlacement
+            case 192:   //  Syncfusion.UI.Xaml.Charts.LabelPlacement
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("OnTicks", global::Syncfusion.UI.Xaml.Charts.LabelPlacement.OnTicks);
                 userType.AddEnumValue("BetweenTicks", global::Syncfusion.UI.Xaml.Charts.LabelPlacement.BetweenTicks);
                 xamlType = userType;
                 break;
 
-            case 184:   //  Syncfusion.UI.Xaml.Charts.AggregateFunctions
+            case 193:   //  Syncfusion.UI.Xaml.Charts.AggregateFunctions
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Average", global::Syncfusion.UI.Xaml.Charts.AggregateFunctions.Average);
                 userType.AddEnumValue("Count", global::Syncfusion.UI.Xaml.Charts.AggregateFunctions.Count);
@@ -2549,30 +2646,30 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 185:   //  Syncfusion.UI.Xaml.Charts.ChartStripLines
+            case 194:   //  Syncfusion.UI.Xaml.Charts.ChartStripLines
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartStripLine>"));
-                userType.CollectionAdd = VectorAdd_185_ChartStripLines;
+                userType.CollectionAdd = VectorAdd_194_ChartStripLines;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 186:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartStripLine>
+            case 195:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartStripLine>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartStripLine>"));
-                userType.Activator = Activate_186_ObservableCollection;
-                userType.CollectionAdd = VectorAdd_186_ObservableCollection;
+                userType.Activator = Activate_195_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_195_ObservableCollection;
                 xamlType = userType;
                 break;
 
-            case 187:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartStripLine>
+            case 196:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.ChartStripLine>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_187_Collection;
-                userType.CollectionAdd = VectorAdd_187_Collection;
+                userType.Activator = Activate_196_Collection;
+                userType.CollectionAdd = VectorAdd_196_Collection;
                 xamlType = userType;
                 break;
 
-            case 188:   //  Syncfusion.UI.Xaml.Charts.ChartStripLine
+            case 197:   //  Syncfusion.UI.Xaml.Charts.ChartStripLine
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.FrameworkElement"));
-                userType.Activator = Activate_188_ChartStripLine;
+                userType.Activator = Activate_197_ChartStripLine;
                 userType.AddMemberName("Start");
                 userType.AddMemberName("Background");
                 userType.AddMemberName("BorderBrush");
@@ -2593,9 +2690,9 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 189:   //  Syncfusion.UI.Xaml.Charts.NumericalAxis
+            case 198:   //  Syncfusion.UI.Xaml.Charts.NumericalAxis
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.RangeAxisBase"));
-                userType.Activator = Activate_189_NumericalAxis;
+                userType.Activator = Activate_198_NumericalAxis;
                 userType.AddMemberName("Interval");
                 userType.AddMemberName("Minimum");
                 userType.AddMemberName("Maximum");
@@ -2604,7 +2701,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 190:   //  Syncfusion.UI.Xaml.Charts.NumericalPadding
+            case 199:   //  Syncfusion.UI.Xaml.Charts.NumericalPadding
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Auto", global::Syncfusion.UI.Xaml.Charts.NumericalPadding.Auto);
                 userType.AddEnumValue("None", global::Syncfusion.UI.Xaml.Charts.NumericalPadding.None);
@@ -2614,9 +2711,9 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 191:   //  Syncfusion.UI.Xaml.Charts.ColumnSeries
+            case 200:   //  Syncfusion.UI.Xaml.Charts.ColumnSeries
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase"));
-                userType.Activator = Activate_191_ColumnSeries;
+                userType.Activator = Activate_200_ColumnSeries;
                 userType.AddMemberName("SegmentSelectionBrush");
                 userType.AddMemberName("SelectedIndex");
                 userType.AddMemberName("SegmentSpacing");
@@ -2624,7 +2721,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 192:   //  Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase
+            case 201:   //  Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.XyDataSeries"));
                 userType.AddMemberName("EnableDragTooltip");
                 userType.AddMemberName("DragTooltipTemplate");
@@ -2636,13 +2733,13 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 193:   //  Syncfusion.UI.Xaml.Charts.XyDataSeries
+            case 202:   //  Syncfusion.UI.Xaml.Charts.XyDataSeries
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.CartesianSeries"));
                 userType.AddMemberName("YBindingPath");
                 xamlType = userType;
                 break;
 
-            case 194:   //  Syncfusion.UI.Xaml.Charts.CartesianSeries
+            case 203:   //  Syncfusion.UI.Xaml.Charts.CartesianSeries
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.AdornmentSeries"));
                 userType.AddMemberName("Trendlines");
                 userType.AddMemberName("XRange");
@@ -2653,7 +2750,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 195:   //  Syncfusion.UI.Xaml.Charts.SnapToPoint
+            case 204:   //  Syncfusion.UI.Xaml.Charts.SnapToPoint
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Syncfusion.UI.Xaml.Charts.SnapToPoint.None);
                 userType.AddEnumValue("Round", global::Syncfusion.UI.Xaml.Charts.SnapToPoint.Round);
@@ -2662,7 +2759,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 196:   //  Windows.System.VirtualKeyModifiers
+            case 205:   //  Windows.System.VirtualKeyModifiers
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Windows.System.VirtualKeyModifiers.None);
                 userType.AddEnumValue("Control", global::Windows.System.VirtualKeyModifiers.Control);
@@ -2672,34 +2769,34 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 197:   //  Syncfusion.UI.Xaml.Charts.ChartTrendLineCollection
+            case 206:   //  Syncfusion.UI.Xaml.Charts.ChartTrendLineCollection
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.Trendline>"));
-                userType.CollectionAdd = VectorAdd_197_ChartTrendLineCollection;
+                userType.CollectionAdd = VectorAdd_206_ChartTrendLineCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 198:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.Trendline>
+            case 207:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.Trendline>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.Trendline>"));
-                userType.Activator = Activate_198_ObservableCollection;
-                userType.CollectionAdd = VectorAdd_198_ObservableCollection;
+                userType.Activator = Activate_207_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_207_ObservableCollection;
                 xamlType = userType;
                 break;
 
-            case 199:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.Trendline>
+            case 208:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.UI.Xaml.Charts.Trendline>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_199_Collection;
-                userType.CollectionAdd = VectorAdd_199_Collection;
+                userType.Activator = Activate_208_Collection;
+                userType.CollectionAdd = VectorAdd_208_Collection;
                 xamlType = userType;
                 break;
 
-            case 200:   //  Syncfusion.UI.Xaml.Charts.Trendline
+            case 209:   //  Syncfusion.UI.Xaml.Charts.Trendline
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.TrendlineBase"));
-                userType.Activator = Activate_200_Trendline;
+                userType.Activator = Activate_209_Trendline;
                 xamlType = userType;
                 break;
 
-            case 201:   //  Syncfusion.UI.Xaml.Charts.TrendlineBase
+            case 210:   //  Syncfusion.UI.Xaml.Charts.TrendlineBase
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
                 userType.AddMemberName("Slope");
                 userType.AddMemberName("Intercept");
@@ -2719,18 +2816,18 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 202:   //  Double[]
+            case 211:   //  Double[]
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Array"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 203:   //  System.Array
+            case 212:   //  System.Array
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
-            case 204:   //  Syncfusion.UI.Xaml.Charts.TrendlineType
+            case 213:   //  Syncfusion.UI.Xaml.Charts.TrendlineType
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Linear", global::Syncfusion.UI.Xaml.Charts.TrendlineType.Linear);
                 userType.AddEnumValue("Exponential", global::Syncfusion.UI.Xaml.Charts.TrendlineType.Exponential);
@@ -2740,9 +2837,9 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 205:   //  Syncfusion.UI.Xaml.PivotChart.SfPivotChart
+            case 214:   //  Syncfusion.UI.Xaml.PivotChart.SfPivotChart
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"));
-                userType.Activator = Activate_205_SfPivotChart;
+                userType.Activator = Activate_214_SfPivotChart;
                 userType.AddMemberName("ShowToolTip");
                 userType.AddMemberName("ItemSource");
                 userType.AddMemberName("PivotAxis");
@@ -2768,23 +2865,23 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 206:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.PivotAnalysis.UWP.PivotItem>
+            case 215:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.PivotAnalysis.UWP.PivotItem>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Syncfusion.PivotAnalysis.UWP.PivotItem>"));
-                userType.CollectionAdd = VectorAdd_206_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_215_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 207:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.PivotAnalysis.UWP.PivotItem>
+            case 216:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.PivotAnalysis.UWP.PivotItem>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_207_Collection;
-                userType.CollectionAdd = VectorAdd_207_Collection;
+                userType.Activator = Activate_216_Collection;
+                userType.CollectionAdd = VectorAdd_216_Collection;
                 xamlType = userType;
                 break;
 
-            case 208:   //  Syncfusion.PivotAnalysis.UWP.PivotItem
+            case 217:   //  Syncfusion.PivotAnalysis.UWP.PivotItem
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_208_PivotItem;
+                userType.Activator = Activate_217_PivotItem;
                 userType.AddMemberName("FieldCaption");
                 userType.AddMemberName("FieldMappingName");
                 userType.AddMemberName("TotalHeader");
@@ -2803,7 +2900,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 209:   //  Syncfusion.PivotAnalysis.UWP.SummaryType
+            case 218:   //  Syncfusion.PivotAnalysis.UWP.SummaryType
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("DoubleTotalSum", global::Syncfusion.PivotAnalysis.UWP.SummaryType.DoubleTotalSum);
                 userType.AddEnumValue("DoubleAverage", global::Syncfusion.PivotAnalysis.UWP.SummaryType.DoubleAverage);
@@ -2828,48 +2925,48 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 210:   //  Syncfusion.PivotAnalysis.UWP.SummaryBase
+            case 219:   //  Syncfusion.PivotAnalysis.UWP.SummaryBase
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 211:   //  Syncfusion.Data.ListSortDirection
+            case 220:   //  Syncfusion.Data.ListSortDirection
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Ascending", global::Syncfusion.Data.ListSortDirection.Ascending);
                 userType.AddEnumValue("Descending", global::Syncfusion.Data.ListSortDirection.Descending);
                 xamlType = userType;
                 break;
 
-            case 212:   //  System.Collections.IComparer
+            case 221:   //  System.Collections.IComparer
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 213:   //  Syncfusion.UI.Xaml.PivotChart.PivotChartLegend
+            case 222:   //  Syncfusion.UI.Xaml.PivotChart.PivotChartLegend
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartLegend"));
-                userType.Activator = Activate_213_PivotChartLegend;
+                userType.Activator = Activate_222_PivotChartLegend;
                 xamlType = userType;
                 break;
 
-            case 214:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.PivotAnalysis.UWP.PivotComputationInfo>
+            case 223:   //  System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.PivotAnalysis.UWP.PivotComputationInfo>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Syncfusion.PivotAnalysis.UWP.PivotComputationInfo>"));
-                userType.CollectionAdd = VectorAdd_214_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_223_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 215:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.PivotAnalysis.UWP.PivotComputationInfo>
+            case 224:   //  System.Collections.ObjectModel.Collection`1<Syncfusion.PivotAnalysis.UWP.PivotComputationInfo>
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_215_Collection;
-                userType.CollectionAdd = VectorAdd_215_Collection;
+                userType.Activator = Activate_224_Collection;
+                userType.CollectionAdd = VectorAdd_224_Collection;
                 xamlType = userType;
                 break;
 
-            case 216:   //  Syncfusion.PivotAnalysis.UWP.PivotComputationInfo
+            case 225:   //  Syncfusion.PivotAnalysis.UWP.PivotComputationInfo
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_216_PivotComputationInfo;
+                userType.Activator = Activate_225_PivotComputationInfo;
                 userType.AddMemberName("FieldHeader");
                 userType.AddMemberName("FieldCaption");
                 userType.AddMemberName("FieldName");
@@ -2896,14 +2993,14 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 217:   //  Syncfusion.PivotAnalysis.UWP.SummaryDisplayLevel
+            case 226:   //  Syncfusion.PivotAnalysis.UWP.SummaryDisplayLevel
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("All", global::Syncfusion.PivotAnalysis.UWP.SummaryDisplayLevel.All);
                 userType.AddEnumValue("InnerMostOnly", global::Syncfusion.PivotAnalysis.UWP.SummaryDisplayLevel.InnerMostOnly);
                 xamlType = userType;
                 break;
 
-            case 218:   //  Syncfusion.PivotAnalysis.UWP.DisplayOption
+            case 227:   //  Syncfusion.PivotAnalysis.UWP.DisplayOption
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Syncfusion.PivotAnalysis.UWP.DisplayOption.None);
                 userType.AddEnumValue("Calculations", global::Syncfusion.PivotAnalysis.UWP.DisplayOption.Calculations);
@@ -2913,7 +3010,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 219:   //  Syncfusion.PivotAnalysis.UWP.CalculationType
+            case 228:   //  Syncfusion.PivotAnalysis.UWP.CalculationType
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("NoCalculation", global::Syncfusion.PivotAnalysis.UWP.CalculationType.NoCalculation);
                 userType.AddEnumValue("PercentageOfGrandTotal", global::Syncfusion.PivotAnalysis.UWP.CalculationType.PercentageOfGrandTotal);
@@ -2934,19 +3031,19 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 220:   //  Syncfusion.PivotAnalysis.UWP.FilterExpression
+            case 229:   //  Syncfusion.PivotAnalysis.UWP.FilterExpression
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 221:   //  Syncfusion.Olap.UWP.Manager.OlapDataManager
+            case 230:   //  Syncfusion.Olap.UWP.Manager.OlapDataManager
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 222:   //  Syncfusion.UI.Xaml.PivotChart.PivotChartType
+            case 231:   //  Syncfusion.UI.Xaml.PivotChart.PivotChartType
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Column", global::Syncfusion.UI.Xaml.PivotChart.PivotChartType.Column);
                 userType.AddEnumValue("StackingColumn", global::Syncfusion.UI.Xaml.PivotChart.PivotChartType.StackingColumn);
@@ -2966,7 +3063,7 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 223:   //  Syncfusion.UI.Xaml.PivotChart.PivotChartColorPalette
+            case 232:   //  Syncfusion.UI.Xaml.PivotChart.PivotChartColorPalette
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("None", global::Syncfusion.UI.Xaml.PivotChart.PivotChartColorPalette.None);
                 userType.AddEnumValue("Metro", global::Syncfusion.UI.Xaml.PivotChart.PivotChartColorPalette.Metro);
@@ -2985,13 +3082,13 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 224:   //  Syncfusion.UI.Xaml.PivotChart.PivotChartAxisStyle
+            case 233:   //  Syncfusion.UI.Xaml.PivotChart.PivotChartAxisStyle
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 225:   //  Syncfusion.UI.Xaml.PivotChart.PivotChartVisualStyle
+            case 234:   //  Syncfusion.UI.Xaml.PivotChart.PivotChartVisualStyle
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Blend", global::Syncfusion.UI.Xaml.PivotChart.PivotChartVisualStyle.Blend);
                 userType.AddEnumValue("Lime", global::Syncfusion.UI.Xaml.PivotChart.PivotChartVisualStyle.Lime);
@@ -3012,53 +3109,54 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 226:   //  Syncfusion.UI.Xaml.PivotChart.PivotChartWatermark
+            case 235:   //  Syncfusion.UI.Xaml.PivotChart.PivotChartWatermark
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.Watermark"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 227:   //  Syncfusion.UI.Xaml.PivotChart.PivotChartZoomPanBehavior
+            case 236:   //  Syncfusion.UI.Xaml.PivotChart.PivotChartZoomPanBehavior
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 228:   //  Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior
+            case 237:   //  Syncfusion.UI.Xaml.Charts.ChartZoomPanBehavior
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartBehavior"));
-                userType.Activator = Activate_228_ChartZoomPanBehavior;
+                userType.Activator = Activate_237_ChartZoomPanBehavior;
                 xamlType = userType;
                 break;
 
-            case 229:   //  Syncfusion.UI.Xaml.PivotChart.PivotChartAxis
+            case 238:   //  Syncfusion.UI.Xaml.PivotChart.PivotChartAxis
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.NumericalAxis"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 230:   //  Syncfusion.Olap.UWP.Reports.OlapReport
+            case 239:   //  Syncfusion.Olap.UWP.Reports.OlapReport
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 231:   //  MoneyKepper2.View.Pages.HistoryDetailsPage
+            case 240:   //  MoneyKepper2.View.Pages.HistoryDetailsPage
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MoneyKepper2.View.Pages.PageBase"));
-                userType.Activator = Activate_231_HistoryDetailsPage;
+                userType.Activator = Activate_240_HistoryDetailsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 232:   //  MoneyKepper2.View.Pages.ReportPage
+            case 241:   //  MoneyKepper2.View.Pages.ReportPage
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MoneyKepper2.View.Pages.PageBase"));
-                userType.Activator = Activate_232_ReportPage;
+                userType.Activator = Activate_241_ReportPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 233:   //  MoneyKepper2.Behaviors.PrintPageBehavior
+            case 242:   //  MoneyKepper2.Behaviors.PrintPageBehavior
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_233_PrintPageBehavior;
+                userType.Activator = Activate_242_PrintPageBehavior;
+                userType.AddMemberName("ExtraInfo");
                 userType.AddMemberName("ReportHeader");
                 userType.AddMemberName("ReportInfo");
                 userType.AddMemberName("AmountItemInPage");
@@ -3069,48 +3167,48 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 234:   //  Windows.UI.Xaml.Controls.ListView
+            case 243:   //  Windows.UI.Xaml.Controls.ListView
                 xamlType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 235:   //  MoneyKepper2.View.Pages.ReportDetailsPage
+            case 244:   //  MoneyKepper2.View.Pages.ReportDetailsPage
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MoneyKepper2.View.Pages.PageBase"));
-                userType.Activator = Activate_235_ReportDetailsPage;
+                userType.Activator = Activate_244_ReportDetailsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 236:   //  MoneyKepper2.View.Pages.TransactionsPage
+            case 245:   //  MoneyKepper2.View.Pages.TransactionsPage
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MoneyKepper2.View.Pages.PageBase"));
-                userType.Activator = Activate_236_TransactionsPage;
+                userType.Activator = Activate_245_TransactionsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 237:   //  MoneyKepper2.View.Pages.TransactionsDetailsPage
+            case 246:   //  MoneyKepper2.View.Pages.TransactionsDetailsPage
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MoneyKepper2.View.Pages.PageBase"));
-                userType.Activator = Activate_237_TransactionsDetailsPage;
+                userType.Activator = Activate_246_TransactionsDetailsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 238:   //  MoneyKepper2.View.Views.ControlPanelView
+            case 247:   //  MoneyKepper2.View.Views.ControlPanelView
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_238_ControlPanelView;
+                userType.Activator = Activate_247_ControlPanelView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 239:   //  MoneyKepper2.View.Views.PrimaryPanelView
+            case 248:   //  MoneyKepper2.View.Views.PrimaryPanelView
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_239_PrimaryPanelView;
+                userType.Activator = Activate_248_PrimaryPanelView;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 240:   //  MoneyKepper2.View.Pages.HistoryPage
+            case 249:   //  MoneyKepper2.View.Pages.HistoryPage
                 userType = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("MoneyKepper2.View.Pages.PageBase"));
-                userType.Activator = Activate_240_HistoryPage;
+                userType.Activator = Activate_249_HistoryPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -3271,4130 +3369,4225 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
             var that = (global::MoneyKepperCore.ViewModel.ViewModelLocator)instance;
             return that.AddTransactionViewModel;
         }
-        private object get_2_ViewModelLocator_ControlSplitViewModel(object instance)
+        private object get_2_ViewModelLocator_AddBugetViewModel(object instance)
+        {
+            var that = (global::MoneyKepperCore.ViewModel.ViewModelLocator)instance;
+            return that.AddBugetViewModel;
+        }
+        private object get_3_ViewModelLocator_ControlSplitViewModel(object instance)
         {
             var that = (global::MoneyKepperCore.ViewModel.ViewModelLocator)instance;
             return that.ControlSplitViewModel;
         }
-        private object get_3_ViewModelLocator_ConfirmViewModel(object instance)
+        private object get_4_ViewModelLocator_ConfirmViewModel(object instance)
         {
             var that = (global::MoneyKepperCore.ViewModel.ViewModelLocator)instance;
             return that.ConfirmViewModel;
         }
-        private object get_4_ViewModelLocator_GraphsViewModel(object instance)
+        private object get_5_ViewModelLocator_GraphsViewModel(object instance)
         {
             var that = (global::MoneyKepperCore.ViewModel.ViewModelLocator)instance;
             return that.GraphsViewModel;
         }
-        private object get_5_ViewModelLocator_HistoryViewModel(object instance)
+        private object get_6_ViewModelLocator_HistoryViewModel(object instance)
         {
             var that = (global::MoneyKepperCore.ViewModel.ViewModelLocator)instance;
             return that.HistoryViewModel;
         }
-        private object get_6_ViewModelLocator_ReportViewModel(object instance)
+        private object get_7_ViewModelLocator_ReportViewModel(object instance)
         {
             var that = (global::MoneyKepperCore.ViewModel.ViewModelLocator)instance;
             return that.ReportViewModel;
         }
-        private object get_7_ViewModelLocator_ReportDetailsVewModel(object instance)
+        private object get_8_ViewModelLocator_ReportDetailsVewModel(object instance)
         {
             var that = (global::MoneyKepperCore.ViewModel.ViewModelLocator)instance;
             return that.ReportDetailsVewModel;
         }
-        private object get_8_ViewModelLocator_TransactionsDetailsViewModel(object instance)
+        private object get_9_ViewModelLocator_TransactionsDetailsViewModel(object instance)
         {
             var that = (global::MoneyKepperCore.ViewModel.ViewModelLocator)instance;
             return that.TransactionsDetailsViewModel;
         }
-        private object get_9_ViewModelLocator_ControlPanelViewModel(object instance)
+        private object get_10_ViewModelLocator_ControlPanelViewModel(object instance)
         {
             var that = (global::MoneyKepperCore.ViewModel.ViewModelLocator)instance;
             return that.ControlPanelViewModel;
         }
-        private object get_10_ViewModelLocator_PrimaryPanelViewModel(object instance)
+        private object get_11_ViewModelLocator_PrimaryPanelViewModel(object instance)
         {
             var that = (global::MoneyKepperCore.ViewModel.ViewModelLocator)instance;
             return that.PrimaryPanelViewModel;
         }
-        private object get_11_ViewModelLocator_TransactionsViewModel(object instance)
+        private object get_12_ViewModelLocator_TransactionsViewModel(object instance)
         {
             var that = (global::MoneyKepperCore.ViewModel.ViewModelLocator)instance;
             return that.TransactionsViewModel;
         }
-        private object get_12_ViewModelLocator_DetailsViewModel(object instance)
+        private object get_13_ViewModelLocator_DetailsViewModel(object instance)
         {
             var that = (global::MoneyKepperCore.ViewModel.ViewModelLocator)instance;
             return that.DetailsViewModel;
         }
-        private object get_13_ViewModelLocator_HistoryDetailsViewModel(object instance)
+        private object get_14_ViewModelLocator_HistoryDetailsViewModel(object instance)
         {
             var that = (global::MoneyKepperCore.ViewModel.ViewModelLocator)instance;
             return that.HistoryDetailsViewModel;
         }
-        private object get_14_ViewModelLocator_GraphsDetailsViewModel(object instance)
+        private object get_15_ViewModelLocator_GraphsDetailsViewModel(object instance)
         {
             var that = (global::MoneyKepperCore.ViewModel.ViewModelLocator)instance;
             return that.GraphsDetailsViewModel;
         }
-        private object get_15_ViewModelLocator_CategoryDetailViewModel(object instance)
+        private object get_16_ViewModelLocator_CategoryDetailViewModel(object instance)
         {
             var that = (global::MoneyKepperCore.ViewModel.ViewModelLocator)instance;
             return that.CategoryDetailViewModel;
         }
-        private object get_16_ViewModelLocator_CategoryViewModel(object instance)
+        private object get_17_ViewModelLocator_CategoryViewModel(object instance)
         {
             var that = (global::MoneyKepperCore.ViewModel.ViewModelLocator)instance;
             return that.CategoryViewModel;
         }
-        private object get_17_ViewModelLocator_AddNewCategoryViewModel(object instance)
+        private object get_18_ViewModelLocator_BugetViewModel(object instance)
+        {
+            var that = (global::MoneyKepperCore.ViewModel.ViewModelLocator)instance;
+            return that.BugetViewModel;
+        }
+        private object get_19_ViewModelLocator_BugetDetailsViewModel(object instance)
+        {
+            var that = (global::MoneyKepperCore.ViewModel.ViewModelLocator)instance;
+            return that.BugetDetailsViewModel;
+        }
+        private object get_20_ViewModelLocator_AddNewCategoryViewModel(object instance)
         {
             var that = (global::MoneyKepperCore.ViewModel.ViewModelLocator)instance;
             return that.AddNewCategoryViewModel;
         }
-        private object get_18_ViewModelLocator_NavigationService(object instance)
+        private object get_21_ViewModelLocator_NavigationService(object instance)
         {
             var that = (global::MoneyKepperCore.ViewModel.ViewModelLocator)instance;
             return that.NavigationService;
         }
-        private object get_19_ViewModelLocator_DialogService(object instance)
+        private object get_22_ViewModelLocator_DialogService(object instance)
         {
             var that = (global::MoneyKepperCore.ViewModel.ViewModelLocator)instance;
             return that.DialogService;
         }
-        private object get_20_ExpanderControl_Expander(object instance)
+        private object get_23_ExpanderControl_Expander(object instance)
         {
             var that = (global::MoneyKepper2.Controls.ExpanderControl)instance;
             return that.Expander;
         }
-        private void set_20_ExpanderControl_Expander(object instance, object Value)
+        private void set_23_ExpanderControl_Expander(object instance, object Value)
         {
             var that = (global::MoneyKepper2.Controls.ExpanderControl)instance;
             that.Expander = (global::System.Object)Value;
         }
-        private object get_21_ExpanderControl_ExpanderTemplate(object instance)
+        private object get_24_ExpanderControl_ExpanderTemplate(object instance)
         {
             var that = (global::MoneyKepper2.Controls.ExpanderControl)instance;
             return that.ExpanderTemplate;
         }
-        private void set_21_ExpanderControl_ExpanderTemplate(object instance, object Value)
+        private void set_24_ExpanderControl_ExpanderTemplate(object instance, object Value)
         {
             var that = (global::MoneyKepper2.Controls.ExpanderControl)instance;
             that.ExpanderTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_22_ExpanderControl_NonExpandableHeader(object instance)
+        private object get_25_ExpanderControl_NonExpandableHeader(object instance)
         {
             var that = (global::MoneyKepper2.Controls.ExpanderControl)instance;
             return that.NonExpandableHeader;
         }
-        private void set_22_ExpanderControl_NonExpandableHeader(object instance, object Value)
+        private void set_25_ExpanderControl_NonExpandableHeader(object instance, object Value)
         {
             var that = (global::MoneyKepper2.Controls.ExpanderControl)instance;
             that.NonExpandableHeader = (global::System.Object)Value;
         }
-        private object get_23_ExpanderControl_NonExpandableHeaderTemplate(object instance)
+        private object get_26_ExpanderControl_NonExpandableHeaderTemplate(object instance)
         {
             var that = (global::MoneyKepper2.Controls.ExpanderControl)instance;
             return that.NonExpandableHeaderTemplate;
         }
-        private void set_23_ExpanderControl_NonExpandableHeaderTemplate(object instance, object Value)
+        private void set_26_ExpanderControl_NonExpandableHeaderTemplate(object instance, object Value)
         {
             var that = (global::MoneyKepper2.Controls.ExpanderControl)instance;
             that.NonExpandableHeaderTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_24_ExpanderControl_IsExpanded(object instance)
+        private object get_27_ExpanderControl_IsExpanded(object instance)
         {
             var that = (global::MoneyKepper2.Controls.ExpanderControl)instance;
             return that.IsExpanded;
         }
-        private void set_24_ExpanderControl_IsExpanded(object instance, object Value)
+        private void set_27_ExpanderControl_IsExpanded(object instance, object Value)
         {
             var that = (global::MoneyKepper2.Controls.ExpanderControl)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_25_ExpanderControl_HasItems(object instance)
+        private object get_28_ExpanderControl_HasItems(object instance)
         {
             var that = (global::MoneyKepper2.Controls.ExpanderControl)instance;
             return that.HasItems;
         }
-        private void set_25_ExpanderControl_HasItems(object instance, object Value)
+        private void set_28_ExpanderControl_HasItems(object instance, object Value)
         {
             var that = (global::MoneyKepper2.Controls.ExpanderControl)instance;
             that.HasItems = (global::System.Boolean)Value;
         }
-        private object get_26_ExpanderControl_IsNonExpandable(object instance)
+        private object get_29_ExpanderControl_IsNonExpandable(object instance)
         {
             var that = (global::MoneyKepper2.Controls.ExpanderControl)instance;
             return that.IsNonExpandable;
         }
-        private void set_26_ExpanderControl_IsNonExpandable(object instance, object Value)
+        private void set_29_ExpanderControl_IsNonExpandable(object instance, object Value)
         {
             var that = (global::MoneyKepper2.Controls.ExpanderControl)instance;
             that.IsNonExpandable = (global::System.Boolean)Value;
         }
-        private object get_27_HeaderedItemsControl_Header(object instance)
+        private object get_30_HeaderedItemsControl_Header(object instance)
         {
             var that = (global::MoneyKepper2.Controls.HeaderedItemsControl)instance;
             return that.Header;
         }
-        private void set_27_HeaderedItemsControl_Header(object instance, object Value)
+        private void set_30_HeaderedItemsControl_Header(object instance, object Value)
         {
             var that = (global::MoneyKepper2.Controls.HeaderedItemsControl)instance;
             that.Header = (global::System.Object)Value;
         }
-        private object get_28_HeaderedItemsControl_HeaderTemplate(object instance)
+        private object get_31_HeaderedItemsControl_HeaderTemplate(object instance)
         {
             var that = (global::MoneyKepper2.Controls.HeaderedItemsControl)instance;
             return that.HeaderTemplate;
         }
-        private void set_28_HeaderedItemsControl_HeaderTemplate(object instance, object Value)
+        private void set_31_HeaderedItemsControl_HeaderTemplate(object instance, object Value)
         {
             var that = (global::MoneyKepper2.Controls.HeaderedItemsControl)instance;
             that.HeaderTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_29_HeaderedItemsControl_ItemContainerStyle(object instance)
+        private object get_32_HeaderedItemsControl_ItemContainerStyle(object instance)
         {
             var that = (global::MoneyKepper2.Controls.HeaderedItemsControl)instance;
             return that.ItemContainerStyle;
         }
-        private void set_29_HeaderedItemsControl_ItemContainerStyle(object instance, object Value)
+        private void set_32_HeaderedItemsControl_ItemContainerStyle(object instance, object Value)
         {
             var that = (global::MoneyKepper2.Controls.HeaderedItemsControl)instance;
             that.ItemContainerStyle = (global::Windows.UI.Xaml.Style)Value;
         }
-        private object get_30_SfNumericTextBox_Value(object instance)
+        private object get_33_SfNumericTextBox_Value(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox)instance;
             return that.Value;
         }
-        private void set_30_SfNumericTextBox_Value(object instance, object Value)
+        private void set_33_SfNumericTextBox_Value(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox)instance;
             that.Value = (global::System.Object)Value;
         }
-        private object get_31_SfNumericTextBox_ValueChangedMode(object instance)
+        private object get_34_SfNumericTextBox_ValueChangedMode(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox)instance;
             return that.ValueChangedMode;
         }
-        private void set_31_SfNumericTextBox_ValueChangedMode(object instance, object Value)
+        private void set_34_SfNumericTextBox_ValueChangedMode(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox)instance;
             that.ValueChangedMode = (global::Syncfusion.UI.Xaml.Controls.Input.ValueChange)Value;
         }
-        private object get_32_SfNumericTextBox_FormatString(object instance)
+        private object get_35_SfNumericTextBox_FormatString(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox)instance;
             return that.FormatString;
         }
-        private void set_32_SfNumericTextBox_FormatString(object instance, object Value)
+        private void set_35_SfNumericTextBox_FormatString(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox)instance;
             that.FormatString = (global::System.String)Value;
         }
-        private object get_33_SfNumericTextBox_Culture(object instance)
+        private object get_36_SfNumericTextBox_Culture(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox)instance;
             return that.Culture;
         }
-        private void set_33_SfNumericTextBox_Culture(object instance, object Value)
+        private void set_36_SfNumericTextBox_Culture(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox)instance;
             that.Culture = (global::System.Globalization.CultureInfo)Value;
         }
-        private object get_34_SfNumericTextBox_PercentDisplayMode(object instance)
+        private object get_37_SfNumericTextBox_PercentDisplayMode(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox)instance;
             return that.PercentDisplayMode;
         }
-        private void set_34_SfNumericTextBox_PercentDisplayMode(object instance, object Value)
+        private void set_37_SfNumericTextBox_PercentDisplayMode(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox)instance;
             that.PercentDisplayMode = (global::Syncfusion.UI.Xaml.Controls.Input.PercentDisplayMode)Value;
         }
-        private object get_35_SfNumericTextBox_MaximumNumberDecimalDigits(object instance)
+        private object get_38_SfNumericTextBox_MaximumNumberDecimalDigits(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox)instance;
             return that.MaximumNumberDecimalDigits;
         }
-        private void set_35_SfNumericTextBox_MaximumNumberDecimalDigits(object instance, object Value)
+        private void set_38_SfNumericTextBox_MaximumNumberDecimalDigits(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox)instance;
             that.MaximumNumberDecimalDigits = (global::System.Int32)Value;
         }
-        private object get_36_SfNumericTextBox_AllowNull(object instance)
+        private object get_39_SfNumericTextBox_AllowNull(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox)instance;
             return that.AllowNull;
         }
-        private void set_36_SfNumericTextBox_AllowNull(object instance, object Value)
+        private void set_39_SfNumericTextBox_AllowNull(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox)instance;
             that.AllowNull = (global::System.Boolean)Value;
         }
-        private object get_37_SfNumericTextBox_ParsingMode(object instance)
+        private object get_40_SfNumericTextBox_ParsingMode(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox)instance;
             return that.ParsingMode;
         }
-        private void set_37_SfNumericTextBox_ParsingMode(object instance, object Value)
+        private void set_40_SfNumericTextBox_ParsingMode(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox)instance;
             that.ParsingMode = (global::Syncfusion.UI.Xaml.Controls.Input.Parsers)Value;
         }
-        private object get_38_SfNumericTextBox_BlockCharactersOnTextInput(object instance)
+        private object get_41_SfNumericTextBox_BlockCharactersOnTextInput(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox)instance;
             return that.BlockCharactersOnTextInput;
         }
-        private void set_38_SfNumericTextBox_BlockCharactersOnTextInput(object instance, object Value)
+        private void set_41_SfNumericTextBox_BlockCharactersOnTextInput(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox)instance;
             that.BlockCharactersOnTextInput = (global::System.Boolean)Value;
         }
-        private object get_39_SfTextBoxExt_AllowPointerEvents(object instance)
+        private object get_42_SfTextBoxExt_AllowPointerEvents(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.AllowPointerEvents;
         }
-        private void set_39_SfTextBoxExt_AllowPointerEvents(object instance, object Value)
+        private void set_42_SfTextBoxExt_AllowPointerEvents(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             that.AllowPointerEvents = (global::System.Boolean)Value;
         }
-        private object get_40_SfTextBoxExt_AutoCompleteSource(object instance)
+        private object get_43_SfTextBoxExt_AutoCompleteSource(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.AutoCompleteSource;
         }
-        private void set_40_SfTextBoxExt_AutoCompleteSource(object instance, object Value)
+        private void set_43_SfTextBoxExt_AutoCompleteSource(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             that.AutoCompleteSource = (global::System.Collections.IEnumerable)Value;
         }
-        private object get_41_SfTextBoxExt_AutoCompleteItemTemplate(object instance)
+        private object get_44_SfTextBoxExt_AutoCompleteItemTemplate(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.AutoCompleteItemTemplate;
         }
-        private void set_41_SfTextBoxExt_AutoCompleteItemTemplate(object instance, object Value)
+        private void set_44_SfTextBoxExt_AutoCompleteItemTemplate(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             that.AutoCompleteItemTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_42_SfTextBoxExt_AutoCompleteItemTemplateSelector(object instance)
+        private object get_45_SfTextBoxExt_AutoCompleteItemTemplateSelector(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.AutoCompleteItemTemplateSelector;
         }
-        private void set_42_SfTextBoxExt_AutoCompleteItemTemplateSelector(object instance, object Value)
+        private void set_45_SfTextBoxExt_AutoCompleteItemTemplateSelector(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             that.AutoCompleteItemTemplateSelector = (global::Windows.UI.Xaml.Controls.DataTemplateSelector)Value;
         }
-        private object get_43_SfTextBoxExt_AutoCompleteItemsPanel(object instance)
+        private object get_46_SfTextBoxExt_AutoCompleteItemsPanel(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.AutoCompleteItemsPanel;
         }
-        private void set_43_SfTextBoxExt_AutoCompleteItemsPanel(object instance, object Value)
+        private void set_46_SfTextBoxExt_AutoCompleteItemsPanel(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             that.AutoCompleteItemsPanel = (global::Windows.UI.Xaml.Controls.ItemsPanelTemplate)Value;
         }
-        private object get_44_SfTextBoxExt_IsSuggestionOpen(object instance)
+        private object get_47_SfTextBoxExt_IsSuggestionOpen(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.IsSuggestionOpen;
         }
-        private void set_44_SfTextBoxExt_IsSuggestionOpen(object instance, object Value)
+        private void set_47_SfTextBoxExt_IsSuggestionOpen(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             that.IsSuggestionOpen = (global::System.Boolean)Value;
         }
-        private object get_45_SfTextBoxExt_SuggestionBoxPosition(object instance)
+        private object get_48_SfTextBoxExt_SuggestionBoxPosition(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.SuggestionBoxPosition;
         }
-        private object get_46_SfTextBoxExt_SearchItemPath(object instance)
+        private object get_49_SfTextBoxExt_SearchItemPath(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.SearchItemPath;
         }
-        private void set_46_SfTextBoxExt_SearchItemPath(object instance, object Value)
+        private void set_49_SfTextBoxExt_SearchItemPath(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             that.SearchItemPath = (global::System.String)Value;
         }
-        private object get_47_SfTextBoxExt_ValueMemberPath(object instance)
+        private object get_50_SfTextBoxExt_ValueMemberPath(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.ValueMemberPath;
         }
-        private void set_47_SfTextBoxExt_ValueMemberPath(object instance, object Value)
+        private void set_50_SfTextBoxExt_ValueMemberPath(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             that.ValueMemberPath = (global::System.String)Value;
         }
-        private object get_48_SfTextBoxExt_Suggestions(object instance)
+        private object get_51_SfTextBoxExt_Suggestions(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.Suggestions;
         }
-        private object get_49_SfTextBoxExt_SuggestionIndex(object instance)
+        private object get_52_SfTextBoxExt_SuggestionIndex(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.SuggestionIndex;
         }
-        private object get_50_SfTextBoxExt_AutoCompleteMode(object instance)
+        private object get_53_SfTextBoxExt_AutoCompleteMode(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.AutoCompleteMode;
         }
-        private void set_50_SfTextBoxExt_AutoCompleteMode(object instance, object Value)
+        private void set_53_SfTextBoxExt_AutoCompleteMode(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             that.AutoCompleteMode = (global::Syncfusion.UI.Xaml.Controls.Input.AutoCompleteMode)Value;
         }
-        private object get_51_SfTextBoxExt_SuggestionBoxPlacement(object instance)
+        private object get_54_SfTextBoxExt_SuggestionBoxPlacement(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.SuggestionBoxPlacement;
         }
-        private void set_51_SfTextBoxExt_SuggestionBoxPlacement(object instance, object Value)
+        private void set_54_SfTextBoxExt_SuggestionBoxPlacement(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             that.SuggestionBoxPlacement = (global::Syncfusion.UI.Xaml.Controls.Input.SuggestionBoxPlacement)Value;
         }
-        private object get_52_SfTextBoxExt_SuggestionMode(object instance)
+        private object get_55_SfTextBoxExt_SuggestionMode(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.SuggestionMode;
         }
-        private void set_52_SfTextBoxExt_SuggestionMode(object instance, object Value)
+        private void set_55_SfTextBoxExt_SuggestionMode(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             that.SuggestionMode = (global::Syncfusion.UI.Xaml.Controls.Input.SuggestionMode)Value;
         }
-        private object get_53_SfTextBoxExt_IgnoreCase(object instance)
+        private object get_56_SfTextBoxExt_IgnoreCase(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.IgnoreCase;
         }
-        private void set_53_SfTextBoxExt_IgnoreCase(object instance, object Value)
+        private void set_56_SfTextBoxExt_IgnoreCase(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             that.IgnoreCase = (global::System.Boolean)Value;
         }
-        private object get_54_SfTextBoxExt_MinimumPrefixCharacters(object instance)
+        private object get_57_SfTextBoxExt_MinimumPrefixCharacters(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.MinimumPrefixCharacters;
         }
-        private void set_54_SfTextBoxExt_MinimumPrefixCharacters(object instance, object Value)
+        private void set_57_SfTextBoxExt_MinimumPrefixCharacters(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             that.MinimumPrefixCharacters = (global::System.Int32)Value;
         }
-        private object get_55_SfTextBoxExt_PopupDelay(object instance)
+        private object get_58_SfTextBoxExt_PopupDelay(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.PopupDelay;
         }
-        private void set_55_SfTextBoxExt_PopupDelay(object instance, object Value)
+        private void set_58_SfTextBoxExt_PopupDelay(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             that.PopupDelay = (global::System.TimeSpan)Value;
         }
-        private object get_56_SfTextBoxExt_MaxDropDownHeight(object instance)
+        private object get_59_SfTextBoxExt_MaxDropDownHeight(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.MaxDropDownHeight;
         }
-        private void set_56_SfTextBoxExt_MaxDropDownHeight(object instance, object Value)
+        private void set_59_SfTextBoxExt_MaxDropDownHeight(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             that.MaxDropDownHeight = (global::System.Double)Value;
         }
-        private object get_57_SfTextBoxExt_SuggestionBoxStyle(object instance)
+        private object get_60_SfTextBoxExt_SuggestionBoxStyle(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.SuggestionBoxStyle;
         }
-        private void set_57_SfTextBoxExt_SuggestionBoxStyle(object instance, object Value)
+        private void set_60_SfTextBoxExt_SuggestionBoxStyle(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             that.SuggestionBoxStyle = (global::Windows.UI.Xaml.Style)Value;
         }
-        private object get_58_SfTextBoxExt_Delimeter(object instance)
+        private object get_61_SfTextBoxExt_Delimeter(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.Delimeter;
         }
-        private void set_58_SfTextBoxExt_Delimeter(object instance, object Value)
+        private void set_61_SfTextBoxExt_Delimeter(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             that.Delimeter = (global::System.String)Value;
         }
-        private object get_59_SfTextBoxExt_ShowSuggestionsOnFocus(object instance)
+        private object get_62_SfTextBoxExt_ShowSuggestionsOnFocus(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.ShowSuggestionsOnFocus;
         }
-        private void set_59_SfTextBoxExt_ShowSuggestionsOnFocus(object instance, object Value)
+        private void set_62_SfTextBoxExt_ShowSuggestionsOnFocus(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             that.ShowSuggestionsOnFocus = (global::System.Boolean)Value;
         }
-        private object get_60_SfTextBoxExt_SelectedItem(object instance)
+        private object get_63_SfTextBoxExt_SelectedItem(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.SelectedItem;
         }
-        private void set_60_SfTextBoxExt_SelectedItem(object instance, object Value)
+        private void set_63_SfTextBoxExt_SelectedItem(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             that.SelectedItem = (global::System.Object)Value;
         }
-        private object get_61_SfTextBoxExt_SelectedValue(object instance)
+        private object get_64_SfTextBoxExt_SelectedValue(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.SelectedValue;
         }
-        private void set_61_SfTextBoxExt_SelectedValue(object instance, object Value)
+        private void set_64_SfTextBoxExt_SelectedValue(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             that.SelectedValue = (global::System.Object)Value;
         }
-        private object get_62_SfTextBoxExt_Watermark(object instance)
+        private object get_65_SfTextBoxExt_Watermark(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.Watermark;
         }
-        private void set_62_SfTextBoxExt_Watermark(object instance, object Value)
+        private void set_65_SfTextBoxExt_Watermark(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             that.Watermark = (global::System.Object)Value;
         }
-        private object get_63_SfTextBoxExt_WatermarkTemplate(object instance)
+        private object get_66_SfTextBoxExt_WatermarkTemplate(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.WatermarkTemplate;
         }
-        private void set_63_SfTextBoxExt_WatermarkTemplate(object instance, object Value)
+        private void set_66_SfTextBoxExt_WatermarkTemplate(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             that.WatermarkTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_64_SfTextBoxExt_WatermarkTemplateSelector(object instance)
+        private object get_67_SfTextBoxExt_WatermarkTemplateSelector(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             return that.WatermarkTemplateSelector;
         }
-        private void set_64_SfTextBoxExt_WatermarkTemplateSelector(object instance, object Value)
+        private void set_67_SfTextBoxExt_WatermarkTemplateSelector(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt)instance;
             that.WatermarkTemplateSelector = (global::Windows.UI.Xaml.Controls.DataTemplateSelector)Value;
         }
-        private object get_65_Interaction_Behaviors(object instance)
+        private object get_68_Interaction_Behaviors(object instance)
         {
             return global::Microsoft.Xaml.Interactivity.Interaction.GetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance);
         }
-        private void set_65_Interaction_Behaviors(object instance, object Value)
+        private void set_68_Interaction_Behaviors(object instance, object Value)
         {
             global::Microsoft.Xaml.Interactivity.Interaction.SetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance, (global::Microsoft.Xaml.Interactivity.BehaviorCollection)Value);
         }
-        private object get_66_SetDateToDatePickerBehavior_Date(object instance)
+        private object get_69_SetDateToDatePickerBehavior_Date(object instance)
         {
             var that = (global::MoneyKepper2.Behaviors.SetDateToDatePickerBehavior)instance;
             return that.Date;
         }
-        private void set_66_SetDateToDatePickerBehavior_Date(object instance, object Value)
+        private void set_69_SetDateToDatePickerBehavior_Date(object instance, object Value)
         {
             var that = (global::MoneyKepper2.Behaviors.SetDateToDatePickerBehavior)instance;
             that.Date = (global::System.Nullable<global::System.DateTimeOffset>)Value;
         }
-        private object get_67_SetDateToDatePickerBehavior_AssociatedObject(object instance)
+        private object get_70_SetDateToDatePickerBehavior_AssociatedObject(object instance)
         {
             var that = (global::MoneyKepper2.Behaviors.SetDateToDatePickerBehavior)instance;
             return that.AssociatedObject;
         }
-        private void set_67_SetDateToDatePickerBehavior_AssociatedObject(object instance, object Value)
+        private void set_70_SetDateToDatePickerBehavior_AssociatedObject(object instance, object Value)
         {
             var that = (global::MoneyKepper2.Behaviors.SetDateToDatePickerBehavior)instance;
             that.AssociatedObject = (global::Windows.UI.Xaml.DependencyObject)Value;
         }
-        private object get_68_SetMinAndMaxDateBehavior_EndTime(object instance)
+        private object get_71_SetMinAndMaxDateBehavior_EndTime(object instance)
         {
             var that = (global::MoneyKepper2.Behaviors.SetMinAndMaxDateBehavior)instance;
             return that.EndTime;
         }
-        private void set_68_SetMinAndMaxDateBehavior_EndTime(object instance, object Value)
+        private void set_71_SetMinAndMaxDateBehavior_EndTime(object instance, object Value)
         {
             var that = (global::MoneyKepper2.Behaviors.SetMinAndMaxDateBehavior)instance;
             that.EndTime = (global::System.DateTime)Value;
         }
-        private object get_69_SetMinAndMaxDateBehavior_StartTime(object instance)
+        private object get_72_SetMinAndMaxDateBehavior_StartTime(object instance)
         {
             var that = (global::MoneyKepper2.Behaviors.SetMinAndMaxDateBehavior)instance;
             return that.StartTime;
         }
-        private void set_69_SetMinAndMaxDateBehavior_StartTime(object instance, object Value)
+        private void set_72_SetMinAndMaxDateBehavior_StartTime(object instance, object Value)
         {
             var that = (global::MoneyKepper2.Behaviors.SetMinAndMaxDateBehavior)instance;
             that.StartTime = (global::System.DateTime)Value;
         }
-        private object get_70_SetMinAndMaxDateBehavior_AssociatedObject(object instance)
+        private object get_73_SetMinAndMaxDateBehavior_AssociatedObject(object instance)
         {
             var that = (global::MoneyKepper2.Behaviors.SetMinAndMaxDateBehavior)instance;
             return that.AssociatedObject;
         }
-        private void set_70_SetMinAndMaxDateBehavior_AssociatedObject(object instance, object Value)
+        private void set_73_SetMinAndMaxDateBehavior_AssociatedObject(object instance, object Value)
         {
             var that = (global::MoneyKepper2.Behaviors.SetMinAndMaxDateBehavior)instance;
             that.AssociatedObject = (global::Windows.UI.Xaml.DependencyObject)Value;
         }
-        private object get_71_SfChart_Series(object instance)
+        private object get_74_DataTriggerBehavior_Actions(object instance)
         {
-            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
-            return that.Series;
+            var that = (global::Microsoft.Xaml.Interactions.Core.DataTriggerBehavior)instance;
+            return that.Actions;
         }
-        private void set_71_SfChart_Series(object instance, object Value)
+        private object get_75_DataTriggerBehavior_Binding(object instance)
         {
-            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
-            that.Series = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesCollection)Value;
+            var that = (global::Microsoft.Xaml.Interactions.Core.DataTriggerBehavior)instance;
+            return that.Binding;
         }
-        private object get_72_ChartSeries_Area(object instance)
+        private void set_75_DataTriggerBehavior_Binding(object instance, object Value)
         {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeries)instance;
-            return that.Area;
+            var that = (global::Microsoft.Xaml.Interactions.Core.DataTriggerBehavior)instance;
+            that.Binding = (global::System.Object)Value;
         }
-        private object get_73_ChartSeries_Stroke(object instance)
+        private object get_76_DataTriggerBehavior_Value(object instance)
         {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeries)instance;
-            return that.Stroke;
+            var that = (global::Microsoft.Xaml.Interactions.Core.DataTriggerBehavior)instance;
+            return that.Value;
         }
-        private void set_73_ChartSeries_Stroke(object instance, object Value)
+        private void set_76_DataTriggerBehavior_Value(object instance, object Value)
         {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeries)instance;
-            that.Stroke = (global::Windows.UI.Xaml.Media.Brush)Value;
+            var that = (global::Microsoft.Xaml.Interactions.Core.DataTriggerBehavior)instance;
+            that.Value = (global::System.Object)Value;
         }
-        private object get_74_ChartSeries_StrokeThickness(object instance)
+        private object get_77_DataTriggerBehavior_ComparisonCondition(object instance)
         {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeries)instance;
-            return that.StrokeThickness;
+            var that = (global::Microsoft.Xaml.Interactions.Core.DataTriggerBehavior)instance;
+            return that.ComparisonCondition;
         }
-        private void set_74_ChartSeries_StrokeThickness(object instance, object Value)
+        private void set_77_DataTriggerBehavior_ComparisonCondition(object instance, object Value)
         {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeries)instance;
-            that.StrokeThickness = (global::System.Double)Value;
+            var that = (global::Microsoft.Xaml.Interactions.Core.DataTriggerBehavior)instance;
+            that.ComparisonCondition = (global::Microsoft.Xaml.Interactions.Core.ComparisonConditionType)Value;
         }
-        private object get_75_ChartSeriesBase_DataCount(object instance)
+        private object get_78_DataTriggerBehavior_AssociatedObject(object instance)
         {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.DataCount;
+            var that = (global::Microsoft.Xaml.Interactions.Core.DataTriggerBehavior)instance;
+            return that.AssociatedObject;
         }
-        private object get_76_ChartSeriesBase_IsSortData(object instance)
+        private object get_79_ChangePropertyAction_PropertyName(object instance)
         {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.IsSortData;
+            var that = (global::Microsoft.Xaml.Interactions.Core.ChangePropertyAction)instance;
+            return that.PropertyName;
         }
-        private void set_76_ChartSeriesBase_IsSortData(object instance, object Value)
+        private void set_79_ChangePropertyAction_PropertyName(object instance, object Value)
         {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            that.IsSortData = (global::System.Boolean)Value;
+            var that = (global::Microsoft.Xaml.Interactions.Core.ChangePropertyAction)instance;
+            that.PropertyName = (global::System.String)Value;
         }
-        private object get_77_ChartSeriesBase_SortDirection(object instance)
+        private object get_80_ChangePropertyAction_Value(object instance)
         {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.SortDirection;
+            var that = (global::Microsoft.Xaml.Interactions.Core.ChangePropertyAction)instance;
+            return that.Value;
         }
-        private void set_77_ChartSeriesBase_SortDirection(object instance, object Value)
+        private void set_80_ChangePropertyAction_Value(object instance, object Value)
         {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            that.SortDirection = (global::Syncfusion.UI.Xaml.Charts.Direction)Value;
+            var that = (global::Microsoft.Xaml.Interactions.Core.ChangePropertyAction)instance;
+            that.Value = (global::System.Object)Value;
         }
-        private object get_78_ChartSeriesBase_SortBy(object instance)
+        private object get_81_ChangePropertyAction_TargetObject(object instance)
         {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.SortBy;
+            var that = (global::Microsoft.Xaml.Interactions.Core.ChangePropertyAction)instance;
+            return that.TargetObject;
         }
-        private void set_78_ChartSeriesBase_SortBy(object instance, object Value)
+        private void set_81_ChangePropertyAction_TargetObject(object instance, object Value)
         {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            that.SortBy = (global::Syncfusion.UI.Xaml.Charts.SortingAxis)Value;
+            var that = (global::Microsoft.Xaml.Interactions.Core.ChangePropertyAction)instance;
+            that.TargetObject = (global::System.Object)Value;
         }
-        private object get_79_ChartSeriesBase_TooltipTemplate(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.TooltipTemplate;
-        }
-        private void set_79_ChartSeriesBase_TooltipTemplate(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            that.TooltipTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_80_ChartSeriesBase_ShowTooltip(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.ShowTooltip;
-        }
-        private void set_80_ChartSeriesBase_ShowTooltip(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            that.ShowTooltip = (global::System.Boolean)Value;
-        }
-        private object get_81_ChartSeriesBase_ListenPropertyChange(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.ListenPropertyChange;
-        }
-        private void set_81_ChartSeriesBase_ListenPropertyChange(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            that.ListenPropertyChange = (global::System.Boolean)Value;
-        }
-        private object get_82_ChartSeriesBase_Adornments(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.Adornments;
-        }
-        private object get_83_ChartAdornment_Series(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            return that.Series;
-        }
-        private object get_84_ChartAdornment_Background(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            return that.Background;
-        }
-        private void set_84_ChartAdornment_Background(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            that.Background = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_85_ChartAdornment_BorderThickness(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            return that.BorderThickness;
-        }
-        private void set_85_ChartAdornment_BorderThickness(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            that.BorderThickness = (global::Windows.UI.Xaml.Thickness)Value;
-        }
-        private object get_86_ChartAdornment_BorderBrush(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            return that.BorderBrush;
-        }
-        private void set_86_ChartAdornment_BorderBrush(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            that.BorderBrush = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_87_ChartAdornment_Margin(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            return that.Margin;
-        }
-        private void set_87_ChartAdornment_Margin(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            that.Margin = (global::Windows.UI.Xaml.Thickness)Value;
-        }
-        private object get_88_ChartAdornment_FontFamily(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            return that.FontFamily;
-        }
-        private void set_88_ChartAdornment_FontFamily(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            that.FontFamily = (global::Windows.UI.Xaml.Media.FontFamily)Value;
-        }
-        private object get_89_ChartAdornment_FontStyle(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            return that.FontStyle;
-        }
-        private void set_89_ChartAdornment_FontStyle(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            that.FontStyle = (global::Windows.UI.Text.FontStyle)Value;
-        }
-        private object get_90_ChartAdornment_FontSize(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            return that.FontSize;
-        }
-        private void set_90_ChartAdornment_FontSize(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            that.FontSize = (global::System.Double)Value;
-        }
-        private object get_91_ChartAdornment_Foreground(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            return that.Foreground;
-        }
-        private void set_91_ChartAdornment_Foreground(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            that.Foreground = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_92_ChartAdornment_ConnectorRotationAngle(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            return that.ConnectorRotationAngle;
-        }
-        private void set_92_ChartAdornment_ConnectorRotationAngle(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            that.ConnectorRotationAngle = (global::System.Double)Value;
-        }
-        private object get_93_ChartAdornment_ConnectorHeight(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            return that.ConnectorHeight;
-        }
-        private void set_93_ChartAdornment_ConnectorHeight(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            that.ConnectorHeight = (global::System.Double)Value;
-        }
-        private object get_94_ChartAdornment_ActualContent(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            return that.ActualContent;
-        }
-        private object get_95_ChartAdornment_XData(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            return that.XData;
-        }
-        private void set_95_ChartAdornment_XData(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            that.XData = (global::System.Double)Value;
-        }
-        private object get_96_ChartAdornment_YData(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            return that.YData;
-        }
-        private void set_96_ChartAdornment_YData(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            that.YData = (global::System.Double)Value;
-        }
-        private object get_97_ChartAdornment_X(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            return that.X;
-        }
-        private object get_98_ChartAdornment_Y(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
-            return that.Y;
-        }
-        private object get_99_ChartSegment_XRange(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
-            return that.XRange;
-        }
-        private void set_99_ChartSegment_XRange(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
-            that.XRange = (global::Syncfusion.UI.Xaml.Charts.DoubleRange)Value;
-        }
-        private object get_100_ChartSegment_YRange(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
-            return that.YRange;
-        }
-        private void set_100_ChartSegment_YRange(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
-            that.YRange = (global::Syncfusion.UI.Xaml.Charts.DoubleRange)Value;
-        }
-        private object get_101_ChartSegment_Item(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
-            return that.Item;
-        }
-        private void set_101_ChartSegment_Item(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
-            that.Item = (global::System.Object)Value;
-        }
-        private object get_102_ChartSegment_Interior(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
-            return that.Interior;
-        }
-        private void set_102_ChartSegment_Interior(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
-            that.Interior = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_103_ChartSegment_StrokeThickness(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
-            return that.StrokeThickness;
-        }
-        private void set_103_ChartSegment_StrokeThickness(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
-            that.StrokeThickness = (global::System.Double)Value;
-        }
-        private object get_104_ChartSegment_StrokeDashArray(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
-            return that.StrokeDashArray;
-        }
-        private void set_104_ChartSegment_StrokeDashArray(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
-            that.StrokeDashArray = (global::Windows.UI.Xaml.Media.DoubleCollection)Value;
-        }
-        private object get_105_ChartSegment_Stroke(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
-            return that.Stroke;
-        }
-        private void set_105_ChartSegment_Stroke(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
-            that.Stroke = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_106_ChartSeriesBase_IsSeriesVisible(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.IsSeriesVisible;
-        }
-        private void set_106_ChartSeriesBase_IsSeriesVisible(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            that.IsSeriesVisible = (global::System.Boolean)Value;
-        }
-        private object get_107_ChartSeriesBase_Palette(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.Palette;
-        }
-        private void set_107_ChartSeriesBase_Palette(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            that.Palette = (global::Syncfusion.UI.Xaml.Charts.ChartColorPalette)Value;
-        }
-        private object get_108_ChartSeriesBase_ItemsSource(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.ItemsSource;
-        }
-        private void set_108_ChartSeriesBase_ItemsSource(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            that.ItemsSource = (global::System.Collections.IEnumerable)Value;
-        }
-        private object get_109_ChartSeriesBase_TrackBallLabelTemplate(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.TrackBallLabelTemplate;
-        }
-        private void set_109_ChartSeriesBase_TrackBallLabelTemplate(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            that.TrackBallLabelTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_110_ChartSeriesBase_Interior(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.Interior;
-        }
-        private void set_110_ChartSeriesBase_Interior(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            that.Interior = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_111_ChartSeriesBase_Label(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.Label;
-        }
-        private void set_111_ChartSeriesBase_Label(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            that.Label = (global::System.String)Value;
-        }
-        private object get_112_ChartSeriesBase_LegendIcon(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.LegendIcon;
-        }
-        private void set_112_ChartSeriesBase_LegendIcon(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            that.LegendIcon = (global::Syncfusion.UI.Xaml.Charts.ChartLegendIcon)Value;
-        }
-        private object get_113_ChartSeriesBase_LegendIconTemplate(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.LegendIconTemplate;
-        }
-        private void set_113_ChartSeriesBase_LegendIconTemplate(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            that.LegendIconTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_114_ChartSeriesBase_VisibilityOnLegend(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.VisibilityOnLegend;
-        }
-        private void set_114_ChartSeriesBase_VisibilityOnLegend(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            that.VisibilityOnLegend = (global::Windows.UI.Xaml.Visibility)Value;
-        }
-        private object get_115_ChartSeriesBase_SeriesSelectionBrush(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.SeriesSelectionBrush;
-        }
-        private void set_115_ChartSeriesBase_SeriesSelectionBrush(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            that.SeriesSelectionBrush = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_116_ChartSeriesBase_ColorModel(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.ColorModel;
-        }
-        private void set_116_ChartSeriesBase_ColorModel(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            that.ColorModel = (global::Syncfusion.UI.Xaml.Charts.ChartColorModel)Value;
-        }
-        private object get_117_ChartSeriesBase_XBindingPath(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.XBindingPath;
-        }
-        private void set_117_ChartSeriesBase_XBindingPath(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            that.XBindingPath = (global::System.String)Value;
-        }
-        private object get_118_ChartSeriesBase_EnableAnimation(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.EnableAnimation;
-        }
-        private void set_118_ChartSeriesBase_EnableAnimation(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            that.EnableAnimation = (global::System.Boolean)Value;
-        }
-        private object get_119_ChartSeriesBase_AnimationDuration(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.AnimationDuration;
-        }
-        private void set_119_ChartSeriesBase_AnimationDuration(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            that.AnimationDuration = (global::System.TimeSpan)Value;
-        }
-        private object get_120_ChartSeriesBase_EmptyPointValue(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.EmptyPointValue;
-        }
-        private void set_120_ChartSeriesBase_EmptyPointValue(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            that.EmptyPointValue = (global::Syncfusion.UI.Xaml.Charts.EmptyPointValue)Value;
-        }
-        private object get_121_ChartSeriesBase_EmptyPointStyle(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.EmptyPointStyle;
-        }
-        private void set_121_ChartSeriesBase_EmptyPointStyle(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            that.EmptyPointStyle = (global::Syncfusion.UI.Xaml.Charts.EmptyPointStyle)Value;
-        }
-        private object get_122_ChartSeriesBase_EmptyPointSymbolTemplate(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.EmptyPointSymbolTemplate;
-        }
-        private void set_122_ChartSeriesBase_EmptyPointSymbolTemplate(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            that.EmptyPointSymbolTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_123_ChartSeriesBase_ShowEmptyPoints(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.ShowEmptyPoints;
-        }
-        private void set_123_ChartSeriesBase_ShowEmptyPoints(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            that.ShowEmptyPoints = (global::System.Boolean)Value;
-        }
-        private object get_124_ChartSeriesBase_EmptyPointInterior(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            return that.EmptyPointInterior;
-        }
-        private void set_124_ChartSeriesBase_EmptyPointInterior(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
-            that.EmptyPointInterior = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_125_ChartSeriesBase_Spacing(object instance)
-        {
-            return global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase.GetSpacing((global::Windows.UI.Xaml.DependencyObject)instance);
-        }
-        private void set_125_ChartSeriesBase_Spacing(object instance, object Value)
-        {
-            global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase.SetSpacing((global::Windows.UI.Xaml.DependencyObject)instance, (global::System.Double)Value);
-        }
-        private object get_126_ChartBase_Header(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
-            return that.Header;
-        }
-        private void set_126_ChartBase_Header(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
-            that.Header = (global::System.Object)Value;
-        }
-        private object get_127_SfChart_AreaBorderThickness(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
-            return that.AreaBorderThickness;
-        }
-        private void set_127_SfChart_AreaBorderThickness(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
-            that.AreaBorderThickness = (global::Windows.UI.Xaml.Thickness)Value;
-        }
-        private object get_128_ChartBase_Legend(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
-            return that.Legend;
-        }
-        private void set_128_ChartBase_Legend(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
-            that.Legend = (global::System.Object)Value;
-        }
-        private object get_129_SfChart_PrimaryAxis(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
-            return that.PrimaryAxis;
-        }
-        private void set_129_SfChart_PrimaryAxis(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
-            that.PrimaryAxis = (global::Syncfusion.UI.Xaml.Charts.ChartAxisBase2D)Value;
-        }
-        private object get_130_SfChart_SecondaryAxis(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
-            return that.SecondaryAxis;
-        }
-        private void set_130_SfChart_SecondaryAxis(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
-            that.SecondaryAxis = (global::Syncfusion.UI.Xaml.Charts.RangeAxisBase)Value;
-        }
-        private object get_131_SfChart_Watermark(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
-            return that.Watermark;
-        }
-        private void set_131_SfChart_Watermark(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
-            that.Watermark = (global::Syncfusion.UI.Xaml.Charts.Watermark)Value;
-        }
-        private object get_132_SfChart_AreaBorderBrush(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
-            return that.AreaBorderBrush;
-        }
-        private void set_132_SfChart_AreaBorderBrush(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
-            that.AreaBorderBrush = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_133_SfChart_AreaBackground(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
-            return that.AreaBackground;
-        }
-        private void set_133_SfChart_AreaBackground(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
-            that.AreaBackground = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_134_SfChart_Behaviors(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
-            return that.Behaviors;
-        }
-        private void set_134_SfChart_Behaviors(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
-            that.Behaviors = (global::Syncfusion.UI.Xaml.Charts.ChartBehaviorsCollection)Value;
-        }
-        private object get_135_ChartBehavior_AdorningCanvas(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBehavior)instance;
-            return that.AdorningCanvas;
-        }
-        private object get_136_ChartBehavior_BottomAdorningCanvas(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBehavior)instance;
-            return that.BottomAdorningCanvas;
-        }
-        private object get_137_ChartBehavior_ChartArea(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBehavior)instance;
-            return that.ChartArea;
-        }
-        private object get_138_SfChart_TechnicalIndicators(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
-            return that.TechnicalIndicators;
-        }
-        private void set_138_SfChart_TechnicalIndicators(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
-            that.TechnicalIndicators = (global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartSeries>)Value;
-        }
-        private object get_139_SfChart_Annotations(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
-            return that.Annotations;
-        }
-        private void set_139_SfChart_Annotations(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
-            that.Annotations = (global::Syncfusion.UI.Xaml.Charts.AnnotationCollection)Value;
-        }
-        private object get_140_Annotation_Text(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            return that.Text;
-        }
-        private void set_140_Annotation_Text(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            that.Text = (global::System.String)Value;
-        }
-        private object get_141_Annotation_EnableEditing(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            return that.EnableEditing;
-        }
-        private void set_141_Annotation_EnableEditing(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            that.EnableEditing = (global::System.Boolean)Value;
-        }
-        private object get_142_Annotation_ContentTemplate(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            return that.ContentTemplate;
-        }
-        private void set_142_Annotation_ContentTemplate(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            that.ContentTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_143_Annotation_EnableClipping(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            return that.EnableClipping;
-        }
-        private void set_143_Annotation_EnableClipping(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            that.EnableClipping = (global::System.Boolean)Value;
-        }
-        private object get_144_Annotation_ShowToolTip(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            return that.ShowToolTip;
-        }
-        private void set_144_Annotation_ShowToolTip(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            that.ShowToolTip = (global::System.Boolean)Value;
-        }
-        private object get_145_Annotation_ToolTipContent(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            return that.ToolTipContent;
-        }
-        private void set_145_Annotation_ToolTipContent(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            that.ToolTipContent = (global::System.Object)Value;
-        }
-        private object get_146_Annotation_ToolTipShowDuration(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            return that.ToolTipShowDuration;
-        }
-        private void set_146_Annotation_ToolTipShowDuration(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            that.ToolTipShowDuration = (global::System.Double)Value;
-        }
-        private object get_147_Annotation_ToolTipTemplate(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            return that.ToolTipTemplate;
-        }
-        private void set_147_Annotation_ToolTipTemplate(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            that.ToolTipTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_148_Annotation_ToolTipPlacement(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            return that.ToolTipPlacement;
-        }
-        private void set_148_Annotation_ToolTipPlacement(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            that.ToolTipPlacement = (global::Syncfusion.UI.Xaml.Charts.ToolTipLabelPlacement)Value;
-        }
-        private object get_149_Annotation_CoordinateUnit(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            return that.CoordinateUnit;
-        }
-        private void set_149_Annotation_CoordinateUnit(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            that.CoordinateUnit = (global::Syncfusion.UI.Xaml.Charts.CoordinateUnit)Value;
-        }
-        private object get_150_Annotation_XAxisName(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            return that.XAxisName;
-        }
-        private void set_150_Annotation_XAxisName(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            that.XAxisName = (global::System.String)Value;
-        }
-        private object get_151_Annotation_YAxisName(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            return that.YAxisName;
-        }
-        private void set_151_Annotation_YAxisName(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            that.YAxisName = (global::System.String)Value;
-        }
-        private object get_152_Annotation_X1(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            return that.X1;
-        }
-        private void set_152_Annotation_X1(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            that.X1 = (global::System.Object)Value;
-        }
-        private object get_153_Annotation_Y1(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            return that.Y1;
-        }
-        private void set_153_Annotation_Y1(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            that.Y1 = (global::System.Object)Value;
-        }
-        private object get_154_Annotation_FontSize(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            return that.FontSize;
-        }
-        private void set_154_Annotation_FontSize(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            that.FontSize = (global::System.Double)Value;
-        }
-        private object get_155_Annotation_FontFamily(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            return that.FontFamily;
-        }
-        private void set_155_Annotation_FontFamily(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            that.FontFamily = (global::Windows.UI.Xaml.Media.FontFamily)Value;
-        }
-        private object get_156_Annotation_FontStretch(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            return that.FontStretch;
-        }
-        private void set_156_Annotation_FontStretch(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            that.FontStretch = (global::Windows.UI.Text.FontStretch)Value;
-        }
-        private object get_157_Annotation_FontStyle(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            return that.FontStyle;
-        }
-        private void set_157_Annotation_FontStyle(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            that.FontStyle = (global::Windows.UI.Text.FontStyle)Value;
-        }
-        private object get_158_Annotation_FontWeight(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            return that.FontWeight;
-        }
-        private void set_158_Annotation_FontWeight(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            that.FontWeight = (global::Windows.UI.Text.FontWeight)Value;
-        }
-        private object get_159_Annotation_Foreground(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            return that.Foreground;
-        }
-        private void set_159_Annotation_Foreground(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
-            that.Foreground = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_160_ChartBase_AxisThickness(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
-            return that.AxisThickness;
-        }
-        private object get_161_ChartBase_SeriesClipRect(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
-            return that.SeriesClipRect;
-        }
-        private object get_162_ChartBase_VisibleSeries(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
-            return that.VisibleSeries;
-        }
-        private object get_163_ChartBase_Palette(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
-            return that.Palette;
-        }
-        private void set_163_ChartBase_Palette(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
-            that.Palette = (global::Syncfusion.UI.Xaml.Charts.ChartColorPalette)Value;
-        }
-        private object get_164_ChartBase_SeriesSelectedIndex(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
-            return that.SeriesSelectedIndex;
-        }
-        private void set_164_ChartBase_SeriesSelectedIndex(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
-            that.SeriesSelectedIndex = (global::System.Int32)Value;
-        }
-        private object get_165_ChartBase_ColumnDefinitions(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
-            return that.ColumnDefinitions;
-        }
-        private void set_165_ChartBase_ColumnDefinitions(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
-            that.ColumnDefinitions = (global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinitions)Value;
-        }
-        private object get_166_ChartColumnDefinition_Width(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition)instance;
-            return that.Width;
-        }
-        private void set_166_ChartColumnDefinition_Width(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition)instance;
-            that.Width = (global::System.Double)Value;
-        }
-        private object get_167_ChartColumnDefinition_Unit(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition)instance;
-            return that.Unit;
-        }
-        private void set_167_ChartColumnDefinition_Unit(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition)instance;
-            that.Unit = (global::Syncfusion.UI.Xaml.Charts.ChartUnitType)Value;
-        }
-        private object get_168_ChartColumnDefinition_BorderThickness(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition)instance;
-            return that.BorderThickness;
-        }
-        private void set_168_ChartColumnDefinition_BorderThickness(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition)instance;
-            that.BorderThickness = (global::System.Double)Value;
-        }
-        private object get_169_ChartColumnDefinition_BorderStroke(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition)instance;
-            return that.BorderStroke;
-        }
-        private void set_169_ChartColumnDefinition_BorderStroke(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition)instance;
-            that.BorderStroke = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_170_ChartBase_RowDefinitions(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
-            return that.RowDefinitions;
-        }
-        private void set_170_ChartBase_RowDefinitions(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
-            that.RowDefinitions = (global::Syncfusion.UI.Xaml.Charts.ChartRowDefinitions)Value;
-        }
-        private object get_171_ChartRowDefinition_RowTop(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition)instance;
-            return that.RowTop;
-        }
-        private object get_172_ChartRowDefinition_Height(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition)instance;
-            return that.Height;
-        }
-        private void set_172_ChartRowDefinition_Height(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition)instance;
-            that.Height = (global::System.Double)Value;
-        }
-        private object get_173_ChartRowDefinition_Unit(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition)instance;
-            return that.Unit;
-        }
-        private void set_173_ChartRowDefinition_Unit(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition)instance;
-            that.Unit = (global::Syncfusion.UI.Xaml.Charts.ChartUnitType)Value;
-        }
-        private object get_174_ChartRowDefinition_BorderThickness(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition)instance;
-            return that.BorderThickness;
-        }
-        private void set_174_ChartRowDefinition_BorderThickness(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition)instance;
-            that.BorderThickness = (global::System.Double)Value;
-        }
-        private object get_175_ChartRowDefinition_BorderStroke(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition)instance;
-            return that.BorderStroke;
-        }
-        private void set_175_ChartRowDefinition_BorderStroke(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition)instance;
-            that.BorderStroke = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_176_ChartBase_Axes(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
-            return that.Axes;
-        }
-        private object get_177_ChartAxis_ActualPlotOffset(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.ActualPlotOffset;
-        }
-        private object get_178_ChartAxis_MaximumLabels(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.MaximumLabels;
-        }
-        private void set_178_ChartAxis_MaximumLabels(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.MaximumLabels = (global::System.Int32)Value;
-        }
-        private object get_179_ChartAxis_VisibleRange(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.VisibleRange;
-        }
-        private object get_180_ChartAxis_HeaderPosition(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.HeaderPosition;
-        }
-        private void set_180_ChartAxis_HeaderPosition(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.HeaderPosition = (global::Syncfusion.UI.Xaml.Charts.AxisHeaderPosition)Value;
-        }
-        private object get_181_ChartAxis_ArrangeRect(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.ArrangeRect;
-        }
-        private object get_182_ChartAxis_PositionPath(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.PositionPath;
-        }
-        private void set_182_ChartAxis_PositionPath(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.PositionPath = (global::System.String)Value;
-        }
-        private object get_183_ChartAxis_ContentPath(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.ContentPath;
-        }
-        private void set_183_ChartAxis_ContentPath(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.ContentPath = (global::System.String)Value;
-        }
-        private object get_184_ChartAxis_LabelFormat(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.LabelFormat;
-        }
-        private void set_184_ChartAxis_LabelFormat(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.LabelFormat = (global::System.String)Value;
-        }
-        private object get_185_ChartAxis_LabelsSource(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.LabelsSource;
-        }
-        private void set_185_ChartAxis_LabelsSource(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.LabelsSource = (global::System.Object)Value;
-        }
-        private object get_186_ChartAxis_PostfixLabelTemplate(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.PostfixLabelTemplate;
-        }
-        private void set_186_ChartAxis_PostfixLabelTemplate(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.PostfixLabelTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_187_ChartAxis_PrefixLabelTemplate(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.PrefixLabelTemplate;
-        }
-        private void set_187_ChartAxis_PrefixLabelTemplate(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.PrefixLabelTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_188_ChartAxis_PlotOffset(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.PlotOffset;
-        }
-        private void set_188_ChartAxis_PlotOffset(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.PlotOffset = (global::System.Double)Value;
-        }
-        private object get_189_ChartAxis_AxisLineOffset(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.AxisLineOffset;
-        }
-        private void set_189_ChartAxis_AxisLineOffset(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.AxisLineOffset = (global::System.Double)Value;
-        }
-        private object get_190_ChartAxis_LabelsPosition(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.LabelsPosition;
-        }
-        private void set_190_ChartAxis_LabelsPosition(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.LabelsPosition = (global::Syncfusion.UI.Xaml.Charts.AxisElementPosition)Value;
-        }
-        private object get_191_ChartAxis_LabelsIntersectAction(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.LabelsIntersectAction;
-        }
-        private void set_191_ChartAxis_LabelsIntersectAction(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.LabelsIntersectAction = (global::Syncfusion.UI.Xaml.Charts.AxisLabelsIntersectAction)Value;
-        }
-        private object get_192_ChartAxis_LabelExtent(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.LabelExtent;
-        }
-        private void set_192_ChartAxis_LabelExtent(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.LabelExtent = (global::System.Double)Value;
-        }
-        private object get_193_ChartAxis_LabelRotationAngle(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.LabelRotationAngle;
-        }
-        private void set_193_ChartAxis_LabelRotationAngle(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.LabelRotationAngle = (global::System.Double)Value;
-        }
-        private object get_194_ChartAxis_AxisLineStyle(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.AxisLineStyle;
-        }
-        private void set_194_ChartAxis_AxisLineStyle(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.AxisLineStyle = (global::Windows.UI.Xaml.Style)Value;
-        }
-        private object get_195_ChartAxis_OpposedPosition(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.OpposedPosition;
-        }
-        private void set_195_ChartAxis_OpposedPosition(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.OpposedPosition = (global::System.Boolean)Value;
-        }
-        private object get_196_ChartAxis_DesiredIntervalsCount(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.DesiredIntervalsCount;
-        }
-        private void set_196_ChartAxis_DesiredIntervalsCount(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.DesiredIntervalsCount = (global::System.Object)Value;
-        }
-        private object get_197_ChartAxis_ThumbLabelVisibility(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.ThumbLabelVisibility;
-        }
-        private void set_197_ChartAxis_ThumbLabelVisibility(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.ThumbLabelVisibility = (global::Windows.UI.Xaml.Visibility)Value;
-        }
-        private object get_198_ChartAxis_ThumbLabelTemplate(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.ThumbLabelTemplate;
-        }
-        private void set_198_ChartAxis_ThumbLabelTemplate(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.ThumbLabelTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_199_ChartAxis_Header(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.Header;
-        }
-        private void set_199_ChartAxis_Header(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.Header = (global::System.Object)Value;
-        }
-        private object get_200_ChartAxis_HeaderStyle(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.HeaderStyle;
-        }
-        private void set_200_ChartAxis_HeaderStyle(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.HeaderStyle = (global::Syncfusion.UI.Xaml.Charts.LabelStyle)Value;
-        }
-        private object get_201_ChartAxis_HeaderTemplate(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.HeaderTemplate;
-        }
-        private void set_201_ChartAxis_HeaderTemplate(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.HeaderTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_202_ChartAxis_TickLineSize(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.TickLineSize;
-        }
-        private void set_202_ChartAxis_TickLineSize(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.TickLineSize = (global::System.Double)Value;
-        }
-        private object get_203_ChartAxis_VisibleLabels(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.VisibleLabels;
-        }
-        private object get_204_ChartAxisLabel_LabelContent(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel)instance;
-            return that.LabelContent;
-        }
-        private void set_204_ChartAxisLabel_LabelContent(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel)instance;
-            that.LabelContent = (global::System.Object)Value;
-        }
-        private object get_205_ChartAxisLabel_Position(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel)instance;
-            return that.Position;
-        }
-        private void set_205_ChartAxisLabel_Position(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel)instance;
-            that.Position = (global::System.Double)Value;
-        }
-        private object get_206_ChartAxisLabel_PrefixLabelTemplate(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel)instance;
-            return that.PrefixLabelTemplate;
-        }
-        private void set_206_ChartAxisLabel_PrefixLabelTemplate(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel)instance;
-            that.PrefixLabelTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_207_ChartAxisLabel_PostfixLabelTemplate(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel)instance;
-            return that.PostfixLabelTemplate;
-        }
-        private void set_207_ChartAxisLabel_PostfixLabelTemplate(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel)instance;
-            that.PostfixLabelTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_208_ChartAxis_IsInversed(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.IsInversed;
-        }
-        private void set_208_ChartAxis_IsInversed(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.IsInversed = (global::System.Boolean)Value;
-        }
-        private object get_209_ChartAxis_Origin(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.Origin;
-        }
-        private void set_209_ChartAxis_Origin(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.Origin = (global::System.Double)Value;
-        }
-        private object get_210_ChartAxis_ShowOrigin(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.ShowOrigin;
-        }
-        private void set_210_ChartAxis_ShowOrigin(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.ShowOrigin = (global::System.Boolean)Value;
-        }
-        private object get_211_ChartAxis_TickLinesPosition(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.TickLinesPosition;
-        }
-        private void set_211_ChartAxis_TickLinesPosition(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.TickLinesPosition = (global::Syncfusion.UI.Xaml.Charts.AxisElementPosition)Value;
-        }
-        private object get_212_ChartAxis_ShowAxisNextToOrigin(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.ShowAxisNextToOrigin;
-        }
-        private void set_212_ChartAxis_ShowAxisNextToOrigin(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.ShowAxisNextToOrigin = (global::System.Boolean)Value;
-        }
-        private object get_213_ChartAxis_EdgeLabelsDrawingMode(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.EdgeLabelsDrawingMode;
-        }
-        private void set_213_ChartAxis_EdgeLabelsDrawingMode(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.EdgeLabelsDrawingMode = (global::Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode)Value;
-        }
-        private object get_214_ChartAxis_EdgeLabelsVisibilityMode(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.EdgeLabelsVisibilityMode;
-        }
-        private void set_214_ChartAxis_EdgeLabelsVisibilityMode(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.EdgeLabelsVisibilityMode = (global::Syncfusion.UI.Xaml.Charts.EdgeLabelsVisibilityMode)Value;
-        }
-        private object get_215_ChartAxis_MajorGridLineStyle(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.MajorGridLineStyle;
-        }
-        private void set_215_ChartAxis_MajorGridLineStyle(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.MajorGridLineStyle = (global::Windows.UI.Xaml.Style)Value;
-        }
-        private object get_216_ChartAxis_MinorGridLineStyle(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.MinorGridLineStyle;
-        }
-        private void set_216_ChartAxis_MinorGridLineStyle(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.MinorGridLineStyle = (global::Windows.UI.Xaml.Style)Value;
-        }
-        private object get_217_ChartAxis_MajorTickLineStyle(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.MajorTickLineStyle;
-        }
-        private void set_217_ChartAxis_MajorTickLineStyle(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.MajorTickLineStyle = (global::Windows.UI.Xaml.Style)Value;
-        }
-        private object get_218_ChartAxis_MinorTickLineStyle(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.MinorTickLineStyle;
-        }
-        private void set_218_ChartAxis_MinorTickLineStyle(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.MinorTickLineStyle = (global::Windows.UI.Xaml.Style)Value;
-        }
-        private object get_219_ChartAxis_OriginLineStyle(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.OriginLineStyle;
-        }
-        private void set_219_ChartAxis_OriginLineStyle(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.OriginLineStyle = (global::Windows.UI.Xaml.Style)Value;
-        }
-        private object get_220_ChartAxis_ShowTrackBallInfo(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.ShowTrackBallInfo;
-        }
-        private void set_220_ChartAxis_ShowTrackBallInfo(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.ShowTrackBallInfo = (global::System.Boolean)Value;
-        }
-        private object get_221_ChartAxis_TrackBallLabelTemplate(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.TrackBallLabelTemplate;
-        }
-        private void set_221_ChartAxis_TrackBallLabelTemplate(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.TrackBallLabelTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_222_ChartAxis_CrosshairLabelTemplate(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.CrosshairLabelTemplate;
-        }
-        private void set_222_ChartAxis_CrosshairLabelTemplate(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.CrosshairLabelTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_223_ChartAxis_ShowGridLines(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.ShowGridLines;
-        }
-        private void set_223_ChartAxis_ShowGridLines(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.ShowGridLines = (global::System.Boolean)Value;
-        }
-        private object get_224_ChartAxis_EnableAutoIntervalOnZooming(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.EnableAutoIntervalOnZooming;
-        }
-        private void set_224_ChartAxis_EnableAutoIntervalOnZooming(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.EnableAutoIntervalOnZooming = (global::System.Boolean)Value;
-        }
-        private object get_225_ChartAxis_LabelStyle(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.LabelStyle;
-        }
-        private void set_225_ChartAxis_LabelStyle(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.LabelStyle = (global::Syncfusion.UI.Xaml.Charts.LabelStyle)Value;
-        }
-        private object get_226_ChartAxis_LabelTemplate(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.LabelTemplate;
-        }
-        private void set_226_ChartAxis_LabelTemplate(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            that.LabelTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_227_ChartAxis_CustomLabels(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.CustomLabels;
-        }
-        private object get_228_ChartAxis_IsLogarithmic(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
-            return that.IsLogarithmic;
-        }
-        private object get_229_ChartBase_SideBySideSeriesPlacement(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
-            return that.SideBySideSeriesPlacement;
-        }
-        private void set_229_ChartBase_SideBySideSeriesPlacement(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
-            that.SideBySideSeriesPlacement = (global::System.Boolean)Value;
-        }
-        private object get_230_ChartBase_HorizontalHeaderAlignment(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
-            return that.HorizontalHeaderAlignment;
-        }
-        private void set_230_ChartBase_HorizontalHeaderAlignment(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
-            that.HorizontalHeaderAlignment = (global::Windows.UI.Xaml.HorizontalAlignment)Value;
-        }
-        private object get_231_ChartBase_VerticalHeaderAlignment(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
-            return that.VerticalHeaderAlignment;
-        }
-        private void set_231_ChartBase_VerticalHeaderAlignment(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
-            that.VerticalHeaderAlignment = (global::Windows.UI.Xaml.VerticalAlignment)Value;
-        }
-        private object get_232_ChartBase_ColorModel(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
-            return that.ColorModel;
-        }
-        private void set_232_ChartBase_ColorModel(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
-            that.ColorModel = (global::Syncfusion.UI.Xaml.Charts.ChartColorModel)Value;
-        }
-        private object get_233_ChartBase_Row(object instance)
-        {
-            return global::Syncfusion.UI.Xaml.Charts.ChartBase.GetRow((global::Windows.UI.Xaml.UIElement)instance);
-        }
-        private void set_233_ChartBase_Row(object instance, object Value)
-        {
-            global::Syncfusion.UI.Xaml.Charts.ChartBase.SetRow((global::Windows.UI.Xaml.UIElement)instance, (global::System.Int32)Value);
-        }
-        private object get_234_ChartBase_Column(object instance)
-        {
-            return global::Syncfusion.UI.Xaml.Charts.ChartBase.GetColumn((global::Windows.UI.Xaml.UIElement)instance);
-        }
-        private void set_234_ChartBase_Column(object instance, object Value)
-        {
-            global::Syncfusion.UI.Xaml.Charts.ChartBase.SetColumn((global::Windows.UI.Xaml.UIElement)instance, (global::System.Int32)Value);
-        }
-        private object get_235_ChartBase_ColumnSpan(object instance)
-        {
-            return global::Syncfusion.UI.Xaml.Charts.ChartBase.GetColumnSpan((global::Windows.UI.Xaml.UIElement)instance);
-        }
-        private void set_235_ChartBase_ColumnSpan(object instance, object Value)
-        {
-            global::Syncfusion.UI.Xaml.Charts.ChartBase.SetColumnSpan((global::Windows.UI.Xaml.UIElement)instance, (global::System.Int32)Value);
-        }
-        private object get_236_ChartBase_RowSpan(object instance)
-        {
-            return global::Syncfusion.UI.Xaml.Charts.ChartBase.GetRowSpan((global::Windows.UI.Xaml.UIElement)instance);
-        }
-        private void set_236_ChartBase_RowSpan(object instance, object Value)
-        {
-            global::Syncfusion.UI.Xaml.Charts.ChartBase.SetRowSpan((global::Windows.UI.Xaml.UIElement)instance, (global::System.Int32)Value);
-        }
-        private object get_237_ChartLegend_CornerRadius(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            return that.CornerRadius;
-        }
-        private void set_237_ChartLegend_CornerRadius(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            that.CornerRadius = (global::Windows.UI.Xaml.CornerRadius)Value;
-        }
-        private object get_238_ChartLegend_DockPosition(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            return that.DockPosition;
-        }
-        private void set_238_ChartLegend_DockPosition(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            that.DockPosition = (global::Syncfusion.UI.Xaml.Charts.ChartDock)Value;
-        }
-        private object get_239_ChartLegend_Orientation(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            return that.Orientation;
-        }
-        private void set_239_ChartLegend_Orientation(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            that.Orientation = (global::Syncfusion.UI.Xaml.Charts.ChartOrientation)Value;
-        }
-        private object get_240_ChartLegend_LegendPosition(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            return that.LegendPosition;
-        }
-        private void set_240_ChartLegend_LegendPosition(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            that.LegendPosition = (global::Syncfusion.UI.Xaml.Charts.LegendPosition)Value;
-        }
-        private object get_241_ChartLegend_ItemMargin(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            return that.ItemMargin;
-        }
-        private void set_241_ChartLegend_ItemMargin(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            that.ItemMargin = (global::Windows.UI.Xaml.Thickness)Value;
-        }
-        private object get_242_ChartLegend_Header(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            return that.Header;
-        }
-        private void set_242_ChartLegend_Header(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            that.Header = (global::System.Object)Value;
-        }
-        private object get_243_ChartLegend_HeaderTemplate(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            return that.HeaderTemplate;
-        }
-        private void set_243_ChartLegend_HeaderTemplate(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            that.HeaderTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_244_ChartLegend_CheckBoxVisibility(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            return that.CheckBoxVisibility;
-        }
-        private void set_244_ChartLegend_CheckBoxVisibility(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            that.CheckBoxVisibility = (global::Windows.UI.Xaml.Visibility)Value;
-        }
-        private object get_245_ChartLegend_IconVisibility(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            return that.IconVisibility;
-        }
-        private void set_245_ChartLegend_IconVisibility(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            that.IconVisibility = (global::Windows.UI.Xaml.Visibility)Value;
-        }
-        private object get_246_ChartLegend_IconWidth(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            return that.IconWidth;
-        }
-        private void set_246_ChartLegend_IconWidth(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            that.IconWidth = (global::System.Double)Value;
-        }
-        private object get_247_ChartLegend_IconHeight(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            return that.IconHeight;
-        }
-        private void set_247_ChartLegend_IconHeight(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            that.IconHeight = (global::System.Double)Value;
-        }
-        private object get_248_ChartLegend_OffsetX(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            return that.OffsetX;
-        }
-        private void set_248_ChartLegend_OffsetX(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            that.OffsetX = (global::System.Double)Value;
-        }
-        private object get_249_ChartLegend_OffsetY(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            return that.OffsetY;
-        }
-        private void set_249_ChartLegend_OffsetY(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
-            that.OffsetY = (global::System.Double)Value;
-        }
-        private object get_250_AccumulationSeriesBase_ExplodeOnMouseClick(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase)instance;
-            return that.ExplodeOnMouseClick;
-        }
-        private void set_250_AccumulationSeriesBase_ExplodeOnMouseClick(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase)instance;
-            that.ExplodeOnMouseClick = (global::System.Boolean)Value;
-        }
-        private object get_251_CircularSeriesBase_ExplodeRadius(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase)instance;
-            return that.ExplodeRadius;
-        }
-        private void set_251_CircularSeriesBase_ExplodeRadius(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase)instance;
-            that.ExplodeRadius = (global::System.Double)Value;
-        }
-        private object get_252_CircularSeriesBase_EnableSmartLabels(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase)instance;
-            return that.EnableSmartLabels;
-        }
-        private void set_252_CircularSeriesBase_EnableSmartLabels(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase)instance;
-            that.EnableSmartLabels = (global::System.Boolean)Value;
-        }
-        private object get_253_CircularSeriesBase_LabelPosition(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase)instance;
-            return that.LabelPosition;
-        }
-        private void set_253_CircularSeriesBase_LabelPosition(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase)instance;
-            that.LabelPosition = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition)Value;
-        }
-        private object get_254_AccumulationSeriesBase_YBindingPath(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase)instance;
-            return that.YBindingPath;
-        }
-        private void set_254_AccumulationSeriesBase_YBindingPath(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase)instance;
-            that.YBindingPath = (global::System.String)Value;
-        }
-        private object get_255_AdornmentSeries_AdornmentsInfo(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.AdornmentSeries)instance;
-            return that.AdornmentsInfo;
-        }
-        private void set_255_AdornmentSeries_AdornmentsInfo(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.AdornmentSeries)instance;
-            that.AdornmentsInfo = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo)Value;
-        }
-        private object get_256_PieSeries_Segment(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.PieSeries)instance;
-            return that.Segment;
-        }
-        private object get_257_PieSeries_PieCoefficient(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.PieSeries)instance;
-            return that.PieCoefficient;
-        }
-        private void set_257_PieSeries_PieCoefficient(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.PieSeries)instance;
-            that.PieCoefficient = (global::System.Double)Value;
-        }
-        private object get_258_CircularSeriesBase_ConnectorType(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase)instance;
-            return that.ConnectorType;
-        }
-        private void set_258_CircularSeriesBase_ConnectorType(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase)instance;
-            that.ConnectorType = (global::Syncfusion.UI.Xaml.Charts.ConnectorMode)Value;
-        }
-        private object get_259_CircularSeriesBase_StartAngle(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase)instance;
-            return that.StartAngle;
-        }
-        private void set_259_CircularSeriesBase_StartAngle(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase)instance;
-            that.StartAngle = (global::System.Double)Value;
-        }
-        private object get_260_CircularSeriesBase_EndAngle(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase)instance;
-            return that.EndAngle;
-        }
-        private void set_260_CircularSeriesBase_EndAngle(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase)instance;
-            that.EndAngle = (global::System.Double)Value;
-        }
-        private object get_261_AccumulationSeriesBase_ExplodeIndex(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase)instance;
-            return that.ExplodeIndex;
-        }
-        private void set_261_AccumulationSeriesBase_ExplodeIndex(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase)instance;
-            that.ExplodeIndex = (global::System.Int32)Value;
-        }
-        private object get_262_AccumulationSeriesBase_ExplodeAll(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase)instance;
-            return that.ExplodeAll;
-        }
-        private void set_262_AccumulationSeriesBase_ExplodeAll(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase)instance;
-            that.ExplodeAll = (global::System.Boolean)Value;
-        }
-        private object get_263_AccumulationSeriesBase_SegmentSelectionBrush(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase)instance;
-            return that.SegmentSelectionBrush;
-        }
-        private void set_263_AccumulationSeriesBase_SegmentSelectionBrush(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase)instance;
-            that.SegmentSelectionBrush = (global::Windows.UI.Xaml.Media.Brush)Value;
-        }
-        private object get_264_AccumulationSeriesBase_SelectedIndex(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase)instance;
-            return that.SelectedIndex;
-        }
-        private void set_264_AccumulationSeriesBase_SelectedIndex(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase)instance;
-            that.SelectedIndex = (global::System.Int32)Value;
-        }
-        private object get_265_ChartColorModel_CustomBrushes(object instance)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartColorModel)instance;
-            return that.CustomBrushes;
-        }
-        private void set_265_ChartColorModel_CustomBrushes(object instance, object Value)
-        {
-            var that = (global::Syncfusion.UI.Xaml.Charts.ChartColorModel)instance;
-            that.CustomBrushes = (global::System.Collections.Generic.List<global::Windows.UI.Xaml.Media.Brush>)Value;
-        }
-        private object get_266_EventTriggerBehavior_Actions(object instance)
+        private object get_82_EventTriggerBehavior_Actions(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.Actions;
         }
-        private object get_267_EventTriggerBehavior_EventName(object instance)
+        private object get_83_EventTriggerBehavior_EventName(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.EventName;
         }
-        private void set_267_EventTriggerBehavior_EventName(object instance, object Value)
+        private void set_83_EventTriggerBehavior_EventName(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             that.EventName = (global::System.String)Value;
         }
-        private object get_268_EventTriggerBehavior_SourceObject(object instance)
+        private object get_84_EventTriggerBehavior_SourceObject(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.SourceObject;
         }
-        private void set_268_EventTriggerBehavior_SourceObject(object instance, object Value)
+        private void set_84_EventTriggerBehavior_SourceObject(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             that.SourceObject = (global::System.Object)Value;
         }
-        private object get_269_EventTriggerBehavior_AssociatedObject(object instance)
+        private object get_85_EventTriggerBehavior_AssociatedObject(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
             return that.AssociatedObject;
         }
-        private object get_270_InvokeCommandAction_Command(object instance)
+        private object get_86_InvokeCommandAction_Command(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             return that.Command;
         }
-        private void set_270_InvokeCommandAction_Command(object instance, object Value)
+        private void set_86_InvokeCommandAction_Command(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             that.Command = (global::System.Windows.Input.ICommand)Value;
         }
-        private object get_271_InvokeCommandAction_CommandParameter(object instance)
+        private object get_87_InvokeCommandAction_CommandParameter(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             return that.CommandParameter;
         }
-        private void set_271_InvokeCommandAction_CommandParameter(object instance, object Value)
+        private void set_87_InvokeCommandAction_CommandParameter(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             that.CommandParameter = (global::System.Object)Value;
         }
-        private object get_272_InvokeCommandAction_InputConverter(object instance)
+        private object get_88_InvokeCommandAction_InputConverter(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             return that.InputConverter;
         }
-        private void set_272_InvokeCommandAction_InputConverter(object instance, object Value)
+        private void set_88_InvokeCommandAction_InputConverter(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             that.InputConverter = (global::Windows.UI.Xaml.Data.IValueConverter)Value;
         }
-        private object get_273_InvokeCommandAction_InputConverterParameter(object instance)
+        private object get_89_InvokeCommandAction_InputConverterParameter(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             return that.InputConverterParameter;
         }
-        private void set_273_InvokeCommandAction_InputConverterParameter(object instance, object Value)
+        private void set_89_InvokeCommandAction_InputConverterParameter(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             that.InputConverterParameter = (global::System.Object)Value;
         }
-        private object get_274_InvokeCommandAction_InputConverterLanguage(object instance)
+        private object get_90_InvokeCommandAction_InputConverterLanguage(object instance)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             return that.InputConverterLanguage;
         }
-        private void set_274_InvokeCommandAction_InputConverterLanguage(object instance, object Value)
+        private void set_90_InvokeCommandAction_InputConverterLanguage(object instance, object Value)
         {
             var that = (global::Microsoft.Xaml.Interactions.Core.InvokeCommandAction)instance;
             that.InputConverterLanguage = (global::System.String)Value;
         }
-        private object get_275_ChartAdornmentInfoBase_ShowLabel(object instance)
+        private object get_91_SfChart_Series(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
+            return that.Series;
+        }
+        private void set_91_SfChart_Series(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
+            that.Series = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesCollection)Value;
+        }
+        private object get_92_ChartSeries_Area(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeries)instance;
+            return that.Area;
+        }
+        private object get_93_ChartSeries_Stroke(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeries)instance;
+            return that.Stroke;
+        }
+        private void set_93_ChartSeries_Stroke(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeries)instance;
+            that.Stroke = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_94_ChartSeries_StrokeThickness(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeries)instance;
+            return that.StrokeThickness;
+        }
+        private void set_94_ChartSeries_StrokeThickness(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeries)instance;
+            that.StrokeThickness = (global::System.Double)Value;
+        }
+        private object get_95_ChartSeriesBase_DataCount(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.DataCount;
+        }
+        private object get_96_ChartSeriesBase_IsSortData(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.IsSortData;
+        }
+        private void set_96_ChartSeriesBase_IsSortData(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            that.IsSortData = (global::System.Boolean)Value;
+        }
+        private object get_97_ChartSeriesBase_SortDirection(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.SortDirection;
+        }
+        private void set_97_ChartSeriesBase_SortDirection(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            that.SortDirection = (global::Syncfusion.UI.Xaml.Charts.Direction)Value;
+        }
+        private object get_98_ChartSeriesBase_SortBy(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.SortBy;
+        }
+        private void set_98_ChartSeriesBase_SortBy(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            that.SortBy = (global::Syncfusion.UI.Xaml.Charts.SortingAxis)Value;
+        }
+        private object get_99_ChartSeriesBase_TooltipTemplate(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.TooltipTemplate;
+        }
+        private void set_99_ChartSeriesBase_TooltipTemplate(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            that.TooltipTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_100_ChartSeriesBase_ShowTooltip(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.ShowTooltip;
+        }
+        private void set_100_ChartSeriesBase_ShowTooltip(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            that.ShowTooltip = (global::System.Boolean)Value;
+        }
+        private object get_101_ChartSeriesBase_ListenPropertyChange(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.ListenPropertyChange;
+        }
+        private void set_101_ChartSeriesBase_ListenPropertyChange(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            that.ListenPropertyChange = (global::System.Boolean)Value;
+        }
+        private object get_102_ChartSeriesBase_Adornments(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.Adornments;
+        }
+        private object get_103_ChartAdornment_Series(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            return that.Series;
+        }
+        private object get_104_ChartAdornment_Background(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            return that.Background;
+        }
+        private void set_104_ChartAdornment_Background(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            that.Background = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_105_ChartAdornment_BorderThickness(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            return that.BorderThickness;
+        }
+        private void set_105_ChartAdornment_BorderThickness(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            that.BorderThickness = (global::Windows.UI.Xaml.Thickness)Value;
+        }
+        private object get_106_ChartAdornment_BorderBrush(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            return that.BorderBrush;
+        }
+        private void set_106_ChartAdornment_BorderBrush(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            that.BorderBrush = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_107_ChartAdornment_Margin(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            return that.Margin;
+        }
+        private void set_107_ChartAdornment_Margin(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            that.Margin = (global::Windows.UI.Xaml.Thickness)Value;
+        }
+        private object get_108_ChartAdornment_FontFamily(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            return that.FontFamily;
+        }
+        private void set_108_ChartAdornment_FontFamily(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            that.FontFamily = (global::Windows.UI.Xaml.Media.FontFamily)Value;
+        }
+        private object get_109_ChartAdornment_FontStyle(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            return that.FontStyle;
+        }
+        private void set_109_ChartAdornment_FontStyle(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            that.FontStyle = (global::Windows.UI.Text.FontStyle)Value;
+        }
+        private object get_110_ChartAdornment_FontSize(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            return that.FontSize;
+        }
+        private void set_110_ChartAdornment_FontSize(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            that.FontSize = (global::System.Double)Value;
+        }
+        private object get_111_ChartAdornment_Foreground(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            return that.Foreground;
+        }
+        private void set_111_ChartAdornment_Foreground(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            that.Foreground = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_112_ChartAdornment_ConnectorRotationAngle(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            return that.ConnectorRotationAngle;
+        }
+        private void set_112_ChartAdornment_ConnectorRotationAngle(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            that.ConnectorRotationAngle = (global::System.Double)Value;
+        }
+        private object get_113_ChartAdornment_ConnectorHeight(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            return that.ConnectorHeight;
+        }
+        private void set_113_ChartAdornment_ConnectorHeight(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            that.ConnectorHeight = (global::System.Double)Value;
+        }
+        private object get_114_ChartAdornment_ActualContent(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            return that.ActualContent;
+        }
+        private object get_115_ChartAdornment_XData(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            return that.XData;
+        }
+        private void set_115_ChartAdornment_XData(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            that.XData = (global::System.Double)Value;
+        }
+        private object get_116_ChartAdornment_YData(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            return that.YData;
+        }
+        private void set_116_ChartAdornment_YData(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            that.YData = (global::System.Double)Value;
+        }
+        private object get_117_ChartAdornment_X(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            return that.X;
+        }
+        private object get_118_ChartAdornment_Y(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornment)instance;
+            return that.Y;
+        }
+        private object get_119_ChartSegment_XRange(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
+            return that.XRange;
+        }
+        private void set_119_ChartSegment_XRange(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
+            that.XRange = (global::Syncfusion.UI.Xaml.Charts.DoubleRange)Value;
+        }
+        private object get_120_ChartSegment_YRange(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
+            return that.YRange;
+        }
+        private void set_120_ChartSegment_YRange(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
+            that.YRange = (global::Syncfusion.UI.Xaml.Charts.DoubleRange)Value;
+        }
+        private object get_121_ChartSegment_Item(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
+            return that.Item;
+        }
+        private void set_121_ChartSegment_Item(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
+            that.Item = (global::System.Object)Value;
+        }
+        private object get_122_ChartSegment_Interior(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
+            return that.Interior;
+        }
+        private void set_122_ChartSegment_Interior(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
+            that.Interior = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_123_ChartSegment_StrokeThickness(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
+            return that.StrokeThickness;
+        }
+        private void set_123_ChartSegment_StrokeThickness(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
+            that.StrokeThickness = (global::System.Double)Value;
+        }
+        private object get_124_ChartSegment_StrokeDashArray(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
+            return that.StrokeDashArray;
+        }
+        private void set_124_ChartSegment_StrokeDashArray(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
+            that.StrokeDashArray = (global::Windows.UI.Xaml.Media.DoubleCollection)Value;
+        }
+        private object get_125_ChartSegment_Stroke(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
+            return that.Stroke;
+        }
+        private void set_125_ChartSegment_Stroke(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSegment)instance;
+            that.Stroke = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_126_ChartSeriesBase_IsSeriesVisible(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.IsSeriesVisible;
+        }
+        private void set_126_ChartSeriesBase_IsSeriesVisible(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            that.IsSeriesVisible = (global::System.Boolean)Value;
+        }
+        private object get_127_ChartSeriesBase_Palette(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.Palette;
+        }
+        private void set_127_ChartSeriesBase_Palette(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            that.Palette = (global::Syncfusion.UI.Xaml.Charts.ChartColorPalette)Value;
+        }
+        private object get_128_ChartSeriesBase_ItemsSource(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.ItemsSource;
+        }
+        private void set_128_ChartSeriesBase_ItemsSource(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            that.ItemsSource = (global::System.Collections.IEnumerable)Value;
+        }
+        private object get_129_ChartSeriesBase_TrackBallLabelTemplate(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.TrackBallLabelTemplate;
+        }
+        private void set_129_ChartSeriesBase_TrackBallLabelTemplate(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            that.TrackBallLabelTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_130_ChartSeriesBase_Interior(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.Interior;
+        }
+        private void set_130_ChartSeriesBase_Interior(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            that.Interior = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_131_ChartSeriesBase_Label(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.Label;
+        }
+        private void set_131_ChartSeriesBase_Label(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            that.Label = (global::System.String)Value;
+        }
+        private object get_132_ChartSeriesBase_LegendIcon(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.LegendIcon;
+        }
+        private void set_132_ChartSeriesBase_LegendIcon(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            that.LegendIcon = (global::Syncfusion.UI.Xaml.Charts.ChartLegendIcon)Value;
+        }
+        private object get_133_ChartSeriesBase_LegendIconTemplate(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.LegendIconTemplate;
+        }
+        private void set_133_ChartSeriesBase_LegendIconTemplate(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            that.LegendIconTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_134_ChartSeriesBase_VisibilityOnLegend(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.VisibilityOnLegend;
+        }
+        private void set_134_ChartSeriesBase_VisibilityOnLegend(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            that.VisibilityOnLegend = (global::Windows.UI.Xaml.Visibility)Value;
+        }
+        private object get_135_ChartSeriesBase_SeriesSelectionBrush(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.SeriesSelectionBrush;
+        }
+        private void set_135_ChartSeriesBase_SeriesSelectionBrush(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            that.SeriesSelectionBrush = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_136_ChartSeriesBase_ColorModel(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.ColorModel;
+        }
+        private void set_136_ChartSeriesBase_ColorModel(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            that.ColorModel = (global::Syncfusion.UI.Xaml.Charts.ChartColorModel)Value;
+        }
+        private object get_137_ChartSeriesBase_XBindingPath(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.XBindingPath;
+        }
+        private void set_137_ChartSeriesBase_XBindingPath(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            that.XBindingPath = (global::System.String)Value;
+        }
+        private object get_138_ChartSeriesBase_EnableAnimation(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.EnableAnimation;
+        }
+        private void set_138_ChartSeriesBase_EnableAnimation(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            that.EnableAnimation = (global::System.Boolean)Value;
+        }
+        private object get_139_ChartSeriesBase_AnimationDuration(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.AnimationDuration;
+        }
+        private void set_139_ChartSeriesBase_AnimationDuration(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            that.AnimationDuration = (global::System.TimeSpan)Value;
+        }
+        private object get_140_ChartSeriesBase_EmptyPointValue(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.EmptyPointValue;
+        }
+        private void set_140_ChartSeriesBase_EmptyPointValue(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            that.EmptyPointValue = (global::Syncfusion.UI.Xaml.Charts.EmptyPointValue)Value;
+        }
+        private object get_141_ChartSeriesBase_EmptyPointStyle(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.EmptyPointStyle;
+        }
+        private void set_141_ChartSeriesBase_EmptyPointStyle(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            that.EmptyPointStyle = (global::Syncfusion.UI.Xaml.Charts.EmptyPointStyle)Value;
+        }
+        private object get_142_ChartSeriesBase_EmptyPointSymbolTemplate(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.EmptyPointSymbolTemplate;
+        }
+        private void set_142_ChartSeriesBase_EmptyPointSymbolTemplate(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            that.EmptyPointSymbolTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_143_ChartSeriesBase_ShowEmptyPoints(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.ShowEmptyPoints;
+        }
+        private void set_143_ChartSeriesBase_ShowEmptyPoints(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            that.ShowEmptyPoints = (global::System.Boolean)Value;
+        }
+        private object get_144_ChartSeriesBase_EmptyPointInterior(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            return that.EmptyPointInterior;
+        }
+        private void set_144_ChartSeriesBase_EmptyPointInterior(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase)instance;
+            that.EmptyPointInterior = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_145_ChartSeriesBase_Spacing(object instance)
+        {
+            return global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase.GetSpacing((global::Windows.UI.Xaml.DependencyObject)instance);
+        }
+        private void set_145_ChartSeriesBase_Spacing(object instance, object Value)
+        {
+            global::Syncfusion.UI.Xaml.Charts.ChartSeriesBase.SetSpacing((global::Windows.UI.Xaml.DependencyObject)instance, (global::System.Double)Value);
+        }
+        private object get_146_ChartBase_Header(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
+            return that.Header;
+        }
+        private void set_146_ChartBase_Header(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
+            that.Header = (global::System.Object)Value;
+        }
+        private object get_147_SfChart_AreaBorderThickness(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
+            return that.AreaBorderThickness;
+        }
+        private void set_147_SfChart_AreaBorderThickness(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
+            that.AreaBorderThickness = (global::Windows.UI.Xaml.Thickness)Value;
+        }
+        private object get_148_ChartBase_Legend(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
+            return that.Legend;
+        }
+        private void set_148_ChartBase_Legend(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
+            that.Legend = (global::System.Object)Value;
+        }
+        private object get_149_SfChart_PrimaryAxis(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
+            return that.PrimaryAxis;
+        }
+        private void set_149_SfChart_PrimaryAxis(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
+            that.PrimaryAxis = (global::Syncfusion.UI.Xaml.Charts.ChartAxisBase2D)Value;
+        }
+        private object get_150_SfChart_SecondaryAxis(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
+            return that.SecondaryAxis;
+        }
+        private void set_150_SfChart_SecondaryAxis(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
+            that.SecondaryAxis = (global::Syncfusion.UI.Xaml.Charts.RangeAxisBase)Value;
+        }
+        private object get_151_SfChart_Watermark(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
+            return that.Watermark;
+        }
+        private void set_151_SfChart_Watermark(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
+            that.Watermark = (global::Syncfusion.UI.Xaml.Charts.Watermark)Value;
+        }
+        private object get_152_SfChart_AreaBorderBrush(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
+            return that.AreaBorderBrush;
+        }
+        private void set_152_SfChart_AreaBorderBrush(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
+            that.AreaBorderBrush = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_153_SfChart_AreaBackground(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
+            return that.AreaBackground;
+        }
+        private void set_153_SfChart_AreaBackground(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
+            that.AreaBackground = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_154_SfChart_Behaviors(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
+            return that.Behaviors;
+        }
+        private void set_154_SfChart_Behaviors(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
+            that.Behaviors = (global::Syncfusion.UI.Xaml.Charts.ChartBehaviorsCollection)Value;
+        }
+        private object get_155_ChartBehavior_AdorningCanvas(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBehavior)instance;
+            return that.AdorningCanvas;
+        }
+        private object get_156_ChartBehavior_BottomAdorningCanvas(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBehavior)instance;
+            return that.BottomAdorningCanvas;
+        }
+        private object get_157_ChartBehavior_ChartArea(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBehavior)instance;
+            return that.ChartArea;
+        }
+        private object get_158_SfChart_TechnicalIndicators(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
+            return that.TechnicalIndicators;
+        }
+        private void set_158_SfChart_TechnicalIndicators(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
+            that.TechnicalIndicators = (global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.UI.Xaml.Charts.ChartSeries>)Value;
+        }
+        private object get_159_SfChart_Annotations(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
+            return that.Annotations;
+        }
+        private void set_159_SfChart_Annotations(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.SfChart)instance;
+            that.Annotations = (global::Syncfusion.UI.Xaml.Charts.AnnotationCollection)Value;
+        }
+        private object get_160_Annotation_Text(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            return that.Text;
+        }
+        private void set_160_Annotation_Text(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            that.Text = (global::System.String)Value;
+        }
+        private object get_161_Annotation_EnableEditing(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            return that.EnableEditing;
+        }
+        private void set_161_Annotation_EnableEditing(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            that.EnableEditing = (global::System.Boolean)Value;
+        }
+        private object get_162_Annotation_ContentTemplate(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            return that.ContentTemplate;
+        }
+        private void set_162_Annotation_ContentTemplate(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            that.ContentTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_163_Annotation_EnableClipping(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            return that.EnableClipping;
+        }
+        private void set_163_Annotation_EnableClipping(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            that.EnableClipping = (global::System.Boolean)Value;
+        }
+        private object get_164_Annotation_ShowToolTip(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            return that.ShowToolTip;
+        }
+        private void set_164_Annotation_ShowToolTip(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            that.ShowToolTip = (global::System.Boolean)Value;
+        }
+        private object get_165_Annotation_ToolTipContent(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            return that.ToolTipContent;
+        }
+        private void set_165_Annotation_ToolTipContent(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            that.ToolTipContent = (global::System.Object)Value;
+        }
+        private object get_166_Annotation_ToolTipShowDuration(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            return that.ToolTipShowDuration;
+        }
+        private void set_166_Annotation_ToolTipShowDuration(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            that.ToolTipShowDuration = (global::System.Double)Value;
+        }
+        private object get_167_Annotation_ToolTipTemplate(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            return that.ToolTipTemplate;
+        }
+        private void set_167_Annotation_ToolTipTemplate(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            that.ToolTipTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_168_Annotation_ToolTipPlacement(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            return that.ToolTipPlacement;
+        }
+        private void set_168_Annotation_ToolTipPlacement(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            that.ToolTipPlacement = (global::Syncfusion.UI.Xaml.Charts.ToolTipLabelPlacement)Value;
+        }
+        private object get_169_Annotation_CoordinateUnit(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            return that.CoordinateUnit;
+        }
+        private void set_169_Annotation_CoordinateUnit(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            that.CoordinateUnit = (global::Syncfusion.UI.Xaml.Charts.CoordinateUnit)Value;
+        }
+        private object get_170_Annotation_XAxisName(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            return that.XAxisName;
+        }
+        private void set_170_Annotation_XAxisName(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            that.XAxisName = (global::System.String)Value;
+        }
+        private object get_171_Annotation_YAxisName(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            return that.YAxisName;
+        }
+        private void set_171_Annotation_YAxisName(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            that.YAxisName = (global::System.String)Value;
+        }
+        private object get_172_Annotation_X1(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            return that.X1;
+        }
+        private void set_172_Annotation_X1(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            that.X1 = (global::System.Object)Value;
+        }
+        private object get_173_Annotation_Y1(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            return that.Y1;
+        }
+        private void set_173_Annotation_Y1(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            that.Y1 = (global::System.Object)Value;
+        }
+        private object get_174_Annotation_FontSize(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            return that.FontSize;
+        }
+        private void set_174_Annotation_FontSize(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            that.FontSize = (global::System.Double)Value;
+        }
+        private object get_175_Annotation_FontFamily(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            return that.FontFamily;
+        }
+        private void set_175_Annotation_FontFamily(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            that.FontFamily = (global::Windows.UI.Xaml.Media.FontFamily)Value;
+        }
+        private object get_176_Annotation_FontStretch(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            return that.FontStretch;
+        }
+        private void set_176_Annotation_FontStretch(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            that.FontStretch = (global::Windows.UI.Text.FontStretch)Value;
+        }
+        private object get_177_Annotation_FontStyle(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            return that.FontStyle;
+        }
+        private void set_177_Annotation_FontStyle(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            that.FontStyle = (global::Windows.UI.Text.FontStyle)Value;
+        }
+        private object get_178_Annotation_FontWeight(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            return that.FontWeight;
+        }
+        private void set_178_Annotation_FontWeight(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            that.FontWeight = (global::Windows.UI.Text.FontWeight)Value;
+        }
+        private object get_179_Annotation_Foreground(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            return that.Foreground;
+        }
+        private void set_179_Annotation_Foreground(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.Annotation)instance;
+            that.Foreground = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_180_ChartBase_AxisThickness(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
+            return that.AxisThickness;
+        }
+        private object get_181_ChartBase_SeriesClipRect(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
+            return that.SeriesClipRect;
+        }
+        private object get_182_ChartBase_VisibleSeries(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
+            return that.VisibleSeries;
+        }
+        private object get_183_ChartBase_Palette(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
+            return that.Palette;
+        }
+        private void set_183_ChartBase_Palette(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
+            that.Palette = (global::Syncfusion.UI.Xaml.Charts.ChartColorPalette)Value;
+        }
+        private object get_184_ChartBase_SeriesSelectedIndex(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
+            return that.SeriesSelectedIndex;
+        }
+        private void set_184_ChartBase_SeriesSelectedIndex(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
+            that.SeriesSelectedIndex = (global::System.Int32)Value;
+        }
+        private object get_185_ChartBase_ColumnDefinitions(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
+            return that.ColumnDefinitions;
+        }
+        private void set_185_ChartBase_ColumnDefinitions(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
+            that.ColumnDefinitions = (global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinitions)Value;
+        }
+        private object get_186_ChartColumnDefinition_Width(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition)instance;
+            return that.Width;
+        }
+        private void set_186_ChartColumnDefinition_Width(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition)instance;
+            that.Width = (global::System.Double)Value;
+        }
+        private object get_187_ChartColumnDefinition_Unit(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition)instance;
+            return that.Unit;
+        }
+        private void set_187_ChartColumnDefinition_Unit(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition)instance;
+            that.Unit = (global::Syncfusion.UI.Xaml.Charts.ChartUnitType)Value;
+        }
+        private object get_188_ChartColumnDefinition_BorderThickness(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition)instance;
+            return that.BorderThickness;
+        }
+        private void set_188_ChartColumnDefinition_BorderThickness(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition)instance;
+            that.BorderThickness = (global::System.Double)Value;
+        }
+        private object get_189_ChartColumnDefinition_BorderStroke(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition)instance;
+            return that.BorderStroke;
+        }
+        private void set_189_ChartColumnDefinition_BorderStroke(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartColumnDefinition)instance;
+            that.BorderStroke = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_190_ChartBase_RowDefinitions(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
+            return that.RowDefinitions;
+        }
+        private void set_190_ChartBase_RowDefinitions(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
+            that.RowDefinitions = (global::Syncfusion.UI.Xaml.Charts.ChartRowDefinitions)Value;
+        }
+        private object get_191_ChartRowDefinition_RowTop(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition)instance;
+            return that.RowTop;
+        }
+        private object get_192_ChartRowDefinition_Height(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition)instance;
+            return that.Height;
+        }
+        private void set_192_ChartRowDefinition_Height(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition)instance;
+            that.Height = (global::System.Double)Value;
+        }
+        private object get_193_ChartRowDefinition_Unit(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition)instance;
+            return that.Unit;
+        }
+        private void set_193_ChartRowDefinition_Unit(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition)instance;
+            that.Unit = (global::Syncfusion.UI.Xaml.Charts.ChartUnitType)Value;
+        }
+        private object get_194_ChartRowDefinition_BorderThickness(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition)instance;
+            return that.BorderThickness;
+        }
+        private void set_194_ChartRowDefinition_BorderThickness(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition)instance;
+            that.BorderThickness = (global::System.Double)Value;
+        }
+        private object get_195_ChartRowDefinition_BorderStroke(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition)instance;
+            return that.BorderStroke;
+        }
+        private void set_195_ChartRowDefinition_BorderStroke(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartRowDefinition)instance;
+            that.BorderStroke = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_196_ChartBase_Axes(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
+            return that.Axes;
+        }
+        private object get_197_ChartAxis_ActualPlotOffset(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.ActualPlotOffset;
+        }
+        private object get_198_ChartAxis_MaximumLabels(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.MaximumLabels;
+        }
+        private void set_198_ChartAxis_MaximumLabels(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.MaximumLabels = (global::System.Int32)Value;
+        }
+        private object get_199_ChartAxis_VisibleRange(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.VisibleRange;
+        }
+        private object get_200_ChartAxis_HeaderPosition(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.HeaderPosition;
+        }
+        private void set_200_ChartAxis_HeaderPosition(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.HeaderPosition = (global::Syncfusion.UI.Xaml.Charts.AxisHeaderPosition)Value;
+        }
+        private object get_201_ChartAxis_ArrangeRect(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.ArrangeRect;
+        }
+        private object get_202_ChartAxis_PositionPath(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.PositionPath;
+        }
+        private void set_202_ChartAxis_PositionPath(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.PositionPath = (global::System.String)Value;
+        }
+        private object get_203_ChartAxis_ContentPath(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.ContentPath;
+        }
+        private void set_203_ChartAxis_ContentPath(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.ContentPath = (global::System.String)Value;
+        }
+        private object get_204_ChartAxis_LabelFormat(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.LabelFormat;
+        }
+        private void set_204_ChartAxis_LabelFormat(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.LabelFormat = (global::System.String)Value;
+        }
+        private object get_205_ChartAxis_LabelsSource(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.LabelsSource;
+        }
+        private void set_205_ChartAxis_LabelsSource(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.LabelsSource = (global::System.Object)Value;
+        }
+        private object get_206_ChartAxis_PostfixLabelTemplate(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.PostfixLabelTemplate;
+        }
+        private void set_206_ChartAxis_PostfixLabelTemplate(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.PostfixLabelTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_207_ChartAxis_PrefixLabelTemplate(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.PrefixLabelTemplate;
+        }
+        private void set_207_ChartAxis_PrefixLabelTemplate(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.PrefixLabelTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_208_ChartAxis_PlotOffset(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.PlotOffset;
+        }
+        private void set_208_ChartAxis_PlotOffset(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.PlotOffset = (global::System.Double)Value;
+        }
+        private object get_209_ChartAxis_AxisLineOffset(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.AxisLineOffset;
+        }
+        private void set_209_ChartAxis_AxisLineOffset(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.AxisLineOffset = (global::System.Double)Value;
+        }
+        private object get_210_ChartAxis_LabelsPosition(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.LabelsPosition;
+        }
+        private void set_210_ChartAxis_LabelsPosition(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.LabelsPosition = (global::Syncfusion.UI.Xaml.Charts.AxisElementPosition)Value;
+        }
+        private object get_211_ChartAxis_LabelsIntersectAction(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.LabelsIntersectAction;
+        }
+        private void set_211_ChartAxis_LabelsIntersectAction(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.LabelsIntersectAction = (global::Syncfusion.UI.Xaml.Charts.AxisLabelsIntersectAction)Value;
+        }
+        private object get_212_ChartAxis_LabelExtent(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.LabelExtent;
+        }
+        private void set_212_ChartAxis_LabelExtent(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.LabelExtent = (global::System.Double)Value;
+        }
+        private object get_213_ChartAxis_LabelRotationAngle(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.LabelRotationAngle;
+        }
+        private void set_213_ChartAxis_LabelRotationAngle(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.LabelRotationAngle = (global::System.Double)Value;
+        }
+        private object get_214_ChartAxis_AxisLineStyle(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.AxisLineStyle;
+        }
+        private void set_214_ChartAxis_AxisLineStyle(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.AxisLineStyle = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_215_ChartAxis_OpposedPosition(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.OpposedPosition;
+        }
+        private void set_215_ChartAxis_OpposedPosition(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.OpposedPosition = (global::System.Boolean)Value;
+        }
+        private object get_216_ChartAxis_DesiredIntervalsCount(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.DesiredIntervalsCount;
+        }
+        private void set_216_ChartAxis_DesiredIntervalsCount(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.DesiredIntervalsCount = (global::System.Object)Value;
+        }
+        private object get_217_ChartAxis_ThumbLabelVisibility(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.ThumbLabelVisibility;
+        }
+        private void set_217_ChartAxis_ThumbLabelVisibility(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.ThumbLabelVisibility = (global::Windows.UI.Xaml.Visibility)Value;
+        }
+        private object get_218_ChartAxis_ThumbLabelTemplate(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.ThumbLabelTemplate;
+        }
+        private void set_218_ChartAxis_ThumbLabelTemplate(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.ThumbLabelTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_219_ChartAxis_Header(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.Header;
+        }
+        private void set_219_ChartAxis_Header(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.Header = (global::System.Object)Value;
+        }
+        private object get_220_ChartAxis_HeaderStyle(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.HeaderStyle;
+        }
+        private void set_220_ChartAxis_HeaderStyle(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.HeaderStyle = (global::Syncfusion.UI.Xaml.Charts.LabelStyle)Value;
+        }
+        private object get_221_ChartAxis_HeaderTemplate(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.HeaderTemplate;
+        }
+        private void set_221_ChartAxis_HeaderTemplate(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.HeaderTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_222_ChartAxis_TickLineSize(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.TickLineSize;
+        }
+        private void set_222_ChartAxis_TickLineSize(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.TickLineSize = (global::System.Double)Value;
+        }
+        private object get_223_ChartAxis_VisibleLabels(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.VisibleLabels;
+        }
+        private object get_224_ChartAxisLabel_LabelContent(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel)instance;
+            return that.LabelContent;
+        }
+        private void set_224_ChartAxisLabel_LabelContent(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel)instance;
+            that.LabelContent = (global::System.Object)Value;
+        }
+        private object get_225_ChartAxisLabel_Position(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel)instance;
+            return that.Position;
+        }
+        private void set_225_ChartAxisLabel_Position(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel)instance;
+            that.Position = (global::System.Double)Value;
+        }
+        private object get_226_ChartAxisLabel_PrefixLabelTemplate(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel)instance;
+            return that.PrefixLabelTemplate;
+        }
+        private void set_226_ChartAxisLabel_PrefixLabelTemplate(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel)instance;
+            that.PrefixLabelTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_227_ChartAxisLabel_PostfixLabelTemplate(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel)instance;
+            return that.PostfixLabelTemplate;
+        }
+        private void set_227_ChartAxisLabel_PostfixLabelTemplate(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisLabel)instance;
+            that.PostfixLabelTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_228_ChartAxis_IsInversed(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.IsInversed;
+        }
+        private void set_228_ChartAxis_IsInversed(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.IsInversed = (global::System.Boolean)Value;
+        }
+        private object get_229_ChartAxis_Origin(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.Origin;
+        }
+        private void set_229_ChartAxis_Origin(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.Origin = (global::System.Double)Value;
+        }
+        private object get_230_ChartAxis_ShowOrigin(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.ShowOrigin;
+        }
+        private void set_230_ChartAxis_ShowOrigin(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.ShowOrigin = (global::System.Boolean)Value;
+        }
+        private object get_231_ChartAxis_TickLinesPosition(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.TickLinesPosition;
+        }
+        private void set_231_ChartAxis_TickLinesPosition(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.TickLinesPosition = (global::Syncfusion.UI.Xaml.Charts.AxisElementPosition)Value;
+        }
+        private object get_232_ChartAxis_ShowAxisNextToOrigin(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.ShowAxisNextToOrigin;
+        }
+        private void set_232_ChartAxis_ShowAxisNextToOrigin(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.ShowAxisNextToOrigin = (global::System.Boolean)Value;
+        }
+        private object get_233_ChartAxis_EdgeLabelsDrawingMode(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.EdgeLabelsDrawingMode;
+        }
+        private void set_233_ChartAxis_EdgeLabelsDrawingMode(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.EdgeLabelsDrawingMode = (global::Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode)Value;
+        }
+        private object get_234_ChartAxis_EdgeLabelsVisibilityMode(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.EdgeLabelsVisibilityMode;
+        }
+        private void set_234_ChartAxis_EdgeLabelsVisibilityMode(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.EdgeLabelsVisibilityMode = (global::Syncfusion.UI.Xaml.Charts.EdgeLabelsVisibilityMode)Value;
+        }
+        private object get_235_ChartAxis_MajorGridLineStyle(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.MajorGridLineStyle;
+        }
+        private void set_235_ChartAxis_MajorGridLineStyle(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.MajorGridLineStyle = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_236_ChartAxis_MinorGridLineStyle(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.MinorGridLineStyle;
+        }
+        private void set_236_ChartAxis_MinorGridLineStyle(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.MinorGridLineStyle = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_237_ChartAxis_MajorTickLineStyle(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.MajorTickLineStyle;
+        }
+        private void set_237_ChartAxis_MajorTickLineStyle(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.MajorTickLineStyle = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_238_ChartAxis_MinorTickLineStyle(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.MinorTickLineStyle;
+        }
+        private void set_238_ChartAxis_MinorTickLineStyle(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.MinorTickLineStyle = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_239_ChartAxis_OriginLineStyle(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.OriginLineStyle;
+        }
+        private void set_239_ChartAxis_OriginLineStyle(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.OriginLineStyle = (global::Windows.UI.Xaml.Style)Value;
+        }
+        private object get_240_ChartAxis_ShowTrackBallInfo(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.ShowTrackBallInfo;
+        }
+        private void set_240_ChartAxis_ShowTrackBallInfo(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.ShowTrackBallInfo = (global::System.Boolean)Value;
+        }
+        private object get_241_ChartAxis_TrackBallLabelTemplate(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.TrackBallLabelTemplate;
+        }
+        private void set_241_ChartAxis_TrackBallLabelTemplate(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.TrackBallLabelTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_242_ChartAxis_CrosshairLabelTemplate(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.CrosshairLabelTemplate;
+        }
+        private void set_242_ChartAxis_CrosshairLabelTemplate(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.CrosshairLabelTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_243_ChartAxis_ShowGridLines(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.ShowGridLines;
+        }
+        private void set_243_ChartAxis_ShowGridLines(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.ShowGridLines = (global::System.Boolean)Value;
+        }
+        private object get_244_ChartAxis_EnableAutoIntervalOnZooming(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.EnableAutoIntervalOnZooming;
+        }
+        private void set_244_ChartAxis_EnableAutoIntervalOnZooming(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.EnableAutoIntervalOnZooming = (global::System.Boolean)Value;
+        }
+        private object get_245_ChartAxis_LabelStyle(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.LabelStyle;
+        }
+        private void set_245_ChartAxis_LabelStyle(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.LabelStyle = (global::Syncfusion.UI.Xaml.Charts.LabelStyle)Value;
+        }
+        private object get_246_ChartAxis_LabelTemplate(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.LabelTemplate;
+        }
+        private void set_246_ChartAxis_LabelTemplate(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            that.LabelTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_247_ChartAxis_CustomLabels(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.CustomLabels;
+        }
+        private object get_248_ChartAxis_IsLogarithmic(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxis)instance;
+            return that.IsLogarithmic;
+        }
+        private object get_249_ChartBase_SideBySideSeriesPlacement(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
+            return that.SideBySideSeriesPlacement;
+        }
+        private void set_249_ChartBase_SideBySideSeriesPlacement(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
+            that.SideBySideSeriesPlacement = (global::System.Boolean)Value;
+        }
+        private object get_250_ChartBase_HorizontalHeaderAlignment(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
+            return that.HorizontalHeaderAlignment;
+        }
+        private void set_250_ChartBase_HorizontalHeaderAlignment(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
+            that.HorizontalHeaderAlignment = (global::Windows.UI.Xaml.HorizontalAlignment)Value;
+        }
+        private object get_251_ChartBase_VerticalHeaderAlignment(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
+            return that.VerticalHeaderAlignment;
+        }
+        private void set_251_ChartBase_VerticalHeaderAlignment(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
+            that.VerticalHeaderAlignment = (global::Windows.UI.Xaml.VerticalAlignment)Value;
+        }
+        private object get_252_ChartBase_ColorModel(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
+            return that.ColorModel;
+        }
+        private void set_252_ChartBase_ColorModel(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartBase)instance;
+            that.ColorModel = (global::Syncfusion.UI.Xaml.Charts.ChartColorModel)Value;
+        }
+        private object get_253_ChartBase_Row(object instance)
+        {
+            return global::Syncfusion.UI.Xaml.Charts.ChartBase.GetRow((global::Windows.UI.Xaml.UIElement)instance);
+        }
+        private void set_253_ChartBase_Row(object instance, object Value)
+        {
+            global::Syncfusion.UI.Xaml.Charts.ChartBase.SetRow((global::Windows.UI.Xaml.UIElement)instance, (global::System.Int32)Value);
+        }
+        private object get_254_ChartBase_Column(object instance)
+        {
+            return global::Syncfusion.UI.Xaml.Charts.ChartBase.GetColumn((global::Windows.UI.Xaml.UIElement)instance);
+        }
+        private void set_254_ChartBase_Column(object instance, object Value)
+        {
+            global::Syncfusion.UI.Xaml.Charts.ChartBase.SetColumn((global::Windows.UI.Xaml.UIElement)instance, (global::System.Int32)Value);
+        }
+        private object get_255_ChartBase_ColumnSpan(object instance)
+        {
+            return global::Syncfusion.UI.Xaml.Charts.ChartBase.GetColumnSpan((global::Windows.UI.Xaml.UIElement)instance);
+        }
+        private void set_255_ChartBase_ColumnSpan(object instance, object Value)
+        {
+            global::Syncfusion.UI.Xaml.Charts.ChartBase.SetColumnSpan((global::Windows.UI.Xaml.UIElement)instance, (global::System.Int32)Value);
+        }
+        private object get_256_ChartBase_RowSpan(object instance)
+        {
+            return global::Syncfusion.UI.Xaml.Charts.ChartBase.GetRowSpan((global::Windows.UI.Xaml.UIElement)instance);
+        }
+        private void set_256_ChartBase_RowSpan(object instance, object Value)
+        {
+            global::Syncfusion.UI.Xaml.Charts.ChartBase.SetRowSpan((global::Windows.UI.Xaml.UIElement)instance, (global::System.Int32)Value);
+        }
+        private object get_257_ChartLegend_CornerRadius(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            return that.CornerRadius;
+        }
+        private void set_257_ChartLegend_CornerRadius(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            that.CornerRadius = (global::Windows.UI.Xaml.CornerRadius)Value;
+        }
+        private object get_258_ChartLegend_DockPosition(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            return that.DockPosition;
+        }
+        private void set_258_ChartLegend_DockPosition(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            that.DockPosition = (global::Syncfusion.UI.Xaml.Charts.ChartDock)Value;
+        }
+        private object get_259_ChartLegend_Orientation(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            return that.Orientation;
+        }
+        private void set_259_ChartLegend_Orientation(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            that.Orientation = (global::Syncfusion.UI.Xaml.Charts.ChartOrientation)Value;
+        }
+        private object get_260_ChartLegend_LegendPosition(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            return that.LegendPosition;
+        }
+        private void set_260_ChartLegend_LegendPosition(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            that.LegendPosition = (global::Syncfusion.UI.Xaml.Charts.LegendPosition)Value;
+        }
+        private object get_261_ChartLegend_ItemMargin(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            return that.ItemMargin;
+        }
+        private void set_261_ChartLegend_ItemMargin(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            that.ItemMargin = (global::Windows.UI.Xaml.Thickness)Value;
+        }
+        private object get_262_ChartLegend_Header(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            return that.Header;
+        }
+        private void set_262_ChartLegend_Header(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            that.Header = (global::System.Object)Value;
+        }
+        private object get_263_ChartLegend_HeaderTemplate(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            return that.HeaderTemplate;
+        }
+        private void set_263_ChartLegend_HeaderTemplate(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            that.HeaderTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_264_ChartLegend_CheckBoxVisibility(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            return that.CheckBoxVisibility;
+        }
+        private void set_264_ChartLegend_CheckBoxVisibility(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            that.CheckBoxVisibility = (global::Windows.UI.Xaml.Visibility)Value;
+        }
+        private object get_265_ChartLegend_IconVisibility(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            return that.IconVisibility;
+        }
+        private void set_265_ChartLegend_IconVisibility(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            that.IconVisibility = (global::Windows.UI.Xaml.Visibility)Value;
+        }
+        private object get_266_ChartLegend_IconWidth(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            return that.IconWidth;
+        }
+        private void set_266_ChartLegend_IconWidth(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            that.IconWidth = (global::System.Double)Value;
+        }
+        private object get_267_ChartLegend_IconHeight(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            return that.IconHeight;
+        }
+        private void set_267_ChartLegend_IconHeight(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            that.IconHeight = (global::System.Double)Value;
+        }
+        private object get_268_ChartLegend_OffsetX(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            return that.OffsetX;
+        }
+        private void set_268_ChartLegend_OffsetX(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            that.OffsetX = (global::System.Double)Value;
+        }
+        private object get_269_ChartLegend_OffsetY(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            return that.OffsetY;
+        }
+        private void set_269_ChartLegend_OffsetY(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartLegend)instance;
+            that.OffsetY = (global::System.Double)Value;
+        }
+        private object get_270_AccumulationSeriesBase_ExplodeOnMouseClick(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase)instance;
+            return that.ExplodeOnMouseClick;
+        }
+        private void set_270_AccumulationSeriesBase_ExplodeOnMouseClick(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase)instance;
+            that.ExplodeOnMouseClick = (global::System.Boolean)Value;
+        }
+        private object get_271_CircularSeriesBase_ExplodeRadius(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase)instance;
+            return that.ExplodeRadius;
+        }
+        private void set_271_CircularSeriesBase_ExplodeRadius(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase)instance;
+            that.ExplodeRadius = (global::System.Double)Value;
+        }
+        private object get_272_CircularSeriesBase_EnableSmartLabels(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase)instance;
+            return that.EnableSmartLabels;
+        }
+        private void set_272_CircularSeriesBase_EnableSmartLabels(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase)instance;
+            that.EnableSmartLabels = (global::System.Boolean)Value;
+        }
+        private object get_273_CircularSeriesBase_LabelPosition(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase)instance;
+            return that.LabelPosition;
+        }
+        private void set_273_CircularSeriesBase_LabelPosition(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase)instance;
+            that.LabelPosition = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition)Value;
+        }
+        private object get_274_AccumulationSeriesBase_YBindingPath(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase)instance;
+            return that.YBindingPath;
+        }
+        private void set_274_AccumulationSeriesBase_YBindingPath(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase)instance;
+            that.YBindingPath = (global::System.String)Value;
+        }
+        private object get_275_AdornmentSeries_AdornmentsInfo(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.AdornmentSeries)instance;
+            return that.AdornmentsInfo;
+        }
+        private void set_275_AdornmentSeries_AdornmentsInfo(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.AdornmentSeries)instance;
+            that.AdornmentsInfo = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo)Value;
+        }
+        private object get_276_PieSeries_Segment(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.PieSeries)instance;
+            return that.Segment;
+        }
+        private object get_277_PieSeries_PieCoefficient(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.PieSeries)instance;
+            return that.PieCoefficient;
+        }
+        private void set_277_PieSeries_PieCoefficient(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.PieSeries)instance;
+            that.PieCoefficient = (global::System.Double)Value;
+        }
+        private object get_278_CircularSeriesBase_ConnectorType(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase)instance;
+            return that.ConnectorType;
+        }
+        private void set_278_CircularSeriesBase_ConnectorType(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase)instance;
+            that.ConnectorType = (global::Syncfusion.UI.Xaml.Charts.ConnectorMode)Value;
+        }
+        private object get_279_CircularSeriesBase_StartAngle(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase)instance;
+            return that.StartAngle;
+        }
+        private void set_279_CircularSeriesBase_StartAngle(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase)instance;
+            that.StartAngle = (global::System.Double)Value;
+        }
+        private object get_280_CircularSeriesBase_EndAngle(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase)instance;
+            return that.EndAngle;
+        }
+        private void set_280_CircularSeriesBase_EndAngle(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.CircularSeriesBase)instance;
+            that.EndAngle = (global::System.Double)Value;
+        }
+        private object get_281_AccumulationSeriesBase_ExplodeIndex(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase)instance;
+            return that.ExplodeIndex;
+        }
+        private void set_281_AccumulationSeriesBase_ExplodeIndex(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase)instance;
+            that.ExplodeIndex = (global::System.Int32)Value;
+        }
+        private object get_282_AccumulationSeriesBase_ExplodeAll(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase)instance;
+            return that.ExplodeAll;
+        }
+        private void set_282_AccumulationSeriesBase_ExplodeAll(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase)instance;
+            that.ExplodeAll = (global::System.Boolean)Value;
+        }
+        private object get_283_AccumulationSeriesBase_SegmentSelectionBrush(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase)instance;
+            return that.SegmentSelectionBrush;
+        }
+        private void set_283_AccumulationSeriesBase_SegmentSelectionBrush(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase)instance;
+            that.SegmentSelectionBrush = (global::Windows.UI.Xaml.Media.Brush)Value;
+        }
+        private object get_284_AccumulationSeriesBase_SelectedIndex(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase)instance;
+            return that.SelectedIndex;
+        }
+        private void set_284_AccumulationSeriesBase_SelectedIndex(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase)instance;
+            that.SelectedIndex = (global::System.Int32)Value;
+        }
+        private object get_285_ChartColorModel_CustomBrushes(object instance)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartColorModel)instance;
+            return that.CustomBrushes;
+        }
+        private void set_285_ChartColorModel_CustomBrushes(object instance, object Value)
+        {
+            var that = (global::Syncfusion.UI.Xaml.Charts.ChartColorModel)instance;
+            that.CustomBrushes = (global::System.Collections.Generic.List<global::Windows.UI.Xaml.Media.Brush>)Value;
+        }
+        private object get_286_ChartAdornmentInfoBase_ShowLabel(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.ShowLabel;
         }
-        private void set_275_ChartAdornmentInfoBase_ShowLabel(object instance, object Value)
+        private void set_286_ChartAdornmentInfoBase_ShowLabel(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.ShowLabel = (global::System.Boolean)Value;
         }
-        private object get_276_ChartAdornmentInfoBase_SegmentLabelFormat(object instance)
+        private object get_287_ChartAdornmentInfoBase_SegmentLabelFormat(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.SegmentLabelFormat;
         }
-        private void set_276_ChartAdornmentInfoBase_SegmentLabelFormat(object instance, object Value)
+        private void set_287_ChartAdornmentInfoBase_SegmentLabelFormat(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.SegmentLabelFormat = (global::System.String)Value;
         }
-        private object get_277_ChartAdornmentInfoBase_SegmentLabelContent(object instance)
+        private object get_288_ChartAdornmentInfoBase_SegmentLabelContent(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.SegmentLabelContent;
         }
-        private void set_277_ChartAdornmentInfoBase_SegmentLabelContent(object instance, object Value)
+        private void set_288_ChartAdornmentInfoBase_SegmentLabelContent(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.SegmentLabelContent = (global::Syncfusion.UI.Xaml.Charts.LabelContent)Value;
         }
-        private object get_278_ChartAdornmentInfoBase_ShowConnectorLine(object instance)
+        private object get_289_ChartAdornmentInfoBase_ShowConnectorLine(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.ShowConnectorLine;
         }
-        private void set_278_ChartAdornmentInfoBase_ShowConnectorLine(object instance, object Value)
+        private void set_289_ChartAdornmentInfoBase_ShowConnectorLine(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.ShowConnectorLine = (global::System.Boolean)Value;
         }
-        private object get_279_ChartAdornmentInfoBase_LabelPosition(object instance)
+        private object get_290_ChartAdornmentInfoBase_LabelPosition(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.LabelPosition;
         }
-        private void set_279_ChartAdornmentInfoBase_LabelPosition(object instance, object Value)
+        private void set_290_ChartAdornmentInfoBase_LabelPosition(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.LabelPosition = (global::Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition)Value;
         }
-        private object get_280_ChartAdornmentInfoBase_Foreground(object instance)
+        private object get_291_ChartAdornmentInfoBase_Foreground(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.Foreground;
         }
-        private void set_280_ChartAdornmentInfoBase_Foreground(object instance, object Value)
+        private void set_291_ChartAdornmentInfoBase_Foreground(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.Foreground = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_281_ChartAdornmentInfoBase_LabelTemplate(object instance)
+        private object get_292_ChartAdornmentInfoBase_LabelTemplate(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.LabelTemplate;
         }
-        private void set_281_ChartAdornmentInfoBase_LabelTemplate(object instance, object Value)
+        private void set_292_ChartAdornmentInfoBase_LabelTemplate(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.LabelTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_282_ChartAdornmentInfoBase_LabelRotationAngle(object instance)
+        private object get_293_ChartAdornmentInfoBase_LabelRotationAngle(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.LabelRotationAngle;
         }
-        private void set_282_ChartAdornmentInfoBase_LabelRotationAngle(object instance, object Value)
+        private void set_293_ChartAdornmentInfoBase_LabelRotationAngle(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.LabelRotationAngle = (global::System.Double)Value;
         }
-        private object get_283_ChartAdornmentInfoBase_Background(object instance)
+        private object get_294_ChartAdornmentInfoBase_Background(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.Background;
         }
-        private void set_283_ChartAdornmentInfoBase_Background(object instance, object Value)
+        private void set_294_ChartAdornmentInfoBase_Background(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.Background = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_284_ChartAdornmentInfoBase_BorderThickness(object instance)
+        private object get_295_ChartAdornmentInfoBase_BorderThickness(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.BorderThickness;
         }
-        private void set_284_ChartAdornmentInfoBase_BorderThickness(object instance, object Value)
+        private void set_295_ChartAdornmentInfoBase_BorderThickness(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.BorderThickness = (global::Windows.UI.Xaml.Thickness)Value;
         }
-        private object get_285_ChartAdornmentInfoBase_BorderBrush(object instance)
+        private object get_296_ChartAdornmentInfoBase_BorderBrush(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.BorderBrush;
         }
-        private void set_285_ChartAdornmentInfoBase_BorderBrush(object instance, object Value)
+        private void set_296_ChartAdornmentInfoBase_BorderBrush(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.BorderBrush = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_286_ChartAdornmentInfoBase_Margin(object instance)
+        private object get_297_ChartAdornmentInfoBase_Margin(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.Margin;
         }
-        private void set_286_ChartAdornmentInfoBase_Margin(object instance, object Value)
+        private void set_297_ChartAdornmentInfoBase_Margin(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.Margin = (global::Windows.UI.Xaml.Thickness)Value;
         }
-        private object get_287_ChartAdornmentInfoBase_FontStyle(object instance)
+        private object get_298_ChartAdornmentInfoBase_FontStyle(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.FontStyle;
         }
-        private void set_287_ChartAdornmentInfoBase_FontStyle(object instance, object Value)
+        private void set_298_ChartAdornmentInfoBase_FontStyle(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.FontStyle = (global::Windows.UI.Text.FontStyle)Value;
         }
-        private object get_288_ChartAdornmentInfoBase_FontSize(object instance)
+        private object get_299_ChartAdornmentInfoBase_FontSize(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.FontSize;
         }
-        private void set_288_ChartAdornmentInfoBase_FontSize(object instance, object Value)
+        private void set_299_ChartAdornmentInfoBase_FontSize(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.FontSize = (global::System.Double)Value;
         }
-        private object get_289_ChartAdornmentInfoBase_UseSeriesPalette(object instance)
+        private object get_300_ChartAdornmentInfoBase_UseSeriesPalette(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.UseSeriesPalette;
         }
-        private void set_289_ChartAdornmentInfoBase_UseSeriesPalette(object instance, object Value)
+        private void set_300_ChartAdornmentInfoBase_UseSeriesPalette(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.UseSeriesPalette = (global::System.Boolean)Value;
         }
-        private object get_290_ChartAdornmentInfoBase_HighlightOnSelection(object instance)
+        private object get_301_ChartAdornmentInfoBase_HighlightOnSelection(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.HighlightOnSelection;
         }
-        private void set_290_ChartAdornmentInfoBase_HighlightOnSelection(object instance, object Value)
+        private void set_301_ChartAdornmentInfoBase_HighlightOnSelection(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.HighlightOnSelection = (global::System.Boolean)Value;
         }
-        private object get_291_ChartAdornmentInfoBase_HorizontalAlignment(object instance)
+        private object get_302_ChartAdornmentInfoBase_HorizontalAlignment(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.HorizontalAlignment;
         }
-        private void set_291_ChartAdornmentInfoBase_HorizontalAlignment(object instance, object Value)
+        private void set_302_ChartAdornmentInfoBase_HorizontalAlignment(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.HorizontalAlignment = (global::Windows.UI.Xaml.HorizontalAlignment)Value;
         }
-        private object get_292_ChartAdornmentInfoBase_VerticalAlignment(object instance)
+        private object get_303_ChartAdornmentInfoBase_VerticalAlignment(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.VerticalAlignment;
         }
-        private void set_292_ChartAdornmentInfoBase_VerticalAlignment(object instance, object Value)
+        private void set_303_ChartAdornmentInfoBase_VerticalAlignment(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.VerticalAlignment = (global::Windows.UI.Xaml.VerticalAlignment)Value;
         }
-        private object get_293_ChartAdornmentInfoBase_ConnectorHeight(object instance)
+        private object get_304_ChartAdornmentInfoBase_ConnectorHeight(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.ConnectorHeight;
         }
-        private void set_293_ChartAdornmentInfoBase_ConnectorHeight(object instance, object Value)
+        private void set_304_ChartAdornmentInfoBase_ConnectorHeight(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.ConnectorHeight = (global::System.Double)Value;
         }
-        private object get_294_ChartAdornmentInfoBase_ConnectorRotationAngle(object instance)
+        private object get_305_ChartAdornmentInfoBase_ConnectorRotationAngle(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.ConnectorRotationAngle;
         }
-        private void set_294_ChartAdornmentInfoBase_ConnectorRotationAngle(object instance, object Value)
+        private void set_305_ChartAdornmentInfoBase_ConnectorRotationAngle(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.ConnectorRotationAngle = (global::System.Double)Value;
         }
-        private object get_295_ChartAdornmentInfoBase_ConnectorLineStyle(object instance)
+        private object get_306_ChartAdornmentInfoBase_ConnectorLineStyle(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.ConnectorLineStyle;
         }
-        private void set_295_ChartAdornmentInfoBase_ConnectorLineStyle(object instance, object Value)
+        private void set_306_ChartAdornmentInfoBase_ConnectorLineStyle(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.ConnectorLineStyle = (global::Windows.UI.Xaml.Style)Value;
         }
-        private object get_296_ChartAdornmentInfoBase_Symbol(object instance)
+        private object get_307_ChartAdornmentInfoBase_Symbol(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.Symbol;
         }
-        private void set_296_ChartAdornmentInfoBase_Symbol(object instance, object Value)
+        private void set_307_ChartAdornmentInfoBase_Symbol(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.Symbol = (global::Syncfusion.UI.Xaml.Charts.ChartSymbol)Value;
         }
-        private object get_297_ChartAdornmentInfoBase_SymbolWidth(object instance)
+        private object get_308_ChartAdornmentInfoBase_SymbolWidth(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.SymbolWidth;
         }
-        private void set_297_ChartAdornmentInfoBase_SymbolWidth(object instance, object Value)
+        private void set_308_ChartAdornmentInfoBase_SymbolWidth(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.SymbolWidth = (global::System.Double)Value;
         }
-        private object get_298_ChartAdornmentInfoBase_SymbolHeight(object instance)
+        private object get_309_ChartAdornmentInfoBase_SymbolHeight(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.SymbolHeight;
         }
-        private void set_298_ChartAdornmentInfoBase_SymbolHeight(object instance, object Value)
+        private void set_309_ChartAdornmentInfoBase_SymbolHeight(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.SymbolHeight = (global::System.Double)Value;
         }
-        private object get_299_ChartAdornmentInfoBase_SymbolTemplate(object instance)
+        private object get_310_ChartAdornmentInfoBase_SymbolTemplate(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.SymbolTemplate;
         }
-        private void set_299_ChartAdornmentInfoBase_SymbolTemplate(object instance, object Value)
+        private void set_310_ChartAdornmentInfoBase_SymbolTemplate(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.SymbolTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_300_ChartAdornmentInfoBase_SymbolInterior(object instance)
+        private object get_311_ChartAdornmentInfoBase_SymbolInterior(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.SymbolInterior;
         }
-        private void set_300_ChartAdornmentInfoBase_SymbolInterior(object instance, object Value)
+        private void set_311_ChartAdornmentInfoBase_SymbolInterior(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.SymbolInterior = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_301_ChartAdornmentInfoBase_SymbolStroke(object instance)
+        private object get_312_ChartAdornmentInfoBase_SymbolStroke(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.SymbolStroke;
         }
-        private void set_301_ChartAdornmentInfoBase_SymbolStroke(object instance, object Value)
+        private void set_312_ChartAdornmentInfoBase_SymbolStroke(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.SymbolStroke = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_302_ChartAdornmentInfoBase_FontFamily(object instance)
+        private object get_313_ChartAdornmentInfoBase_FontFamily(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.FontFamily;
         }
-        private void set_302_ChartAdornmentInfoBase_FontFamily(object instance, object Value)
+        private void set_313_ChartAdornmentInfoBase_FontFamily(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.FontFamily = (global::Windows.UI.Xaml.Media.FontFamily)Value;
         }
-        private object get_303_ChartAdornmentInfoBase_Series(object instance)
+        private object get_314_ChartAdornmentInfoBase_Series(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.Series;
         }
-        private object get_304_ChartAdornmentInfoBase_AdornmentsPosition(object instance)
+        private object get_315_ChartAdornmentInfoBase_AdornmentsPosition(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.AdornmentsPosition;
         }
-        private void set_304_ChartAdornmentInfoBase_AdornmentsPosition(object instance, object Value)
+        private void set_315_ChartAdornmentInfoBase_AdornmentsPosition(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.AdornmentsPosition = (global::Syncfusion.UI.Xaml.Charts.AdornmentsPosition)Value;
         }
-        private object get_305_ChartAdornmentInfoBase_ShowMarker(object instance)
+        private object get_316_ChartAdornmentInfoBase_ShowMarker(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             return that.ShowMarker;
         }
-        private void set_305_ChartAdornmentInfoBase_ShowMarker(object instance, object Value)
+        private void set_316_ChartAdornmentInfoBase_ShowMarker(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase)instance;
             that.ShowMarker = (global::System.Boolean)Value;
         }
-        private object get_306_CategoryAxis_Interval(object instance)
+        private object get_317_CategoryAxis_Interval(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.CategoryAxis)instance;
             return that.Interval;
         }
-        private void set_306_CategoryAxis_Interval(object instance, object Value)
+        private void set_317_CategoryAxis_Interval(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.CategoryAxis)instance;
             that.Interval = (global::System.Object)Value;
         }
-        private object get_307_CategoryAxis_LabelPlacement(object instance)
+        private object get_318_CategoryAxis_LabelPlacement(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.CategoryAxis)instance;
             return that.LabelPlacement;
         }
-        private void set_307_CategoryAxis_LabelPlacement(object instance, object Value)
+        private void set_318_CategoryAxis_LabelPlacement(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.CategoryAxis)instance;
             that.LabelPlacement = (global::Syncfusion.UI.Xaml.Charts.LabelPlacement)Value;
         }
-        private object get_308_CategoryAxis_IsIndexed(object instance)
+        private object get_319_CategoryAxis_IsIndexed(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.CategoryAxis)instance;
             return that.IsIndexed;
         }
-        private void set_308_CategoryAxis_IsIndexed(object instance, object Value)
+        private void set_319_CategoryAxis_IsIndexed(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.CategoryAxis)instance;
             that.IsIndexed = (global::System.Boolean)Value;
         }
-        private object get_309_CategoryAxis_AggregateFunctions(object instance)
+        private object get_320_CategoryAxis_AggregateFunctions(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.CategoryAxis)instance;
             return that.AggregateFunctions;
         }
-        private void set_309_CategoryAxis_AggregateFunctions(object instance, object Value)
+        private void set_320_CategoryAxis_AggregateFunctions(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.CategoryAxis)instance;
             that.AggregateFunctions = (global::Syncfusion.UI.Xaml.Charts.AggregateFunctions)Value;
         }
-        private object get_310_ChartAxisBase2D_ZoomPosition(object instance)
+        private object get_321_ChartAxisBase2D_ZoomPosition(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisBase2D)instance;
             return that.ZoomPosition;
         }
-        private void set_310_ChartAxisBase2D_ZoomPosition(object instance, object Value)
+        private void set_321_ChartAxisBase2D_ZoomPosition(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisBase2D)instance;
             that.ZoomPosition = (global::System.Double)Value;
         }
-        private object get_311_ChartAxisBase2D_ZoomFactor(object instance)
+        private object get_322_ChartAxisBase2D_ZoomFactor(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisBase2D)instance;
             return that.ZoomFactor;
         }
-        private void set_311_ChartAxisBase2D_ZoomFactor(object instance, object Value)
+        private void set_322_ChartAxisBase2D_ZoomFactor(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisBase2D)instance;
             that.ZoomFactor = (global::System.Double)Value;
         }
-        private object get_312_ChartAxisBase2D_IncludeStripLineRange(object instance)
+        private object get_323_ChartAxisBase2D_IncludeStripLineRange(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisBase2D)instance;
             return that.IncludeStripLineRange;
         }
-        private void set_312_ChartAxisBase2D_IncludeStripLineRange(object instance, object Value)
+        private void set_323_ChartAxisBase2D_IncludeStripLineRange(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisBase2D)instance;
             that.IncludeStripLineRange = (global::System.Boolean)Value;
         }
-        private object get_313_ChartAxisBase2D_StripLines(object instance)
+        private object get_324_ChartAxisBase2D_StripLines(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisBase2D)instance;
             return that.StripLines;
         }
-        private void set_313_ChartAxisBase2D_StripLines(object instance, object Value)
+        private void set_324_ChartAxisBase2D_StripLines(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisBase2D)instance;
             that.StripLines = (global::Syncfusion.UI.Xaml.Charts.ChartStripLines)Value;
         }
-        private object get_314_ChartStripLine_Start(object instance)
+        private object get_325_ChartStripLine_Start(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             return that.Start;
         }
-        private void set_314_ChartStripLine_Start(object instance, object Value)
+        private void set_325_ChartStripLine_Start(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             that.Start = (global::System.Double)Value;
         }
-        private object get_315_ChartStripLine_Background(object instance)
+        private object get_326_ChartStripLine_Background(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             return that.Background;
         }
-        private void set_315_ChartStripLine_Background(object instance, object Value)
+        private void set_326_ChartStripLine_Background(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             that.Background = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_316_ChartStripLine_BorderBrush(object instance)
+        private object get_327_ChartStripLine_BorderBrush(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             return that.BorderBrush;
         }
-        private void set_316_ChartStripLine_BorderBrush(object instance, object Value)
+        private void set_327_ChartStripLine_BorderBrush(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             that.BorderBrush = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_317_ChartStripLine_BorderThickness(object instance)
+        private object get_328_ChartStripLine_BorderThickness(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             return that.BorderThickness;
         }
-        private void set_317_ChartStripLine_BorderThickness(object instance, object Value)
+        private void set_328_ChartStripLine_BorderThickness(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             that.BorderThickness = (global::Windows.UI.Xaml.Thickness)Value;
         }
-        private object get_318_ChartStripLine_SegmentStartValue(object instance)
+        private object get_329_ChartStripLine_SegmentStartValue(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             return that.SegmentStartValue;
         }
-        private void set_318_ChartStripLine_SegmentStartValue(object instance, object Value)
+        private void set_329_ChartStripLine_SegmentStartValue(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             that.SegmentStartValue = (global::System.Double)Value;
         }
-        private object get_319_ChartStripLine_SegmentEndValue(object instance)
+        private object get_330_ChartStripLine_SegmentEndValue(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             return that.SegmentEndValue;
         }
-        private void set_319_ChartStripLine_SegmentEndValue(object instance, object Value)
+        private void set_330_ChartStripLine_SegmentEndValue(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             that.SegmentEndValue = (global::System.Double)Value;
         }
-        private object get_320_ChartStripLine_SegmentAxisName(object instance)
+        private object get_331_ChartStripLine_SegmentAxisName(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             return that.SegmentAxisName;
         }
-        private void set_320_ChartStripLine_SegmentAxisName(object instance, object Value)
+        private void set_331_ChartStripLine_SegmentAxisName(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             that.SegmentAxisName = (global::System.String)Value;
         }
-        private object get_321_ChartStripLine_IsSegmented(object instance)
+        private object get_332_ChartStripLine_IsSegmented(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             return that.IsSegmented;
         }
-        private void set_321_ChartStripLine_IsSegmented(object instance, object Value)
+        private void set_332_ChartStripLine_IsSegmented(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             that.IsSegmented = (global::System.Boolean)Value;
         }
-        private object get_322_ChartStripLine_RepeatEvery(object instance)
+        private object get_333_ChartStripLine_RepeatEvery(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             return that.RepeatEvery;
         }
-        private void set_322_ChartStripLine_RepeatEvery(object instance, object Value)
+        private void set_333_ChartStripLine_RepeatEvery(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             that.RepeatEvery = (global::System.Double)Value;
         }
-        private object get_323_ChartStripLine_RepeatUntil(object instance)
+        private object get_334_ChartStripLine_RepeatUntil(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             return that.RepeatUntil;
         }
-        private void set_323_ChartStripLine_RepeatUntil(object instance, object Value)
+        private void set_334_ChartStripLine_RepeatUntil(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             that.RepeatUntil = (global::System.Double)Value;
         }
-        private object get_324_ChartStripLine_Label(object instance)
+        private object get_335_ChartStripLine_Label(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             return that.Label;
         }
-        private void set_324_ChartStripLine_Label(object instance, object Value)
+        private void set_335_ChartStripLine_Label(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             that.Label = (global::System.Object)Value;
         }
-        private object get_325_ChartStripLine_LabelTemplate(object instance)
+        private object get_336_ChartStripLine_LabelTemplate(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             return that.LabelTemplate;
         }
-        private void set_325_ChartStripLine_LabelTemplate(object instance, object Value)
+        private void set_336_ChartStripLine_LabelTemplate(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             that.LabelTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_326_ChartStripLine_Width(object instance)
+        private object get_337_ChartStripLine_Width(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             return that.Width;
         }
-        private void set_326_ChartStripLine_Width(object instance, object Value)
+        private void set_337_ChartStripLine_Width(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             that.Width = (global::System.Double)Value;
         }
-        private object get_327_ChartStripLine_LabelAngle(object instance)
+        private object get_338_ChartStripLine_LabelAngle(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             return that.LabelAngle;
         }
-        private void set_327_ChartStripLine_LabelAngle(object instance, object Value)
+        private void set_338_ChartStripLine_LabelAngle(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             that.LabelAngle = (global::System.Double)Value;
         }
-        private object get_328_ChartStripLine_IsPixelWidth(object instance)
+        private object get_339_ChartStripLine_IsPixelWidth(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             return that.IsPixelWidth;
         }
-        private void set_328_ChartStripLine_IsPixelWidth(object instance, object Value)
+        private void set_339_ChartStripLine_IsPixelWidth(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             that.IsPixelWidth = (global::System.Boolean)Value;
         }
-        private object get_329_ChartStripLine_LabelHorizontalAlignment(object instance)
+        private object get_340_ChartStripLine_LabelHorizontalAlignment(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             return that.LabelHorizontalAlignment;
         }
-        private void set_329_ChartStripLine_LabelHorizontalAlignment(object instance, object Value)
+        private void set_340_ChartStripLine_LabelHorizontalAlignment(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             that.LabelHorizontalAlignment = (global::Windows.UI.Xaml.HorizontalAlignment)Value;
         }
-        private object get_330_ChartStripLine_LabelVerticalAlignment(object instance)
+        private object get_341_ChartStripLine_LabelVerticalAlignment(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             return that.LabelVerticalAlignment;
         }
-        private void set_330_ChartStripLine_LabelVerticalAlignment(object instance, object Value)
+        private void set_341_ChartStripLine_LabelVerticalAlignment(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartStripLine)instance;
             that.LabelVerticalAlignment = (global::Windows.UI.Xaml.VerticalAlignment)Value;
         }
-        private object get_331_ChartAxisBase2D_EnableScrollBarResizing(object instance)
+        private object get_342_ChartAxisBase2D_EnableScrollBarResizing(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisBase2D)instance;
             return that.EnableScrollBarResizing;
         }
-        private void set_331_ChartAxisBase2D_EnableScrollBarResizing(object instance, object Value)
+        private void set_342_ChartAxisBase2D_EnableScrollBarResizing(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisBase2D)instance;
             that.EnableScrollBarResizing = (global::System.Boolean)Value;
         }
-        private object get_332_ChartAxisBase2D_EnableScrollBar(object instance)
+        private object get_343_ChartAxisBase2D_EnableScrollBar(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisBase2D)instance;
             return that.EnableScrollBar;
         }
-        private void set_332_ChartAxisBase2D_EnableScrollBar(object instance, object Value)
+        private void set_343_ChartAxisBase2D_EnableScrollBar(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisBase2D)instance;
             that.EnableScrollBar = (global::System.Boolean)Value;
         }
-        private object get_333_ChartAxisBase2D_DeferredScrolling(object instance)
+        private object get_344_ChartAxisBase2D_DeferredScrolling(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisBase2D)instance;
             return that.DeferredScrolling;
         }
-        private void set_333_ChartAxisBase2D_DeferredScrolling(object instance, object Value)
+        private void set_344_ChartAxisBase2D_DeferredScrolling(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisBase2D)instance;
             that.DeferredScrolling = (global::System.Boolean)Value;
         }
-        private object get_334_ChartAxisBase2D_EnableTouchMode(object instance)
+        private object get_345_ChartAxisBase2D_EnableTouchMode(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisBase2D)instance;
             return that.EnableTouchMode;
         }
-        private void set_334_ChartAxisBase2D_EnableTouchMode(object instance, object Value)
+        private void set_345_ChartAxisBase2D_EnableTouchMode(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ChartAxisBase2D)instance;
             that.EnableTouchMode = (global::System.Boolean)Value;
         }
-        private object get_335_NumericalAxis_Interval(object instance)
+        private object get_346_NumericalAxis_Interval(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.NumericalAxis)instance;
             return that.Interval;
         }
-        private void set_335_NumericalAxis_Interval(object instance, object Value)
+        private void set_346_NumericalAxis_Interval(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.NumericalAxis)instance;
             that.Interval = (global::System.Object)Value;
         }
-        private object get_336_NumericalAxis_Minimum(object instance)
+        private object get_347_NumericalAxis_Minimum(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.NumericalAxis)instance;
             return that.Minimum;
         }
-        private void set_336_NumericalAxis_Minimum(object instance, object Value)
+        private void set_347_NumericalAxis_Minimum(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.NumericalAxis)instance;
             that.Minimum = (global::System.Object)Value;
         }
-        private object get_337_NumericalAxis_Maximum(object instance)
+        private object get_348_NumericalAxis_Maximum(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.NumericalAxis)instance;
             return that.Maximum;
         }
-        private void set_337_NumericalAxis_Maximum(object instance, object Value)
+        private void set_348_NumericalAxis_Maximum(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.NumericalAxis)instance;
             that.Maximum = (global::System.Object)Value;
         }
-        private object get_338_NumericalAxis_RangePadding(object instance)
+        private object get_349_NumericalAxis_RangePadding(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.NumericalAxis)instance;
             return that.RangePadding;
         }
-        private void set_338_NumericalAxis_RangePadding(object instance, object Value)
+        private void set_349_NumericalAxis_RangePadding(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.NumericalAxis)instance;
             that.RangePadding = (global::Syncfusion.UI.Xaml.Charts.NumericalPadding)Value;
         }
-        private object get_339_NumericalAxis_StartRangeFromZero(object instance)
+        private object get_350_NumericalAxis_StartRangeFromZero(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.NumericalAxis)instance;
             return that.StartRangeFromZero;
         }
-        private void set_339_NumericalAxis_StartRangeFromZero(object instance, object Value)
+        private void set_350_NumericalAxis_StartRangeFromZero(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.NumericalAxis)instance;
             that.StartRangeFromZero = (global::System.Boolean)Value;
         }
-        private object get_340_RangeAxisBase_IncludeAnnotationRange(object instance)
+        private object get_351_RangeAxisBase_IncludeAnnotationRange(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.RangeAxisBase)instance;
             return that.IncludeAnnotationRange;
         }
-        private void set_340_RangeAxisBase_IncludeAnnotationRange(object instance, object Value)
+        private void set_351_RangeAxisBase_IncludeAnnotationRange(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.RangeAxisBase)instance;
             that.IncludeAnnotationRange = (global::System.Boolean)Value;
         }
-        private object get_341_RangeAxisBase_SmallTicksPerInterval(object instance)
+        private object get_352_RangeAxisBase_SmallTicksPerInterval(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.RangeAxisBase)instance;
             return that.SmallTicksPerInterval;
         }
-        private void set_341_RangeAxisBase_SmallTicksPerInterval(object instance, object Value)
+        private void set_352_RangeAxisBase_SmallTicksPerInterval(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.RangeAxisBase)instance;
             that.SmallTicksPerInterval = (global::System.Int32)Value;
         }
-        private object get_342_RangeAxisBase_SmallTickLineSize(object instance)
+        private object get_353_RangeAxisBase_SmallTickLineSize(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.RangeAxisBase)instance;
             return that.SmallTickLineSize;
         }
-        private void set_342_RangeAxisBase_SmallTickLineSize(object instance, object Value)
+        private void set_353_RangeAxisBase_SmallTickLineSize(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.RangeAxisBase)instance;
             that.SmallTickLineSize = (global::System.Double)Value;
         }
-        private object get_343_RangeAxisBase_SmallTickLinesPosition(object instance)
+        private object get_354_RangeAxisBase_SmallTickLinesPosition(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.RangeAxisBase)instance;
             return that.SmallTickLinesPosition;
         }
-        private void set_343_RangeAxisBase_SmallTickLinesPosition(object instance, object Value)
+        private void set_354_RangeAxisBase_SmallTickLinesPosition(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.RangeAxisBase)instance;
             that.SmallTickLinesPosition = (global::Syncfusion.UI.Xaml.Charts.AxisElementPosition)Value;
         }
-        private object get_344_XyDataSeries_YBindingPath(object instance)
+        private object get_355_XyDataSeries_YBindingPath(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.XyDataSeries)instance;
             return that.YBindingPath;
         }
-        private void set_344_XyDataSeries_YBindingPath(object instance, object Value)
+        private void set_355_XyDataSeries_YBindingPath(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.XyDataSeries)instance;
             that.YBindingPath = (global::System.String)Value;
         }
-        private object get_345_ColumnSeries_SegmentSelectionBrush(object instance)
+        private object get_356_ColumnSeries_SegmentSelectionBrush(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ColumnSeries)instance;
             return that.SegmentSelectionBrush;
         }
-        private void set_345_ColumnSeries_SegmentSelectionBrush(object instance, object Value)
+        private void set_356_ColumnSeries_SegmentSelectionBrush(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ColumnSeries)instance;
             that.SegmentSelectionBrush = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_346_ColumnSeries_SelectedIndex(object instance)
+        private object get_357_ColumnSeries_SelectedIndex(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ColumnSeries)instance;
             return that.SelectedIndex;
         }
-        private void set_346_ColumnSeries_SelectedIndex(object instance, object Value)
+        private void set_357_ColumnSeries_SelectedIndex(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ColumnSeries)instance;
             that.SelectedIndex = (global::System.Int32)Value;
         }
-        private object get_347_ColumnSeries_SegmentSpacing(object instance)
+        private object get_358_ColumnSeries_SegmentSpacing(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ColumnSeries)instance;
             return that.SegmentSpacing;
         }
-        private void set_347_ColumnSeries_SegmentSpacing(object instance, object Value)
+        private void set_358_ColumnSeries_SegmentSpacing(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ColumnSeries)instance;
             that.SegmentSpacing = (global::System.Double)Value;
         }
-        private object get_348_ColumnSeries_CustomTemplate(object instance)
+        private object get_359_ColumnSeries_CustomTemplate(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ColumnSeries)instance;
             return that.CustomTemplate;
         }
-        private void set_348_ColumnSeries_CustomTemplate(object instance, object Value)
+        private void set_359_ColumnSeries_CustomTemplate(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.ColumnSeries)instance;
             that.CustomTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_349_XySegmentDraggingBase_EnableDragTooltip(object instance)
+        private object get_360_XySegmentDraggingBase_EnableDragTooltip(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase)instance;
             return that.EnableDragTooltip;
         }
-        private void set_349_XySegmentDraggingBase_EnableDragTooltip(object instance, object Value)
+        private void set_360_XySegmentDraggingBase_EnableDragTooltip(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase)instance;
             that.EnableDragTooltip = (global::System.Boolean)Value;
         }
-        private object get_350_XySegmentDraggingBase_DragTooltipTemplate(object instance)
+        private object get_361_XySegmentDraggingBase_DragTooltipTemplate(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase)instance;
             return that.DragTooltipTemplate;
         }
-        private void set_350_XySegmentDraggingBase_DragTooltipTemplate(object instance, object Value)
+        private void set_361_XySegmentDraggingBase_DragTooltipTemplate(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase)instance;
             that.DragTooltipTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_351_XySegmentDraggingBase_RoundToDecimal(object instance)
+        private object get_362_XySegmentDraggingBase_RoundToDecimal(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase)instance;
             return that.RoundToDecimal;
         }
-        private void set_351_XySegmentDraggingBase_RoundToDecimal(object instance, object Value)
+        private void set_362_XySegmentDraggingBase_RoundToDecimal(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase)instance;
             that.RoundToDecimal = (global::System.Int32)Value;
         }
-        private object get_352_XySegmentDraggingBase_SnapToPoint(object instance)
+        private object get_363_XySegmentDraggingBase_SnapToPoint(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase)instance;
             return that.SnapToPoint;
         }
-        private void set_352_XySegmentDraggingBase_SnapToPoint(object instance, object Value)
+        private void set_363_XySegmentDraggingBase_SnapToPoint(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase)instance;
             that.SnapToPoint = (global::Syncfusion.UI.Xaml.Charts.SnapToPoint)Value;
         }
-        private object get_353_XySegmentDraggingBase_EnableSegmentDragging(object instance)
+        private object get_364_XySegmentDraggingBase_EnableSegmentDragging(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase)instance;
             return that.EnableSegmentDragging;
         }
-        private void set_353_XySegmentDraggingBase_EnableSegmentDragging(object instance, object Value)
+        private void set_364_XySegmentDraggingBase_EnableSegmentDragging(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase)instance;
             that.EnableSegmentDragging = (global::System.Boolean)Value;
         }
-        private object get_354_XySegmentDraggingBase_UpdateSource(object instance)
+        private object get_365_XySegmentDraggingBase_UpdateSource(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase)instance;
             return that.UpdateSource;
         }
-        private void set_354_XySegmentDraggingBase_UpdateSource(object instance, object Value)
+        private void set_365_XySegmentDraggingBase_UpdateSource(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase)instance;
             that.UpdateSource = (global::System.Boolean)Value;
         }
-        private object get_355_XySegmentDraggingBase_DragCancelKeyModifiers(object instance)
+        private object get_366_XySegmentDraggingBase_DragCancelKeyModifiers(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase)instance;
             return that.DragCancelKeyModifiers;
         }
-        private void set_355_XySegmentDraggingBase_DragCancelKeyModifiers(object instance, object Value)
+        private void set_366_XySegmentDraggingBase_DragCancelKeyModifiers(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase)instance;
             that.DragCancelKeyModifiers = (global::Windows.System.VirtualKeyModifiers)Value;
         }
-        private object get_356_CartesianSeries_Trendlines(object instance)
+        private object get_367_CartesianSeries_Trendlines(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.CartesianSeries)instance;
             return that.Trendlines;
         }
-        private void set_356_CartesianSeries_Trendlines(object instance, object Value)
+        private void set_367_CartesianSeries_Trendlines(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.CartesianSeries)instance;
             that.Trendlines = (global::Syncfusion.UI.Xaml.Charts.ChartTrendLineCollection)Value;
         }
-        private object get_357_TrendlineBase_Slope(object instance)
+        private object get_368_TrendlineBase_Slope(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             return that.Slope;
         }
-        private object get_358_TrendlineBase_Intercept(object instance)
+        private object get_369_TrendlineBase_Intercept(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             return that.Intercept;
         }
-        private object get_359_TrendlineBase_PolynomialSlopes(object instance)
+        private object get_370_TrendlineBase_PolynomialSlopes(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             return that.PolynomialSlopes;
         }
-        private object get_360_TrendlineBase_IsTrendlineVisible(object instance)
+        private object get_371_TrendlineBase_IsTrendlineVisible(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             return that.IsTrendlineVisible;
         }
-        private void set_360_TrendlineBase_IsTrendlineVisible(object instance, object Value)
+        private void set_371_TrendlineBase_IsTrendlineVisible(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             that.IsTrendlineVisible = (global::System.Boolean)Value;
         }
-        private object get_361_TrendlineBase_VisibilityOnLegend(object instance)
+        private object get_372_TrendlineBase_VisibilityOnLegend(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             return that.VisibilityOnLegend;
         }
-        private void set_361_TrendlineBase_VisibilityOnLegend(object instance, object Value)
+        private void set_372_TrendlineBase_VisibilityOnLegend(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             that.VisibilityOnLegend = (global::Windows.UI.Xaml.Visibility)Value;
         }
-        private object get_362_TrendlineBase_LegendIconTemplate(object instance)
+        private object get_373_TrendlineBase_LegendIconTemplate(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             return that.LegendIconTemplate;
         }
-        private void set_362_TrendlineBase_LegendIconTemplate(object instance, object Value)
+        private void set_373_TrendlineBase_LegendIconTemplate(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             that.LegendIconTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_363_TrendlineBase_LegendIcon(object instance)
+        private object get_374_TrendlineBase_LegendIcon(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             return that.LegendIcon;
         }
-        private void set_363_TrendlineBase_LegendIcon(object instance, object Value)
+        private void set_374_TrendlineBase_LegendIcon(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             that.LegendIcon = (global::Syncfusion.UI.Xaml.Charts.ChartLegendIcon)Value;
         }
-        private object get_364_TrendlineBase_Label(object instance)
+        private object get_375_TrendlineBase_Label(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             return that.Label;
         }
-        private void set_364_TrendlineBase_Label(object instance, object Value)
+        private void set_375_TrendlineBase_Label(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             that.Label = (global::System.String)Value;
         }
-        private object get_365_TrendlineBase_Type(object instance)
+        private object get_376_TrendlineBase_Type(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             return that.Type;
         }
-        private void set_365_TrendlineBase_Type(object instance, object Value)
+        private void set_376_TrendlineBase_Type(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             that.Type = (global::Syncfusion.UI.Xaml.Charts.TrendlineType)Value;
         }
-        private object get_366_TrendlineBase_Stroke(object instance)
+        private object get_377_TrendlineBase_Stroke(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             return that.Stroke;
         }
-        private void set_366_TrendlineBase_Stroke(object instance, object Value)
+        private void set_377_TrendlineBase_Stroke(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             that.Stroke = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_367_TrendlineBase_StrokeThickness(object instance)
+        private object get_378_TrendlineBase_StrokeThickness(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             return that.StrokeThickness;
         }
-        private void set_367_TrendlineBase_StrokeThickness(object instance, object Value)
+        private void set_378_TrendlineBase_StrokeThickness(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             that.StrokeThickness = (global::System.Double)Value;
         }
-        private object get_368_TrendlineBase_StrokeDashArray(object instance)
+        private object get_379_TrendlineBase_StrokeDashArray(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             return that.StrokeDashArray;
         }
-        private void set_368_TrendlineBase_StrokeDashArray(object instance, object Value)
+        private void set_379_TrendlineBase_StrokeDashArray(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             that.StrokeDashArray = (global::Windows.UI.Xaml.Media.DoubleCollection)Value;
         }
-        private object get_369_TrendlineBase_ForwardForecast(object instance)
+        private object get_380_TrendlineBase_ForwardForecast(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             return that.ForwardForecast;
         }
-        private void set_369_TrendlineBase_ForwardForecast(object instance, object Value)
+        private void set_380_TrendlineBase_ForwardForecast(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             that.ForwardForecast = (global::System.Double)Value;
         }
-        private object get_370_TrendlineBase_BackwardForecast(object instance)
+        private object get_381_TrendlineBase_BackwardForecast(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             return that.BackwardForecast;
         }
-        private void set_370_TrendlineBase_BackwardForecast(object instance, object Value)
+        private void set_381_TrendlineBase_BackwardForecast(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             that.BackwardForecast = (global::System.Double)Value;
         }
-        private object get_371_TrendlineBase_PolynomialOrder(object instance)
+        private object get_382_TrendlineBase_PolynomialOrder(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             return that.PolynomialOrder;
         }
-        private void set_371_TrendlineBase_PolynomialOrder(object instance, object Value)
+        private void set_382_TrendlineBase_PolynomialOrder(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.TrendlineBase)instance;
             that.PolynomialOrder = (global::System.Int32)Value;
         }
-        private object get_372_CartesianSeries_XRange(object instance)
+        private object get_383_CartesianSeries_XRange(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.CartesianSeries)instance;
             return that.XRange;
         }
-        private object get_373_CartesianSeries_YRange(object instance)
+        private object get_384_CartesianSeries_YRange(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.CartesianSeries)instance;
             return that.YRange;
         }
-        private object get_374_CartesianSeries_XAxis(object instance)
+        private object get_385_CartesianSeries_XAxis(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.CartesianSeries)instance;
             return that.XAxis;
         }
-        private void set_374_CartesianSeries_XAxis(object instance, object Value)
+        private void set_385_CartesianSeries_XAxis(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.CartesianSeries)instance;
             that.XAxis = (global::Syncfusion.UI.Xaml.Charts.ChartAxisBase2D)Value;
         }
-        private object get_375_CartesianSeries_YAxis(object instance)
+        private object get_386_CartesianSeries_YAxis(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.CartesianSeries)instance;
             return that.YAxis;
         }
-        private void set_375_CartesianSeries_YAxis(object instance, object Value)
+        private void set_386_CartesianSeries_YAxis(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.CartesianSeries)instance;
             that.YAxis = (global::Syncfusion.UI.Xaml.Charts.RangeAxisBase)Value;
         }
-        private object get_376_CartesianSeries_IsTransposed(object instance)
+        private object get_387_CartesianSeries_IsTransposed(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.CartesianSeries)instance;
             return that.IsTransposed;
         }
-        private void set_376_CartesianSeries_IsTransposed(object instance, object Value)
+        private void set_387_CartesianSeries_IsTransposed(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.Charts.CartesianSeries)instance;
             that.IsTransposed = (global::System.Boolean)Value;
         }
-        private object get_377_SfPivotChart_ShowToolTip(object instance)
+        private object get_388_SfPivotChart_ShowToolTip(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             return that.ShowToolTip;
         }
-        private void set_377_SfPivotChart_ShowToolTip(object instance, object Value)
+        private void set_388_SfPivotChart_ShowToolTip(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             that.ShowToolTip = (global::System.Boolean)Value;
         }
-        private object get_378_SfPivotChart_ItemSource(object instance)
+        private object get_389_SfPivotChart_ItemSource(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             return that.ItemSource;
         }
-        private void set_378_SfPivotChart_ItemSource(object instance, object Value)
+        private void set_389_SfPivotChart_ItemSource(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             that.ItemSource = (global::System.Object)Value;
         }
-        private object get_379_SfPivotChart_PivotAxis(object instance)
+        private object get_390_SfPivotChart_PivotAxis(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             return that.PivotAxis;
         }
-        private void set_379_SfPivotChart_PivotAxis(object instance, object Value)
+        private void set_390_SfPivotChart_PivotAxis(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             that.PivotAxis = (global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.PivotAnalysis.UWP.PivotItem>)Value;
         }
-        private object get_380_PivotItem_FieldCaption(object instance)
+        private object get_391_PivotItem_FieldCaption(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             return that.FieldCaption;
         }
-        private void set_380_PivotItem_FieldCaption(object instance, object Value)
+        private void set_391_PivotItem_FieldCaption(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             that.FieldCaption = (global::System.String)Value;
         }
-        private object get_381_PivotItem_FieldMappingName(object instance)
+        private object get_392_PivotItem_FieldMappingName(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             return that.FieldMappingName;
         }
-        private void set_381_PivotItem_FieldMappingName(object instance, object Value)
+        private void set_392_PivotItem_FieldMappingName(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             that.FieldMappingName = (global::System.String)Value;
         }
-        private object get_382_PivotItem_TotalHeader(object instance)
+        private object get_393_PivotItem_TotalHeader(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             return that.TotalHeader;
         }
-        private void set_382_PivotItem_TotalHeader(object instance, object Value)
+        private void set_393_PivotItem_TotalHeader(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             that.TotalHeader = (global::System.String)Value;
         }
-        private object get_383_PivotItem_Format(object instance)
+        private object get_394_PivotItem_Format(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             return that.Format;
         }
-        private void set_383_PivotItem_Format(object instance, object Value)
+        private void set_394_PivotItem_Format(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             that.Format = (global::System.String)Value;
         }
-        private object get_384_PivotItem_SummaryType(object instance)
+        private object get_395_PivotItem_SummaryType(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             return that.SummaryType;
         }
-        private void set_384_PivotItem_SummaryType(object instance, object Value)
+        private void set_395_PivotItem_SummaryType(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             that.SummaryType = (global::Syncfusion.PivotAnalysis.UWP.SummaryType)Value;
         }
-        private object get_385_PivotItem_Summary(object instance)
+        private object get_396_PivotItem_Summary(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             return that.Summary;
         }
-        private void set_385_PivotItem_Summary(object instance, object Value)
+        private void set_396_PivotItem_Summary(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             that.Summary = (global::Syncfusion.PivotAnalysis.UWP.SummaryBase)Value;
         }
-        private object get_386_PivotItem_ShowSubTotal(object instance)
+        private object get_397_PivotItem_ShowSubTotal(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             return that.ShowSubTotal;
         }
-        private void set_386_PivotItem_ShowSubTotal(object instance, object Value)
+        private void set_397_PivotItem_ShowSubTotal(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             that.ShowSubTotal = (global::System.Boolean)Value;
         }
-        private object get_387_PivotItem_AllowSort(object instance)
+        private object get_398_PivotItem_AllowSort(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             return that.AllowSort;
         }
-        private void set_387_PivotItem_AllowSort(object instance, object Value)
+        private void set_398_PivotItem_AllowSort(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             that.AllowSort = (global::System.Boolean)Value;
         }
-        private object get_388_PivotItem_Width(object instance)
+        private object get_399_PivotItem_Width(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             return that.Width;
         }
-        private void set_388_PivotItem_Width(object instance, object Value)
+        private void set_399_PivotItem_Width(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             that.Width = (global::System.Double)Value;
         }
-        private object get_389_PivotItem_AllowFilter(object instance)
+        private object get_400_PivotItem_AllowFilter(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             return that.AllowFilter;
         }
-        private void set_389_PivotItem_AllowFilter(object instance, object Value)
+        private void set_400_PivotItem_AllowFilter(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             that.AllowFilter = (global::System.Boolean)Value;
         }
-        private object get_390_PivotItem_EnableHyperlinks(object instance)
+        private object get_401_PivotItem_EnableHyperlinks(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             return that.EnableHyperlinks;
         }
-        private void set_390_PivotItem_EnableHyperlinks(object instance, object Value)
+        private void set_401_PivotItem_EnableHyperlinks(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             that.EnableHyperlinks = (global::System.Boolean)Value;
         }
-        private object get_391_PivotItem_SortDirection(object instance)
+        private object get_402_PivotItem_SortDirection(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             return that.SortDirection;
         }
-        private void set_391_PivotItem_SortDirection(object instance, object Value)
+        private void set_402_PivotItem_SortDirection(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             that.SortDirection = (global::Syncfusion.Data.ListSortDirection)Value;
         }
-        private object get_392_PivotItem_FieldHeader(object instance)
+        private object get_403_PivotItem_FieldHeader(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             return that.FieldHeader;
         }
-        private void set_392_PivotItem_FieldHeader(object instance, object Value)
+        private void set_403_PivotItem_FieldHeader(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             that.FieldHeader = (global::System.String)Value;
         }
-        private object get_393_PivotItem_Comparer(object instance)
+        private object get_404_PivotItem_Comparer(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             return that.Comparer;
         }
-        private void set_393_PivotItem_Comparer(object instance, object Value)
+        private void set_404_PivotItem_Comparer(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             that.Comparer = (global::System.Collections.IComparer)Value;
         }
-        private object get_394_PivotItem_AllowRunTimeGroupByField(object instance)
+        private object get_405_PivotItem_AllowRunTimeGroupByField(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             return that.AllowRunTimeGroupByField;
         }
-        private void set_394_PivotItem_AllowRunTimeGroupByField(object instance, object Value)
+        private void set_405_PivotItem_AllowRunTimeGroupByField(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotItem)instance;
             that.AllowRunTimeGroupByField = (global::System.Boolean)Value;
         }
-        private object get_395_SfPivotChart_Legend(object instance)
+        private object get_406_SfPivotChart_Legend(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             return that.Legend;
         }
-        private void set_395_SfPivotChart_Legend(object instance, object Value)
+        private void set_406_SfPivotChart_Legend(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             that.Legend = (global::Syncfusion.UI.Xaml.PivotChart.PivotChartLegend)Value;
         }
-        private object get_396_SfPivotChart_PivotLegend(object instance)
+        private object get_407_SfPivotChart_PivotLegend(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             return that.PivotLegend;
         }
-        private void set_396_SfPivotChart_PivotLegend(object instance, object Value)
+        private void set_407_SfPivotChart_PivotLegend(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             that.PivotLegend = (global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.PivotAnalysis.UWP.PivotItem>)Value;
         }
-        private object get_397_SfPivotChart_PivotCalculations(object instance)
+        private object get_408_SfPivotChart_PivotCalculations(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             return that.PivotCalculations;
         }
-        private void set_397_SfPivotChart_PivotCalculations(object instance, object Value)
+        private void set_408_SfPivotChart_PivotCalculations(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             that.PivotCalculations = (global::System.Collections.ObjectModel.ObservableCollection<global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo>)Value;
         }
-        private object get_398_PivotComputationInfo_FieldHeader(object instance)
+        private object get_409_PivotComputationInfo_FieldHeader(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             return that.FieldHeader;
         }
-        private void set_398_PivotComputationInfo_FieldHeader(object instance, object Value)
+        private void set_409_PivotComputationInfo_FieldHeader(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             that.FieldHeader = (global::System.String)Value;
         }
-        private object get_399_PivotComputationInfo_FieldCaption(object instance)
+        private object get_410_PivotComputationInfo_FieldCaption(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             return that.FieldCaption;
         }
-        private void set_399_PivotComputationInfo_FieldCaption(object instance, object Value)
+        private void set_410_PivotComputationInfo_FieldCaption(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             that.FieldCaption = (global::System.String)Value;
         }
-        private object get_400_PivotComputationInfo_FieldName(object instance)
+        private object get_411_PivotComputationInfo_FieldName(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             return that.FieldName;
         }
-        private void set_400_PivotComputationInfo_FieldName(object instance, object Value)
+        private void set_411_PivotComputationInfo_FieldName(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             that.FieldName = (global::System.String)Value;
         }
-        private object get_401_PivotComputationInfo_Format(object instance)
+        private object get_412_PivotComputationInfo_Format(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             return that.Format;
         }
-        private void set_401_PivotComputationInfo_Format(object instance, object Value)
+        private void set_412_PivotComputationInfo_Format(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             that.Format = (global::System.String)Value;
         }
-        private object get_402_PivotComputationInfo_SummaryType(object instance)
+        private object get_413_PivotComputationInfo_SummaryType(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             return that.SummaryType;
         }
-        private void set_402_PivotComputationInfo_SummaryType(object instance, object Value)
+        private void set_413_PivotComputationInfo_SummaryType(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             that.SummaryType = (global::Syncfusion.PivotAnalysis.UWP.SummaryType)Value;
         }
-        private object get_403_PivotComputationInfo_AllowSort(object instance)
+        private object get_414_PivotComputationInfo_AllowSort(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             return that.AllowSort;
         }
-        private void set_403_PivotComputationInfo_AllowSort(object instance, object Value)
+        private void set_414_PivotComputationInfo_AllowSort(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             that.AllowSort = (global::System.Boolean)Value;
         }
-        private object get_404_PivotComputationInfo_AllowFilter(object instance)
+        private object get_415_PivotComputationInfo_AllowFilter(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             return that.AllowFilter;
         }
-        private void set_404_PivotComputationInfo_AllowFilter(object instance, object Value)
+        private void set_415_PivotComputationInfo_AllowFilter(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             that.AllowFilter = (global::System.Boolean)Value;
         }
-        private object get_405_PivotComputationInfo_IsTopColumnSummary(object instance)
+        private object get_416_PivotComputationInfo_IsTopColumnSummary(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             return that.IsTopColumnSummary;
         }
-        private void set_405_PivotComputationInfo_IsTopColumnSummary(object instance, object Value)
+        private void set_416_PivotComputationInfo_IsTopColumnSummary(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             that.IsTopColumnSummary = (global::System.Boolean)Value;
         }
-        private object get_406_PivotComputationInfo_EnableHyperlinks(object instance)
+        private object get_417_PivotComputationInfo_EnableHyperlinks(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             return that.EnableHyperlinks;
         }
-        private void set_406_PivotComputationInfo_EnableHyperlinks(object instance, object Value)
+        private void set_417_PivotComputationInfo_EnableHyperlinks(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             that.EnableHyperlinks = (global::System.Boolean)Value;
         }
-        private object get_407_PivotComputationInfo_Description(object instance)
+        private object get_418_PivotComputationInfo_Description(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             return that.Description;
         }
-        private void set_407_PivotComputationInfo_Description(object instance, object Value)
+        private void set_418_PivotComputationInfo_Description(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             that.Description = (global::System.String)Value;
         }
-        private object get_408_PivotComputationInfo_InnerMostComputationsOnly(object instance)
+        private object get_419_PivotComputationInfo_InnerMostComputationsOnly(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             return that.InnerMostComputationsOnly;
         }
-        private void set_408_PivotComputationInfo_InnerMostComputationsOnly(object instance, object Value)
+        private void set_419_PivotComputationInfo_InnerMostComputationsOnly(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             that.InnerMostComputationsOnly = (global::Syncfusion.PivotAnalysis.UWP.SummaryDisplayLevel)Value;
         }
-        private object get_409_PivotComputationInfo_PadString(object instance)
+        private object get_420_PivotComputationInfo_PadString(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             return that.PadString;
         }
-        private void set_409_PivotComputationInfo_PadString(object instance, object Value)
+        private void set_420_PivotComputationInfo_PadString(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             that.PadString = (global::System.String)Value;
         }
-        private object get_410_PivotComputationInfo_CalculationName(object instance)
+        private object get_421_PivotComputationInfo_CalculationName(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             return that.CalculationName;
         }
-        private void set_410_PivotComputationInfo_CalculationName(object instance, object Value)
+        private void set_421_PivotComputationInfo_CalculationName(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             that.CalculationName = (global::System.String)Value;
         }
-        private object get_411_PivotComputationInfo_AllowRunTimeGroupByField(object instance)
+        private object get_422_PivotComputationInfo_AllowRunTimeGroupByField(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             return that.AllowRunTimeGroupByField;
         }
-        private void set_411_PivotComputationInfo_AllowRunTimeGroupByField(object instance, object Value)
+        private void set_422_PivotComputationInfo_AllowRunTimeGroupByField(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             that.AllowRunTimeGroupByField = (global::System.Boolean)Value;
         }
-        private object get_412_PivotComputationInfo_Summary(object instance)
+        private object get_423_PivotComputationInfo_Summary(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             return that.Summary;
         }
-        private void set_412_PivotComputationInfo_Summary(object instance, object Value)
+        private void set_423_PivotComputationInfo_Summary(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             that.Summary = (global::Syncfusion.PivotAnalysis.UWP.SummaryBase)Value;
         }
-        private object get_413_PivotComputationInfo_DisplayOption(object instance)
+        private object get_424_PivotComputationInfo_DisplayOption(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             return that.DisplayOption;
         }
-        private void set_413_PivotComputationInfo_DisplayOption(object instance, object Value)
+        private void set_424_PivotComputationInfo_DisplayOption(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             that.DisplayOption = (global::Syncfusion.PivotAnalysis.UWP.DisplayOption)Value;
         }
-        private object get_414_PivotComputationInfo_CalculationType(object instance)
+        private object get_425_PivotComputationInfo_CalculationType(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             return that.CalculationType;
         }
-        private void set_414_PivotComputationInfo_CalculationType(object instance, object Value)
+        private void set_425_PivotComputationInfo_CalculationType(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             that.CalculationType = (global::Syncfusion.PivotAnalysis.UWP.CalculationType)Value;
         }
-        private object get_415_PivotComputationInfo_BaseField(object instance)
+        private object get_426_PivotComputationInfo_BaseField(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             return that.BaseField;
         }
-        private void set_415_PivotComputationInfo_BaseField(object instance, object Value)
+        private void set_426_PivotComputationInfo_BaseField(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             that.BaseField = (global::System.String)Value;
         }
-        private object get_416_PivotComputationInfo_BaseItem(object instance)
+        private object get_427_PivotComputationInfo_BaseItem(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             return that.BaseItem;
         }
-        private void set_416_PivotComputationInfo_BaseItem(object instance, object Value)
+        private void set_427_PivotComputationInfo_BaseItem(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             that.BaseItem = (global::System.String)Value;
         }
-        private object get_417_PivotComputationInfo_Formula(object instance)
+        private object get_428_PivotComputationInfo_Formula(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             return that.Formula;
         }
-        private void set_417_PivotComputationInfo_Formula(object instance, object Value)
+        private void set_428_PivotComputationInfo_Formula(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             that.Formula = (global::System.String)Value;
         }
-        private object get_418_PivotComputationInfo_Expression(object instance)
+        private object get_429_PivotComputationInfo_Expression(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             return that.Expression;
         }
-        private void set_418_PivotComputationInfo_Expression(object instance, object Value)
+        private void set_429_PivotComputationInfo_Expression(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             that.Expression = (global::Syncfusion.PivotAnalysis.UWP.FilterExpression)Value;
         }
-        private object get_419_PivotComputationInfo_DefaultValue(object instance)
+        private object get_430_PivotComputationInfo_DefaultValue(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             return that.DefaultValue;
         }
-        private void set_419_PivotComputationInfo_DefaultValue(object instance, object Value)
+        private void set_430_PivotComputationInfo_DefaultValue(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             that.DefaultValue = (global::System.Object)Value;
         }
-        private object get_420_PivotComputationInfo_FieldType(object instance)
+        private object get_431_PivotComputationInfo_FieldType(object instance)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             return that.FieldType;
         }
-        private void set_420_PivotComputationInfo_FieldType(object instance, object Value)
+        private void set_431_PivotComputationInfo_FieldType(object instance, object Value)
         {
             var that = (global::Syncfusion.PivotAnalysis.UWP.PivotComputationInfo)instance;
             that.FieldType = (global::System.String)Value;
         }
-        private object get_421_SfPivotChart_OlapDataManager(object instance)
+        private object get_432_SfPivotChart_OlapDataManager(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             return that.OlapDataManager;
         }
-        private void set_421_SfPivotChart_OlapDataManager(object instance, object Value)
+        private void set_432_SfPivotChart_OlapDataManager(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             that.OlapDataManager = (global::Syncfusion.Olap.UWP.Manager.OlapDataManager)Value;
         }
-        private object get_422_SfPivotChart_AdornmentTemplate(object instance)
+        private object get_433_SfPivotChart_AdornmentTemplate(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             return that.AdornmentTemplate;
         }
-        private void set_422_SfPivotChart_AdornmentTemplate(object instance, object Value)
+        private void set_433_SfPivotChart_AdornmentTemplate(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             that.AdornmentTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_423_SfPivotChart_ChartType(object instance)
+        private object get_434_SfPivotChart_ChartType(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             return that.ChartType;
         }
-        private void set_423_SfPivotChart_ChartType(object instance, object Value)
+        private void set_434_SfPivotChart_ChartType(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             that.ChartType = (global::Syncfusion.UI.Xaml.PivotChart.PivotChartType)Value;
         }
-        private object get_424_SfPivotChart_ColorPalette(object instance)
+        private object get_435_SfPivotChart_ColorPalette(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             return that.ColorPalette;
         }
-        private void set_424_SfPivotChart_ColorPalette(object instance, object Value)
+        private void set_435_SfPivotChart_ColorPalette(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             that.ColorPalette = (global::Syncfusion.UI.Xaml.PivotChart.PivotChartColorPalette)Value;
         }
-        private object get_425_SfPivotChart_CustomBrushes(object instance)
+        private object get_436_SfPivotChart_CustomBrushes(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             return that.CustomBrushes;
         }
-        private void set_425_SfPivotChart_CustomBrushes(object instance, object Value)
+        private void set_436_SfPivotChart_CustomBrushes(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             that.CustomBrushes = (global::System.Collections.Generic.List<global::Windows.UI.Xaml.Media.Brush>)Value;
         }
-        private object get_426_SfPivotChart_PrimaryAxisStyle(object instance)
+        private object get_437_SfPivotChart_PrimaryAxisStyle(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             return that.PrimaryAxisStyle;
         }
-        private void set_426_SfPivotChart_PrimaryAxisStyle(object instance, object Value)
+        private void set_437_SfPivotChart_PrimaryAxisStyle(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             that.PrimaryAxisStyle = (global::Syncfusion.UI.Xaml.PivotChart.PivotChartAxisStyle)Value;
         }
-        private object get_427_SfPivotChart_SecondaryAxisStyle(object instance)
+        private object get_438_SfPivotChart_SecondaryAxisStyle(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             return that.SecondaryAxisStyle;
         }
-        private void set_427_SfPivotChart_SecondaryAxisStyle(object instance, object Value)
+        private void set_438_SfPivotChart_SecondaryAxisStyle(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             that.SecondaryAxisStyle = (global::Syncfusion.UI.Xaml.PivotChart.PivotChartAxisStyle)Value;
         }
-        private object get_428_SfPivotChart_ChartVisualStyle(object instance)
+        private object get_439_SfPivotChart_ChartVisualStyle(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             return that.ChartVisualStyle;
         }
-        private void set_428_SfPivotChart_ChartVisualStyle(object instance, object Value)
+        private void set_439_SfPivotChart_ChartVisualStyle(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             that.ChartVisualStyle = (global::Syncfusion.UI.Xaml.PivotChart.PivotChartVisualStyle)Value;
         }
-        private object get_429_SfPivotChart_ShowProcessingBar(object instance)
+        private object get_440_SfPivotChart_ShowProcessingBar(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             return that.ShowProcessingBar;
         }
-        private void set_429_SfPivotChart_ShowProcessingBar(object instance, object Value)
+        private void set_440_SfPivotChart_ShowProcessingBar(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             that.ShowProcessingBar = (global::System.Boolean)Value;
         }
-        private object get_430_SfPivotChart_EnableAnimation(object instance)
+        private object get_441_SfPivotChart_EnableAnimation(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             return that.EnableAnimation;
         }
-        private void set_430_SfPivotChart_EnableAnimation(object instance, object Value)
+        private void set_441_SfPivotChart_EnableAnimation(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             that.EnableAnimation = (global::System.Boolean)Value;
         }
-        private object get_431_SfPivotChart_Watermark(object instance)
+        private object get_442_SfPivotChart_Watermark(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             return that.Watermark;
         }
-        private void set_431_SfPivotChart_Watermark(object instance, object Value)
+        private void set_442_SfPivotChart_Watermark(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             that.Watermark = (global::Syncfusion.UI.Xaml.PivotChart.PivotChartWatermark)Value;
         }
-        private object get_432_SfPivotChart_ToolTipTemplate(object instance)
+        private object get_443_SfPivotChart_ToolTipTemplate(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             return that.ToolTipTemplate;
         }
-        private void set_432_SfPivotChart_ToolTipTemplate(object instance, object Value)
+        private void set_443_SfPivotChart_ToolTipTemplate(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             that.ToolTipTemplate = (global::Windows.UI.Xaml.DataTemplate)Value;
         }
-        private object get_433_SfPivotChart_ZoomPanBehavior(object instance)
+        private object get_444_SfPivotChart_ZoomPanBehavior(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             return that.ZoomPanBehavior;
         }
-        private void set_433_SfPivotChart_ZoomPanBehavior(object instance, object Value)
+        private void set_444_SfPivotChart_ZoomPanBehavior(object instance, object Value)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             that.ZoomPanBehavior = (global::Syncfusion.UI.Xaml.PivotChart.PivotChartZoomPanBehavior)Value;
         }
-        private object get_434_SfPivotChart_PrimaryAxis(object instance)
+        private object get_445_SfPivotChart_PrimaryAxis(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             return that.PrimaryAxis;
         }
-        private object get_435_SfPivotChart_SecondaryAxis(object instance)
+        private object get_446_SfPivotChart_SecondaryAxis(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             return that.SecondaryAxis;
         }
-        private object get_436_SfPivotChart_CurrentReport(object instance)
+        private object get_447_SfPivotChart_CurrentReport(object instance)
         {
             var that = (global::Syncfusion.UI.Xaml.PivotChart.SfPivotChart)instance;
             return that.CurrentReport;
         }
-        private object get_437_PrintPageBehavior_ReportHeader(object instance)
+        private object get_448_PrintPageBehavior_ExtraInfo(object instance)
+        {
+            var that = (global::MoneyKepper2.Behaviors.PrintPageBehavior)instance;
+            return that.ExtraInfo;
+        }
+        private void set_448_PrintPageBehavior_ExtraInfo(object instance, object Value)
+        {
+            var that = (global::MoneyKepper2.Behaviors.PrintPageBehavior)instance;
+            that.ExtraInfo = (global::System.String)Value;
+        }
+        private object get_449_PrintPageBehavior_ReportHeader(object instance)
         {
             var that = (global::MoneyKepper2.Behaviors.PrintPageBehavior)instance;
             return that.ReportHeader;
         }
-        private void set_437_PrintPageBehavior_ReportHeader(object instance, object Value)
+        private void set_449_PrintPageBehavior_ReportHeader(object instance, object Value)
         {
             var that = (global::MoneyKepper2.Behaviors.PrintPageBehavior)instance;
             that.ReportHeader = (global::System.String)Value;
         }
-        private object get_438_PrintPageBehavior_ReportInfo(object instance)
+        private object get_450_PrintPageBehavior_ReportInfo(object instance)
         {
             var that = (global::MoneyKepper2.Behaviors.PrintPageBehavior)instance;
             return that.ReportInfo;
         }
-        private void set_438_PrintPageBehavior_ReportInfo(object instance, object Value)
+        private void set_450_PrintPageBehavior_ReportInfo(object instance, object Value)
         {
             var that = (global::MoneyKepper2.Behaviors.PrintPageBehavior)instance;
             that.ReportInfo = (global::System.String)Value;
         }
-        private object get_439_PrintPageBehavior_AmountItemInPage(object instance)
+        private object get_451_PrintPageBehavior_AmountItemInPage(object instance)
         {
             var that = (global::MoneyKepper2.Behaviors.PrintPageBehavior)instance;
             return that.AmountItemInPage;
         }
-        private void set_439_PrintPageBehavior_AmountItemInPage(object instance, object Value)
+        private void set_451_PrintPageBehavior_AmountItemInPage(object instance, object Value)
         {
             var that = (global::MoneyKepper2.Behaviors.PrintPageBehavior)instance;
             that.AmountItemInPage = (global::System.Int32)Value;
         }
-        private object get_440_PrintPageBehavior_RootListView(object instance)
+        private object get_452_PrintPageBehavior_RootListView(object instance)
         {
             var that = (global::MoneyKepper2.Behaviors.PrintPageBehavior)instance;
             return that.RootListView;
         }
-        private void set_440_PrintPageBehavior_RootListView(object instance, object Value)
+        private void set_452_PrintPageBehavior_RootListView(object instance, object Value)
         {
             var that = (global::MoneyKepper2.Behaviors.PrintPageBehavior)instance;
             that.RootListView = (global::Windows.UI.Xaml.Controls.ListView)Value;
         }
-        private object get_441_PrintPageBehavior_FrameworkElement(object instance)
+        private object get_453_PrintPageBehavior_FrameworkElement(object instance)
         {
             var that = (global::MoneyKepper2.Behaviors.PrintPageBehavior)instance;
             return that.FrameworkElement;
         }
-        private void set_441_PrintPageBehavior_FrameworkElement(object instance, object Value)
+        private void set_453_PrintPageBehavior_FrameworkElement(object instance, object Value)
         {
             var that = (global::MoneyKepper2.Behaviors.PrintPageBehavior)instance;
             that.FrameworkElement = (global::Windows.UI.Xaml.FrameworkElement)Value;
         }
-        private object get_442_PrintPageBehavior_AssociatedObject(object instance)
+        private object get_454_PrintPageBehavior_AssociatedObject(object instance)
         {
             var that = (global::MoneyKepper2.Behaviors.PrintPageBehavior)instance;
             return that.AssociatedObject;
         }
-        private void set_442_PrintPageBehavior_AssociatedObject(object instance, object Value)
+        private void set_454_PrintPageBehavior_AssociatedObject(object instance, object Value)
         {
             var that = (global::MoneyKepper2.Behaviors.PrintPageBehavior)instance;
             that.AssociatedObject = (global::Windows.UI.Xaml.DependencyObject)Value;
@@ -7419,836 +7612,971 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlMember.Getter = get_1_ViewModelLocator_AddTransactionViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "MoneyKepperCore.ViewModel.ViewModelLocator.AddBugetViewModel":
+                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepperCore.ViewModel.ViewModelLocator");
+                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AddBugetViewModel", "MoneyKepper_Core.ViewModel.IAddBugetViewModel");
+                xamlMember.Getter = get_2_ViewModelLocator_AddBugetViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
             case "MoneyKepperCore.ViewModel.ViewModelLocator.ControlSplitViewModel":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepperCore.ViewModel.ViewModelLocator");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ControlSplitViewModel", "MoneyKepper_Core.ViewModel.IControlSplitViewModel");
-                xamlMember.Getter = get_2_ViewModelLocator_ControlSplitViewModel;
+                xamlMember.Getter = get_3_ViewModelLocator_ControlSplitViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MoneyKepperCore.ViewModel.ViewModelLocator.ConfirmViewModel":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepperCore.ViewModel.ViewModelLocator");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ConfirmViewModel", "MoneyKepper_Core.ViewModel.IConfirmViewModel");
-                xamlMember.Getter = get_3_ViewModelLocator_ConfirmViewModel;
+                xamlMember.Getter = get_4_ViewModelLocator_ConfirmViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MoneyKepperCore.ViewModel.ViewModelLocator.GraphsViewModel":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepperCore.ViewModel.ViewModelLocator");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "GraphsViewModel", "MoneyKepper_Core.ViewModel.IGraphsViewModel");
-                xamlMember.Getter = get_4_ViewModelLocator_GraphsViewModel;
+                xamlMember.Getter = get_5_ViewModelLocator_GraphsViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MoneyKepperCore.ViewModel.ViewModelLocator.HistoryViewModel":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepperCore.ViewModel.ViewModelLocator");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "HistoryViewModel", "MoneyKepper_Core.ViewModel.IHistoryViewModel");
-                xamlMember.Getter = get_5_ViewModelLocator_HistoryViewModel;
+                xamlMember.Getter = get_6_ViewModelLocator_HistoryViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MoneyKepperCore.ViewModel.ViewModelLocator.ReportViewModel":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepperCore.ViewModel.ViewModelLocator");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ReportViewModel", "MoneyKepper_Core.ViewModel.IReportViewModel");
-                xamlMember.Getter = get_6_ViewModelLocator_ReportViewModel;
+                xamlMember.Getter = get_7_ViewModelLocator_ReportViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MoneyKepperCore.ViewModel.ViewModelLocator.ReportDetailsVewModel":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepperCore.ViewModel.ViewModelLocator");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ReportDetailsVewModel", "MoneyKepper_Core.ViewModel.IReportDetailsVewModel");
-                xamlMember.Getter = get_7_ViewModelLocator_ReportDetailsVewModel;
+                xamlMember.Getter = get_8_ViewModelLocator_ReportDetailsVewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MoneyKepperCore.ViewModel.ViewModelLocator.TransactionsDetailsViewModel":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepperCore.ViewModel.ViewModelLocator");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "TransactionsDetailsViewModel", "MoneyKepper_Core.ViewModel.ITransactionsDetailsViewModel");
-                xamlMember.Getter = get_8_ViewModelLocator_TransactionsDetailsViewModel;
+                xamlMember.Getter = get_9_ViewModelLocator_TransactionsDetailsViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MoneyKepperCore.ViewModel.ViewModelLocator.ControlPanelViewModel":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepperCore.ViewModel.ViewModelLocator");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ControlPanelViewModel", "MoneyKepper_Core.ViewModel.IControlPanelViewModel");
-                xamlMember.Getter = get_9_ViewModelLocator_ControlPanelViewModel;
+                xamlMember.Getter = get_10_ViewModelLocator_ControlPanelViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MoneyKepperCore.ViewModel.ViewModelLocator.PrimaryPanelViewModel":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepperCore.ViewModel.ViewModelLocator");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "PrimaryPanelViewModel", "MoneyKepper_Core.ViewModel.IPrimaryPanelViewModel");
-                xamlMember.Getter = get_10_ViewModelLocator_PrimaryPanelViewModel;
+                xamlMember.Getter = get_11_ViewModelLocator_PrimaryPanelViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MoneyKepperCore.ViewModel.ViewModelLocator.TransactionsViewModel":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepperCore.ViewModel.ViewModelLocator");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "TransactionsViewModel", "MoneyKepper_Core.ViewModel.ITransactionsViewModel");
-                xamlMember.Getter = get_11_ViewModelLocator_TransactionsViewModel;
+                xamlMember.Getter = get_12_ViewModelLocator_TransactionsViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MoneyKepperCore.ViewModel.ViewModelLocator.DetailsViewModel":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepperCore.ViewModel.ViewModelLocator");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "DetailsViewModel", "MoneyKepper_Core.ViewModel.IDetailsViewModel");
-                xamlMember.Getter = get_12_ViewModelLocator_DetailsViewModel;
+                xamlMember.Getter = get_13_ViewModelLocator_DetailsViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MoneyKepperCore.ViewModel.ViewModelLocator.HistoryDetailsViewModel":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepperCore.ViewModel.ViewModelLocator");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "HistoryDetailsViewModel", "MoneyKepper_Core.ViewModel.IHistoryDetailsViewModel");
-                xamlMember.Getter = get_13_ViewModelLocator_HistoryDetailsViewModel;
+                xamlMember.Getter = get_14_ViewModelLocator_HistoryDetailsViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MoneyKepperCore.ViewModel.ViewModelLocator.GraphsDetailsViewModel":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepperCore.ViewModel.ViewModelLocator");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "GraphsDetailsViewModel", "MoneyKepper_Core.ViewModel.IGraphsDetailsViewModel");
-                xamlMember.Getter = get_14_ViewModelLocator_GraphsDetailsViewModel;
+                xamlMember.Getter = get_15_ViewModelLocator_GraphsDetailsViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MoneyKepperCore.ViewModel.ViewModelLocator.CategoryDetailViewModel":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepperCore.ViewModel.ViewModelLocator");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "CategoryDetailViewModel", "MoneyKepper_Core.ViewModel.ICategoryDetailViewModel");
-                xamlMember.Getter = get_15_ViewModelLocator_CategoryDetailViewModel;
+                xamlMember.Getter = get_16_ViewModelLocator_CategoryDetailViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MoneyKepperCore.ViewModel.ViewModelLocator.CategoryViewModel":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepperCore.ViewModel.ViewModelLocator");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "CategoryViewModel", "MoneyKepper_Core.ViewModel.ICategoryViewModel");
-                xamlMember.Getter = get_16_ViewModelLocator_CategoryViewModel;
+                xamlMember.Getter = get_17_ViewModelLocator_CategoryViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "MoneyKepperCore.ViewModel.ViewModelLocator.BugetViewModel":
+                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepperCore.ViewModel.ViewModelLocator");
+                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "BugetViewModel", "MoneyKepper_Core.ViewModel.IBugetViewModel");
+                xamlMember.Getter = get_18_ViewModelLocator_BugetViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "MoneyKepperCore.ViewModel.ViewModelLocator.BugetDetailsViewModel":
+                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepperCore.ViewModel.ViewModelLocator");
+                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "BugetDetailsViewModel", "MoneyKepper_Core.ViewModel.IBugetDetailsViewModel");
+                xamlMember.Getter = get_19_ViewModelLocator_BugetDetailsViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MoneyKepperCore.ViewModel.ViewModelLocator.AddNewCategoryViewModel":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepperCore.ViewModel.ViewModelLocator");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AddNewCategoryViewModel", "MoneyKepper_Core.ViewModel.IAddNewCategoryViewModel");
-                xamlMember.Getter = get_17_ViewModelLocator_AddNewCategoryViewModel;
+                xamlMember.Getter = get_20_ViewModelLocator_AddNewCategoryViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MoneyKepperCore.ViewModel.ViewModelLocator.NavigationService":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepperCore.ViewModel.ViewModelLocator");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "NavigationService", "MoneyKepperCore.Service.INavigationService");
-                xamlMember.Getter = get_18_ViewModelLocator_NavigationService;
+                xamlMember.Getter = get_21_ViewModelLocator_NavigationService;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MoneyKepperCore.ViewModel.ViewModelLocator.DialogService":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepperCore.ViewModel.ViewModelLocator");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "DialogService", "MoneyKepper_Core.Services.IDialogService");
-                xamlMember.Getter = get_19_ViewModelLocator_DialogService;
+                xamlMember.Getter = get_22_ViewModelLocator_DialogService;
                 xamlMember.SetIsReadOnly();
                 break;
             case "MoneyKepper2.Controls.ExpanderControl.Expander":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepper2.Controls.ExpanderControl");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Expander", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_20_ExpanderControl_Expander;
-                xamlMember.Setter = set_20_ExpanderControl_Expander;
+                xamlMember.Getter = get_23_ExpanderControl_Expander;
+                xamlMember.Setter = set_23_ExpanderControl_Expander;
                 break;
             case "MoneyKepper2.Controls.ExpanderControl.ExpanderTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepper2.Controls.ExpanderControl");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ExpanderTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_21_ExpanderControl_ExpanderTemplate;
-                xamlMember.Setter = set_21_ExpanderControl_ExpanderTemplate;
+                xamlMember.Getter = get_24_ExpanderControl_ExpanderTemplate;
+                xamlMember.Setter = set_24_ExpanderControl_ExpanderTemplate;
                 break;
             case "MoneyKepper2.Controls.ExpanderControl.NonExpandableHeader":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepper2.Controls.ExpanderControl");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "NonExpandableHeader", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_22_ExpanderControl_NonExpandableHeader;
-                xamlMember.Setter = set_22_ExpanderControl_NonExpandableHeader;
+                xamlMember.Getter = get_25_ExpanderControl_NonExpandableHeader;
+                xamlMember.Setter = set_25_ExpanderControl_NonExpandableHeader;
                 break;
             case "MoneyKepper2.Controls.ExpanderControl.NonExpandableHeaderTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepper2.Controls.ExpanderControl");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "NonExpandableHeaderTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_23_ExpanderControl_NonExpandableHeaderTemplate;
-                xamlMember.Setter = set_23_ExpanderControl_NonExpandableHeaderTemplate;
+                xamlMember.Getter = get_26_ExpanderControl_NonExpandableHeaderTemplate;
+                xamlMember.Setter = set_26_ExpanderControl_NonExpandableHeaderTemplate;
                 break;
             case "MoneyKepper2.Controls.ExpanderControl.IsExpanded":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepper2.Controls.ExpanderControl");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_24_ExpanderControl_IsExpanded;
-                xamlMember.Setter = set_24_ExpanderControl_IsExpanded;
+                xamlMember.Getter = get_27_ExpanderControl_IsExpanded;
+                xamlMember.Setter = set_27_ExpanderControl_IsExpanded;
                 break;
             case "MoneyKepper2.Controls.ExpanderControl.HasItems":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepper2.Controls.ExpanderControl");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "HasItems", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_25_ExpanderControl_HasItems;
-                xamlMember.Setter = set_25_ExpanderControl_HasItems;
+                xamlMember.Getter = get_28_ExpanderControl_HasItems;
+                xamlMember.Setter = set_28_ExpanderControl_HasItems;
                 break;
             case "MoneyKepper2.Controls.ExpanderControl.IsNonExpandable":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepper2.Controls.ExpanderControl");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "IsNonExpandable", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_26_ExpanderControl_IsNonExpandable;
-                xamlMember.Setter = set_26_ExpanderControl_IsNonExpandable;
+                xamlMember.Getter = get_29_ExpanderControl_IsNonExpandable;
+                xamlMember.Setter = set_29_ExpanderControl_IsNonExpandable;
                 break;
             case "MoneyKepper2.Controls.HeaderedItemsControl.Header":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepper2.Controls.HeaderedItemsControl");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Header", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_27_HeaderedItemsControl_Header;
-                xamlMember.Setter = set_27_HeaderedItemsControl_Header;
+                xamlMember.Getter = get_30_HeaderedItemsControl_Header;
+                xamlMember.Setter = set_30_HeaderedItemsControl_Header;
                 break;
             case "MoneyKepper2.Controls.HeaderedItemsControl.HeaderTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepper2.Controls.HeaderedItemsControl");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "HeaderTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_28_HeaderedItemsControl_HeaderTemplate;
-                xamlMember.Setter = set_28_HeaderedItemsControl_HeaderTemplate;
+                xamlMember.Getter = get_31_HeaderedItemsControl_HeaderTemplate;
+                xamlMember.Setter = set_31_HeaderedItemsControl_HeaderTemplate;
                 break;
             case "MoneyKepper2.Controls.HeaderedItemsControl.ItemContainerStyle":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepper2.Controls.HeaderedItemsControl");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ItemContainerStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_29_HeaderedItemsControl_ItemContainerStyle;
-                xamlMember.Setter = set_29_HeaderedItemsControl_ItemContainerStyle;
+                xamlMember.Getter = get_32_HeaderedItemsControl_ItemContainerStyle;
+                xamlMember.Setter = set_32_HeaderedItemsControl_ItemContainerStyle;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox.Value":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Value", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_30_SfNumericTextBox_Value;
-                xamlMember.Setter = set_30_SfNumericTextBox_Value;
+                xamlMember.Getter = get_33_SfNumericTextBox_Value;
+                xamlMember.Setter = set_33_SfNumericTextBox_Value;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox.ValueChangedMode":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ValueChangedMode", "Syncfusion.UI.Xaml.Controls.Input.ValueChange");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_31_SfNumericTextBox_ValueChangedMode;
-                xamlMember.Setter = set_31_SfNumericTextBox_ValueChangedMode;
+                xamlMember.Getter = get_34_SfNumericTextBox_ValueChangedMode;
+                xamlMember.Setter = set_34_SfNumericTextBox_ValueChangedMode;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox.FormatString":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "FormatString", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_32_SfNumericTextBox_FormatString;
-                xamlMember.Setter = set_32_SfNumericTextBox_FormatString;
+                xamlMember.Getter = get_35_SfNumericTextBox_FormatString;
+                xamlMember.Setter = set_35_SfNumericTextBox_FormatString;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox.Culture":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Culture", "System.Globalization.CultureInfo");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_33_SfNumericTextBox_Culture;
-                xamlMember.Setter = set_33_SfNumericTextBox_Culture;
+                xamlMember.Getter = get_36_SfNumericTextBox_Culture;
+                xamlMember.Setter = set_36_SfNumericTextBox_Culture;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox.PercentDisplayMode":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "PercentDisplayMode", "Syncfusion.UI.Xaml.Controls.Input.PercentDisplayMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_34_SfNumericTextBox_PercentDisplayMode;
-                xamlMember.Setter = set_34_SfNumericTextBox_PercentDisplayMode;
+                xamlMember.Getter = get_37_SfNumericTextBox_PercentDisplayMode;
+                xamlMember.Setter = set_37_SfNumericTextBox_PercentDisplayMode;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox.MaximumNumberDecimalDigits":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "MaximumNumberDecimalDigits", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_35_SfNumericTextBox_MaximumNumberDecimalDigits;
-                xamlMember.Setter = set_35_SfNumericTextBox_MaximumNumberDecimalDigits;
+                xamlMember.Getter = get_38_SfNumericTextBox_MaximumNumberDecimalDigits;
+                xamlMember.Setter = set_38_SfNumericTextBox_MaximumNumberDecimalDigits;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox.AllowNull":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AllowNull", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_36_SfNumericTextBox_AllowNull;
-                xamlMember.Setter = set_36_SfNumericTextBox_AllowNull;
+                xamlMember.Getter = get_39_SfNumericTextBox_AllowNull;
+                xamlMember.Setter = set_39_SfNumericTextBox_AllowNull;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox.ParsingMode":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ParsingMode", "Syncfusion.UI.Xaml.Controls.Input.Parsers");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_37_SfNumericTextBox_ParsingMode;
-                xamlMember.Setter = set_37_SfNumericTextBox_ParsingMode;
+                xamlMember.Getter = get_40_SfNumericTextBox_ParsingMode;
+                xamlMember.Setter = set_40_SfNumericTextBox_ParsingMode;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox.BlockCharactersOnTextInput":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfNumericTextBox");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "BlockCharactersOnTextInput", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_38_SfNumericTextBox_BlockCharactersOnTextInput;
-                xamlMember.Setter = set_38_SfNumericTextBox_BlockCharactersOnTextInput;
+                xamlMember.Getter = get_41_SfNumericTextBox_BlockCharactersOnTextInput;
+                xamlMember.Setter = set_41_SfNumericTextBox_BlockCharactersOnTextInput;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.AllowPointerEvents":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AllowPointerEvents", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_39_SfTextBoxExt_AllowPointerEvents;
-                xamlMember.Setter = set_39_SfTextBoxExt_AllowPointerEvents;
+                xamlMember.Getter = get_42_SfTextBoxExt_AllowPointerEvents;
+                xamlMember.Setter = set_42_SfTextBoxExt_AllowPointerEvents;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.AutoCompleteSource":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AutoCompleteSource", "System.Collections.IEnumerable");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_40_SfTextBoxExt_AutoCompleteSource;
-                xamlMember.Setter = set_40_SfTextBoxExt_AutoCompleteSource;
+                xamlMember.Getter = get_43_SfTextBoxExt_AutoCompleteSource;
+                xamlMember.Setter = set_43_SfTextBoxExt_AutoCompleteSource;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.AutoCompleteItemTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AutoCompleteItemTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_41_SfTextBoxExt_AutoCompleteItemTemplate;
-                xamlMember.Setter = set_41_SfTextBoxExt_AutoCompleteItemTemplate;
+                xamlMember.Getter = get_44_SfTextBoxExt_AutoCompleteItemTemplate;
+                xamlMember.Setter = set_44_SfTextBoxExt_AutoCompleteItemTemplate;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.AutoCompleteItemTemplateSelector":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AutoCompleteItemTemplateSelector", "Windows.UI.Xaml.Controls.DataTemplateSelector");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_42_SfTextBoxExt_AutoCompleteItemTemplateSelector;
-                xamlMember.Setter = set_42_SfTextBoxExt_AutoCompleteItemTemplateSelector;
+                xamlMember.Getter = get_45_SfTextBoxExt_AutoCompleteItemTemplateSelector;
+                xamlMember.Setter = set_45_SfTextBoxExt_AutoCompleteItemTemplateSelector;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.AutoCompleteItemsPanel":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AutoCompleteItemsPanel", "Windows.UI.Xaml.Controls.ItemsPanelTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_43_SfTextBoxExt_AutoCompleteItemsPanel;
-                xamlMember.Setter = set_43_SfTextBoxExt_AutoCompleteItemsPanel;
+                xamlMember.Getter = get_46_SfTextBoxExt_AutoCompleteItemsPanel;
+                xamlMember.Setter = set_46_SfTextBoxExt_AutoCompleteItemsPanel;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.IsSuggestionOpen":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "IsSuggestionOpen", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_44_SfTextBoxExt_IsSuggestionOpen;
-                xamlMember.Setter = set_44_SfTextBoxExt_IsSuggestionOpen;
+                xamlMember.Getter = get_47_SfTextBoxExt_IsSuggestionOpen;
+                xamlMember.Setter = set_47_SfTextBoxExt_IsSuggestionOpen;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.SuggestionBoxPosition":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SuggestionBoxPosition", "Windows.Foundation.Point");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_45_SfTextBoxExt_SuggestionBoxPosition;
+                xamlMember.Getter = get_48_SfTextBoxExt_SuggestionBoxPosition;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.SearchItemPath":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SearchItemPath", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_46_SfTextBoxExt_SearchItemPath;
-                xamlMember.Setter = set_46_SfTextBoxExt_SearchItemPath;
+                xamlMember.Getter = get_49_SfTextBoxExt_SearchItemPath;
+                xamlMember.Setter = set_49_SfTextBoxExt_SearchItemPath;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.ValueMemberPath":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ValueMemberPath", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_47_SfTextBoxExt_ValueMemberPath;
-                xamlMember.Setter = set_47_SfTextBoxExt_ValueMemberPath;
+                xamlMember.Getter = get_50_SfTextBoxExt_ValueMemberPath;
+                xamlMember.Setter = set_50_SfTextBoxExt_ValueMemberPath;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.Suggestions":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Suggestions", "System.Collections.IEnumerable");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_48_SfTextBoxExt_Suggestions;
+                xamlMember.Getter = get_51_SfTextBoxExt_Suggestions;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.SuggestionIndex":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SuggestionIndex", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_49_SfTextBoxExt_SuggestionIndex;
+                xamlMember.Getter = get_52_SfTextBoxExt_SuggestionIndex;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.AutoCompleteMode":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AutoCompleteMode", "Syncfusion.UI.Xaml.Controls.Input.AutoCompleteMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_50_SfTextBoxExt_AutoCompleteMode;
-                xamlMember.Setter = set_50_SfTextBoxExt_AutoCompleteMode;
+                xamlMember.Getter = get_53_SfTextBoxExt_AutoCompleteMode;
+                xamlMember.Setter = set_53_SfTextBoxExt_AutoCompleteMode;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.SuggestionBoxPlacement":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SuggestionBoxPlacement", "Syncfusion.UI.Xaml.Controls.Input.SuggestionBoxPlacement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_51_SfTextBoxExt_SuggestionBoxPlacement;
-                xamlMember.Setter = set_51_SfTextBoxExt_SuggestionBoxPlacement;
+                xamlMember.Getter = get_54_SfTextBoxExt_SuggestionBoxPlacement;
+                xamlMember.Setter = set_54_SfTextBoxExt_SuggestionBoxPlacement;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.SuggestionMode":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SuggestionMode", "Syncfusion.UI.Xaml.Controls.Input.SuggestionMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_52_SfTextBoxExt_SuggestionMode;
-                xamlMember.Setter = set_52_SfTextBoxExt_SuggestionMode;
+                xamlMember.Getter = get_55_SfTextBoxExt_SuggestionMode;
+                xamlMember.Setter = set_55_SfTextBoxExt_SuggestionMode;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.IgnoreCase":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "IgnoreCase", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_53_SfTextBoxExt_IgnoreCase;
-                xamlMember.Setter = set_53_SfTextBoxExt_IgnoreCase;
+                xamlMember.Getter = get_56_SfTextBoxExt_IgnoreCase;
+                xamlMember.Setter = set_56_SfTextBoxExt_IgnoreCase;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.MinimumPrefixCharacters":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "MinimumPrefixCharacters", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_54_SfTextBoxExt_MinimumPrefixCharacters;
-                xamlMember.Setter = set_54_SfTextBoxExt_MinimumPrefixCharacters;
+                xamlMember.Getter = get_57_SfTextBoxExt_MinimumPrefixCharacters;
+                xamlMember.Setter = set_57_SfTextBoxExt_MinimumPrefixCharacters;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.PopupDelay":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "PopupDelay", "TimeSpan");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_55_SfTextBoxExt_PopupDelay;
-                xamlMember.Setter = set_55_SfTextBoxExt_PopupDelay;
+                xamlMember.Getter = get_58_SfTextBoxExt_PopupDelay;
+                xamlMember.Setter = set_58_SfTextBoxExt_PopupDelay;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.MaxDropDownHeight":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "MaxDropDownHeight", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_56_SfTextBoxExt_MaxDropDownHeight;
-                xamlMember.Setter = set_56_SfTextBoxExt_MaxDropDownHeight;
+                xamlMember.Getter = get_59_SfTextBoxExt_MaxDropDownHeight;
+                xamlMember.Setter = set_59_SfTextBoxExt_MaxDropDownHeight;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.SuggestionBoxStyle":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SuggestionBoxStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_57_SfTextBoxExt_SuggestionBoxStyle;
-                xamlMember.Setter = set_57_SfTextBoxExt_SuggestionBoxStyle;
+                xamlMember.Getter = get_60_SfTextBoxExt_SuggestionBoxStyle;
+                xamlMember.Setter = set_60_SfTextBoxExt_SuggestionBoxStyle;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.Delimeter":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Delimeter", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_58_SfTextBoxExt_Delimeter;
-                xamlMember.Setter = set_58_SfTextBoxExt_Delimeter;
+                xamlMember.Getter = get_61_SfTextBoxExt_Delimeter;
+                xamlMember.Setter = set_61_SfTextBoxExt_Delimeter;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.ShowSuggestionsOnFocus":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ShowSuggestionsOnFocus", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_59_SfTextBoxExt_ShowSuggestionsOnFocus;
-                xamlMember.Setter = set_59_SfTextBoxExt_ShowSuggestionsOnFocus;
+                xamlMember.Getter = get_62_SfTextBoxExt_ShowSuggestionsOnFocus;
+                xamlMember.Setter = set_62_SfTextBoxExt_ShowSuggestionsOnFocus;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.SelectedItem":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SelectedItem", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_60_SfTextBoxExt_SelectedItem;
-                xamlMember.Setter = set_60_SfTextBoxExt_SelectedItem;
+                xamlMember.Getter = get_63_SfTextBoxExt_SelectedItem;
+                xamlMember.Setter = set_63_SfTextBoxExt_SelectedItem;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.SelectedValue":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SelectedValue", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_61_SfTextBoxExt_SelectedValue;
-                xamlMember.Setter = set_61_SfTextBoxExt_SelectedValue;
+                xamlMember.Getter = get_64_SfTextBoxExt_SelectedValue;
+                xamlMember.Setter = set_64_SfTextBoxExt_SelectedValue;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.Watermark":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Watermark", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_62_SfTextBoxExt_Watermark;
-                xamlMember.Setter = set_62_SfTextBoxExt_Watermark;
+                xamlMember.Getter = get_65_SfTextBoxExt_Watermark;
+                xamlMember.Setter = set_65_SfTextBoxExt_Watermark;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.WatermarkTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "WatermarkTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_63_SfTextBoxExt_WatermarkTemplate;
-                xamlMember.Setter = set_63_SfTextBoxExt_WatermarkTemplate;
+                xamlMember.Getter = get_66_SfTextBoxExt_WatermarkTemplate;
+                xamlMember.Setter = set_66_SfTextBoxExt_WatermarkTemplate;
                 break;
             case "Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt.WatermarkTemplateSelector":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Controls.Input.SfTextBoxExt");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "WatermarkTemplateSelector", "Windows.UI.Xaml.Controls.DataTemplateSelector");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_64_SfTextBoxExt_WatermarkTemplateSelector;
-                xamlMember.Setter = set_64_SfTextBoxExt_WatermarkTemplateSelector;
+                xamlMember.Getter = get_67_SfTextBoxExt_WatermarkTemplateSelector;
+                xamlMember.Setter = set_67_SfTextBoxExt_WatermarkTemplateSelector;
                 break;
             case "Microsoft.Xaml.Interactivity.Interaction.Behaviors":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Interaction");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Behaviors", "Microsoft.Xaml.Interactivity.BehaviorCollection");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_65_Interaction_Behaviors;
-                xamlMember.Setter = set_65_Interaction_Behaviors;
+                xamlMember.Getter = get_68_Interaction_Behaviors;
+                xamlMember.Setter = set_68_Interaction_Behaviors;
                 break;
             case "MoneyKepper2.Behaviors.SetDateToDatePickerBehavior.Date":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepper2.Behaviors.SetDateToDatePickerBehavior");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Date", "System.Nullable`1<System.DateTimeOffset>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_66_SetDateToDatePickerBehavior_Date;
-                xamlMember.Setter = set_66_SetDateToDatePickerBehavior_Date;
+                xamlMember.Getter = get_69_SetDateToDatePickerBehavior_Date;
+                xamlMember.Setter = set_69_SetDateToDatePickerBehavior_Date;
                 break;
             case "MoneyKepper2.Behaviors.SetDateToDatePickerBehavior.AssociatedObject":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepper2.Behaviors.SetDateToDatePickerBehavior");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
-                xamlMember.Getter = get_67_SetDateToDatePickerBehavior_AssociatedObject;
-                xamlMember.Setter = set_67_SetDateToDatePickerBehavior_AssociatedObject;
+                xamlMember.Getter = get_70_SetDateToDatePickerBehavior_AssociatedObject;
+                xamlMember.Setter = set_70_SetDateToDatePickerBehavior_AssociatedObject;
                 break;
             case "MoneyKepper2.Behaviors.SetMinAndMaxDateBehavior.EndTime":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepper2.Behaviors.SetMinAndMaxDateBehavior");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "EndTime", "System.DateTime");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_68_SetMinAndMaxDateBehavior_EndTime;
-                xamlMember.Setter = set_68_SetMinAndMaxDateBehavior_EndTime;
+                xamlMember.Getter = get_71_SetMinAndMaxDateBehavior_EndTime;
+                xamlMember.Setter = set_71_SetMinAndMaxDateBehavior_EndTime;
                 break;
             case "MoneyKepper2.Behaviors.SetMinAndMaxDateBehavior.StartTime":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepper2.Behaviors.SetMinAndMaxDateBehavior");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "StartTime", "System.DateTime");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_69_SetMinAndMaxDateBehavior_StartTime;
-                xamlMember.Setter = set_69_SetMinAndMaxDateBehavior_StartTime;
+                xamlMember.Getter = get_72_SetMinAndMaxDateBehavior_StartTime;
+                xamlMember.Setter = set_72_SetMinAndMaxDateBehavior_StartTime;
                 break;
             case "MoneyKepper2.Behaviors.SetMinAndMaxDateBehavior.AssociatedObject":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepper2.Behaviors.SetMinAndMaxDateBehavior");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
-                xamlMember.Getter = get_70_SetMinAndMaxDateBehavior_AssociatedObject;
-                xamlMember.Setter = set_70_SetMinAndMaxDateBehavior_AssociatedObject;
+                xamlMember.Getter = get_73_SetMinAndMaxDateBehavior_AssociatedObject;
+                xamlMember.Setter = set_73_SetMinAndMaxDateBehavior_AssociatedObject;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.DataTriggerBehavior.Actions":
+                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.DataTriggerBehavior");
+                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Actions", "Microsoft.Xaml.Interactivity.ActionCollection");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_74_DataTriggerBehavior_Actions;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.Xaml.Interactions.Core.DataTriggerBehavior.Binding":
+                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.DataTriggerBehavior");
+                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Binding", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_75_DataTriggerBehavior_Binding;
+                xamlMember.Setter = set_75_DataTriggerBehavior_Binding;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.DataTriggerBehavior.Value":
+                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.DataTriggerBehavior");
+                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Value", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_76_DataTriggerBehavior_Value;
+                xamlMember.Setter = set_76_DataTriggerBehavior_Value;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.DataTriggerBehavior.ComparisonCondition":
+                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.DataTriggerBehavior");
+                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ComparisonCondition", "Microsoft.Xaml.Interactions.Core.ComparisonConditionType");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_77_DataTriggerBehavior_ComparisonCondition;
+                xamlMember.Setter = set_77_DataTriggerBehavior_ComparisonCondition;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.DataTriggerBehavior.AssociatedObject":
+                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.DataTriggerBehavior");
+                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
+                xamlMember.Getter = get_78_DataTriggerBehavior_AssociatedObject;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.Xaml.Interactions.Core.ChangePropertyAction.PropertyName":
+                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.ChangePropertyAction");
+                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "PropertyName", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_79_ChangePropertyAction_PropertyName;
+                xamlMember.Setter = set_79_ChangePropertyAction_PropertyName;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.ChangePropertyAction.Value":
+                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.ChangePropertyAction");
+                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Value", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_80_ChangePropertyAction_Value;
+                xamlMember.Setter = set_80_ChangePropertyAction_Value;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.ChangePropertyAction.TargetObject":
+                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.ChangePropertyAction");
+                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "TargetObject", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_81_ChangePropertyAction_TargetObject;
+                xamlMember.Setter = set_81_ChangePropertyAction_TargetObject;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions":
+                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
+                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Actions", "Microsoft.Xaml.Interactivity.ActionCollection");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_82_EventTriggerBehavior_Actions;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.EventName":
+                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
+                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "EventName", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_83_EventTriggerBehavior_EventName;
+                xamlMember.Setter = set_83_EventTriggerBehavior_EventName;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.SourceObject":
+                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
+                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SourceObject", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_84_EventTriggerBehavior_SourceObject;
+                xamlMember.Setter = set_84_EventTriggerBehavior_SourceObject;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.AssociatedObject":
+                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
+                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
+                xamlMember.Getter = get_85_EventTriggerBehavior_AssociatedObject;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.Command":
+                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
+                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Command", "System.Windows.Input.ICommand");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_86_InvokeCommandAction_Command;
+                xamlMember.Setter = set_86_InvokeCommandAction_Command;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.CommandParameter":
+                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
+                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "CommandParameter", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_87_InvokeCommandAction_CommandParameter;
+                xamlMember.Setter = set_87_InvokeCommandAction_CommandParameter;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.InputConverter":
+                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
+                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "InputConverter", "Windows.UI.Xaml.Data.IValueConverter");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_88_InvokeCommandAction_InputConverter;
+                xamlMember.Setter = set_88_InvokeCommandAction_InputConverter;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.InputConverterParameter":
+                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
+                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "InputConverterParameter", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_89_InvokeCommandAction_InputConverterParameter;
+                xamlMember.Setter = set_89_InvokeCommandAction_InputConverterParameter;
+                break;
+            case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.InputConverterLanguage":
+                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
+                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "InputConverterLanguage", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_90_InvokeCommandAction_InputConverterLanguage;
+                xamlMember.Setter = set_90_InvokeCommandAction_InputConverterLanguage;
                 break;
             case "Syncfusion.UI.Xaml.Charts.SfChart.Series":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.SfChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Series", "Syncfusion.UI.Xaml.Charts.ChartSeriesCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_71_SfChart_Series;
-                xamlMember.Setter = set_71_SfChart_Series;
+                xamlMember.Getter = get_91_SfChart_Series;
+                xamlMember.Setter = set_91_SfChart_Series;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeries.Area":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeries");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Area", "Syncfusion.UI.Xaml.Charts.SfChart");
-                xamlMember.Getter = get_72_ChartSeries_Area;
+                xamlMember.Getter = get_92_ChartSeries_Area;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeries.Stroke":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeries");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Stroke", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_73_ChartSeries_Stroke;
-                xamlMember.Setter = set_73_ChartSeries_Stroke;
+                xamlMember.Getter = get_93_ChartSeries_Stroke;
+                xamlMember.Setter = set_93_ChartSeries_Stroke;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeries.StrokeThickness":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeries");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "StrokeThickness", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_74_ChartSeries_StrokeThickness;
-                xamlMember.Setter = set_74_ChartSeries_StrokeThickness;
+                xamlMember.Getter = get_94_ChartSeries_StrokeThickness;
+                xamlMember.Setter = set_94_ChartSeries_StrokeThickness;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.DataCount":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "DataCount", "Int32");
-                xamlMember.Getter = get_75_ChartSeriesBase_DataCount;
+                xamlMember.Getter = get_95_ChartSeriesBase_DataCount;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.IsSortData":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "IsSortData", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_76_ChartSeriesBase_IsSortData;
-                xamlMember.Setter = set_76_ChartSeriesBase_IsSortData;
+                xamlMember.Getter = get_96_ChartSeriesBase_IsSortData;
+                xamlMember.Setter = set_96_ChartSeriesBase_IsSortData;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.SortDirection":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SortDirection", "Syncfusion.UI.Xaml.Charts.Direction");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_77_ChartSeriesBase_SortDirection;
-                xamlMember.Setter = set_77_ChartSeriesBase_SortDirection;
+                xamlMember.Getter = get_97_ChartSeriesBase_SortDirection;
+                xamlMember.Setter = set_97_ChartSeriesBase_SortDirection;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.SortBy":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SortBy", "Syncfusion.UI.Xaml.Charts.SortingAxis");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_78_ChartSeriesBase_SortBy;
-                xamlMember.Setter = set_78_ChartSeriesBase_SortBy;
+                xamlMember.Getter = get_98_ChartSeriesBase_SortBy;
+                xamlMember.Setter = set_98_ChartSeriesBase_SortBy;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.TooltipTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "TooltipTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_79_ChartSeriesBase_TooltipTemplate;
-                xamlMember.Setter = set_79_ChartSeriesBase_TooltipTemplate;
+                xamlMember.Getter = get_99_ChartSeriesBase_TooltipTemplate;
+                xamlMember.Setter = set_99_ChartSeriesBase_TooltipTemplate;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.ShowTooltip":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ShowTooltip", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_80_ChartSeriesBase_ShowTooltip;
-                xamlMember.Setter = set_80_ChartSeriesBase_ShowTooltip;
+                xamlMember.Getter = get_100_ChartSeriesBase_ShowTooltip;
+                xamlMember.Setter = set_100_ChartSeriesBase_ShowTooltip;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.ListenPropertyChange":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ListenPropertyChange", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_81_ChartSeriesBase_ListenPropertyChange;
-                xamlMember.Setter = set_81_ChartSeriesBase_ListenPropertyChange;
+                xamlMember.Getter = get_101_ChartSeriesBase_ListenPropertyChange;
+                xamlMember.Setter = set_101_ChartSeriesBase_ListenPropertyChange;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.Adornments":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Adornments", "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartAdornment>");
-                xamlMember.Getter = get_82_ChartSeriesBase_Adornments;
+                xamlMember.Getter = get_102_ChartSeriesBase_Adornments;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornment.Series":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornment");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Series", "Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
-                xamlMember.Getter = get_83_ChartAdornment_Series;
+                xamlMember.Getter = get_103_ChartAdornment_Series;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornment.Background":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornment");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Background", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_84_ChartAdornment_Background;
-                xamlMember.Setter = set_84_ChartAdornment_Background;
+                xamlMember.Getter = get_104_ChartAdornment_Background;
+                xamlMember.Setter = set_104_ChartAdornment_Background;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornment.BorderThickness":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornment");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "BorderThickness", "Windows.UI.Xaml.Thickness");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_85_ChartAdornment_BorderThickness;
-                xamlMember.Setter = set_85_ChartAdornment_BorderThickness;
+                xamlMember.Getter = get_105_ChartAdornment_BorderThickness;
+                xamlMember.Setter = set_105_ChartAdornment_BorderThickness;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornment.BorderBrush":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornment");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "BorderBrush", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_86_ChartAdornment_BorderBrush;
-                xamlMember.Setter = set_86_ChartAdornment_BorderBrush;
+                xamlMember.Getter = get_106_ChartAdornment_BorderBrush;
+                xamlMember.Setter = set_106_ChartAdornment_BorderBrush;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornment.Margin":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornment");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Margin", "Windows.UI.Xaml.Thickness");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_87_ChartAdornment_Margin;
-                xamlMember.Setter = set_87_ChartAdornment_Margin;
+                xamlMember.Getter = get_107_ChartAdornment_Margin;
+                xamlMember.Setter = set_107_ChartAdornment_Margin;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornment.FontFamily":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornment");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "FontFamily", "Windows.UI.Xaml.Media.FontFamily");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_88_ChartAdornment_FontFamily;
-                xamlMember.Setter = set_88_ChartAdornment_FontFamily;
+                xamlMember.Getter = get_108_ChartAdornment_FontFamily;
+                xamlMember.Setter = set_108_ChartAdornment_FontFamily;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornment.FontStyle":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornment");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "FontStyle", "Windows.UI.Text.FontStyle");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_89_ChartAdornment_FontStyle;
-                xamlMember.Setter = set_89_ChartAdornment_FontStyle;
+                xamlMember.Getter = get_109_ChartAdornment_FontStyle;
+                xamlMember.Setter = set_109_ChartAdornment_FontStyle;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornment.FontSize":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornment");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "FontSize", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_90_ChartAdornment_FontSize;
-                xamlMember.Setter = set_90_ChartAdornment_FontSize;
+                xamlMember.Getter = get_110_ChartAdornment_FontSize;
+                xamlMember.Setter = set_110_ChartAdornment_FontSize;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornment.Foreground":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornment");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Foreground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_91_ChartAdornment_Foreground;
-                xamlMember.Setter = set_91_ChartAdornment_Foreground;
+                xamlMember.Getter = get_111_ChartAdornment_Foreground;
+                xamlMember.Setter = set_111_ChartAdornment_Foreground;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornment.ConnectorRotationAngle":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornment");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ConnectorRotationAngle", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_92_ChartAdornment_ConnectorRotationAngle;
-                xamlMember.Setter = set_92_ChartAdornment_ConnectorRotationAngle;
+                xamlMember.Getter = get_112_ChartAdornment_ConnectorRotationAngle;
+                xamlMember.Setter = set_112_ChartAdornment_ConnectorRotationAngle;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornment.ConnectorHeight":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornment");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ConnectorHeight", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_93_ChartAdornment_ConnectorHeight;
-                xamlMember.Setter = set_93_ChartAdornment_ConnectorHeight;
+                xamlMember.Getter = get_113_ChartAdornment_ConnectorHeight;
+                xamlMember.Setter = set_113_ChartAdornment_ConnectorHeight;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornment.ActualContent":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornment");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ActualContent", "Object");
-                xamlMember.Getter = get_94_ChartAdornment_ActualContent;
+                xamlMember.Getter = get_114_ChartAdornment_ActualContent;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornment.XData":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornment");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "XData", "Double");
-                xamlMember.Getter = get_95_ChartAdornment_XData;
-                xamlMember.Setter = set_95_ChartAdornment_XData;
+                xamlMember.Getter = get_115_ChartAdornment_XData;
+                xamlMember.Setter = set_115_ChartAdornment_XData;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornment.YData":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornment");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "YData", "Double");
-                xamlMember.Getter = get_96_ChartAdornment_YData;
-                xamlMember.Setter = set_96_ChartAdornment_YData;
+                xamlMember.Getter = get_116_ChartAdornment_YData;
+                xamlMember.Setter = set_116_ChartAdornment_YData;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornment.X":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornment");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "X", "Double");
-                xamlMember.Getter = get_97_ChartAdornment_X;
+                xamlMember.Getter = get_117_ChartAdornment_X;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornment.Y":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornment");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Y", "Double");
-                xamlMember.Getter = get_98_ChartAdornment_Y;
+                xamlMember.Getter = get_118_ChartAdornment_Y;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSegment.XRange":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSegment");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "XRange", "Syncfusion.UI.Xaml.Charts.DoubleRange");
-                xamlMember.Getter = get_99_ChartSegment_XRange;
-                xamlMember.Setter = set_99_ChartSegment_XRange;
+                xamlMember.Getter = get_119_ChartSegment_XRange;
+                xamlMember.Setter = set_119_ChartSegment_XRange;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSegment.YRange":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSegment");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "YRange", "Syncfusion.UI.Xaml.Charts.DoubleRange");
-                xamlMember.Getter = get_100_ChartSegment_YRange;
-                xamlMember.Setter = set_100_ChartSegment_YRange;
+                xamlMember.Getter = get_120_ChartSegment_YRange;
+                xamlMember.Setter = set_120_ChartSegment_YRange;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSegment.Item":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSegment");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Item", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_101_ChartSegment_Item;
-                xamlMember.Setter = set_101_ChartSegment_Item;
+                xamlMember.Getter = get_121_ChartSegment_Item;
+                xamlMember.Setter = set_121_ChartSegment_Item;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSegment.Interior":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSegment");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Interior", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_102_ChartSegment_Interior;
-                xamlMember.Setter = set_102_ChartSegment_Interior;
+                xamlMember.Getter = get_122_ChartSegment_Interior;
+                xamlMember.Setter = set_122_ChartSegment_Interior;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSegment.StrokeThickness":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSegment");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "StrokeThickness", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_103_ChartSegment_StrokeThickness;
-                xamlMember.Setter = set_103_ChartSegment_StrokeThickness;
+                xamlMember.Getter = get_123_ChartSegment_StrokeThickness;
+                xamlMember.Setter = set_123_ChartSegment_StrokeThickness;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSegment.StrokeDashArray":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSegment");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "StrokeDashArray", "Windows.UI.Xaml.Media.DoubleCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_104_ChartSegment_StrokeDashArray;
-                xamlMember.Setter = set_104_ChartSegment_StrokeDashArray;
+                xamlMember.Getter = get_124_ChartSegment_StrokeDashArray;
+                xamlMember.Setter = set_124_ChartSegment_StrokeDashArray;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSegment.Stroke":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSegment");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Stroke", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_105_ChartSegment_Stroke;
-                xamlMember.Setter = set_105_ChartSegment_Stroke;
+                xamlMember.Getter = get_125_ChartSegment_Stroke;
+                xamlMember.Setter = set_125_ChartSegment_Stroke;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.IsSeriesVisible":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "IsSeriesVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_106_ChartSeriesBase_IsSeriesVisible;
-                xamlMember.Setter = set_106_ChartSeriesBase_IsSeriesVisible;
+                xamlMember.Getter = get_126_ChartSeriesBase_IsSeriesVisible;
+                xamlMember.Setter = set_126_ChartSeriesBase_IsSeriesVisible;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.Palette":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Palette", "Syncfusion.UI.Xaml.Charts.ChartColorPalette");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_107_ChartSeriesBase_Palette;
-                xamlMember.Setter = set_107_ChartSeriesBase_Palette;
+                xamlMember.Getter = get_127_ChartSeriesBase_Palette;
+                xamlMember.Setter = set_127_ChartSeriesBase_Palette;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.ItemsSource":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ItemsSource", "System.Collections.IEnumerable");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_108_ChartSeriesBase_ItemsSource;
-                xamlMember.Setter = set_108_ChartSeriesBase_ItemsSource;
+                xamlMember.Getter = get_128_ChartSeriesBase_ItemsSource;
+                xamlMember.Setter = set_128_ChartSeriesBase_ItemsSource;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.TrackBallLabelTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "TrackBallLabelTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_109_ChartSeriesBase_TrackBallLabelTemplate;
-                xamlMember.Setter = set_109_ChartSeriesBase_TrackBallLabelTemplate;
+                xamlMember.Getter = get_129_ChartSeriesBase_TrackBallLabelTemplate;
+                xamlMember.Setter = set_129_ChartSeriesBase_TrackBallLabelTemplate;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.Interior":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Interior", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_110_ChartSeriesBase_Interior;
-                xamlMember.Setter = set_110_ChartSeriesBase_Interior;
+                xamlMember.Getter = get_130_ChartSeriesBase_Interior;
+                xamlMember.Setter = set_130_ChartSeriesBase_Interior;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.Label":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Label", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_111_ChartSeriesBase_Label;
-                xamlMember.Setter = set_111_ChartSeriesBase_Label;
+                xamlMember.Getter = get_131_ChartSeriesBase_Label;
+                xamlMember.Setter = set_131_ChartSeriesBase_Label;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.LegendIcon":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "LegendIcon", "Syncfusion.UI.Xaml.Charts.ChartLegendIcon");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_112_ChartSeriesBase_LegendIcon;
-                xamlMember.Setter = set_112_ChartSeriesBase_LegendIcon;
+                xamlMember.Getter = get_132_ChartSeriesBase_LegendIcon;
+                xamlMember.Setter = set_132_ChartSeriesBase_LegendIcon;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.LegendIconTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "LegendIconTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_113_ChartSeriesBase_LegendIconTemplate;
-                xamlMember.Setter = set_113_ChartSeriesBase_LegendIconTemplate;
+                xamlMember.Getter = get_133_ChartSeriesBase_LegendIconTemplate;
+                xamlMember.Setter = set_133_ChartSeriesBase_LegendIconTemplate;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.VisibilityOnLegend":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "VisibilityOnLegend", "Windows.UI.Xaml.Visibility");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_114_ChartSeriesBase_VisibilityOnLegend;
-                xamlMember.Setter = set_114_ChartSeriesBase_VisibilityOnLegend;
+                xamlMember.Getter = get_134_ChartSeriesBase_VisibilityOnLegend;
+                xamlMember.Setter = set_134_ChartSeriesBase_VisibilityOnLegend;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.SeriesSelectionBrush":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SeriesSelectionBrush", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_115_ChartSeriesBase_SeriesSelectionBrush;
-                xamlMember.Setter = set_115_ChartSeriesBase_SeriesSelectionBrush;
+                xamlMember.Getter = get_135_ChartSeriesBase_SeriesSelectionBrush;
+                xamlMember.Setter = set_135_ChartSeriesBase_SeriesSelectionBrush;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.ColorModel":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ColorModel", "Syncfusion.UI.Xaml.Charts.ChartColorModel");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_116_ChartSeriesBase_ColorModel;
-                xamlMember.Setter = set_116_ChartSeriesBase_ColorModel;
+                xamlMember.Getter = get_136_ChartSeriesBase_ColorModel;
+                xamlMember.Setter = set_136_ChartSeriesBase_ColorModel;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.XBindingPath":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "XBindingPath", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_117_ChartSeriesBase_XBindingPath;
-                xamlMember.Setter = set_117_ChartSeriesBase_XBindingPath;
+                xamlMember.Getter = get_137_ChartSeriesBase_XBindingPath;
+                xamlMember.Setter = set_137_ChartSeriesBase_XBindingPath;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.EnableAnimation":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "EnableAnimation", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_118_ChartSeriesBase_EnableAnimation;
-                xamlMember.Setter = set_118_ChartSeriesBase_EnableAnimation;
+                xamlMember.Getter = get_138_ChartSeriesBase_EnableAnimation;
+                xamlMember.Setter = set_138_ChartSeriesBase_EnableAnimation;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.AnimationDuration":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AnimationDuration", "TimeSpan");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_119_ChartSeriesBase_AnimationDuration;
-                xamlMember.Setter = set_119_ChartSeriesBase_AnimationDuration;
+                xamlMember.Getter = get_139_ChartSeriesBase_AnimationDuration;
+                xamlMember.Setter = set_139_ChartSeriesBase_AnimationDuration;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.EmptyPointValue":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "EmptyPointValue", "Syncfusion.UI.Xaml.Charts.EmptyPointValue");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_120_ChartSeriesBase_EmptyPointValue;
-                xamlMember.Setter = set_120_ChartSeriesBase_EmptyPointValue;
+                xamlMember.Getter = get_140_ChartSeriesBase_EmptyPointValue;
+                xamlMember.Setter = set_140_ChartSeriesBase_EmptyPointValue;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.EmptyPointStyle":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "EmptyPointStyle", "Syncfusion.UI.Xaml.Charts.EmptyPointStyle");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_121_ChartSeriesBase_EmptyPointStyle;
-                xamlMember.Setter = set_121_ChartSeriesBase_EmptyPointStyle;
+                xamlMember.Getter = get_141_ChartSeriesBase_EmptyPointStyle;
+                xamlMember.Setter = set_141_ChartSeriesBase_EmptyPointStyle;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.EmptyPointSymbolTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "EmptyPointSymbolTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_122_ChartSeriesBase_EmptyPointSymbolTemplate;
-                xamlMember.Setter = set_122_ChartSeriesBase_EmptyPointSymbolTemplate;
+                xamlMember.Getter = get_142_ChartSeriesBase_EmptyPointSymbolTemplate;
+                xamlMember.Setter = set_142_ChartSeriesBase_EmptyPointSymbolTemplate;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.ShowEmptyPoints":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ShowEmptyPoints", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_123_ChartSeriesBase_ShowEmptyPoints;
-                xamlMember.Setter = set_123_ChartSeriesBase_ShowEmptyPoints;
+                xamlMember.Getter = get_143_ChartSeriesBase_ShowEmptyPoints;
+                xamlMember.Setter = set_143_ChartSeriesBase_ShowEmptyPoints;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.EmptyPointInterior":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "EmptyPointInterior", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_124_ChartSeriesBase_EmptyPointInterior;
-                xamlMember.Setter = set_124_ChartSeriesBase_EmptyPointInterior;
+                xamlMember.Getter = get_144_ChartSeriesBase_EmptyPointInterior;
+                xamlMember.Setter = set_144_ChartSeriesBase_EmptyPointInterior;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartSeriesBase.Spacing":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
@@ -8256,738 +8584,738 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_125_ChartSeriesBase_Spacing;
-                xamlMember.Setter = set_125_ChartSeriesBase_Spacing;
+                xamlMember.Getter = get_145_ChartSeriesBase_Spacing;
+                xamlMember.Setter = set_145_ChartSeriesBase_Spacing;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartBase.Header":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Header", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_126_ChartBase_Header;
-                xamlMember.Setter = set_126_ChartBase_Header;
+                xamlMember.Getter = get_146_ChartBase_Header;
+                xamlMember.Setter = set_146_ChartBase_Header;
                 break;
             case "Syncfusion.UI.Xaml.Charts.SfChart.AreaBorderThickness":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.SfChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AreaBorderThickness", "Windows.UI.Xaml.Thickness");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_127_SfChart_AreaBorderThickness;
-                xamlMember.Setter = set_127_SfChart_AreaBorderThickness;
+                xamlMember.Getter = get_147_SfChart_AreaBorderThickness;
+                xamlMember.Setter = set_147_SfChart_AreaBorderThickness;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartBase.Legend":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Legend", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_128_ChartBase_Legend;
-                xamlMember.Setter = set_128_ChartBase_Legend;
+                xamlMember.Getter = get_148_ChartBase_Legend;
+                xamlMember.Setter = set_148_ChartBase_Legend;
                 break;
             case "Syncfusion.UI.Xaml.Charts.SfChart.PrimaryAxis":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.SfChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "PrimaryAxis", "Syncfusion.UI.Xaml.Charts.ChartAxisBase2D");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_129_SfChart_PrimaryAxis;
-                xamlMember.Setter = set_129_SfChart_PrimaryAxis;
+                xamlMember.Getter = get_149_SfChart_PrimaryAxis;
+                xamlMember.Setter = set_149_SfChart_PrimaryAxis;
                 break;
             case "Syncfusion.UI.Xaml.Charts.SfChart.SecondaryAxis":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.SfChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SecondaryAxis", "Syncfusion.UI.Xaml.Charts.RangeAxisBase");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_130_SfChart_SecondaryAxis;
-                xamlMember.Setter = set_130_SfChart_SecondaryAxis;
+                xamlMember.Getter = get_150_SfChart_SecondaryAxis;
+                xamlMember.Setter = set_150_SfChart_SecondaryAxis;
                 break;
             case "Syncfusion.UI.Xaml.Charts.SfChart.Watermark":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.SfChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Watermark", "Syncfusion.UI.Xaml.Charts.Watermark");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_131_SfChart_Watermark;
-                xamlMember.Setter = set_131_SfChart_Watermark;
+                xamlMember.Getter = get_151_SfChart_Watermark;
+                xamlMember.Setter = set_151_SfChart_Watermark;
                 break;
             case "Syncfusion.UI.Xaml.Charts.SfChart.AreaBorderBrush":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.SfChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AreaBorderBrush", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_132_SfChart_AreaBorderBrush;
-                xamlMember.Setter = set_132_SfChart_AreaBorderBrush;
+                xamlMember.Getter = get_152_SfChart_AreaBorderBrush;
+                xamlMember.Setter = set_152_SfChart_AreaBorderBrush;
                 break;
             case "Syncfusion.UI.Xaml.Charts.SfChart.AreaBackground":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.SfChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AreaBackground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_133_SfChart_AreaBackground;
-                xamlMember.Setter = set_133_SfChart_AreaBackground;
+                xamlMember.Getter = get_153_SfChart_AreaBackground;
+                xamlMember.Setter = set_153_SfChart_AreaBackground;
                 break;
             case "Syncfusion.UI.Xaml.Charts.SfChart.Behaviors":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.SfChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Behaviors", "Syncfusion.UI.Xaml.Charts.ChartBehaviorsCollection");
-                xamlMember.Getter = get_134_SfChart_Behaviors;
-                xamlMember.Setter = set_134_SfChart_Behaviors;
+                xamlMember.Getter = get_154_SfChart_Behaviors;
+                xamlMember.Setter = set_154_SfChart_Behaviors;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartBehavior.AdorningCanvas":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartBehavior");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AdorningCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_135_ChartBehavior_AdorningCanvas;
+                xamlMember.Getter = get_155_ChartBehavior_AdorningCanvas;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartBehavior.BottomAdorningCanvas":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartBehavior");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "BottomAdorningCanvas", "Windows.UI.Xaml.Controls.Canvas");
-                xamlMember.Getter = get_136_ChartBehavior_BottomAdorningCanvas;
+                xamlMember.Getter = get_156_ChartBehavior_BottomAdorningCanvas;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartBehavior.ChartArea":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartBehavior");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ChartArea", "Syncfusion.UI.Xaml.Charts.SfChart");
-                xamlMember.Getter = get_137_ChartBehavior_ChartArea;
+                xamlMember.Getter = get_157_ChartBehavior_ChartArea;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.SfChart.TechnicalIndicators":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.SfChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "TechnicalIndicators", "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartSeries>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_138_SfChart_TechnicalIndicators;
-                xamlMember.Setter = set_138_SfChart_TechnicalIndicators;
+                xamlMember.Getter = get_158_SfChart_TechnicalIndicators;
+                xamlMember.Setter = set_158_SfChart_TechnicalIndicators;
                 break;
             case "Syncfusion.UI.Xaml.Charts.SfChart.Annotations":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.SfChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Annotations", "Syncfusion.UI.Xaml.Charts.AnnotationCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_139_SfChart_Annotations;
-                xamlMember.Setter = set_139_SfChart_Annotations;
+                xamlMember.Getter = get_159_SfChart_Annotations;
+                xamlMember.Setter = set_159_SfChart_Annotations;
                 break;
             case "Syncfusion.UI.Xaml.Charts.Annotation.Text":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.Annotation");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Text", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_140_Annotation_Text;
-                xamlMember.Setter = set_140_Annotation_Text;
+                xamlMember.Getter = get_160_Annotation_Text;
+                xamlMember.Setter = set_160_Annotation_Text;
                 break;
             case "Syncfusion.UI.Xaml.Charts.Annotation.EnableEditing":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.Annotation");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "EnableEditing", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_141_Annotation_EnableEditing;
-                xamlMember.Setter = set_141_Annotation_EnableEditing;
+                xamlMember.Getter = get_161_Annotation_EnableEditing;
+                xamlMember.Setter = set_161_Annotation_EnableEditing;
                 break;
             case "Syncfusion.UI.Xaml.Charts.Annotation.ContentTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.Annotation");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ContentTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_142_Annotation_ContentTemplate;
-                xamlMember.Setter = set_142_Annotation_ContentTemplate;
+                xamlMember.Getter = get_162_Annotation_ContentTemplate;
+                xamlMember.Setter = set_162_Annotation_ContentTemplate;
                 break;
             case "Syncfusion.UI.Xaml.Charts.Annotation.EnableClipping":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.Annotation");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "EnableClipping", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_143_Annotation_EnableClipping;
-                xamlMember.Setter = set_143_Annotation_EnableClipping;
+                xamlMember.Getter = get_163_Annotation_EnableClipping;
+                xamlMember.Setter = set_163_Annotation_EnableClipping;
                 break;
             case "Syncfusion.UI.Xaml.Charts.Annotation.ShowToolTip":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.Annotation");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ShowToolTip", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_144_Annotation_ShowToolTip;
-                xamlMember.Setter = set_144_Annotation_ShowToolTip;
+                xamlMember.Getter = get_164_Annotation_ShowToolTip;
+                xamlMember.Setter = set_164_Annotation_ShowToolTip;
                 break;
             case "Syncfusion.UI.Xaml.Charts.Annotation.ToolTipContent":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.Annotation");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ToolTipContent", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_145_Annotation_ToolTipContent;
-                xamlMember.Setter = set_145_Annotation_ToolTipContent;
+                xamlMember.Getter = get_165_Annotation_ToolTipContent;
+                xamlMember.Setter = set_165_Annotation_ToolTipContent;
                 break;
             case "Syncfusion.UI.Xaml.Charts.Annotation.ToolTipShowDuration":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.Annotation");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ToolTipShowDuration", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_146_Annotation_ToolTipShowDuration;
-                xamlMember.Setter = set_146_Annotation_ToolTipShowDuration;
+                xamlMember.Getter = get_166_Annotation_ToolTipShowDuration;
+                xamlMember.Setter = set_166_Annotation_ToolTipShowDuration;
                 break;
             case "Syncfusion.UI.Xaml.Charts.Annotation.ToolTipTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.Annotation");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ToolTipTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_147_Annotation_ToolTipTemplate;
-                xamlMember.Setter = set_147_Annotation_ToolTipTemplate;
+                xamlMember.Getter = get_167_Annotation_ToolTipTemplate;
+                xamlMember.Setter = set_167_Annotation_ToolTipTemplate;
                 break;
             case "Syncfusion.UI.Xaml.Charts.Annotation.ToolTipPlacement":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.Annotation");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ToolTipPlacement", "Syncfusion.UI.Xaml.Charts.ToolTipLabelPlacement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_148_Annotation_ToolTipPlacement;
-                xamlMember.Setter = set_148_Annotation_ToolTipPlacement;
+                xamlMember.Getter = get_168_Annotation_ToolTipPlacement;
+                xamlMember.Setter = set_168_Annotation_ToolTipPlacement;
                 break;
             case "Syncfusion.UI.Xaml.Charts.Annotation.CoordinateUnit":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.Annotation");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "CoordinateUnit", "Syncfusion.UI.Xaml.Charts.CoordinateUnit");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_149_Annotation_CoordinateUnit;
-                xamlMember.Setter = set_149_Annotation_CoordinateUnit;
+                xamlMember.Getter = get_169_Annotation_CoordinateUnit;
+                xamlMember.Setter = set_169_Annotation_CoordinateUnit;
                 break;
             case "Syncfusion.UI.Xaml.Charts.Annotation.XAxisName":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.Annotation");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "XAxisName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_150_Annotation_XAxisName;
-                xamlMember.Setter = set_150_Annotation_XAxisName;
+                xamlMember.Getter = get_170_Annotation_XAxisName;
+                xamlMember.Setter = set_170_Annotation_XAxisName;
                 break;
             case "Syncfusion.UI.Xaml.Charts.Annotation.YAxisName":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.Annotation");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "YAxisName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_151_Annotation_YAxisName;
-                xamlMember.Setter = set_151_Annotation_YAxisName;
+                xamlMember.Getter = get_171_Annotation_YAxisName;
+                xamlMember.Setter = set_171_Annotation_YAxisName;
                 break;
             case "Syncfusion.UI.Xaml.Charts.Annotation.X1":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.Annotation");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "X1", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_152_Annotation_X1;
-                xamlMember.Setter = set_152_Annotation_X1;
+                xamlMember.Getter = get_172_Annotation_X1;
+                xamlMember.Setter = set_172_Annotation_X1;
                 break;
             case "Syncfusion.UI.Xaml.Charts.Annotation.Y1":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.Annotation");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Y1", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_153_Annotation_Y1;
-                xamlMember.Setter = set_153_Annotation_Y1;
+                xamlMember.Getter = get_173_Annotation_Y1;
+                xamlMember.Setter = set_173_Annotation_Y1;
                 break;
             case "Syncfusion.UI.Xaml.Charts.Annotation.FontSize":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.Annotation");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "FontSize", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_154_Annotation_FontSize;
-                xamlMember.Setter = set_154_Annotation_FontSize;
+                xamlMember.Getter = get_174_Annotation_FontSize;
+                xamlMember.Setter = set_174_Annotation_FontSize;
                 break;
             case "Syncfusion.UI.Xaml.Charts.Annotation.FontFamily":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.Annotation");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "FontFamily", "Windows.UI.Xaml.Media.FontFamily");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_155_Annotation_FontFamily;
-                xamlMember.Setter = set_155_Annotation_FontFamily;
+                xamlMember.Getter = get_175_Annotation_FontFamily;
+                xamlMember.Setter = set_175_Annotation_FontFamily;
                 break;
             case "Syncfusion.UI.Xaml.Charts.Annotation.FontStretch":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.Annotation");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "FontStretch", "Windows.UI.Text.FontStretch");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_156_Annotation_FontStretch;
-                xamlMember.Setter = set_156_Annotation_FontStretch;
+                xamlMember.Getter = get_176_Annotation_FontStretch;
+                xamlMember.Setter = set_176_Annotation_FontStretch;
                 break;
             case "Syncfusion.UI.Xaml.Charts.Annotation.FontStyle":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.Annotation");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "FontStyle", "Windows.UI.Text.FontStyle");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_157_Annotation_FontStyle;
-                xamlMember.Setter = set_157_Annotation_FontStyle;
+                xamlMember.Getter = get_177_Annotation_FontStyle;
+                xamlMember.Setter = set_177_Annotation_FontStyle;
                 break;
             case "Syncfusion.UI.Xaml.Charts.Annotation.FontWeight":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.Annotation");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "FontWeight", "Windows.UI.Text.FontWeight");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_158_Annotation_FontWeight;
-                xamlMember.Setter = set_158_Annotation_FontWeight;
+                xamlMember.Getter = get_178_Annotation_FontWeight;
+                xamlMember.Setter = set_178_Annotation_FontWeight;
                 break;
             case "Syncfusion.UI.Xaml.Charts.Annotation.Foreground":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.Annotation");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Foreground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_159_Annotation_Foreground;
-                xamlMember.Setter = set_159_Annotation_Foreground;
+                xamlMember.Getter = get_179_Annotation_Foreground;
+                xamlMember.Setter = set_179_Annotation_Foreground;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartBase.AxisThickness":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AxisThickness", "Windows.UI.Xaml.Thickness");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_160_ChartBase_AxisThickness;
+                xamlMember.Getter = get_180_ChartBase_AxisThickness;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartBase.SeriesClipRect":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SeriesClipRect", "Windows.Foundation.Rect");
-                xamlMember.Getter = get_161_ChartBase_SeriesClipRect;
+                xamlMember.Getter = get_181_ChartBase_SeriesClipRect;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartBase.VisibleSeries":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "VisibleSeries", "Syncfusion.UI.Xaml.Charts.ChartVisibleSeriesCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_162_ChartBase_VisibleSeries;
+                xamlMember.Getter = get_182_ChartBase_VisibleSeries;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartBase.Palette":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Palette", "Syncfusion.UI.Xaml.Charts.ChartColorPalette");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_163_ChartBase_Palette;
-                xamlMember.Setter = set_163_ChartBase_Palette;
+                xamlMember.Getter = get_183_ChartBase_Palette;
+                xamlMember.Setter = set_183_ChartBase_Palette;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartBase.SeriesSelectedIndex":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SeriesSelectedIndex", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_164_ChartBase_SeriesSelectedIndex;
-                xamlMember.Setter = set_164_ChartBase_SeriesSelectedIndex;
+                xamlMember.Getter = get_184_ChartBase_SeriesSelectedIndex;
+                xamlMember.Setter = set_184_ChartBase_SeriesSelectedIndex;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartBase.ColumnDefinitions":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ColumnDefinitions", "Syncfusion.UI.Xaml.Charts.ChartColumnDefinitions");
-                xamlMember.Getter = get_165_ChartBase_ColumnDefinitions;
-                xamlMember.Setter = set_165_ChartBase_ColumnDefinitions;
+                xamlMember.Getter = get_185_ChartBase_ColumnDefinitions;
+                xamlMember.Setter = set_185_ChartBase_ColumnDefinitions;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartColumnDefinition.Width":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartColumnDefinition");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Width", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_166_ChartColumnDefinition_Width;
-                xamlMember.Setter = set_166_ChartColumnDefinition_Width;
+                xamlMember.Getter = get_186_ChartColumnDefinition_Width;
+                xamlMember.Setter = set_186_ChartColumnDefinition_Width;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartColumnDefinition.Unit":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartColumnDefinition");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Unit", "Syncfusion.UI.Xaml.Charts.ChartUnitType");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_167_ChartColumnDefinition_Unit;
-                xamlMember.Setter = set_167_ChartColumnDefinition_Unit;
+                xamlMember.Getter = get_187_ChartColumnDefinition_Unit;
+                xamlMember.Setter = set_187_ChartColumnDefinition_Unit;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartColumnDefinition.BorderThickness":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartColumnDefinition");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "BorderThickness", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_168_ChartColumnDefinition_BorderThickness;
-                xamlMember.Setter = set_168_ChartColumnDefinition_BorderThickness;
+                xamlMember.Getter = get_188_ChartColumnDefinition_BorderThickness;
+                xamlMember.Setter = set_188_ChartColumnDefinition_BorderThickness;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartColumnDefinition.BorderStroke":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartColumnDefinition");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "BorderStroke", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_169_ChartColumnDefinition_BorderStroke;
-                xamlMember.Setter = set_169_ChartColumnDefinition_BorderStroke;
+                xamlMember.Getter = get_189_ChartColumnDefinition_BorderStroke;
+                xamlMember.Setter = set_189_ChartColumnDefinition_BorderStroke;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartBase.RowDefinitions":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "RowDefinitions", "Syncfusion.UI.Xaml.Charts.ChartRowDefinitions");
-                xamlMember.Getter = get_170_ChartBase_RowDefinitions;
-                xamlMember.Setter = set_170_ChartBase_RowDefinitions;
+                xamlMember.Getter = get_190_ChartBase_RowDefinitions;
+                xamlMember.Setter = set_190_ChartBase_RowDefinitions;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartRowDefinition.RowTop":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartRowDefinition");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "RowTop", "Double");
-                xamlMember.Getter = get_171_ChartRowDefinition_RowTop;
+                xamlMember.Getter = get_191_ChartRowDefinition_RowTop;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartRowDefinition.Height":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartRowDefinition");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Height", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_172_ChartRowDefinition_Height;
-                xamlMember.Setter = set_172_ChartRowDefinition_Height;
+                xamlMember.Getter = get_192_ChartRowDefinition_Height;
+                xamlMember.Setter = set_192_ChartRowDefinition_Height;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartRowDefinition.Unit":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartRowDefinition");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Unit", "Syncfusion.UI.Xaml.Charts.ChartUnitType");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_173_ChartRowDefinition_Unit;
-                xamlMember.Setter = set_173_ChartRowDefinition_Unit;
+                xamlMember.Getter = get_193_ChartRowDefinition_Unit;
+                xamlMember.Setter = set_193_ChartRowDefinition_Unit;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartRowDefinition.BorderThickness":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartRowDefinition");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "BorderThickness", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_174_ChartRowDefinition_BorderThickness;
-                xamlMember.Setter = set_174_ChartRowDefinition_BorderThickness;
+                xamlMember.Getter = get_194_ChartRowDefinition_BorderThickness;
+                xamlMember.Setter = set_194_ChartRowDefinition_BorderThickness;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartRowDefinition.BorderStroke":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartRowDefinition");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "BorderStroke", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_175_ChartRowDefinition_BorderStroke;
-                xamlMember.Setter = set_175_ChartRowDefinition_BorderStroke;
+                xamlMember.Getter = get_195_ChartRowDefinition_BorderStroke;
+                xamlMember.Setter = set_195_ChartRowDefinition_BorderStroke;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartBase.Axes":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Axes", "Syncfusion.UI.Xaml.Charts.ChartAxisCollection");
-                xamlMember.Getter = get_176_ChartBase_Axes;
+                xamlMember.Getter = get_196_ChartBase_Axes;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.ActualPlotOffset":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ActualPlotOffset", "Double");
-                xamlMember.Getter = get_177_ChartAxis_ActualPlotOffset;
+                xamlMember.Getter = get_197_ChartAxis_ActualPlotOffset;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.MaximumLabels":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "MaximumLabels", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_178_ChartAxis_MaximumLabels;
-                xamlMember.Setter = set_178_ChartAxis_MaximumLabels;
+                xamlMember.Getter = get_198_ChartAxis_MaximumLabels;
+                xamlMember.Setter = set_198_ChartAxis_MaximumLabels;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.VisibleRange":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "VisibleRange", "Syncfusion.UI.Xaml.Charts.DoubleRange");
-                xamlMember.Getter = get_179_ChartAxis_VisibleRange;
+                xamlMember.Getter = get_199_ChartAxis_VisibleRange;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.HeaderPosition":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "HeaderPosition", "Syncfusion.UI.Xaml.Charts.AxisHeaderPosition");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_180_ChartAxis_HeaderPosition;
-                xamlMember.Setter = set_180_ChartAxis_HeaderPosition;
+                xamlMember.Getter = get_200_ChartAxis_HeaderPosition;
+                xamlMember.Setter = set_200_ChartAxis_HeaderPosition;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.ArrangeRect":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ArrangeRect", "Windows.Foundation.Rect");
-                xamlMember.Getter = get_181_ChartAxis_ArrangeRect;
+                xamlMember.Getter = get_201_ChartAxis_ArrangeRect;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.PositionPath":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "PositionPath", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_182_ChartAxis_PositionPath;
-                xamlMember.Setter = set_182_ChartAxis_PositionPath;
+                xamlMember.Getter = get_202_ChartAxis_PositionPath;
+                xamlMember.Setter = set_202_ChartAxis_PositionPath;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.ContentPath":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ContentPath", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_183_ChartAxis_ContentPath;
-                xamlMember.Setter = set_183_ChartAxis_ContentPath;
+                xamlMember.Getter = get_203_ChartAxis_ContentPath;
+                xamlMember.Setter = set_203_ChartAxis_ContentPath;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.LabelFormat":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "LabelFormat", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_184_ChartAxis_LabelFormat;
-                xamlMember.Setter = set_184_ChartAxis_LabelFormat;
+                xamlMember.Getter = get_204_ChartAxis_LabelFormat;
+                xamlMember.Setter = set_204_ChartAxis_LabelFormat;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.LabelsSource":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "LabelsSource", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_185_ChartAxis_LabelsSource;
-                xamlMember.Setter = set_185_ChartAxis_LabelsSource;
+                xamlMember.Getter = get_205_ChartAxis_LabelsSource;
+                xamlMember.Setter = set_205_ChartAxis_LabelsSource;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.PostfixLabelTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "PostfixLabelTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_186_ChartAxis_PostfixLabelTemplate;
-                xamlMember.Setter = set_186_ChartAxis_PostfixLabelTemplate;
+                xamlMember.Getter = get_206_ChartAxis_PostfixLabelTemplate;
+                xamlMember.Setter = set_206_ChartAxis_PostfixLabelTemplate;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.PrefixLabelTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "PrefixLabelTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_187_ChartAxis_PrefixLabelTemplate;
-                xamlMember.Setter = set_187_ChartAxis_PrefixLabelTemplate;
+                xamlMember.Getter = get_207_ChartAxis_PrefixLabelTemplate;
+                xamlMember.Setter = set_207_ChartAxis_PrefixLabelTemplate;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.PlotOffset":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "PlotOffset", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_188_ChartAxis_PlotOffset;
-                xamlMember.Setter = set_188_ChartAxis_PlotOffset;
+                xamlMember.Getter = get_208_ChartAxis_PlotOffset;
+                xamlMember.Setter = set_208_ChartAxis_PlotOffset;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.AxisLineOffset":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AxisLineOffset", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_189_ChartAxis_AxisLineOffset;
-                xamlMember.Setter = set_189_ChartAxis_AxisLineOffset;
+                xamlMember.Getter = get_209_ChartAxis_AxisLineOffset;
+                xamlMember.Setter = set_209_ChartAxis_AxisLineOffset;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.LabelsPosition":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "LabelsPosition", "Syncfusion.UI.Xaml.Charts.AxisElementPosition");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_190_ChartAxis_LabelsPosition;
-                xamlMember.Setter = set_190_ChartAxis_LabelsPosition;
+                xamlMember.Getter = get_210_ChartAxis_LabelsPosition;
+                xamlMember.Setter = set_210_ChartAxis_LabelsPosition;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.LabelsIntersectAction":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "LabelsIntersectAction", "Syncfusion.UI.Xaml.Charts.AxisLabelsIntersectAction");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_191_ChartAxis_LabelsIntersectAction;
-                xamlMember.Setter = set_191_ChartAxis_LabelsIntersectAction;
+                xamlMember.Getter = get_211_ChartAxis_LabelsIntersectAction;
+                xamlMember.Setter = set_211_ChartAxis_LabelsIntersectAction;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.LabelExtent":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "LabelExtent", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_192_ChartAxis_LabelExtent;
-                xamlMember.Setter = set_192_ChartAxis_LabelExtent;
+                xamlMember.Getter = get_212_ChartAxis_LabelExtent;
+                xamlMember.Setter = set_212_ChartAxis_LabelExtent;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.LabelRotationAngle":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "LabelRotationAngle", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_193_ChartAxis_LabelRotationAngle;
-                xamlMember.Setter = set_193_ChartAxis_LabelRotationAngle;
+                xamlMember.Getter = get_213_ChartAxis_LabelRotationAngle;
+                xamlMember.Setter = set_213_ChartAxis_LabelRotationAngle;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.AxisLineStyle":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AxisLineStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_194_ChartAxis_AxisLineStyle;
-                xamlMember.Setter = set_194_ChartAxis_AxisLineStyle;
+                xamlMember.Getter = get_214_ChartAxis_AxisLineStyle;
+                xamlMember.Setter = set_214_ChartAxis_AxisLineStyle;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.OpposedPosition":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "OpposedPosition", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_195_ChartAxis_OpposedPosition;
-                xamlMember.Setter = set_195_ChartAxis_OpposedPosition;
+                xamlMember.Getter = get_215_ChartAxis_OpposedPosition;
+                xamlMember.Setter = set_215_ChartAxis_OpposedPosition;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.DesiredIntervalsCount":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "DesiredIntervalsCount", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_196_ChartAxis_DesiredIntervalsCount;
-                xamlMember.Setter = set_196_ChartAxis_DesiredIntervalsCount;
+                xamlMember.Getter = get_216_ChartAxis_DesiredIntervalsCount;
+                xamlMember.Setter = set_216_ChartAxis_DesiredIntervalsCount;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.ThumbLabelVisibility":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ThumbLabelVisibility", "Windows.UI.Xaml.Visibility");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_197_ChartAxis_ThumbLabelVisibility;
-                xamlMember.Setter = set_197_ChartAxis_ThumbLabelVisibility;
+                xamlMember.Getter = get_217_ChartAxis_ThumbLabelVisibility;
+                xamlMember.Setter = set_217_ChartAxis_ThumbLabelVisibility;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.ThumbLabelTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ThumbLabelTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_198_ChartAxis_ThumbLabelTemplate;
-                xamlMember.Setter = set_198_ChartAxis_ThumbLabelTemplate;
+                xamlMember.Getter = get_218_ChartAxis_ThumbLabelTemplate;
+                xamlMember.Setter = set_218_ChartAxis_ThumbLabelTemplate;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.Header":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Header", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_199_ChartAxis_Header;
-                xamlMember.Setter = set_199_ChartAxis_Header;
+                xamlMember.Getter = get_219_ChartAxis_Header;
+                xamlMember.Setter = set_219_ChartAxis_Header;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.HeaderStyle":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "HeaderStyle", "Syncfusion.UI.Xaml.Charts.LabelStyle");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_200_ChartAxis_HeaderStyle;
-                xamlMember.Setter = set_200_ChartAxis_HeaderStyle;
+                xamlMember.Getter = get_220_ChartAxis_HeaderStyle;
+                xamlMember.Setter = set_220_ChartAxis_HeaderStyle;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.HeaderTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "HeaderTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_201_ChartAxis_HeaderTemplate;
-                xamlMember.Setter = set_201_ChartAxis_HeaderTemplate;
+                xamlMember.Getter = get_221_ChartAxis_HeaderTemplate;
+                xamlMember.Setter = set_221_ChartAxis_HeaderTemplate;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.TickLineSize":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "TickLineSize", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_202_ChartAxis_TickLineSize;
-                xamlMember.Setter = set_202_ChartAxis_TickLineSize;
+                xamlMember.Getter = get_222_ChartAxis_TickLineSize;
+                xamlMember.Setter = set_222_ChartAxis_TickLineSize;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.VisibleLabels":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "VisibleLabels", "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.UI.Xaml.Charts.ChartAxisLabel>");
-                xamlMember.Getter = get_203_ChartAxis_VisibleLabels;
+                xamlMember.Getter = get_223_ChartAxis_VisibleLabels;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxisLabel.LabelContent":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxisLabel");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "LabelContent", "Object");
-                xamlMember.Getter = get_204_ChartAxisLabel_LabelContent;
-                xamlMember.Setter = set_204_ChartAxisLabel_LabelContent;
+                xamlMember.Getter = get_224_ChartAxisLabel_LabelContent;
+                xamlMember.Setter = set_224_ChartAxisLabel_LabelContent;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxisLabel.Position":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxisLabel");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Position", "Double");
-                xamlMember.Getter = get_205_ChartAxisLabel_Position;
-                xamlMember.Setter = set_205_ChartAxisLabel_Position;
+                xamlMember.Getter = get_225_ChartAxisLabel_Position;
+                xamlMember.Setter = set_225_ChartAxisLabel_Position;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxisLabel.PrefixLabelTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxisLabel");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "PrefixLabelTemplate", "Windows.UI.Xaml.DataTemplate");
-                xamlMember.Getter = get_206_ChartAxisLabel_PrefixLabelTemplate;
-                xamlMember.Setter = set_206_ChartAxisLabel_PrefixLabelTemplate;
+                xamlMember.Getter = get_226_ChartAxisLabel_PrefixLabelTemplate;
+                xamlMember.Setter = set_226_ChartAxisLabel_PrefixLabelTemplate;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxisLabel.PostfixLabelTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxisLabel");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "PostfixLabelTemplate", "Windows.UI.Xaml.DataTemplate");
-                xamlMember.Getter = get_207_ChartAxisLabel_PostfixLabelTemplate;
-                xamlMember.Setter = set_207_ChartAxisLabel_PostfixLabelTemplate;
+                xamlMember.Getter = get_227_ChartAxisLabel_PostfixLabelTemplate;
+                xamlMember.Setter = set_227_ChartAxisLabel_PostfixLabelTemplate;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.IsInversed":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "IsInversed", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_208_ChartAxis_IsInversed;
-                xamlMember.Setter = set_208_ChartAxis_IsInversed;
+                xamlMember.Getter = get_228_ChartAxis_IsInversed;
+                xamlMember.Setter = set_228_ChartAxis_IsInversed;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.Origin":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Origin", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_209_ChartAxis_Origin;
-                xamlMember.Setter = set_209_ChartAxis_Origin;
+                xamlMember.Getter = get_229_ChartAxis_Origin;
+                xamlMember.Setter = set_229_ChartAxis_Origin;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.ShowOrigin":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ShowOrigin", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_210_ChartAxis_ShowOrigin;
-                xamlMember.Setter = set_210_ChartAxis_ShowOrigin;
+                xamlMember.Getter = get_230_ChartAxis_ShowOrigin;
+                xamlMember.Setter = set_230_ChartAxis_ShowOrigin;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.TickLinesPosition":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "TickLinesPosition", "Syncfusion.UI.Xaml.Charts.AxisElementPosition");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_211_ChartAxis_TickLinesPosition;
-                xamlMember.Setter = set_211_ChartAxis_TickLinesPosition;
+                xamlMember.Getter = get_231_ChartAxis_TickLinesPosition;
+                xamlMember.Setter = set_231_ChartAxis_TickLinesPosition;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.ShowAxisNextToOrigin":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ShowAxisNextToOrigin", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_212_ChartAxis_ShowAxisNextToOrigin;
-                xamlMember.Setter = set_212_ChartAxis_ShowAxisNextToOrigin;
+                xamlMember.Getter = get_232_ChartAxis_ShowAxisNextToOrigin;
+                xamlMember.Setter = set_232_ChartAxis_ShowAxisNextToOrigin;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.EdgeLabelsDrawingMode":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "EdgeLabelsDrawingMode", "Syncfusion.UI.Xaml.Charts.EdgeLabelsDrawingMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_213_ChartAxis_EdgeLabelsDrawingMode;
-                xamlMember.Setter = set_213_ChartAxis_EdgeLabelsDrawingMode;
+                xamlMember.Getter = get_233_ChartAxis_EdgeLabelsDrawingMode;
+                xamlMember.Setter = set_233_ChartAxis_EdgeLabelsDrawingMode;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.EdgeLabelsVisibilityMode":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "EdgeLabelsVisibilityMode", "Syncfusion.UI.Xaml.Charts.EdgeLabelsVisibilityMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_214_ChartAxis_EdgeLabelsVisibilityMode;
-                xamlMember.Setter = set_214_ChartAxis_EdgeLabelsVisibilityMode;
+                xamlMember.Getter = get_234_ChartAxis_EdgeLabelsVisibilityMode;
+                xamlMember.Setter = set_234_ChartAxis_EdgeLabelsVisibilityMode;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.MajorGridLineStyle":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "MajorGridLineStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_215_ChartAxis_MajorGridLineStyle;
-                xamlMember.Setter = set_215_ChartAxis_MajorGridLineStyle;
+                xamlMember.Getter = get_235_ChartAxis_MajorGridLineStyle;
+                xamlMember.Setter = set_235_ChartAxis_MajorGridLineStyle;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.MinorGridLineStyle":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "MinorGridLineStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_216_ChartAxis_MinorGridLineStyle;
-                xamlMember.Setter = set_216_ChartAxis_MinorGridLineStyle;
+                xamlMember.Getter = get_236_ChartAxis_MinorGridLineStyle;
+                xamlMember.Setter = set_236_ChartAxis_MinorGridLineStyle;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.MajorTickLineStyle":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "MajorTickLineStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_217_ChartAxis_MajorTickLineStyle;
-                xamlMember.Setter = set_217_ChartAxis_MajorTickLineStyle;
+                xamlMember.Getter = get_237_ChartAxis_MajorTickLineStyle;
+                xamlMember.Setter = set_237_ChartAxis_MajorTickLineStyle;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.MinorTickLineStyle":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "MinorTickLineStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_218_ChartAxis_MinorTickLineStyle;
-                xamlMember.Setter = set_218_ChartAxis_MinorTickLineStyle;
+                xamlMember.Getter = get_238_ChartAxis_MinorTickLineStyle;
+                xamlMember.Setter = set_238_ChartAxis_MinorTickLineStyle;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.OriginLineStyle":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "OriginLineStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_219_ChartAxis_OriginLineStyle;
-                xamlMember.Setter = set_219_ChartAxis_OriginLineStyle;
+                xamlMember.Getter = get_239_ChartAxis_OriginLineStyle;
+                xamlMember.Setter = set_239_ChartAxis_OriginLineStyle;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.ShowTrackBallInfo":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ShowTrackBallInfo", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_220_ChartAxis_ShowTrackBallInfo;
-                xamlMember.Setter = set_220_ChartAxis_ShowTrackBallInfo;
+                xamlMember.Getter = get_240_ChartAxis_ShowTrackBallInfo;
+                xamlMember.Setter = set_240_ChartAxis_ShowTrackBallInfo;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.TrackBallLabelTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "TrackBallLabelTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_221_ChartAxis_TrackBallLabelTemplate;
-                xamlMember.Setter = set_221_ChartAxis_TrackBallLabelTemplate;
+                xamlMember.Getter = get_241_ChartAxis_TrackBallLabelTemplate;
+                xamlMember.Setter = set_241_ChartAxis_TrackBallLabelTemplate;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.CrosshairLabelTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "CrosshairLabelTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_222_ChartAxis_CrosshairLabelTemplate;
-                xamlMember.Setter = set_222_ChartAxis_CrosshairLabelTemplate;
+                xamlMember.Getter = get_242_ChartAxis_CrosshairLabelTemplate;
+                xamlMember.Setter = set_242_ChartAxis_CrosshairLabelTemplate;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.ShowGridLines":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ShowGridLines", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_223_ChartAxis_ShowGridLines;
-                xamlMember.Setter = set_223_ChartAxis_ShowGridLines;
+                xamlMember.Getter = get_243_ChartAxis_ShowGridLines;
+                xamlMember.Setter = set_243_ChartAxis_ShowGridLines;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.EnableAutoIntervalOnZooming":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "EnableAutoIntervalOnZooming", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_224_ChartAxis_EnableAutoIntervalOnZooming;
-                xamlMember.Setter = set_224_ChartAxis_EnableAutoIntervalOnZooming;
+                xamlMember.Getter = get_244_ChartAxis_EnableAutoIntervalOnZooming;
+                xamlMember.Setter = set_244_ChartAxis_EnableAutoIntervalOnZooming;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.LabelStyle":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "LabelStyle", "Syncfusion.UI.Xaml.Charts.LabelStyle");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_225_ChartAxis_LabelStyle;
-                xamlMember.Setter = set_225_ChartAxis_LabelStyle;
+                xamlMember.Getter = get_245_ChartAxis_LabelStyle;
+                xamlMember.Setter = set_245_ChartAxis_LabelStyle;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.LabelTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "LabelTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_226_ChartAxis_LabelTemplate;
-                xamlMember.Setter = set_226_ChartAxis_LabelTemplate;
+                xamlMember.Getter = get_246_ChartAxis_LabelTemplate;
+                xamlMember.Setter = set_246_ChartAxis_LabelTemplate;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.CustomLabels":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "CustomLabels", "Syncfusion.UI.Xaml.Charts.ChartAxisLabelCollection");
-                xamlMember.Getter = get_227_ChartAxis_CustomLabels;
+                xamlMember.Getter = get_247_ChartAxis_CustomLabels;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxis.IsLogarithmic":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "IsLogarithmic", "Boolean");
-                xamlMember.Getter = get_228_ChartAxis_IsLogarithmic;
+                xamlMember.Getter = get_248_ChartAxis_IsLogarithmic;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartBase.SideBySideSeriesPlacement":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SideBySideSeriesPlacement", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_229_ChartBase_SideBySideSeriesPlacement;
-                xamlMember.Setter = set_229_ChartBase_SideBySideSeriesPlacement;
+                xamlMember.Getter = get_249_ChartBase_SideBySideSeriesPlacement;
+                xamlMember.Setter = set_249_ChartBase_SideBySideSeriesPlacement;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartBase.HorizontalHeaderAlignment":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "HorizontalHeaderAlignment", "Windows.UI.Xaml.HorizontalAlignment");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_230_ChartBase_HorizontalHeaderAlignment;
-                xamlMember.Setter = set_230_ChartBase_HorizontalHeaderAlignment;
+                xamlMember.Getter = get_250_ChartBase_HorizontalHeaderAlignment;
+                xamlMember.Setter = set_250_ChartBase_HorizontalHeaderAlignment;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartBase.VerticalHeaderAlignment":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "VerticalHeaderAlignment", "Windows.UI.Xaml.VerticalAlignment");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_231_ChartBase_VerticalHeaderAlignment;
-                xamlMember.Setter = set_231_ChartBase_VerticalHeaderAlignment;
+                xamlMember.Getter = get_251_ChartBase_VerticalHeaderAlignment;
+                xamlMember.Setter = set_251_ChartBase_VerticalHeaderAlignment;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartBase.ColorModel":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ColorModel", "Syncfusion.UI.Xaml.Charts.ChartColorModel");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_232_ChartBase_ColorModel;
-                xamlMember.Setter = set_232_ChartBase_ColorModel;
+                xamlMember.Getter = get_252_ChartBase_ColorModel;
+                xamlMember.Setter = set_252_ChartBase_ColorModel;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartBase.Row":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartBase");
@@ -8995,8 +9323,8 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_233_ChartBase_Row;
-                xamlMember.Setter = set_233_ChartBase_Row;
+                xamlMember.Getter = get_253_ChartBase_Row;
+                xamlMember.Setter = set_253_ChartBase_Row;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartBase.Column":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartBase");
@@ -9004,8 +9332,8 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_234_ChartBase_Column;
-                xamlMember.Setter = set_234_ChartBase_Column;
+                xamlMember.Getter = get_254_ChartBase_Column;
+                xamlMember.Setter = set_254_ChartBase_Column;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartBase.ColumnSpan":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartBase");
@@ -9013,8 +9341,8 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_235_ChartBase_ColumnSpan;
-                xamlMember.Setter = set_235_ChartBase_ColumnSpan;
+                xamlMember.Getter = get_255_ChartBase_ColumnSpan;
+                xamlMember.Setter = set_255_ChartBase_ColumnSpan;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartBase.RowSpan":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartBase");
@@ -9022,1397 +9350,1342 @@ namespace MoneyKepper2.MoneyKepper2_XamlTypeInfo
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_236_ChartBase_RowSpan;
-                xamlMember.Setter = set_236_ChartBase_RowSpan;
+                xamlMember.Getter = get_256_ChartBase_RowSpan;
+                xamlMember.Setter = set_256_ChartBase_RowSpan;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartLegend.CornerRadius":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartLegend");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "CornerRadius", "Windows.UI.Xaml.CornerRadius");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_237_ChartLegend_CornerRadius;
-                xamlMember.Setter = set_237_ChartLegend_CornerRadius;
+                xamlMember.Getter = get_257_ChartLegend_CornerRadius;
+                xamlMember.Setter = set_257_ChartLegend_CornerRadius;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartLegend.DockPosition":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartLegend");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "DockPosition", "Syncfusion.UI.Xaml.Charts.ChartDock");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_238_ChartLegend_DockPosition;
-                xamlMember.Setter = set_238_ChartLegend_DockPosition;
+                xamlMember.Getter = get_258_ChartLegend_DockPosition;
+                xamlMember.Setter = set_258_ChartLegend_DockPosition;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartLegend.Orientation":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartLegend");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Orientation", "Syncfusion.UI.Xaml.Charts.ChartOrientation");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_239_ChartLegend_Orientation;
-                xamlMember.Setter = set_239_ChartLegend_Orientation;
+                xamlMember.Getter = get_259_ChartLegend_Orientation;
+                xamlMember.Setter = set_259_ChartLegend_Orientation;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartLegend.LegendPosition":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartLegend");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "LegendPosition", "Syncfusion.UI.Xaml.Charts.LegendPosition");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_240_ChartLegend_LegendPosition;
-                xamlMember.Setter = set_240_ChartLegend_LegendPosition;
+                xamlMember.Getter = get_260_ChartLegend_LegendPosition;
+                xamlMember.Setter = set_260_ChartLegend_LegendPosition;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartLegend.ItemMargin":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartLegend");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ItemMargin", "Windows.UI.Xaml.Thickness");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_241_ChartLegend_ItemMargin;
-                xamlMember.Setter = set_241_ChartLegend_ItemMargin;
+                xamlMember.Getter = get_261_ChartLegend_ItemMargin;
+                xamlMember.Setter = set_261_ChartLegend_ItemMargin;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartLegend.Header":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartLegend");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Header", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_242_ChartLegend_Header;
-                xamlMember.Setter = set_242_ChartLegend_Header;
+                xamlMember.Getter = get_262_ChartLegend_Header;
+                xamlMember.Setter = set_262_ChartLegend_Header;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartLegend.HeaderTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartLegend");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "HeaderTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_243_ChartLegend_HeaderTemplate;
-                xamlMember.Setter = set_243_ChartLegend_HeaderTemplate;
+                xamlMember.Getter = get_263_ChartLegend_HeaderTemplate;
+                xamlMember.Setter = set_263_ChartLegend_HeaderTemplate;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartLegend.CheckBoxVisibility":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartLegend");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "CheckBoxVisibility", "Windows.UI.Xaml.Visibility");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_244_ChartLegend_CheckBoxVisibility;
-                xamlMember.Setter = set_244_ChartLegend_CheckBoxVisibility;
+                xamlMember.Getter = get_264_ChartLegend_CheckBoxVisibility;
+                xamlMember.Setter = set_264_ChartLegend_CheckBoxVisibility;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartLegend.IconVisibility":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartLegend");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "IconVisibility", "Windows.UI.Xaml.Visibility");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_245_ChartLegend_IconVisibility;
-                xamlMember.Setter = set_245_ChartLegend_IconVisibility;
+                xamlMember.Getter = get_265_ChartLegend_IconVisibility;
+                xamlMember.Setter = set_265_ChartLegend_IconVisibility;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartLegend.IconWidth":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartLegend");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "IconWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_246_ChartLegend_IconWidth;
-                xamlMember.Setter = set_246_ChartLegend_IconWidth;
+                xamlMember.Getter = get_266_ChartLegend_IconWidth;
+                xamlMember.Setter = set_266_ChartLegend_IconWidth;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartLegend.IconHeight":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartLegend");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "IconHeight", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_247_ChartLegend_IconHeight;
-                xamlMember.Setter = set_247_ChartLegend_IconHeight;
+                xamlMember.Getter = get_267_ChartLegend_IconHeight;
+                xamlMember.Setter = set_267_ChartLegend_IconHeight;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartLegend.OffsetX":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartLegend");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "OffsetX", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_248_ChartLegend_OffsetX;
-                xamlMember.Setter = set_248_ChartLegend_OffsetX;
+                xamlMember.Getter = get_268_ChartLegend_OffsetX;
+                xamlMember.Setter = set_268_ChartLegend_OffsetX;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartLegend.OffsetY":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartLegend");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "OffsetY", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_249_ChartLegend_OffsetY;
-                xamlMember.Setter = set_249_ChartLegend_OffsetY;
+                xamlMember.Getter = get_269_ChartLegend_OffsetY;
+                xamlMember.Setter = set_269_ChartLegend_OffsetY;
                 break;
             case "Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.ExplodeOnMouseClick":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ExplodeOnMouseClick", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_250_AccumulationSeriesBase_ExplodeOnMouseClick;
-                xamlMember.Setter = set_250_AccumulationSeriesBase_ExplodeOnMouseClick;
+                xamlMember.Getter = get_270_AccumulationSeriesBase_ExplodeOnMouseClick;
+                xamlMember.Setter = set_270_AccumulationSeriesBase_ExplodeOnMouseClick;
                 break;
             case "Syncfusion.UI.Xaml.Charts.CircularSeriesBase.ExplodeRadius":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.CircularSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ExplodeRadius", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_251_CircularSeriesBase_ExplodeRadius;
-                xamlMember.Setter = set_251_CircularSeriesBase_ExplodeRadius;
+                xamlMember.Getter = get_271_CircularSeriesBase_ExplodeRadius;
+                xamlMember.Setter = set_271_CircularSeriesBase_ExplodeRadius;
                 break;
             case "Syncfusion.UI.Xaml.Charts.CircularSeriesBase.EnableSmartLabels":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.CircularSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "EnableSmartLabels", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_252_CircularSeriesBase_EnableSmartLabels;
-                xamlMember.Setter = set_252_CircularSeriesBase_EnableSmartLabels;
+                xamlMember.Getter = get_272_CircularSeriesBase_EnableSmartLabels;
+                xamlMember.Setter = set_272_CircularSeriesBase_EnableSmartLabels;
                 break;
             case "Syncfusion.UI.Xaml.Charts.CircularSeriesBase.LabelPosition":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.CircularSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "LabelPosition", "Syncfusion.UI.Xaml.Charts.CircularSeriesLabelPosition");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_253_CircularSeriesBase_LabelPosition;
-                xamlMember.Setter = set_253_CircularSeriesBase_LabelPosition;
+                xamlMember.Getter = get_273_CircularSeriesBase_LabelPosition;
+                xamlMember.Setter = set_273_CircularSeriesBase_LabelPosition;
                 break;
             case "Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.YBindingPath":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "YBindingPath", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_254_AccumulationSeriesBase_YBindingPath;
-                xamlMember.Setter = set_254_AccumulationSeriesBase_YBindingPath;
+                xamlMember.Getter = get_274_AccumulationSeriesBase_YBindingPath;
+                xamlMember.Setter = set_274_AccumulationSeriesBase_YBindingPath;
                 break;
             case "Syncfusion.UI.Xaml.Charts.AdornmentSeries.AdornmentsInfo":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.AdornmentSeries");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AdornmentsInfo", "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfo");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_255_AdornmentSeries_AdornmentsInfo;
-                xamlMember.Setter = set_255_AdornmentSeries_AdornmentsInfo;
+                xamlMember.Getter = get_275_AdornmentSeries_AdornmentsInfo;
+                xamlMember.Setter = set_275_AdornmentSeries_AdornmentsInfo;
                 break;
             case "Syncfusion.UI.Xaml.Charts.PieSeries.Segment":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.PieSeries");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Segment", "Syncfusion.UI.Xaml.Charts.PieSegment");
-                xamlMember.Getter = get_256_PieSeries_Segment;
+                xamlMember.Getter = get_276_PieSeries_Segment;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.PieSeries.PieCoefficient":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.PieSeries");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "PieCoefficient", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_257_PieSeries_PieCoefficient;
-                xamlMember.Setter = set_257_PieSeries_PieCoefficient;
+                xamlMember.Getter = get_277_PieSeries_PieCoefficient;
+                xamlMember.Setter = set_277_PieSeries_PieCoefficient;
                 break;
             case "Syncfusion.UI.Xaml.Charts.CircularSeriesBase.ConnectorType":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.CircularSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ConnectorType", "Syncfusion.UI.Xaml.Charts.ConnectorMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_258_CircularSeriesBase_ConnectorType;
-                xamlMember.Setter = set_258_CircularSeriesBase_ConnectorType;
+                xamlMember.Getter = get_278_CircularSeriesBase_ConnectorType;
+                xamlMember.Setter = set_278_CircularSeriesBase_ConnectorType;
                 break;
             case "Syncfusion.UI.Xaml.Charts.CircularSeriesBase.StartAngle":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.CircularSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "StartAngle", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_259_CircularSeriesBase_StartAngle;
-                xamlMember.Setter = set_259_CircularSeriesBase_StartAngle;
+                xamlMember.Getter = get_279_CircularSeriesBase_StartAngle;
+                xamlMember.Setter = set_279_CircularSeriesBase_StartAngle;
                 break;
             case "Syncfusion.UI.Xaml.Charts.CircularSeriesBase.EndAngle":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.CircularSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "EndAngle", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_260_CircularSeriesBase_EndAngle;
-                xamlMember.Setter = set_260_CircularSeriesBase_EndAngle;
+                xamlMember.Getter = get_280_CircularSeriesBase_EndAngle;
+                xamlMember.Setter = set_280_CircularSeriesBase_EndAngle;
                 break;
             case "Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.ExplodeIndex":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ExplodeIndex", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_261_AccumulationSeriesBase_ExplodeIndex;
-                xamlMember.Setter = set_261_AccumulationSeriesBase_ExplodeIndex;
+                xamlMember.Getter = get_281_AccumulationSeriesBase_ExplodeIndex;
+                xamlMember.Setter = set_281_AccumulationSeriesBase_ExplodeIndex;
                 break;
             case "Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.ExplodeAll":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ExplodeAll", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_262_AccumulationSeriesBase_ExplodeAll;
-                xamlMember.Setter = set_262_AccumulationSeriesBase_ExplodeAll;
+                xamlMember.Getter = get_282_AccumulationSeriesBase_ExplodeAll;
+                xamlMember.Setter = set_282_AccumulationSeriesBase_ExplodeAll;
                 break;
             case "Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.SegmentSelectionBrush":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SegmentSelectionBrush", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_263_AccumulationSeriesBase_SegmentSelectionBrush;
-                xamlMember.Setter = set_263_AccumulationSeriesBase_SegmentSelectionBrush;
+                xamlMember.Getter = get_283_AccumulationSeriesBase_SegmentSelectionBrush;
+                xamlMember.Setter = set_283_AccumulationSeriesBase_SegmentSelectionBrush;
                 break;
             case "Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase.SelectedIndex":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.AccumulationSeriesBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SelectedIndex", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_264_AccumulationSeriesBase_SelectedIndex;
-                xamlMember.Setter = set_264_AccumulationSeriesBase_SelectedIndex;
+                xamlMember.Getter = get_284_AccumulationSeriesBase_SelectedIndex;
+                xamlMember.Setter = set_284_AccumulationSeriesBase_SelectedIndex;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartColorModel.CustomBrushes":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartColorModel");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "CustomBrushes", "System.Collections.Generic.List`1<Windows.UI.Xaml.Media.Brush>");
-                xamlMember.Getter = get_265_ChartColorModel_CustomBrushes;
-                xamlMember.Setter = set_265_ChartColorModel_CustomBrushes;
-                break;
-            case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions":
-                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
-                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Actions", "Microsoft.Xaml.Interactivity.ActionCollection");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_266_EventTriggerBehavior_Actions;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.EventName":
-                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
-                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "EventName", "String");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_267_EventTriggerBehavior_EventName;
-                xamlMember.Setter = set_267_EventTriggerBehavior_EventName;
-                break;
-            case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.SourceObject":
-                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
-                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SourceObject", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_268_EventTriggerBehavior_SourceObject;
-                xamlMember.Setter = set_268_EventTriggerBehavior_SourceObject;
-                break;
-            case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.AssociatedObject":
-                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
-                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
-                xamlMember.Getter = get_269_EventTriggerBehavior_AssociatedObject;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.Command":
-                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
-                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Command", "System.Windows.Input.ICommand");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_270_InvokeCommandAction_Command;
-                xamlMember.Setter = set_270_InvokeCommandAction_Command;
-                break;
-            case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.CommandParameter":
-                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
-                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "CommandParameter", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_271_InvokeCommandAction_CommandParameter;
-                xamlMember.Setter = set_271_InvokeCommandAction_CommandParameter;
-                break;
-            case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.InputConverter":
-                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
-                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "InputConverter", "Windows.UI.Xaml.Data.IValueConverter");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_272_InvokeCommandAction_InputConverter;
-                xamlMember.Setter = set_272_InvokeCommandAction_InputConverter;
-                break;
-            case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.InputConverterParameter":
-                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
-                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "InputConverterParameter", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_273_InvokeCommandAction_InputConverterParameter;
-                xamlMember.Setter = set_273_InvokeCommandAction_InputConverterParameter;
-                break;
-            case "Microsoft.Xaml.Interactions.Core.InvokeCommandAction.InputConverterLanguage":
-                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.InvokeCommandAction");
-                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "InputConverterLanguage", "String");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_274_InvokeCommandAction_InputConverterLanguage;
-                xamlMember.Setter = set_274_InvokeCommandAction_InputConverterLanguage;
+                xamlMember.Getter = get_285_ChartColorModel_CustomBrushes;
+                xamlMember.Setter = set_285_ChartColorModel_CustomBrushes;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.ShowLabel":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ShowLabel", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_275_ChartAdornmentInfoBase_ShowLabel;
-                xamlMember.Setter = set_275_ChartAdornmentInfoBase_ShowLabel;
+                xamlMember.Getter = get_286_ChartAdornmentInfoBase_ShowLabel;
+                xamlMember.Setter = set_286_ChartAdornmentInfoBase_ShowLabel;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.SegmentLabelFormat":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SegmentLabelFormat", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_276_ChartAdornmentInfoBase_SegmentLabelFormat;
-                xamlMember.Setter = set_276_ChartAdornmentInfoBase_SegmentLabelFormat;
+                xamlMember.Getter = get_287_ChartAdornmentInfoBase_SegmentLabelFormat;
+                xamlMember.Setter = set_287_ChartAdornmentInfoBase_SegmentLabelFormat;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.SegmentLabelContent":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SegmentLabelContent", "Syncfusion.UI.Xaml.Charts.LabelContent");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_277_ChartAdornmentInfoBase_SegmentLabelContent;
-                xamlMember.Setter = set_277_ChartAdornmentInfoBase_SegmentLabelContent;
+                xamlMember.Getter = get_288_ChartAdornmentInfoBase_SegmentLabelContent;
+                xamlMember.Setter = set_288_ChartAdornmentInfoBase_SegmentLabelContent;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.ShowConnectorLine":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ShowConnectorLine", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_278_ChartAdornmentInfoBase_ShowConnectorLine;
-                xamlMember.Setter = set_278_ChartAdornmentInfoBase_ShowConnectorLine;
+                xamlMember.Getter = get_289_ChartAdornmentInfoBase_ShowConnectorLine;
+                xamlMember.Setter = set_289_ChartAdornmentInfoBase_ShowConnectorLine;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.LabelPosition":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "LabelPosition", "Syncfusion.UI.Xaml.Charts.AdornmentsLabelPosition");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_279_ChartAdornmentInfoBase_LabelPosition;
-                xamlMember.Setter = set_279_ChartAdornmentInfoBase_LabelPosition;
+                xamlMember.Getter = get_290_ChartAdornmentInfoBase_LabelPosition;
+                xamlMember.Setter = set_290_ChartAdornmentInfoBase_LabelPosition;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.Foreground":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Foreground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_280_ChartAdornmentInfoBase_Foreground;
-                xamlMember.Setter = set_280_ChartAdornmentInfoBase_Foreground;
+                xamlMember.Getter = get_291_ChartAdornmentInfoBase_Foreground;
+                xamlMember.Setter = set_291_ChartAdornmentInfoBase_Foreground;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.LabelTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "LabelTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_281_ChartAdornmentInfoBase_LabelTemplate;
-                xamlMember.Setter = set_281_ChartAdornmentInfoBase_LabelTemplate;
+                xamlMember.Getter = get_292_ChartAdornmentInfoBase_LabelTemplate;
+                xamlMember.Setter = set_292_ChartAdornmentInfoBase_LabelTemplate;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.LabelRotationAngle":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "LabelRotationAngle", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_282_ChartAdornmentInfoBase_LabelRotationAngle;
-                xamlMember.Setter = set_282_ChartAdornmentInfoBase_LabelRotationAngle;
+                xamlMember.Getter = get_293_ChartAdornmentInfoBase_LabelRotationAngle;
+                xamlMember.Setter = set_293_ChartAdornmentInfoBase_LabelRotationAngle;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.Background":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Background", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_283_ChartAdornmentInfoBase_Background;
-                xamlMember.Setter = set_283_ChartAdornmentInfoBase_Background;
+                xamlMember.Getter = get_294_ChartAdornmentInfoBase_Background;
+                xamlMember.Setter = set_294_ChartAdornmentInfoBase_Background;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.BorderThickness":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "BorderThickness", "Windows.UI.Xaml.Thickness");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_284_ChartAdornmentInfoBase_BorderThickness;
-                xamlMember.Setter = set_284_ChartAdornmentInfoBase_BorderThickness;
+                xamlMember.Getter = get_295_ChartAdornmentInfoBase_BorderThickness;
+                xamlMember.Setter = set_295_ChartAdornmentInfoBase_BorderThickness;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.BorderBrush":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "BorderBrush", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_285_ChartAdornmentInfoBase_BorderBrush;
-                xamlMember.Setter = set_285_ChartAdornmentInfoBase_BorderBrush;
+                xamlMember.Getter = get_296_ChartAdornmentInfoBase_BorderBrush;
+                xamlMember.Setter = set_296_ChartAdornmentInfoBase_BorderBrush;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.Margin":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Margin", "Windows.UI.Xaml.Thickness");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_286_ChartAdornmentInfoBase_Margin;
-                xamlMember.Setter = set_286_ChartAdornmentInfoBase_Margin;
+                xamlMember.Getter = get_297_ChartAdornmentInfoBase_Margin;
+                xamlMember.Setter = set_297_ChartAdornmentInfoBase_Margin;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.FontStyle":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "FontStyle", "Windows.UI.Text.FontStyle");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_287_ChartAdornmentInfoBase_FontStyle;
-                xamlMember.Setter = set_287_ChartAdornmentInfoBase_FontStyle;
+                xamlMember.Getter = get_298_ChartAdornmentInfoBase_FontStyle;
+                xamlMember.Setter = set_298_ChartAdornmentInfoBase_FontStyle;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.FontSize":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "FontSize", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_288_ChartAdornmentInfoBase_FontSize;
-                xamlMember.Setter = set_288_ChartAdornmentInfoBase_FontSize;
+                xamlMember.Getter = get_299_ChartAdornmentInfoBase_FontSize;
+                xamlMember.Setter = set_299_ChartAdornmentInfoBase_FontSize;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.UseSeriesPalette":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "UseSeriesPalette", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_289_ChartAdornmentInfoBase_UseSeriesPalette;
-                xamlMember.Setter = set_289_ChartAdornmentInfoBase_UseSeriesPalette;
+                xamlMember.Getter = get_300_ChartAdornmentInfoBase_UseSeriesPalette;
+                xamlMember.Setter = set_300_ChartAdornmentInfoBase_UseSeriesPalette;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.HighlightOnSelection":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "HighlightOnSelection", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_290_ChartAdornmentInfoBase_HighlightOnSelection;
-                xamlMember.Setter = set_290_ChartAdornmentInfoBase_HighlightOnSelection;
+                xamlMember.Getter = get_301_ChartAdornmentInfoBase_HighlightOnSelection;
+                xamlMember.Setter = set_301_ChartAdornmentInfoBase_HighlightOnSelection;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.HorizontalAlignment":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "HorizontalAlignment", "Windows.UI.Xaml.HorizontalAlignment");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_291_ChartAdornmentInfoBase_HorizontalAlignment;
-                xamlMember.Setter = set_291_ChartAdornmentInfoBase_HorizontalAlignment;
+                xamlMember.Getter = get_302_ChartAdornmentInfoBase_HorizontalAlignment;
+                xamlMember.Setter = set_302_ChartAdornmentInfoBase_HorizontalAlignment;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.VerticalAlignment":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "VerticalAlignment", "Windows.UI.Xaml.VerticalAlignment");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_292_ChartAdornmentInfoBase_VerticalAlignment;
-                xamlMember.Setter = set_292_ChartAdornmentInfoBase_VerticalAlignment;
+                xamlMember.Getter = get_303_ChartAdornmentInfoBase_VerticalAlignment;
+                xamlMember.Setter = set_303_ChartAdornmentInfoBase_VerticalAlignment;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.ConnectorHeight":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ConnectorHeight", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_293_ChartAdornmentInfoBase_ConnectorHeight;
-                xamlMember.Setter = set_293_ChartAdornmentInfoBase_ConnectorHeight;
+                xamlMember.Getter = get_304_ChartAdornmentInfoBase_ConnectorHeight;
+                xamlMember.Setter = set_304_ChartAdornmentInfoBase_ConnectorHeight;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.ConnectorRotationAngle":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ConnectorRotationAngle", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_294_ChartAdornmentInfoBase_ConnectorRotationAngle;
-                xamlMember.Setter = set_294_ChartAdornmentInfoBase_ConnectorRotationAngle;
+                xamlMember.Getter = get_305_ChartAdornmentInfoBase_ConnectorRotationAngle;
+                xamlMember.Setter = set_305_ChartAdornmentInfoBase_ConnectorRotationAngle;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.ConnectorLineStyle":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ConnectorLineStyle", "Windows.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_295_ChartAdornmentInfoBase_ConnectorLineStyle;
-                xamlMember.Setter = set_295_ChartAdornmentInfoBase_ConnectorLineStyle;
+                xamlMember.Getter = get_306_ChartAdornmentInfoBase_ConnectorLineStyle;
+                xamlMember.Setter = set_306_ChartAdornmentInfoBase_ConnectorLineStyle;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.Symbol":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Symbol", "Syncfusion.UI.Xaml.Charts.ChartSymbol");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_296_ChartAdornmentInfoBase_Symbol;
-                xamlMember.Setter = set_296_ChartAdornmentInfoBase_Symbol;
+                xamlMember.Getter = get_307_ChartAdornmentInfoBase_Symbol;
+                xamlMember.Setter = set_307_ChartAdornmentInfoBase_Symbol;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.SymbolWidth":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SymbolWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_297_ChartAdornmentInfoBase_SymbolWidth;
-                xamlMember.Setter = set_297_ChartAdornmentInfoBase_SymbolWidth;
+                xamlMember.Getter = get_308_ChartAdornmentInfoBase_SymbolWidth;
+                xamlMember.Setter = set_308_ChartAdornmentInfoBase_SymbolWidth;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.SymbolHeight":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SymbolHeight", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_298_ChartAdornmentInfoBase_SymbolHeight;
-                xamlMember.Setter = set_298_ChartAdornmentInfoBase_SymbolHeight;
+                xamlMember.Getter = get_309_ChartAdornmentInfoBase_SymbolHeight;
+                xamlMember.Setter = set_309_ChartAdornmentInfoBase_SymbolHeight;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.SymbolTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SymbolTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_299_ChartAdornmentInfoBase_SymbolTemplate;
-                xamlMember.Setter = set_299_ChartAdornmentInfoBase_SymbolTemplate;
+                xamlMember.Getter = get_310_ChartAdornmentInfoBase_SymbolTemplate;
+                xamlMember.Setter = set_310_ChartAdornmentInfoBase_SymbolTemplate;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.SymbolInterior":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SymbolInterior", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_300_ChartAdornmentInfoBase_SymbolInterior;
-                xamlMember.Setter = set_300_ChartAdornmentInfoBase_SymbolInterior;
+                xamlMember.Getter = get_311_ChartAdornmentInfoBase_SymbolInterior;
+                xamlMember.Setter = set_311_ChartAdornmentInfoBase_SymbolInterior;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.SymbolStroke":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SymbolStroke", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_301_ChartAdornmentInfoBase_SymbolStroke;
-                xamlMember.Setter = set_301_ChartAdornmentInfoBase_SymbolStroke;
+                xamlMember.Getter = get_312_ChartAdornmentInfoBase_SymbolStroke;
+                xamlMember.Setter = set_312_ChartAdornmentInfoBase_SymbolStroke;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.FontFamily":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "FontFamily", "Windows.UI.Xaml.Media.FontFamily");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_302_ChartAdornmentInfoBase_FontFamily;
-                xamlMember.Setter = set_302_ChartAdornmentInfoBase_FontFamily;
+                xamlMember.Getter = get_313_ChartAdornmentInfoBase_FontFamily;
+                xamlMember.Setter = set_313_ChartAdornmentInfoBase_FontFamily;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.Series":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Series", "Syncfusion.UI.Xaml.Charts.ChartSeriesBase");
-                xamlMember.Getter = get_303_ChartAdornmentInfoBase_Series;
+                xamlMember.Getter = get_314_ChartAdornmentInfoBase_Series;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.AdornmentsPosition":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AdornmentsPosition", "Syncfusion.UI.Xaml.Charts.AdornmentsPosition");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_304_ChartAdornmentInfoBase_AdornmentsPosition;
-                xamlMember.Setter = set_304_ChartAdornmentInfoBase_AdornmentsPosition;
+                xamlMember.Getter = get_315_ChartAdornmentInfoBase_AdornmentsPosition;
+                xamlMember.Setter = set_315_ChartAdornmentInfoBase_AdornmentsPosition;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase.ShowMarker":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAdornmentInfoBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ShowMarker", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_305_ChartAdornmentInfoBase_ShowMarker;
-                xamlMember.Setter = set_305_ChartAdornmentInfoBase_ShowMarker;
+                xamlMember.Getter = get_316_ChartAdornmentInfoBase_ShowMarker;
+                xamlMember.Setter = set_316_ChartAdornmentInfoBase_ShowMarker;
                 break;
             case "Syncfusion.UI.Xaml.Charts.CategoryAxis.Interval":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.CategoryAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Interval", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_306_CategoryAxis_Interval;
-                xamlMember.Setter = set_306_CategoryAxis_Interval;
+                xamlMember.Getter = get_317_CategoryAxis_Interval;
+                xamlMember.Setter = set_317_CategoryAxis_Interval;
                 break;
             case "Syncfusion.UI.Xaml.Charts.CategoryAxis.LabelPlacement":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.CategoryAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "LabelPlacement", "Syncfusion.UI.Xaml.Charts.LabelPlacement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_307_CategoryAxis_LabelPlacement;
-                xamlMember.Setter = set_307_CategoryAxis_LabelPlacement;
+                xamlMember.Getter = get_318_CategoryAxis_LabelPlacement;
+                xamlMember.Setter = set_318_CategoryAxis_LabelPlacement;
                 break;
             case "Syncfusion.UI.Xaml.Charts.CategoryAxis.IsIndexed":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.CategoryAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "IsIndexed", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_308_CategoryAxis_IsIndexed;
-                xamlMember.Setter = set_308_CategoryAxis_IsIndexed;
+                xamlMember.Getter = get_319_CategoryAxis_IsIndexed;
+                xamlMember.Setter = set_319_CategoryAxis_IsIndexed;
                 break;
             case "Syncfusion.UI.Xaml.Charts.CategoryAxis.AggregateFunctions":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.CategoryAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AggregateFunctions", "Syncfusion.UI.Xaml.Charts.AggregateFunctions");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_309_CategoryAxis_AggregateFunctions;
-                xamlMember.Setter = set_309_CategoryAxis_AggregateFunctions;
+                xamlMember.Getter = get_320_CategoryAxis_AggregateFunctions;
+                xamlMember.Setter = set_320_CategoryAxis_AggregateFunctions;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.ZoomPosition":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxisBase2D");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ZoomPosition", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_310_ChartAxisBase2D_ZoomPosition;
-                xamlMember.Setter = set_310_ChartAxisBase2D_ZoomPosition;
+                xamlMember.Getter = get_321_ChartAxisBase2D_ZoomPosition;
+                xamlMember.Setter = set_321_ChartAxisBase2D_ZoomPosition;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.ZoomFactor":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxisBase2D");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ZoomFactor", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_311_ChartAxisBase2D_ZoomFactor;
-                xamlMember.Setter = set_311_ChartAxisBase2D_ZoomFactor;
+                xamlMember.Getter = get_322_ChartAxisBase2D_ZoomFactor;
+                xamlMember.Setter = set_322_ChartAxisBase2D_ZoomFactor;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.IncludeStripLineRange":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxisBase2D");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "IncludeStripLineRange", "Boolean");
-                xamlMember.Getter = get_312_ChartAxisBase2D_IncludeStripLineRange;
-                xamlMember.Setter = set_312_ChartAxisBase2D_IncludeStripLineRange;
+                xamlMember.Getter = get_323_ChartAxisBase2D_IncludeStripLineRange;
+                xamlMember.Setter = set_323_ChartAxisBase2D_IncludeStripLineRange;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.StripLines":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxisBase2D");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "StripLines", "Syncfusion.UI.Xaml.Charts.ChartStripLines");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_313_ChartAxisBase2D_StripLines;
-                xamlMember.Setter = set_313_ChartAxisBase2D_StripLines;
+                xamlMember.Getter = get_324_ChartAxisBase2D_StripLines;
+                xamlMember.Setter = set_324_ChartAxisBase2D_StripLines;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartStripLine.Start":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartStripLine");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Start", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_314_ChartStripLine_Start;
-                xamlMember.Setter = set_314_ChartStripLine_Start;
+                xamlMember.Getter = get_325_ChartStripLine_Start;
+                xamlMember.Setter = set_325_ChartStripLine_Start;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartStripLine.Background":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartStripLine");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Background", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_315_ChartStripLine_Background;
-                xamlMember.Setter = set_315_ChartStripLine_Background;
+                xamlMember.Getter = get_326_ChartStripLine_Background;
+                xamlMember.Setter = set_326_ChartStripLine_Background;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartStripLine.BorderBrush":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartStripLine");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "BorderBrush", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_316_ChartStripLine_BorderBrush;
-                xamlMember.Setter = set_316_ChartStripLine_BorderBrush;
+                xamlMember.Getter = get_327_ChartStripLine_BorderBrush;
+                xamlMember.Setter = set_327_ChartStripLine_BorderBrush;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartStripLine.BorderThickness":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartStripLine");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "BorderThickness", "Windows.UI.Xaml.Thickness");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_317_ChartStripLine_BorderThickness;
-                xamlMember.Setter = set_317_ChartStripLine_BorderThickness;
+                xamlMember.Getter = get_328_ChartStripLine_BorderThickness;
+                xamlMember.Setter = set_328_ChartStripLine_BorderThickness;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartStripLine.SegmentStartValue":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartStripLine");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SegmentStartValue", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_318_ChartStripLine_SegmentStartValue;
-                xamlMember.Setter = set_318_ChartStripLine_SegmentStartValue;
+                xamlMember.Getter = get_329_ChartStripLine_SegmentStartValue;
+                xamlMember.Setter = set_329_ChartStripLine_SegmentStartValue;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartStripLine.SegmentEndValue":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartStripLine");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SegmentEndValue", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_319_ChartStripLine_SegmentEndValue;
-                xamlMember.Setter = set_319_ChartStripLine_SegmentEndValue;
+                xamlMember.Getter = get_330_ChartStripLine_SegmentEndValue;
+                xamlMember.Setter = set_330_ChartStripLine_SegmentEndValue;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartStripLine.SegmentAxisName":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartStripLine");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SegmentAxisName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_320_ChartStripLine_SegmentAxisName;
-                xamlMember.Setter = set_320_ChartStripLine_SegmentAxisName;
+                xamlMember.Getter = get_331_ChartStripLine_SegmentAxisName;
+                xamlMember.Setter = set_331_ChartStripLine_SegmentAxisName;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartStripLine.IsSegmented":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartStripLine");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "IsSegmented", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_321_ChartStripLine_IsSegmented;
-                xamlMember.Setter = set_321_ChartStripLine_IsSegmented;
+                xamlMember.Getter = get_332_ChartStripLine_IsSegmented;
+                xamlMember.Setter = set_332_ChartStripLine_IsSegmented;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartStripLine.RepeatEvery":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartStripLine");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "RepeatEvery", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_322_ChartStripLine_RepeatEvery;
-                xamlMember.Setter = set_322_ChartStripLine_RepeatEvery;
+                xamlMember.Getter = get_333_ChartStripLine_RepeatEvery;
+                xamlMember.Setter = set_333_ChartStripLine_RepeatEvery;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartStripLine.RepeatUntil":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartStripLine");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "RepeatUntil", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_323_ChartStripLine_RepeatUntil;
-                xamlMember.Setter = set_323_ChartStripLine_RepeatUntil;
+                xamlMember.Getter = get_334_ChartStripLine_RepeatUntil;
+                xamlMember.Setter = set_334_ChartStripLine_RepeatUntil;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartStripLine.Label":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartStripLine");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Label", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_324_ChartStripLine_Label;
-                xamlMember.Setter = set_324_ChartStripLine_Label;
+                xamlMember.Getter = get_335_ChartStripLine_Label;
+                xamlMember.Setter = set_335_ChartStripLine_Label;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartStripLine.LabelTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartStripLine");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "LabelTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_325_ChartStripLine_LabelTemplate;
-                xamlMember.Setter = set_325_ChartStripLine_LabelTemplate;
+                xamlMember.Getter = get_336_ChartStripLine_LabelTemplate;
+                xamlMember.Setter = set_336_ChartStripLine_LabelTemplate;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartStripLine.Width":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartStripLine");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Width", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_326_ChartStripLine_Width;
-                xamlMember.Setter = set_326_ChartStripLine_Width;
+                xamlMember.Getter = get_337_ChartStripLine_Width;
+                xamlMember.Setter = set_337_ChartStripLine_Width;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartStripLine.LabelAngle":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartStripLine");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "LabelAngle", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_327_ChartStripLine_LabelAngle;
-                xamlMember.Setter = set_327_ChartStripLine_LabelAngle;
+                xamlMember.Getter = get_338_ChartStripLine_LabelAngle;
+                xamlMember.Setter = set_338_ChartStripLine_LabelAngle;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartStripLine.IsPixelWidth":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartStripLine");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "IsPixelWidth", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_328_ChartStripLine_IsPixelWidth;
-                xamlMember.Setter = set_328_ChartStripLine_IsPixelWidth;
+                xamlMember.Getter = get_339_ChartStripLine_IsPixelWidth;
+                xamlMember.Setter = set_339_ChartStripLine_IsPixelWidth;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartStripLine.LabelHorizontalAlignment":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartStripLine");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "LabelHorizontalAlignment", "Windows.UI.Xaml.HorizontalAlignment");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_329_ChartStripLine_LabelHorizontalAlignment;
-                xamlMember.Setter = set_329_ChartStripLine_LabelHorizontalAlignment;
+                xamlMember.Getter = get_340_ChartStripLine_LabelHorizontalAlignment;
+                xamlMember.Setter = set_340_ChartStripLine_LabelHorizontalAlignment;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartStripLine.LabelVerticalAlignment":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartStripLine");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "LabelVerticalAlignment", "Windows.UI.Xaml.VerticalAlignment");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_330_ChartStripLine_LabelVerticalAlignment;
-                xamlMember.Setter = set_330_ChartStripLine_LabelVerticalAlignment;
+                xamlMember.Getter = get_341_ChartStripLine_LabelVerticalAlignment;
+                xamlMember.Setter = set_341_ChartStripLine_LabelVerticalAlignment;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.EnableScrollBarResizing":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxisBase2D");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "EnableScrollBarResizing", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_331_ChartAxisBase2D_EnableScrollBarResizing;
-                xamlMember.Setter = set_331_ChartAxisBase2D_EnableScrollBarResizing;
+                xamlMember.Getter = get_342_ChartAxisBase2D_EnableScrollBarResizing;
+                xamlMember.Setter = set_342_ChartAxisBase2D_EnableScrollBarResizing;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.EnableScrollBar":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxisBase2D");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "EnableScrollBar", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_332_ChartAxisBase2D_EnableScrollBar;
-                xamlMember.Setter = set_332_ChartAxisBase2D_EnableScrollBar;
+                xamlMember.Getter = get_343_ChartAxisBase2D_EnableScrollBar;
+                xamlMember.Setter = set_343_ChartAxisBase2D_EnableScrollBar;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.DeferredScrolling":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxisBase2D");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "DeferredScrolling", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_333_ChartAxisBase2D_DeferredScrolling;
-                xamlMember.Setter = set_333_ChartAxisBase2D_DeferredScrolling;
+                xamlMember.Getter = get_344_ChartAxisBase2D_DeferredScrolling;
+                xamlMember.Setter = set_344_ChartAxisBase2D_DeferredScrolling;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ChartAxisBase2D.EnableTouchMode":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ChartAxisBase2D");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "EnableTouchMode", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_334_ChartAxisBase2D_EnableTouchMode;
-                xamlMember.Setter = set_334_ChartAxisBase2D_EnableTouchMode;
+                xamlMember.Getter = get_345_ChartAxisBase2D_EnableTouchMode;
+                xamlMember.Setter = set_345_ChartAxisBase2D_EnableTouchMode;
                 break;
             case "Syncfusion.UI.Xaml.Charts.NumericalAxis.Interval":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.NumericalAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Interval", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_335_NumericalAxis_Interval;
-                xamlMember.Setter = set_335_NumericalAxis_Interval;
+                xamlMember.Getter = get_346_NumericalAxis_Interval;
+                xamlMember.Setter = set_346_NumericalAxis_Interval;
                 break;
             case "Syncfusion.UI.Xaml.Charts.NumericalAxis.Minimum":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.NumericalAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Minimum", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_336_NumericalAxis_Minimum;
-                xamlMember.Setter = set_336_NumericalAxis_Minimum;
+                xamlMember.Getter = get_347_NumericalAxis_Minimum;
+                xamlMember.Setter = set_347_NumericalAxis_Minimum;
                 break;
             case "Syncfusion.UI.Xaml.Charts.NumericalAxis.Maximum":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.NumericalAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Maximum", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_337_NumericalAxis_Maximum;
-                xamlMember.Setter = set_337_NumericalAxis_Maximum;
+                xamlMember.Getter = get_348_NumericalAxis_Maximum;
+                xamlMember.Setter = set_348_NumericalAxis_Maximum;
                 break;
             case "Syncfusion.UI.Xaml.Charts.NumericalAxis.RangePadding":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.NumericalAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "RangePadding", "Syncfusion.UI.Xaml.Charts.NumericalPadding");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_338_NumericalAxis_RangePadding;
-                xamlMember.Setter = set_338_NumericalAxis_RangePadding;
+                xamlMember.Getter = get_349_NumericalAxis_RangePadding;
+                xamlMember.Setter = set_349_NumericalAxis_RangePadding;
                 break;
             case "Syncfusion.UI.Xaml.Charts.NumericalAxis.StartRangeFromZero":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.NumericalAxis");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "StartRangeFromZero", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_339_NumericalAxis_StartRangeFromZero;
-                xamlMember.Setter = set_339_NumericalAxis_StartRangeFromZero;
+                xamlMember.Getter = get_350_NumericalAxis_StartRangeFromZero;
+                xamlMember.Setter = set_350_NumericalAxis_StartRangeFromZero;
                 break;
             case "Syncfusion.UI.Xaml.Charts.RangeAxisBase.IncludeAnnotationRange":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.RangeAxisBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "IncludeAnnotationRange", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_340_RangeAxisBase_IncludeAnnotationRange;
-                xamlMember.Setter = set_340_RangeAxisBase_IncludeAnnotationRange;
+                xamlMember.Getter = get_351_RangeAxisBase_IncludeAnnotationRange;
+                xamlMember.Setter = set_351_RangeAxisBase_IncludeAnnotationRange;
                 break;
             case "Syncfusion.UI.Xaml.Charts.RangeAxisBase.SmallTicksPerInterval":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.RangeAxisBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SmallTicksPerInterval", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_341_RangeAxisBase_SmallTicksPerInterval;
-                xamlMember.Setter = set_341_RangeAxisBase_SmallTicksPerInterval;
+                xamlMember.Getter = get_352_RangeAxisBase_SmallTicksPerInterval;
+                xamlMember.Setter = set_352_RangeAxisBase_SmallTicksPerInterval;
                 break;
             case "Syncfusion.UI.Xaml.Charts.RangeAxisBase.SmallTickLineSize":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.RangeAxisBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SmallTickLineSize", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_342_RangeAxisBase_SmallTickLineSize;
-                xamlMember.Setter = set_342_RangeAxisBase_SmallTickLineSize;
+                xamlMember.Getter = get_353_RangeAxisBase_SmallTickLineSize;
+                xamlMember.Setter = set_353_RangeAxisBase_SmallTickLineSize;
                 break;
             case "Syncfusion.UI.Xaml.Charts.RangeAxisBase.SmallTickLinesPosition":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.RangeAxisBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SmallTickLinesPosition", "Syncfusion.UI.Xaml.Charts.AxisElementPosition");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_343_RangeAxisBase_SmallTickLinesPosition;
-                xamlMember.Setter = set_343_RangeAxisBase_SmallTickLinesPosition;
+                xamlMember.Getter = get_354_RangeAxisBase_SmallTickLinesPosition;
+                xamlMember.Setter = set_354_RangeAxisBase_SmallTickLinesPosition;
                 break;
             case "Syncfusion.UI.Xaml.Charts.XyDataSeries.YBindingPath":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.XyDataSeries");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "YBindingPath", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_344_XyDataSeries_YBindingPath;
-                xamlMember.Setter = set_344_XyDataSeries_YBindingPath;
+                xamlMember.Getter = get_355_XyDataSeries_YBindingPath;
+                xamlMember.Setter = set_355_XyDataSeries_YBindingPath;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ColumnSeries.SegmentSelectionBrush":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ColumnSeries");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SegmentSelectionBrush", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_345_ColumnSeries_SegmentSelectionBrush;
-                xamlMember.Setter = set_345_ColumnSeries_SegmentSelectionBrush;
+                xamlMember.Getter = get_356_ColumnSeries_SegmentSelectionBrush;
+                xamlMember.Setter = set_356_ColumnSeries_SegmentSelectionBrush;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ColumnSeries.SelectedIndex":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ColumnSeries");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SelectedIndex", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_346_ColumnSeries_SelectedIndex;
-                xamlMember.Setter = set_346_ColumnSeries_SelectedIndex;
+                xamlMember.Getter = get_357_ColumnSeries_SelectedIndex;
+                xamlMember.Setter = set_357_ColumnSeries_SelectedIndex;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ColumnSeries.SegmentSpacing":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ColumnSeries");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SegmentSpacing", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_347_ColumnSeries_SegmentSpacing;
-                xamlMember.Setter = set_347_ColumnSeries_SegmentSpacing;
+                xamlMember.Getter = get_358_ColumnSeries_SegmentSpacing;
+                xamlMember.Setter = set_358_ColumnSeries_SegmentSpacing;
                 break;
             case "Syncfusion.UI.Xaml.Charts.ColumnSeries.CustomTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.ColumnSeries");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "CustomTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_348_ColumnSeries_CustomTemplate;
-                xamlMember.Setter = set_348_ColumnSeries_CustomTemplate;
+                xamlMember.Getter = get_359_ColumnSeries_CustomTemplate;
+                xamlMember.Setter = set_359_ColumnSeries_CustomTemplate;
                 break;
             case "Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.EnableDragTooltip":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "EnableDragTooltip", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_349_XySegmentDraggingBase_EnableDragTooltip;
-                xamlMember.Setter = set_349_XySegmentDraggingBase_EnableDragTooltip;
+                xamlMember.Getter = get_360_XySegmentDraggingBase_EnableDragTooltip;
+                xamlMember.Setter = set_360_XySegmentDraggingBase_EnableDragTooltip;
                 break;
             case "Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.DragTooltipTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "DragTooltipTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_350_XySegmentDraggingBase_DragTooltipTemplate;
-                xamlMember.Setter = set_350_XySegmentDraggingBase_DragTooltipTemplate;
+                xamlMember.Getter = get_361_XySegmentDraggingBase_DragTooltipTemplate;
+                xamlMember.Setter = set_361_XySegmentDraggingBase_DragTooltipTemplate;
                 break;
             case "Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.RoundToDecimal":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "RoundToDecimal", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_351_XySegmentDraggingBase_RoundToDecimal;
-                xamlMember.Setter = set_351_XySegmentDraggingBase_RoundToDecimal;
+                xamlMember.Getter = get_362_XySegmentDraggingBase_RoundToDecimal;
+                xamlMember.Setter = set_362_XySegmentDraggingBase_RoundToDecimal;
                 break;
             case "Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.SnapToPoint":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SnapToPoint", "Syncfusion.UI.Xaml.Charts.SnapToPoint");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_352_XySegmentDraggingBase_SnapToPoint;
-                xamlMember.Setter = set_352_XySegmentDraggingBase_SnapToPoint;
+                xamlMember.Getter = get_363_XySegmentDraggingBase_SnapToPoint;
+                xamlMember.Setter = set_363_XySegmentDraggingBase_SnapToPoint;
                 break;
             case "Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.EnableSegmentDragging":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "EnableSegmentDragging", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_353_XySegmentDraggingBase_EnableSegmentDragging;
-                xamlMember.Setter = set_353_XySegmentDraggingBase_EnableSegmentDragging;
+                xamlMember.Getter = get_364_XySegmentDraggingBase_EnableSegmentDragging;
+                xamlMember.Setter = set_364_XySegmentDraggingBase_EnableSegmentDragging;
                 break;
             case "Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.UpdateSource":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "UpdateSource", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_354_XySegmentDraggingBase_UpdateSource;
-                xamlMember.Setter = set_354_XySegmentDraggingBase_UpdateSource;
+                xamlMember.Getter = get_365_XySegmentDraggingBase_UpdateSource;
+                xamlMember.Setter = set_365_XySegmentDraggingBase_UpdateSource;
                 break;
             case "Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase.DragCancelKeyModifiers":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.XySegmentDraggingBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "DragCancelKeyModifiers", "Windows.System.VirtualKeyModifiers");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_355_XySegmentDraggingBase_DragCancelKeyModifiers;
-                xamlMember.Setter = set_355_XySegmentDraggingBase_DragCancelKeyModifiers;
+                xamlMember.Getter = get_366_XySegmentDraggingBase_DragCancelKeyModifiers;
+                xamlMember.Setter = set_366_XySegmentDraggingBase_DragCancelKeyModifiers;
                 break;
             case "Syncfusion.UI.Xaml.Charts.CartesianSeries.Trendlines":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.CartesianSeries");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Trendlines", "Syncfusion.UI.Xaml.Charts.ChartTrendLineCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_356_CartesianSeries_Trendlines;
-                xamlMember.Setter = set_356_CartesianSeries_Trendlines;
+                xamlMember.Getter = get_367_CartesianSeries_Trendlines;
+                xamlMember.Setter = set_367_CartesianSeries_Trendlines;
                 break;
             case "Syncfusion.UI.Xaml.Charts.TrendlineBase.Slope":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.TrendlineBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Slope", "Double");
-                xamlMember.Getter = get_357_TrendlineBase_Slope;
+                xamlMember.Getter = get_368_TrendlineBase_Slope;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.TrendlineBase.Intercept":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.TrendlineBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Intercept", "Double");
-                xamlMember.Getter = get_358_TrendlineBase_Intercept;
+                xamlMember.Getter = get_369_TrendlineBase_Intercept;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.TrendlineBase.PolynomialSlopes":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.TrendlineBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "PolynomialSlopes", "Double[]");
-                xamlMember.Getter = get_359_TrendlineBase_PolynomialSlopes;
+                xamlMember.Getter = get_370_TrendlineBase_PolynomialSlopes;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.TrendlineBase.IsTrendlineVisible":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.TrendlineBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "IsTrendlineVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_360_TrendlineBase_IsTrendlineVisible;
-                xamlMember.Setter = set_360_TrendlineBase_IsTrendlineVisible;
+                xamlMember.Getter = get_371_TrendlineBase_IsTrendlineVisible;
+                xamlMember.Setter = set_371_TrendlineBase_IsTrendlineVisible;
                 break;
             case "Syncfusion.UI.Xaml.Charts.TrendlineBase.VisibilityOnLegend":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.TrendlineBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "VisibilityOnLegend", "Windows.UI.Xaml.Visibility");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_361_TrendlineBase_VisibilityOnLegend;
-                xamlMember.Setter = set_361_TrendlineBase_VisibilityOnLegend;
+                xamlMember.Getter = get_372_TrendlineBase_VisibilityOnLegend;
+                xamlMember.Setter = set_372_TrendlineBase_VisibilityOnLegend;
                 break;
             case "Syncfusion.UI.Xaml.Charts.TrendlineBase.LegendIconTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.TrendlineBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "LegendIconTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_362_TrendlineBase_LegendIconTemplate;
-                xamlMember.Setter = set_362_TrendlineBase_LegendIconTemplate;
+                xamlMember.Getter = get_373_TrendlineBase_LegendIconTemplate;
+                xamlMember.Setter = set_373_TrendlineBase_LegendIconTemplate;
                 break;
             case "Syncfusion.UI.Xaml.Charts.TrendlineBase.LegendIcon":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.TrendlineBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "LegendIcon", "Syncfusion.UI.Xaml.Charts.ChartLegendIcon");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_363_TrendlineBase_LegendIcon;
-                xamlMember.Setter = set_363_TrendlineBase_LegendIcon;
+                xamlMember.Getter = get_374_TrendlineBase_LegendIcon;
+                xamlMember.Setter = set_374_TrendlineBase_LegendIcon;
                 break;
             case "Syncfusion.UI.Xaml.Charts.TrendlineBase.Label":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.TrendlineBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Label", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_364_TrendlineBase_Label;
-                xamlMember.Setter = set_364_TrendlineBase_Label;
+                xamlMember.Getter = get_375_TrendlineBase_Label;
+                xamlMember.Setter = set_375_TrendlineBase_Label;
                 break;
             case "Syncfusion.UI.Xaml.Charts.TrendlineBase.Type":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.TrendlineBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Type", "Syncfusion.UI.Xaml.Charts.TrendlineType");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_365_TrendlineBase_Type;
-                xamlMember.Setter = set_365_TrendlineBase_Type;
+                xamlMember.Getter = get_376_TrendlineBase_Type;
+                xamlMember.Setter = set_376_TrendlineBase_Type;
                 break;
             case "Syncfusion.UI.Xaml.Charts.TrendlineBase.Stroke":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.TrendlineBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Stroke", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_366_TrendlineBase_Stroke;
-                xamlMember.Setter = set_366_TrendlineBase_Stroke;
+                xamlMember.Getter = get_377_TrendlineBase_Stroke;
+                xamlMember.Setter = set_377_TrendlineBase_Stroke;
                 break;
             case "Syncfusion.UI.Xaml.Charts.TrendlineBase.StrokeThickness":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.TrendlineBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "StrokeThickness", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_367_TrendlineBase_StrokeThickness;
-                xamlMember.Setter = set_367_TrendlineBase_StrokeThickness;
+                xamlMember.Getter = get_378_TrendlineBase_StrokeThickness;
+                xamlMember.Setter = set_378_TrendlineBase_StrokeThickness;
                 break;
             case "Syncfusion.UI.Xaml.Charts.TrendlineBase.StrokeDashArray":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.TrendlineBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "StrokeDashArray", "Windows.UI.Xaml.Media.DoubleCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_368_TrendlineBase_StrokeDashArray;
-                xamlMember.Setter = set_368_TrendlineBase_StrokeDashArray;
+                xamlMember.Getter = get_379_TrendlineBase_StrokeDashArray;
+                xamlMember.Setter = set_379_TrendlineBase_StrokeDashArray;
                 break;
             case "Syncfusion.UI.Xaml.Charts.TrendlineBase.ForwardForecast":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.TrendlineBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ForwardForecast", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_369_TrendlineBase_ForwardForecast;
-                xamlMember.Setter = set_369_TrendlineBase_ForwardForecast;
+                xamlMember.Getter = get_380_TrendlineBase_ForwardForecast;
+                xamlMember.Setter = set_380_TrendlineBase_ForwardForecast;
                 break;
             case "Syncfusion.UI.Xaml.Charts.TrendlineBase.BackwardForecast":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.TrendlineBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "BackwardForecast", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_370_TrendlineBase_BackwardForecast;
-                xamlMember.Setter = set_370_TrendlineBase_BackwardForecast;
+                xamlMember.Getter = get_381_TrendlineBase_BackwardForecast;
+                xamlMember.Setter = set_381_TrendlineBase_BackwardForecast;
                 break;
             case "Syncfusion.UI.Xaml.Charts.TrendlineBase.PolynomialOrder":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.TrendlineBase");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "PolynomialOrder", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_371_TrendlineBase_PolynomialOrder;
-                xamlMember.Setter = set_371_TrendlineBase_PolynomialOrder;
+                xamlMember.Getter = get_382_TrendlineBase_PolynomialOrder;
+                xamlMember.Setter = set_382_TrendlineBase_PolynomialOrder;
                 break;
             case "Syncfusion.UI.Xaml.Charts.CartesianSeries.XRange":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.CartesianSeries");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "XRange", "Syncfusion.UI.Xaml.Charts.DoubleRange");
-                xamlMember.Getter = get_372_CartesianSeries_XRange;
+                xamlMember.Getter = get_383_CartesianSeries_XRange;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.CartesianSeries.YRange":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.CartesianSeries");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "YRange", "Syncfusion.UI.Xaml.Charts.DoubleRange");
-                xamlMember.Getter = get_373_CartesianSeries_YRange;
+                xamlMember.Getter = get_384_CartesianSeries_YRange;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.Charts.CartesianSeries.XAxis":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.CartesianSeries");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "XAxis", "Syncfusion.UI.Xaml.Charts.ChartAxisBase2D");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_374_CartesianSeries_XAxis;
-                xamlMember.Setter = set_374_CartesianSeries_XAxis;
+                xamlMember.Getter = get_385_CartesianSeries_XAxis;
+                xamlMember.Setter = set_385_CartesianSeries_XAxis;
                 break;
             case "Syncfusion.UI.Xaml.Charts.CartesianSeries.YAxis":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.CartesianSeries");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "YAxis", "Syncfusion.UI.Xaml.Charts.RangeAxisBase");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_375_CartesianSeries_YAxis;
-                xamlMember.Setter = set_375_CartesianSeries_YAxis;
+                xamlMember.Getter = get_386_CartesianSeries_YAxis;
+                xamlMember.Setter = set_386_CartesianSeries_YAxis;
                 break;
             case "Syncfusion.UI.Xaml.Charts.CartesianSeries.IsTransposed":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.Charts.CartesianSeries");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "IsTransposed", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_376_CartesianSeries_IsTransposed;
-                xamlMember.Setter = set_376_CartesianSeries_IsTransposed;
+                xamlMember.Getter = get_387_CartesianSeries_IsTransposed;
+                xamlMember.Setter = set_387_CartesianSeries_IsTransposed;
                 break;
             case "Syncfusion.UI.Xaml.PivotChart.SfPivotChart.ShowToolTip":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.PivotChart.SfPivotChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ShowToolTip", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_377_SfPivotChart_ShowToolTip;
-                xamlMember.Setter = set_377_SfPivotChart_ShowToolTip;
+                xamlMember.Getter = get_388_SfPivotChart_ShowToolTip;
+                xamlMember.Setter = set_388_SfPivotChart_ShowToolTip;
                 break;
             case "Syncfusion.UI.Xaml.PivotChart.SfPivotChart.ItemSource":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.PivotChart.SfPivotChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ItemSource", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_378_SfPivotChart_ItemSource;
-                xamlMember.Setter = set_378_SfPivotChart_ItemSource;
+                xamlMember.Getter = get_389_SfPivotChart_ItemSource;
+                xamlMember.Setter = set_389_SfPivotChart_ItemSource;
                 break;
             case "Syncfusion.UI.Xaml.PivotChart.SfPivotChart.PivotAxis":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.PivotChart.SfPivotChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "PivotAxis", "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.PivotAnalysis.UWP.PivotItem>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_379_SfPivotChart_PivotAxis;
-                xamlMember.Setter = set_379_SfPivotChart_PivotAxis;
+                xamlMember.Getter = get_390_SfPivotChart_PivotAxis;
+                xamlMember.Setter = set_390_SfPivotChart_PivotAxis;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotItem.FieldCaption":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotItem");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "FieldCaption", "String");
-                xamlMember.Getter = get_380_PivotItem_FieldCaption;
-                xamlMember.Setter = set_380_PivotItem_FieldCaption;
+                xamlMember.Getter = get_391_PivotItem_FieldCaption;
+                xamlMember.Setter = set_391_PivotItem_FieldCaption;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotItem.FieldMappingName":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotItem");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "FieldMappingName", "String");
-                xamlMember.Getter = get_381_PivotItem_FieldMappingName;
-                xamlMember.Setter = set_381_PivotItem_FieldMappingName;
+                xamlMember.Getter = get_392_PivotItem_FieldMappingName;
+                xamlMember.Setter = set_392_PivotItem_FieldMappingName;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotItem.TotalHeader":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotItem");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "TotalHeader", "String");
-                xamlMember.Getter = get_382_PivotItem_TotalHeader;
-                xamlMember.Setter = set_382_PivotItem_TotalHeader;
+                xamlMember.Getter = get_393_PivotItem_TotalHeader;
+                xamlMember.Setter = set_393_PivotItem_TotalHeader;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotItem.Format":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotItem");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Format", "String");
-                xamlMember.Getter = get_383_PivotItem_Format;
-                xamlMember.Setter = set_383_PivotItem_Format;
+                xamlMember.Getter = get_394_PivotItem_Format;
+                xamlMember.Setter = set_394_PivotItem_Format;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotItem.SummaryType":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotItem");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SummaryType", "Syncfusion.PivotAnalysis.UWP.SummaryType");
-                xamlMember.Getter = get_384_PivotItem_SummaryType;
-                xamlMember.Setter = set_384_PivotItem_SummaryType;
+                xamlMember.Getter = get_395_PivotItem_SummaryType;
+                xamlMember.Setter = set_395_PivotItem_SummaryType;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotItem.Summary":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotItem");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Summary", "Syncfusion.PivotAnalysis.UWP.SummaryBase");
-                xamlMember.Getter = get_385_PivotItem_Summary;
-                xamlMember.Setter = set_385_PivotItem_Summary;
+                xamlMember.Getter = get_396_PivotItem_Summary;
+                xamlMember.Setter = set_396_PivotItem_Summary;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotItem.ShowSubTotal":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotItem");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ShowSubTotal", "Boolean");
-                xamlMember.Getter = get_386_PivotItem_ShowSubTotal;
-                xamlMember.Setter = set_386_PivotItem_ShowSubTotal;
+                xamlMember.Getter = get_397_PivotItem_ShowSubTotal;
+                xamlMember.Setter = set_397_PivotItem_ShowSubTotal;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotItem.AllowSort":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotItem");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AllowSort", "Boolean");
-                xamlMember.Getter = get_387_PivotItem_AllowSort;
-                xamlMember.Setter = set_387_PivotItem_AllowSort;
+                xamlMember.Getter = get_398_PivotItem_AllowSort;
+                xamlMember.Setter = set_398_PivotItem_AllowSort;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotItem.Width":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotItem");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Width", "Double");
-                xamlMember.Getter = get_388_PivotItem_Width;
-                xamlMember.Setter = set_388_PivotItem_Width;
+                xamlMember.Getter = get_399_PivotItem_Width;
+                xamlMember.Setter = set_399_PivotItem_Width;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotItem.AllowFilter":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotItem");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AllowFilter", "Boolean");
-                xamlMember.Getter = get_389_PivotItem_AllowFilter;
-                xamlMember.Setter = set_389_PivotItem_AllowFilter;
+                xamlMember.Getter = get_400_PivotItem_AllowFilter;
+                xamlMember.Setter = set_400_PivotItem_AllowFilter;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotItem.EnableHyperlinks":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotItem");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "EnableHyperlinks", "Boolean");
-                xamlMember.Getter = get_390_PivotItem_EnableHyperlinks;
-                xamlMember.Setter = set_390_PivotItem_EnableHyperlinks;
+                xamlMember.Getter = get_401_PivotItem_EnableHyperlinks;
+                xamlMember.Setter = set_401_PivotItem_EnableHyperlinks;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotItem.SortDirection":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotItem");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SortDirection", "Syncfusion.Data.ListSortDirection");
-                xamlMember.Getter = get_391_PivotItem_SortDirection;
-                xamlMember.Setter = set_391_PivotItem_SortDirection;
+                xamlMember.Getter = get_402_PivotItem_SortDirection;
+                xamlMember.Setter = set_402_PivotItem_SortDirection;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotItem.FieldHeader":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotItem");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "FieldHeader", "String");
-                xamlMember.Getter = get_392_PivotItem_FieldHeader;
-                xamlMember.Setter = set_392_PivotItem_FieldHeader;
+                xamlMember.Getter = get_403_PivotItem_FieldHeader;
+                xamlMember.Setter = set_403_PivotItem_FieldHeader;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotItem.Comparer":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotItem");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Comparer", "System.Collections.IComparer");
-                xamlMember.Getter = get_393_PivotItem_Comparer;
-                xamlMember.Setter = set_393_PivotItem_Comparer;
+                xamlMember.Getter = get_404_PivotItem_Comparer;
+                xamlMember.Setter = set_404_PivotItem_Comparer;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotItem.AllowRunTimeGroupByField":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotItem");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AllowRunTimeGroupByField", "Boolean");
-                xamlMember.Getter = get_394_PivotItem_AllowRunTimeGroupByField;
-                xamlMember.Setter = set_394_PivotItem_AllowRunTimeGroupByField;
+                xamlMember.Getter = get_405_PivotItem_AllowRunTimeGroupByField;
+                xamlMember.Setter = set_405_PivotItem_AllowRunTimeGroupByField;
                 break;
             case "Syncfusion.UI.Xaml.PivotChart.SfPivotChart.Legend":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.PivotChart.SfPivotChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Legend", "Syncfusion.UI.Xaml.PivotChart.PivotChartLegend");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_395_SfPivotChart_Legend;
-                xamlMember.Setter = set_395_SfPivotChart_Legend;
+                xamlMember.Getter = get_406_SfPivotChart_Legend;
+                xamlMember.Setter = set_406_SfPivotChart_Legend;
                 break;
             case "Syncfusion.UI.Xaml.PivotChart.SfPivotChart.PivotLegend":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.PivotChart.SfPivotChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "PivotLegend", "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.PivotAnalysis.UWP.PivotItem>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_396_SfPivotChart_PivotLegend;
-                xamlMember.Setter = set_396_SfPivotChart_PivotLegend;
+                xamlMember.Getter = get_407_SfPivotChart_PivotLegend;
+                xamlMember.Setter = set_407_SfPivotChart_PivotLegend;
                 break;
             case "Syncfusion.UI.Xaml.PivotChart.SfPivotChart.PivotCalculations":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.PivotChart.SfPivotChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "PivotCalculations", "System.Collections.ObjectModel.ObservableCollection`1<Syncfusion.PivotAnalysis.UWP.PivotComputationInfo>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_397_SfPivotChart_PivotCalculations;
-                xamlMember.Setter = set_397_SfPivotChart_PivotCalculations;
+                xamlMember.Getter = get_408_SfPivotChart_PivotCalculations;
+                xamlMember.Setter = set_408_SfPivotChart_PivotCalculations;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotComputationInfo.FieldHeader":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotComputationInfo");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "FieldHeader", "String");
-                xamlMember.Getter = get_398_PivotComputationInfo_FieldHeader;
-                xamlMember.Setter = set_398_PivotComputationInfo_FieldHeader;
+                xamlMember.Getter = get_409_PivotComputationInfo_FieldHeader;
+                xamlMember.Setter = set_409_PivotComputationInfo_FieldHeader;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotComputationInfo.FieldCaption":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotComputationInfo");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "FieldCaption", "String");
-                xamlMember.Getter = get_399_PivotComputationInfo_FieldCaption;
-                xamlMember.Setter = set_399_PivotComputationInfo_FieldCaption;
+                xamlMember.Getter = get_410_PivotComputationInfo_FieldCaption;
+                xamlMember.Setter = set_410_PivotComputationInfo_FieldCaption;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotComputationInfo.FieldName":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotComputationInfo");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "FieldName", "String");
-                xamlMember.Getter = get_400_PivotComputationInfo_FieldName;
-                xamlMember.Setter = set_400_PivotComputationInfo_FieldName;
+                xamlMember.Getter = get_411_PivotComputationInfo_FieldName;
+                xamlMember.Setter = set_411_PivotComputationInfo_FieldName;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotComputationInfo.Format":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotComputationInfo");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Format", "String");
-                xamlMember.Getter = get_401_PivotComputationInfo_Format;
-                xamlMember.Setter = set_401_PivotComputationInfo_Format;
+                xamlMember.Getter = get_412_PivotComputationInfo_Format;
+                xamlMember.Setter = set_412_PivotComputationInfo_Format;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotComputationInfo.SummaryType":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotComputationInfo");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SummaryType", "Syncfusion.PivotAnalysis.UWP.SummaryType");
-                xamlMember.Getter = get_402_PivotComputationInfo_SummaryType;
-                xamlMember.Setter = set_402_PivotComputationInfo_SummaryType;
+                xamlMember.Getter = get_413_PivotComputationInfo_SummaryType;
+                xamlMember.Setter = set_413_PivotComputationInfo_SummaryType;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotComputationInfo.AllowSort":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotComputationInfo");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AllowSort", "Boolean");
-                xamlMember.Getter = get_403_PivotComputationInfo_AllowSort;
-                xamlMember.Setter = set_403_PivotComputationInfo_AllowSort;
+                xamlMember.Getter = get_414_PivotComputationInfo_AllowSort;
+                xamlMember.Setter = set_414_PivotComputationInfo_AllowSort;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotComputationInfo.AllowFilter":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotComputationInfo");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AllowFilter", "Boolean");
-                xamlMember.Getter = get_404_PivotComputationInfo_AllowFilter;
-                xamlMember.Setter = set_404_PivotComputationInfo_AllowFilter;
+                xamlMember.Getter = get_415_PivotComputationInfo_AllowFilter;
+                xamlMember.Setter = set_415_PivotComputationInfo_AllowFilter;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotComputationInfo.IsTopColumnSummary":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotComputationInfo");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "IsTopColumnSummary", "Boolean");
-                xamlMember.Getter = get_405_PivotComputationInfo_IsTopColumnSummary;
-                xamlMember.Setter = set_405_PivotComputationInfo_IsTopColumnSummary;
+                xamlMember.Getter = get_416_PivotComputationInfo_IsTopColumnSummary;
+                xamlMember.Setter = set_416_PivotComputationInfo_IsTopColumnSummary;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotComputationInfo.EnableHyperlinks":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotComputationInfo");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "EnableHyperlinks", "Boolean");
-                xamlMember.Getter = get_406_PivotComputationInfo_EnableHyperlinks;
-                xamlMember.Setter = set_406_PivotComputationInfo_EnableHyperlinks;
+                xamlMember.Getter = get_417_PivotComputationInfo_EnableHyperlinks;
+                xamlMember.Setter = set_417_PivotComputationInfo_EnableHyperlinks;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotComputationInfo.Description":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotComputationInfo");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Description", "String");
-                xamlMember.Getter = get_407_PivotComputationInfo_Description;
-                xamlMember.Setter = set_407_PivotComputationInfo_Description;
+                xamlMember.Getter = get_418_PivotComputationInfo_Description;
+                xamlMember.Setter = set_418_PivotComputationInfo_Description;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotComputationInfo.InnerMostComputationsOnly":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotComputationInfo");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "InnerMostComputationsOnly", "Syncfusion.PivotAnalysis.UWP.SummaryDisplayLevel");
-                xamlMember.Getter = get_408_PivotComputationInfo_InnerMostComputationsOnly;
-                xamlMember.Setter = set_408_PivotComputationInfo_InnerMostComputationsOnly;
+                xamlMember.Getter = get_419_PivotComputationInfo_InnerMostComputationsOnly;
+                xamlMember.Setter = set_419_PivotComputationInfo_InnerMostComputationsOnly;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotComputationInfo.PadString":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotComputationInfo");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "PadString", "String");
-                xamlMember.Getter = get_409_PivotComputationInfo_PadString;
-                xamlMember.Setter = set_409_PivotComputationInfo_PadString;
+                xamlMember.Getter = get_420_PivotComputationInfo_PadString;
+                xamlMember.Setter = set_420_PivotComputationInfo_PadString;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotComputationInfo.CalculationName":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotComputationInfo");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "CalculationName", "String");
-                xamlMember.Getter = get_410_PivotComputationInfo_CalculationName;
-                xamlMember.Setter = set_410_PivotComputationInfo_CalculationName;
+                xamlMember.Getter = get_421_PivotComputationInfo_CalculationName;
+                xamlMember.Setter = set_421_PivotComputationInfo_CalculationName;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotComputationInfo.AllowRunTimeGroupByField":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotComputationInfo");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AllowRunTimeGroupByField", "Boolean");
-                xamlMember.Getter = get_411_PivotComputationInfo_AllowRunTimeGroupByField;
-                xamlMember.Setter = set_411_PivotComputationInfo_AllowRunTimeGroupByField;
+                xamlMember.Getter = get_422_PivotComputationInfo_AllowRunTimeGroupByField;
+                xamlMember.Setter = set_422_PivotComputationInfo_AllowRunTimeGroupByField;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotComputationInfo.Summary":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotComputationInfo");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Summary", "Syncfusion.PivotAnalysis.UWP.SummaryBase");
-                xamlMember.Getter = get_412_PivotComputationInfo_Summary;
-                xamlMember.Setter = set_412_PivotComputationInfo_Summary;
+                xamlMember.Getter = get_423_PivotComputationInfo_Summary;
+                xamlMember.Setter = set_423_PivotComputationInfo_Summary;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotComputationInfo.DisplayOption":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotComputationInfo");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "DisplayOption", "Syncfusion.PivotAnalysis.UWP.DisplayOption");
-                xamlMember.Getter = get_413_PivotComputationInfo_DisplayOption;
-                xamlMember.Setter = set_413_PivotComputationInfo_DisplayOption;
+                xamlMember.Getter = get_424_PivotComputationInfo_DisplayOption;
+                xamlMember.Setter = set_424_PivotComputationInfo_DisplayOption;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotComputationInfo.CalculationType":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotComputationInfo");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "CalculationType", "Syncfusion.PivotAnalysis.UWP.CalculationType");
-                xamlMember.Getter = get_414_PivotComputationInfo_CalculationType;
-                xamlMember.Setter = set_414_PivotComputationInfo_CalculationType;
+                xamlMember.Getter = get_425_PivotComputationInfo_CalculationType;
+                xamlMember.Setter = set_425_PivotComputationInfo_CalculationType;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotComputationInfo.BaseField":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotComputationInfo");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "BaseField", "String");
-                xamlMember.Getter = get_415_PivotComputationInfo_BaseField;
-                xamlMember.Setter = set_415_PivotComputationInfo_BaseField;
+                xamlMember.Getter = get_426_PivotComputationInfo_BaseField;
+                xamlMember.Setter = set_426_PivotComputationInfo_BaseField;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotComputationInfo.BaseItem":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotComputationInfo");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "BaseItem", "String");
-                xamlMember.Getter = get_416_PivotComputationInfo_BaseItem;
-                xamlMember.Setter = set_416_PivotComputationInfo_BaseItem;
+                xamlMember.Getter = get_427_PivotComputationInfo_BaseItem;
+                xamlMember.Setter = set_427_PivotComputationInfo_BaseItem;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotComputationInfo.Formula":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotComputationInfo");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Formula", "String");
-                xamlMember.Getter = get_417_PivotComputationInfo_Formula;
-                xamlMember.Setter = set_417_PivotComputationInfo_Formula;
+                xamlMember.Getter = get_428_PivotComputationInfo_Formula;
+                xamlMember.Setter = set_428_PivotComputationInfo_Formula;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotComputationInfo.Expression":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotComputationInfo");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Expression", "Syncfusion.PivotAnalysis.UWP.FilterExpression");
-                xamlMember.Getter = get_418_PivotComputationInfo_Expression;
-                xamlMember.Setter = set_418_PivotComputationInfo_Expression;
+                xamlMember.Getter = get_429_PivotComputationInfo_Expression;
+                xamlMember.Setter = set_429_PivotComputationInfo_Expression;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotComputationInfo.DefaultValue":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotComputationInfo");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "DefaultValue", "Object");
-                xamlMember.Getter = get_419_PivotComputationInfo_DefaultValue;
-                xamlMember.Setter = set_419_PivotComputationInfo_DefaultValue;
+                xamlMember.Getter = get_430_PivotComputationInfo_DefaultValue;
+                xamlMember.Setter = set_430_PivotComputationInfo_DefaultValue;
                 break;
             case "Syncfusion.PivotAnalysis.UWP.PivotComputationInfo.FieldType":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.PivotAnalysis.UWP.PivotComputationInfo");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "FieldType", "String");
-                xamlMember.Getter = get_420_PivotComputationInfo_FieldType;
-                xamlMember.Setter = set_420_PivotComputationInfo_FieldType;
+                xamlMember.Getter = get_431_PivotComputationInfo_FieldType;
+                xamlMember.Setter = set_431_PivotComputationInfo_FieldType;
                 break;
             case "Syncfusion.UI.Xaml.PivotChart.SfPivotChart.OlapDataManager":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.PivotChart.SfPivotChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "OlapDataManager", "Syncfusion.Olap.UWP.Manager.OlapDataManager");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_421_SfPivotChart_OlapDataManager;
-                xamlMember.Setter = set_421_SfPivotChart_OlapDataManager;
+                xamlMember.Getter = get_432_SfPivotChart_OlapDataManager;
+                xamlMember.Setter = set_432_SfPivotChart_OlapDataManager;
                 break;
             case "Syncfusion.UI.Xaml.PivotChart.SfPivotChart.AdornmentTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.PivotChart.SfPivotChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AdornmentTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_422_SfPivotChart_AdornmentTemplate;
-                xamlMember.Setter = set_422_SfPivotChart_AdornmentTemplate;
+                xamlMember.Getter = get_433_SfPivotChart_AdornmentTemplate;
+                xamlMember.Setter = set_433_SfPivotChart_AdornmentTemplate;
                 break;
             case "Syncfusion.UI.Xaml.PivotChart.SfPivotChart.ChartType":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.PivotChart.SfPivotChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ChartType", "Syncfusion.UI.Xaml.PivotChart.PivotChartType");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_423_SfPivotChart_ChartType;
-                xamlMember.Setter = set_423_SfPivotChart_ChartType;
+                xamlMember.Getter = get_434_SfPivotChart_ChartType;
+                xamlMember.Setter = set_434_SfPivotChart_ChartType;
                 break;
             case "Syncfusion.UI.Xaml.PivotChart.SfPivotChart.ColorPalette":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.PivotChart.SfPivotChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ColorPalette", "Syncfusion.UI.Xaml.PivotChart.PivotChartColorPalette");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_424_SfPivotChart_ColorPalette;
-                xamlMember.Setter = set_424_SfPivotChart_ColorPalette;
+                xamlMember.Getter = get_435_SfPivotChart_ColorPalette;
+                xamlMember.Setter = set_435_SfPivotChart_ColorPalette;
                 break;
             case "Syncfusion.UI.Xaml.PivotChart.SfPivotChart.CustomBrushes":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.PivotChart.SfPivotChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "CustomBrushes", "System.Collections.Generic.List`1<Windows.UI.Xaml.Media.Brush>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_425_SfPivotChart_CustomBrushes;
-                xamlMember.Setter = set_425_SfPivotChart_CustomBrushes;
+                xamlMember.Getter = get_436_SfPivotChart_CustomBrushes;
+                xamlMember.Setter = set_436_SfPivotChart_CustomBrushes;
                 break;
             case "Syncfusion.UI.Xaml.PivotChart.SfPivotChart.PrimaryAxisStyle":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.PivotChart.SfPivotChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "PrimaryAxisStyle", "Syncfusion.UI.Xaml.PivotChart.PivotChartAxisStyle");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_426_SfPivotChart_PrimaryAxisStyle;
-                xamlMember.Setter = set_426_SfPivotChart_PrimaryAxisStyle;
+                xamlMember.Getter = get_437_SfPivotChart_PrimaryAxisStyle;
+                xamlMember.Setter = set_437_SfPivotChart_PrimaryAxisStyle;
                 break;
             case "Syncfusion.UI.Xaml.PivotChart.SfPivotChart.SecondaryAxisStyle":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.PivotChart.SfPivotChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SecondaryAxisStyle", "Syncfusion.UI.Xaml.PivotChart.PivotChartAxisStyle");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_427_SfPivotChart_SecondaryAxisStyle;
-                xamlMember.Setter = set_427_SfPivotChart_SecondaryAxisStyle;
+                xamlMember.Getter = get_438_SfPivotChart_SecondaryAxisStyle;
+                xamlMember.Setter = set_438_SfPivotChart_SecondaryAxisStyle;
                 break;
             case "Syncfusion.UI.Xaml.PivotChart.SfPivotChart.ChartVisualStyle":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.PivotChart.SfPivotChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ChartVisualStyle", "Syncfusion.UI.Xaml.PivotChart.PivotChartVisualStyle");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_428_SfPivotChart_ChartVisualStyle;
-                xamlMember.Setter = set_428_SfPivotChart_ChartVisualStyle;
+                xamlMember.Getter = get_439_SfPivotChart_ChartVisualStyle;
+                xamlMember.Setter = set_439_SfPivotChart_ChartVisualStyle;
                 break;
             case "Syncfusion.UI.Xaml.PivotChart.SfPivotChart.ShowProcessingBar":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.PivotChart.SfPivotChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ShowProcessingBar", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_429_SfPivotChart_ShowProcessingBar;
-                xamlMember.Setter = set_429_SfPivotChart_ShowProcessingBar;
+                xamlMember.Getter = get_440_SfPivotChart_ShowProcessingBar;
+                xamlMember.Setter = set_440_SfPivotChart_ShowProcessingBar;
                 break;
             case "Syncfusion.UI.Xaml.PivotChart.SfPivotChart.EnableAnimation":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.PivotChart.SfPivotChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "EnableAnimation", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_430_SfPivotChart_EnableAnimation;
-                xamlMember.Setter = set_430_SfPivotChart_EnableAnimation;
+                xamlMember.Getter = get_441_SfPivotChart_EnableAnimation;
+                xamlMember.Setter = set_441_SfPivotChart_EnableAnimation;
                 break;
             case "Syncfusion.UI.Xaml.PivotChart.SfPivotChart.Watermark":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.PivotChart.SfPivotChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "Watermark", "Syncfusion.UI.Xaml.PivotChart.PivotChartWatermark");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_431_SfPivotChart_Watermark;
-                xamlMember.Setter = set_431_SfPivotChart_Watermark;
+                xamlMember.Getter = get_442_SfPivotChart_Watermark;
+                xamlMember.Setter = set_442_SfPivotChart_Watermark;
                 break;
             case "Syncfusion.UI.Xaml.PivotChart.SfPivotChart.ToolTipTemplate":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.PivotChart.SfPivotChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ToolTipTemplate", "Windows.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_432_SfPivotChart_ToolTipTemplate;
-                xamlMember.Setter = set_432_SfPivotChart_ToolTipTemplate;
+                xamlMember.Getter = get_443_SfPivotChart_ToolTipTemplate;
+                xamlMember.Setter = set_443_SfPivotChart_ToolTipTemplate;
                 break;
             case "Syncfusion.UI.Xaml.PivotChart.SfPivotChart.ZoomPanBehavior":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.PivotChart.SfPivotChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ZoomPanBehavior", "Syncfusion.UI.Xaml.PivotChart.PivotChartZoomPanBehavior");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_433_SfPivotChart_ZoomPanBehavior;
-                xamlMember.Setter = set_433_SfPivotChart_ZoomPanBehavior;
+                xamlMember.Getter = get_444_SfPivotChart_ZoomPanBehavior;
+                xamlMember.Setter = set_444_SfPivotChart_ZoomPanBehavior;
                 break;
             case "Syncfusion.UI.Xaml.PivotChart.SfPivotChart.PrimaryAxis":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.PivotChart.SfPivotChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "PrimaryAxis", "Syncfusion.UI.Xaml.PivotChart.PivotChartAxis");
-                xamlMember.Getter = get_434_SfPivotChart_PrimaryAxis;
+                xamlMember.Getter = get_445_SfPivotChart_PrimaryAxis;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.PivotChart.SfPivotChart.SecondaryAxis":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.PivotChart.SfPivotChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "SecondaryAxis", "Syncfusion.UI.Xaml.PivotChart.PivotChartAxis");
-                xamlMember.Getter = get_435_SfPivotChart_SecondaryAxis;
+                xamlMember.Getter = get_446_SfPivotChart_SecondaryAxis;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Syncfusion.UI.Xaml.PivotChart.SfPivotChart.CurrentReport":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Syncfusion.UI.Xaml.PivotChart.SfPivotChart");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "CurrentReport", "Syncfusion.Olap.UWP.Reports.OlapReport");
-                xamlMember.Getter = get_436_SfPivotChart_CurrentReport;
+                xamlMember.Getter = get_447_SfPivotChart_CurrentReport;
                 xamlMember.SetIsReadOnly();
+                break;
+            case "MoneyKepper2.Behaviors.PrintPageBehavior.ExtraInfo":
+                userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepper2.Behaviors.PrintPageBehavior");
+                xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ExtraInfo", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_448_PrintPageBehavior_ExtraInfo;
+                xamlMember.Setter = set_448_PrintPageBehavior_ExtraInfo;
                 break;
             case "MoneyKepper2.Behaviors.PrintPageBehavior.ReportHeader":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepper2.Behaviors.PrintPageBehavior");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ReportHeader", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_437_PrintPageBehavior_ReportHeader;
-                xamlMember.Setter = set_437_PrintPageBehavior_ReportHeader;
+                xamlMember.Getter = get_449_PrintPageBehavior_ReportHeader;
+                xamlMember.Setter = set_449_PrintPageBehavior_ReportHeader;
                 break;
             case "MoneyKepper2.Behaviors.PrintPageBehavior.ReportInfo":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepper2.Behaviors.PrintPageBehavior");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "ReportInfo", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_438_PrintPageBehavior_ReportInfo;
-                xamlMember.Setter = set_438_PrintPageBehavior_ReportInfo;
+                xamlMember.Getter = get_450_PrintPageBehavior_ReportInfo;
+                xamlMember.Setter = set_450_PrintPageBehavior_ReportInfo;
                 break;
             case "MoneyKepper2.Behaviors.PrintPageBehavior.AmountItemInPage":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepper2.Behaviors.PrintPageBehavior");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AmountItemInPage", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_439_PrintPageBehavior_AmountItemInPage;
-                xamlMember.Setter = set_439_PrintPageBehavior_AmountItemInPage;
+                xamlMember.Getter = get_451_PrintPageBehavior_AmountItemInPage;
+                xamlMember.Setter = set_451_PrintPageBehavior_AmountItemInPage;
                 break;
             case "MoneyKepper2.Behaviors.PrintPageBehavior.RootListView":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepper2.Behaviors.PrintPageBehavior");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "RootListView", "Windows.UI.Xaml.Controls.ListView");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_440_PrintPageBehavior_RootListView;
-                xamlMember.Setter = set_440_PrintPageBehavior_RootListView;
+                xamlMember.Getter = get_452_PrintPageBehavior_RootListView;
+                xamlMember.Setter = set_452_PrintPageBehavior_RootListView;
                 break;
             case "MoneyKepper2.Behaviors.PrintPageBehavior.FrameworkElement":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepper2.Behaviors.PrintPageBehavior");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "FrameworkElement", "Windows.UI.Xaml.FrameworkElement");
-                xamlMember.Getter = get_441_PrintPageBehavior_FrameworkElement;
-                xamlMember.Setter = set_441_PrintPageBehavior_FrameworkElement;
+                xamlMember.Getter = get_453_PrintPageBehavior_FrameworkElement;
+                xamlMember.Setter = set_453_PrintPageBehavior_FrameworkElement;
                 break;
             case "MoneyKepper2.Behaviors.PrintPageBehavior.AssociatedObject":
                 userType = (global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MoneyKepper2.Behaviors.PrintPageBehavior");
                 xamlMember = new global::MoneyKepper2.MoneyKepper2_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
-                xamlMember.Getter = get_442_PrintPageBehavior_AssociatedObject;
-                xamlMember.Setter = set_442_PrintPageBehavior_AssociatedObject;
+                xamlMember.Getter = get_454_PrintPageBehavior_AssociatedObject;
+                xamlMember.Setter = set_454_PrintPageBehavior_AssociatedObject;
                 break;
             }
             return xamlMember;

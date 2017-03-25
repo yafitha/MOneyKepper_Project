@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Web;
 
 namespace MoneyKepper_Core.BL
 {
@@ -20,7 +21,7 @@ namespace MoneyKepper_Core.BL
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
-        public  static  List<Category> GetAllCategories()
+        public static List<Category> GetAllCategories()
         {
             List<Category> categories = new List<Category>();
             Task task = Task.Run(async () =>
@@ -65,9 +66,9 @@ namespace MoneyKepper_Core.BL
             return categories;
         }
 
-        public static bool CreateNewCategory(Category category)
+        public static Tuple<bool,Category> CreateNewCategory(Category category)
         {
-            bool result = false;
+            var  result = new Tuple<bool, Category>(false, null);
             Task task = Task.Run(async () =>
             {
                 using (var client = new HttpClient())
@@ -77,8 +78,9 @@ namespace MoneyKepper_Core.BL
                     string httpResponseBody = "";
                     if (response.IsSuccessStatusCode)
                     {
+                        var x =  response.RequestMessage.Properties;
                         httpResponseBody = await response.Content.ReadAsStringAsync();
-                        result = true;
+                        result = new Tuple<bool, Category>(true, category);
                     }
                 }
             });
@@ -117,6 +119,30 @@ namespace MoneyKepper_Core.BL
                 {
                     Run(client);
                     HttpResponseMessage response = await client.DeleteAsync($"DeleteCategory/{categoryID}");
+                    string httpResponseBody = "";
+                    if (response.IsSuccessStatusCode)
+                    {
+                        httpResponseBody = await response.Content.ReadAsStringAsync();
+                        result = true;
+                    }
+                }
+            });
+            task.Wait(); // Wait
+            return result;
+        }
+
+        public static bool DeleteCategories(List<int> categoriesID)
+        {
+            // return new Logic.CategoryBL().CreateNewCategory(category);
+            bool result = false;
+            Task task = Task.Run(async () =>
+            {
+                using (var client = new HttpClient())
+                {
+                    Run(client);
+                    string querystring = string.Join("&", categoriesID);
+
+                    HttpResponseMessage response = await client.DeleteAsync($"DeleteCategories/{querystring}");
                     string httpResponseBody = "";
                     if (response.IsSuccessStatusCode)
                     {

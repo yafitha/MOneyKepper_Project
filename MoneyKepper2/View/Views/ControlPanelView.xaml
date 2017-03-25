@@ -55,16 +55,33 @@
                 Style="{StaticResource NavRadioButtonStyle}"  
                 GroupName="NavigationItems"
                 Command="{Binding MenuItemCommand}"
-                CommandParameter="History">
+                CommandParameter="Category">
                 <StackPanel 
                     Orientation="Horizontal" >
                     <TextBlock
-                       Text="&#xE904;"
+                       Text="&#xE923;"
                         FontSize="25"
                         Padding="11,10,0,0"
                         Style="{StaticResource ControlItemStyle}" />
-                    <TextBlock 
-                        Text="תקופות"
+                    <TextBlock
+                        Text="קטגוריות"
+                        Style="{StaticResource MenuTitleTextBlockStyle}" />
+                </StackPanel>
+            </RadioButton>
+            <RadioButton                  
+                Style="{StaticResource NavRadioButtonStyle}"  
+                GroupName="NavigationItems"
+                Command="{Binding MenuItemCommand}"
+                CommandParameter="Buget">
+                <StackPanel 
+                    Orientation="Horizontal" >
+                    <TextBlock
+                       Text="&#xE123;"
+                        FontSize="25"
+                        Padding="11,10,0,0"
+                        Style="{StaticResource ControlItemStyle}" />
+                    <TextBlock
+                        Text="תקציב חודשי"
                         Style="{StaticResource MenuTitleTextBlockStyle}" />
                 </StackPanel>
             </RadioButton>
@@ -89,20 +106,19 @@
                 Style="{StaticResource NavRadioButtonStyle}"  
                 GroupName="NavigationItems"
                 Command="{Binding MenuItemCommand}"
-                CommandParameter="Category">
+                CommandParameter="History">
                 <StackPanel 
                     Orientation="Horizontal" >
                     <TextBlock
-                       Text="&#xE923;"
+                       Text="&#xE904;"
                         FontSize="25"
                         Padding="11,10,0,0"
                         Style="{StaticResource ControlItemStyle}" />
-                    <TextBlock
-                        Text="קטגוריות"
+                    <TextBlock 
+                        Text="תקופות"
                         Style="{StaticResource MenuTitleTextBlockStyle}" />
                 </StackPanel>
             </RadioButton>
-
             <RadioButton                  
                 Style="{StaticResource NavRadioButtonStyle}"  
                 GroupName="NavigationItems"

@@ -7,16 +7,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace UnitTest
+namespace MoneyKepperServer
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class moneyEntities3 : DbContext
+    public partial class money4 : DbContext
     {
-        public moneyEntities3()
-            : base("name=moneyEntities3")
+        public money4()
+            : base("name=money4")
         {
         }
     
@@ -25,6 +25,7 @@ namespace UnitTest
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Buget> Bugets { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Transaction> Transactions { get; set; }
         public virtual DbSet<TransactionType> TransactionTypes { get; set; }

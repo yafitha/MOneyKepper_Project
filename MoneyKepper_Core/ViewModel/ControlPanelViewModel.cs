@@ -98,16 +98,17 @@ namespace MoneyKepperCore.ViewModel
                         break;
                     case PrimaryPanel.Category:
                         this.NavigationService.PrimaryFrame.NavigateTo(NavigationPageKeys.CATEGORY, args);
-                        this.NavigationService.DetailsFrame.NavigateTo(NavigationPageKeys.CATEGORYDETAILS, args);
                         break;
 
                     case PrimaryPanel.Report:
                         this.NavigationService.PrimaryFrame.NavigateTo(NavigationPageKeys.REPORT, args);
                         break;
+
+                    case PrimaryPanel.Buget:
+                        this.NavigationService.PrimaryFrame.NavigateTo(NavigationPageKeys.BUGET, args);
+                        break;
                 }
             }
-
-
         }
 
         #endregion
@@ -118,7 +119,8 @@ namespace MoneyKepperCore.ViewModel
             GRAPHS,
             Category,
             Notifications,
-            Report
+            Report,
+            Buget
         }
     }
 }

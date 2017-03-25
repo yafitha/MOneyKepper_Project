@@ -94,28 +94,28 @@ namespace MoneyKepper_Core.ViewModel
 
         private void ShowExtraInfo()
         {
-            Action<Tuple<Types, double>> AddCallBack = transaction =>
+            Action<TransactionItem> AddCallBack = transactionItem =>
             {
-                if (transaction.Item1 == Types.Expenses)
+                if (transactionItem.Category.TypeID == (int)Types.Expenses)
                 {
-                    this.Expenses += transaction.Item2;
+                    this.Expenses += transactionItem.Transaction.Amount;
                 }
                 else
                 {
-                    this.Income += transaction.Item2;
+                    this.Income += transactionItem.Transaction.Amount;
                 }
                 this.Balance = this.Income - this.Expenses;
             };
 
-            Action<Tuple<Types, double>> removeCallBack = transaction =>
+            Action<TransactionItem> removeCallBack = transactionItem =>
             {
-                if (transaction.Item1 == Types.Expenses)
+                if (transactionItem.Category.TypeID == (int)Types.Expenses)
                 {
-                    this.Expenses -= transaction.Item2;
+                    this.Expenses -= transactionItem.Transaction.Amount;
                 }
                 else
                 {
-                    this.Income -= transaction.Item2;
+                    this.Income -= transactionItem.Transaction.Amount;
                 }
                 this.Balance = this.Income - this.Expenses;
             };

@@ -35,6 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="AccountViewModels.cs" />
+    <Compile Include="Buget.cs" />
     <Compile Include="Category.cs" />
     <Compile Include="AccountBindingModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

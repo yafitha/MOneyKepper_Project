@@ -107,9 +107,10 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BL\BaseBL.cs" />
+    <Compile Include="BL\BugetBL.cs" />
     <Compile Include="BL\CategoryBL.cs" />
     <Compile Include="BL\TransactionBL.cs" />
+    <Compile Include="DesignTime\ViewModel\BugetDetailsViewModelDesign.cs" />
     <Compile Include="DesignTime\ViewModel\GraphsViewModelDesgin.cs" />
     <Compile Include="DesignTime\ViewModel\HistoryViewModelDesign.cs" />
     <Compile Include="DesignTime\ViewModel\TransactionsDetailsViewModelDesign.cs" />
@@ -117,6 +118,7 @@
     <Compile Include="DesignTime\ViewModel\TransactionsViewModelDesign.cs" />
     <Compile Include="Factories\IDialogServiceFactory.cs" />
     <Compile Include="Managers\ICacheManager.cs" />
+    <Compile Include="Models\BugetItem.cs" />
     <Compile Include="Models\DialogKeys.cs" />
     <Compile Include="Models\CategoryItem.cs" />
     <Compile Include="Models\Groups\CategoryGroup.cs" />
@@ -136,8 +138,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\IRQNavigationService.cs" />
     <Compile Include="Services\NavigationService.cs" />
+    <Compile Include="ViewModel\AddBugetViewModel.cs" />
     <Compile Include="ViewModel\AddNewCategoryViewModel.cs" />
     <Compile Include="ViewModel\AddTransactionViewModel.cs" />
+    <Compile Include="ViewModel\BugetDetailsViewModel.cs" />
+    <Compile Include="ViewModel\BugetViewModel.cs" />
     <Compile Include="ViewModel\CategoryDetailViewModel.cs" />
     <Compile Include="ViewModel\CategoryViewModel.cs" />
     <Compile Include="ViewModel\ConfirmViewModel.cs" />
@@ -149,8 +154,11 @@
     <Compile Include="ViewModel\GraphsViewModel.cs" />
     <Compile Include="ViewModel\HistoryDetailsViewModel.cs" />
     <Compile Include="ViewModel\HistoryViewModel.cs" />
+    <Compile Include="ViewModel\IAddBugetViewModel.cs" />
     <Compile Include="ViewModel\IAddNewCategoryViewModel.cs" />
     <Compile Include="ViewModel\IAddTransactionViewModel.cs" />
+    <Compile Include="ViewModel\IBugetDetailsViewModel.cs" />
+    <Compile Include="ViewModel\IBugetViewModel.cs" />
     <Compile Include="ViewModel\ICategoryDetailViewModel.cs" />
     <Compile Include="ViewModel\ICategoryViewModel.cs" />
     <Compile Include="ViewModel\IConfirmViewModel.cs" />

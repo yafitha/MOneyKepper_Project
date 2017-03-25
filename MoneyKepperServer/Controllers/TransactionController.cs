@@ -17,7 +17,7 @@ namespace MoneyKepperServer.Controllers
         [Route("api/Transaction/GetAllTransactions")]
         public List<Models.Transaction> GetAllTransactions()
         {
-            using (moneyEntities3 context = new moneyEntities3())
+            using (money4 context = new money4())
             {
                 var allTransactions = context.Transactions.ToList();
                 return Mapper.Map<List<Models.Transaction>>(allTransactions);
@@ -29,7 +29,7 @@ namespace MoneyKepperServer.Controllers
         [Route("api/Transaction/GetTransactionsByDate")]
         public List<Models.Transaction> GetTransactionsByDate([FromBody] DateTime dateTime)
         {
-            using (moneyEntities3 context = new moneyEntities3())
+            using (money4 context = new money4())
             {
                 var allTransactions = context.Transactions.Where(t => t.Date.Month == dateTime.Month && t.Date.Year == dateTime.Year).ToList();
                 return Mapper.Map<List<Models.Transaction>>(allTransactions);
@@ -43,7 +43,7 @@ namespace MoneyKepperServer.Controllers
             DateTime startDateTime = (DateTime)model.startDateTime;
             DateTime endDateTime = (DateTime)model.endDateTime;
             int? typeID = (int?)model.typeID;
-            using (moneyEntities3 context = new moneyEntities3())
+            using (money4 context = new money4())
             {
                 var allTransactions = context.Transactions.Where(t => t.Date >= startDateTime && t.Date <= endDateTime).ToList();
                 if (typeID.HasValue)
@@ -59,7 +59,7 @@ namespace MoneyKepperServer.Controllers
         [Route("api/Transaction/GetTransactionsByTypes")]
         public HttpResponseMessage GetTransactionsByTypes([FromBody] List<int> types)
         {
-            using (moneyEntities3 context = new moneyEntities3())
+            using (money4 context = new money4())
             {
                 var test = context.Transactions.Where(tan => types.Contains(tan.Category.TypeID)).ToList();
                 var result = Mapper.Map<List<Models.Transaction>>(test);
@@ -72,7 +72,7 @@ namespace MoneyKepperServer.Controllers
         [Route("api/Transaction/CreateNewTransaction")]
         public HttpResponseMessage CreateNewTransaction([FromBody] Models.Transaction transaction)
         {
-            using (moneyEntities3 context = new moneyEntities3())
+            using (money4 context = new money4())
             {
                 var tan = Mapper.Map<Transaction>(transaction);
                 var result = context.Transactions.Add(tan);
@@ -86,7 +86,7 @@ namespace MoneyKepperServer.Controllers
         [Route("api/Transaction/DeleteTransaction/{transactionID}")]
         public HttpResponseMessage DeleteTransaction([FromUri] int transactionID)
         {
-            moneyEntities3 context = new moneyEntities3();
+            money4 context = new money4();
 
             var transaction = context.Transactions.FirstOrDefault(t => t.ID == transactionID);
             if (transaction == null)
@@ -105,7 +105,7 @@ namespace MoneyKepperServer.Controllers
         [Route("api/Transaction/UpdateTransaction")]
         public HttpResponseMessage UpdateTransaction([FromBody]Models.Transaction transaction)
         {
-            moneyEntities3 context = new moneyEntities3();
+            money4 context = new money4();
             var tan = Mapper.Map<Transaction>(transaction);
             var selectTransaction = context.Transactions.FirstOrDefault(t => t.ID == transaction.ID);
             if (selectTransaction != null)

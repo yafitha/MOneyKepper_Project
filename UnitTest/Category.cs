@@ -17,6 +17,7 @@ namespace UnitTest
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Category()
         {
+            this.Bugets = new HashSet<Buget>();
             this.Transactions = new HashSet<Transaction>();
         }
     
@@ -28,6 +29,8 @@ namespace UnitTest
         public bool IsParent { get; set; }
         public Nullable<int> ParentID { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Buget> Bugets { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Transaction> Transactions { get; set; }
     }

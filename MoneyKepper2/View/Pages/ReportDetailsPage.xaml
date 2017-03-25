@@ -275,21 +275,28 @@
             </TextBlock>
             <Interactivity:Interaction.Behaviors>
                   <b:PrintPageBehavior
+                     ExtraInfo="{Binding SubTitle}"
                      ReportHeader="דוח הוצאות הכנסות"
                      ReportInfo="{Binding ReportInfo}"
+                      
                      AmountItemInPage="20"
                      RootListView="{Binding ElementName=AllTransactions}" ></b:PrintPageBehavior>
               </Interactivity:Interaction.Behaviors>
            
         </HyperlinkButton>
+
+        <StackPanel   Grid.Row="1">
+        <TextBlock Text="{Binding SubTitle}" Margin="12,0,0,12"/>
         <ListView
             Background="#FFF3F3F3"
             Padding="8,0"
-            Grid.Row="1"
+          
             HeaderTemplate="{StaticResource HeaderDataTemplate}"
             x:Name="AllTransactions"
             ItemContainerStyle="{StaticResource ListViewItemStyle1}"
             ItemTemplate="{StaticResource AllTranscationItemTemplate}"
             ItemsSource="{Binding AllTransactionsItems}"/>
+
+        </StackPanel>
     </Grid>
 </local:PageBase>

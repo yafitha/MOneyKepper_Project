@@ -16,6 +16,8 @@ namespace MoneyKepperServer
             Mapper.CreateMap<TransactionType, Models.TransactionType>();
             Mapper.CreateMap<Models.Transaction, Transaction>();
             Mapper.CreateMap<Models.TransactionType, TransactionType>();
+            Mapper.CreateMap<Models.Buget, Buget>();
+            Mapper.CreateMap<Buget, Models.Buget>();
         }
     }
 

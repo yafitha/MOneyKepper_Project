@@ -1,5 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="moneyModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Buget">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+    <Property Name="CategoryID" Type="int" Nullable="false" />
+    <Property Name="Amount" Type="float" Nullable="false" />
+    <Property Name="Note" Type="nvarchar" MaxLength="50" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+  </EntityType>
   <EntityType Name="Category">
     <Key>
       <PropertyRef Name="ID" />
@@ -33,6 +44,18 @@ warning 6002: The table/view 'money.dbo.TransactionType' does not have a primary
     <Property Name="ID" Type="int" Nullable="false" />
     <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
+  <Association Name="FK_Buget_category">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="Buget" Type="Self.Buget" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Buget">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_Transactions_category">
     <End Role="Category" Type="Self.Category" Multiplicity="1" />
     <End Role="Transactions" Type="Self.Transactions" Multiplicity="*" />
@@ -46,6 +69,7 @@ warning 6002: The table/view 'money.dbo.TransactionType' does not have a primary
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="moneyModelStoreContainer">
+    <EntitySet Name="Buget" EntityType="Self.Buget" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Transactions" EntityType="Self.Transactions" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TransactionType" EntityType="Self.TransactionType" store:Type="Tables" store:Schema="dbo">
@@ -54,6 +78,10 @@ warning 6002: The table/view 'money.dbo.TransactionType' does not have a primary
     [TransactionType].[Name] AS [Name]
     FROM [dbo].[TransactionType] AS [TransactionType]</DefiningQuery>
     </EntitySet>
+    <AssociationSet Name="FK_Buget_category" Association="Self.FK_Buget_category">
+      <End Role="Category" EntitySet="Category" />
+      <End Role="Buget" EntitySet="Buget" />
+    </AssociationSet>
     <AssociationSet Name="FK_Transactions_category" Association="Self.FK_Transactions_category">
       <End Role="Category" EntitySet="Category" />
       <End Role="Transactions" EntitySet="Transactions" />

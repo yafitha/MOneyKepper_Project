@@ -128,10 +128,19 @@
     <Compile Include="View\Dialogs\AddTransactionDialog.xaml.cs">
       <DependentUpon>AddTransactionDialog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Dialogs\AddBugetDialog.xaml.cs">
+      <DependentUpon>AddBugetDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Dialogs\ConfirmDialog.xaml.cs">
       <DependentUpon>ConfirmDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Dialogs\ContentDialogBase.cs" />
+    <Compile Include="View\Pages\BugetDetailsPage.xaml.cs">
+      <DependentUpon>BugetDetailsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\BugetPage.xaml.cs">
+      <DependentUpon>BugetPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Pages\CategoryDetailPage.xaml.cs">
       <DependentUpon>CategoryDetailPage.xaml</DependentUpon>
     </Compile>
@@ -294,7 +303,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\Dialogs\AddBugetDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Dialogs\ConfirmDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\BugetDetailsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\BugetPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

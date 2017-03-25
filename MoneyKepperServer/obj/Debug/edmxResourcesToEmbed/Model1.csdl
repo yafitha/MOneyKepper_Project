@@ -12,6 +12,7 @@
     <Property Name="IsParent" Type="Boolean" Nullable="false" />
     <Property Name="ParentID" Type="Int32" />
     <NavigationProperty Name="Transactions" Relationship="moneyModel.FK__Transacti__Categ__34C8D9D1" FromRole="Category" ToRole="Transaction" />
+    <NavigationProperty Name="Buget" Relationship="moneyModel.FK_Buget_category" FromRole="Category" ToRole="Buget" />
   </EntityType>
   <EntityType Name="Transaction">
     <Key>
@@ -41,6 +42,11 @@
       <End Role="Category" EntitySet="Categories" />
       <End Role="Transaction" EntitySet="Transactions" />
     </AssociationSet>
+    <EntitySet Name="Buget" EntityType="moneyModel.Buget" />
+    <AssociationSet Name="FK_Buget_category" Association="moneyModel.FK_Buget_category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Buget" EntitySet="Buget" />
+    </AssociationSet>
   </EntityContainer>
   <Association Name="FK__Transacti__Categ__34C8D9D1">
     <End Type="moneyModel.Category" Role="Category" Multiplicity="1" />
@@ -53,5 +59,20 @@
         <PropertyRef Name="CategoryID" />
       </Dependent>
     </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Buget">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Amount" Type="Double" Nullable="false" />
+    <Property Name="Note" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Category" Relationship="moneyModel.FK_Buget_category" FromRole="Buget" ToRole="Category" />
+  </EntityType>
+  <Association Name="FK_Buget_category">
+    <End Type="moneyModel.Category" Role="Category" Multiplicity="1" />
+    <End Type="moneyModel.Buget" Role="Buget" Multiplicity="*" />
   </Association>
 </Schema>

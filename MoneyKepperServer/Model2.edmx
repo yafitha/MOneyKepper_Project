@@ -4,7 +4,18 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="money.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="moneyModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Buget">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="CategoryID" Type="int" Nullable="false" />
+          <Property Name="Amount" Type="float" Nullable="false" />
+          <Property Name="Note" Type="nvarchar" MaxLength="50" />
+          <Property Name="IsActive" Type="bit" Nullable="false" />
+        </EntityType>
         <EntityType Name="Category">
           <Key>
             <PropertyRef Name="ID" />
@@ -38,6 +49,18 @@ warning 6002: The table/view 'money.dbo.TransactionType' does not have a primary
           <Property Name="ID" Type="int" Nullable="false" />
           <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
         </EntityType>
+        <Association Name="FK_Buget_category">
+          <End Role="Category" Type="Self.Category" Multiplicity="1" />
+          <End Role="Buget" Type="Self.Buget" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Buget">
+              <PropertyRef Name="CategoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_Transactions_category">
           <End Role="Category" Type="Self.Category" Multiplicity="1" />
           <End Role="Transactions" Type="Self.Transactions" Multiplicity="*" />
@@ -50,7 +73,8 @@ warning 6002: The table/view 'money.dbo.TransactionType' does not have a primary
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="moneyStoreContainer">
+        <EntityContainer Name="moneyModel1StoreContainer">
+          <EntitySet Name="Buget" EntityType="Self.Buget" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Category" EntityType="Self.Category" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Transactions" EntityType="Self.Transactions" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TransactionType" EntityType="Self.TransactionType" store:Type="Tables" store:Schema="dbo">
@@ -59,15 +83,32 @@ warning 6002: The table/view 'money.dbo.TransactionType' does not have a primary
     [TransactionType].[Name] AS [Name]
     FROM [dbo].[TransactionType] AS [TransactionType]</DefiningQuery>
           </EntitySet>
+          <AssociationSet Name="FK_Buget_category" Association="Self.FK_Buget_category">
+            <End Role="Category" EntitySet="Category" />
+            <End Role="Buget" EntitySet="Buget" />
+          </AssociationSet>
           <AssociationSet Name="FK_Transactions_category" Association="Self.FK_Transactions_category">
             <End Role="Category" EntitySet="Category" />
             <End Role="Transactions" EntitySet="Transactions" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="money" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="moneyModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Buget">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CategoryID" Type="Int32" Nullable="false" />
+          <Property Name="Amount" Type="Double" Nullable="false" />
+          <Property Name="Note" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Category" Relationship="Self.FK_Buget_category" FromRole="Buget" ToRole="Category" />
+        </EntityType>
         <EntityType Name="Category">
           <Key>
             <PropertyRef Name="ID" />
@@ -79,7 +120,8 @@ warning 6002: The table/view 'money.dbo.TransactionType' does not have a primary
           <Property Name="IsActive" Type="Boolean" Nullable="false" />
           <Property Name="IsParent" Type="Boolean" Nullable="false" />
           <Property Name="ParentID" Type="Int32" />
-          <NavigationProperty Name="Transactions" Relationship="money.FK_Transactions_category" FromRole="Category" ToRole="Transaction" />
+          <NavigationProperty Name="Bugets" Relationship="Self.FK_Buget_category" FromRole="Category" ToRole="Buget" />
+          <NavigationProperty Name="Transactions" Relationship="Self.FK_Transactions_category" FromRole="Category" ToRole="Transactions" />
         </EntityType>
         <EntityType Name="Transaction">
           <Key>
@@ -91,7 +133,7 @@ warning 6002: The table/view 'money.dbo.TransactionType' does not have a primary
           <Property Name="Amount" Type="Double" Nullable="false" />
           <Property Name="Note" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="IsActive" Type="Binary" MaxLength="50" FixedLength="true" Nullable="false" />
-          <NavigationProperty Name="Category" Relationship="money.FK_Transactions_category" FromRole="Transaction" ToRole="Category" />
+          <NavigationProperty Name="Category" Relationship="Self.FK_Transactions_category" FromRole="Transactions" ToRole="Category" />
         </EntityType>
         <EntityType Name="TransactionType">
           <Key>
@@ -101,35 +143,64 @@ warning 6002: The table/view 'money.dbo.TransactionType' does not have a primary
           <Property Name="ID" Type="Int32" Nullable="false" />
           <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
         </EntityType>
-        <EntityContainer Name="moneyEntities3" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Categories" EntityType="Self.Category" />
-          <EntitySet Name="Transactions" EntityType="Self.Transaction" />
-          <EntitySet Name="TransactionTypes" EntityType="Self.TransactionType" />
-          <AssociationSet Name="FK_Transactions_category" Association="money.FK_Transactions_category">
-            <End Role="Category" EntitySet="Categories" />
-            <End Role="Transaction" EntitySet="Transactions" />
-          </AssociationSet>
-        </EntityContainer>
-        <Association Name="FK_Transactions_category">
-          <End Type="money.Category" Role="Category" Multiplicity="1" />
-          <End Type="money.Transaction" Role="Transaction" Multiplicity="*" />
+        <Association Name="FK_Buget_category">
+          <End Role="Category" Type="Self.Category" Multiplicity="1" />
+          <End Role="Buget" Type="Self.Buget" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Category">
               <PropertyRef Name="ID" />
             </Principal>
-            <Dependent Role="Transaction">
+            <Dependent Role="Buget">
               <PropertyRef Name="CategoryID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_Transactions_category">
+          <End Role="Category" Type="Self.Category" Multiplicity="1" />
+          <End Role="Transactions" Type="Self.Transaction" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Transactions">
+              <PropertyRef Name="CategoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="money4" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Bugets" EntityType="Self.Buget" />
+          <EntitySet Name="Categories" EntityType="Self.Category" />
+          <EntitySet Name="Transactions" EntityType="Self.Transaction" />
+          <EntitySet Name="TransactionTypes" EntityType="Self.TransactionType" />
+          <AssociationSet Name="FK_Buget_category" Association="Self.FK_Buget_category">
+            <End Role="Category" EntitySet="Categories" />
+            <End Role="Buget" EntitySet="Bugets" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Transactions_category" Association="Self.FK_Transactions_category">
+            <End Role="Category" EntitySet="Categories" />
+            <End Role="Transactions" EntitySet="Transactions" />
+          </AssociationSet>
+        </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="moneyStoreContainer" CdmEntityContainer="moneyEntities3">
+        <EntityContainerMapping StorageEntityContainer="moneyModel1StoreContainer" CdmEntityContainer="money4">
+          <EntitySetMapping Name="Bugets">
+            <EntityTypeMapping TypeName="moneyModel1.Buget">
+              <MappingFragment StoreEntitySet="Buget">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="Categories">
-            <EntityTypeMapping TypeName="money.Category">
+            <EntityTypeMapping TypeName="moneyModel1.Category">
               <MappingFragment StoreEntitySet="Category">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
@@ -142,7 +213,7 @@ warning 6002: The table/view 'money.dbo.TransactionType' does not have a primary
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Transactions">
-            <EntityTypeMapping TypeName="money.Transaction">
+            <EntityTypeMapping TypeName="moneyModel1.Transaction">
               <MappingFragment StoreEntitySet="Transactions">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Date" ColumnName="Date" />
@@ -154,7 +225,7 @@ warning 6002: The table/view 'money.dbo.TransactionType' does not have a primary
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TransactionTypes">
-            <EntityTypeMapping TypeName="money.TransactionType">
+            <EntityTypeMapping TypeName="moneyModel1.TransactionType">
               <MappingFragment StoreEntitySet="TransactionType">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Name" ColumnName="Name" />

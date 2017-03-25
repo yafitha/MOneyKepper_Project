@@ -47,7 +47,182 @@
                 <Setter Property="Width" Value="100"/>
                 <Setter Property="Margin" Value="0,0,0,8"/>
             </Style>
-            
+
+
+
+            <Style x:Key="DetailsListViewItemStyle" TargetType="ListViewItem">
+                <Setter Property="Padding" Value="12,0" />
+                <Setter Property="Margin" Value="0,1.5" />
+                <Setter Property="Background" Value="White" />
+                <Setter Property="BorderBrush" Value="LightGray" />
+                <Setter Property="BorderThickness" Value="1" />
+                <Setter Property="HorizontalAlignment" Value="Stretch" />
+                <Setter Property="Height" Value="70" />
+                <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
+                <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}" />
+                <Setter Property="Foreground" Value="{ThemeResource SystemControlForegroundBaseHighBrush}" />
+                <Setter Property="TabNavigation" Value="Local" />
+                <Setter Property="IsHoldingEnabled" Value="True" />
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                <Setter Property="VerticalContentAlignment" Value="Center" />
+                <Setter Property="MinWidth" Value="{ThemeResource ListViewItemMinWidth}" />
+                <Setter Property="MinHeight" Value="{ThemeResource ListViewItemMinHeight}" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="ListViewItem">
+                            <ListViewItemPresenter x:Name="listViewItemPresenter"
+                                               HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                               VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                                               BorderBrush="{ThemeResource AppBarToggleButtonCheckedPressedBorderThemeBrush}"
+                                               CheckBoxBrush="{ThemeResource SystemControlForegroundBaseMediumHighBrush}"
+                                               CheckBrush="{ThemeResource SystemControlForegroundBaseMediumHighBrush}"
+                                               CheckMode="Inline"
+                                               ContentMargin="{TemplateBinding Padding}"
+                                               ContentTransitions="{TemplateBinding ContentTransitions}"
+                                               DisabledOpacity="{ThemeResource ListViewItemDisabledThemeOpacity}"
+                                               DragBackground="{ThemeResource ListViewItemDragBackgroundThemeBrush}"
+                                               DragForeground="{ThemeResource ListViewItemDragForegroundThemeBrush}"
+                                               DragOpacity="{ThemeResource ListViewItemDragThemeOpacity}"
+                                               FocusBorderBrush="{ThemeResource SystemControlForegroundAltHighBrush}"
+                                               FocusSecondaryBorderBrush="{ThemeResource SystemControlForegroundBaseHighBrush}"
+                                               PlaceholderBackground="{ThemeResource ListViewItemPlaceholderBackgroundThemeBrush}"
+                                               PointerOverBackground="{ThemeResource SystemControlHighlightListLowBrush}"
+                                               PointerOverForeground="{ThemeResource SystemControlHighlightAltBaseHighBrush}"
+                                               PressedBackground="{ThemeResource SystemControlHighlightListMediumBrush}"
+                                               ReorderHintOffset="{ThemeResource ListViewItemReorderHintThemeOffset}"
+                                               SelectedBackground="LightGray"
+                                               SelectedForeground="{ThemeResource AppBarItemPressedForegroundThemeBrush}"
+                                               SelectedPointerOverBackground="LightGray"
+                                               SelectedPressedBackground="LightGray"
+                                               SelectionCheckMarkVisualEnabled="True">
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal" />
+                                        <VisualState x:Name="PointerOver" />
+                                        <VisualState x:Name="Pressed">
+                                            <VisualState.Setters>
+                                                <Setter Target="listViewItemPresenter.(ContentPresenter.FontWeight)">
+                                                    <Setter.Value>
+                                                        <FontWeight>Bold</FontWeight>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="PointerOverPressed" />
+                                        <VisualState x:Name="Disabled" />
+                                    </VisualStateGroup>
+                                    <VisualStateGroup x:Name="SelectionStates">
+                                        <VisualState x:Name="UnselectedSwiping" />
+                                        <VisualState x:Name="UnselectedPointerOver" />
+                                        <VisualState x:Name="Selecting" />
+                                        <VisualState x:Name="Selected">
+                                            <VisualState.Setters>
+                                                <Setter Target="listViewItemPresenter.(ContentPresenter.FontWeight)">
+                                                    <Setter.Value>
+                                                        <FontWeight>Bold</FontWeight>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="SelectedSwiping" />
+                                        <VisualState x:Name="Unselecting" />
+                                        <VisualState x:Name="Unselected" />
+                                        <VisualState x:Name="SelectedUnfocused" />
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                            </ListViewItemPresenter>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="BigDetailsListViewItemStyle" TargetType="ListViewItem">
+                <Setter Property="Padding" Value="12,0" />
+                <Setter Property="Margin" Value="0,1.5" />
+                <Setter Property="Background" Value="White" />
+                <Setter Property="BorderBrush" Value="LightGray" />
+                <Setter Property="BorderThickness" Value="1" />
+                <Setter Property="HorizontalAlignment" Value="Stretch" />
+                <Setter Property="Height" Value="110" />
+                <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
+                <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}" />
+                <Setter Property="Foreground" Value="{ThemeResource SystemControlForegroundBaseHighBrush}" />
+                <Setter Property="TabNavigation" Value="Local" />
+                <Setter Property="IsHoldingEnabled" Value="True" />
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                <Setter Property="VerticalContentAlignment" Value="Center" />
+                <Setter Property="MinWidth" Value="{ThemeResource ListViewItemMinWidth}" />
+                <Setter Property="MinHeight" Value="{ThemeResource ListViewItemMinHeight}" />
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="ListViewItem">
+                            <ListViewItemPresenter x:Name="listViewItemPresenter"
+                                               HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                               VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+                                               BorderBrush="{ThemeResource AppBarToggleButtonCheckedPressedBorderThemeBrush}"
+                                               CheckBoxBrush="{ThemeResource SystemControlForegroundBaseMediumHighBrush}"
+                                               CheckBrush="{ThemeResource SystemControlForegroundBaseMediumHighBrush}"
+                                               CheckMode="Inline"
+                                               ContentMargin="{TemplateBinding Padding}"
+                                               ContentTransitions="{TemplateBinding ContentTransitions}"
+                                               DisabledOpacity="{ThemeResource ListViewItemDisabledThemeOpacity}"
+                                               DragBackground="{ThemeResource ListViewItemDragBackgroundThemeBrush}"
+                                               DragForeground="{ThemeResource ListViewItemDragForegroundThemeBrush}"
+                                               DragOpacity="{ThemeResource ListViewItemDragThemeOpacity}"
+                                               FocusBorderBrush="{ThemeResource SystemControlForegroundAltHighBrush}"
+                                               FocusSecondaryBorderBrush="{ThemeResource SystemControlForegroundBaseHighBrush}"
+                                               PlaceholderBackground="{ThemeResource ListViewItemPlaceholderBackgroundThemeBrush}"
+                                               PointerOverBackground="{ThemeResource SystemControlHighlightListLowBrush}"
+                                               PointerOverForeground="{ThemeResource SystemControlHighlightAltBaseHighBrush}"
+                                               PressedBackground="{ThemeResource SystemControlHighlightListMediumBrush}"
+                                               ReorderHintOffset="{ThemeResource ListViewItemReorderHintThemeOffset}"
+                                               SelectedBackground="LightGray"
+                                               SelectedForeground="{ThemeResource AppBarItemPressedForegroundThemeBrush}"
+                                               SelectedPointerOverBackground="LightGray"
+                                               SelectedPressedBackground="LightGray"
+                                               SelectionCheckMarkVisualEnabled="True">
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <VisualState x:Name="Normal" />
+                                        <VisualState x:Name="PointerOver" />
+                                        <VisualState x:Name="Pressed">
+                                            <VisualState.Setters>
+                                                <Setter Target="listViewItemPresenter.(ContentPresenter.FontWeight)">
+                                                    <Setter.Value>
+                                                        <FontWeight>Bold</FontWeight>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="PointerOverPressed" />
+                                        <VisualState x:Name="Disabled" />
+                                    </VisualStateGroup>
+                                    <VisualStateGroup x:Name="SelectionStates">
+                                        <VisualState x:Name="UnselectedSwiping" />
+                                        <VisualState x:Name="UnselectedPointerOver" />
+                                        <VisualState x:Name="Selecting" />
+                                        <VisualState x:Name="Selected">
+                                            <VisualState.Setters>
+                                                <Setter Target="listViewItemPresenter.(ContentPresenter.FontWeight)">
+                                                    <Setter.Value>
+                                                        <FontWeight>Bold</FontWeight>
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                        <VisualState x:Name="SelectedSwiping" />
+                                        <VisualState x:Name="Unselecting" />
+                                        <VisualState x:Name="Unselected" />
+                                        <VisualState x:Name="SelectedUnfocused" />
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                            </ListViewItemPresenter>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
             <Style  x:Key="StartUpContentDialog" TargetType="ContentDialog">
                 <Setter Property="Foreground" Value="{ThemeResource SystemControlPageTextBaseHighBrush}" />
                 <Setter Property="Background" Value="{ThemeResource SystemControlBackgroundChromeMediumLowBrush}" />

@@ -35,6 +35,13 @@ namespace MoneyKepper_Core.ViewModel
             set { this.Set(ref _reportInfo, value); }
         }
 
+        private string _subTitle;
+        public string SubTitle
+        {
+            get { return _subTitle; }
+            set { this.Set(ref _subTitle, value); }
+        }
+
         public ObservableCollection<TransactionItem> AllTransactionsItems { get; set; }
 
         #endregion
@@ -68,10 +75,12 @@ namespace MoneyKepper_Core.ViewModel
             if (e.NavigationMode == NavigationMode.New)
             {
                 var args = e.Parameter as Dictionary<string, object>;
+                this.SubTitle = (string)args["SubTitle"];
                 var startTime = (DateTime)args["StartDateTime"];
                 var endTime = (DateTime)args["EndDateTime"];
                 if (startTime == this.StartDate && this.EndDate == endTime)
                     return;
+
                 this.StartDate = startTime;
                 this.EndDate = endTime;
                 var allTransactionsItems = this.DataService.GetTransactionsByDateAndType(StartDate, EndDate, null).Select(tran => new TransactionItem(tran, tran.Category)).OrderBy(t => t.Transaction.Date).ToList();
