@@ -17,8 +17,9 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="70"/>
             <RowDefinition Height="70"/>
-            <RowDefinition Height="*"/>
             <RowDefinition Height="70"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="90"/>
         </Grid.RowDefinitions>
         <TextBlock
             FontWeight="Black"
@@ -61,7 +62,19 @@
                 </Interactivity:Interaction.Behaviors>
             </CalendarDatePicker>
         </StackPanel>
-
+        <StackPanel
+            Grid.Row="3"
+            VerticalAlignment="Top"
+            Orientation="Horizontal">
+            <TextBlock
+                Width="100"
+                VerticalAlignment="Center"
+                Text="תת כותרת" />
+            <TextBox 
+                Width="150"
+                  VerticalAlignment="Center"
+                Text="{Binding SubTitle ,Mode=TwoWay}"/>
+        </StackPanel>
         <Button 
             HorizontalAlignment="Center"
             Background="{StaticResource AccentColorBrush}"
@@ -70,6 +83,6 @@
             Foreground="White"
             Width="150"
             Height="40"
-            Grid.Row="3"/>
+            Grid.Row="4"/>
     </Grid>
 </local:PageBase>

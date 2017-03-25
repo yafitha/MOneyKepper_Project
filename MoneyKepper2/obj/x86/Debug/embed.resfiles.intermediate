@@ -1,9 +1,12 @@
 App.xbf
 MainPage.xbf
 Themes\Generic.xbf
+View\Dialogs\AddBugetDialog.xbf
 View\Dialogs\AddNewCategoryDialog.xbf
 View\Dialogs\AddTransactionDialog.xbf
 View\Dialogs\ConfirmDialog.xbf
+View\Pages\BugetDetailsPage.xbf
+View\Pages\BugetPage.xbf
 View\Pages\CategoryDetailPage.xbf
 View\Pages\CategoryPage.xbf
 View\Pages\EmptyPage.xbf

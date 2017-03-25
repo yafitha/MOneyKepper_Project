@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-   xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core"
     xmlns:Interactivity ="using:Microsoft.Xaml.Interactivity"
     d:DesignWidth="300"
     FlowDirection="RightToLeft"
@@ -244,16 +244,6 @@
                 </TextBlock>
             </StackPanel>
         </StackPanel>
-        <Button
-            Grid.Row="2"
-            Width="120"
-            Foreground="White"
-            FontSize="18"
-            Background="{StaticResource AccentColorBrush}"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
-            Command="{Binding ShowExtraInfoCommand}"
-            Content="פירוט נתונים"/>
     </Grid>
 </local:PageBase>
 

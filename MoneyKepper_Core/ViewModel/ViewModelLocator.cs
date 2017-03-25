@@ -30,6 +30,12 @@ namespace MoneyKepperCore.ViewModel
         {
             get { return ServiceLocator.Current.GetInstance<IAddTransactionViewModel>(); }
         }
+
+        public IAddBugetViewModel AddBugetViewModel
+        {
+            get { return ServiceLocator.Current.GetInstance<IAddBugetViewModel>(); }
+        }
+
         public IControlSplitViewModel ControlSplitViewModel
         {
             get { return ServiceLocator.Current.GetInstance<IControlSplitViewModel>(); }
@@ -99,6 +105,15 @@ namespace MoneyKepperCore.ViewModel
         {
             get { return ServiceLocator.Current.GetInstance<ICategoryViewModel>(); }
         }
+        public IBugetViewModel BugetViewModel
+        {
+            get { return ServiceLocator.Current.GetInstance<IBugetViewModel>(); }
+        }
+
+        public IBugetDetailsViewModel BugetDetailsViewModel
+        {
+            get { return ServiceLocator.Current.GetInstance<IBugetDetailsViewModel>(); }
+        }
         public IAddNewCategoryViewModel AddNewCategoryViewModel
         {
             get { return ServiceLocator.Current.GetInstance<IAddNewCategoryViewModel>(); }
@@ -125,6 +140,7 @@ namespace MoneyKepperCore.ViewModel
                 SimpleIoc.Default.Register<IGraphsViewModel, GraphsViewModelDesgin>();
                 SimpleIoc.Default.Register<IHistoryViewModel, HistoryViewModelDesign>();
                 SimpleIoc.Default.Register<ITransactionsDetailsViewModel, TransactionsDetailsViewModelDesign>();
+                SimpleIoc.Default.Register<IBugetDetailsViewModel, BugetDetailsViewModelDesign>();
             }
             else
             {
@@ -139,8 +155,11 @@ namespace MoneyKepperCore.ViewModel
                 SimpleIoc.Default.Register<IDetailsViewModel, DetailsViewModel>();
                 SimpleIoc.Default.Register<IPrimaryPanelViewModel, PrimaryPanelViewModel>();
                 SimpleIoc.Default.Register<IGraphsDetailsViewModel, GraphsDetailsViewModel>();
+                SimpleIoc.Default.Register<IBugetDetailsViewModel, BugetDetailsViewModel>();
+                SimpleIoc.Default.Register<IBugetViewModel, BugetViewModel>();
                 SimpleIoc.Default.Register<ITransactionsViewModel, TransactionsViewModel>();
                 SimpleIoc.Default.Register<IAddNewCategoryViewModel, AddNewCategoryViewModel>();
+                SimpleIoc.Default.Register<IAddBugetViewModel, AddBugetViewModel>();
                 SimpleIoc.Default.Register<ITransactionsDetailsViewModel, TransactionsDetailsViewModel>();
                 SimpleIoc.Default.Register<IAddTransactionViewModel, AddTransactionViewModel>();
                 SimpleIoc.Default.Register<IGraphsViewModel, GraphsViewModel>();

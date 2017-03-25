@@ -46,6 +46,14 @@ namespace MoneyKepper_Core.ViewModel
             get { return _endDate; }
             set { this.Set(ref _endDate, value); }
         }
+
+        private string _subTitle;
+        public string SubTitle
+        {
+            get { return _subTitle; }
+            set { this.Set(ref _subTitle, value); }
+        }
+        
         #endregion
 
         #region Ctor's
@@ -68,7 +76,7 @@ namespace MoneyKepper_Core.ViewModel
         private void OnShowReportCommand()
         {
             var endDate = this.EndDate == null ? this.StartDate.Value.Date : this.EndDate.Value.Date;
-            this.ActionsService.ShowReportDetails(this.StartDate.Value.DateTime, endDate);
+            this.ActionsService.ShowReportDetails(this.StartDate.Value.DateTime, endDate, SubTitle);
         }
 
         #endregion

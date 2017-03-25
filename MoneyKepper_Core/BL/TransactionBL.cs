@@ -130,26 +130,6 @@ namespace MoneyKepper_Core.BL
             return result;
         }
 
-        public static bool UpdateCategory(Transaction transaction)
-        {
-            bool result = false;
-            Task task = Task.Run(async () =>
-            {
-                using (var client = new HttpClient())
-                {
-                    Run(client);
-                    HttpResponseMessage response = await client.PutAsJsonAsync("UpdateTransaction", transaction);
-                    string httpResponseBody = "";
-                    if (response.IsSuccessStatusCode)
-                    {
-                        httpResponseBody = await response.Content.ReadAsStringAsync();
-                        result = true;
-                    }
-                }
-            });
-            task.Wait(); // Wait
-            return result;
-        }
 
         public static bool DeleteTransaction(int transactionID)
         {

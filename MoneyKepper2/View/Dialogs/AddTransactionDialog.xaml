@@ -26,8 +26,8 @@
             <Setter Property="Width" Value="90"/>
         </Style>
     </local:ContentDialogBase.Resources>
-    
-    <Grid Width="500" Height="400">
+    <Grid  Background="White">
+        <Grid Width="520" Height="600" Visibility="{Binding AddNewCategory, Converter={StaticResource BooleanToVisibilityConverter},ConverterParameter=Invert}">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -57,7 +57,6 @@
                 
         </Grid>
         <StackPanel
-           
             Padding="15,0"
               Margin="8,8"
             Grid.Row="1">
@@ -79,6 +78,19 @@
                         </DataTemplate>
                     </ComboBox.ItemTemplate>
                 </ComboBox>
+                <HyperlinkButton
+                    x:Name="AddNewCategoryButton"
+                    Command="{Binding AddCategoryCommand}">
+                  <TextBlock
+                    Margin="6,5,0,0"
+                    VerticalAlignment="Center"
+                     FontSize="22" >
+                        <Run FontWeight="Bold" Text="+"/>
+                        <Run Text="הוסף"/>
+                    </TextBlock>
+                </HyperlinkButton>
+
+              
             </StackPanel>
             <StackPanel 
                 Margin="0,0,0,15"
@@ -126,6 +138,19 @@
                     Text="{Binding Note, Mode=TwoWay}"
                     InputScope="Text"/>
             </StackPanel>
+            <StackPanel 
+                Margin="90,0,0,12"
+                Orientation="Horizontal">
+                <CheckBox
+                    MinWidth="20"
+                   VerticalAlignment="Center"/>
+                <TextBlock
+                    FontSize="18"
+                   VerticalAlignment="Center"
+                   Width="200"
+                    Text="הגדר כקבוע"/>
+            </StackPanel>
+
             <TextBlock
                 Foreground="Red"
                 Text="{Binding ValidationMessage}"/>
@@ -152,5 +177,159 @@
             Width="120"
             Command="{Binding CloseCommand}"/>
         </StackPanel>
+    </Grid>
+        <Grid Visibility="{Binding AddNewCategory, Converter={StaticResource BooleanToVisibilityConverter}}">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid>
+              <Border
+                Margin="0,12,150,8"
+                Width="80"
+                Height="80"
+                HorizontalAlignment="Right"
+                BorderBrush="Gray"
+                BorderThickness="2">
+             <Image
+                 Width="60"
+                 Height="60"
+                 Source="{Binding SelectedImage.Path,Converter={StaticResource PictureNameToPictureSourceConverter}}"/>
+                </Border>
+                <StackPanel
+                  Padding="13,0" 
+                   HorizontalAlignment="Stretch">
+                 <TextBlock
+                    FontSize="22"
+                    FontWeight="Bold"
+                    Margin="6,9,0,30"
+                    Text="הוסף קטגוריה"/>
+                    <StackPanel 
+                   
+                   Orientation="Horizontal">
+                  <TextBlock
+                    Width="130"
+                    Text="שם קטגוריה"/>
+                 <TextBox
+                    Height="30"
+                    Width="200"
+                    Text="{Binding Name ,Mode=TwoWay}"
+                    Margin="5,0,0,0"/>
+
+                    </StackPanel>
+                    <StackPanel 
+                    Margin="0,10,0,10"
+                    Orientation="Horizontal">
+                  <RadioButton
+                    IsEnabled="{Binding IsAddCategory}"
+                    IsChecked="{Binding IsIncome}"
+                    Command="{Binding CategoryTypeSelectionCommand}"
+                    CommandParameter="1"
+                    GroupName="Type"
+                    Width="135" 
+                    Content="הכנסות"/>
+                 <RadioButton 
+                    IsEnabled="{Binding IsAddCategory}"
+                    IsChecked="{Binding IsIncome, Converter={StaticResource InvertBooleanConverter }}"
+                    Command="{Binding CategoryTypeSelectionCommand}"
+                    CommandParameter="2"
+                    GroupName="Type"
+                    Content="הוצאות"/>
+                    </StackPanel>
+                    <StackPanel 
+                    Visibility="{Binding IsAddCategory ,Converter={StaticResource BooleanToVisibilityConverter}}"
+                     Margin="0,10,0,10"
+                     Orientation="Horizontal">
+
+                        <CheckBox
+                    MinWidth="25"
+                    x:Name="IsParentCheckBox"
+                    IsChecked="{Binding IsSubCategoryChecked,Mode=TwoWay}"
+                    Width="25">
+                        </CheckBox>
+                        <TextBlock
+                       VerticalAlignment="Center"
+                      Width="120"
+                      Text="בחר כתת קטגוריה"/>
+                        <StackPanel
+                        VerticalAlignment="Center"
+                        Visibility="{Binding ElementName=IsParentCheckBox ,Path=IsChecked ,Converter={StaticResource BooleanToVisibilityConverter}}"
+                        Orientation="Horizontal">
+                            <TextBlock
+                            Margin="7,0"
+                            VerticalAlignment="Center"
+                            Text="של"/>
+                            <ComboBox
+                            VerticalAlignment="Center"
+                            Width="200"
+                            SelectedItem="{Binding SelectedSubCategory, Mode=TwoWay}"
+                            ItemsSource="{Binding CategoriesToCreateSubCategory}">
+                                <ComboBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock 
+                               Text="{Binding Name}"/>
+                                    </DataTemplate>
+                                </ComboBox.ItemTemplate>
+                            </ComboBox>
+                        </StackPanel>
+                    </StackPanel>
+
+                </StackPanel>
+
+            </Grid>
+            <ListView  
+            x:Name="ImagesListView"
+            Grid.Row="1"
+            Width="600"
+            Height="300"
+            Margin="25,25"
+            SelectedItem="{Binding SelectedImage,Mode=TwoWay}"
+            IsItemClickEnabled="True"
+            ScrollViewer.VerticalScrollBarVisibility="Auto"          
+            ItemsSource="{Binding Images}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Image                             
+                       Source="{Binding Path, Converter={StaticResource PictureNameToPictureSourceConverter}}"
+                       Width="40"
+                       Height="40"
+                        HorizontalAlignment="Center"
+                       VerticalAlignment="Center" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <ItemsWrapGrid  
+                        Orientation="Horizontal" 
+                        ItemHeight="60" />
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
+            </ListView>
+
+            <StackPanel
+            Grid.Row="2"
+            Margin="0,0,0,15"
+            HorizontalAlignment="Center"
+            Orientation="Horizontal">
+         <Button
+            Height="35"
+            FontSize="18"
+            Background="{StaticResource AccentColorBrush}"
+            Foreground="White"
+            Content="שמור"
+            Margin="0,0,12,0"
+            Width="120"
+             Command="{Binding SaveCategoryCommand}"/>
+        <Button
+            FontSize="18"
+            Height="35"
+            Background="{StaticResource AccentColorBrush}"
+            Foreground="White"
+            Content="ביטול"
+            Width="120"
+            Command="{Binding CloseCategoryCommand}"/>
+            </StackPanel>
+        </Grid>
     </Grid>
 </local:ContentDialogBase>

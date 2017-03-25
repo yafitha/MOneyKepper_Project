@@ -61,14 +61,14 @@ namespace MoneyKepper2.Behaviors
         public static readonly DependencyProperty ReportInfoProperty =
             DependencyProperty.Register("ReportInfo", typeof(string), typeof(PrintPageBehavior), new PropertyMetadata(null));
 
-        //public string ExtraInfo
-        //{
-        //    get { return (string)GetValue(ExtraInfoProperty); }
-        //    set { SetValue(ExtraInfoProperty, value); }
-        //}
+        public string ExtraInfo
+        {
+            get { return (string)GetValue(ExtraInfoProperty); }
+            set { SetValue(ExtraInfoProperty, value); }
+        }
 
-        //public static readonly DependencyProperty ExtraInfoProperty =
-        //    DependencyProperty.Register("ExtraInfo", typeof(string), typeof(PrintPageBehavior), new PropertyMetadata(string.Empty));
+        public static readonly DependencyProperty ExtraInfoProperty =
+            DependencyProperty.Register("ExtraInfo", typeof(string), typeof(PrintPageBehavior), new PropertyMetadata(string.Empty));
 
         public void Attach(DependencyObject associatedObject)
         {
@@ -90,7 +90,7 @@ namespace MoneyKepper2.Behaviors
         {
             if (this.printHelper == null)
             {
-                this.printHelper = new Helpers.PrintHelper(this.RootListView, this.ReportHeader, this.ReportInfo, this.AmountItemInPage);
+                this.printHelper = new Helpers.PrintHelper(this.RootListView, this.ReportHeader, this.ReportInfo,this.ExtraInfo, this.AmountItemInPage);
                 // Register for printing               
                 printHelper.RegisterForPrinting();
             }

@@ -320,6 +320,7 @@
                                         CommandParameter="{Binding Category}"
                                         HorizontalAlignment="Right">
                                       <TextBlock
+                                        FontSize="20"
                                         Style="{StaticResource MDL2AssetsTextBlockStyle}"
                                         Text=" &#xE1c2;"/>
                                         </HyperlinkButton>
@@ -329,6 +330,7 @@
                                         CommandParameter="{Binding Category}"
                                         HorizontalAlignment="Right">
                                      <TextBlock
+                                        FontSize="20"
                                         Style="{StaticResource MDL2AssetsTextBlockStyle}"
                                         Text=" &#xE711;"/>
                                         </HyperlinkButton>

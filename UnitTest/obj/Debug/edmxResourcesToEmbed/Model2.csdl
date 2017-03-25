@@ -12,6 +12,7 @@
     <Property Name="IsParent" Type="Boolean" Nullable="false" />
     <Property Name="ParentID" Type="Int32" />
     <NavigationProperty Name="Transactions" Relationship="money.FK_Transactions_category" FromRole="Category" ToRole="Transaction" />
+    <NavigationProperty Name="Bugets" Relationship="money.FK_Buget_category" FromRole="Category" ToRole="Buget" />
   </EntityType>
   <EntityType Name="Transaction">
     <Key>
@@ -41,6 +42,11 @@
       <End Role="Category" EntitySet="Categories" />
       <End Role="Transaction" EntitySet="Transactions" />
     </AssociationSet>
+    <EntitySet Name="Bugets" EntityType="money.Buget" />
+    <AssociationSet Name="FK_Buget_category" Association="money.FK_Buget_category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Buget" EntitySet="Bugets" />
+    </AssociationSet>
   </EntityContainer>
   <Association Name="FK_Transactions_category">
     <End Type="money.Category" Role="Category" Multiplicity="1" />
@@ -50,6 +56,30 @@
         <PropertyRef Name="ID" />
       </Principal>
       <Dependent Role="Transaction">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Buget">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CategoryID" Type="Int32" Nullable="false" />
+    <Property Name="Amount" Type="Double" Nullable="false" />
+    <Property Name="Note" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Category" Relationship="money.FK_Buget_category" FromRole="Buget" ToRole="Category" />
+  </EntityType>
+  <Association Name="FK_Buget_category">
+    <End Type="money.Category" Role="Category" Multiplicity="1" />
+    <End Type="money.Buget" Role="Buget" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Buget">
         <PropertyRef Name="CategoryID" />
       </Dependent>
     </ReferentialConstraint>

@@ -49,7 +49,7 @@ namespace MoneyKepper2.Helpers
 
         public string PrintDetails { get; private set; }
         public string PrintHeader { get; private set; }
-        //public string ExtraInfo { get; private set; }
+        public string ExtraInfo { get; private set; }
         public int AmountItemInPage { get; private set; }
         public int PageNumber { get; private set; }
 
@@ -57,13 +57,14 @@ namespace MoneyKepper2.Helpers
         /// Constructor
         /// </summary>
         /// <param name="scenarioPage">The scenario page constructing us</param>
-        public PrintHelper(ListView uiListView, string printHeader, string printDetails, int amountItemInPage)
+        public PrintHelper(ListView uiListView, string printHeader, string printDetails,string extraInfo, int amountItemInPage)
         {
             if (RootListView == null)
             {
                 RootListView = new ListView();
                 this.PrintHeader = printHeader;
                 this.PrintDetails = printDetails;
+                this.ExtraInfo = extraInfo;
                 this.AmountItemInPage = amountItemInPage;
                 this.PageNumber = 1;
                 RootListView.ItemsSource = uiListView.ItemsSource;
@@ -322,12 +323,12 @@ namespace MoneyKepper2.Helpers
                 this.SetTextBlockStyle(reportDetasilsTextBlock, this.PrintDetails, 18, reportDetasilsTextBlock.Height, new Thickness(10, 0, 10, 10));
                 reportDetasilsTextBlock.SetValue(TextBlock.FontWeightProperty, FontWeights.SemiBold);
                 stackPanel.Children.Add(reportDetasilsTextBlock);
-                //if (!string.IsNullOrEmpty(this.ExtraInfo))
-                //{
-                //    TextBlock extraInfoTextBlock = new TextBlock();
-                //    this.SetTextBlockStyle(extraInfoTextBlock, this.ExtraInfo, 18, 40, new Thickness(10, 0, 0, 0));
-                //    stackPanel.Children.Add(extraInfoTextBlock);
-                //}
+                if (!string.IsNullOrEmpty(this.ExtraInfo))
+                {
+                    TextBlock extraInfoTextBlock = new TextBlock();
+                    this.SetTextBlockStyle(extraInfoTextBlock, this.ExtraInfo, 18, 40, new Thickness(10, 0, 0, 0));
+                    stackPanel.Children.Add(extraInfoTextBlock);
+                }
                 stackPanel.Children.Add(listview);
                 printPreviewPages.Add(stackPanel);
             }

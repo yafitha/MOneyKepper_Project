@@ -16,7 +16,7 @@ namespace MoneyKepper_Core.ViewModel
     {
         #region Members
 
-        public IDataService DataService { get; set; }
+        private IDataService DataService { get; set; }
         public Action<Category> CallBack { get; private set; }
         public Types CategoryType { get; private set; }
 
@@ -110,11 +110,11 @@ namespace MoneyKepper_Core.ViewModel
                 (parameter as Dictionary<string, object>)["Category"] as Category : null;
 
             this.SetImages();
-            this.InitProperties();
             this.SetCommands();
             var types = new List<Types>();
             types.Add(this.CategoryType);
             this.SetCategories(types);
+            this.InitProperties();
         }
 
         private void InitProperties()
@@ -150,7 +150,8 @@ namespace MoneyKepper_Core.ViewModel
 
         private void OnSaveCommand()
         {
-            this.CallBack(new Category(this.Name, (int)this.CategoryType, this.SelectedImage.Path, !this.IsSubCategoryChecked, this.SelectedCategory?.ID));
+            var type = this.IsIncome == true ? 1 : 2;
+            this.CallBack(new Category(this.Name, type, this.SelectedImage.Path, !this.IsSubCategoryChecked, this.SelectedCategory?.ID));
             this.Hide();
         }
 

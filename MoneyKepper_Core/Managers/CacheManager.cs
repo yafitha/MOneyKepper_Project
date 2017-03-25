@@ -70,27 +70,27 @@ namespace MoneyKepper_Core.Managers
 
         private void LoadCategories()
         {
-            //this.Categories = new Dictionary<int, Category>();
-            //this.Categories.Add(1, new Category(1, "מסעדות", (int)Types.Expenses, "23", false,15));
-            //this.Categories.Add(2, new Category(2, "מצרכים", (int)Types.Expenses, "67", false,15));
-            //this.Categories.Add(3, new Category(3, "משכנתא", (int)Types.Expenses, "50", false, 16));
-            //this.Categories.Add(4, new Category(4, "טלפון", (int)Types.Expenses, "63", false, 16));
-            //this.Categories.Add(5, new Category(5, "חשמל", (int)Types.Expenses, "68", false,16));
-            //this.Categories.Add(6, new Category(6, "מים", (int)Types.Expenses, "73", false,16));
-            //this.Categories.Add(7, new Category(7, "משכורת", (int)Types.Income, "48", false,17));
-            //this.Categories.Add(8, new Category(8, "הלבשה אישית", (int)Types.Expenses, "16", false,18));
-            //this.Categories.Add(9, new Category(9, "נעלים", (int)Types.Expenses, "65", false,18));
-            //this.Categories.Add(10, new Category(10, "בגדי ילדים", (int)Types.Expenses, "14", false,18));
-            //this.Categories.Add(11, new Category(11, "ביטוח בריאות", (int)Types.Expenses, "17", false,19));
-            //this.Categories.Add(12, new Category(12, "תרופות", (int)Types.Expenses, "18", false,19));
-            //this.Categories.Add(13, new Category(13, "דלק", (int)Types.Expenses, "29", false,20));
-            //this.Categories.Add(14, new Category(14, "ביטוח רכב", (int)Types.Expenses, "9", false,20));
-            //this.Categories.Add(15, new Category(15, "אוכל", (int)Types.Expenses, "22",true));
-            //this.Categories.Add(16, new Category(16, "דיור", (int)Types.Expenses, "40",true));
-            //this.Categories.Add(17, new Category(17, "הכנסות", (int)Types.Income, "47",true));
-            //this.Categories.Add(18, new Category(18, "ביגוד", (int)Types.Expenses, "15",true));
-            //this.Categories.Add(19, new Category(19, "רפואה", (int)Types.Expenses, "19",true));
-            //this.Categories.Add(20, new Category(20, "תחבורה", (int)Types.Expenses, "11",true));
+            this.Categories = new Dictionary<int, Category>();
+            this.Categories.Add(1, new Category( "מסעדות", (int)Types.Expenses, "23", false, 15));
+            this.Categories.Add(2, new Category("מצרכים", (int)Types.Expenses, "67", false, 15));
+            this.Categories.Add(3, new Category("משכנתא", (int)Types.Expenses, "50", false, 16));
+            this.Categories.Add(4, new Category("טלפון", (int)Types.Expenses, "63", false, 16));
+            this.Categories.Add(5, new Category("חשמל", (int)Types.Expenses, "68", false, 16));
+            this.Categories.Add(6, new Category("מים", (int)Types.Expenses, "73", false, 16));
+            this.Categories.Add(7, new Category("משכורת", (int)Types.Income, "48", false, 17));
+            this.Categories.Add(8, new Category("הלבשה אישית", (int)Types.Expenses, "16", false, 18));
+            this.Categories.Add(9, new Category("נעלים", (int)Types.Expenses, "65", false, 18));
+            this.Categories.Add(10, new Category("בגדי ילדים", (int)Types.Expenses, "14", false, 18));
+            this.Categories.Add(11, new Category("ביטוח בריאות", (int)Types.Expenses, "17", false, 19));
+            this.Categories.Add(12, new Category("תרופות", (int)Types.Expenses, "18", false, 19));
+            this.Categories.Add(13, new Category("דלק", (int)Types.Expenses, "29", false, 20));
+            this.Categories.Add(14, new Category("ביטוח רכב", (int)Types.Expenses, "9", false, 20));
+            this.Categories.Add(15, new Category("אוכל", (int)Types.Expenses, "22", true));
+            this.Categories.Add(16, new Category("דיור", (int)Types.Expenses, "40", true));
+            this.Categories.Add(17, new Category("הכנסות", (int)Types.Income, "47", true));
+            this.Categories.Add(18, new Category("ביגוד", (int)Types.Expenses, "15", true));
+            this.Categories.Add(19, new Category("רפואה", (int)Types.Expenses, "19", true));
+            this.Categories.Add(20, new Category("תחבורה", (int)Types.Expenses, "11", true));
         }
         #endregion
     }

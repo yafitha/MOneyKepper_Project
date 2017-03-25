@@ -21,10 +21,11 @@
                 FontSize="25"
                 Margin="12,12"
                 Text="השוואת קטגוריות לפי חודשים"/>
-            <syncfusion:SfPivotChart
-            VerticalAlignment="Top"
-                Tapped="SfPivotChart_Tapped"
+        <syncfusion:SfPivotChart
+            VerticalAlignment="Center"
+            Tapped="SfPivotChart_Tapped"
             MaxWidth="800"
+            Height="700"
             ShowToolTip="True"
             Padding="15,15"
             ItemSource="{Binding CategoryItems}" >
@@ -58,10 +59,11 @@
                     Text="השוואת הוצאות הכנסות"/>
                 
         <syncCharts:SfChart
-           VerticalAlignment="Top"
+           VerticalAlignment="Center"
             FontSize="25"
             Padding="15,15"
-           
+           MaxWidth="800"
+            Height="700"
             Palette="Custom"
             Header="" >
             <!--Initialize the horizontal axis for SfChart-->

@@ -1,4 +1,5 @@
-﻿using MoneyKepper2.Service;
+﻿using Models;
+using MoneyKepper2.Service;
 using MoneyKepperCore.Service;
 using System;
 using System.Collections.Generic;
@@ -60,7 +61,36 @@ namespace MoneyKepper_Core.ViewModel
             if (e.NavigationMode == NavigationMode.New)
             {
                 this.CalculateCategoriesCount();
+               this.ShowCategoriesDetails();
             }
+        }
+
+        private void ShowCategoriesDetails()
+        {
+            Action<Category> addCallBack = cat =>
+            {
+                if (cat.TypeID == (int)Types.Expenses)
+                {
+                    this.ExpensesCategoriesCount ++;
+                }
+                else
+                {
+                    this.IncomesCategoriesCount++;
+                }
+            };
+
+            Action<Category> removeCallBack = cat =>
+            {
+                if (cat.TypeID == (int)Types.Expenses)
+                {
+                    this.ExpensesCategoriesCount--;
+                }
+                else
+                {
+                    this.IncomesCategoriesCount--;
+                }
+            };
+            this.ActionsService.ShowCategoriesDetails(addCallBack,removeCallBack);
         }
 
         private void CalculateCategoriesCount()

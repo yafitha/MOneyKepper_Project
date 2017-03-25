@@ -26,10 +26,27 @@ namespace MoneyKepper_Core.ViewModel
 
         #endregion
 
+
+        #region  Commands
+
+        public GalaSoft.MvvmLight.Command.RelayCommand CloseCommand { get; set; }
+        public GalaSoft.MvvmLight.Command.RelayCommand OkCommand { get; set; }
+        public Action CallBack { get; private set; }
+
+        #endregion
         public override void OnShow(object parameter)
         {
             this.Title = (string)((parameter as Dictionary<string, object>)["Title"]);
             this.Content = (string)((parameter as Dictionary<string, object>)["Content"]);
+            this.CallBack = (Action)((parameter as Dictionary<string, object>)["CallBack"]);
+            this.CloseCommand = new GalaSoft.MvvmLight.Command.RelayCommand(() => this.Hide());
+            this.OkCommand = new GalaSoft.MvvmLight.Command.RelayCommand(OnOkCommand);
+        }
+
+        private void OnOkCommand()
+        {
+            this.CallBack();
+            this.Hide();
         }
     }
 }

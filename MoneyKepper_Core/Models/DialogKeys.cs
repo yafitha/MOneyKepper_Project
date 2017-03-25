@@ -10,6 +10,7 @@ namespace MoneyKepper_Core.Models
     {
         public const string ADD_TRANSACTION = "AddTransacrion";
         public const string ADD_CATEGORY = "AddCategory";
+        public const string ADD_BUGET= "AddBuget";
         public const string CONFIRM = "Confirm";
     }
 }

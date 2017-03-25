@@ -1,5 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="moneyModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Buget">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CategoryID" Type="Int32" Nullable="false" />
+    <Property Name="Amount" Type="Double" Nullable="false" />
+    <Property Name="Note" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Category" Relationship="Self.FK_Buget_category" FromRole="Buget" ToRole="Category" />
+  </EntityType>
   <EntityType Name="Category">
     <Key>
       <PropertyRef Name="ID" />
@@ -11,6 +23,8 @@
     <Property Name="IsActive" Type="Boolean" Nullable="false" />
     <Property Name="IsParent" Type="Boolean" Nullable="false" />
     <Property Name="ParentID" Type="Int32" />
+    <NavigationProperty Name="Bugets" Relationship="Self.FK_Buget_category" FromRole="Category" ToRole="Buget" />
+    <NavigationProperty Name="Transactions" Relationship="Self.FK_Transactions_category" FromRole="Category" ToRole="Transactions" />
   </EntityType>
   <EntityType Name="Transaction">
     <Key>
@@ -22,6 +36,7 @@
     <Property Name="Amount" Type="Double" Nullable="false" />
     <Property Name="Note" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="IsActive" Type="Binary" MaxLength="50" FixedLength="true" Nullable="false" />
+    <NavigationProperty Name="Category" Relationship="Self.FK_Transactions_category" FromRole="Transactions" ToRole="Category" />
   </EntityType>
   <EntityType Name="TransactionType">
     <Key>
@@ -31,9 +46,42 @@
     <Property Name="ID" Type="Int32" Nullable="false" />
     <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
   </EntityType>
-  <EntityContainer Name="moneyEntities3" annotation:LazyLoadingEnabled="true">
+  <Association Name="FK_Buget_category">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="Buget" Type="Self.Buget" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Buget">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Transactions_category">
+    <End Role="Category" Type="Self.Category" Multiplicity="1" />
+    <End Role="Transactions" Type="Self.Transaction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Transactions">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="money4" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Bugets" EntityType="Self.Buget" />
     <EntitySet Name="Categories" EntityType="Self.Category" />
     <EntitySet Name="Transactions" EntityType="Self.Transaction" />
     <EntitySet Name="TransactionTypes" EntityType="Self.TransactionType" />
+    <AssociationSet Name="FK_Buget_category" Association="Self.FK_Buget_category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Buget" EntitySet="Bugets" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Transactions_category" Association="Self.FK_Transactions_category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Transactions" EntitySet="Transactions" />
+    </AssociationSet>
   </EntityContainer>
 </Schema>

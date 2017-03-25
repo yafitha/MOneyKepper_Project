@@ -46,8 +46,8 @@ namespace MoneyKepper_Core.ViewModel
         public RelayCommand<string> AddTransactionCommand { get; private set; }
         public RelayCommand<TransactionItem> RemoveCommand { get; set; }
 
-        public Action<Tuple<TransactionsViewModel.Types, double>> AddCallBack { get; private set; }
-        public Action<Tuple<TransactionsViewModel.Types, double>> RemoveCallBack { get; private set; }
+        public Action<TransactionItem> AddCallBack { get; private set; }
+        public Action<TransactionItem> RemoveCallBack { get; private set; }
 
         #endregion
 
@@ -92,7 +92,7 @@ namespace MoneyKepper_Core.ViewModel
                         this.IncomeItems.Add(transactionItem);
                     }
                 }
-                this.AddCallBack(Tuple.Create(type, transactionItem.Transaction.Amount));
+                this.AddCallBack(transactionItem);
             };
 
             var dialogArgs = new Dictionary<string, object>()
@@ -107,34 +107,34 @@ namespace MoneyKepper_Core.ViewModel
         }
         private async void OnRemoveCommand(TransactionItem transactionItem)
         {
+
+            Action removeCallBack = () =>
+            {
+                if (transactionItem.Category.TypeID == (int)Types.Expenses)
+                {
+                    var result = TransactionBL.DeleteTransaction(transactionItem.Transaction.ID);
+                    if (result)
+                    {
+                        if (transactionItem.Category.TypeID == (int)Types.Income)
+                        {
+                            this.IncomeItems.Remove(transactionItem);
+                        }
+                        else
+                        {
+                            this.ExpensesItems.Remove(transactionItem);
+                        }
+                        this.RemoveCallBack(transactionItem);
+                    }
+                }
+            };
+
             var dialogArgs = new Dictionary<string, object>()
                 {
                     { "Title", "מחיקת תנועה" },
-                    { "Content", "האם אתה בטוח שברצונך למחוק את התנועה?" }
+                    { "Content", "האם אתה בטוח שברצונך למחוק את התנועה?" },
+                      {"CallBack", removeCallBack }
                 };
-
-            var dialogResult =  await this.DialogService.ShowDialog(DialogKeys.CONFIRM, dialogArgs);
-            if (dialogResult == Windows.UI.Xaml.Controls.ContentDialogResult.Secondary)
-                return;
-
-            if (transactionItem.Category.TypeID == (int)Types.Expenses)
-            {
-                var result = TransactionBL.DeleteTransaction(transactionItem.Transaction.ID);
-                if (result)
-                {
-                    this.ExpensesItems.Remove(transactionItem);
-                    this.RemoveCallBack(Tuple.Create(Types.Expenses, transactionItem.Transaction.Amount));
-                }
-            }
-            else
-            {
-                var result = TransactionBL.DeleteTransaction(transactionItem.Transaction.ID);
-                if (result)
-                {
-                    this.IncomeItems.Remove(transactionItem);
-                    this.RemoveCallBack(Tuple.Create(Types.Income, transactionItem.Transaction.Amount));
-                }
-            }
+            await this.DialogService.ShowDialog(DialogKeys.CONFIRM, dialogArgs);
         }
 
         private void SetIncomeItemsAndExpensesItems()
@@ -158,8 +158,8 @@ namespace MoneyKepper_Core.ViewModel
             {
                 var args = e.Parameter as Dictionary<string, object>;
                 this.CurrentMonth = (DateTime)args["CureentMonth"];
-                this.AddCallBack = args["AddCallBack"] as Action<Tuple<TransactionsViewModel.Types, double>>;
-                this.RemoveCallBack = args["RemoveCallBack"] as Action<Tuple<TransactionsViewModel.Types, double>>;
+                this.AddCallBack = args["AddCallBack"] as Action<TransactionItem>;
+                this.RemoveCallBack = args["RemoveCallBack"] as Action<TransactionItem>;
                 this.SetIncomeItemsAndExpensesItems();
             }
         }

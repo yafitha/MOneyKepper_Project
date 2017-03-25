@@ -1,4 +1,5 @@
 ﻿using Models;
+using MoneyKepper_Core.Models;
 using MoneyKepper_Core.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -10,10 +11,12 @@ namespace MoneyKepperCore.Service
 {
     public interface IActionsService
     {
-        void ShowTransactionsDetails(Action<Tuple<TransactionsViewModel.Types, double>> addCallBack, Action<Tuple<TransactionsViewModel.Types, double>> removeCallBack, DateTime currentMonth);
+        void ShowTransactionsDetails(Action<TransactionItem> addCallBack, Action<TransactionItem> removeCallBack, DateTime currentMonth);
         void ShowHistoryGraphs(DateTime startDateTime, DateTime endDateTime, List<Category> Categories, Graph graphType);
         void ShowMonthGraphs(DateTime month);
-        void ShowReportDetails(DateTime startDateTime, DateTime endDateTime);
+        void ShowReportDetails(DateTime startDateTime, DateTime endDateTime ,string SubTitle ="");
         void ShowEmptyPage();
+        void ShowBugetDetails(Action<BugetItem> addCallBack, Action<BugetItem> removeCallBack, DateTime month);
+        void ShowCategoriesDetails(Action<Category> addCallBack, Action<Category> removeCallBack);
     }
 }
