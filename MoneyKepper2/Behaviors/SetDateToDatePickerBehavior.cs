@@ -53,6 +53,9 @@ namespace MoneyKepper2.Behaviors
 
         private void SetDateToDatePickerBehavior_DateChanged(CalendarDatePicker sender, CalendarDatePickerDateChangedEventArgs args)
         {
+            if (((CalendarDatePicker)AssociatedObject).Date == null)
+                return;
+
             this.Date = ((CalendarDatePicker)AssociatedObject).Date;
         }
 

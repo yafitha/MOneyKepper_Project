@@ -52,11 +52,12 @@ namespace MoneyKepper_Core.ViewModel
         #region Commands
 
         public RelayCommand AddCategoryCommand { get; private set; }
-        public RelayCommand<Category> RemoveCommand { get; private set; }
+        public RelayCommand<CategoryModel> RemoveCommand { get; private set; }
 
-        public RelayCommand<Category> UpdateCategoryCommand { get; private set; }
+        public RelayCommand<CategoryModel> UpdateCategoryCommand { get; private set; }
         public Action<Category> AddCallBack { get; private set; }
         public Action<Category> RemoveCallBack { get; private set; }
+
 
         #endregion
 
@@ -74,30 +75,31 @@ namespace MoneyKepper_Core.ViewModel
         #region Commands Handlers
 
 
-        private async void OnRemoveCommand(Category category)
+        private async void OnRemoveCommand(CategoryModel categoryModel)
         {
+            var allBugets = BugetBL.GetBugetByCategory(categoryModel.Category);
             this.AllTransactions = this.DataService.GetAllTransactions().ToList();
-            var existedtransactions = AllTransactions.Where(t => t.Category.ID == category.ID).ToList();
-            if (existedtransactions != null && existedtransactions.Count > 0)
+            var existedtransactions = AllTransactions.Where(t => t.Category.ID == categoryModel.Category.ID).ToList();
+            if ((existedtransactions != null && existedtransactions.Count > 0) ||  (allBugets != null && allBugets.Count > 0))
             {
-                this.ShowConflictWithTransactionDialog(existedtransactions, category);
+                this.ShowConflictWithTransactionDialog(existedtransactions, allBugets,categoryModel);
                 return;
             }
 
             Action removeCallBack = () =>
                 {
-                    var deleteCategories = this.Categories.Where(cat => cat.ParentID == category.ID).ToList();
+                    var deleteCategories = this.Categories.Where(cat => cat.ParentID == categoryModel.Category.ID).ToList();
                     if (deleteCategories.Count() > 0)
                     {
                         CategoryBL.DeleteCategories(deleteCategories.Select(cat => cat.ID).ToList());
                     }
-                    this.DeleteCategory(category);
-                    this.Categories.Remove(category);
+                    this.DeleteCategory(categoryModel);
+                    this.Categories.Remove(categoryModel.Category);
                 };
 
             var dialogArgs2 = new Dictionary<string, object>()
                 {
-                    { "Title",  string.Format("מחיקת קטגוריה {0}",category.Name) },
+                    { "Title",  string.Format("מחיקת קטגוריה {0}",categoryModel.Name) },
                     { "Content", "האם אתה בטוח שברצונך למחוק את הקטגוריה ?" },
                      {"CallBack", removeCallBack }
                 };
@@ -105,26 +107,34 @@ namespace MoneyKepper_Core.ViewModel
             await this.DialogService.ShowDialog(DialogKeys.CONFIRM, dialogArgs2);
         }
 
-        private async void ShowConflictWithTransactionDialog(List<Transaction> existedtransactions, Category category)
+        private async void ShowConflictWithTransactionDialog(List<Transaction> existedtransactions,List<Buget> bugets, CategoryModel categoryModel)
         {
             Action removeCallBack = () =>
             {
-                existedtransactions.ForEach(t => TransactionBL.DeleteTransaction(t.ID));
-                if (category.ParentID == null)
-                {
-                    var deleteCategories = this.Categories.Where(cat => cat.ParentID == category.ID);
-                    if (deleteCategories.Count() > 0)
-                    {
-                        CategoryBL.DeleteCategories(deleteCategories.Select(cat => cat.ID).ToList());
-                    }
-                }
-                this.DeleteCategory(category);
-                this.Categories.Remove(category);
+                //if (existedtransactions != null)
+                //{
+                //    existedtransactions.ForEach(t => TransactionBL.DeleteTransaction(t.ID));
+                //}
+                //if(bugets != null)
+                //{
+                //    bugets.ForEach(b => BugetBL.DeleteBuget(b.ID));
+                //}
+                //if (categoryModel.Category.ParentID == null)
+                //{
+                //    var deleteCategories = this.Categories.Where(cat => cat.ParentID == categoryModel.Category.ID);
+                //    if (deleteCategories.Count() > 0)
+                //    {
+                //        CategoryBL.DeleteCategories(deleteCategories.Select(cat => cat.ID).ToList());
+                //    }
+                //}
+                this.DeleteCategory(categoryModel);
+                this.Categories.Remove(categoryModel.Category);
 
             };
+
             var dialogArgs = new Dictionary<string, object>()
                 {
-                    { "Title", "קונפליקט עם תנועות" },
+                    { "Title", "   קונפליקט עם תנועות" },
                     { "Content", "קיימים תנועות עם קטגוריה זו. האם למחוק את התנועות?" },
                     {"CallBack", removeCallBack }
                 };
@@ -133,39 +143,39 @@ namespace MoneyKepper_Core.ViewModel
 
         }
 
-        private void DeleteCategory(Category category)
+        private void DeleteCategory(CategoryModel categoryModel)
         {
             CategoryGroup group;
-            if (category.TypeID == (int)(Types.Income))
+            if (categoryModel.Category.TypeID == (int)(Types.Income))
             {
-                group = this.IncomesGroups.FirstOrDefault(g => g.Category.ID == category.ID);
+                group = this.IncomesGroups.FirstOrDefault(g => g.CategoryModel.Category.ID == categoryModel.Category.ID);
                 if (group != null)
                 {
                     this.IncomesGroups.Remove(group);
                 }
                 else
                 {
-                    group = this.IncomesGroups.FirstOrDefault(g => g.Category.ID == category.ParentID);
-                    group.Categories.Remove(category);
+                    group = this.IncomesGroups.FirstOrDefault(g => g.CategoryModel.Category.ID == categoryModel.Category.ParentID);
+                    group.Categories.Remove(categoryModel);
                 }
 
             }
             else
             {
-                group = this.ExpensesGroups.FirstOrDefault(g => g.Category.ID == category.ID);
+                group = this.ExpensesGroups.FirstOrDefault(g => g.CategoryModel.Category.ID == categoryModel.Category.ID);
                 if (group != null)
                 {
                     this.ExpensesGroups.Remove(group);
                 }
                 else
                 {
-                    group = this.ExpensesGroups.FirstOrDefault(g => g.Category.ID == category.ParentID);
-                    group.Categories.Remove(category);
+                    group = this.ExpensesGroups.FirstOrDefault(g => g.CategoryModel.Category.ID == categoryModel.Category.ParentID);
+                    group.Categories.Remove(categoryModel);
                 }
             }
 
-            CategoryBL.DeleteCategory(category.ID);
-            this.RemoveCallBack(category);
+            CategoryBL.DeleteCategory(categoryModel.Category.ID);
+            this.RemoveCallBack(categoryModel.Category);
         }
 
         private void OnAddCategoryCommand()
@@ -195,7 +205,10 @@ namespace MoneyKepper_Core.ViewModel
             CategoryGroup categoryGroup = new CategoryGroup();
             if (category.IsParent)
             {
-                categoryGroup.Category = category;
+                categoryGroup.CategoryModel = new CategoryModel();
+                categoryGroup.CategoryModel.Category = category;
+                categoryGroup.CategoryModel.Name = category.Name;
+                categoryGroup.CategoryModel.PictureName = category.PictureName;
                 groups.Add(categoryGroup);
                 var result2 = CategoryBL.CreateNewCategory(category);
                 if (result2.Item1)
@@ -204,20 +217,20 @@ namespace MoneyKepper_Core.ViewModel
                     return;
                 }
             }
-            var group = groups.FirstOrDefault(g => g.Category.ID == category.ParentID);
+            var group = groups.FirstOrDefault(g => g.CategoryModel.Category.ID == category.ParentID);
             if (group == null)
                 return;
 
             if (group.Categories == null)
             {
-                group.Categories = new ObservableCollection<Category>();
+                group.Categories = new ObservableCollection<CategoryModel>();
             }
-         
+
             var result = CategoryBL.CreateNewCategory(category);
             if (result.Item1)
             {
                 this.AddCallBack(result.Item2);
-                group.Categories.Add(result.Item2);
+                group.Categories.Add(new CategoryModel() { Category = result.Item2 ,Name = result.Item2.Name,PictureName = result.Item2.PictureName });
                 this.Categories.Add(result.Item2);
                 this.AddCallBack(category);
             }
@@ -229,8 +242,9 @@ namespace MoneyKepper_Core.ViewModel
         private void SetCommands()
         {
             this.AddCategoryCommand = new RelayCommand(OnAddCategoryCommand);
-            this.RemoveCommand = new RelayCommand<Category>(OnRemoveCommand);
-            this.UpdateCategoryCommand = new RelayCommand<Category>(OnUpdateCategoryCommand);
+            this.RemoveCommand = new RelayCommand<CategoryModel>(OnRemoveCommand);
+            this.UpdateCategoryCommand = new RelayCommand<CategoryModel>(OnUpdateCategoryCommand);
+          //  this.UpdateGroupCategoryCommand = new RelayCommand<Category>(OnUpdateGroupCategoryCommand);
         }
 
         private void SetGroups()
@@ -244,9 +258,10 @@ namespace MoneyKepper_Core.ViewModel
                     continue;
 
                 CategoryGroup categoryGroup = new CategoryGroup();
-                categoryGroup.Category = category;
+                categoryGroup.CategoryModel = new CategoryModel() { Category = category , Name = category.Name , PictureName = category.PictureName };
                 var childCategory = Categories.Where(cat => cat.IsParent == false && cat.ParentID == category.ID).ToList();
-                categoryGroup.Categories = new ObservableCollection<Category>(childCategory);
+                categoryGroup.Categories = 
+                    new ObservableCollection<CategoryModel>(childCategory.Select(c => new CategoryModel() { Category = c, PictureName = c.PictureName, Name = c.Name }));
 
                 if (category.TypeID == (int)Types.Income)
                 {
@@ -259,26 +274,60 @@ namespace MoneyKepper_Core.ViewModel
             }
         }
 
-        private void OnUpdateCategoryCommand(Category category)
+        private void OnUpdateCategoryCommand(CategoryModel categoryModel)
         {
-            this.UpdateCategory(category);
+            this.UpdateCategory(categoryModel, false);
         }
 
-        private void UpdateCategory(Category category)
+        //private void OnUpdateGroupCategoryCommand(Category category)
+        //{
+        //    this.UpdateCategory(category, true);
+        //}
+
+        private void UpdateCategory(CategoryModel categoryModel, bool isGroup)
         {
-            Action<Category> callback = c =>
+            Action<Category> callback = cat =>
             {
-                CategoryBL.UpdateCategory(c);
+                CategoryBL.UpdateCategory(cat);
+                categoryModel.Name = cat.Name;
+                categoryModel.PictureName = cat.PictureName;
+                //if (cat.TypeID == (int)Types.Income)
+                //{
+                //    this.ChangeUpdatedCategory(this.IncomesGroups,cat, isGroup);
+                //}
+                //else
+                //{
+                //    this.ChangeUpdatedCategory(this.ExpensesGroups, cat, isGroup);
+                //}
             };
             var dialogArgs = new Dictionary<string, object>()
                 {
                     { "Callback", callback },
-                    {"Category",category }
+                    {"Category",categoryModel.Category }
 
                 };
             this.DialogService.ShowDialog(DialogKeys.ADD_CATEGORY, dialogArgs);
         }
 
+        //private void ChangeUpdatedCategory(ObservableCollection<CategoryGroup> groups, Category category, bool isGroup)
+        //{
+        //    if (isGroup)
+        //    {
+        //        var group = groups.FirstOrDefault(g => g.Category.ID == category.ID);
+        //        group.Category = category;
+        //    }
+        //    else
+        //    {
+        //        foreach (var group in groups)
+        //        {
+        //            var updatedCategory = group.Categories.FirstOrDefault(c => c.ID == category.ID);
+        //            if (updatedCategory != null)
+        //            {
+        //                updatedCategory = category;
+        //            }
+        //        }
+        //    }
+        //}
 
         #endregion
 

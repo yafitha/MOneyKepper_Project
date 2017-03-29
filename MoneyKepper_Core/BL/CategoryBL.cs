@@ -96,7 +96,7 @@ namespace MoneyKepper_Core.BL
                 using (var client = new HttpClient())
                 {
                     Run(client);
-                    HttpResponseMessage response = await client.PostAsJsonAsync("UpdateCategory", category);
+                    HttpResponseMessage response = await client.PutAsJsonAsync("UpdateCategory", category);
                     string httpResponseBody = "";
                     if (response.IsSuccessStatusCode)
                     {

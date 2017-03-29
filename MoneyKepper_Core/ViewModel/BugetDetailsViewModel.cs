@@ -155,6 +155,7 @@ namespace MoneyKepper_Core.ViewModel
                     }
                     this.RemoveCallBack(bugetItem);
                     this.CategoryTransactions = null;
+                    this.Categories.Add(bugetItem.Category);
                 }
             };
 
@@ -171,7 +172,7 @@ namespace MoneyKepper_Core.ViewModel
         private void SetIncomeItemsAndExpensesItems()
         {
             this.CategoryTransactions = null;
-            this.Categories = CategoryBL.GetAllCategories();
+
             var firstDayOfMonth = new DateTime(this.CurrentMonth.Year, CurrentMonth.Month, 1);
             var lastDayOfMonth = firstDayOfMonth.AddMonths(1).AddDays(-1);
             var allTransactions = this.DataService.GetTransactionsByDateAndType(firstDayOfMonth, lastDayOfMonth, (int)Types.Expenses).Select(tran => new TransactionItem(tran, tran.Category)).OrderBy(t => t.Transaction.Date).ToList();
@@ -180,6 +181,9 @@ namespace MoneyKepper_Core.ViewModel
             var incomeBuget = BugetBL.GetBugetByDatesAndType(firstDayOfMonth, lastDayOfMonth, (int)Types.Income).ToList();
             this.IncomeItems = new ObservableCollection<BugetItem>(this.GetBugetItems(incomeBuget));
             this.ExpensesItems = new ObservableCollection<BugetItem>(this.GetBugetItems(expensesBuget));
+            var existsCategories = this.IncomeItems.Select(b => b.Category).ToList();
+            existsCategories.AddRange(this.ExpensesItems.Select(b => b.Category).ToList());
+            this.Categories = CategoryBL.GetAllCategories().Except(existsCategories).ToList();
         }
 
         public List<BugetItem> GetBugetItems(List<Buget> bugets)

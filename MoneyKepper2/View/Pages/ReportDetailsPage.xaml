@@ -162,7 +162,7 @@
         </Style>
 
         <Style x:Name="BackgroundBorderStyle" TargetType="Border">
-            <Setter Property="Background" Value="LightBlue" />
+            <Setter Property="Background" Value="LightGray" />
             <Setter Property="Margin" Value="0,0,3,0" />
         </Style>
 

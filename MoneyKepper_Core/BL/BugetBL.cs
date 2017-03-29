@@ -19,6 +19,28 @@ namespace MoneyKepper_Core.BL
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
+        public static List<Buget> GetBugetByCategory(Category category)
+        {
+            List<Buget> bugets = new List<Buget>();
+            Task task = Task.Run(async () =>
+            {
+                using (var client = new HttpClient())
+                {
+                    Run(client);
+                    HttpResponseMessage response = await client.PostAsJsonAsync("GetBugetByDateAndCategory", category);
+                    string httpResponseBody = "";
+                    if (response.IsSuccessStatusCode)
+                    {
+                        httpResponseBody = await response.Content.ReadAsStringAsync();
+                        bugets = JsonConvert.DeserializeObject<List<Buget>>(httpResponseBody);
+                    }
+                    return bugets;
+                }
+            });
+            task.Wait(); // Wait
+            return bugets;
+        }
+
 
 
         public static IList<Buget> GetBugetByDatesAndType(DateTime startDateTime, DateTime endDateTime, int? typeID)

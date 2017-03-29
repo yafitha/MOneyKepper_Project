@@ -31,10 +31,40 @@ namespace UnitTest.UnitTests
 
             controller.RequestContext.RouteData = new HttpRouteData(
                 route: new HttpRoute(),
-                values: new HttpRouteValueDictionary {{ "controller", "Category" }});
+                values: new HttpRouteValueDictionary { { "controller", "Category" } });
 
             // Act
-            var response = controller.GetAllCategories();
+          //  return controller.GetAllCategories();
+
+            // Assert
+        }
+
+        [TestMethod]
+        public void UpdateCategory(Category category)
+        {
+            // Arrange
+            var controller = new CategoryController();
+            controller.Request = new HttpRequestMessage
+            {
+                RequestUri = new Uri("http://localhost:63840/api/Category/")
+            };
+            AutoMapperConfiguration.Configure();
+            controller.Configuration = new HttpConfiguration();
+            controller.Configuration.Routes.MapHttpRoute(
+                name: "DefaultApi",
+                routeTemplate: "api/{controller}/{id}",
+                defaults: new { id = RouteParameter.Optional });
+
+            controller.RequestContext.RouteData = new HttpRouteData(
+                route: new HttpRoute(),
+                values: new HttpRouteValueDictionary { { "controller", "Category" } });
+
+            // Act
+            //var categories = controller.GetAllCategories();
+            //var cat = categories[0];
+            //cat.PictureName = "6";
+            //cat.Name = "yafit";
+            var response = controller.UpdateCategory(new Models.Category()) ;
 
             // Assert
         }

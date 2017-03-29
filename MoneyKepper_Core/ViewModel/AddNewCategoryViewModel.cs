@@ -44,6 +44,13 @@ namespace MoneyKepper_Core.ViewModel
             set { this.Set(ref _title, value); }
         }
 
+        private string _validationMessage;
+        public string ValidationMessage
+        {
+            get { return _validationMessage; }
+            set { this.Set(ref _validationMessage, value); }
+        }
+
         private ObservableCollection<Category> _categories;
         public ObservableCollection<Category> Categories
         {
@@ -119,6 +126,7 @@ namespace MoneyKepper_Core.ViewModel
 
         private void InitProperties()
         {
+            this.ValidationMessage = "";
             if (this.Category == null)
             {
                 this.Name = string.Empty;
@@ -150,8 +158,27 @@ namespace MoneyKepper_Core.ViewModel
 
         private void OnSaveCommand()
         {
-            var type = this.IsIncome == true ? 1 : 2;
-            this.CallBack(new Category(this.Name, type, this.SelectedImage.Path, !this.IsSubCategoryChecked, this.SelectedCategory?.ID));
+            if(this.Name == string.Empty)
+            {
+                this.ValidationMessage = "יש להכניס שם קטגוריה";
+                return;
+            }
+            if(this.SelectedImage == null)
+            {
+                this.ValidationMessage = "יש לבחור תמונה";
+                return;
+            }
+
+            if (this.Category == null)
+            {
+                var type = this.IsIncome == true ? 1 : 2;
+                this.CallBack(new Category(this.Name, type, this.SelectedImage.Path, !this.IsSubCategoryChecked, this.SelectedCategory?.ID));
+                this.Hide();
+                return;
+            }
+            this.Category.Name = this.Name;
+            this.Category.PictureName = this.SelectedImage.Path;
+            this.CallBack(this.Category);
             this.Hide();
         }
 

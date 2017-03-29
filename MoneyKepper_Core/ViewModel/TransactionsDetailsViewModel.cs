@@ -110,22 +110,21 @@ namespace MoneyKepper_Core.ViewModel
 
             Action removeCallBack = () =>
             {
-                if (transactionItem.Category.TypeID == (int)Types.Expenses)
+
+                var result = TransactionBL.DeleteTransaction(transactionItem.Transaction.ID);
+                if (result)
                 {
-                    var result = TransactionBL.DeleteTransaction(transactionItem.Transaction.ID);
-                    if (result)
+                    if (transactionItem.Category.TypeID == (int)Types.Income)
                     {
-                        if (transactionItem.Category.TypeID == (int)Types.Income)
-                        {
-                            this.IncomeItems.Remove(transactionItem);
-                        }
-                        else
-                        {
-                            this.ExpensesItems.Remove(transactionItem);
-                        }
-                        this.RemoveCallBack(transactionItem);
+                        this.IncomeItems.Remove(transactionItem);
                     }
+                    else
+                    {
+                        this.ExpensesItems.Remove(transactionItem);
+                    }
+                    this.RemoveCallBack(transactionItem);
                 }
+
             };
 
             var dialogArgs = new Dictionary<string, object>()

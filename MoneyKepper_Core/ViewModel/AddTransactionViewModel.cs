@@ -75,6 +75,13 @@ namespace MoneyKepper_Core.ViewModel
             set { this.Set(ref _validationMessage, value); }
         }
 
+        private string _validationCategoryMessage;
+        public string ValidationCategoryMessage
+        {
+            get { return _validationCategoryMessage; }
+            set { this.Set(ref _validationCategoryMessage, value); }
+        }
+
         private string _note;
         public string Note
         {
@@ -202,6 +209,16 @@ namespace MoneyKepper_Core.ViewModel
 
         private void OnSaveCategoryCommand()
         {
+            if (this.Name == string.Empty)
+            {
+                this.ValidationCategoryMessage = "יש להכניס שם קטגוריה";
+                return;
+            }
+            if (this.SelectedImage == null)
+            {
+                this.ValidationCategoryMessage = "יש לבחור תמונה";
+                return;
+            }
             var type = this.IsIncome == true ? 1 : 2;
             var category = new Category(this.Name, type, this.SelectedImage.Path, !this.IsSubCategoryChecked, this.SelectedSubCategory?.ID);
             CategoryBL.CreateNewCategory(category);
@@ -261,6 +278,8 @@ namespace MoneyKepper_Core.ViewModel
             this.StartDate = startTime;
             this.EndDate = startTime.AddMonths(1).AddDays(-1);
             this.ValidationMessage = "";
+            this.ValidationCategoryMessage = "";
+            this.Name = "";
         }
 
         #endregion

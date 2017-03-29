@@ -40,7 +40,7 @@
             <Button
             Foreground="White"
             Background="{StaticResource AccentColorBrush}"
-            Content="שמור"
+            Content="אישור"
             Margin="0,0,20,0"
             Width="90"
              Command="{Binding OkCommand}"/>

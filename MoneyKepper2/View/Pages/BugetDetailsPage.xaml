@@ -262,7 +262,7 @@
             </ListView>
               
        <ListView
-        Margin="15,0,0,0"
+        Margin="15,-5,0,0"
         HorizontalAlignment="Stretch"
         Grid.Row="2"
         Grid.Column="1"
