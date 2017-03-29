@@ -86,12 +86,20 @@ namespace MoneyKepperServer.Controllers
                     context.Dispose();
                     return Request.CreateResponse(HttpStatusCode.NotFound);
                 }
-                context.Categories.Remove(category);
+                context.Transactions.RemoveRange(context.Transactions.Where(t => t.Category.ID == categoryID));
+                context.Bugets.RemoveRange(context.Bugets.Where(t => t.Category.ID == categoryID));
                 var categories = context.Categories.Where(c => c.ParentID == categoryID);
                 foreach (var cat in categories)
                 {
                     context.Categories.Remove(category);
+                    context.Transactions.RemoveRange(context.Transactions.Where(t => t.Category.ID == cat.ID));
+                    context.Bugets.RemoveRange(context.Bugets.Where(t => t.Category.ID == cat.ID));
                 }
+                if (categories != null)
+                {
+                    context.Categories.RemoveRange(categories);
+                }
+                context.Categories.Remove(category);
                 context.SaveChanges();
                 return Request.CreateResponse(HttpStatusCode.OK);
             }
@@ -111,6 +119,14 @@ namespace MoneyKepperServer.Controllers
                         context.Dispose();
                         return Request.CreateResponse(HttpStatusCode.NotFound);
                     }
+                    if (category.IsParent)
+                    {
+                        var deletedCategories = context.Categories.Where(c => c.ParentID == id);
+                        if (deletedCategories != null)
+                        {
+                            context.Categories.RemoveRange(deletedCategories);
+                        }
+                    }
                     context.Categories.Remove(category);
                     context.SaveChanges();
                 }
@@ -119,20 +135,22 @@ namespace MoneyKepperServer.Controllers
         }
 
 
-        [System.Web.Http.HttpPost]
+        [System.Web.Http.HttpPut]
         [Route("api/Category/UpdateCategory")]
         public HttpResponseMessage UpdateCategory([FromBody]Models.Category category)
         {
             using (money4 context = new money4())
             {
                 var cat = Mapper.Map<Category>(category);
-                var selectCategory = context.Categories.FirstOrDefault(c => c.ID == cat.ID);
+                var selectCategory = context.Categories.Find(cat.ID);
                 if (selectCategory == null)
                 {
                     context.Dispose();
                     return Request.CreateResponse(HttpStatusCode.BadRequest);
                 }
-                selectCategory = cat;
+                //selectCategory.Name = category.Name;
+                //selectCategory.PictureName = cat.PictureName;
+                context.Entry(selectCategory).CurrentValues.SetValues(cat);
                 context.SaveChanges();
                 return Request.CreateResponse(HttpStatusCode.OK);
             }

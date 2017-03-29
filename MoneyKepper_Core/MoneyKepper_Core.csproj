@@ -119,6 +119,7 @@
     <Compile Include="Factories\IDialogServiceFactory.cs" />
     <Compile Include="Managers\ICacheManager.cs" />
     <Compile Include="Models\BugetItem.cs" />
+    <Compile Include="Models\CategoryModel.cs" />
     <Compile Include="Models\DialogKeys.cs" />
     <Compile Include="Models\CategoryItem.cs" />
     <Compile Include="Models\Groups\CategoryGroup.cs" />

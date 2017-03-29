@@ -42,6 +42,17 @@ namespace MoneyKepperServer.Controllers
             }
         }
 
+        [System.Web.Http.HttpPost]
+        [Route("api/Buget/GetBugetByDateAndCategory")]
+        public List<Models.Buget> GetBugetByCategory([FromBody] Category category)
+        {
+           
+            using (money4 context = new money4())
+            {
+                var bugets = context.Bugets.Where(t =>t.Category.ID == category.ID);
+                return Mapper.Map<List<Models.Buget>>(bugets);
+            }
+        }
 
         [HttpPost]
         [Route("api/Buget/CreateNewBuget")]

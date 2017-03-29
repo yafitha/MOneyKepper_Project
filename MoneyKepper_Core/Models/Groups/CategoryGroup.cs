@@ -1,4 +1,5 @@
-﻿using Models;
+﻿using GalaSoft.MvvmLight;
+using Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -8,19 +9,19 @@ using System.Threading.Tasks;
 
 namespace MoneyKepper_Core.Models.Groups
 {
-    public class CategoryGroup
+    public class CategoryGroup : ObservableObject
     {
         #region Members
 
-        private Category _category;
-        public Category Category
+        private CategoryModel _CategoryModel;
+        public CategoryModel CategoryModel
         {
-            get { return _category; }
-            set { _category = value; }
+            get { return _CategoryModel; }
+            set { this.Set(ref _CategoryModel,value); }
         }
 
-        private ObservableCollection<Category> _categories;
-        public ObservableCollection<Category> Categories
+        private ObservableCollection<CategoryModel> _categories;
+        public ObservableCollection<CategoryModel> Categories
         {
             get { return _categories; }
             set { _categories = value; }
@@ -36,7 +37,7 @@ namespace MoneyKepper_Core.Models.Groups
 
         public CategoryGroup()
         {
-            this.Categories = new ObservableCollection<Category>();
+            this.Categories = new ObservableCollection<CategoryModel>();
         }
 
         #endregion

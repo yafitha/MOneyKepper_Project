@@ -1,0 +1,277 @@
+﻿<local:PageBase
+    x:Class="MoneyKepper2.View.Pages.BugetDetailsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MoneyKepper2.View.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:Interactivity ="using:Microsoft.Xaml.Interactivity"
+    mc:Ignorable="d"
+    d:DesignWidth="900"
+    FlowDirection="RightToLeft"
+    DataContext="{Binding BugetDetailsViewModel,Source={StaticResource Locator}}">
+
+    <local:PageBase.Resources>
+        <DataTemplate x:Key="TranscationItemTemplate">
+            <Grid FlowDirection="RightToLeft">
+                <Image
+                    Margin="8,0,0,0"
+                   HorizontalAlignment="Left"
+                    Width="35"
+                    Height="35"
+                    VerticalAlignment="Center"
+                    Source="{Binding Category.PictureName, Converter={StaticResource PictureNameToPictureSourceConverter}}"/>
+                <StackPanel Padding="12,0" Margin="45,0,0,0">
+                    <Grid>
+                        <StackPanel Orientation="Horizontal">
+
+                          <TextBlock
+                            FontWeight="SemiBold"
+                            FontSize="22"
+                            Margin="6,0"
+                            VerticalAlignment="Center"
+                            Text="{Binding Category.Name}"/>
+
+                          <TextBlock
+                            FontWeight="SemiBold"
+                            VerticalAlignment="Center"
+                            FontSize="18">
+                        <Run  Text="{Binding Transaction.Amount}"/>
+                        <Run Text=" שקלים"/>
+                            </TextBlock>
+                        </StackPanel>
+                       
+                    </Grid>
+                    <StackPanel Orientation="Horizontal" >
+                        <TextBlock
+                        Margin="6,0,5,0"
+                        FontSize="18"
+                        Text="{Binding Transaction.Date,Converter={StaticResource DateConverter},ConverterParameter=d}"/>
+
+                        <TextBlock
+                            VerticalAlignment="Center"
+                            FontSize="16"
+                            Text="{Binding Transaction.Note}"/>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+    </local:PageBase.Resources>
+    <Grid Padding="12,0"  Background="#FFF3F3F3">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="250"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+
+      
+        <StackPanel>
+        <TextBlock
+            Margin="5,0,0,0"
+            FontSize="25"
+            FontWeight="Bold"
+            Grid.ColumnSpan="2"
+            Text="{Binding Title}"/>
+            <HyperlinkButton
+                    Command="{Binding AddBugetCommand}">
+                <TextBlock
+                    Margin="6,5,0,0"
+                    VerticalAlignment="Center"
+                     FontSize="22" >
+                        <Run FontWeight="Bold" Text="+"/>
+                        <Run Text="הוסף"/>
+                </TextBlock>
+            </HyperlinkButton>
+        </StackPanel>
+        <ListView
+            HorizontalAlignment="Stretch"
+            Grid.Row="1"
+            SelectionMode="None"
+            FontSize="20"
+            Header="הכנסות"
+            ItemContainerStyle="{StaticResource DetailsListViewItemStyle}"
+            ItemsSource="{Binding IncomeItems}"
+            Height="200">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid FlowDirection="RightToLeft">
+                        <StackPanel Padding="12,0" Orientation="Horizontal">
+                            <Image
+                            Margin="8,0"
+                            HorizontalAlignment="Left"
+                            Width="35"
+                            Height="35"
+                            VerticalAlignment="Center"
+                            Source="{Binding Category.PictureName, Converter={StaticResource PictureNameToPictureSourceConverter}}"/>
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock
+                                        FontWeight="SemiBold"
+                                        FontSize="22"
+                                        Margin="6,0"
+                                        VerticalAlignment="Center"
+                                        Text="{Binding Category.Name}"/>
+                                <TextBlock
+                                        VerticalAlignment="Center"
+                                        FontSize="16"
+                                        Text="{Binding Category.Note}"/>
+                                <TextBlock
+                                        FontWeight="SemiBold"
+                                        VerticalAlignment="Center"
+                                        FontSize="18">
+                                        <Run  Text="{Binding Buget.Amount}"/>
+                                        <Run Text=" שקלים"/>
+                                </TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                            <HyperlinkButton
+                                Visibility="Visible"
+                                Command="{Binding BugetDetailsViewModel.UpdateBugetCommand ,Source={StaticResource Locator}}"
+                                CommandParameter="{Binding}">
+                                <TextBlock
+                                    FontSize="20"
+                                    Style="{StaticResource MDL2AssetsTextBlockStyle}"
+                                   Text=" &#xE1c2;"/>
+                            </HyperlinkButton>
+                            <HyperlinkButton
+                                Visibility="Visible"
+                                Command="{Binding BugetDetailsViewModel.RemoveBugetCommand ,Source={StaticResource Locator}}"
+                                CommandParameter="{Binding}"
+                                HorizontalAlignment="Right">
+                                <TextBlock
+                                     FontSize="20"
+                                Style="{StaticResource MDL2AssetsTextBlockStyle}"
+                                Text=" &#xE711;"/>
+                            </HyperlinkButton>
+                        </StackPanel>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+        <ListView
+           Grid.Row="2"
+           SelectionMode="None"
+            Height="500"
+            ItemContainerStyle="{StaticResource DetailsListViewItemStyle}"
+            FontSize="20"
+            Header="הוצאות"
+            HorizontalAlignment="Stretch"
+            ItemsSource="{Binding ExpensesItems}">
+            <ListView.ItemTemplate>
+                    <DataTemplate>
+                    <Grid FlowDirection="RightToLeft">
+                      <Image
+                        Margin="8,0,0,0"
+                       HorizontalAlignment="Left"
+                        Width="35"
+                        Height="35"
+                        VerticalAlignment="Center"
+                        Source="{Binding Category.PictureName, Converter={StaticResource PictureNameToPictureSourceConverter}}"/>
+                        <StackPanel Padding="12,0" Margin="45,0,0,0">
+                            <Grid>
+                         <StackPanel Orientation="Horizontal">
+
+                         <TextBlock
+                            FontWeight="SemiBold"
+                            FontSize="22"
+                            Margin="6,0"
+                            VerticalAlignment="Center"
+                            Text="{Binding Category.Name}"/>
+                        <TextBlock
+                            VerticalAlignment="Center"
+                             FontSize="16"
+                             Text="{Binding Category.Note}"/>
+
+                         <TextBlock
+                            FontWeight="SemiBold"
+                            VerticalAlignment="Center"
+                            FontSize="18">
+                                <Run  Text="{Binding Buget.Amount}"/>
+                                <Run Text=" שקלים"/>
+                         </TextBlock>
+                                </StackPanel>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                 <HyperlinkButton
+                                    FontSize="16"
+                                    Margin="0,0,6,0"
+				                    Content="פירוט"
+                                    Command="{Binding BugetDetailsViewModel.ShowBugetCommand ,Source={StaticResource Locator}}"
+                                    CommandParameter="{Binding}">
+                                    </HyperlinkButton>
+                                  <HyperlinkButton
+                                    Visibility="Visible"
+                                    Command="{Binding BugetDetailsViewModel.UpdateBugetCommand ,Source={StaticResource Locator}}"
+                                    CommandParameter="{Binding}">
+                               <TextBlock
+                                    FontSize="20"
+                                    Style="{StaticResource MDL2AssetsTextBlockStyle}"
+                                    Text=" &#xE1c2;"/>
+                              </HyperlinkButton>
+                             <HyperlinkButton
+                                Visibility="Visible"
+                                Command="{Binding BugetDetailsViewModel.RemoveBugetCommand ,Source={StaticResource Locator}}"
+                                CommandParameter="{Binding}"
+                                HorizontalAlignment="Right">
+                              <TextBlock
+                                FontSize="20"
+                                Style="{StaticResource MDL2AssetsTextBlockStyle}"
+                                Text=" &#xE711;"/>
+                             </HyperlinkButton>
+                                </StackPanel>
+                            </Grid>
+                            <StackPanel Orientation="Horizontal">
+                              <TextBlock
+                               Margin="6,0"
+                                FontWeight="SemiBold"
+                                VerticalAlignment="Center"
+                                FontSize="18">
+                                <Run Text="שימוש"/>
+                                <Run  Text="{Binding UseMoney}"/>
+                              </TextBlock>
+                              <TextBlock
+                                Margin="40,0,0,0"
+                                HorizontalAlignment="Center"
+                                FontWeight="SemiBold"
+                                VerticalAlignment="Center"
+                                FontSize="18">
+                                <Run Text=" נותר"/>
+                                <Run  Text="{Binding LeftMoney}"     
+                                      FlowDirection="LeftToRight"/>
+                                        <Interactivity:Interaction.Behaviors>
+                                <core:DataTriggerBehavior Binding="{Binding LeftMoney}" Value="0" ComparisonCondition="LessThan">
+                                    <core:ChangePropertyAction PropertyName="Foreground" Value="Red"/>
+                                </core:DataTriggerBehavior>
+
+                                <core:DataTriggerBehavior Binding="{Binding LeftMoney}" Value="0" ComparisonCondition="GreaterThanOrEqual">
+                                    <core:ChangePropertyAction PropertyName="Foreground" Value="Black"/>
+                                </core:DataTriggerBehavior>
+                            </Interactivity:Interaction.Behaviors>
+                                </TextBlock>
+                            </StackPanel>
+                        </StackPanel>
+                    </Grid>
+                </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+              
+       <ListView
+        Margin="15,-5,0,0"
+        HorizontalAlignment="Stretch"
+        Grid.Row="2"
+        Grid.Column="1"
+        Height="400"
+        FontSize="20"
+        Header="{Binding TransactionsTitle}"
+        ItemTemplate="{StaticResource TranscationItemTemplate}"
+        ItemContainerStyle="{StaticResource DetailsListViewItemStyle}"
+        ItemsSource="{Binding CategoryTransactions}"/>
+    </Grid>
+</local:PageBase>
+

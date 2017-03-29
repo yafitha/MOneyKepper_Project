@@ -10,6 +10,7 @@
     <RootPropertyPathName Name="AddNewCategoryViewModel" />
     <RootPropertyPathName Name="CloseCommand" />
     <RootPropertyPathName Name="SaveCommand" />
+    <RootPropertyPathName Name="ValidationMessage" />
     <RootPropertyPathName Name="SelectedImage" />
     <RootPropertyPathName Name="Images" />
     <RootPropertyPathName Name="Path" />
@@ -26,9 +27,9 @@
     <RootPropertyPathName Name="AddNewCategory" />
     <RootPropertyPathName Name="CloseCategoryCommand" />
     <RootPropertyPathName Name="SaveCategoryCommand" />
+    <RootPropertyPathName Name="ValidationCategoryMessage" />
     <RootPropertyPathName Name="SelectedSubCategory" />
     <RootPropertyPathName Name="CategoriesToCreateSubCategory" />
-    <RootPropertyPathName Name="ValidationMessage" />
     <RootPropertyPathName Name="Note" />
     <RootPropertyPathName Name="Amount" />
     <RootPropertyPathName Name="EndDate" />
@@ -63,10 +64,11 @@
     <RootPropertyPathName Name="Income" />
     <RootPropertyPathName Name="AllMonths" />
     <RootPropertyPathName Name="CategoryDetailViewModel" />
+    <RootPropertyPathName Name="RemoveCommand" />
+    <RootPropertyPathName Name="CategoryModel" />
+    <RootPropertyPathName Name="UpdateCategoryCommand" />
     <RootPropertyPathName Name="ExpensesGroups" />
     <RootPropertyPathName Name="IncomesGroups" />
-    <RootPropertyPathName Name="RemoveCommand" />
-    <RootPropertyPathName Name="UpdateCategoryCommand" />
     <RootPropertyPathName Name="CategoryViewModel" />
     <RootPropertyPathName Name="ExpensesCategoriesCount" />
     <RootPropertyPathName Name="IncomesCategoriesCount" />
@@ -176,13 +178,13 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="FontFamily" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Text" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="FontWeight" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Text" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Width" />
-      <RootProperty Name="Foreground" />
       <RootProperty Name="Style" />
       <RootProperty Name="Inlines" />
       <RootProperty Name="TextWrapping" />
@@ -620,8 +622,8 @@
       <RootProperty Name="Source" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.GroupStyle">
-      <RootProperty Name="HeaderContainerStyle" />
       <RootProperty Name="HeaderTemplate" />
+      <RootProperty Name="HeaderContainerStyle" />
     </RootType>
     <RootType FullName="MoneyKepper2.View.Pages.CategoryDetailPage" />
     <RootType FullName="MoneyKepper2.View.Pages.CategoryPage" />
