@@ -95,9 +95,14 @@ namespace MoneyKepper_Core.ViewModel
                 this.AddCallBack(transactionItem);
             };
 
+            Action<Category> AddNewCategoryCallback = cat =>
+            {
+                this.Categories.Add(cat);
+            };
             var dialogArgs = new Dictionary<string, object>()
                 {
                     { "Callback", AddNewTransactionCallback },
+                    {"AddNewCategoryCallback",AddNewCategoryCallback },
                    {"CurrentMonth", this.CurrentMonth },
                     {"Categories", this.Categories.Where(cat=>cat.TypeID == (int)type).ToList()},
                     {"TransactionType",transactionType }
@@ -138,7 +143,7 @@ namespace MoneyKepper_Core.ViewModel
 
         private void SetIncomeItemsAndExpensesItems()
         {
-            this.Categories = this.DataService.GetAllCategories();
+            this.Categories = new List<Category>(this.DataService.GetAllCategories());
             var allTransactions = this.DataService.GetTransactionsByDate(CurrentMonth);
             var expensesTransactions = allTransactions.Where(t => t.Category.TypeID == (int)Types.Expenses);
             var incomeTransactions = allTransactions.Where(t => t.Category.TypeID == (int)Types.Income);

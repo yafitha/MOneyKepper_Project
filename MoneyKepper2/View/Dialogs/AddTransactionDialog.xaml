@@ -66,19 +66,15 @@
                 <TextBlock
                    Style="{StaticResource InfoTextBlockStyle}"
                     Text="קטגוריה:"/>
-                <ComboBox
+                  <ComboBox
+                    ItemTemplate="{StaticResource ComoBoxCategoryDateTemplate}"
                     VerticalAlignment="Center"
                     Width="200"
                     SelectedItem="{Binding SelectedCategory, Mode=TwoWay}"
-                    ItemsSource="{Binding Categories}">
-                    <ComboBox.ItemTemplate>
-                        <DataTemplate>
-                            <TextBlock 
-                               Text="{Binding Name}"/>
-                        </DataTemplate>
-                    </ComboBox.ItemTemplate>
-                </ComboBox>
-                <HyperlinkButton
+                    ItemsSource="{Binding Categories}"/>
+
+
+                    <HyperlinkButton
                     x:Name="AddNewCategoryButton"
                     Command="{Binding AddCategoryCommand}">
                   <TextBlock
@@ -132,6 +128,7 @@
                    VerticalAlignment="Center"
                    Text="הערה:"/>
                 <TextBox
+                   MaxLength="120"
                    Width="200"
                     Height="50"
                     TextWrapping="Wrap"
@@ -224,7 +221,7 @@
                     Orientation="Horizontal">
                   <RadioButton
                     IsEnabled="{Binding IsAddCategory}"
-                    IsChecked="{Binding IsIncome}"
+                    IsChecked="{Binding IsIncome,Mode=TwoWay}"
                     Command="{Binding CategoryTypeSelectionCommand}"
                     CommandParameter="1"
                     GroupName="Type"
@@ -232,7 +229,7 @@
                     Content="הכנסות"/>
                  <RadioButton 
                     IsEnabled="{Binding IsAddCategory}"
-                    IsChecked="{Binding IsIncome, Converter={StaticResource InvertBooleanConverter }}"
+                    IsChecked="{Binding IsIncome,Mode=TwoWay, Converter={StaticResource InvertBooleanConverter }}"
                     Command="{Binding CategoryTypeSelectionCommand}"
                     CommandParameter="2"
                     GroupName="Type"

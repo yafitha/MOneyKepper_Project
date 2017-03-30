@@ -21,7 +21,7 @@ namespace MoneyKepper_Core.ViewModel
         #region Members
         private IDialogService DialogService { get; set; }
         private IDataService DataService { get; set; }
-        private IList<Category> Categories { get; set; }
+        private List<Category> Categories { get; set; }
 
         #endregion
 
@@ -34,9 +34,34 @@ namespace MoneyKepper_Core.ViewModel
             set { this.Set(ref _currentMonth, value); }
         }
 
+        private bool _isShowTransactions;
+        public bool IsShowTransactions
+        {
+            get { return _isShowTransactions; }
+            set { this.Set(ref _isShowTransactions, value); }
+        }
 
-        public ObservableCollection<BugetItem> IncomeItems { get; set; }
-        public ObservableCollection<BugetItem> ExpensesItems { get; set; }
+        private ObservableCollection<BugetItem> _incomeItems;
+        public ObservableCollection<BugetItem> IncomeItems
+        {
+            get { return _incomeItems; }
+            set
+            {
+                this.Set(ref _incomeItems, value);
+                SetCategories();
+            }
+        }
+
+        private ObservableCollection<BugetItem> _expensesItems;
+        public ObservableCollection<BugetItem> ExpensesItems
+        {
+            get { return _expensesItems; }
+            set
+            {
+                this.Set(ref _expensesItems, value);
+                SetCategories();
+            }
+        }
 
         public ObservableCollection<TransactionItem> AllTransactionsItems { get; set; }
 
@@ -69,6 +94,7 @@ namespace MoneyKepper_Core.ViewModel
         public Action<BugetItem> AddCallBack { get; private set; }
         public Action<BugetItem> RemoveCallBack { get; private set; }
         public RelayCommand AddBugetCommand { get; private set; }
+        public Action<Tuple<BugetItem, double>> UpdateCallBack { get; private set; }
 
         #endregion
 
@@ -109,6 +135,11 @@ namespace MoneyKepper_Core.ViewModel
                     {
                         this.IncomeItems.Add(bugetItem);
                     }
+                    var cat = this.Categories.FirstOrDefault(c => c.ID == bugetItem.Category.ID);
+                    if (cat != null)
+                    {
+                        this.Categories.Remove(cat);
+                    }
                 }
 
                 this.AddCallBack(bugetItem);
@@ -125,7 +156,24 @@ namespace MoneyKepper_Core.ViewModel
 
         private void OnUpdateBugetCommand(BugetItem item)
         {
-            // this.DialogService.ShowDialog(DialogKeys.ADD_BUGET, dialogArgs);
+            Action<BugetItem> callback = bugetItem =>
+            {
+                BugetBL.UpdateBuget(bugetItem.Buget);
+                this.UpdateCallBack(new Tuple<BugetItem, double>(bugetItem, item.Amount));
+                bugetItem.Amount = bugetItem.Buget.Amount;
+                bugetItem.Note = bugetItem.Buget.Note;
+                bugetItem.LeftMoney = bugetItem.Buget.Amount - bugetItem.UseMoney;
+              
+            };
+
+            var dialogArgs = new Dictionary<string, object>()
+                {
+                    { "Callback", callback },
+                   {"CurrentMonth", this.CurrentMonth },
+                    {"Categories", this.Categories},
+                {"BugetItem ",item }
+                };
+            this.DialogService.ShowDialog(DialogKeys.ADD_BUGET, dialogArgs);
         }
 
         private void OnShowBugetCommand(BugetItem item)
@@ -133,10 +181,10 @@ namespace MoneyKepper_Core.ViewModel
             if (this.AllTransactionsItems == null || this.AllTransactionsItems.Count == 0)
                 return;
 
+            IsShowTransactions = true;
             this.CategoryTransactions = new ObservableCollection<TransactionItem>(item.Transactions);
             this.TransactionsTitle = string.Format("פירוט תנועות של קטגוריה {0}", item.Category.Name);
         }
-
 
         private async void OnRemoveBugetCommand(BugetItem bugetItem)
         {
@@ -172,7 +220,6 @@ namespace MoneyKepper_Core.ViewModel
         private void SetIncomeItemsAndExpensesItems()
         {
             this.CategoryTransactions = null;
-
             var firstDayOfMonth = new DateTime(this.CurrentMonth.Year, CurrentMonth.Month, 1);
             var lastDayOfMonth = firstDayOfMonth.AddMonths(1).AddDays(-1);
             var allTransactions = this.DataService.GetTransactionsByDateAndType(firstDayOfMonth, lastDayOfMonth, (int)Types.Expenses).Select(tran => new TransactionItem(tran, tran.Category)).OrderBy(t => t.Transaction.Date).ToList();
@@ -181,9 +228,19 @@ namespace MoneyKepper_Core.ViewModel
             var incomeBuget = BugetBL.GetBugetByDatesAndType(firstDayOfMonth, lastDayOfMonth, (int)Types.Income).ToList();
             this.IncomeItems = new ObservableCollection<BugetItem>(this.GetBugetItems(incomeBuget));
             this.ExpensesItems = new ObservableCollection<BugetItem>(this.GetBugetItems(expensesBuget));
+            this.SetCategories();
+        }
+
+        private void SetCategories()
+        {
+            if (this.ExpensesItems == null || this.IncomeItems == null)
+                return;
+
             var existsCategories = this.IncomeItems.Select(b => b.Category).ToList();
             existsCategories.AddRange(this.ExpensesItems.Select(b => b.Category).ToList());
-            this.Categories = CategoryBL.GetAllCategories().Except(existsCategories).ToList();
+            this.Categories = CategoryBL.GetAllCategories().ToList();
+            existsCategories.ForEach(c => Categories.RemoveAll(cat => c.ID == cat.ID));
+            //this.Categories = this.Categories.Except(existsCategories).ToList();
         }
 
         public List<BugetItem> GetBugetItems(List<Buget> bugets)
@@ -217,7 +274,9 @@ namespace MoneyKepper_Core.ViewModel
                 this.CurrentMonth = (DateTime)args["Month"];
                 this.AddCallBack = args["AddCallBack"] as Action<BugetItem>;
                 this.RemoveCallBack = args["RemoveCallBack"] as Action<BugetItem>;
+                this.UpdateCallBack = args["UpdateCallBack"] as Action<Tuple<BugetItem, double>>;
                 this.SetIncomeItemsAndExpensesItems();
+                this.IsShowTransactions = false;
                 this.Title = string.Format("פירוט תנועות של חודש {0}", CurrentMonth.ToString("MMMMM"));
             }
         }

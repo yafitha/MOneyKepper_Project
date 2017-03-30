@@ -42,7 +42,7 @@
                 Margin="8,0"
                 FontWeight="SemiBold"
                 VerticalAlignment="Center"
-                Text="הוסף קטגוריה עם תקציב"/>
+                Text="{Binding Title}"/>
             <Button
                 Background="{x:Null}"
                 HorizontalAlignment="Right"
@@ -64,17 +64,11 @@
                    Style="{StaticResource InfoTextBlockStyle}"
                     Text="קטגוריה:"/>
                 <ComboBox
+                    ItemTemplate="{StaticResource ComoBoxCategoryDateTemplate}"
                     VerticalAlignment="Center"
                     Width="200"
                     SelectedItem="{Binding SelectedCategory, Mode=TwoWay}"
-                    ItemsSource="{Binding Categories}">
-                    <ComboBox.ItemTemplate>
-                        <DataTemplate>
-                            <TextBlock 
-                               Text="{Binding Name}"/>
-                        </DataTemplate>
-                    </ComboBox.ItemTemplate>
-                </ComboBox>
+                    ItemsSource="{Binding Categories}"/>
             </StackPanel>
             
             <StackPanel 
@@ -97,6 +91,7 @@
                    VerticalAlignment="Center"
                    Text="הערה:"/>
                 <TextBox
+                   MaxLength="120"
                    Width="200"
                     Height="50"
                     TextWrapping="Wrap"

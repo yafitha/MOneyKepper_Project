@@ -20,7 +20,9 @@ namespace MoneyKepperServer.Controllers
             int? typeID = (int?)model.typeID;
             using (money4 context = new money4())
             {
-                var allBugets = context.Bugets.Where(t => t.Date >= startDateTime && t.Date <= endDateTime).ToList();
+                var allBugets = context.Bugets.Where(t =>
+                t.Date.Month >= startDateTime.Month && t.Date.Year >= startDateTime.Year &&
+                t.Date.Month <= endDateTime.Month && t.Date.Year <= endDateTime.Year).ToList();
                 if (typeID.HasValue)
                 {
                     allBugets = allBugets.Where(t => t.Category.TypeID == typeID).ToList();
@@ -91,16 +93,21 @@ namespace MoneyKepperServer.Controllers
         [Route("api/Buget/UpdateBuget")]
         public HttpResponseMessage UpdateBuget([FromBody]Models.Buget buget)
         {
-            money4 context = new money4();
-            var b = Mapper.Map<Buget>(buget);
-            var selectbuget = context.Bugets.FirstOrDefault(t => t.ID == buget.ID);
-            if (selectbuget != null)
+            using (money4 context = new money4())
             {
-                selectbuget = b;
+                var b = Mapper.Map<Buget>(buget);
+                var selectBuget = context.Bugets.Find(b.ID);
+                if (selectBuget == null)
+                {
+                    context.Dispose();
+                    return Request.CreateResponse(HttpStatusCode.BadRequest);
+                }
+                //selectCategory.Name = category.Name;
+                //selectCategory.PictureName = cat.PictureName;
+                context.Entry(selectBuget).CurrentValues.SetValues(buget);
                 context.SaveChanges();
+                return Request.CreateResponse(HttpStatusCode.OK);
             }
-            context.Dispose();
-            return Request.CreateResponse(HttpStatusCode.OK);
         }
     }
 }

@@ -63,7 +63,7 @@
                     Orientation="Horizontal">
                     <RadioButton
                         IsEnabled="{Binding IsAddCategory}"
-                          IsChecked="{Binding IsIncome}"
+                         IsChecked="{Binding IsIncome ,Mode=TwoWay}"
                         Command="{Binding CategoryTypeSelectionCommand}"
                         CommandParameter="1"
                         GroupName="Type"
@@ -71,7 +71,7 @@
                         Content="הכנסות"/>
                     <RadioButton 
                         IsEnabled="{Binding IsAddCategory}"
-                        IsChecked="{Binding IsIncome, Converter={StaticResource InvertBooleanConverter }}"
+                        IsChecked="{Binding IsIncome ,Converter={StaticResource InvertBooleanConverter } ,Mode=TwoWay}"
                         Command="{Binding CategoryTypeSelectionCommand}"
                         CommandParameter="2"
                         GroupName="Type"

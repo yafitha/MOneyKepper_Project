@@ -39,8 +39,8 @@ namespace MoneyKepper_Core.ViewModel
             set { this.Set(ref _selectedCategory, value); }
         }
 
-        private List<Category> _categories;
-        public List<Category> Categories
+        private ObservableCollection<Category> _categories;
+        public ObservableCollection<Category> Categories
         {
             get { return _categories; }
             set { this.Set(ref _categories, value); }
@@ -164,6 +164,7 @@ namespace MoneyKepper_Core.ViewModel
         public RelayCommand SaveCategoryCommand { get; private set; }
         public RelayCommand CloseCategoryCommand { get; private set; }
         public RelayCommand<string> CategoryTypeSelectionCommand { get; set; }
+        public Action<Category> AddNewCategoryCallback { get; private set; }
 
 
         #endregion
@@ -221,9 +222,16 @@ namespace MoneyKepper_Core.ViewModel
             }
             var type = this.IsIncome == true ? 1 : 2;
             var category = new Category(this.Name, type, this.SelectedImage.Path, !this.IsSubCategoryChecked, this.SelectedSubCategory?.ID);
-            CategoryBL.CreateNewCategory(category);
-            this.Categories.Add(category);
-          //  this.SelectedCategory = this.Categories.LastOrDefault();
+            var returenedResult = CategoryBL.CreateNewCategory(category);
+            if (returenedResult.Item1 == false)
+                return;
+
+            if ((this.Categories.FirstOrDefault().TypeID == returenedResult.Item2.TypeID))
+            {
+                this.Categories.Add(returenedResult.Item2);
+                this.SelectedCategory = returenedResult.Item2;
+            }
+            this.AddNewCategoryCallback(returenedResult.Item2);
             this.AddNewCategory = false;
         }
 
@@ -269,8 +277,9 @@ namespace MoneyKepper_Core.ViewModel
         {
             this.AddNewCategory = false;
             this.TransactionType = (parameter as Dictionary<string, object>)["TransactionType"] as string;
-            this.Categories = (parameter as Dictionary<string, object>)["Categories"] as List<Category>;
+            this.Categories = new ObservableCollection<Category>((parameter as Dictionary<string, object>)["Categories"] as List<Category>);
             this.CallBack = (parameter as Dictionary<string, object>)["Callback"] as Action<TransactionItem>;
+            this.AddNewCategoryCallback = (parameter as Dictionary<string, object>)["AddNewCategoryCallback"] as Action<Category>;
             this.CurrentMonth = (DateTime)(parameter as Dictionary<string, object>)["CurrentMonth"];
             this.Note = string.Empty;
             this.Amount = string.Empty;

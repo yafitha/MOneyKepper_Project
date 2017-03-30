@@ -252,6 +252,7 @@
             </StackPanel>
             
             <ListView
+                Height="700"
                 Margin="8,14,8,0"
                 SelectionMode="Single"
                 ItemContainerStyle="{StaticResource ListViewItemStyle1}"
@@ -292,7 +293,7 @@
 
             <ListView
                 Margin="8,14,8,0"
-                Height="600"
+                Height="700"
                 ItemContainerStyle="{StaticResource ListViewItemStyle1}"
                 ItemTemplate="{StaticResource CategoryItemTemplate}"
                 ScrollViewer.VerticalScrollBarVisibility="Auto"

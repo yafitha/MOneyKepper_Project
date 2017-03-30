@@ -334,6 +334,20 @@
                     </Setter.Value>
                 </Setter>
             </Style>
+
+            <DataTemplate x:Key="ComoBoxCategoryDateTemplate">
+                <StackPanel Orientation="Horizontal">
+                <Image
+                    Margin="0,0,8,0"
+                    Width="20"
+                    Height="20"
+                    VerticalAlignment="Center"
+                    Source="{Binding PictureName, Converter={StaticResource PictureNameToPictureSourceConverter}}"/>
+                    <TextBlock 
+                      Text="{Binding Name}"/>
+                </StackPanel>
+            </DataTemplate>
+            
             
             <SolidColorBrush x:Key="NavButtonHoverBackgroundBrush" Color="White" Opacity="0.1" />
             <Style x:Key="NavRadioButtonStyle" TargetType="RadioButton">
