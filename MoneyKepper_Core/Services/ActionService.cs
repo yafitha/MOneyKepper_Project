@@ -64,11 +64,12 @@ namespace MoneyKepperCore.Service
             this.NavigationService.DetailsFrame.NavigateTo(NavigationPageKeys.REPORT_DETAILS, args);
         }
 
-        public void ShowBugetDetails(Action<BugetItem> addCallBack, Action<BugetItem> removeCallBack, DateTime month)
+        public void ShowBugetDetails(Action<BugetItem> addCallBack, Action<BugetItem> removeCallBack, Action<Tuple<BugetItem, double>> updateCallBack, DateTime month)
         {
             Dictionary<string, object> args = new Dictionary<string, object>();
             args.Add("AddCallBack", addCallBack);
             args.Add("RemoveCallBack", removeCallBack);
+            args.Add("UpdateCallBack", updateCallBack);
             args.Add("Month", month);
             this.NavigationService.DetailsFrame.NavigateTo(NavigationPageKeys.BUGET_DETAILS, args);
         }

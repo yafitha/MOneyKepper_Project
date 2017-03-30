@@ -23,22 +23,29 @@ namespace MoneyKepper_Core.BL
         public static List<Transaction> GetAllTransactions()
         {
             List<Transaction> transactions = new List<Transaction>();
-            Task task = Task.Run(async () =>
+            try
             {
-                using (var client = new HttpClient())
+                Task task = Task.Run(async () =>
                 {
-                    Run(client);
-                    HttpResponseMessage response = await client.GetAsync("GetAllTransactions"); // sends GET request
-                    string httpResponseBody = "";
-                    if (response.IsSuccessStatusCode)
+                    using (var client = new HttpClient())
                     {
-                        httpResponseBody = await response.Content.ReadAsStringAsync();
-                        transactions = JsonConvert.DeserializeObject<List<Transaction>>(httpResponseBody);
+                        Run(client);
+                        HttpResponseMessage response = await client.GetAsync("GetAllTransactions"); // sends GET request
+                    string httpResponseBody = "";
+                        if (response.IsSuccessStatusCode)
+                        {
+                            httpResponseBody = await response.Content.ReadAsStringAsync();
+                            transactions = JsonConvert.DeserializeObject<List<Transaction>>(httpResponseBody);
+                        }
+                        return transactions;
                     }
-                    return transactions;
-                }
-            });
-            task.Wait(); // Wait
+                });
+                task.Wait(); // Wait
+            }
+            catch (Exception ex)
+            {
+
+            }
             return transactions;
         }
 
@@ -46,87 +53,115 @@ namespace MoneyKepper_Core.BL
         public static IList<Transaction> GetTransactionsByTypes(List<int> types)
         {
             List<Transaction> transactions = new List<Transaction>();
-            Task task = Task.Run(async () =>
+            try
             {
-                using (var client = new HttpClient())
+                Task task = Task.Run(async () =>
                 {
-                    Run(client);
-                    HttpResponseMessage response = await client.PostAsJsonAsync("GetTransactionsByTypes", types);
-                    string httpResponseBody = "";
-                    if (response.IsSuccessStatusCode)
+                    using (var client = new HttpClient())
                     {
-                        httpResponseBody = await response.Content.ReadAsStringAsync();
-                        transactions = JsonConvert.DeserializeObject<List<Transaction>>(httpResponseBody);
+                        Run(client);
+                        HttpResponseMessage response = await client.PostAsJsonAsync("GetTransactionsByTypes", types);
+                        string httpResponseBody = "";
+                        if (response.IsSuccessStatusCode)
+                        {
+                            httpResponseBody = await response.Content.ReadAsStringAsync();
+                            transactions = JsonConvert.DeserializeObject<List<Transaction>>(httpResponseBody);
+                        }
+                        return transactions;
                     }
-                    return transactions;
-                }
-            });
-            task.Wait(); // Wait
+                });
+                task.Wait(); // Wait
+            }
+            catch (Exception ex)
+            {
+
+            }
             return transactions;
         }
 
         public static IList<Transaction> GetTransactionsByDate(DateTime dateTime)
         {
             List<Transaction> transactions = new List<Transaction>();
-            Task task = Task.Run(async () =>
+            try
             {
-                using (var client = new HttpClient())
+                Task task = Task.Run(async () =>
                 {
-                    Run(client);
-                    HttpResponseMessage response = await client.PostAsJsonAsync("GetTransactionsByDate", dateTime);
-                    string httpResponseBody = "";
-                    if (response.IsSuccessStatusCode)
+                    using (var client = new HttpClient())
                     {
-                        httpResponseBody = await response.Content.ReadAsStringAsync();
-                        transactions = JsonConvert.DeserializeObject<List<Transaction>>(httpResponseBody);
+                        Run(client);
+                        HttpResponseMessage response = await client.PostAsJsonAsync("GetTransactionsByDate", dateTime);
+                        string httpResponseBody = "";
+                        if (response.IsSuccessStatusCode)
+                        {
+                            httpResponseBody = await response.Content.ReadAsStringAsync();
+                            transactions = JsonConvert.DeserializeObject<List<Transaction>>(httpResponseBody);
+                        }
+                        return transactions;
                     }
-                    return transactions;
-                }
-            });
-            task.Wait(); // Wait
+                });
+                task.Wait(); // Wait
+            }
+            catch (Exception ex)
+            {
+
+            }
             return transactions;
         }
 
         public static IList<Transaction> GetTransactionsByDatesAndType(DateTime startDateTime, DateTime endDateTime, int? typeID)
         {
             List<Transaction> transactions = new List<Transaction>();
-            Task task = Task.Run(async () =>
+            try
             {
-                using (var client = new HttpClient())
+                Task task = Task.Run(async () =>
                 {
-                    Run(client);
-                    HttpResponseMessage response = await client.PostAsJsonAsync("GetTransactionsByDatesAndType", new { startDateTime,endDateTime,typeID});
-                    string httpResponseBody = "";
-                    if (response.IsSuccessStatusCode)
+                    using (var client = new HttpClient())
                     {
-                        httpResponseBody = await response.Content.ReadAsStringAsync();
-                        transactions = JsonConvert.DeserializeObject<List<Transaction>>(httpResponseBody);
+                        Run(client);
+                        HttpResponseMessage response = await client.PostAsJsonAsync("GetTransactionsByDatesAndType", new { startDateTime, endDateTime, typeID });
+                        string httpResponseBody = "";
+                        if (response.IsSuccessStatusCode)
+                        {
+                            httpResponseBody = await response.Content.ReadAsStringAsync();
+                            transactions = JsonConvert.DeserializeObject<List<Transaction>>(httpResponseBody);
+                        }
+                        return transactions;
                     }
-                    return transactions;
-                }
-            });
-            task.Wait(); // Wait
+                });
+                task.Wait(); // Wait
+            }
+            catch (Exception ex)
+            {
+
+            }
             return transactions;
         }
 
         public static bool CreateNewTransaction(Transaction transaction)
         {
             bool result = false;
-            Task task = Task.Run(async () =>
+            try
             {
-                using (var client = new HttpClient())
+                Task task = Task.Run(async () =>
                 {
-                    Run(client);
-                    HttpResponseMessage response = await client.PostAsJsonAsync("CreateNewTransaction", transaction);
-                    string httpResponseBody = "";
-                    if (response.IsSuccessStatusCode)
+                    using (var client = new HttpClient())
                     {
-                        httpResponseBody = await response.Content.ReadAsStringAsync();
-                        result = true;
+                        Run(client);
+                        HttpResponseMessage response = await client.PostAsJsonAsync("CreateNewTransaction", transaction);
+                        string httpResponseBody = "";
+                        if (response.IsSuccessStatusCode)
+                        {
+                            httpResponseBody = await response.Content.ReadAsStringAsync();
+                            result = true;
+                        }
                     }
-                }
-            });
-            task.Wait(); // Wait
+                });
+                task.Wait(); // Wait
+            }
+            catch (Exception ex)
+            {
+
+            }
             return result;
         }
 
@@ -134,21 +169,28 @@ namespace MoneyKepper_Core.BL
         public static bool DeleteTransaction(int transactionID)
         {
             bool result = false;
-            Task task = Task.Run(async () =>
+            try
             {
-                using (var client = new HttpClient())
+                Task task = Task.Run(async () =>
                 {
-                    Run(client);
-                    HttpResponseMessage response = await client.DeleteAsync($"DeleteTransaction/{transactionID}");
-                    string httpResponseBody = "";
-                    if (response.IsSuccessStatusCode)
+                    using (var client = new HttpClient())
                     {
-                        httpResponseBody = await response.Content.ReadAsStringAsync();
-                        result = true;
+                        Run(client);
+                        HttpResponseMessage response = await client.DeleteAsync($"DeleteTransaction/{transactionID}");
+                        string httpResponseBody = "";
+                        if (response.IsSuccessStatusCode)
+                        {
+                            httpResponseBody = await response.Content.ReadAsStringAsync();
+                            result = true;
+                        }
                     }
-                }
-            });
-            task.Wait(); // Wait
+                });
+                task.Wait(); // Wait
+            }
+            catch (Exception ex)
+            {
+
+            }
             return result;
         }
     }

@@ -113,6 +113,8 @@
                         Text="{Binding Transaction.Date,Converter={StaticResource DateConverter},ConverterParameter=d}"/>
                   
                     <TextBlock
+                           MaxWidth="150"
+                           TextTrimming="CharacterEllipsis"
                             VerticalAlignment="Center"
                             FontSize="16"
                             Text="{Binding Transaction.Note}"/>

@@ -22,22 +22,29 @@ namespace MoneyKepper_Core.BL
         public static List<Buget> GetBugetByCategory(Category category)
         {
             List<Buget> bugets = new List<Buget>();
-            Task task = Task.Run(async () =>
+            try
             {
-                using (var client = new HttpClient())
+                Task task = Task.Run(async () =>
                 {
-                    Run(client);
-                    HttpResponseMessage response = await client.PostAsJsonAsync("GetBugetByDateAndCategory", category);
-                    string httpResponseBody = "";
-                    if (response.IsSuccessStatusCode)
+                    using (var client = new HttpClient())
                     {
-                        httpResponseBody = await response.Content.ReadAsStringAsync();
-                        bugets = JsonConvert.DeserializeObject<List<Buget>>(httpResponseBody);
+                        Run(client);
+                        HttpResponseMessage response = await client.PostAsJsonAsync("GetBugetByDateAndCategory", category);
+                        string httpResponseBody = "";
+                        if (response.IsSuccessStatusCode)
+                        {
+                            httpResponseBody = await response.Content.ReadAsStringAsync();
+                            bugets = JsonConvert.DeserializeObject<List<Buget>>(httpResponseBody);
+                        }
+                        return bugets;
                     }
-                    return bugets;
-                }
-            });
-            task.Wait(); // Wait
+                });
+                task.Wait(); // Wait
+            }
+            catch (Exception ex)
+            {
+
+            }
             return bugets;
         }
 
@@ -46,43 +53,57 @@ namespace MoneyKepper_Core.BL
         public static IList<Buget> GetBugetByDatesAndType(DateTime startDateTime, DateTime endDateTime, int? typeID)
         {
             List<Buget> bugets = new List<Buget>();
-            Task task = Task.Run(async () =>
+            try
             {
-                using (var client = new HttpClient())
+                Task task = Task.Run(async () =>
                 {
-                    Run(client);
-                    HttpResponseMessage response = await client.PostAsJsonAsync("GetBugetByDatesAndType", new { startDateTime, endDateTime, typeID });
-                    string httpResponseBody = "";
-                    if (response.IsSuccessStatusCode)
+                    using (var client = new HttpClient())
                     {
-                        httpResponseBody = await response.Content.ReadAsStringAsync();
-                        bugets = JsonConvert.DeserializeObject<List<Buget>>(httpResponseBody);
+                        Run(client);
+                        HttpResponseMessage response = await client.PostAsJsonAsync("GetBugetByDatesAndType", new { startDateTime, endDateTime, typeID });
+                        string httpResponseBody = "";
+                        if (response.IsSuccessStatusCode)
+                        {
+                            httpResponseBody = await response.Content.ReadAsStringAsync();
+                            bugets = JsonConvert.DeserializeObject<List<Buget>>(httpResponseBody);
+                        }
+                        return bugets;
                     }
-                    return bugets;
-                }
-            });
-            task.Wait(); // Wait
+                });
+                task.Wait(); // Wait
+            }
+            catch (Exception ex)
+            {
+
+            }
             return bugets;
         }
 
         public static bool CreateNewBuget(Buget buget)
         {
             bool result = false;
-            Task task = Task.Run(async () =>
+            try
             {
-                using (var client = new HttpClient())
+                Task task = Task.Run(async () =>
                 {
-                    Run(client);
-                    HttpResponseMessage response = await client.PostAsJsonAsync("CreateNewBuget", buget);
-                    string httpResponseBody = "";
-                    if (response.IsSuccessStatusCode)
+                    using (var client = new HttpClient())
                     {
-                        httpResponseBody = await response.Content.ReadAsStringAsync();
-                        result = true;
+                        Run(client);
+                        HttpResponseMessage response = await client.PostAsJsonAsync("CreateNewBuget", buget);
+                        string httpResponseBody = "";
+                        if (response.IsSuccessStatusCode)
+                        {
+                            httpResponseBody = await response.Content.ReadAsStringAsync();
+                            result = true;
+                        }
                     }
-                }
-            });
-            task.Wait(); // Wait
+                });
+                task.Wait(); // Wait
+            }
+            catch (Exception ex)
+            {
+
+            }
             return result;
         }
 
@@ -90,42 +111,56 @@ namespace MoneyKepper_Core.BL
         public static bool DeleteBuget(int bugetID)
         {
             bool result = false;
-            Task task = Task.Run(async () =>
+            try
             {
-                using (var client = new HttpClient())
+                Task task = Task.Run(async () =>
                 {
-                    Run(client);
-                    HttpResponseMessage response = await client.DeleteAsync($"DeleteBuget/{bugetID}");
-                    string httpResponseBody = "";
-                    if (response.IsSuccessStatusCode)
+                    using (var client = new HttpClient())
                     {
-                        httpResponseBody = await response.Content.ReadAsStringAsync();
-                        result = true;
+                        Run(client);
+                        HttpResponseMessage response = await client.DeleteAsync($"DeleteBuget/{bugetID}");
+                        string httpResponseBody = "";
+                        if (response.IsSuccessStatusCode)
+                        {
+                            httpResponseBody = await response.Content.ReadAsStringAsync();
+                            result = true;
+                        }
                     }
-                }
-            });
-            task.Wait(); // Wait
+                });
+                task.Wait(); // Wait
+            }
+            catch (Exception ex)
+            {
+
+            }
             return result;
         }
 
         public static bool UpdateBuget(Buget buget)
         {
             bool result = false;
-            Task task = Task.Run(async () =>
+            try
             {
-                using (var client = new HttpClient())
+                Task task = Task.Run(async () =>
                 {
-                    Run(client);
-                    HttpResponseMessage response = await client.PostAsJsonAsync("UpdateBuget", buget);
-                    string httpResponseBody = "";
-                    if (response.IsSuccessStatusCode)
+                    using (var client = new HttpClient())
                     {
-                        httpResponseBody = await response.Content.ReadAsStringAsync();
-                        result = true;
+                        Run(client);
+                        HttpResponseMessage response = await client.PutAsJsonAsync("UpdateBuget", buget);
+                        string httpResponseBody = "";
+                        if (response.IsSuccessStatusCode)
+                        {
+                            httpResponseBody = await response.Content.ReadAsStringAsync();
+                            result = true;
+                        }
                     }
-                }
-            });
-            task.Wait(); // Wait
+                });
+                task.Wait(); // Wait
+            }
+            catch (Exception ex)
+            {
+
+            }
             return result;
         }
     }

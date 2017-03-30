@@ -67,9 +67,9 @@ namespace MoneyKepperServer.Controllers
                 var cat = Mapper.Map<Category>(category);
                 var result = context.Categories.Add(cat);
                 context.SaveChanges();
-                var respone = new HttpRequestMessage();
-                respone.Properties.Add("cat", category);
-                return Request.CreateResponse(respone);
+                //var respone = new HttpRequestMessage();
+                //respone.Properties.Add("cat", category);
+                return Request.CreateResponse<Category>(HttpStatusCode.OK, result);
             }
         }
 

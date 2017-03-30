@@ -24,22 +24,29 @@ namespace MoneyKepper_Core.BL
         public static List<Category> GetAllCategories()
         {
             List<Category> categories = new List<Category>();
-            Task task = Task.Run(async () =>
+            try
             {
-                using (var client = new HttpClient())
+                Task task = Task.Run(async () =>
                 {
-                    Run(client);
-                    HttpResponseMessage response = await client.GetAsync("GetAllCategories"); // sends GET request
-                    string httpResponseBody = "";
-                    if (response.IsSuccessStatusCode)
-                    {
-                        httpResponseBody = await response.Content.ReadAsStringAsync();
-                        categories = JsonConvert.DeserializeObject<List<Category>>(httpResponseBody);
-                    }
-                    return categories;
-                }
-            });
-            task.Wait(); // Wait
+               using (var client = new HttpClient())
+               {
+                   Run(client);
+                   HttpResponseMessage response = await client.GetAsync("GetAllCategories"); // sends GET request
+                   string httpResponseBody = "";
+                   if (response.IsSuccessStatusCode)
+                   {
+                       httpResponseBody = await response.Content.ReadAsStringAsync();
+                       categories = JsonConvert.DeserializeObject<List<Category>>(httpResponseBody);
+                   }
+                   return categories;
+               }
+           });
+                task.Wait(); // Wait
+            }
+            catch (Exception ex)
+            {
+
+            }
             return categories;
         }
 
@@ -47,65 +54,87 @@ namespace MoneyKepper_Core.BL
         public static IList<Category> GetCategoriesByTypes(List<int> types)
         {
             List<Category> categories = new List<Category>();
-            Task task = Task.Run(async () =>
+            try
             {
-                using (var client = new HttpClient())
+                Task task = Task.Run(async () =>
                 {
-                    Run(client);
-                    HttpResponseMessage response = await client.PostAsJsonAsync("GetCategoriesByTypes", types);
-                    string httpResponseBody = "";
-                    if (response.IsSuccessStatusCode)
+                    using (var client = new HttpClient())
                     {
-                        httpResponseBody = await response.Content.ReadAsStringAsync();
-                        categories = JsonConvert.DeserializeObject<List<Category>>(httpResponseBody);
+                        Run(client);
+                        HttpResponseMessage response = await client.PostAsJsonAsync("GetCategoriesByTypes", types);
+                        string httpResponseBody = "";
+                        if (response.IsSuccessStatusCode)
+                        {
+                            httpResponseBody = await response.Content.ReadAsStringAsync();
+                            categories = JsonConvert.DeserializeObject<List<Category>>(httpResponseBody);
+                        }
+                        return categories;
                     }
-                    return categories;
-                }
-            });
-            task.Wait(); // Wait
+                });
+                task.Wait(); // Wait
+            }
+            catch (Exception ex)
+            {
+
+            }
             return categories;
         }
 
-        public static Tuple<bool,Category> CreateNewCategory(Category category)
+        public static Tuple<bool, Category> CreateNewCategory(Category category)
         {
-            var  result = new Tuple<bool, Category>(false, null);
-            Task task = Task.Run(async () =>
+            var result = new Tuple<bool, Category>(false, null);
+            try
             {
-                using (var client = new HttpClient())
+                Task task = Task.Run(async () =>
                 {
-                    Run(client);
-                    HttpResponseMessage response = await client.PostAsJsonAsync("CreateNewCategory", category);
-                    string httpResponseBody = "";
-                    if (response.IsSuccessStatusCode)
+                    using (var client = new HttpClient())
                     {
-                        var x =  response.RequestMessage.Properties;
-                        httpResponseBody = await response.Content.ReadAsStringAsync();
-                        result = new Tuple<bool, Category>(true, category);
+                        Run(client);
+                        HttpResponseMessage response = await client.PostAsJsonAsync("CreateNewCategory", category);
+                        string httpResponseBody = "";
+                        if (response.IsSuccessStatusCode)
+                        {
+                            var x = response.RequestMessage.Properties;
+                            httpResponseBody = await response.Content.ReadAsStringAsync();
+                            var returnedcategory = JsonConvert.DeserializeObject<Category>(httpResponseBody);
+                            result = new Tuple<bool, Category>(true, returnedcategory);
+                        }
                     }
-                }
-            });
-            task.Wait(); // Wait
+                });
+                task.Wait(); // Wait
+            }
+            catch (Exception ex)
+            {
+
+            }
             return result;
         }
 
         public static bool UpdateCategory(Category category)
         {
             bool result = false;
-            Task task = Task.Run(async () =>
+            try
             {
-                using (var client = new HttpClient())
+                Task task = Task.Run(async () =>
                 {
-                    Run(client);
-                    HttpResponseMessage response = await client.PutAsJsonAsync("UpdateCategory", category);
-                    string httpResponseBody = "";
-                    if (response.IsSuccessStatusCode)
+                    using (var client = new HttpClient())
                     {
-                        httpResponseBody = await response.Content.ReadAsStringAsync();
-                        result = true;
+                        Run(client);
+                        HttpResponseMessage response = await client.PutAsJsonAsync("UpdateCategory", category);
+                        string httpResponseBody = "";
+                        if (response.IsSuccessStatusCode)
+                        {
+                            httpResponseBody = await response.Content.ReadAsStringAsync();
+                            result = true;
+                        }
                     }
-                }
-            });
-            task.Wait(); // Wait
+                });
+                task.Wait(); // Wait
+            }
+            catch (Exception ex)
+            {
+
+            }
             return result;
         }
 
@@ -113,21 +142,28 @@ namespace MoneyKepper_Core.BL
         {
             // return new Logic.CategoryBL().CreateNewCategory(category);
             bool result = false;
-            Task task = Task.Run(async () =>
+            try
             {
-                using (var client = new HttpClient())
+                Task task = Task.Run(async () =>
                 {
-                    Run(client);
-                    HttpResponseMessage response = await client.DeleteAsync($"DeleteCategory/{categoryID}");
-                    string httpResponseBody = "";
-                    if (response.IsSuccessStatusCode)
+                    using (var client = new HttpClient())
                     {
-                        httpResponseBody = await response.Content.ReadAsStringAsync();
-                        result = true;
+                        Run(client);
+                        HttpResponseMessage response = await client.DeleteAsync($"DeleteCategory/{categoryID}");
+                        string httpResponseBody = "";
+                        if (response.IsSuccessStatusCode)
+                        {
+                            httpResponseBody = await response.Content.ReadAsStringAsync();
+                            result = true;
+                        }
                     }
-                }
-            });
-            task.Wait(); // Wait
+                });
+                task.Wait(); // Wait
+            }
+            catch (Exception ex)
+            {
+
+            }
             return result;
         }
 
@@ -135,23 +171,30 @@ namespace MoneyKepper_Core.BL
         {
             // return new Logic.CategoryBL().CreateNewCategory(category);
             bool result = false;
-            Task task = Task.Run(async () =>
+            try
             {
-                using (var client = new HttpClient())
+                Task task = Task.Run(async () =>
                 {
-                    Run(client);
-                    string querystring = string.Join("&", categoriesID);
-
-                    HttpResponseMessage response = await client.DeleteAsync($"DeleteCategories/{querystring}");
-                    string httpResponseBody = "";
-                    if (response.IsSuccessStatusCode)
+                    using (var client = new HttpClient())
                     {
-                        httpResponseBody = await response.Content.ReadAsStringAsync();
-                        result = true;
+                        Run(client);
+                        string querystring = string.Join("&", categoriesID);
+
+                        HttpResponseMessage response = await client.DeleteAsync($"DeleteCategories/{querystring}");
+                        string httpResponseBody = "";
+                        if (response.IsSuccessStatusCode)
+                        {
+                            httpResponseBody = await response.Content.ReadAsStringAsync();
+                            result = true;
+                        }
                     }
-                }
-            });
-            task.Wait(); // Wait
+                });
+                task.Wait(); // Wait
+            }
+            catch (Exception ex)
+            {
+
+            }
             return result;
         }
     }

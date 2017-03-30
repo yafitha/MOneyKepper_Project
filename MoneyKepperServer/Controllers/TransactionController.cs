@@ -45,7 +45,9 @@ namespace MoneyKepperServer.Controllers
             int? typeID = (int?)model.typeID;
             using (money4 context = new money4())
             {
-                var allTransactions = context.Transactions.Where(t => t.Date >= startDateTime && t.Date <= endDateTime).ToList();
+                var allTransactions = context.Transactions.Where(t =>
+                t.Date.Month >= startDateTime.Month && t.Date.Year >= startDateTime.Year &&
+                t.Date.Month <= endDateTime.Month && t.Date.Year <= endDateTime.Year).ToList();
                 if (typeID.HasValue)
                 {
                     allTransactions = allTransactions.Where(t => t.Category.TypeID == typeID).ToList();

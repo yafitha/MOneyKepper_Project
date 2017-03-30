@@ -4,6 +4,8 @@
     <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
   </Roots.Interfaces>
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="Name" />
+    <RootPropertyPathName Name="PictureName" />
     <RootPropertyPathName Name="MainViewModel" />
     <RootPropertyPathName Name="ActualWidth" />
     <RootPropertyPathName Name="ActualHeight" />
@@ -18,7 +20,6 @@
     <RootPropertyPathName Name="IsChecked" />
     <RootPropertyPathName Name="SelectedCategory" />
     <RootPropertyPathName Name="Categories" />
-    <RootPropertyPathName Name="Name" />
     <RootPropertyPathName Name="IsSubCategoryChecked" />
     <RootPropertyPathName Name="IsIncome" />
     <RootPropertyPathName Name="CategoryTypeSelectionCommand" />
@@ -46,7 +47,7 @@
     <RootPropertyPathName Name="Transaction" />
     <RootPropertyPathName Name="Date" />
     <RootPropertyPathName Name="Category" />
-    <RootPropertyPathName Name="PictureName" />
+    <RootPropertyPathName Name="IsShowTransactions" />
     <RootPropertyPathName Name="TransactionsTitle" />
     <RootPropertyPathName Name="CategoryTransactions" />
     <RootPropertyPathName Name="ExpensesItems" />
@@ -55,7 +56,6 @@
     <RootPropertyPathName Name="RemoveBugetCommand" />
     <RootPropertyPathName Name="UpdateBugetCommand" />
     <RootPropertyPathName Name="ShowBugetCommand" />
-    <RootPropertyPathName Name="Buget" />
     <RootPropertyPathName Name="IncomeItems" />
     <RootPropertyPathName Name="AddBugetCommand" />
     <RootPropertyPathName Name="BugetViewModel" />
@@ -178,9 +178,9 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="FontFamily" />
+      <RootProperty Name="Text" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Foreground" />
-      <RootProperty Name="Text" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="FontWeight" />
       <RootProperty Name="VerticalAlignment" />
@@ -190,11 +190,12 @@
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Height" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="MaxWidth" />
+      <RootProperty Name="TextTrimming" />
       <RootProperty Name="Padding" />
       <RootProperty Name="TextAlignment" />
       <RootProperty Name="FlowDirection" />
       <RootProperty Name="Tag" />
-      <RootProperty Name="TextTrimming" />
       <RootProperty Name="Visibility" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem">
@@ -204,6 +205,9 @@
       <RootProperty Name="IsHoldingEnabled" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ContentDialog" />
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
       <RootProperty Name="IsEnabled" />
       <RootProperty Name="IsChecked" />
@@ -326,6 +330,37 @@
       <RootMethod Name="GetAccessibilityView" />
       <RootMethod Name="SetAccessibilityView" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Resources" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Source" />
+      <RootProperty Name="HorizontalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Converter" />
+      <RootProperty Name="Source" />
+      <RootProperty Name="ElementName" />
+      <RootProperty Name="Mode" />
+      <RootProperty Name="Path" />
+      <RootProperty Name="ConverterParameter" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>
@@ -388,24 +423,8 @@
       <RootProperty Name="DataContext" />
       <RootProperty Name="Content" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="Source" />
-      <RootProperty Name="ElementName" />
-      <RootProperty Name="Mode" />
-      <RootProperty Name="Converter" />
-      <RootProperty Name="Path" />
-      <RootProperty Name="ConverterParameter" />
-    </RootType>
     <RootType FullName="MoneyKepper2.View.Views.ControlSplitView" />
     <RootType FullName="MoneyKepper2.View.Views.DetailsView" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Image">
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Source" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Margin" />
-    </RootType>
     <RootType FullName="MoneyKepper2.MainPage" />
     <RootType FullName="MoneyKepper2.Controls.ExpanderControl" />
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsControl">
@@ -448,21 +467,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
       <RootProperty Name="Template" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Orientation" />
-      <RootProperty Name="Children" />
-      <RootProperty Name="Padding" />
-      <RootProperty Name="Visibility" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="Resources" />
-      <RootProperty Name="BorderBrush" />
-      <RootProperty Name="BorderThickness" />
-    </RootType>
     <RootType FullName="MoneyKepper2.View.Dialogs.ContentDialogBase">
       <RootProperty Name="Style" />
       <RootProperty Name="Width" />
@@ -490,16 +494,13 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="Header" />
       <RootProperty Name="ItemContainerStyle" />
+      <RootProperty Name="Visibility" />
       <RootProperty Name="GroupStyle" />
       <RootProperty Name="FontWeight" />
       <RootProperty Name="Background" />
       <RootProperty Name="Padding" />
       <RootProperty Name="HeaderTemplate" />
-      <RootProperty Name="Visibility" />
       <RootProperty Name="IsMultiSelectCheckBoxEnabled" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.DataTemplate">
-      <RootProperty Name="Template" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ItemsWrapGrid">
       <RootProperty Name="Orientation" />
@@ -526,6 +527,7 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Text" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="MaxLength" />
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="InputScope" />
       <RootProperty Name="VerticalAlignment" />

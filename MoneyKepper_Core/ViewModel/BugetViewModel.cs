@@ -116,6 +116,21 @@ namespace MoneyKepper_Core.ViewModel
                 this.Balance = this.Income - this.Expenses;
             };
 
+            Action<Tuple<BugetItem,double>> updateCallBack = bugetItem =>
+            {
+                if (bugetItem.Item1.Category.TypeID == (int)Types.Expenses)
+                {
+                    this.Expenses -= bugetItem.Item2;
+                    this.Expenses += bugetItem.Item1.Buget.Amount;
+                }
+                else
+                {
+                    this.Income -= bugetItem.Item2;
+                    this.Income += bugetItem.Item1.Buget.Amount;
+                }
+                this.Balance = this.Income - this.Expenses;
+            };
+
             Action<BugetItem> removeCallBack = bugetItem =>
             {
                 if (bugetItem.Category.TypeID == (int)Types.Expenses)
@@ -129,7 +144,7 @@ namespace MoneyKepper_Core.ViewModel
                 this.Balance = this.Income - this.Expenses;
             };
 
-            this.ActionsService.ShowBugetDetails(addCallBack,removeCallBack , this.CurrentMonth);
+            this.ActionsService.ShowBugetDetails(addCallBack,removeCallBack , updateCallBack, this.CurrentMonth);
         }
 
         private void InitAllMonths()

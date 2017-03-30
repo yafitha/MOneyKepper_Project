@@ -16,7 +16,7 @@ namespace MoneyKepperCore.Service
         void ShowMonthGraphs(DateTime month);
         void ShowReportDetails(DateTime startDateTime, DateTime endDateTime ,string SubTitle ="");
         void ShowEmptyPage();
-        void ShowBugetDetails(Action<BugetItem> addCallBack, Action<BugetItem> removeCallBack, DateTime month);
+        void ShowBugetDetails(Action<BugetItem> addCallBack, Action<BugetItem> removeCallBack, Action<Tuple<BugetItem, double>> updateCallBack, DateTime month);
         void ShowCategoriesDetails(Action<Category> addCallBack, Action<Category> removeCallBack);
     }
 }
